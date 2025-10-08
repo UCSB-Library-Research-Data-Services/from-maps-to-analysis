@@ -10,16 +10,28 @@ Single-sign on with your UCSB NetID
 
 ## I want to draw a shape on a map
 
-### how - to
+### Draw a polygon around campus
+
+-   Make a new map
+
+-   Add a sketch
+
+-   Make sure to choose polygon
+
+-   Save your map (please use our naming convention!)
+
+![](images/sketch-options.png)
 
 ### how - too
 
 ## But is a shape data?
 
- - add an observation to our cognitive borders of campus map
- - <Open the map here>(https://ucsb.maps.arcgis.com/apps/instant/webeditor/index.html?appid=a5e83ae370d64d528aacb3bf27885d05)
- 
+-   Add an observation to our [cognitive borders of campus map](https://ucsb.maps.arcgis.com/apps/instant/webeditor/index.html?appid=a5e83ae370d64d528aacb3bf27885d05)
+-   See previous observations on [the results map](https://arcg.is/11Ca9n1)
+
+![](images/add_a_feature.png){fig-alt="screenshot of the add a polygon button"}
+
 ## Features have attributes
 
- - a data table
- - columns have fixed data types (a lot of them)
+-   a data table
+-   columns have fixed data types (a lot of them)
