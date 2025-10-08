@@ -35,14 +35,25 @@ Single-sign on with your UCSB NetID
 
 -   a data table
 -   columns have fixed data types (a lot of them)
+-   for example bikes
 
 ## Play with symbology & transparency
+
+Based on data `street_pavement`
+
+1. Make a new map
+1. Choose a basemap
+1. Add layer from Contents --> Groups --> From Maps to Analysis
+1. Create filter to show only bikepaths 
+1. Join 2 filters together to *OR* sidewalks
+1. Save your work!
 
 ## More tools
 
 non-Esri tools: 
 
 - Google Maps and Earth (maybe short demo of this?) 
+
 - MapBox 
 
 - OpenStreetMaps 
