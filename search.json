@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "From Maps to Analysis",
+    "section": "",
+    "text": "Single-sign on with your UCSB NetID"
+  },
+  {
+    "objectID": "index.html#log-on-to-arcgis",
+    "href": "index.html#log-on-to-arcgis",
+    "title": "From Maps to Analysis",
+    "section": "",
+    "text": "Single-sign on with your UCSB NetID"
+  },
+  {
+    "objectID": "index.html#i-want-to-draw-a-shape-on-a-map",
+    "href": "index.html#i-want-to-draw-a-shape-on-a-map",
+    "title": "From Maps to Analysis",
+    "section": "I want to draw a shape on a map",
+    "text": "I want to draw a shape on a map\n\nDraw a polygon around campus\n\nMake a new map\nAdd a sketch\nMake sure to choose polygon\nSave your map (please use our naming convention!)\n\n\n\n\nhow - too"
+  },
+  {
+    "objectID": "index.html#but-is-a-shape-data",
+    "href": "index.html#but-is-a-shape-data",
+    "title": "From Maps to Analysis",
+    "section": "But is a shape data?",
+    "text": "But is a shape data?\n\nAdd an observation to our cognitive borders of campus map\nSee previous observations on the results map"
+  },
+  {
+    "objectID": "index.html#features-have-attributes",
+    "href": "index.html#features-have-attributes",
+    "title": "From Maps to Analysis",
+    "section": "Features have attributes",
+    "text": "Features have attributes\n\na data table\ncolumns have fixed data types (a lot of them)"
+  },
+  {
+    "objectID": "index.html#play-with-symbology-transparency",
+    "href": "index.html#play-with-symbology-transparency",
+    "title": "From Maps to Analysis",
+    "section": "Play with symbology & transparency",
+    "text": "Play with symbology & transparency"
+  },
+  {
+    "objectID": "index.html#more-tools",
+    "href": "index.html#more-tools",
+    "title": "From Maps to Analysis",
+    "section": "More tools",
+    "text": "More tools\nnon-Esri tools:\n\nGoogle Maps and Earth (maybe short demo of this?)\nMapBox\nOpenStreetMaps\nCalTopo\nR ← but that’s programming"
+  }
+]
