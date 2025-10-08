@@ -33,19 +33,5 @@
     "title": "From Maps to Analysis",
     "section": "Features have attributes",
     "text": "Features have attributes\n\na data table\ncolumns have fixed data types (a lot of them)"
-  },
-  {
-    "objectID": "index.html#play-with-symbology-transparency",
-    "href": "index.html#play-with-symbology-transparency",
-    "title": "From Maps to Analysis",
-    "section": "Play with symbology & transparency",
-    "text": "Play with symbology & transparency"
-  },
-  {
-    "objectID": "index.html#more-tools",
-    "href": "index.html#more-tools",
-    "title": "From Maps to Analysis",
-    "section": "More tools",
-    "text": "More tools\nnon-Esri tools:\n\nGoogle Maps and Earth (maybe short demo of this?)\nMapBox\nOpenStreetMaps\nCalTopo\nR ← but that’s programming"
   }
 ]
