@@ -1,0 +1,25 @@
+---
+title: "From Maps to Analysis"
+author: "UCSB Library"
+format: html
+---
+
+## Log on to ArcGIS
+
+Single-sign on with your UCSB NetID
+
+## I want to draw a shape on a map
+
+### how - to
+
+### how - too
+
+## But is a shape data?
+
+ - add an observation to our cognitive borders of campus map
+ - <Open the map here>(https://ucsb.maps.arcgis.com/apps/instant/webeditor/index.html?appid=a5e83ae370d64d528aacb3bf27885d05)
+ 
+## Features have attributes
+
+ - a data table
+ - columns have fixed data types (a lot of them)
