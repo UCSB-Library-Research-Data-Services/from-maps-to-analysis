@@ -32,6 +32,20 @@
     "href": "index.html#features-have-attributes",
     "title": "From Maps to Analysis",
     "section": "Features have attributes",
-    "text": "Features have attributes\n\na data table\ncolumns have fixed data types (a lot of them)"
+    "text": "Features have attributes\n\na data table\ncolumns have fixed data types (a lot of them)\nfor example bikes"
+  },
+  {
+    "objectID": "index.html#play-with-symbology-transparency",
+    "href": "index.html#play-with-symbology-transparency",
+    "title": "From Maps to Analysis",
+    "section": "Play with symbology & transparency",
+    "text": "Play with symbology & transparency\nBased on data street_pavement\n\nMake a new map\nChoose a basemap\nAdd layer from Contents –&gt; Groups –&gt; From Maps to Analysis\nCreate filter to show only bikepaths\nJoin 2 filters together to OR sidewalks\nSave your work!"
+  },
+  {
+    "objectID": "index.html#more-tools",
+    "href": "index.html#more-tools",
+    "title": "From Maps to Analysis",
+    "section": "More tools",
+    "text": "More tools\nnon-Esri tools:\n\nGoogle Maps and Earth (maybe short demo of this?)\nMapBox\nOpenStreetMaps\nCalTopo\nR ← but that’s programming"
   }
 ]
