@@ -4,9 +4,28 @@ title: "I want to make a map"
 
 ## Log on to ArcGIS
 
+
 Single-sign on with your UCSB NetID
 
+
+## Concepts of a map
+
+- Basemap (background)
+- Layers (you add on top of the basemap)
+- Symbology & legend
+
+Optional for online maps?
+
+- Scale
+- Orientation (North oriented is the default)
+- Grid - Lat/Long
+
 ## I want to draw a shape on a map
+
+### Choose a basemap
+
+- Topography
+- Satellite
 
 ### Draw a polygon around campus
 
