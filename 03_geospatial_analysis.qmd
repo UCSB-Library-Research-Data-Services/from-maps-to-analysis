@@ -1,0 +1,14 @@
+---
+title: "Geospatial analysis"
+---
+
+What tool?
+
+- ArcGIS pro
+- QGIS
+
+AGO layers vs. local layers
+
+	– very much ‘where are my files’ reinforcement like Unix Shell
+
+Example analysis: which parts of campus are least served by the bike path network?

@@ -1,0 +1,48 @@
+---
+title: "I need GIS"
+---
+
+Mimic Data Carpentry with local campus data
+
+-   Flush out what we want the end product to look like
+
+Annotation vs geospatial data
+
+Types of data:
+
+-   Vector: Difference between point, line, and polygon
+-   Raster: an array of values that can be used
+    -   Single band
+    -   Multibands
+
+Projections? Reprojection (raster, polygons) 
+
+- Import point data from a csv 
+- Zonal statistics (simple)
+
+Add raster with another projection
+
+- NCOS? Bird observations (might becsv) 
+- Topographic map to compute solar panels location (maybe workshop 3?) 
+- Facilities data (buildings) 
+- DEM 
+- Bike paths
+- Trees
+
+Potential simple analysis as end product 
+
+- Zonal statistics 
+- Count number of points within a polygon 
+- Heatmap from points 
+- Buffering
+
+Exporting data from GIS 
+
+- Shapefile 
+- geodatabase
+
+What tool? 
+
+- ArcGIS online 
+- ArcGIS pro 
+- QGIS
