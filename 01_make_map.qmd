@@ -65,6 +65,12 @@ Based on data `street_pavement`
 1. Join 2 filters together to *OR* sidewalks
 1. Save your work!
 
+## Sharing your map
+
+- Online
+- Exporting to other formats (image, PDF)
+
+
 ## More tools
 
 non-Esri tools: 
