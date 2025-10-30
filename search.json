@@ -63,6 +63,13 @@
     "text": "Play with symbology & transparency\nBased on data street_pavement\n\nMake a new map\nChoose a basemap\nAdd layer from Contents –&gt; Groups –&gt; From Maps to Analysis\nCreate filter to show only bikepaths\nJoin 2 filters together to OR sidewalks\nSave your work!"
   },
   {
+    "objectID": "01_make_map.html#sharing-your-map",
+    "href": "01_make_map.html#sharing-your-map",
+    "title": "I want to make a map",
+    "section": "Sharing your map",
+    "text": "Sharing your map\n\nOnline\nExporting to other formats (image, PDF)"
+  },
+  {
     "objectID": "01_make_map.html#more-tools",
     "href": "01_make_map.html#more-tools",
     "title": "I want to make a map",
