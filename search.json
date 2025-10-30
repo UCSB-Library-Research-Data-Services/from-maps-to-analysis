@@ -28,11 +28,18 @@
     "text": "Single-sign on with your UCSB NetID"
   },
   {
+    "objectID": "01_make_map.html#concepts-of-a-map",
+    "href": "01_make_map.html#concepts-of-a-map",
+    "title": "I want to make a map",
+    "section": "Concepts of a map",
+    "text": "Concepts of a map\n\nBasemap (background)\nLayers (you add on top of the basemap)\nSymbology & legend\n\nOptional for online maps?\n\nScale\nOrientation (North oriented is the default)\nGrid - Lat/Long"
+  },
+  {
     "objectID": "01_make_map.html#i-want-to-draw-a-shape-on-a-map",
     "href": "01_make_map.html#i-want-to-draw-a-shape-on-a-map",
     "title": "I want to make a map",
     "section": "I want to draw a shape on a map",
-    "text": "I want to draw a shape on a map\n\nDraw a polygon around campus\n\nMake a new map\nAdd a sketch\nMake sure to choose polygon\nSave your map (please use our naming convention!)\n\n\n\n\nhow - too"
+    "text": "I want to draw a shape on a map\n\nChoose a basemap\n\nTopography\nSatellite\n\n\n\nDraw a polygon around campus\n\nMake a new map\nAdd a sketch\nMake sure to choose polygon\nSave your map (please use our naming convention!)\n\n\n\n\nhow - too"
   },
   {
     "objectID": "01_make_map.html#but-is-a-shape-data",
