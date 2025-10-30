@@ -4,8 +4,15 @@ title: "I want to make a map"
 
 ## Log on to ArcGIS
 
+<https://www.arcgis.com/index.html>
 
-Single-sign on with your UCSB NetID
+Single-sign on with your UCSB NetID to access the licensed features
+
+![](images/arcgis-login.png)
+
+Click "Continue" and enter your UCSB NetID credentials
+
+![](images/arcgis-landingpage.png)
 
 
 ## Concepts of a map
