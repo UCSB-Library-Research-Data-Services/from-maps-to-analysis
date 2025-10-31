@@ -4,7 +4,7 @@
     "href": "03_geospatial_analysis.html",
     "title": "Geospatial analysis",
     "section": "",
-    "text": "What tool?\n\nArcGIS pro\nQGIS\n\nAGO layers vs. local layers\n– very much ‘where are my files’ reinforcement like Unix Shell\nExample analysis: which parts of campus are least served by the bike path network?"
+    "text": "What tool?\n\nArcGIS pro\nQGIS\n\nAGO layers vs. local layers\n– very much ‘where are my files’ reinforcement like Unix Shell\nExample analysis: which parts of campus are least served by the bike path network?\nData analysis:\n\nbuffering\ninterpolation\nzonal statistics\nraster calculation"
   },
   {
     "objectID": "index.html",
