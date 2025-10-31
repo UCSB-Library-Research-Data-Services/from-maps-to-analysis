@@ -14,25 +14,25 @@
     "text": "The Goal of this workshop series is to provide a gentle introduction to creating maps and conducting geosptial analysis without the need to have programming skills.\nWe have organized this curriculum in three workshops:"
   },
   {
-    "objectID": "index.html#from-map-to-analysis",
-    "href": "index.html#from-map-to-analysis",
+    "objectID": "index.html#workshop-1---from-map-to-analysis",
+    "href": "index.html#workshop-1---from-map-to-analysis",
     "title": "From Maps to Analysis",
     "section": "",
     "text": "The Goal of this workshop series is to provide a gentle introduction to creating maps and conducting geosptial analysis without the need to have programming skills.\nWe have organized this curriculum in three workshops:"
   },
   {
-    "objectID": "index.html#i-want-to-make-a-map",
-    "href": "index.html#i-want-to-make-a-map",
+    "objectID": "index.html#workshop-2---i-want-to-make-a-map",
+    "href": "index.html#workshop-2---i-want-to-make-a-map",
     "title": "From Maps to Analysis",
-    "section": "I want to make a map",
-    "text": "I want to make a map\n2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS online to learn how to:\n\nadd basemap\ndraw line an polygons on a map\nadd an existing layer to a map\nchange symbology\n\nEnds with data vs. maps and Sketch Layer vs. Feature Layer (in ArcGIS)"
+    "section": "Workshop 2 - I want to make a map",
+    "text": "Workshop 2 - I want to make a map\n2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS online to learn how to:\n\nadd basemap\ndraw line an polygons on a map\nadd an existing layer to a map\nchange symbology\n\nEnds with data vs. maps and Sketch Layer vs. Feature Layer (in ArcGIS)"
   },
   {
-    "objectID": "index.html#i-think-i-need-gis",
-    "href": "index.html#i-think-i-need-gis",
+    "objectID": "index.html#workshop-3---i-think-i-need-gis",
+    "href": "index.html#workshop-3---i-think-i-need-gis",
     "title": "From Maps to Analysis",
-    "section": "I think I need GIS",
-    "text": "I think I need GIS\n2-3 hours workshop using ArcGIS online to conduct basic GIS data manipulations.\n\ndata import & export\nprojections\nraster and vector data\n\nEnds with an analysis, maybe zonal statistics?"
+    "section": "Workshop 3 - I think I need GIS",
+    "text": "Workshop 3 - I think I need GIS\n2-3 hours workshop using ArcGIS online to conduct basic GIS data manipulations.\n\ndata import & export\nprojections\nraster and vector data\n\nEnds with an analysis, maybe zonal statistics?"
   },
   {
     "objectID": "index.html#geospatial-analysis",
