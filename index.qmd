@@ -7,7 +7,7 @@ citation:
 categories: [GIS, map, geospatial analysis]
 ---
 
-## From Map to Analysis
+## Workshop 1 - From Map to Analysis
 
 The Goal of this workshop series is to provide a gentle introduction to creating maps and conducting geosptial analysis
 without the need to have programming skills.
@@ -15,7 +15,7 @@ without the need to have programming skills.
 We have organized this curriculum in three workshops:
 
 
-## I want to make a map
+## Workshop 2 - I want to make a map
 
 2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and
 leverage ArcGIS online to learn how to:
@@ -28,7 +28,7 @@ leverage ArcGIS online to learn how to:
 Ends with data vs. maps and Sketch Layer vs. Feature Layer (in ArcGIS)
 
 
-## I think I need GIS
+## Workshop 3 - I think I need GIS
 
 2-3 hours workshop using ArcGIS online to conduct basic GIS data manipulations.
 
