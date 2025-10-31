@@ -56,6 +56,13 @@
     "text": "https://www.arcgis.com/index.html\nSingle-sign on with your UCSB NetID to access the licensed features\n\nClick “Continue” and enter your UCSB NetID credentials. You should have a similar landingpage indicating that you are using the ArcGIS online under the UCSB license."
   },
   {
+    "objectID": "01_make_map.html#introduction-to-arcgis-online",
+    "href": "01_make_map.html#introduction-to-arcgis-online",
+    "title": "I want to make a map",
+    "section": "Introduction to ArcGIS online",
+    "text": "Introduction to ArcGIS online\nWe will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later"
+  },
+  {
     "objectID": "01_make_map.html#concepts-of-a-map",
     "href": "01_make_map.html#concepts-of-a-map",
     "title": "I want to make a map",
