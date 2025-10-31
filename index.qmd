@@ -4,7 +4,7 @@ author: "UCSB Library"
 date: last-modified
 citation: 
   url: https://ucsb-library-research-data-services.github.io/from-maps-to-analysis/
-categories: [data-science, collaboration, reproducible-research]
+categories: [GIS, map, geospatial analysis]
 ---
 
 ## From Map to Analysis
