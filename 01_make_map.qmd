@@ -14,6 +14,9 @@ Click "Continue" and enter your UCSB NetID credentials. You should have a simila
 
 ![](images/arcgis-landingpage.png)
 
+## Introduction to ArcGIS online
+
+We will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later 
 
 ## Concepts of a map
 
