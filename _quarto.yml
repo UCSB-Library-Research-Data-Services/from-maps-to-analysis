@@ -4,6 +4,9 @@ project:
 website:
   title: "From Map to Analysis"
   navbar:
+    tools:
+      - icon: github
+        href: https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis
     left:
       - href: 01_make_map.qmd
         text: "Make a map"
@@ -13,11 +16,12 @@ website:
         text: "Geospatial Analysis"
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
+    css: styles.scss
     toc: true
+    page-layout: full
+    code-line-numbers: false
+    code-fold: false
+    code-tools: true
 
 
 
