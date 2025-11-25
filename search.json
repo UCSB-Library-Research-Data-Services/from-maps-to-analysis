@@ -67,21 +67,14 @@
     "href": "01_make_map.html#concepts-of-a-map",
     "title": "I want to make a map",
     "section": "Concepts of a map",
-    "text": "Concepts of a map\n\nBasemap (background)\nLayers (you add on top of the basemap)\nSymbology & legend\n\nOptional for online maps?\n\nScale\nOrientation (North oriented is the default)\nGrid - Lat/Long"
+    "text": "Concepts of a map\n\nBasemap (background)\nLayers (you add on top of the basemap)\nSymbology & legend"
   },
   {
-    "objectID": "01_make_map.html#i-want-to-draw-a-shape-on-a-map",
-    "href": "01_make_map.html#i-want-to-draw-a-shape-on-a-map",
+    "objectID": "01_make_map.html#what-are-feature-layers",
+    "href": "01_make_map.html#what-are-feature-layers",
     "title": "I want to make a map",
-    "section": "I want to draw a shape on a map",
-    "text": "I want to draw a shape on a map\n\nChoose a basemap\n\nTopography\nSatellite\n\n\n\nDraw a polygon around campus\n\nMake a new map\nAdd a sketch\nMake sure to choose polygon\nSave your map (please use our naming convention!)\n\n\n\n\nhow - too"
-  },
-  {
-    "objectID": "01_make_map.html#but-is-a-shape-data",
-    "href": "01_make_map.html#but-is-a-shape-data",
-    "title": "I want to make a map",
-    "section": "But is a shape data?",
-    "text": "But is a shape data?\n\nAdd an observation to our cognitive borders of campus map\nSee previous observations on the results map"
+    "section": "What are feature layers?",
+    "text": "What are feature layers?"
   },
   {
     "objectID": "01_make_map.html#features-have-attributes",
@@ -95,7 +88,21 @@
     "href": "01_make_map.html#play-with-symbology-transparency",
     "title": "I want to make a map",
     "section": "Play with symbology & transparency",
-    "text": "Play with symbology & transparency\nBased on data street_pavement\n\nMake a new map\nChoose a basemap\nAdd layer from Contents –&gt; Groups –&gt; From Maps to Analysis\nCreate filter to show only bikepaths\nJoin 2 filters together to OR sidewalks\nSave your work!"
+    "text": "Play with symbology & transparency\nBased on data street_pavement\n\nMake a new map\nChoose a basemap\nAdd layer from Contents –&gt; Groups –&gt; From Maps to Analysis\nCreate filter to show only bikepaths\nJoin 2 filters together to OR sidewalks\nSave your work!\n\nOptional for online maps?\n\nScale\nOrientation (North oriented is the default)\nGrid - Lat/Long"
+  },
+  {
+    "objectID": "01_make_map.html#i-want-to-draw-a-shape-on-a-map",
+    "href": "01_make_map.html#i-want-to-draw-a-shape-on-a-map",
+    "title": "I want to make a map",
+    "section": "I want to draw a shape on a map",
+    "text": "I want to draw a shape on a map\n\nChoose a basemap\n\nTopography\nSatellite\n\n\n\nhow - too"
+  },
+  {
+    "objectID": "01_make_map.html#but-is-a-shape-data",
+    "href": "01_make_map.html#but-is-a-shape-data",
+    "title": "I want to make a map",
+    "section": "But is a shape data?",
+    "text": "But is a shape data?\n\nAdd an observation to our cognitive borders of campus map\nSee previous observations on the results map"
   },
   {
     "objectID": "01_make_map.html#sharing-your-map",
