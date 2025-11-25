@@ -18,46 +18,17 @@ Click "Continue" and enter your UCSB NetID credentials. You should have a simila
 
 We will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later 
 
+
+
 ## Concepts of a map
 
 - Basemap (background)
 - Layers (you add on top of the basemap)
 - Symbology & legend
 
-Optional for online maps?
 
-- Scale
-- Orientation (North oriented is the default)
-- Grid - Lat/Long
 
-## I want to draw a shape on a map
-
-### Choose a basemap
-
-- Topography
-- Satellite
-
-### Draw a polygon around campus
-
--   Make a new map
-
--   Add a sketch
-
--   Make sure to choose polygon
-
--   Save your map (please use our naming convention!)
-
-![](images/sketch-options.png)
-
-### how - too
-
-## But is a shape data?
-
--   Add an observation to our [cognitive borders of campus map](https://ucsb.maps.arcgis.com/apps/instant/webeditor/index.html?appid=a5e83ae370d64d528aacb3bf27885d05)
--   See previous observations on [the results map](https://arcg.is/11Ca9n1)
-
-![](images/add_a_feature.png){fig-alt="screenshot of the add a polygon button"}
-
+## What are feature layers?
 ## Features have attributes
 
 -   a data table
@@ -74,6 +45,38 @@ Based on data `street_pavement`
 1. Create filter to show only bikepaths 
 1. Join 2 filters together to *OR* sidewalks
 1. Save your work!
+
+
+
+
+
+
+
+Optional for online maps?
+
+- Scale
+- Orientation (North oriented is the default)
+- Grid - Lat/Long
+
+## I want to draw a shape on a map
+
+### Choose a basemap
+
+- Topography
+- Satellite
+
+
+
+### how - too
+
+## But is a shape data?
+
+-   Add an observation to our [cognitive borders of campus map](https://ucsb.maps.arcgis.com/apps/instant/webeditor/index.html?appid=a5e83ae370d64d528aacb3bf27885d05)
+-   See previous observations on [the results map](https://arcg.is/11Ca9n1)
+
+![](images/add_a_feature.png){fig-alt="screenshot of the add a polygon button"}
+
+
 
 ## Sharing your map
 
