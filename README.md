@@ -1,4 +1,5 @@
 ## From Map to Analysis
+<!- kristi added this here ->
 
 The Goal of this workshop series is to provide a gentle introduction to creating maps and conducting geosptial analysis
 without the need to have programming skills.
