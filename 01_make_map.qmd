@@ -23,6 +23,8 @@ The main organization page lists the campus administrative contacts and open dat
 
 Along the top of the page, is the main tool bar. 
 
+![](images/main-menu-bar.png)
+
 - Home will take you to the main landing page when you first sign in.
 - The Gallery lists content created by UCSB users which is viewable to everyone (with permissions)
 - Groups are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects.  
