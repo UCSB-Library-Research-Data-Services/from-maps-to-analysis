@@ -46,21 +46,21 @@
     "href": "01_make_map.html",
     "title": "I want to make a map",
     "section": "",
-    "text": "https://www.arcgis.com/index.html\nSingle-sign on with your UCSB NetID to access the licensed features\n\nClick “Continue” and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using ArcGIS Online under the UCSB license."
+    "text": "https://www.arcgis.com/index.html\nSingle-sign on with your UCSB NetID to access the licensed features. You may need to enter the url “ucsb” into the space. It is entered below.\nDo not use the ArcGIS Login. This is for users who do NOT have a UCSB Net ID.\n\nClick “Continue” and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone."
   },
   {
     "objectID": "01_make_map.html#log-on-to-arcgis",
     "href": "01_make_map.html#log-on-to-arcgis",
     "title": "I want to make a map",
     "section": "",
-    "text": "https://www.arcgis.com/index.html\nSingle-sign on with your UCSB NetID to access the licensed features\n\nClick “Continue” and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using ArcGIS Online under the UCSB license."
+    "text": "https://www.arcgis.com/index.html\nSingle-sign on with your UCSB NetID to access the licensed features. You may need to enter the url “ucsb” into the space. It is entered below.\nDo not use the ArcGIS Login. This is for users who do NOT have a UCSB Net ID.\n\nClick “Continue” and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone."
   },
   {
     "objectID": "01_make_map.html#introduction-to-arcgis-online",
     "href": "01_make_map.html#introduction-to-arcgis-online",
     "title": "I want to make a map",
     "section": "Introduction to ArcGIS online",
-    "text": "Introduction to ArcGIS online\nWe will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later"
+    "text": "Introduction to ArcGIS online\nWe will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later\nThe main organization page lists the campus administrative contacts and open data groups available on campus. You can also see the latest content published by users on your campus.\nAlong the top of the page, is the main tool bar.\n\n\nHome will take you to the main landing page when you first sign in.\nThe Gallery lists content created by UCSB users which is viewable to everyone (with permissions)\nGroups are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects.\n\nContent is where your created or uploaded content is listed. You can make folders in here to organize your layers and features.\nNotebooks is ESRI’s version of a Jupyterhub-like environment. You can use ArcPy here.\nOrganization will take you back to our main page. This is not the same as Home.\nScene, or Scene Viewer is where you can create 3D GIS scenes, such as neighborhood models and digital twins.\nMap, or Map Viewer is where you can create 2D maps. We will be focusing on using the Map Viewer for this workshop.\n\nNext to your campus profile, is a meatball menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer."
   },
   {
     "objectID": "01_make_map.html#concepts-of-a-map",
@@ -102,7 +102,14 @@
     "href": "01_make_map.html#but-is-a-shape-data",
     "title": "I want to make a map",
     "section": "But is a shape data?",
-    "text": "But is a shape data?\n\nAdd an observation to our cognitive borders of campus map\nSee previous observations on the results map"
+    "text": "But is a shape data?\n\nAdd an observation to our cognitive borders of campus map\nSee previous observations on the results map\n\n\n\na data table\ncolumns have fixed data types (a lot of them)\nfor example bikes"
+  },
+  {
+    "objectID": "01_make_map.html#play-with-symbology-transparency-1",
+    "href": "01_make_map.html#play-with-symbology-transparency-1",
+    "title": "I want to make a map",
+    "section": "Play with symbology & transparency",
+    "text": "Play with symbology & transparency\nBased on data street_pavement\n\nMake a new map\nChoose a basemap\nAdd layer from Contents –&gt; Groups –&gt; From Maps to Analysis\nCreate filter to show only bikepaths\nJoin 2 filters together to OR sidewalks\nSave your work!"
   },
   {
     "objectID": "01_make_map.html#sharing-your-map",
