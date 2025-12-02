@@ -41,11 +41,39 @@ Next to your campus profile, is a meatball menu with a drop-down menu of the Esr
 
 
 
+
+
 ## Concepts of a map
 
 -   Basemap (background)
 -   Layers (you add on top of the basemap)
 -   Symbology & legend
+
+
+
+## What are feature layers?
+## Features have attributes
+
+-   a data table
+-   columns have fixed data types (a lot of them)
+-   for example bikes
+
+## Play with symbology & transparency
+
+Based on data `street_pavement`
+
+1. Make a new map
+1. Choose a basemap
+1. Add layer from Contents --> Groups --> From Maps to Analysis
+1. Create filter to show only bikepaths 
+1. Join 2 filters together to *OR* sidewalks
+1. Save your work!
+
+
+
+
+
+
 
 Optional for online maps?
 
@@ -60,17 +88,7 @@ Optional for online maps?
 -   Topography
 -   Satellite
 
-### Draw a polygon around campus
 
--   Make a new map
-
--   Add a sketch
-
--   Make sure to choose polygon
-
--   Save your map (please use our naming convention!)
-
-![](images/sketch-options.png)
 
 ### how - too
 
@@ -81,7 +99,6 @@ Optional for online maps?
 
 ![](images/add_a_feature.png){fig-alt="screenshot of the add a polygon button"}
 
-## Features have attributes
 
 -   a data table
 -   columns have fixed data types (a lot of them)
