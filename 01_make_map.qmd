@@ -6,25 +6,48 @@ title: "I want to make a map"
 
 <https://www.arcgis.com/index.html>
 
-Single-sign on with your UCSB NetID to access the licensed features
+Single-sign on with your UCSB NetID to access the licensed features. You may need to enter the url "ucsb" into the space. It is entered below.\
+Do not use the ArcGIS Login. This is for users who do NOT have a UCSB Net ID.
 
 ![](images/arcgis-login.png)
 
-Click "Continue" and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using ArcGIS Online under the UCSB license.
+Click "Continue" and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.
 
 ![](images/arcgis-landingpage.png)
 
 ## Introduction to ArcGIS online
 
-We will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later 
+We will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later
+
+The main organization page lists the campus administrative contacts and open data groups available on campus. You can also see the latest content published by users on your campus.
+
+Along the top of the page, is the main tool bar. 
+
+![](images/main-menu-bar.png)
+
+- Home will take you to the main landing page when you first sign in.
+- The Gallery lists content created by UCSB users which is viewable to everyone (with permissions)
+- Groups are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects.  
+- Content is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. 
+- Notebooks is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. 
+- Organization will take you back to our main page. This is not the same as Home. 
+- Scene, or Scene Viewer is where you can create 3D GIS scenes, such as neighborhood models and digital twins. 
+- Map, or Map Viewer is where you can create 2D maps. We will be focusing on using the Map Viewer for this workshop.
+
+
+Next to your campus profile, is a meatball menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer. 
+
+![](images/AGO-meatball-menu.png)
+
+
 
 
 
 ## Concepts of a map
 
-- Basemap (background)
-- Layers (you add on top of the basemap)
-- Symbology & legend
+-   Basemap (background)
+-   Layers (you add on top of the basemap)
+-   Symbology & legend
 
 
 
@@ -54,16 +77,16 @@ Based on data `street_pavement`
 
 Optional for online maps?
 
-- Scale
-- Orientation (North oriented is the default)
-- Grid - Lat/Long
+-   Scale
+-   Orientation (North oriented is the default)
+-   Grid - Lat/Long
 
 ## I want to draw a shape on a map
 
 ### Choose a basemap
 
-- Topography
-- Satellite
+-   Topography
+-   Satellite
 
 
 
@@ -77,23 +100,36 @@ Optional for online maps?
 ![](images/add_a_feature.png){fig-alt="screenshot of the add a polygon button"}
 
 
+-   a data table
+-   columns have fixed data types (a lot of them)
+-   for example bikes
+
+## Play with symbology & transparency
+
+Based on data `street_pavement`
+
+1.  Make a new map
+2.  Choose a basemap
+3.  Add layer from Contents --\> Groups --\> From Maps to Analysis
+4.  Create filter to show only bikepaths
+5.  Join 2 filters together to *OR* sidewalks
+6.  Save your work!
 
 ## Sharing your map
 
-- Online
-- Exporting to other formats (image, PDF)
-
+-   Online
+-   Exporting to other formats (image, PDF)
 
 ## More tools
 
-non-Esri tools: 
+non-Esri tools:
 
-- Google Maps and Earth (maybe short demo of this?) 
+-   Google Maps and Earth (maybe short demo of this?)
 
-- MapBox 
+-   MapBox
 
-- OpenStreetMaps 
+-   OpenStreetMaps
 
-- CalTopo 
+-   CalTopo
 
-- R ← but that’s programming
+-   R ← but that’s programming
