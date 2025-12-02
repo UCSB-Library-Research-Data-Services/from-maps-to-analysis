@@ -10,7 +10,7 @@ Single-sign on with your UCSB NetID to access the licensed features
 
 ![](images/arcgis-login.png)
 
-Click "Continue" and enter your UCSB NetID credentials. You should have a similar landingpage indicating that you are using the ArcGIS online under the UCSB license.
+Click "Continue" and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using ArcGIS Online under the UCSB license.
 
 ![](images/arcgis-landingpage.png)
 

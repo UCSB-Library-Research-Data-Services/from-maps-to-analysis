@@ -1,5 +1,5 @@
 ---
-title: "I need GIS"
+title: "I think I need GIS"
 ---
 
 Mimic Data Carpentry with local campus data
