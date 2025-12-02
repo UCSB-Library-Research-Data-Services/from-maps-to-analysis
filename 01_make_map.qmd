@@ -2,6 +2,10 @@
 title: "I want to make a map"
 ---
 
+## Introduction to ArcGIS online
+
+A brief tour of the interface and the different apps. We can keep how to add a layer for later 
+
 ## Log on to ArcGIS
 
 <https://www.arcgis.com/index.html>
@@ -14,11 +18,11 @@ Click "Continue" and enter your UCSB NetID credentials. You should have a simila
 
 ![](images/arcgis-landingpage.png)
 
-## Introduction to ArcGIS online
 
-We will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later 
+## The Map Viewer
+- 
 
-
+![](images/map_viewer.png)
 
 ## Concepts of a map
 
