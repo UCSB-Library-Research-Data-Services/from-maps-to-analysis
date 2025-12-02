@@ -6,17 +6,24 @@ title: "I want to make a map"
 
 <https://www.arcgis.com/index.html>
 
-Single-sign on with your UCSB NetID to access the licensed features. You may need to enter the url "ucsb" into the space. It is entered below.
+Single-sign on with your UCSB NetID to access the licensed features. You may need to enter the url "ucsb" into the space. It is entered below.\
+Do not use the ArcGIS Login. This is for users who do NOT have a UCSB Net ID.
 
 ![](images/arcgis-login.png)
 
-Click "Continue" and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license.
+Click "Continue" and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.
 
 ![](images/arcgis-landingpage.png)
 
 ## Introduction to ArcGIS online
 
 We will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later
+
+The main organization page lists the campus administrative contacts and open data groups available on campus. You can also see the latest content published by users on your campus.
+
+Next to your campus profile, is a meatball menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online.
+
+![](images/AGO-meatball-menu.png)
 
 ## Concepts of a map
 
