@@ -11,49 +11,49 @@
     "href": "index.html",
     "title": "From Maps to Analysis",
     "section": "",
-    "text": "The Goal of this workshop series is to provide a gentle introduction to creating maps and conducting geosptial analysis without the need to have programming skills.\nWe have organized this curriculum in three workshops:"
+    "text": "The Goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis without the need to have programming skills.\nWe have organized this curriculum in three workshops:"
   },
   {
-    "objectID": "index.html#workshop-1---from-map-to-analysis",
-    "href": "index.html#workshop-1---from-map-to-analysis",
+    "objectID": "index.html#from-map-to-analysis",
+    "href": "index.html#from-map-to-analysis",
     "title": "From Maps to Analysis",
     "section": "",
-    "text": "The Goal of this workshop series is to provide a gentle introduction to creating maps and conducting geosptial analysis without the need to have programming skills.\nWe have organized this curriculum in three workshops:"
+    "text": "The Goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis without the need to have programming skills.\nWe have organized this curriculum in three workshops:"
   },
   {
-    "objectID": "index.html#workshop-2---i-want-to-make-a-map",
-    "href": "index.html#workshop-2---i-want-to-make-a-map",
+    "objectID": "index.html#workshop-1---i-want-to-make-a-map",
+    "href": "index.html#workshop-1---i-want-to-make-a-map",
     "title": "From Maps to Analysis",
-    "section": "Workshop 2 - I want to make a map",
-    "text": "Workshop 2 - I want to make a map\n2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS online to learn how to:\n\nadd basemap\ndraw line an polygons on a map\nadd an existing layer to a map\nchange symbology\n\nEnds with data vs. maps and Sketch Layer vs. Feature Layer (in ArcGIS)"
+    "section": "Workshop 1 - I want to make a map",
+    "text": "Workshop 1 - I want to make a map\n2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS online to learn how to:\n\nadd basemap\nadd an existing layer to a map\nchange symbology\ndraw lines and polygons on a map\n\nEnds with data vs. maps aka Sketch Layer vs. Feature Layer"
   },
   {
-    "objectID": "index.html#workshop-3---i-think-i-need-gis",
-    "href": "index.html#workshop-3---i-think-i-need-gis",
+    "objectID": "index.html#workshop-2---i-think-i-need-gis",
+    "href": "index.html#workshop-2---i-think-i-need-gis",
     "title": "From Maps to Analysis",
-    "section": "Workshop 3 - I think I need GIS",
-    "text": "Workshop 3 - I think I need GIS\n2-3 hours workshop using ArcGIS online to conduct basic GIS data manipulations.\n\ndata import & export\nprojections\nraster and vector data\n\nEnds with an analysis, maybe zonal statistics?"
+    "section": "Workshop 2 - I think I need GIS",
+    "text": "Workshop 2 - I think I need GIS\n2-3 hours workshop using ArcGIS online to conduct basic GIS data manipulations.\n\ndata import & export\nprojections\nraster and vector data\n\nEnds with an analysis, maybe zonal statistics?"
   },
   {
-    "objectID": "index.html#geospatial-analysis",
-    "href": "index.html#geospatial-analysis",
+    "objectID": "index.html#workshop-3---geospatial-analysis",
+    "href": "index.html#workshop-3---geospatial-analysis",
     "title": "From Maps to Analysis",
-    "section": "Geospatial Analysis",
-    "text": "Geospatial Analysis\n4-hour workshop. Carpentry-like in ArcGIS Pro or potentially QGIS\nData analysis centric:\n\nbuffering\ninterpolation\nzonal statistics\nraster calculation"
+    "section": "Workshop 3 - Geospatial Analysis",
+    "text": "Workshop 3 - Geospatial Analysis\n4-hour workshop. Carpentry-like in ArcGIS Pro or potentially QGIS\nData analysis centric:\n\nbuffering\ninterpolation\nzonal statistics\nraster calculation"
   },
   {
     "objectID": "01_make_map.html",
     "href": "01_make_map.html",
     "title": "I want to make a map",
     "section": "",
-    "text": "https://www.arcgis.com/index.html\nSingle-sign on with your UCSB NetID to access the licensed features\n\nClick “Continue” and enter your UCSB NetID credentials. You should have a similar landingpage indicating that you are using the ArcGIS online under the UCSB license."
+    "text": "https://www.arcgis.com/index.html\nSingle-sign on with your UCSB NetID to access the licensed features\n\nClick “Continue” and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using ArcGIS Online under the UCSB license."
   },
   {
     "objectID": "01_make_map.html#log-on-to-arcgis",
     "href": "01_make_map.html#log-on-to-arcgis",
     "title": "I want to make a map",
     "section": "",
-    "text": "https://www.arcgis.com/index.html\nSingle-sign on with your UCSB NetID to access the licensed features\n\nClick “Continue” and enter your UCSB NetID credentials. You should have a similar landingpage indicating that you are using the ArcGIS online under the UCSB license."
+    "text": "https://www.arcgis.com/index.html\nSingle-sign on with your UCSB NetID to access the licensed features\n\nClick “Continue” and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using ArcGIS Online under the UCSB license."
   },
   {
     "objectID": "01_make_map.html#introduction-to-arcgis-online",
@@ -121,7 +121,7 @@
   {
     "objectID": "02_intro_gis.html",
     "href": "02_intro_gis.html",
-    "title": "I need GIS",
+    "title": "I think I need GIS",
     "section": "",
     "text": "Mimic Data Carpentry with local campus data\n\nFlush out what we want the end product to look like\n\nAnnotation vs geospatial data\nTypes of data:\n\nVector: Difference between point, line, and polygon\nRaster: an array of values that can be used\n\nSingle band\nMultibands\n\n\nProjections? Reprojection (raster, polygons)\n\nImport point data from a csv\nZonal statistics (simple)\n\nAdd raster with another projection\n\nNCOS? Bird observations (might becsv)\nTopographic map to compute solar panels location (maybe workshop 3?)\nFacilities data (buildings)\nDEM\nBike paths\nTrees\n\nPotential simple analysis as end product\n\nZonal statistics\nCount number of points within a polygon\nHeatmap from points\nBuffering\n\nExporting data from GIS\n\nShapefile\ngeodatabase\n\nWhat tool?\n\nArcGIS online\nArcGIS pro\nQGIS"
   }
