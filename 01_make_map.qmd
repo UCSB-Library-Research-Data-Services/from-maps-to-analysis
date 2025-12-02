@@ -6,36 +6,36 @@ title: "I want to make a map"
 
 <https://www.arcgis.com/index.html>
 
-Single-sign on with your UCSB NetID to access the licensed features
+Single-sign on with your UCSB NetID to access the licensed features. You may need to enter the url "ucsb" into the space. It is entered below.
 
 ![](images/arcgis-login.png)
 
-Click "Continue" and enter your UCSB NetID credentials. You should have a similar landingpage indicating that you are using the ArcGIS online under the UCSB license.
+Click "Continue" and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license.
 
 ![](images/arcgis-landingpage.png)
 
 ## Introduction to ArcGIS online
 
-We will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later 
+We will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later
 
 ## Concepts of a map
 
-- Basemap (background)
-- Layers (you add on top of the basemap)
-- Symbology & legend
+-   Basemap (background)
+-   Layers (you add on top of the basemap)
+-   Symbology & legend
 
 Optional for online maps?
 
-- Scale
-- Orientation (North oriented is the default)
-- Grid - Lat/Long
+-   Scale
+-   Orientation (North oriented is the default)
+-   Grid - Lat/Long
 
 ## I want to draw a shape on a map
 
 ### Choose a basemap
 
-- Topography
-- Satellite
+-   Topography
+-   Satellite
 
 ### Draw a polygon around campus
 
@@ -68,29 +68,28 @@ Optional for online maps?
 
 Based on data `street_pavement`
 
-1. Make a new map
-1. Choose a basemap
-1. Add layer from Contents --> Groups --> From Maps to Analysis
-1. Create filter to show only bikepaths 
-1. Join 2 filters together to *OR* sidewalks
-1. Save your work!
+1.  Make a new map
+2.  Choose a basemap
+3.  Add layer from Contents --\> Groups --\> From Maps to Analysis
+4.  Create filter to show only bikepaths
+5.  Join 2 filters together to *OR* sidewalks
+6.  Save your work!
 
 ## Sharing your map
 
-- Online
-- Exporting to other formats (image, PDF)
-
+-   Online
+-   Exporting to other formats (image, PDF)
 
 ## More tools
 
-non-Esri tools: 
+non-Esri tools:
 
-- Google Maps and Earth (maybe short demo of this?) 
+-   Google Maps and Earth (maybe short demo of this?)
 
-- MapBox 
+-   MapBox
 
-- OpenStreetMaps 
+-   OpenStreetMaps
 
-- CalTopo 
+-   CalTopo
 
-- R ← but that’s programming
+-   R ← but that’s programming
