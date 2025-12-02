@@ -2,6 +2,10 @@
 title: "I want to make a map"
 ---
 
+## Introduction to ArcGIS online
+
+A brief tour of the interface and the different apps. We can keep how to add a layer for later 
+
 ## Log on to ArcGIS
 
 <https://www.arcgis.com/index.html>
@@ -15,6 +19,8 @@ Click "Continue" and enter your UCSB NetID credentials. You should have a simila
 
 ![](images/arcgis-landingpage.png)
 
+<<<<<<< HEAD
+=======
 ## Introduction to ArcGIS online
 
 We will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later
@@ -41,7 +47,10 @@ Next to your campus profile, is a meatball menu with a drop-down menu of the Esr
 
 
 
+## The Map Viewer
+- 
 
+![](images/map_viewer.png)
 
 ## Concepts of a map
 
@@ -94,8 +103,6 @@ Optional for online maps?
 
 ## But is a shape data?
 
--   Add an observation to our [cognitive borders of campus map](https://ucsb.maps.arcgis.com/apps/instant/webeditor/index.html?appid=a5e83ae370d64d528aacb3bf27885d05)
--   See previous observations on [the results map](https://arcg.is/11Ca9n1)
 
 ![](images/add_a_feature.png){fig-alt="screenshot of the add a polygon button"}
 
