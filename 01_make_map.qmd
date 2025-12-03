@@ -61,16 +61,25 @@ In the Map Viewer there is a menu bar in the left column. This is where you can 
 
 The first item that is already added to the map is the foundational base map. This map cannot be altered and is static. You can move its location, but its features such as roads and buildings (if any) cannot be changed. 
 
-You can change the basemap in the Map Viewer. Typically, your basemap should be something that is authoritative. You can change it by clicking "Add layer" 
+You can change the basemap in the Map Viewer. Go to "Basemap" in the menu column. These maps have been preselected as appropriate foundational basemaps. 
+
+![](images/usa-topomaps.png)
+
+You can also manually select a feature layer to use as your basemap. 
 
 It will initially show you "your content" but you can drop down and choose items from other places such as a group or from ucsb. Since you want an authoritative layer to be the basemap, you will want to choose something from the Living Atlas. 
 
 ![](images/adding-basemap.png)
 
-Layers in the Living Atlas have been vetted by ESRI and are maintained by organizations. Typically, government entitities create and publish items here, but other organizations, such as USGS or NOAA also create layers here too. 
+Layers in the Living Atlas have been vetted by ESRI and are maintained by organizations. Typically, government entities create and publish items here,such as USGS or NOAA.. 
+
+The bottom example is the National Land Cover Model created and maintained by USGS.
 
 ![](images/USGS-NLCD-basemap-example.png)
 This will change the foundational base layer to your selection. Make sure you choose a basemap that is easy to follow and is a good reference. 
+Searching for the term "basemap" will also query appropriate maps that can be used for this purpose. 
+
+
 
 ## What are feature layers?
 ## Features have attributes
