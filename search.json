@@ -39,7 +39,7 @@
     "href": "index.html#workshop-3---geospatial-analysis",
     "title": "From Maps to Analysis",
     "section": "Workshop 3 - Geospatial Analysis",
-    "text": "Workshop 3 - Geospatial Analysis\n4-hour workshop. Carpentry-like in ArcGIS Pro or potentially QGIS\nData analysis centric:\n\nbuffering\ninterpolation\nzonal statistics\nraster calculation"
+    "text": "Workshop 3 - Geospatial Analysis\n4-hour workshop. Carpentry-like in ArcGIS Pro\nData analysis centric:\n\nbuffering\ninterpolation\nzonal statistics\nraster calculation"
   },
   {
     "objectID": "01_make_map.html",
