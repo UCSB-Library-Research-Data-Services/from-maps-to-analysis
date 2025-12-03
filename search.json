@@ -73,15 +73,15 @@
     "objectID": "01_make_map.html#the-map-viewer",
     "href": "01_make_map.html#the-map-viewer",
     "title": "I want to make a map",
-    "section": "## The Map Viewer",
-    "text": "## The Map Viewer"
+    "section": "The Map Viewer",
+    "text": "The Map Viewer\nNavigate to “Map” on your top menu bar and open a new map."
   },
   {
     "objectID": "01_make_map.html#concepts-of-a-map",
     "href": "01_make_map.html#concepts-of-a-map",
     "title": "I want to make a map",
     "section": "Concepts of a map",
-    "text": "Concepts of a map\n\nBasemap (background)\nLayers (you add on top of the basemap)\nSymbology & legend"
+    "text": "Concepts of a map\nIn the Map Viewer there is a menu bar in the left column. This is where you can add items to your map.\n\nBasemap (background)\nLayers (you add on top of the basemap)\nSymbology & legend"
   },
   {
     "objectID": "01_make_map.html#what-are-feature-layers",
