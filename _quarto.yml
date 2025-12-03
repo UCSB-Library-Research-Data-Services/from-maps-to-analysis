@@ -13,9 +13,9 @@ website:
         href: https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis
     left:
       - href: 01_make_map.qmd
-        text: "Make a map"
+        text: "I want to make a map"
       - href: 02_intro_gis.qmd
-        text: "Intro to GIS"
+        text: "I think I need GIS"
       - href: 03_geospatial_analysis.qmd
         text: "Geospatial Analysis"
 format:

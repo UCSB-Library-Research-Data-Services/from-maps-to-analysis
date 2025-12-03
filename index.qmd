@@ -36,7 +36,7 @@ Ends with an analysis, maybe zonal statistics?
 
 ## Workshop 3 - Geospatial Analysis
 
-4-hour workshop. Carpentry-like in ArcGIS Pro or potentially QGIS
+4-hour workshop. Carpentry-like in ArcGIS Pro
 
 Data analysis centric:
 
