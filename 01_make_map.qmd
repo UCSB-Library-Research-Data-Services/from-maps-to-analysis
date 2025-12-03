@@ -19,8 +19,7 @@ Click "Continue" and enter your UCSB NetID credentials. You should have a simila
 
 ![](images/arcgis-landingpage.png)
 
-<<<<<<< HEAD
-=======
+
 ## Introduction to ArcGIS online
 
 We will need to provide a tour of the interface and the different apps. We can keep how to add a layer for later
@@ -46,13 +45,15 @@ Next to your campus profile, is a meatball menu with a drop-down menu of the Esr
 ![](images/AGO-meatball-menu.png)
 
 
-
 ## The Map Viewer
-- 
+Navigate to "Map" on your top menu bar and open a new map.
+
 
 ![](images/map_viewer.png)
 
 ## Concepts of a map
+
+In the Map Viewer there is a menu bar in the left column. This is where you can add items to your map.
 
 -   Basemap (background)
 -   Layers (you add on top of the basemap)
