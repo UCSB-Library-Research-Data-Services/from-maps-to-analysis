@@ -4,7 +4,7 @@ title: "I want to make a map"
 
 The goal of this lesson is to demonstrate how to make a simple map, suitable for inclusion in a publication, using ArcGIS Online.  We will follow the typical workflow of starting with a base map, adding feature layers from external sources, drawing annotations on top of the map, and finally, preparing the map for presentation and exporting it.  As an exercise, you will be creating a map that reflects your personal experience biking on the UCSB campus.
 
-As we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool.  In fact, in many cases GIS is overkill, both because most of the features GIS tools provide will not be used and because the GIS interface can be cumbersome.  But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that opens up and provides an introduction to the world of spatial analysis.
+As we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool.  In fact, in many cases GIS is overkill, both because most of the features GIS tools provide will not be used and because the GIS interface can be cumbersome.  But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that in turn opens up and provides an introduction to the world of spatial analysis.
 
 ## Introduction to ArcGIS Online
 
