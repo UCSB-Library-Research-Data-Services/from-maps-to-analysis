@@ -46,14 +46,14 @@
     "href": "01_make_map.html",
     "title": "I want to make a map",
     "section": "",
-    "text": "A brief tour of the interface and the different apps. We can keep how to add a layer for later"
+    "text": "The goal of this lesson is to go through an exercise of making a simple map, suitable for inclusion in a publication, using ArcGIS Online. We will follow the a typical workflow of starting with a base map, adding feature layers from externals sources, providing our own annotations on top of the map, and finally, preparing the map for presentation and exporting it.\nAs we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool. In fact, in many cases GIS is an overkill. But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that opens up the world of spatial analysis."
   },
   {
     "objectID": "01_make_map.html#introduction-to-arcgis-online",
     "href": "01_make_map.html#introduction-to-arcgis-online",
     "title": "I want to make a map",
-    "section": "",
-    "text": "A brief tour of the interface and the different apps. We can keep how to add a layer for later"
+    "section": "Introduction to ArcGIS online",
+    "text": "Introduction to ArcGIS online\nA brief tour of the interface and the different apps. We can keep how to add a layer for later"
   },
   {
     "objectID": "01_make_map.html#log-on-to-arcgis",
@@ -137,7 +137,7 @@
     "href": "01_make_map.html#more-tools",
     "title": "I want to make a map",
     "section": "More tools",
-    "text": "More tools\nnon-Esri tools:\n\nGoogle Maps and Earth (maybe short demo of this?)\nMapBox\nOpenStreetMaps\nCalTopo\nR ← but that’s programming"
+    "text": "More tools\nThere are many ways of making a simple map.\n\nUse any drawing tool (even PowerPoint), create a base layer by screen grabbing any map source displayed in a web browser (Google Maps or other), and then drawing on top of that. By keeping track of scale, it is possible to place figures at accurate locations.\nGoogle Earth\nMapBox\nOpenStreetMaps\nCalTopo"
   },
   {
     "objectID": "02_intro_gis.html",
