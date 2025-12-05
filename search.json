@@ -60,7 +60,7 @@
     "href": "01_make_map.html#step-1-add-layers-to-a-base-map",
     "title": "I want to make a map",
     "section": "Step 1: Add layers to a base map",
-    "text": "Step 1: Add layers to a base map\nWith that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map that reflects some of bike infrastructure on campus, and then to annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.\n\nCreate a new map\nBase layer\nImport vector layer (bike paths)\nImport polygon layer (buildings)\nSave your work!"
+    "text": "Step 1: Add layers to a base map\nWith that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus, and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.\n\nCreate a new map\nBase layer\nImport vector layer (bike paths)\nImport polygon layer (buildings)\nSave your work!"
   },
   {
     "objectID": "01_make_map.html#step-2-customize-symbology-transparency",
@@ -74,7 +74,7 @@
     "href": "01_make_map.html#step-3-annotate-the-map",
     "title": "I want to make a map",
     "section": "Step 3: Annotate the map",
-    "text": "Step 3: Annotate the map\nIn addition to bringing external sources of information into a map (whether in the form of a base map or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map.\n\nDraw points where you were in a (near-)accident on the bike path, either as bicyclist of pedestrian.\nDraw a line where you think there should be a bike path but isn’t.\nDraw a circle where you think there should be a bike parking lot but isn’t."
+    "text": "Step 3: Annotate the map\nIn addition to bringing external sources of information into a map (whether in the form of a base map or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a “sketch layer.”\n\nDraw points where you were in a (near-)accident on a bike path, either as bicyclist of pedestrian.\nDraw a line where you think there should be a bike path but isn’t.\nDraw a circle where you think there should be a bike parking lot but isn’t."
   },
   {
     "objectID": "01_make_map.html#step-4-prepare-the-map-for-publication",
@@ -95,7 +95,7 @@
     "href": "01_make_map.html#other-appoaches",
     "title": "I want to make a map",
     "section": "Other appoaches",
-    "text": "Other appoaches\nThere are many ways of making a simple map. Here are some alternative approaches.\n\nCreate a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps). Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that. It is possible to capture the base layer at higher-than-screen resolution by screen grabbing it in pieces and merging them using a tool like Adobe Photoshop. And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.\nGoogle Earth\nMapBox\nOpenStreetMaps\nCalTopo comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription."
+    "text": "Other appoaches\nThere are many ways of making a simple map. Here are some alternative approaches.\n\nCreate a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps). Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that. It is possible to capture the base layer at higher-than-screen resolution by zooming in, panning and screen grabbing it in pieces, and merging the pieces using a tool like Adobe Photoshop. And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.\nGoogle Earth\nMapBox\nOpenStreetMaps\nCalTopo comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription."
   },
   {
     "objectID": "02_intro_gis.html",
