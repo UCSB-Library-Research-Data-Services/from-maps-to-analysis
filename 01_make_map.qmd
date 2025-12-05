@@ -98,7 +98,7 @@ When you add an item to your map, it will show up under your Layers. When you wa
 
 ## Step 1: Add layers to a base map
 
-With that introduction, you now have the opportunity to start creating your own map.  The goal here is to create a map that reflects some of bike infrastructure on campus, and then to annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
+With that introduction, you now have the opportunity to start creating your own map.  The goal here is to create a map of the bike infrastructure on campus, and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
 
 - Create a new map
 - Base layer
@@ -116,9 +116,9 @@ Based on data `street_pavement`
 
 ## Step 3: Annotate the map
 
-In addition to bringing external sources of information into a map (whether in the form of a base map or additional feature layers), it is common to want to add new information.  In many cases it is better to think of the new information as data, and to store it in its own feature layer.  We will be describing this approach in the next workshop.  For our purposes here, though, we will take the more straightforward approach of simply drawing on the map.
+In addition to bringing external sources of information into a map (whether in the form of a base map or additional feature layers), it is common to want to add new information.  In many cases it is better to think of the new information as data, and to store it in its own feature layer.  We will be describing this approach in the next workshop.  For our purposes here, though, we will take the more straightforward approach of simply drawing on the map.  The hand-drawn features will appear in what ArcGIS Online calls a "sketch layer."
 
-- Draw points where you were in a (near-)accident on the bike path, either as bicyclist of pedestrian.
+- Draw points where you were in a (near-)accident on a bike path, either as bicyclist of pedestrian.
 - Draw a line where you think there should be a bike path but isn't.
 - Draw a circle where you think there should be a bike parking lot but isn't.
 
@@ -139,7 +139,7 @@ Almost there!  At this point you're ready to start packaging your map for public
 
 There are many ways of making a simple map.  Here are some alternative approaches.
 
--   Create a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps).  Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that.  It is possible to capture the base layer at higher-than-screen resolution by screen grabbing it in pieces and merging them using a tool like Adobe Photoshop.  And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.
+-   Create a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps).  Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that.  It is possible to capture the base layer at higher-than-screen resolution by zooming in, panning and screen grabbing it in pieces, and merging the pieces using a tool like Adobe Photoshop.  And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.
 
 -   Google Earth
 
