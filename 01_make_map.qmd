@@ -98,11 +98,13 @@ When you add an item to your map, it will show up under your Layers. When you wa
 
 ## Step 1: Add layers to a base map
 
-With that introduction, you now have the opportunity to start creating your own map.
+With that introduction, you now have the opportunity to start creating your own map.  The goal here is to create a map that reflects some of bike infrastructure on campus, and then to annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
 
+- Create a new map
 - Base layer
 - Import vector layer (bike paths)
 - Import polygon layer (buildings)
+- Save your work!
 
 ## Step 2: Customize symbology & transparency
 
