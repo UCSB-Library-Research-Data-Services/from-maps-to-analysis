@@ -2,6 +2,10 @@
 title: "I want to make a map"
 ---
 
+The goal of this lesson is to go through an exercise of making a simple map, suitable for inclusion in a publication, using ArcGIS Online.  We will follow the a typical workflow of starting with a base map, adding feature layers from externals sources, providing our own annotations on top of the map, and finally, preparing the map for presentation and exporting it.
+
+As we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool.  In fact, in many cases GIS is an overkill.  But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that opens up the world of spatial analysis.
+
 ## Introduction to ArcGIS online
 
 A brief tour of the interface and the different apps. We can keep how to add a layer for later 
@@ -155,14 +159,14 @@ Based on data `street_pavement`
 
 ## More tools
 
-non-Esri tools:
+There are many ways of making a simple map.
 
--   Google Maps and Earth (maybe short demo of this?)
+-   Use any drawing tool (even PowerPoint), create a base layer by screen grabbing any map source displayed in a web browser (Google Maps or other), and then drawing on top of that.  By keeping track of scale, it is possible to place figures at accurate locations.
+
+-   Google Earth
 
 -   MapBox
 
 -   OpenStreetMaps
 
--   CalTopo
-
--   R ← but that’s programming
+-   [CalTopo](https://caltopo.com)
