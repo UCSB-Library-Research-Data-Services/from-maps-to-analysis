@@ -60,7 +60,7 @@
     "href": "01_make_map.html#step-1-add-layers-to-a-base-map",
     "title": "I want to make a map",
     "section": "Step 1: Add layers to a base map",
-    "text": "Step 1: Add layers to a base map\nWith that introduction, you now have the opportunity to start creating your own map.\n\nBase layer\nImport vector layer (bike paths)\nImport polygon layer (buildings)"
+    "text": "Step 1: Add layers to a base map\nWith that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map that reflects some of bike infrastructure on campus, and then to annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.\n\nCreate a new map\nBase layer\nImport vector layer (bike paths)\nImport polygon layer (buildings)\nSave your work!"
   },
   {
     "objectID": "01_make_map.html#step-2-customize-symbology-transparency",
