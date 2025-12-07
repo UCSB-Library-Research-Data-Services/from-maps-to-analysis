@@ -131,7 +131,7 @@ Almost there!  At this point you're ready to start packaging your map for public
 
 There are many ways of making a simple map.  Here are some alternative approaches.
 
--   Create a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps).  Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that.  It is possible to capture the base layer at higher-than-screen resolution by zooming in, panning and screen grabbing it in pieces, and merging the pieces using a tool like Adobe Photoshop.  And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.
+-   By screen grabbing: Create a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps).  Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that.  \[The following is probably too detailed...] It is possible to capture the base layer at higher-than-screen resolution by zooming in, panning and screen grabbing it in pieces, and merging the pieces using a tool like Adobe Photoshop.  And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.
 
 -   Google Earth
 
