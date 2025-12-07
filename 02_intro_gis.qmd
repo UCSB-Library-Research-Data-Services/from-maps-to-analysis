@@ -8,6 +8,11 @@ Mimic Data Carpentry with local campus data
 
 Annotation vs geospatial data
 
+Features have attributes
+-   a data table
+-   columns have fixed data types (a lot of them)
+-   for example bikes
+
 Types of data:
 
 -   Vector: Difference between point, line, and polygon

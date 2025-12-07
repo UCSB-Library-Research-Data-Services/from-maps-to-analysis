@@ -88,14 +88,6 @@ When you add an item to your map, it will show up under your Layers. When you wa
 
 ![](images/layer-properties.png)
 
-
-
-### Features have attributes
-
--   a data table
--   columns have fixed data types (a lot of them)
--   for example bikes
-
 ## Step 1: Add layers to a base map
 
 With that introduction, you now have the opportunity to start creating your own map.  The goal here is to create a map of the bike infrastructure on campus, and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.

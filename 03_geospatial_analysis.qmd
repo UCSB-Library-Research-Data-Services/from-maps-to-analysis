@@ -19,3 +19,5 @@ Data analysis:
 - interpolation
 - zonal statistics
 - raster calculation
+
+Heat map
