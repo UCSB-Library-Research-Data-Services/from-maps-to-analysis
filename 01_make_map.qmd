@@ -18,11 +18,11 @@ A brief tour of the interface and the different apps.
 Single-sign on with your UCSB NetID to access the licensed features. You may need to enter the url "ucsb" into the space. It is entered below.\
 Do not use the ArcGIS Login. This is for users who do NOT have a UCSB Net ID.
 
-![](images/arcgis-login.png){width=40%}
+![](images/arcgis-login.png){width=40% fig-align="center"}
 
 Click "Continue" and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.
 
-![](images/arcgis-landingpage.png)
+![](images/arcgis-landingpage.png){width="90%" fig-align="center"}
 
 
 ### Tour of the interface
@@ -31,7 +31,7 @@ The main organization page lists the campus administrative contacts and open dat
 
 Along the top of the page, is the main tool bar. 
 
-![](images/main-menu-bar.png)
+![](images/main-menu-bar.png){width="90%" fig-align="center"}
 
 - Home will take you to the main landing page when you first sign in.
 - The Gallery lists content created by UCSB users which is viewable to everyone (with permissions)
@@ -45,7 +45,7 @@ Along the top of the page, is the main tool bar.
 
 Next to your campus profile, is a meatball menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer. 
 
-![](images/AGO-meatball-menu.png)
+![](images/AGO-meatball-menu.png){width="90%" fig-align="center"}
 
 
 ### The Map Viewer
@@ -53,7 +53,7 @@ Next to your campus profile, is a meatball menu with a drop-down menu of the Esr
 Navigate to "Map" on your top menu bar and open a new map.
 
 
-![](images/map_viewer.png)
+![](images/map_viewer.png){width="90%" fig-align="center"}
 
 ### Map concepts
 
@@ -67,19 +67,20 @@ The first item that is already added to the map is the foundational base map. Th
 
 You can change the basemap in the Map Viewer. Go to "Basemap" in the menu column. These maps have been preselected as appropriate foundational basemaps. 
 
-![](images/usa-topomaps.png)
+![](images/usa-topomaps.png){width="90%" fig-align="center"}
 
 You can also manually select a feature layer to use as your basemap. 
 
 It will initially show you "your content" but you can drop down and choose items from other places such as a group or from ucsb. Since you want an authoritative layer to be the basemap, you will want to choose something from the Living Atlas. 
 
-![](images/adding-basemap.png)
+![](images/adding-basemap.png){width="90%" fig-align="center"}
 
 Layers in the Living Atlas have been vetted by ESRI and are maintained by organizations. Typically, government entities create and publish items here,such as USGS or NOAA.. 
 
 The bottom example is the National Land Cover Model created and maintained by USGS.
 
-![](images/USGS-NLCD-basemap-example.png)
+![](images/USGS-NLCD-basemap-example.png){width="90%" fig-align="center"}
+
 Make sure you choose a basemap that is easy to follow and is a good reference.Searching for the term "basemap" will also query appropriate maps that can be used for this purpose. 
 
 ### What are feature layers?
@@ -87,7 +88,7 @@ Make sure you choose a basemap that is easy to follow and is a good reference.Se
 With our example, you can also add it as a layer. 
 When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the ... next to the layer to open the same panel.
 
-![](images/layer-properties.png)
+![](images/layer-properties.png){width="90%" fig-align="center"}
 
 ## Step 1: Add layers to a base map
 
