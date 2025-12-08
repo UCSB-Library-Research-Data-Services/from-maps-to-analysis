@@ -92,13 +92,13 @@ When you add an item to your map, it will show up under your Layers. When you wa
 
 ## Step 1: Add layers to a base map
 
-With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus, and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
+With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
 
 Start by opening a new map in the [Map Viewer](https://ucsb.maps.arcgis.com/apps/mapviewer/index.html).
 
 ### Import vector layer (bike paths)
 
-From the **Layers** panel, click on the add layer button and select "My groups" from the dropdown menu. The content from all the groups you belong to will be listed here. Select the group "From Maps to Analysis" if you have too many groups to easily find it.
+From the **Layers** panel, click on the add layer button and select "My groups" from the dropdown menu. The content from all the groups you belong to will be listed here. Select the group "From Maps to Analysis" if you have too many groups to find it easily.
 
 ![Drop down menu to My Groups](images/Workshop1/Step1/select-layer-group.png){width=40%}
 
@@ -120,7 +120,7 @@ Now look for the feature layer `UCSB Campus Buildings` and add it to your map.
 
 ### Save your map
 
-Now that you have added the layers to your map, save it by looking for the folder icon in the left menu bar, and then selecting the `Save as` option. 
+Now that you have added the layers to your map, save it by looking for the folder icon in the left menu bar and then selecting the `Save as` option. 
 
 ![](images/Workshop1/Step1/save-as.png){width="40%" fig-align="center"}
 
