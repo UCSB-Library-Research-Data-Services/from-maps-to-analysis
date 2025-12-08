@@ -1,5 +1,6 @@
 ---
 title: "I want to make a map"
+lightbox: true
 ---
 
 The goal of this lesson is to demonstrate how to make a simple map, suitable for inclusion in a publication, using ArcGIS Online. We will follow the typical workflow of starting with a base map, adding feature layers from external sources, drawing annotations on top of the map, and finally, preparing the map for presentation and exporting it. As an exercise, you will be creating a map that reflects your personal experience biking on the UCSB campus.
@@ -101,6 +102,11 @@ Start by opening a new map in the [Map Viewer](https://ucsb.maps.arcgis.com/apps
 From the **Layers** panel, click on the add layer button and select "My groups" from the dropdown menu. The content from all the groups you belong to will be listed here. Select the group "From Maps to Analysis" if you have too many groups to easily find it.
 
 ![Drop down menu to My Groups](images/Workshop1/Step1/select-layer-group.png){width=40%}
+
+Look for the feature layer `osm_cycleways` and click on the `+ Add` button to add it to your map.
+
+![Add UCSB cycleways layer](images/Workshop1/Step1/select-feature-line-layer.png){width=90%}
+
 
 
 
