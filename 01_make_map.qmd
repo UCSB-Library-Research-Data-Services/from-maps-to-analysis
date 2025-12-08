@@ -17,7 +17,7 @@ A brief tour of the interface and the different apps.
 Single-sign on with your UCSB NetID to access the licensed features. You may need to enter the url "ucsb" into the space. It is entered below.\
 Do not use the ArcGIS Login. This is for users who do NOT have a UCSB Net ID.
 
-![](images/arcgis-login.png)
+![](images/arcgis-login.png){width=40%}
 
 Click "Continue" and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.
 
@@ -92,7 +92,18 @@ When you add an item to your map, it will show up under your Layers. When you wa
 
 With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus, and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
 
-- Create a new map
+### Start a new map and select a base layer
+
+Start by opening a new map in the [Map Viewer](https://ucsb.maps.arcgis.com/apps/mapviewer/index.html).
+
+### Import vector layer (bike paths)
+
+From the **Layers** panel, click on the add layer button and select "My groups" from the dropdown menu. The content from all the groups you belong to will be listed here. Select the group "From Maps to Analysis" if you have too many groups to easily find it.
+
+![Drop down menu to My Groups](images/Workshop1/Step1/Select_layer_group.png){width=40%}
+
+
+
 - Base layer
 - Import vector layer (bike paths)
 - Import polygon layer (buildings)
