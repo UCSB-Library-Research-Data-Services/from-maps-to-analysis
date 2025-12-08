@@ -84,7 +84,7 @@ Make sure you choose a basemap that is easy to follow and is a good reference.Se
 ### What are feature layers?
 
 With our example, you can also add it as a layer. 
-When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can eithr use the menu on the right hand column to view its properties or use the ... next to the layer to open the same panel.
+When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the ... next to the layer to open the same panel.
 
 ![](images/layer-properties.png)
 
