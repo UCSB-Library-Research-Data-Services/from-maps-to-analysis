@@ -98,7 +98,7 @@ Start by opening a new map in the [Map Viewer](https://ucsb.maps.arcgis.com/apps
 
 ### Import vector layer (bike paths)
 
-From the **Layers** panel, click on the add layer button and select "My groups" from the dropdown menu. The content from all the groups you belong to will be listed here. Select the group "From Maps to Analysis" if you have too many groups to find it easily.
+From the **Layers** panel, click on the add layer button and select `My groups` from the dropdown menu. The content from all the groups you belong to will be listed here. Select the group `From Maps to Analysis` if you have too many groups to find it easily.
 
 ![Drop down menu to My Groups](images/Workshop1/Step1/select-layer-group.png){width=40%}
 
