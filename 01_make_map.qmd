@@ -142,7 +142,7 @@ From the menu, we can select several categories of symbols. Let's select the `Go
 
 ![](images/Workshop1/Step2/symbology-select-symbol.png){width="90%" fig-align="center"}
 
-To change the size of the symbol, we can use the `Size` slider to reduce it to a more appropriate size. On this case, we're using 5.68 px. Also, select "Adjust size automatically" if you want the symbols to scale as you zoom in and out of the map.
+To change the size of the symbol, we can use the `Size` slider to reduce it to a more appropriate size. In this case, we're using 5.68 px. Also, select "Adjust size automatically" if you want the symbols to scale as you zoom in and out of the map.
 
 ![](images/Workshop1/Step2/symbology-point-size.png){width="90%" fig-align="center"}
 
@@ -158,7 +158,7 @@ Now, what if we wanted to adjust the symbology based on an attribute? Let's say 
 
 ![](images/Workshop1/Step2/symbology-by-attribute.png){width="90%" fig-align="center"}
 
-As result, you will see that the buildings are now filled with different colors based on their use. You can further customize the colors by clicking on the color ramp and selecting a different one.
+As a result, you will see that the buildings are now filled with different colors based on their use. You can further customize the colors by clicking on the color ramp and selecting a different one.
 
 ![](images/Workshop1/Step2/symbology-by-attribute-result.png){width="90%" fig-align="center"}
 
@@ -172,7 +172,7 @@ Finally, let's say we wanted to adjust the transparency of cycleways based on th
 - Open the panel `Transparency by attribute` and switch the toggle to set the transparency based on attribute values.
 - Select the attribute `maxspeed`.
 
-As result, you will see that the bike paths are now more transparent for higher speed limits and less transparent for lower speed limits.
+As a result, you will see that the bike paths are now more transparent for higher speed limits and less transparent for lower speed limits.
 
 To increase the visibility of the bike paths, we can increase the width of the lines by editing the `Width` slider on the `Symbol style` panel. We selected 3.75 px for this example.
 
