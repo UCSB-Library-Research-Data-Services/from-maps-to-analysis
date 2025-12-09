@@ -129,7 +129,7 @@ In there, you can add a title, tags, and a short description of your map.
 
 ## Step 2: Customize symbology & transparency
 
-After adding our three layers, we have some work to do to make the map more readable. First, let's adjust the symbology of the parking racks layer to reduce its size and change its symbol to a bike icon.
+After adding our three layers, we have some work to do to make the map more readable. First, let's adjust the symbology of the bike racks layer to reduce its size and change its symbol to a bike icon.
 
 - Click on the layer `bike_racks_ucsb` to open its properties panel.
 - On the panel `Symbology`, click on `Edit layer style`.
@@ -154,7 +154,7 @@ Now, what if we wanted to adjust the symbology based on an attribute? Let's say 
 - Click on the layer `UCSB Campus Buildings` to open its properties panel.
 - On the panel `Symbology`, click on `Edit layer style`.
 - Look for the `① Choose attributes` option and select `+ Field`.
-- Select the attribute `b_use`, that stands for building use, and click on `Add`.
+- Select the attribute `b_use`, which stands for building use, and click on `Add`.
 
 ![](images/Workshop1/Step2/symbology-by-attribute.png){width="90%" fig-align="center"}
 
