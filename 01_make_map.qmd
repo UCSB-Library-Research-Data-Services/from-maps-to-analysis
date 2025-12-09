@@ -33,17 +33,17 @@ Along the top of the page, is the main tool bar.
 
 ![](images/main-menu-bar.png){width="90%" fig-align="center"}
 
-- Home will take you to the main landing page when you first sign in.
-- The Gallery lists content created by UCSB users which is viewable to everyone (with permissions)
-- Groups are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. 
-- Content is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. 
-- Notebooks is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.
-- Organization will take you back to our main page. This is not the same as Home. 
-- Scene, or Scene Viewer is where you can create 3D GIS scenes, such as neighborhood models and digital twins. 
-- Map, or Map Viewer is where you can create 2D maps. *We will be focusing on using the Map Viewer for this workshop.*
+- **Home** will take you to the main landing page when you first sign in.
+- The **Gallery** lists content created by UCSB users which is viewable to everyone (with permissions)
+- **Groups** are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. 
+- **Content** is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. 
+- **Notebooks** is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.
+- **Organization** will take you back to our main page. This is not the same as Home. 
+- **Scene**, or **Scene Viewer** is where you can create 3D GIS scenes, such as neighborhood models and digital twins. 
+- **Map**, or **Map Viewer** is where you can create 2D maps. ***We will be focusing on using the Map Viewer for this workshop.***
 
 
-Next to your campus profile, is a meatball menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer. 
+Next to your campus profile, is a "meatball" menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer. 
 
 ![](images/AGO-meatball-menu.png){width="90%" fig-align="center"}
 
@@ -55,13 +55,17 @@ Navigate to "Map" on your top menu bar and open a new map.
 
 ![](images/map_viewer.png){width="90%" fig-align="center"}
 
-### Map concepts
+## Map basic elements
 
-In the Map Viewer there is a menu bar in the left column. This is where you can add items to your map.
+In the Map Viewer there is a menu bar in the left column. This is where you can add items to your map. Here are the basic elements of building a map:
 
 -  Basemap (background)
 -  Layers (you add on top of the basemap)
 -  Symbology & legend
+
+Often it is also recommended to add additional component such as a title, a legend, the North arrow and a scale to help user interpret you map.
+
+### Basemap
 
 The first item that is already added to the map is the foundational base map. This map cannot be altered and is static. You can move its location, but its features such as roads and buildings (if any) cannot be changed. 
 
@@ -75,15 +79,15 @@ It will initially show you "your content" but you can drop down and choose items
 
 ![](images/adding-basemap.png){width="90%" fig-align="center"}
 
-Layers in the Living Atlas have been vetted by ESRI and are maintained by organizations. Typically, government entities create and publish items here,such as USGS or NOAA.. 
+Layers in the Living Atlas have been vetted by ESRI and are maintained by organizations. Typically, government entities create and publish items here,such as USGS or NOAA. In other words, those layers can be trusted to be of good quality and up-to-date. 
 
 The bottom example is the National Land Cover Model created and maintained by USGS.
 
 ![](images/USGS-NLCD-basemap-example.png){width="90%" fig-align="center"}
 
-Make sure you choose a basemap that is easy to follow and is a good reference.Searching for the term "basemap" will also query appropriate maps that can be used for this purpose. 
+Make sure you choose a basemap that is easy to follow and is a good reference. Searching for the term "basemap" will also query appropriate maps that can be used for this purpose. 
 
-### What are feature layers?
+### Feature layers
 
 With our example, you can also add it as a layer. 
 When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the ... next to the layer to open the same panel.
