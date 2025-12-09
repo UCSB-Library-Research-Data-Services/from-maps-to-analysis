@@ -129,11 +129,58 @@ In there, you can add a title, tags, and a short description of your map.
 
 ## Step 2: Customize symbology & transparency
 
-Based on data `street_pavement`
+After adding our three layers, we have some work to do to make the map more readable. First, let's adjust the symbology of the parking racks layer to reduce its size and change its symbol to a bike icon.
 
-1. Create filter to show only bikepaths 
-2. Join 2 filters together to *OR* sidewalks
-3. Adjust symbology in some way (TBD)
+- Click on the layer `bike_racks_ucsb` to open its properties panel.
+- On the panel `Symbology`, click on `Edit layer style`.
+- Look for the `② Pick a style` option and select `Style options`.
+- Click on the pencil icon next to `Symbol style` to open the symbol selector.
+
+There, we have multiple options to customize the symbol. Let's click on the current symbol chevron to open the full symbol gallery.
+
+From the menu, we can select several categories of symbols. Let's select the `Government` category and look for a bike parking icon. Click on the `Done` button to apply the changes and return to the symbol style panel. 
+
+![](images/Workshop1/Step2/symbology-select-symbol.png){width="90%" fig-align="center"}
+
+To change the size of the symbol, we can use the `Size` slider to reduce it to a more appropriate size. On this case, we're using 5.68 px. Also, select "Adjust size automatically" if you want the symbols to scale as you zoom in and out of the map.
+
+![](images/Workshop1/Step2/symbology-point-size.png){width="90%" fig-align="center"}
+
+
+### Adjust style based on attribute
+
+Now, what if we wanted to adjust the symbology based on an attribute? Let's say we wanted to fill each building with a different color based on its use (academic, residential, administrative, etc.). We can do that by changing the style of the `UCSB Campus Buildings` layer.
+
+- Click on the layer `UCSB Campus Buildings` to open its properties panel.
+- On the panel `Symbology`, click on `Edit layer style`.
+- Look for the `① Choose attributes` option and select `+ Field`.
+- Select the attribute `b_use`, that stands for building use, and click on `Add`.
+
+![](images/Workshop1/Step2/symbology-by-attribute.png){width="90%" fig-align="center"}
+
+As result, you will see that the buildings are now filled with different colors based on their use. You can further customize the colors by clicking on the color ramp and selecting a different one.
+
+![](images/Workshop1/Step2/symbology-by-attribute-result.png){width="90%" fig-align="center"}
+
+### Adjust layer transparency based on attribute
+
+Finally, let's say we wanted to adjust the transparency of cycleways based on the max speed allowed on each bike path. We can do that by changing the style of the `osm_cycleways` layer.
+
+- Click on the layer `osm_cycleways` to open its properties panel.
+- On the panel `Symbology`, click on `Edit layer style`.
+- Look for the `② Pick a style` option and select `Style options`.
+- Open the panel `Transparency by attribute` and switch the toggle to set the transparency based on attribute values.
+- Select the attribute `maxspeed`.
+
+As result, you will see that the bike paths are now more transparent for higher speed limits and less transparent for lower speed limits.
+
+To increase the visibility of the bike paths, we can increase the width of the lines by editing the `Width` slider on the `Symbol style` panel. We selected 3.75 px for this example.
+
+![](images/Workshop1/Step2/symbology-transparency-by-attribute.png){width="90%" fig-align="center"}
+
+Here is the final result of our symbology adjustments:
+
+![](images/Workshop1/Step2/symbology-final-result.png){width="90%" fig-align="center"}
 
 ## Step 3: Annotate the map
 
