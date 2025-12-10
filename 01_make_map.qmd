@@ -3,7 +3,7 @@ title: "I want to make a map"
 lightbox: true
 ---
 
-The goal of this lesson is to demonstrate how to make a simple map, suitable for inclusion in a publication, using ArcGIS Online. We will follow the typical workflow of starting with a base map, adding feature layers from external sources, drawing annotations on top of the map, and finally, preparing the map for presentation and exporting it. As an exercise, you will be creating a map that reflects your personal experience biking on the UCSB campus.
+The goal of this lesson is to demonstrate how to make a simple map, suitable for inclusion in a publication, using ArcGIS Online. We will follow the typical workflow of starting with a basemap, adding feature layers from external sources, drawing annotations on top of the map, and finally, preparing the map for presentation and exporting it. As an exercise, you will be creating a map that reflects your personal experience biking on the UCSB campus.
 
 As we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool. In fact, in many cases GIS is overkill, both because most of the features GIS tools provide will not be used and because the GIS interface can be cumbersome. But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that in turn opens up and provides an introduction to the world of spatial analysis.
 
@@ -55,7 +55,7 @@ Navigate to "Map" on your top menu bar and open a new map.
 
 ![](images/map_viewer.png){width="90%" fig-align="center"}
 
-## Map basic elements
+## Map main components
 
 In the Map Viewer there is a menu bar in the left column. This is where you can add items to your map. Here are the basic elements of building a map:
 
@@ -63,11 +63,11 @@ In the Map Viewer there is a menu bar in the left column. This is where you can 
 -  Layers (you add on top of the basemap)
 -  Symbology & legend
 
-Often it is also recommended to add additional component such as a title, a legend, the North arrow and a scale to help user interpret you map.
+It is also recommended to add additional map elements to ease the interpretation of a map, such as a title, text and labels, directional information (e.g. North arrow), a scale bar, and a graticule (think coordinate system).
 
 ### Basemap
 
-The first item that is already added to the map is the foundational base map. This map cannot be altered and is static. You can move its location, but its features such as roads and buildings (if any) cannot be changed. 
+The first item that is already added to the map is the foundational basemap. This basemap cannot be altered and is static. You can move its location, but its features such as roads and buildings (if any) cannot be changed. 
 
 You can change the basemap in the Map Viewer. Go to "Basemap" in the menu column. These maps have been preselected as appropriate foundational basemaps. 
 
@@ -90,11 +90,17 @@ Make sure you choose a basemap that is easy to follow and is a good reference. S
 ### Feature layers
 
 With our example, you can also add it as a layer. 
-When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the ... next to the layer to open the same panel.
+When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." next to the layer to open the same panel.
 
 ![](images/layer-properties.png){width="90%" fig-align="center"}
 
-## Step 1: Add layers to a base map
+# UCSB bike infrastructure map 
+
+
+**TO DO**: Add an image of the final map here
+
+
+## Step 1: Add layers to a basemap
 
 With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
 
@@ -188,7 +194,7 @@ Here is the final result of our symbology adjustments:
 
 ## Step 3: Annotate the map
 
-In addition to bringing external sources of information into a map (whether in the form of a base map or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a "sketch layer."
+In addition to bringing external sources of information into a map (whether in the form of a basemap or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a "sketch layer."
 
 - Draw points where you were in a (near-)accident on a bike path, either as bicyclist of pedestrian.
 - Draw a line where you think there should be a bike path but isn't.
