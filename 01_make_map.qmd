@@ -55,7 +55,7 @@ Navigate to "Map" on your top menu bar and open a new map.
 
 ![](images/map_viewer.png){width="90%" fig-align="center"}
 
-## Map basic elements
+## Map main components
 
 In the Map Viewer there is a menu bar in the left column. This is where you can add items to your map. Here are the basic elements of building a map:
 
@@ -63,11 +63,11 @@ In the Map Viewer there is a menu bar in the left column. This is where you can 
 -  Layers (you add on top of the basemap)
 -  Symbology & legend
 
-Often it is also recommended to add additional component such as a title, a legend, the North arrow and a scale to help user interpret you map.
+It is also recommended to add additional map elements to ease the interpretation of a map, such as a title, directional information (e.g. North arrow), a scale bar, and a graticule (think coordinate system).
 
 ### Basemap
 
-The first item that is already added to the map is the foundational base map. This map cannot be altered and is static. You can move its location, but its features such as roads and buildings (if any) cannot be changed. 
+The first item that is already added to the map is the foundational basemap. This basemap cannot be altered and is static. You can move its location, but its features such as roads and buildings (if any) cannot be changed. 
 
 You can change the basemap in the Map Viewer. Go to "Basemap" in the menu column. These maps have been preselected as appropriate foundational basemaps. 
 
@@ -90,7 +90,7 @@ Make sure you choose a basemap that is easy to follow and is a good reference. S
 ### Feature layers
 
 With our example, you can also add it as a layer. 
-When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the ... next to the layer to open the same panel.
+When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." next to the layer to open the same panel.
 
 ![](images/layer-properties.png){width="90%" fig-align="center"}
 
