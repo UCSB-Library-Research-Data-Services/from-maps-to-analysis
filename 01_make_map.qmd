@@ -69,30 +69,17 @@ Often it is also recommended to add additional component such as a title, a lege
 
 The first item that is already added to the map is the foundational base map. This map cannot be altered and is static. You can move its location, but its features such as roads and buildings (if any) cannot be changed. 
 
-You can change the basemap in the Map Viewer. Go to "Basemap" in the menu column. These maps have been preselected as appropriate foundational basemaps. 
+You can change the basemap in the Map Viewer. Go to "Basemap" in the menu column. These maps have been pre-selected as appropriate foundational basemaps. 
 
-![](images/usa-topomaps.png){width="90%" fig-align="center"}
+![](images/current-basemap.png){width="90%" fig-align="center"}
 
-You can also manually select a feature layer to use as your basemap. 
 
-It will initially show you "your content" but you can drop down and choose items from other places such as a group or from ucsb. Since you want an authoritative layer to be the basemap, you will want to choose something from the Living Atlas. 
-
-![](images/adding-basemap.png){width="90%" fig-align="center"}
-
-Layers in the Living Atlas have been vetted by ESRI and are maintained by organizations. Typically, government entities create and publish items here,such as USGS or NOAA. In other words, those layers can be trusted to be of good quality and up-to-date. 
-
-The bottom example is the National Land Cover Model created and maintained by USGS.
-
-![](images/USGS-NLCD-basemap-example.png){width="90%" fig-align="center"}
-
-Make sure you choose a basemap that is easy to follow and is a good reference. Searching for the term "basemap" will also query appropriate maps that can be used for this purpose. 
+Make sure you choose a basemap that is easy to follow and is a good reference. The current basemap layer is **Topographic**. 
 
 ### Feature layers
 
 With our example, you can also add it as a layer. 
 When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the ... next to the layer to open the same panel.
-
-![](images/layer-properties.png){width="90%" fig-align="center"}
 
 ## Step 1: Add layers to a base map
 
