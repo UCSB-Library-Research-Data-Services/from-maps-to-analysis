@@ -189,7 +189,15 @@ Here is the final result of our symbology adjustments:
 
 ### Select a better basemap
 
-After adding the layers and customizing their symbology, we have a good, almost ready map
+After adding the layers and customizing their symbology, we have a good, almost ready map. However, the current basemap (Topographic) is a bit too busy and makes it hard to see the features we added. Let's change it to a simpler basemap using the `Basemap` option in the left menu bar.
+
+![](images/Workshop1/Step2/basemap-menu-location.png){width="40%" fig-align="center"}
+
+From the basemap gallery, we can select a simpler basemap. For this example, we selected the `Light Gray Canvas` basemap, which provides a clean background that makes our features stand out.
+
+![](images/Workshop1/Step2/basemap-light-gray-canvas.png){width="90%" fig-align="center"}
+
+**Don't forget to save your map after making these changes!**
 
 ## Step 3: Annotate the map
 
