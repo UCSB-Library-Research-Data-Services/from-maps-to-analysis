@@ -63,7 +63,7 @@ In the Map Viewer there is a menu bar in the left column. This is where you can 
 -  Layers (you add on top of the basemap)
 -  Symbology & legend
 
-It is also recommended to add additional map elements to ease the interpretation of a map, such as a title, directional information (e.g. North arrow), a scale bar, and a graticule (think coordinate system).
+It is also recommended to add additional map elements to ease the interpretation of a map, such as a title, text and labels, directional information (e.g. North arrow), a scale bar, and a graticule (think coordinate system).
 
 ### Basemap
 
