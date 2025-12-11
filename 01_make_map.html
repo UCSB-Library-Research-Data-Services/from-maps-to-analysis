@@ -463,11 +463,64 @@ Do not use the ArcGIS Login. This is for users who do NOT have a UCSB Net ID.</p
 <section id="step-3-annotate-the-map" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-annotate-the-map">Step 3: Annotate the map</h2>
 <p>In addition to bringing external sources of information into a map (whether in the form of a basemap or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a “sketch layer.”</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/Workshop1/Step3/drawing-sketch-layer-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img src="images/Workshop1/Step3/drawing-sketch-layer-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
+</figure>
+</div>
+<p>After adding the sketch layer to your workspace, a new menu will appear in the right column with drawing tools and configuration options.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/Workshop1/Step3/drawing-sketch-bar-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img src="images/Workshop1/Step3/drawing-sketch-bar-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
+</figure>
+</div>
 <ul>
 <li>Draw points where you were in a (near-)accident on a bike path, either as bicyclist of pedestrian.</li>
+</ul>
+<p>Zoom in to the location and add a point with the point drawing tool. You can customize the symbol, size, and color of the point in the sketch layer menu before adding it to the map. Put as many points as you like.</p>
+<p>In our example, we add the following settings to the point symbol:</p>
+<ul>
+<li>Size: 48 px</li>
+<li>Vector marker (background): Blue (#2132cf)</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/Workshop1/Step3/drawing-point-vector.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img src="images/Workshop1/Step3/drawing-point-vector.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+</figure>
+</div>
+<ul>
 <li>Draw a line where you think there should be a bike path but isn’t.</li>
+</ul>
+<p>From the sketch layer menu, select the line drawing tool. Click on the map to start drawing the line, and click again to add vertices. Double-click to finish the line.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/Workshop1/Step3/drawing-line-vector.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img src="images/Workshop1/Step3/drawing-line-vector.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+</figure>
+</div>
+<p>You can customize the line symbol in the sketch layer menu before adding it to the map. In our example, we add the following settings to the line symbol:</p>
+<ul>
+<li>Width: 5 px</li>
+<li>Dotted line pattern</li>
+<li>Color: Light blue (#00c8ff)</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/Workshop1/Step3/drawing-line-style.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img src="images/Workshop1/Step3/drawing-line-style.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+</figure>
+</div>
+<ul>
 <li>Draw a circle where you think there should be a bike parking lot but isn’t.</li>
 </ul>
+<p>Similarly to the line drawing tool, select the circle drawing tool from the sketch layer menu. Click on the map to draw the circle, and click on the select tool to finish the shape. You can also customize the symbol after drawing it by selecting it and changing its properties in the sketch layer menu. In our example, we add the following settings to the circle symbol:</p>
+<ul>
+<li>Fill color: Red (#d13434)</li>
+<li>Fill transparency: 38%</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/Workshop1/Step3/drawing-circle-vector.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-26"><img src="images/Workshop1/Step3/drawing-circle-vector.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+</figure>
+</div>
 </section>
 <section id="step-4-prepare-the-map-for-publication" class="level2">
 <h2 class="anchored" data-anchor-id="step-4-prepare-the-map-for-publication">Step 4: Prepare the map for publication</h2>
@@ -1159,36 +1212,72 @@ Do not use the ArcGIS Login. This is for users who do NOT have a UCSB Net ID.</p
 <span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>In addition to bringing external sources of information into a map (whether in the form of a basemap or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a "sketch layer."</span>
 <span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Draw points where you were in a (near-)accident on a bike path, either as bicyclist of pedestrian.</span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Draw a line where you think there should be a bike path but isn't.</span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Draw a circle where you think there should be a bike parking lot but isn't.</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-sketch-layer-menu.png)</span>{width="40%" fig-align="center"}</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>After adding the sketch layer to your workspace, a new menu will appear in the right column with drawing tools and configuration options.</span>
 <span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 4: Prepare the map for publication</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-sketch-bar-menu.png)</span>{width="40%" fig-align="center"}</span>
 <span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>Almost there! At this point you're ready to start packaging your map for publication.</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Draw points where you were in a (near-)accident on a bike path, either as bicyclist of pedestrian.</span>
 <span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add a title</span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add a legend</span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add a scale bar (optional)</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>Zoom in to the location and add a point with the point drawing tool. You can customize the symbol, size, and color of the point in the sketch layer menu before adding it to the map. Put as many points as you like.</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>In our example, we add the following settings to the point symbol:</span>
 <span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 5: Share your map</span></span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Online</span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Exporting to other formats (PNG, PDF)</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Size: 48 px</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Vector marker (background): Blue (#2132cf)</span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-point-vector.png)</span>{width="90%" fig-align="center"}</span>
 <span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="fu">## Other appoaches</span></span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Draw a line where you think there should be a bike path but isn't.</span>
 <span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>There are many ways of making a simple map. Here are some alternative approaches.</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>From the sketch layer menu, select the line drawing tool. Click on the map to start drawing the line, and click again to add vertices. Double-click to finish the line. </span>
 <span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>By screen grabbing: Create a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps). Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that. <span class="sc">\[</span>The following is probably too detailed...] It is possible to capture the base layer at higher-than-screen resolution by zooming in, panning and screen grabbing it in pieces, and merging the pieces using a tool like Adobe Photoshop. And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-line-vector.gif)</span>{width="90%" fig-align="center"}</span>
 <span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Google Earth</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a>You can customize the line symbol in the sketch layer menu before adding it to the map. In our example, we add the following settings to the line symbol:</span>
 <span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>MapBox</span>
-<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>OpenStreetMaps</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Width: 5 px</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dotted line pattern</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Color: Light blue (#00c8ff) </span>
 <span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span><span class="co">[</span><span class="ot">CalTopo</span><span class="co">](https://caltopo.com)</span> comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-line-style.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Draw a circle where you think there should be a bike parking lot but isn't.</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>Similarly to the line drawing tool, select the circle drawing tool from the sketch layer menu. Click on the map to draw the circle, and click on the select tool to finish the shape. You can also customize the symbol after drawing it by selecting it and changing its properties in the sketch layer menu. In our example, we add the following settings to the circle symbol:</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fill color: Red (#d13434)</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fill transparency: 38%</span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-circle-vector.gif)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 4: Prepare the map for publication</span></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>Almost there! At this point you're ready to start packaging your map for publication.</span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add a title</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add a legend</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add a scale bar (optional)</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 5: Share your map</span></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Online</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Exporting to other formats (PNG, PDF)</span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a><span class="fu">## Other appoaches</span></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>There are many ways of making a simple map. Here are some alternative approaches.</span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>By screen grabbing: Create a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps). Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that. <span class="sc">\[</span>The following is probably too detailed...] It is possible to capture the base layer at higher-than-screen resolution by zooming in, panning and screen grabbing it in pieces, and merging the pieces using a tool like Adobe Photoshop. And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Google Earth</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>MapBox</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>OpenStreetMaps</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span><span class="co">[</span><span class="ot">CalTopo</span><span class="co">](https://caltopo.com)</span> comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
