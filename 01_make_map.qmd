@@ -43,7 +43,7 @@ Along the top of the page, is the main tool bar.
 - **Map**, or **Map Viewer** is where you can create 2D maps. ***We will be focusing on using the Map Viewer for this workshop.***
 
 
-Next to your campus profile, is a "meatball" menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer. 
+Next to your campus profile, is a "tic tac toe" menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer. 
 
 ![](images/AGO-meatball-menu.png){width="90%" fig-align="center"}
 
@@ -82,7 +82,7 @@ With our example, you can also add it as a layer.
 When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." next to the layer to open the same panel.
 
 
-## Step 1: Add layers to a base map
+## Step 1: Add layers to your map
 ![](images/layer-properties.png){width="90%" fig-align="center"}
 
 # UCSB bike infrastructure map 
