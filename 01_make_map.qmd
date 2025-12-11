@@ -13,9 +13,9 @@ A brief tour of the interface and the different apps.
 
 ### Log on to ArcGIS Online
 
-<https://www.arcgis.com/index.html>
+<https://ucsb.maps.arcgis.com>
 
-Single-sign on with your UCSB NetID to access the licensed features. You may need to enter the url "ucsb" into the space. It is entered below.\
+Single-sign on with your UCSB NetID to access the licensed features. You may need to enter the url "ucsb" into the space. It is entered below.
 Do not use the ArcGIS Login. This is for users who do NOT have a UCSB Net ID.
 
 ![](images/arcgis-login.png){width=40% fig-align="center"}
