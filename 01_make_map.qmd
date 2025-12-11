@@ -90,6 +90,7 @@ When you add an item to your map, it will show up under your Layers. When you wa
 
 **TO DO**: Add an image of the final map here
 
+![Preliminar version of the possible result](images/Workshop1/Step4/export-finish-map.jpg){width="90%" fig-align="center"}
 
 ## Step 1: Add layers to a basemap
 
@@ -243,18 +244,48 @@ Similarly to the line drawing tool, select the circle drawing tool from the sket
 
 ![](images/Workshop1/Step3/drawing-circle-vector.gif){width="90%" fig-align="center"}
 
+- Rename the Sketch layer to "Annotations"
+
+Finally, let's rename the sketch layer to "Annotations" to better reflect its purpose. Click on the three dots next to the sketch layer and select `Rename`. Enter the new name and click `OK`.
+
+**Save your map after making these changes**
+
 ## Step 4: Prepare the map for publication
 
 Almost there! At this point you're ready to start packaging your map for publication.
 
-- Add a title
-- Add a legend
-- Add a scale bar (optional)
+To do that, you need to look for the `Print` option in the left menu bar.
+
+![](images/Workshop1/Step4/export-print-menu.png){width="40%" fig-align="center"}
+
+For exporting the map you have two options:
+
+- Layout: This option allows you to create a more complex layout with additional map elements such as title, legend, scale bar, north arrow, etc. You can choose from several pre-defined templates or create your own custom layout.
+- Map only: With this option, you can export just the map itself without any additional elements. You can choose the file format (PNG, PDF, etc.) and the resolution of the exported map.
+
+For our purposes, we will select the `Layout` option to create a more complete map for publication.
+
+In the layout menu, you can change the title of the map, select a `Template` (which is basically a standard page size and orientation), and select the `File format` for the export (e.g., PNG, PDF).
+
+You can also customize more the layout by enabling the `Advance options` panel. You can set the scale, add an author name, include copyright information, increase or decrease the resolution, indicate the [output spatial reference](https://developers.arcgis.com/rest/services-reference/enterprise/using-spatial-references/), and select to include legend, north arrow, and scale bar.
+
+Adjust the zoom and position of the map in the preview window to ensure everything is visible and well-framed.
+
+![](images/Workshop1/Step4/export-layout-menu.png){width="90%" fig-align="center"}
 
 ## Step 5: Share your map
 
--  Online
--  Exporting to other formats (PNG, PDF)
+When you're satisfied with the layout and settings, click on the `Export` button to generate the map. Depending on the selected file format and resolution, it may take a few moments to process the export.
+
+The result will be list on the `Exports` panel, where you can save the file to your computer by clicking on the three dots next to the export and selecting `Save as`.
+
+![](images/Workshop1/Step4/export-save-as.png){width="40%" fig-align="center"}
+
+This will save the exported map to you ArcGIS Online content. You can access it later from the `Content` menu in the top menu bar. The new item will be available as an Image file that you can download to your computer.
+
+![](images/Workshop1/Step4/export-download-image.png){width="90%" fig-align="center"}
+
+**NOTE**: Public sharing is a little more complicated, it requires to set public permissions to all layers used in the map before sharing the map publicly.
 
 ## Other appoaches
 
