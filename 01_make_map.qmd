@@ -143,7 +143,11 @@ From the menu, we can select several categories of symbols. Let's select the `Go
 
 ![](images/Workshop1/Step2/symbology-select-symbol.png){width="90%" fig-align="center"}
 
-To change the size of the symbol, we can use the `Size` slider to reduce it to a more appropriate size. In this case, we're using 5.68 px. Also, select "Adjust size automatically" if you want the symbols to scale as you zoom in and out of the map.
+To change the size of the symbol, we can use the `Size` slider to reduce it to a more appropriate size. First, select "Adjust size automatically" to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.
+
+::: {.callout-warning collapse="true" title="Size slider quirk"}
+In ArcGIS Online, every time you select the "Adjust size automatically" option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option.
+:::
 
 ![](images/Workshop1/Step2/symbology-point-size.png){width="90%" fig-align="center"}
 
@@ -182,6 +186,18 @@ To increase the visibility of the bike paths, we can increase the width of the l
 Here is the final result of our symbology adjustments:
 
 ![](images/Workshop1/Step2/symbology-final-result.png){width="90%" fig-align="center"}
+
+### Select a better basemap
+
+After adding the layers and customizing their symbology, we have a good, almost ready map. However, the current basemap (Topographic) is a bit too busy and makes it hard to see the features we added. Let's change it to a simpler basemap using the `Basemap` option in the left menu bar.
+
+![](images/Workshop1/Step2/basemap-menu-location.png){width="40%" fig-align="center"}
+
+From the basemap gallery, we can select a simpler basemap. For this example, we selected the `Light Gray Canvas` basemap, which provides a clean background that makes our features stand out.
+
+![](images/Workshop1/Step2/basemap-light-gray-canvas.png){width="90%" fig-align="center"}
+
+**Don't forget to save your map after making these changes!**
 
 ## Step 3: Annotate the map
 
