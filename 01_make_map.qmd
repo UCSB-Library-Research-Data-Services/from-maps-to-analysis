@@ -34,8 +34,8 @@ Along the top of the page, is the main tool bar.
 ![](images/main-menu-bar.png){width="90%" fig-align="center"}
 
 - **Home** will take you to the main landing page when you first sign in.
-- The **Gallery** lists content created by UCSB users which is viewable to everyone (with permissions)
-- **Groups** are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. 
+- The **Gallery** contains items from our 'featured content' group
+- **Groups** are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this project, we have created a group called "From Maps to Analysis" which contains most of the data layers we will be using. 
 - **Content** is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. 
 - **Notebooks** is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.
 - **Organization** will take you back to our main page. This is not the same as Home. 
@@ -50,26 +50,29 @@ Next to your campus profile, is a "tic tac toe" menu with a drop-down menu of th
 
 ### The Map Viewer
 
-Navigate to "Map" on your top menu bar and open a new map.
+Open a new, empty map by clicking "Map" on your top menu bar.
 
 
-![](images/map_viewer.png){width="90%" fig-align="center"}
+![](images/new_empty_map.png){width="80%" fig-align="center"}
 
 ## Map main components
 
-In the Map Viewer there is a menu bar in the left column. This is where you can add items to your map. Here are the basic elements of building a map:
+In the Map Viewer there is a menu bar in the left column. This is where you can add items to your map. 
 
+-  Layers (your own or imported from others)
 -  Basemap (background)
--  Layers (you add on top of the basemap)
 -  Symbology & legend
+-  Save and open...
 
-It is also recommended to add additional map elements to ease the interpretation of a map, such as a title, text and labels, directional information (e.g. North arrow), a scale bar, and a graticule (think coordinate system).
+### Save your work
+- There will be a blue dot until you save
+- Once you save, more options will be available
 
 ### Basemap
 
-The first item that is already added to the map is the foundational basemap. This basemap cannot be altered and is static. You can move its location, but its features such as roads and buildings (if any) cannot be changed. 
+The first item that is already added to the map is the  basemap. Esri has about 20 different basemaps available. We will start with the default. 
 
-You can change the basemap in the Map Viewer. Go to "Basemap" in the menu column. These maps have been pre-selected as appropriate foundational basemaps. 
+ 
 
 ![](images/current-basemap.png){width="90%" fig-align="center"}
 
