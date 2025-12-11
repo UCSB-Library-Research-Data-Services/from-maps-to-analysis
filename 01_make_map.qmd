@@ -92,7 +92,7 @@ When you add an item to your map, it will show up under your Layers. When you wa
 
 ![Preliminar version of the possible result](images/Workshop1/Step4/export-finish-map.jpg){width="90%" fig-align="center"}
 
-## Step 1: Add layers to a basemap
+## Step 1: Add layers to a map
 
 With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
 
