@@ -38,7 +38,6 @@ Sign on with your UCSB NetID. You may need to enter "ucsb" into the url box. Do 
 
 You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.
 
-![](images/arcgis-login.png){size="90%" fig-align="center"}
 
 
 ### Tour of the interface
@@ -103,13 +102,11 @@ Start by opening a new map in the [Map Viewer](https://ucsb.maps.arcgis.com/apps
 
 ### Import lines layer (bike paths)
 
-From the **Layers** panel, click on the add layer button. Search 'Your organization' for 'UCSB OSM Paths'. There should be only one result.
+From the **Layers** panel, click on the add layer button. Search 'My  organization' for 'UCSB OSM Paths'. There should be only one result.
 
 ![Adding a layer](images/add_a_layer)
 
 * I think we should pause here to discuss properties. * 
-
-![Drop down menu to My Groups](images/Workshop1/Step1/select-layer-group.png){width=40%}
 
 
 ### * Challenge * Import points layer (bike racks)
@@ -118,9 +115,10 @@ Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
 
 ![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png){width=90%}
 
-### Import polygon layer (buildings)
+### * Challenge * Import via Groups
 
-Now look for the feature layer `UCSB Campus Buildings` and add it to your map.
+This time, navigate to the feature layer `UCSB Campus Buildings` 
+by first finding the "From Maps to Analysis" group. 
 
 ![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){width=90%}
 
@@ -147,8 +145,6 @@ In there, you can add a title, tags, and a short description of your map.
 Next to your campus profile, is a "tic tac toe" menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer. 
 
 ![](images/AGO-meatball-menu.png){width="90%" fig-align="center"}
-
-
 
 
 ## Step 2: Customize symbology & transparency
@@ -275,6 +271,14 @@ Finally, let's rename the sketch layer to "Annotations" to better reflect its pu
 ## Step 4: Prepare the map for publication
 
 Almost there! At this point you're ready to start packaging your map for publication.
+
+### Fine tune symbols
+Some of the bike racks are too close together. For point data, we have
+the option of using 'proportional symbols' or 'clustered symbols' to
+solve this visual clutter.
+
+** To do **: Insturctions for using clustered symbols for the bike racks layer to reduce visual clutter.
+
 
 To do that, you need to look for the `Print` option in the left menu bar.
 
