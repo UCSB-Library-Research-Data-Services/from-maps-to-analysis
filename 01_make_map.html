@@ -173,7 +173,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#step-1-add-layers-to-your-map" id="toc-step-1-add-layers-to-your-map" class="nav-link" data-scroll-target="#step-1-add-layers-to-your-map">Step 1: Add layers to your map</a></li>
   <li><a href="#import-lines-layer-bike-paths" id="toc-import-lines-layer-bike-paths" class="nav-link" data-scroll-target="#import-lines-layer-bike-paths">Import lines layer (bike paths)</a></li>
   <li><a href="#challenge-import-points-layer-bike-racks" id="toc-challenge-import-points-layer-bike-racks" class="nav-link" data-scroll-target="#challenge-import-points-layer-bike-racks">* Challenge * Import points layer (bike racks)</a></li>
-  <li><a href="#import-polygon-layer-buildings" id="toc-import-polygon-layer-buildings" class="nav-link" data-scroll-target="#import-polygon-layer-buildings">Import polygon layer (buildings)</a></li>
+  <li><a href="#challenge-import-via-groups" id="toc-challenge-import-via-groups" class="nav-link" data-scroll-target="#challenge-import-via-groups">* Challenge * Import via Groups</a></li>
   <li><a href="#accessing-the-underlying-data" id="toc-accessing-the-underlying-data" class="nav-link" data-scroll-target="#accessing-the-underlying-data">Accessing the underlying data</a></li>
   <li><a href="#save-your-map" id="toc-save-your-map" class="nav-link" data-scroll-target="#save-your-map">Save your map</a></li>
   </ul></li>
@@ -184,7 +184,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#select-a-better-basemap" id="toc-select-a-better-basemap" class="nav-link" data-scroll-target="#select-a-better-basemap">Select a better basemap</a></li>
   </ul></li>
   <li><a href="#step-3-annotate-the-map" id="toc-step-3-annotate-the-map" class="nav-link" data-scroll-target="#step-3-annotate-the-map">Step 3: Annotate the map</a></li>
-  <li><a href="#step-4-prepare-the-map-for-publication" id="toc-step-4-prepare-the-map-for-publication" class="nav-link" data-scroll-target="#step-4-prepare-the-map-for-publication">Step 4: Prepare the map for publication</a></li>
+  <li><a href="#step-4-prepare-the-map-for-publication" id="toc-step-4-prepare-the-map-for-publication" class="nav-link" data-scroll-target="#step-4-prepare-the-map-for-publication">Step 4: Prepare the map for publication</a>
+  <ul class="collapse">
+  <li><a href="#fine-tune-symbols" id="toc-fine-tune-symbols" class="nav-link" data-scroll-target="#fine-tune-symbols">Fine tune symbols</a></li>
+  </ul></li>
   <li><a href="#step-5-share-your-map" id="toc-step-5-share-your-map" class="nav-link" data-scroll-target="#step-5-share-your-map">Step 5: Share your map</a></li>
   <li><a href="#other-appoaches" id="toc-other-appoaches" class="nav-link" data-scroll-target="#other-appoaches">Other appoaches</a></li>
   </ul>
@@ -241,11 +244,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 <p>You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/arcgis-login.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/arcgis-login.png" class="img-fluid quarto-figure quarto-figure-center figure-img" size="90%"></a></p>
-</figure>
-</div>
 </section>
 <section id="tour-of-the-interface" class="level3">
 <h3 class="anchored" data-anchor-id="tour-of-the-interface">Tour of the interface</h3>
@@ -253,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Along the top of the page, is the main tool bar.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/main-menu-bar.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/main-menu-bar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/main-menu-bar.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/main-menu-bar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 <ul>
@@ -273,7 +271,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Open a new, empty map by clicking “Map” on your top menu bar.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/new_empty_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/new_empty_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" size="50%"></a></p>
+<p><a href="images/new_empty_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/new_empty_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" size="50%"></a></p>
 </figure>
 </div>
 <section id="map-main-components" class="level3">
@@ -298,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>A new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/current-basemap.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/current-basemap.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/current-basemap.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/current-basemap.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 <p>Make sure you choose a basemap that is easy to follow and is a good reference. The default basemap layer is <strong>Topographic</strong>.</p>
@@ -315,39 +313,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="import-lines-layer-bike-paths" class="level3">
 <h3 class="anchored" data-anchor-id="import-lines-layer-bike-paths">Import lines layer (bike paths)</h3>
-<p>From the <strong>Layers</strong> panel, click on the add layer button. Search ‘Your organization’ for ‘UCSB OSM Paths’. There should be only one result.</p>
+<p>From the <strong>Layers</strong> panel, click on the add layer button. Search ‘My organization’ for ‘UCSB OSM Paths’. There should be only one result.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/add_a_layer.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Adding a layer"><img src="images/add_a_layer.png" class="img-fluid figure-img" alt="Adding a layer"></a></p>
+<p><a href="images/add_a_layer.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Adding a layer"><img src="images/add_a_layer.png" class="img-fluid figure-img" alt="Adding a layer"></a></p>
 <figcaption>Adding a layer</figcaption>
 </figure>
 </div>
 <ul>
 <li>I think we should pause here to discuss properties. *</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/Workshop1/Step1/select-layer-group.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Drop down menu to My Groups"><img src="images/Workshop1/Step1/select-layer-group.png" class="img-fluid figure-img" style="width:40.0%" alt="Drop down menu to My Groups"></a></p>
-<figcaption>Drop down menu to My Groups</figcaption>
-</figure>
-</div>
 </section>
 <section id="challenge-import-points-layer-bike-racks" class="level3">
 <h3 class="anchored" data-anchor-id="challenge-import-points-layer-bike-racks">* Challenge * Import points layer (bike racks)</h3>
 <p>Repeat the above steps to add the feature layer <code>bike_racks_ucsb</code> to your map.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step1/select-feature-point-layer.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Add UCSB bike racks layer"><img src="images/Workshop1/Step1/select-feature-point-layer.png" class="img-fluid figure-img" style="width:90.0%" alt="Add UCSB bike racks layer"></a></p>
+<p><a href="images/Workshop1/Step1/select-feature-point-layer.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Add UCSB bike racks layer"><img src="images/Workshop1/Step1/select-feature-point-layer.png" class="img-fluid figure-img" style="width:90.0%" alt="Add UCSB bike racks layer"></a></p>
 <figcaption>Add UCSB bike racks layer</figcaption>
 </figure>
 </div>
 </section>
-<section id="import-polygon-layer-buildings" class="level3">
-<h3 class="anchored" data-anchor-id="import-polygon-layer-buildings">Import polygon layer (buildings)</h3>
-<p>Now look for the feature layer <code>UCSB Campus Buildings</code> and add it to your map.</p>
+<section id="challenge-import-via-groups" class="level3">
+<h3 class="anchored" data-anchor-id="challenge-import-via-groups">* Challenge * Import via Groups</h3>
+<p>This time, navigate to the feature layer <code>UCSB Campus Buildings</code> by first finding the “From Maps to Analysis” group.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step1/select-feature-polygon-layer.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Add UCSB buildings layer"><img src="images/Workshop1/Step1/select-feature-polygon-layer.png" class="img-fluid figure-img" style="width:90.0%" alt="Add UCSB buildings layer"></a></p>
+<p><a href="images/Workshop1/Step1/select-feature-polygon-layer.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Add UCSB buildings layer"><img src="images/Workshop1/Step1/select-feature-polygon-layer.png" class="img-fluid figure-img" style="width:90.0%" alt="Add UCSB buildings layer"></a></p>
 <figcaption>Add UCSB buildings layer</figcaption>
 </figure>
 </div>
@@ -357,7 +349,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>One advantage of those feature layers is that there is often data associated with it. For example, if you click on the three dots on the right of a feature layer you can access their <em>attribute table</em> using “Show table”.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step1/attribute-table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="attibute table of UCSB buildings layer"><img src="images/Workshop1/Step1/attribute-table.png" class="img-fluid figure-img" style="width:90.0%" alt="attibute table of UCSB buildings layer"></a></p>
+<p><a href="images/Workshop1/Step1/attribute-table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="attibute table of UCSB buildings layer"><img src="images/Workshop1/Step1/attribute-table.png" class="img-fluid figure-img" style="width:90.0%" alt="attibute table of UCSB buildings layer"></a></p>
 <figcaption>attibute table of UCSB buildings layer</figcaption>
 </figure>
 </div>
@@ -368,7 +360,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Now that you have added the layers to your map, save it by looking for the folder icon in the left menu bar and then selecting the <code>Save as</code> option.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step1/save-as.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="images/Workshop1/Step1/save-as.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
+<p><a href="images/Workshop1/Step1/save-as.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="images/Workshop1/Step1/save-as.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
 </figure>
 </div>
 <p>In there, you can add a title, tags, and a short description of your map.</p>
@@ -377,7 +369,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/AGO-meatball-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="images/AGO-meatball-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/AGO-meatball-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="images/AGO-meatball-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 </section>
@@ -395,7 +387,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>From the menu, we can select several categories of symbols. Let’s select the <code>Government</code> category and look for a bike parking icon. Click on the <code>Done</code> button to apply the changes and return to the symbol style panel.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step2/symbology-select-symbol.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="images/Workshop1/Step2/symbology-select-symbol.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step2/symbology-select-symbol.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="images/Workshop1/Step2/symbology-select-symbol.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 <p>To change the size of the symbol, we can use the <code>Size</code> slider to reduce it to a more appropriate size. First, select “Adjust size automatically” to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.</p>
@@ -417,7 +409,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step2/symbology-point-size.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="images/Workshop1/Step2/symbology-point-size.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step2/symbology-point-size.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="images/Workshop1/Step2/symbology-point-size.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 <section id="adjust-style-based-on-attribute" class="level3">
@@ -431,13 +423,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step2/symbology-by-attribute.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="images/Workshop1/Step2/symbology-by-attribute.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step2/symbology-by-attribute.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="images/Workshop1/Step2/symbology-by-attribute.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 <p>As a result, you will see that the buildings are now filled with different colors based on their use. You can further customize the colors by clicking on the color ramp and selecting a different one.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step2/symbology-by-attribute-result.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="images/Workshop1/Step2/symbology-by-attribute-result.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step2/symbology-by-attribute-result.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="images/Workshop1/Step2/symbology-by-attribute-result.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 </section>
@@ -455,13 +447,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>To increase the visibility of the bike paths, we can increase the width of the lines by editing the <code>Width</code> slider on the <code>Symbol style</code> panel. We selected 3.75 px for this example.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step2/symbology-transparency-by-attribute.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="images/Workshop1/Step2/symbology-transparency-by-attribute.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step2/symbology-transparency-by-attribute.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="images/Workshop1/Step2/symbology-transparency-by-attribute.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 <p>Here is the final result of our symbology adjustments:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step2/symbology-final-result.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="images/Workshop1/Step2/symbology-final-result.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step2/symbology-final-result.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="images/Workshop1/Step2/symbology-final-result.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 </section>
@@ -470,13 +462,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>After adding the layers and customizing their symbology, we have a good, almost ready map. However, the current basemap (Topographic) is a bit too busy and makes it hard to see the features we added. Let’s change it to a simpler basemap using the <code>Basemap</code> option in the left menu bar.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step2/basemap-menu-location.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img src="images/Workshop1/Step2/basemap-menu-location.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
+<p><a href="images/Workshop1/Step2/basemap-menu-location.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="images/Workshop1/Step2/basemap-menu-location.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
 </figure>
 </div>
 <p>From the basemap gallery, we can select a simpler basemap. For this example, we selected the <code>Light Gray Canvas</code> basemap, which provides a clean background that makes our features stand out.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step2/basemap-light-gray-canvas.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img src="images/Workshop1/Step2/basemap-light-gray-canvas.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step2/basemap-light-gray-canvas.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="images/Workshop1/Step2/basemap-light-gray-canvas.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 <p><strong>Don’t forget to save your map after making these changes!</strong></p>
@@ -487,13 +479,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In addition to bringing external sources of information into a map (whether in the form of a basemap or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a “sketch layer.”</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step3/drawing-sketch-layer-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img src="images/Workshop1/Step3/drawing-sketch-layer-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
+<p><a href="images/Workshop1/Step3/drawing-sketch-layer-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img src="images/Workshop1/Step3/drawing-sketch-layer-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
 </figure>
 </div>
 <p>After adding the sketch layer to your workspace, a new menu will appear in the right column with drawing tools and configuration options.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step3/drawing-sketch-bar-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img src="images/Workshop1/Step3/drawing-sketch-bar-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
+<p><a href="images/Workshop1/Step3/drawing-sketch-bar-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img src="images/Workshop1/Step3/drawing-sketch-bar-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
 </figure>
 </div>
 <ul>
@@ -507,7 +499,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step3/drawing-point-vector.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img src="images/Workshop1/Step3/drawing-point-vector.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step3/drawing-point-vector.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img src="images/Workshop1/Step3/drawing-point-vector.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 <ul>
@@ -516,7 +508,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>From the sketch layer menu, select the line drawing tool. Click on the map to start drawing the line, and click again to add vertices. Double-click to finish the line.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step3/drawing-line-vector.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img src="images/Workshop1/Step3/drawing-line-vector.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step3/drawing-line-vector.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img src="images/Workshop1/Step3/drawing-line-vector.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 <p>You can customize the line symbol in the sketch layer menu before adding it to the map. In our example, we add the following settings to the line symbol:</p>
@@ -527,7 +519,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step3/drawing-line-style.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26"><img src="images/Workshop1/Step3/drawing-line-style.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step3/drawing-line-style.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img src="images/Workshop1/Step3/drawing-line-style.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 <ul>
@@ -540,7 +532,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step3/drawing-circle-vector.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-27"><img src="images/Workshop1/Step3/drawing-circle-vector.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step3/drawing-circle-vector.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img src="images/Workshop1/Step3/drawing-circle-vector.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 <ul>
@@ -552,10 +544,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="step-4-prepare-the-map-for-publication" class="level2">
 <h2 class="anchored" data-anchor-id="step-4-prepare-the-map-for-publication">Step 4: Prepare the map for publication</h2>
 <p>Almost there! At this point you’re ready to start packaging your map for publication.</p>
+<section id="fine-tune-symbols" class="level3">
+<h3 class="anchored" data-anchor-id="fine-tune-symbols">Fine tune symbols</h3>
+<p>Some of the bike racks are too close together. For point data, we have the option of using ‘proportional symbols’ or ‘clustered symbols’ to solve this visual clutter.</p>
+<p>** To do **: Insturctions for using clustered symbols for the bike racks layer to reduce visual clutter.</p>
 <p>To do that, you need to look for the <code>Print</code> option in the left menu bar.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step4/export-print-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28"><img src="images/Workshop1/Step4/export-print-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
+<p><a href="images/Workshop1/Step4/export-print-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26"><img src="images/Workshop1/Step4/export-print-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
 </figure>
 </div>
 <p>For exporting the map you have two options:</p>
@@ -569,9 +565,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Adjust the zoom and position of the map in the preview window to ensure everything is visible and well-framed.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step4/export-layout-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29"><img src="images/Workshop1/Step4/export-layout-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step4/export-layout-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27"><img src="images/Workshop1/Step4/export-layout-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
+</section>
 </section>
 <section id="step-5-share-your-map" class="level2">
 <h2 class="anchored" data-anchor-id="step-5-share-your-map">Step 5: Share your map</h2>
@@ -579,13 +576,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The result will be list on the <code>Exports</code> panel, where you can save the file to your computer by clicking on the three dots next to the export and selecting <code>Save as</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step4/export-save-as.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30"><img src="images/Workshop1/Step4/export-save-as.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
+<p><a href="images/Workshop1/Step4/export-save-as.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28"><img src="images/Workshop1/Step4/export-save-as.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
 </figure>
 </div>
 <p>This will save the exported map to you ArcGIS Online content. You can access it later from the <code>Content</code> menu in the top menu bar. The new item will be available as an Image file that you can download to your computer.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/Workshop1/Step4/export-download-image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-31"><img src="images/Workshop1/Step4/export-download-image.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+<p><a href="images/Workshop1/Step4/export-download-image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29"><img src="images/Workshop1/Step4/export-download-image.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
 </figure>
 </div>
 <p><strong>NOTE</strong>: Public sharing is a little more complicated, it requires to set public permissions to all layers used in the map before sharing the map publicly.</p>
@@ -1098,290 +1095,294 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.</span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/arcgis-login.png)</span>{size="90%" fig-align="center"}</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="fu">### Tour of the interface</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>The main organization page lists the campus administrative contacts and open data groups available on campus. You can also see the latest content published by users on your campus.</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>Along the top of the page, is the main tool bar. </span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/main-menu-bar.png)</span>{width="90%" fig-align="center"}</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Home** will take you to the main landing page when you first sign in.</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The **Gallery** contains items from our 'featured content' group</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Groups** are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called <span class="co">[</span><span class="ot">From Maps to Analysis</span><span class="co">](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview)</span> which contains most of the data layers we will be using. </span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Content** is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. </span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Notebooks** is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Organization** will take you back to our main page. This is not the same as Home. </span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Scene**, or **Scene Viewer** is where you can create 3D GIS scenes, such as neighborhood models and digital twins. </span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Map**, or **Map Viewer** is where you can create 2D maps. ***We will be focusing on using the Map Viewer for this workshop.***</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">### Tour of the interface</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>The main organization page lists the campus administrative contacts and open data groups available on campus. You can also see the latest content published by users on your campus.</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>Along the top of the page, is the main tool bar. </span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/main-menu-bar.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Home** will take you to the main landing page when you first sign in.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The **Gallery** contains items from our 'featured content' group</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Groups** are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called <span class="co">[</span><span class="ot">From Maps to Analysis</span><span class="co">](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview)</span> which contains most of the data layers we will be using. </span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Content** is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. </span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Notebooks** is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Organization** will take you back to our main page. This is not the same as Home. </span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Scene**, or **Scene Viewer** is where you can create 3D GIS scenes, such as neighborhood models and digital twins. </span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Map**, or **Map Viewer** is where you can create 2D maps. ***We will be focusing on using the Map Viewer for this workshop.***</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Map Viewer</span></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>Open a new, empty map by clicking "Map" on your top menu bar.</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/new_empty_map.png)</span>{size="50%" fig-align="center"}</span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">### Map main components</span></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>In the Map Viewer there is a menu bar in the left column. This is where you can add items to your map. </span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Layers (your own or imported from others)</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Basemap (background)</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Symbology &amp; legend</span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Save and open...</span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="fu">### Save your work</span></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>There will be a blue dot until you save</span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Once you save, more options will be available</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="fu">### Basemap</span></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>A new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default. </span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/current-basemap.png)</span>{width="90%" fig-align="center"}</span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>Make sure you choose a basemap that is easy to follow and is a good reference. The default basemap layer is **Topographic**. </span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="fu">## Feature layers</span></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>Let's add our first data layers to our map.</span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." </span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>(we call this a meatball menu) next to the layer to open the same panel.</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Map Viewer</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Open a new, empty map by clicking "Map" on your top menu bar.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/new_empty_map.png)</span>{size="50%" fig-align="center"}</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">### Map main components</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>In the Map Viewer there is a menu bar in the left column. This is where you can add items to your map. </span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Layers (your own or imported from others)</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Basemap (background)</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Symbology &amp; legend</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Save and open...</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="fu">### Save your work</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>There will be a blue dot until you save</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Once you save, more options will be available</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="fu">### Basemap</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>A new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default. </span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/current-basemap.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>Make sure you choose a basemap that is easy to follow and is a good reference. The default basemap layer is **Topographic**. </span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="fu">## Feature layers</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>Let's add our first data layers to our map.</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." </span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>(we call this a meatball menu) next to the layer to open the same panel.</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="fu">### Step 1: Add layers to your map</span></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes and line, bike racks as points, buildings as polygons) and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.</span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>Start by opening a new map in the <span class="co">[</span><span class="ot">Map Viewer</span><span class="co">](https://ucsb.maps.arcgis.com/apps/mapviewer/index.html)</span>.</span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="fu">### Import lines layer (bike paths)</span></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>From the **Layers** panel, click on the add layer button. Search 'Your organization' for 'UCSB OSM Paths'. There should be only one result.</span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="al">![Adding a layer](images/add_a_layer)</span></span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>I think we should pause here to discuss properties. * </span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="fu">### Step 1: Add layers to your map</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes and line, bike racks as points, buildings as polygons) and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>Start by opening a new map in the <span class="co">[</span><span class="ot">Map Viewer</span><span class="co">](https://ucsb.maps.arcgis.com/apps/mapviewer/index.html)</span>.</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="fu">### Import lines layer (bike paths)</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>From the **Layers** panel, click on the add layer button. Search 'My  organization' for 'UCSB OSM Paths'. There should be only one result.</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="al">![Adding a layer](images/add_a_layer)</span></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>I think we should pause here to discuss properties. * </span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="al">![Drop down menu to My Groups](images/Workshop1/Step1/select-layer-group.png)</span>{width=40%}</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="fu">### * Challenge * Import points layer (bike racks)</span></span>
 <span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="fu">### * Challenge * Import points layer (bike racks)</span></span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>Repeat the above steps to add the feature layer <span class="in">`bike_racks_ucsb`</span> to your map.</span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="al">![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png)</span>{width=90%}</span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="fu">### Import polygon layer (buildings)</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>Repeat the above steps to add the feature layer <span class="in">`bike_racks_ucsb`</span> to your map.</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="al">![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png)</span>{width=90%}</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="fu">### * Challenge * Import via Groups</span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>This time, navigate to the feature layer <span class="in">`UCSB Campus Buildings`</span> </span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>by first finding the "From Maps to Analysis" group. </span>
 <span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>Now look for the feature layer <span class="in">`UCSB Campus Buildings`</span> and add it to your map.</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="al">![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png)</span>{width=90%}</span>
 <span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="al">![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png)</span>{width=90%}</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="fu">### Accessing the underlying data</span></span>
 <span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="fu">### Accessing the underlying data</span></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>One advantage of those feature layers is that there is often data associated with it. For example, if you click on the three dots on the right of a feature layer you can access their _attribute table_ using "Show table".</span>
 <span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>One advantage of those feature layers is that there is often data associated with it. For example, if you click on the three dots on the right of a feature layer you can access their _attribute table_ using "Show table".</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="al">![attibute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png)</span>{width=90%}</span>
 <span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="al">![attibute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png)</span>{width=90%}</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>We will see later how you can leverage those attributes to set the symbology of a layer according to categories or quantities provided by the attribute table. You can also compute new attributes either based on other attributes or geopatial information. However this will be for our second workshop.</span>
 <span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>We will see later how you can leverage those attributes to set the symbology of a layer according to categories or quantities provided by the attribute table. You can also compute new attributes either based on other attributes or geopatial information. However this will be for our second workshop.</span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="fu">### Save your map</span></span>
 <span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="fu">### Save your map</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>Now that you have added the layers to your map, save it by looking for the folder icon in the left menu bar and then selecting the <span class="in">`Save as`</span> option. </span>
 <span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>Now that you have added the layers to your map, save it by looking for the folder icon in the left menu bar and then selecting the <span class="in">`Save as`</span> option. </span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step1/save-as.png)</span>{width="40%" fig-align="center"}</span>
 <span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step1/save-as.png)</span>{width="40%" fig-align="center"}</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>In there, you can add a title, tags, and a short description of your map.</span>
 <span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>In there, you can add a title, tags, and a short description of your map.</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>aside *</span>
-<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>Next to your campus profile, is a "tic tac toe" menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer. </span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>aside *</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>Next to your campus profile, is a "tic tac toe" menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer. </span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/AGO-meatball-menu.png)</span>{width="90%" fig-align="center"}</span>
 <span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/AGO-meatball-menu.png)</span>{width="90%" fig-align="center"}</span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 2: Customize symbology &amp; transparency</span></span>
 <span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>After adding our three layers, we have some work to do to make the map more readable. First, let's adjust the symbology of the bike racks layer to reduce its size and change its symbol to a bike icon.</span>
 <span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 2: Customize symbology &amp; transparency</span></span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>After adding our three layers, we have some work to do to make the map more readable. First, let's adjust the symbology of the bike racks layer to reduce its size and change its symbol to a bike icon.</span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Click on the layer <span class="in">`bike_racks_ucsb`</span> to open its properties panel.</span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>On the panel <span class="in">`Symbology`</span>, click on <span class="in">`Edit layer style`</span>.</span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Look for the <span class="in">`② Pick a style`</span> option and select <span class="in">`Style options`</span>.</span>
-<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Click on the pencil icon next to <span class="in">`Symbol style`</span> to open the symbol selector.</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Click on the layer <span class="in">`bike_racks_ucsb`</span> to open its properties panel.</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>On the panel <span class="in">`Symbology`</span>, click on <span class="in">`Edit layer style`</span>.</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Look for the <span class="in">`② Pick a style`</span> option and select <span class="in">`Style options`</span>.</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Click on the pencil icon next to <span class="in">`Symbol style`</span> to open the symbol selector.</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>There, we have multiple options to customize the symbol. Let's click on the current symbol chevron to open the full symbol gallery.</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>From the menu, we can select several categories of symbols. Let's select the <span class="in">`Government`</span> category and look for a bike parking icon. Click on the <span class="in">`Done`</span> button to apply the changes and return to the symbol style panel. </span>
 <span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>There, we have multiple options to customize the symbol. Let's click on the current symbol chevron to open the full symbol gallery.</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/symbology-select-symbol.png)</span>{width="90%" fig-align="center"}</span>
 <span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>From the menu, we can select several categories of symbols. Let's select the <span class="in">`Government`</span> category and look for a bike parking icon. Click on the <span class="in">`Done`</span> button to apply the changes and return to the symbol style panel. </span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>To change the size of the symbol, we can use the <span class="in">`Size`</span> slider to reduce it to a more appropriate size. First, select "Adjust size automatically" to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.</span>
 <span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/symbology-select-symbol.png)</span>{width="90%" fig-align="center"}</span>
-<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>To change the size of the symbol, we can use the <span class="in">`Size`</span> slider to reduce it to a more appropriate size. First, select "Adjust size automatically" to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning collapse="true" title="Size slider quirk"}</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>In ArcGIS Online, every time you select the "Adjust size automatically" option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option.</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning collapse="true" title="Size slider quirk"}</span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>In ArcGIS Online, every time you select the "Adjust size automatically" option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option.</span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/symbology-point-size.png)</span>{width="90%" fig-align="center"}</span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/symbology-point-size.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a><span class="fu">### Adjust style based on attribute</span></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>Now, what if we wanted to adjust the symbology based on an attribute? Let's say we wanted to fill each building with a different color based on its use (academic, residential, administrative, etc.). We can do that by changing the style of the <span class="in">`UCSB Campus Buildings`</span> layer.</span>
 <span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="fu">### Adjust style based on attribute</span></span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>Now, what if we wanted to adjust the symbology based on an attribute? Let's say we wanted to fill each building with a different color based on its use (academic, residential, administrative, etc.). We can do that by changing the style of the <span class="in">`UCSB Campus Buildings`</span> layer.</span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Click on the layer <span class="in">`UCSB Campus Buildings`</span> to open its properties panel.</span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>On the panel <span class="in">`Symbology`</span>, click on <span class="in">`Edit layer style`</span>.</span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Look for the <span class="in">`① Choose attributes`</span> option and select <span class="in">`+ Field`</span>.</span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Select the attribute <span class="in">`b_use`</span>, which stands for building use, and click on <span class="in">`Add`</span>.</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Click on the layer <span class="in">`UCSB Campus Buildings`</span> to open its properties panel.</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>On the panel <span class="in">`Symbology`</span>, click on <span class="in">`Edit layer style`</span>.</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Look for the <span class="in">`① Choose attributes`</span> option and select <span class="in">`+ Field`</span>.</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Select the attribute <span class="in">`b_use`</span>, which stands for building use, and click on <span class="in">`Add`</span>.</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/symbology-by-attribute.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>As a result, you will see that the buildings are now filled with different colors based on their use. You can further customize the colors by clicking on the color ramp and selecting a different one.</span>
 <span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/symbology-by-attribute.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/symbology-by-attribute-result.png)</span>{width="90%" fig-align="center"}</span>
 <span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>As a result, you will see that the buildings are now filled with different colors based on their use. You can further customize the colors by clicking on the color ramp and selecting a different one.</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="fu">### Adjust layer transparency based on attribute</span></span>
 <span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/symbology-by-attribute-result.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>Finally, let's say we wanted to adjust the transparency of cycleways based on the max speed allowed on each bike path. We can do that by changing the style of the <span class="in">`osm_cycleways`</span> layer.</span>
 <span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="fu">### Adjust layer transparency based on attribute</span></span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>Finally, let's say we wanted to adjust the transparency of cycleways based on the max speed allowed on each bike path. We can do that by changing the style of the <span class="in">`osm_cycleways`</span> layer.</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Click on the layer <span class="in">`osm_cycleways`</span> to open its properties panel.</span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>On the panel <span class="in">`Symbology`</span>, click on <span class="in">`Edit layer style`</span>.</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Look for the <span class="in">`② Pick a style`</span> option and select <span class="in">`Style options`</span>.</span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Open the panel <span class="in">`Transparency by attribute`</span> and switch the toggle to set the transparency based on attribute values.</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Select the attribute <span class="in">`maxspeed`</span>.</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Click on the layer <span class="in">`osm_cycleways`</span> to open its properties panel.</span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>On the panel <span class="in">`Symbology`</span>, click on <span class="in">`Edit layer style`</span>.</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Look for the <span class="in">`② Pick a style`</span> option and select <span class="in">`Style options`</span>.</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Open the panel <span class="in">`Transparency by attribute`</span> and switch the toggle to set the transparency based on attribute values.</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Select the attribute <span class="in">`maxspeed`</span>.</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>As a result, you will see that the bike paths are now more transparent for higher speed limits and less transparent for lower speed limits.</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>To increase the visibility of the bike paths, we can increase the width of the lines by editing the <span class="in">`Width`</span> slider on the <span class="in">`Symbol style`</span> panel. We selected 3.75 px for this example.</span>
 <span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>As a result, you will see that the bike paths are now more transparent for higher speed limits and less transparent for lower speed limits.</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/symbology-transparency-by-attribute.png)</span>{width="90%" fig-align="center"}</span>
 <span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>To increase the visibility of the bike paths, we can increase the width of the lines by editing the <span class="in">`Width`</span> slider on the <span class="in">`Symbol style`</span> panel. We selected 3.75 px for this example.</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>Here is the final result of our symbology adjustments:</span>
 <span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/symbology-transparency-by-attribute.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/symbology-final-result.png)</span>{width="90%" fig-align="center"}</span>
 <span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>Here is the final result of our symbology adjustments:</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="fu">### Select a better basemap</span></span>
 <span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/symbology-final-result.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>After adding the layers and customizing their symbology, we have a good, almost ready map. However, the current basemap (Topographic) is a bit too busy and makes it hard to see the features we added. Let's change it to a simpler basemap using the <span class="in">`Basemap`</span> option in the left menu bar.</span>
 <span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="fu">### Select a better basemap</span></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/basemap-menu-location.png)</span>{width="40%" fig-align="center"}</span>
 <span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>After adding the layers and customizing their symbology, we have a good, almost ready map. However, the current basemap (Topographic) is a bit too busy and makes it hard to see the features we added. Let's change it to a simpler basemap using the <span class="in">`Basemap`</span> option in the left menu bar.</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>From the basemap gallery, we can select a simpler basemap. For this example, we selected the <span class="in">`Light Gray Canvas`</span> basemap, which provides a clean background that makes our features stand out.</span>
 <span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/basemap-menu-location.png)</span>{width="40%" fig-align="center"}</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/basemap-light-gray-canvas.png)</span>{width="90%" fig-align="center"}</span>
 <span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>From the basemap gallery, we can select a simpler basemap. For this example, we selected the <span class="in">`Light Gray Canvas`</span> basemap, which provides a clean background that makes our features stand out.</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>**Don't forget to save your map after making these changes!**</span>
 <span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step2/basemap-light-gray-canvas.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 3: Annotate the map</span></span>
 <span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>**Don't forget to save your map after making these changes!**</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>In addition to bringing external sources of information into a map (whether in the form of a basemap or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a "sketch layer."</span>
 <span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 3: Annotate the map</span></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-sketch-layer-menu.png)</span>{width="40%" fig-align="center"}</span>
 <span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>In addition to bringing external sources of information into a map (whether in the form of a basemap or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a "sketch layer."</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>After adding the sketch layer to your workspace, a new menu will appear in the right column with drawing tools and configuration options.</span>
 <span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-sketch-layer-menu.png)</span>{width="40%" fig-align="center"}</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-sketch-bar-menu.png)</span>{width="40%" fig-align="center"}</span>
 <span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>After adding the sketch layer to your workspace, a new menu will appear in the right column with drawing tools and configuration options.</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Draw points where you were in a (near-)accident on a bike path, either as bicyclist of pedestrian.</span>
 <span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-sketch-bar-menu.png)</span>{width="40%" fig-align="center"}</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>Zoom in to the location and add a point with the point drawing tool. You can customize the symbol, size, and color of the point in the sketch layer menu before adding it to the map. Put as many points as you like.</span>
 <span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Draw points where you were in a (near-)accident on a bike path, either as bicyclist of pedestrian.</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>In our example, we add the following settings to the point symbol:</span>
 <span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>Zoom in to the location and add a point with the point drawing tool. You can customize the symbol, size, and color of the point in the sketch layer menu before adding it to the map. Put as many points as you like.</span>
-<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>In our example, we add the following settings to the point symbol:</span>
-<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Size: 48 px</span>
-<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Vector marker (background): Blue (#2132cf)</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Size: 48 px</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Vector marker (background): Blue (#2132cf)</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-point-vector.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Draw a line where you think there should be a bike path but isn't.</span>
 <span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-point-vector.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>From the sketch layer menu, select the line drawing tool. Click on the map to start drawing the line, and click again to add vertices. Double-click to finish the line. </span>
 <span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Draw a line where you think there should be a bike path but isn't.</span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-line-vector.gif)</span>{width="90%" fig-align="center"}</span>
 <span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>From the sketch layer menu, select the line drawing tool. Click on the map to start drawing the line, and click again to add vertices. Double-click to finish the line. </span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>You can customize the line symbol in the sketch layer menu before adding it to the map. In our example, we add the following settings to the line symbol:</span>
 <span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-line-vector.gif)</span>{width="90%" fig-align="center"}</span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>You can customize the line symbol in the sketch layer menu before adding it to the map. In our example, we add the following settings to the line symbol:</span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Width: 5 px</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dotted line pattern</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Color: Light blue (#00c8ff) </span>
 <span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Width: 5 px</span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dotted line pattern</span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Color: Light blue (#00c8ff) </span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-line-style.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Draw a circle where you think there should be a bike parking lot but isn't.</span>
 <span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-line-style.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>Similarly to the line drawing tool, select the circle drawing tool from the sketch layer menu. Click on the map to draw the circle, and click on the select tool to finish the shape. You can also customize the symbol after drawing it by selecting it and changing its properties in the sketch layer menu. In our example, we add the following settings to the circle symbol:</span>
 <span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Draw a circle where you think there should be a bike parking lot but isn't.</span>
-<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>Similarly to the line drawing tool, select the circle drawing tool from the sketch layer menu. Click on the map to draw the circle, and click on the select tool to finish the shape. You can also customize the symbol after drawing it by selecting it and changing its properties in the sketch layer menu. In our example, we add the following settings to the circle symbol:</span>
-<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fill color: Red (#d13434)</span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fill transparency: 38%</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fill color: Red (#d13434)</span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fill transparency: 38%</span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-circle-vector.gif)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Rename the Sketch layer to "Annotations"</span>
 <span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step3/drawing-circle-vector.gif)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>Finally, let's rename the sketch layer to "Annotations" to better reflect its purpose. Click on the three dots next to the sketch layer and select <span class="in">`Rename`</span>. Enter the new name and click <span class="in">`OK`</span>.</span>
 <span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Rename the Sketch layer to "Annotations"</span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>**Save your map after making these changes**</span>
 <span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>Finally, let's rename the sketch layer to "Annotations" to better reflect its purpose. Click on the three dots next to the sketch layer and select <span class="in">`Rename`</span>. Enter the new name and click <span class="in">`OK`</span>.</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 4: Prepare the map for publication</span></span>
 <span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>**Save your map after making these changes**</span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>Almost there! At this point you're ready to start packaging your map for publication.</span>
 <span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 4: Prepare the map for publication</span></span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>Almost there! At this point you're ready to start packaging your map for publication.</span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>To do that, you need to look for the <span class="in">`Print`</span> option in the left menu bar.</span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step4/export-print-menu.png)</span>{width="40%" fig-align="center"}</span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="fu">### Fine tune symbols</span></span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>Some of the bike racks are too close together. For point data, we have</span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>the option of using 'proportional symbols' or 'clustered symbols' to</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>solve this visual clutter.</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>** To do **: Insturctions for using clustered symbols for the bike racks layer to reduce visual clutter.</span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>For exporting the map you have two options:</span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>To do that, you need to look for the <span class="in">`Print`</span> option in the left menu bar.</span>
 <span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Layout: This option allows you to create a more complex layout with additional map elements such as title, legend, scale bar, north arrow, etc. You can choose from several pre-defined templates or create your own custom layout.</span>
-<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Map only: With this option, you can export just the map itself without any additional elements. You can choose the file format (PNG, PDF, etc.) and the resolution of the exported map.</span>
-<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>For our purposes, we will select the <span class="in">`Layout`</span> option to create a more complete map for publication.</span>
-<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>In the layout menu, you can change the title of the map, select a <span class="in">`Template`</span> (which is basically a standard page size and orientation), and select the <span class="in">`File format`</span> for the export (e.g., PNG, PDF).</span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step4/export-print-menu.png)</span>{width="40%" fig-align="center"}</span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>For exporting the map you have two options:</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Layout: This option allows you to create a more complex layout with additional map elements such as title, legend, scale bar, north arrow, etc. You can choose from several pre-defined templates or create your own custom layout.</span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Map only: With this option, you can export just the map itself without any additional elements. You can choose the file format (PNG, PDF, etc.) and the resolution of the exported map.</span>
 <span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>You can also customize more the layout by enabling the <span class="in">`Advance options`</span> panel. You can set the scale, add an author name, include copyright information, increase or decrease the resolution, indicate the <span class="co">[</span><span class="ot">output spatial reference</span><span class="co">](https://developers.arcgis.com/rest/services-reference/enterprise/using-spatial-references/)</span>, and select to include legend, north arrow, and scale bar.</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>For our purposes, we will select the <span class="in">`Layout`</span> option to create a more complete map for publication.</span>
 <span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>Adjust the zoom and position of the map in the preview window to ensure everything is visible and well-framed.</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>In the layout menu, you can change the title of the map, select a <span class="in">`Template`</span> (which is basically a standard page size and orientation), and select the <span class="in">`File format`</span> for the export (e.g., PNG, PDF).</span>
 <span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step4/export-layout-menu.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>You can also customize more the layout by enabling the <span class="in">`Advance options`</span> panel. You can set the scale, add an author name, include copyright information, increase or decrease the resolution, indicate the <span class="co">[</span><span class="ot">output spatial reference</span><span class="co">](https://developers.arcgis.com/rest/services-reference/enterprise/using-spatial-references/)</span>, and select to include legend, north arrow, and scale bar.</span>
 <span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 5: Share your map</span></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>Adjust the zoom and position of the map in the preview window to ensure everything is visible and well-framed.</span>
 <span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>When you're satisfied with the layout and settings, click on the <span class="in">`Export`</span> button to generate the map. Depending on the selected file format and resolution, it may take a few moments to process the export.</span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step4/export-layout-menu.png)</span>{width="90%" fig-align="center"}</span>
 <span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>The result will be list on the <span class="in">`Exports`</span> panel, where you can save the file to your computer by clicking on the three dots next to the export and selecting <span class="in">`Save as`</span>.</span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 5: Share your map</span></span>
 <span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step4/export-save-as.png)</span>{width="40%" fig-align="center"}</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>When you're satisfied with the layout and settings, click on the <span class="in">`Export`</span> button to generate the map. Depending on the selected file format and resolution, it may take a few moments to process the export.</span>
 <span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>This will save the exported map to you ArcGIS Online content. You can access it later from the <span class="in">`Content`</span> menu in the top menu bar. The new item will be available as an Image file that you can download to your computer.</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>The result will be list on the <span class="in">`Exports`</span> panel, where you can save the file to your computer by clicking on the three dots next to the export and selecting <span class="in">`Save as`</span>.</span>
 <span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step4/export-download-image.png)</span>{width="90%" fig-align="center"}</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step4/export-save-as.png)</span>{width="40%" fig-align="center"}</span>
 <span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>**NOTE**: Public sharing is a little more complicated, it requires to set public permissions to all layers used in the map before sharing the map publicly.</span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>This will save the exported map to you ArcGIS Online content. You can access it later from the <span class="in">`Content`</span> menu in the top menu bar. The new item will be available as an Image file that you can download to your computer.</span>
 <span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a><span class="fu">## Other appoaches</span></span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Workshop1/Step4/export-download-image.png)</span>{width="90%" fig-align="center"}</span>
 <span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>There are many ways of making a simple map. Here are some alternative approaches.</span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>**NOTE**: Public sharing is a little more complicated, it requires to set public permissions to all layers used in the map before sharing the map publicly.</span>
 <span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>By screen grabbing: Create a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps). Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that. <span class="sc">\[</span>The following is probably too detailed...] It is possible to capture the base layer at higher-than-screen resolution by zooming in, panning and screen grabbing it in pieces, and merging the pieces using a tool like Adobe Photoshop. And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.</span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a><span class="fu">## Other appoaches</span></span>
 <span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Google Earth</span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>There are many ways of making a simple map. Here are some alternative approaches.</span>
 <span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>MapBox</span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>By screen grabbing: Create a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps). Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that. <span class="sc">\[</span>The following is probably too detailed...] It is possible to capture the base layer at higher-than-screen resolution by zooming in, panning and screen grabbing it in pieces, and merging the pieces using a tool like Adobe Photoshop. And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.</span>
 <span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>OpenStreetMaps</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>Google Earth</span>
 <span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span><span class="co">[</span><span class="ot">CalTopo</span><span class="co">](https://caltopo.com)</span> comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>MapBox</span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>OpenStreetMaps</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span><span class="co">[</span><span class="ot">CalTopo</span><span class="co">](https://caltopo.com)</span> comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
