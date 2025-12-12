@@ -35,7 +35,7 @@ Do not use the ArcGIS Login. This is for users who do NOT have a UCSB Net ID.
 
 Click "Continue" and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.
 
-![](images/arcgis-landingpage.png){width="90%" fig-align="center"}
+![](images/arcgis-login.png){width="90%" fig-align="center"}
 
 
 ### Tour of the interface
