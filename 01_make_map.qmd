@@ -124,6 +124,15 @@ Now look for the feature layer `UCSB Campus Buildings` and add it to your map.
 
 ![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){width=90%}
 
+### Accessing the underlying data
+
+One advantage of those feature layers is that there is often data associated with it. For example, if you click on the three dots on the right of a feature layer you can access their _attribute table_ using "Show table".
+
+![attibute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png){width=90%}
+
+We will see later how you can leverage those attributes to set the symbology of a layer according to categories or quantities provided by the attribute table. You can also compute new attributes either based on other attributes or geopatial information. However this will be for our second workshop.
+
+
 ### Save your map
 
 Now that you have added the layers to your map, save it by looking for the folder icon in the left menu bar and then selecting the `Save as` option. 
