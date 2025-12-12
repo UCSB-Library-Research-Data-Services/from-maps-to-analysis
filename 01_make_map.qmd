@@ -51,7 +51,7 @@ Along the top of the page, is the main tool bar.
 
 - **Home** will take you to the main landing page when you first sign in.
 - The **Gallery** contains items from our 'featured content' group
-- **Groups** are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this project, we have created a group called [From Maps to Analysis](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview) which contains most of the data layers we will be using. 
+- **Groups** are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called [From Maps to Analysis](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview) which contains most of the data layers we will be using. 
 - **Content** is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. 
 - **Notebooks** is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.
 - **Organization** will take you back to our main page. This is not the same as Home. 
@@ -63,7 +63,7 @@ Along the top of the page, is the main tool bar.
 
 Open a new, empty map by clicking "Map" on your top menu bar.
 
-![](images/new_empty_map.png){width="80%" fig-align="center"}
+![](images/new_empty_map.png){size="50%" fig-align="center"}
 
 ### Map main components
 
