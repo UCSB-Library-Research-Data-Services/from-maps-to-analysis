@@ -13,15 +13,14 @@ We will end up with a map something like this:
 # UCSB bike infrastructure map 
 
 
-**Preliminary**: Add an image of the final map here
+**Preliminary**: The below image of the final map is a placehold
 
 [Let's make something like this](https://arcg.is/0iD4jS0)
 
 ![Preliminary version of the possible result](images/export-finish-map.png){width="90%" fig-align="center"}
 
-# Can we put in straight html?
-<iframe width="700" height="600" allow="local-network-access; geolocation" title="My campus bike map" src="https://ucsb.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=2b16d246ee4c4321852712b9b4652b74&theme=light&heading=true&legend=true&scroll=false&center=-119.84880662402163,34.412907297940166&scale=4513.988705" ></iframe>
-
+(it would be nice if we could put our map into an iframe, but 
+github doesn't support that)
 
 As we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool. In fact, in many cases GIS is overkill, both because most of the features GIS tools provide will not be used and because the GIS interface can be cumbersome. But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that in turn opens up and provides an introduction to the world of spatial analysis.
 
@@ -33,14 +32,13 @@ A brief tour of the interface.
 
 <https://ucsb.maps.arcgis.com>
 
-Single-sign on with your UCSB NetID to access the licensed features. You may need to enter the url "ucsb" into the space. It is entered below.
-Do not use the ArcGIS Login. This is for users who do NOT have a UCSB Net ID.
+Sign on with your UCSB NetID. You may need to enter "ucsb" into the url box. Do not use the ArcGIS login! This is for users who do NOT have a UCSB Net ID.
 
 ![](images/arcgis-login.png){width=40% fig-align="center"}
 
-Click "Continue" and enter your UCSB NetID credentials. You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.
+You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.
 
-![](images/arcgis-login.png){width="90%" fig-align="center"}
+![](images/arcgis-login.png){size="90%" fig-align="center"}
 
 
 ### Tour of the interface
