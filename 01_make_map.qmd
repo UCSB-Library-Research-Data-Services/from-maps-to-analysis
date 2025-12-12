@@ -15,7 +15,9 @@ We will end up with a map something like this:
 
 **Preliminary**: Add an image of the final map here
 
-![Preliminary version of the possible result](images/Workshop1/Step4/export-finish-map.jpg){width="90%" fig-align="center"}
+[Let's make something like this](https://arcg.is/0iD4jS0)
+
+![Preliminary version of the possible result](images/export-finish-map.png){width="90%" fig-align="center"}
 
 
 As we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool. In fact, in many cases GIS is overkill, both because most of the features GIS tools provide will not be used and because the GIS interface can be cumbersome. But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that in turn opens up and provides an introduction to the world of spatial analysis.
@@ -108,11 +110,8 @@ From the **Layers** panel, click on the add layer button. Search 'Your organizat
 
 ![Drop down menu to My Groups](images/Workshop1/Step1/select-layer-group.png){width=40%}
 
-Look for the feature layer `osm_cycleways` and click on the `+ Add` button to add it to your map.
 
-![Add UCSB cycleways layer](images/Workshop1/Step1/select-feature-line-layer.png){width=90%}
-
-### Import points layer (bike racks)
+### * Challenge * Import points layer (bike racks)
 
 Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
 
