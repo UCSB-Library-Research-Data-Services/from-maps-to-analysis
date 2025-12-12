@@ -19,6 +19,9 @@ We will end up with a map something like this:
 
 ![Preliminary version of the possible result](images/export-finish-map.png){width="90%" fig-align="center"}
 
+# Can we put in straight html?
+<iframe width="700" height="600" allow="local-network-access; geolocation" title="My campus bike map" src="https://ucsb.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=2b16d246ee4c4321852712b9b4652b74&theme=light&heading=true&legend=true&scroll=false&center=-119.84880662402163,34.412907297940166&scale=4513.988705" ></iframe>
+
 
 As we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool. In fact, in many cases GIS is overkill, both because most of the features GIS tools provide will not be used and because the GIS interface can be cumbersome. But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that in turn opens up and provides an introduction to the world of spatial analysis.
 
