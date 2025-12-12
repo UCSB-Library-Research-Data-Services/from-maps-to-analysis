@@ -93,9 +93,8 @@ When you add an item to your map, it will show up under your Layers. When you wa
 
 
 ### Step 1: Add layers to your map
-![](images/layer-properties.png){width="90%" fig-align="center"}
 
-With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
+With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes and line, bike racks as points, buildings as polygons) and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
 
 Start by opening a new map in the [Map Viewer](https://ucsb.maps.arcgis.com/apps/mapviewer/index.html).
 
