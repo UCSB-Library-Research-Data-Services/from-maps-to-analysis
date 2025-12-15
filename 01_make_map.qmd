@@ -15,7 +15,7 @@ We will end up with a map something like this:
 
 **Preliminary**: The below image of the final map is a placehold
 
-[Let's make something like this](https://arcg.is/0iD4jS0)
+[Let's make something like this](https://arcg.is/0iD4jS0){target="_blank"}
 
 ![Preliminary version of the possible result](images/export-finish-map.png){width="90%" fig-align="center"}
 
@@ -30,7 +30,7 @@ A brief tour of the interface.
 
 ### Log on to ArcGIS Online
 
-<https://ucsb.maps.arcgis.com>
+<https://ucsb.maps.arcgis.com>{target="_blank"}
 
 Sign on with your UCSB NetID. You may need to enter "ucsb" into the url box. Do not use the ArcGIS login! This is for users who do NOT have a UCSB Net ID.
 
@@ -50,7 +50,7 @@ Along the top of the page, is the main tool bar.
 
 - **Home** will take you to the main landing page when you first sign in.
 - The **Gallery** contains items from our 'featured content' group
-- **Groups** are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called [From Maps to Analysis](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview) which contains most of the data layers we will be using. 
+- **Groups** are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called [From Maps to Analysis](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview){target="_blank"} which contains most of the data layers we will be using. 
 - **Content** is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. 
 - **Notebooks** is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.
 - **Organization** will take you back to our main page. This is not the same as Home. 
@@ -98,7 +98,7 @@ When you add an item to your map, it will show up under your Layers. When you wa
 
 With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes and line, bike racks as points, buildings as polygons) and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
 
-Start by opening a new map in the [Map Viewer](https://ucsb.maps.arcgis.com/apps/mapviewer/index.html).
+Start by opening a new map in the [Map Viewer](https://ucsb.maps.arcgis.com/apps/mapviewer/index.html){ target="_blank"}.
 
 ### Import lines layer (bike paths)
 
@@ -293,7 +293,7 @@ For our purposes, we will select the `Layout` option to create a more complete m
 
 In the layout menu, you can change the title of the map, select a `Template` (which is basically a standard page size and orientation), and select the `File format` for the export (e.g., PNG, PDF).
 
-You can also customize more the layout by enabling the `Advance options` panel. You can set the scale, add an author name, include copyright information, increase or decrease the resolution, indicate the [output spatial reference](https://developers.arcgis.com/rest/services-reference/enterprise/using-spatial-references/), and select to include legend, north arrow, and scale bar.
+You can also customize more the layout by enabling the `Advance options` panel. You can set the scale, add an author name, include copyright information, increase or decrease the resolution, indicate the [output spatial reference](https://developers.arcgis.com/rest/services-reference/enterprise/using-spatial-references/){target="_blank"}, and select to include legend, north arrow, and scale bar.
 
 Adjust the zoom and position of the map in the preview window to ensure everything is visible and well-framed.
 
