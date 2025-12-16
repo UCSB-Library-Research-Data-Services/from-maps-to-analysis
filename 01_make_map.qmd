@@ -134,7 +134,7 @@ infrastructure on campus (bike lanes and line, bike racks as points,
 buildings as polygons) and to then annotate on top of that some of your
 personal experience as a bicyclist or pedestrian on campus.
 
-### Import lines layer (bike paths)
+### Import lines Feature layer (bike paths)
 
 From the **Layers** panel, click on the add layer button. Search
 `My organization` for 'UCSB OSM Paths'. There should be only one result.
@@ -187,9 +187,10 @@ To reorder the layers, click and hold on a layer name in the Layers panel, drag 
 
 ### Accessing the underlying data
 
-One advantage of those \* feature layers \* (are we consistent with our
-nomenclature?) is that there is often data associated with it. For
-example, if you click on the three dots on the right of a feature layer
+\* Feature layers \* are driven by data.
+Each point, line, or polygon has associated with it a row in an attribute table. 
+
+For example, if you click on the three dots on the right of a feature layer
 you can access their *attribute table* using "Show table".
 
 ![Attribute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png){width="90%"}
