@@ -163,6 +163,8 @@ the `UCSB Campus Buildings` layer from there."}
 ![Add UCSB buildings
 layer](images/Workshop1/Step1/select-feature-polygon-layer.png){width="90%"}
 
+:::
+
 ### Reorder layers
 
 After importing the three layers, you'll notice they might not display optimally. There's a GIS convention for layer ordering that helps ensure all features remain visible:
