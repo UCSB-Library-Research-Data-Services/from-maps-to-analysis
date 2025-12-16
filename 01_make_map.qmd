@@ -133,14 +133,6 @@ Now that you have added the layers to your map, save it by looking for the folde
 
 In there, you can add a title, tags, and a short description of your map.
 
-
-
-*Aside*
-Next to your campus profile, is a "tic tac toe" menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer. 
-
-![](images/AGO-meatball-menu.png){width="90%" fig-align="center"}
-
-
 ## Step 2: Customize symbology & transparency
 
 After adding our three layers, we have some work to do to make the map more readable. First, let's adjust the symbology of the bike racks layer to reduce its size and change its symbol to a bike icon.
