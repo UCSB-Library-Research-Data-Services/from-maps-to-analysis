@@ -214,6 +214,8 @@ After adding the sketch layer to your workspace, a new menu will appear in the r
 
 ![](images/Workshop1/Step3/drawing-sketch-bar-menu.png){width="40%" fig-align="center"}
 
+### Drawing points in a sketch layer
+
 - Draw points where you were in a (near-)accident on a bike path, either as bicyclist of pedestrian.
 
 Zoom in to the location and add a point with the point drawing tool. You can customize the symbol, size, and color of the point in the sketch layer menu before adding it to the map. Put as many points as you like.
@@ -224,6 +226,8 @@ In our example, we add the following settings to the point symbol:
 - Vector marker (background): Blue (#2132cf)
 
 ![](images/Workshop1/Step3/drawing-point-vector.png){width="90%" fig-align="center"}
+
+### Challenge: Drawing lines and circles in a sketch layer
 
 - Draw a line where you think there should be a bike path but isn't.
 
