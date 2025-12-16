@@ -117,7 +117,7 @@ by first finding the "From Maps to Analysis" group.
 
 ![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){width=90%}
 
-## Accessing the underlying data
+### Accessing the underlying data
 
 One advantage of those * feature layers * (are we consistent with our nomenclature?) is that there is often data associated with it. For example, if you click on the three dots on the right of a feature layer you can access their _attribute table_ using "Show table".
 
