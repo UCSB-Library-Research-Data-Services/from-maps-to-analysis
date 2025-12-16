@@ -139,7 +139,7 @@ personal experience as a bicyclist or pedestrian on campus.
 From the **Layers** panel, click on the add layer button. Search
 `My organization` for 'UCSB OSM Paths'. There should be only one result.
 
-![Adding a layer](images/add_a_layer)
+![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){width="90%"}
 
 ### *Challenge* Import points layer (bike racks)
 
@@ -156,6 +156,28 @@ first finding the "From Maps to Analysis" group.
 
 ![Add UCSB buildings
 layer](images/Workshop1/Step1/select-feature-polygon-layer.png){width="90%"}
+
+### Reorder layers
+
+After importing the three layers, you'll notice they might not display optimally. There's a GIS convention for layer ordering that helps ensure all features remain visible:
+
+**Layer Order Convention (top to bottom):**
+
+- Points (e.g., bike racks) - should be on top
+- Lines (e.g., bike paths) - in the middle  
+- Polygons (e.g., buildings) - at the bottom
+
+This ordering ensures that smaller features aren't hidden beneath larger polygon areas.
+
+For our map, the recommended order from top to bottom should be:
+
+1.  `bike_racks_ucsb` (top)
+2.  `UCSB OSM Paths` (middle)
+3.  `UCSB Campus Buildings` (bottom)
+
+To reorder the layers, click and hold on a layer name in the Layers panel, drag it to the desired position, and release.
+
+![Reorder feature layers](images/Workshop1/Step1/reorder-layers.gif){width="90%" fig-align="center"}
 
 ### Accessing the underlying data
 
