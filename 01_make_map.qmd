@@ -39,8 +39,7 @@ Sign on with your UCSB NetID. You may need to enter "ucsb" into the url box. Do 
 You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.
 
 
-
-### Tour of the interface
+### Tour of the user interface
 
 The main organization page lists the campus administrative contacts and open data groups available on campus. You can also see the latest content published by users on your campus.
 
@@ -54,7 +53,7 @@ Along the top of the page, is the main tool bar.
 - `Content` is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. 
 - `Notebooks` is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.
 - `Organization` will take you back to our main page. This is not the same as Home. 
-- `Scene`, or `Scene Viewer` is where you can create 3D GIS scenes, such as neighborhood models and digital twins. 
+- `Scene`, or `Scene Viewer` is where you can create 3D GIS scenes, such as neighborhood models and digital twins.
 - `Map`, or `Map Viewer` is where you can create 2D maps. ***We will be focusing on using the Map Viewer for this workshop.***
 
 
@@ -72,14 +71,11 @@ Open a new, empty map by clicking "Map" on your top menu bar.
 
 ### Map main components
 
--  Layers (your own or imported from others)
 -  Basemap (background)
+-  Layers (your own or imported from others)
 -  Symbology & legend
 -  Save and open...
 
-### Save your work
-- There will be a blue dot until you save
-- Once you save, more options will be available
 
 ### Basemap
 
@@ -87,17 +83,20 @@ A new map will always open with a basemap. Esri has about 20 different basemaps 
  
 ![](images/current-basemap.png){width="90%" fig-align="center"}
 
-Make sure you choose a basemap that is easy to follow and is a good reference. The default basemap layer is **Topographic**. 
+Make sure you choose a basemap that is easy to follow and is a good reference. The default basemap layer in ArcGIS online is **Topographic**. 
+
+### Save your work often
+
+- There will be a blue dot until you save
+- Once you save, more options will be available
 
 ## Feature layers
 
-Let's add our first data layers to our map.
-
-When you add an item to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." 
-(we call this a meatball menu) next to the layer to open the same panel.
+When you add an exisiting layer to your map, it will show up under your `Layers`. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." 
+(we call this a "meatball" menu) next to the layer to open the same panel.
 
 
-### Step 1: Add layers to your map
+## Step 1: Add layers to your map
 
 With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes and line, bike racks as points, buildings as polygons) and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
 
@@ -109,7 +108,7 @@ Start by opening a new map in the [Map Viewer](https://ucsb.maps.arcgis.com/apps
 
 ### Import lines layer (bike paths)
 
-From the **Layers** panel, click on the add layer button. Search 'My  organization' for 'UCSB OSM Paths'. There should be only one result.
+From the **Layers** panel, click on the add layer button. Search `My organization` for 'UCSB OSM Paths'. There should be only one result.
 
 ![Adding a layer](images/add_a_layer)
 
