@@ -6,18 +6,21 @@ editor:
     wrap: 72
 ---
 
+
 The goal of this lesson is to demonstrate how to make a simple map,
 suitable for inclusion in a publication, using ArcGIS Online. We will
-follow a typical workflow of: 1 Starting with a basemap, 1 add feature
-layers from the UCSB campus, 1 draw annotations on top of the map, 1
-preparing the map for presentation and exporting it. As an exercise, you
-will be creating a map that reflects your personal experience biking on
-the UCSB campus.
+follow a typical workflow of: 
 
-We will end up with a map something like this: \# UCSB bike
-infrastructure map
+1. Starting with a basemap, 
+1. add feature layers from the UCSB campus, 
+1. draw annotations on top of the map, 
+1. preparing the map for presentation and exporting it. As an exercise, you will be creating a map that reflects your personal experience biking on the UCSB campus.
 
-**Preliminary**: The below image of the final map is a placehold
+We will end up with a map something like this:
+
+## Our goal for today 
+
+**Preliminary**: The below image of the final map is a placeholder
 
 [Let's make something like
 this](https://arcg.is/0iD4jS0){target="_blank"}
@@ -36,6 +39,7 @@ advantage of GIS is that it opens up the possibility of treating map
 elements as data, and that in turn opens up and provides an introduction
 to the world of spatial analysis.
 
+
 ## Introduction to ArcGIS Online
 
 A brief tour of the interface.
@@ -44,15 +48,11 @@ A brief tour of the interface.
 
 [https://ucsb.maps.arcgis.com](https://ucsb.maps.arcgis.com){target="_blank"}
 
-Sign on with your UCSB NetID. You may need to enter "ucsb" into the url
-box. Do not use the ArcGIS login! This is for users who do NOT have a
-UCSB Net ID.
+**Sign on with your UCSB NetID**. You may need to enter "ucsb" into the url box. **Do not use the ArcGIS login!** This is for users who do NOT have a UCSB Net ID.
 
-![ArcGIS Online login page for UCSB users](images/arcgis-login.png){width="40%" fig-align="center"}
+![ArcGIS Online login page for UCSB users](images/arcgis-login.png){width=40% fig-align="center"}
 
-You should have a similar landing page indicating that you are using the
-ArcGIS online under the UCSB license. You may need to authenticate with
-DUO on your phone.
+You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. _You may need to authenticate with DUO on your phone_.
 
 ### Tour of the user interface
 
@@ -87,30 +87,30 @@ Along the top of the page, is the main tool bar.
 
 ## The Map Viewer
 
-Open a new, empty map by clicking "Map" on your top menu bar.
+Open a new, empty map by clicking `Map` on your top menu bar.
 
 ![Opening a new empty map](images/new_empty_map.png){size="50%" fig-align="center"}
 
 ### Map main components
 
-In the Map Viewer there is a menu bar in the left column. This is where
-you can add items to your map.
+In the Map Viewer there is a menu bar in the left column. This is where you can add components to your map. The way to think about a map is that it is made of different layers that are added on top of each others. Each layer add a specific information to your map. In our example, we will have a layer for the bike paths, one for the bike racks, one for the buildings, and so on... The base layer is special and often made of an image (but does not have to be). It is called a 'basemap'. Here are the main components of your map:
 
--   Basemap (background)
--   Layers (your own or imported from others)
--   Symbology & legend
--   Save and open...
+-  Basemap (background)
+-  Feature Layers (your own or imported from others)
+-  Symbology & legend
+-  Save and open...
 
 ### Basemap
 
-A new map will always open with a basemap. Esri has about 20 different
-basemaps available. We will start with the default.
-
+The goal of a basemap, is to provide some context in terms of location and/or thematic. In ArcGIS online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the **Topographic** basemap. 
+ 
 ![Default basemap](images/current-basemap.png){width="90%" fig-align="center"}
 
-Make sure you choose a basemap that is easy to follow and is a good
-reference. The default basemap layer in ArcGIS online is
-**Topographic**.
+In general, make sure you choose a basemap that is easy to follow and is accurate in relation to the goal of your map. Avoid using busy basemaps that provide a lot of information not be relevant to the purpose of your map and can become confusing as you add your other layers on top of it.
+
+## Feature layers
+
+Feature layers are the layers you add on top of your basemap. They are the main information your map is aiming at communicating. In ArcGIS, When you add an existing layer to your map, it will show up under your `Layers`. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the `...` (we call this a "meatball" menu) next to the layer to open the same panel.
 
 ### Save your work often
 
@@ -118,21 +118,14 @@ reference. The default basemap layer in ArcGIS online is
 -   Once you save, more options will be available
 -   ArcGIS Online **will not auto-save** your map
 
-## Feature layers
 
-When you add an existing layer to your map, it will show up under your
-`Layers`. When you want to see the layer properties, you can either use
-the menu on the right hand column to view its properties or use the
-"..." (we call this a "meatball" menu) next to the layer to open the
-same panel.
+
+# UCSB bike infrastructure map
+
+With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes and line, bike racks as points, buildings as polygons) and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
+
 
 ## Step 1: Add layers to your map
-
-With that introduction, you now have the opportunity to start creating
-your own map. The goal here is to create a map of the bike
-infrastructure on campus (bike lanes and line, bike racks as points,
-buildings as polygons) and to then annotate on top of that some of your
-personal experience as a bicyclist or pedestrian on campus.
 
 ### Import lines Feature layer (bike paths)
 
@@ -141,31 +134,29 @@ From the **Layers** panel, click on the add layer button. Search
 
 ![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){width="90%"}
 
-
-::: {.callout-tip collapse="true" title="Challenge:
+::: {.callout-tip collapse="true" title="Challenge:"}
 Repeat the above steps to add the feature layer `bike_racks_ucsb` to
 your map."}
 
 ### Import points layer (bike racks)
 
 ![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png){width="90%"}
-
 :::
 
 
-::: {.callout-tip collapse="true" title="Challenge:
+::: {.callout-tip collapse="true" title="Challenge:"}
 Find the 'From Maps to Analysis' group and add
 the `UCSB Campus Buildings` layer from there."}
 
 ### Add a layer via Groups
 
 ![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){width="90%"}
-
 :::
 
 ### Reorder layers
 
 After importing the three layers, you'll notice they might not display optimally. There's a GIS convention for layer ordering that helps ensure all features remain visible:
+
 
 **Layer Order Convention (top to bottom):**
 
@@ -185,13 +176,13 @@ To reorder the layers, click and hold on a layer name in the Layers panel, drag 
 
 ![Reorder feature layers](images/Workshop1/Step1/reorder-layers.gif){width="90%" fig-align="center"}
 
+
 ### Accessing the underlying data
 
-\* Feature layers \* are driven by data.
-Each point, line, or polygon has associated with it a row in an attribute table. 
+*Feature layers* are driven by data. Each point, line, or polygon has associated with it a row in an attribute table providing information on that specific record. 
 
 For example, if you click on the three dots on the right of a feature layer
-you can access their *attribute table* using "Show table".
+you can access their *attribute table* by selecting `Show table`.
 
 ![Attribute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png){width="90%"}
 
@@ -201,15 +192,16 @@ the attribute table. You can also compute new attributes either based on
 other attributes or geospatial information. However this will be for our
 second workshop.
 
-### Save early. Save often.
-
+::: {.callout-note collapse="false" title="Save early. Save often."}
 Now that you have added the layers to your map, save it by looking for
 the folder icon in the left menu bar and then selecting the `Save as`
 option.
 
+
 ![Save as dialog in ArcGIS Online](images/Workshop1/Step1/save-as.png){width="40%" fig-align="center"}
 
 In there, you can add a title, tags, and a short description of your map.
+:::
 
 ## Step 2: Customize symbology & transparency
 
