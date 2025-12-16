@@ -89,7 +89,7 @@ Make sure you choose a basemap that is easy to follow and is a good reference. T
 
 ## Feature layers
 
-When you add an exisiting layer to your map, it will show up under your `Layers`. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." 
+When you add an existing layer to your map, it will show up under your `Layers`. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." 
 (we call this a "meatball" menu) next to the layer to open the same panel.
 
 
@@ -97,16 +97,12 @@ When you add an exisiting layer to your map, it will show up under your `Layers`
 
 With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes and line, bike racks as points, buildings as polygons) and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
 
-Start by opening a new map in the [Map Viewer](https://ucsb.maps.arcgis.com/apps/mapviewer/index.html){ target="_blank"}.
 
 ### Import lines layer (bike paths)
 
 From the **Layers** panel, click on the add layer button. Search `My organization` for 'UCSB OSM Paths'. There should be only one result.
 
 ![Adding a layer](images/add_a_layer)
-
-**I think we should pause here to discuss properties.** 
-
 
 ### *Challenge* Import points layer (bike racks)
 
@@ -121,17 +117,16 @@ by first finding the "From Maps to Analysis" group.
 
 ![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){width=90%}
 
-### Accessing the underlying data
+## Accessing the underlying data
 
-One advantage of those feature layers is that there is often data associated with it. For example, if you click on the three dots on the right of a feature layer you can access their _attribute table_ using "Show table".
+One advantage of those * feature layers * (are we consistent with our nomenclature?) is that there is often data associated with it. For example, if you click on the three dots on the right of a feature layer you can access their _attribute table_ using "Show table".
 
 ![attibute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png){width=90%}
 
-We will see later how you can leverage those attributes to set the symbology of a layer according to categories or quantities provided by the attribute table. You can also compute new attributes either based on other attributes or geopatial information. However this will be for our second workshop.
+We will see later how you can leverage these attributes to set the symbology of a layer according to categories or quantities provided by the attribute table. You can also compute new attributes either based on other attributes or geospatial information. However this will be for our second workshop.
 
 
-### Save your map
-
+### Save early. Save often.
 Now that you have added the layers to your map, save it by looking for the folder icon in the left menu bar and then selecting the `Save as` option. 
 
 ![](images/Workshop1/Step1/save-as.png){width="40%" fig-align="center"}
