@@ -53,7 +53,6 @@ Along the top of the page, is the main tool bar.
 - `Groups` are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called [From Maps to Analysis](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview){target="_blank"} which contains most of the data layers we will be using. 
 - `Content` is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. 
 - `Notebooks` is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.
-- `Organization` will take you back to our main page. This is not the same as Home.
 - `Scene`, or `Scene Viewer` is where you can create 3D GIS scenes, such as neighborhood models and digital twins.
 - `Map`, or `Map Viewer` is where you can create 2D maps. ***We will be focusing on using the Map Viewer for this workshop.***
 
@@ -89,15 +88,23 @@ Feature layers are the layers you add on top of your basemap. They are the main 
 
 With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes and line, bike racks as points, buildings as polygons) and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
 
-<<<<<<< HEAD
+Make sure you choose a basemap that is easy to follow and is a good reference. The default basemap layer in ArcGIS online is **Topographic**. 
 
-![](images/layer-properties.png){width="90%" fig-align="center"}
+### Save your work often
 
-Start by opening a new map in the [Map Viewer](https://ucsb.maps.arcgis.com/apps/mapviewer/index.html).
+- There will be a blue dot until you save
+- Once you save, more options will be available
 
-=======
+
+## Feature layers
+
+When you add an existing layer to your map, it will show up under your `Layers`. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." 
+(we call this a "meatball" menu) next to the layer to open the same panel.
+
+
 ## Step 1: Add layers to your map
->>>>>>> 47b1c8d (reworking introduction)
+
+With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes and line, bike racks as points, buildings as polygons) and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
 
 ### Import lines layer (bike paths)
 
@@ -106,7 +113,6 @@ From the **Layers** panel, click on the add layer button. Search `My organizatio
 ![Adding a layer](images/add_a_layer)
 
 **I think we should pause here to discuss properties.** 
-
 
 ### *Challenge* Import points layer (bike racks)
 
@@ -121,16 +127,16 @@ by first finding the "From Maps to Analysis" group.
 
 ![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){width=90%}
 
+
 ### Accessing the underlying data
 
-One advantage of those feature layers is that there is often data associated with it. For example, if you click on the three dots on the right of a feature layer you can access their _attribute table_ using "Show table".
+One advantage of those *feature layers* (are we consistent with our nomenclature?) is that there is often data associated with it. For example, if you click on the three dots on the right of a feature layer you can access their _attribute table_ using "Show table".
 
 ![attibute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png){width=90%}
 
-We will see later how you can leverage those attributes to set the symbology of a layer according to categories or quantities provided by the attribute table. You can also compute new attributes either based on other attributes or geopatial information. However this will be for our second workshop.
+We will see later how you can leverage these attributes to set the symbology of a layer according to categories or quantities provided by the attribute table. You can also compute new attributes either based on other attributes or geospatial information. However this will be for our second workshop.
 
-
-### Save your map
+### Save early. Save often.
 
 Now that you have added the layers to your map, save it by looking for the folder icon in the left menu bar and then selecting the `Save as` option. 
 
@@ -164,10 +170,10 @@ To change the size of the symbol, we can use the `Size` slider to reduce it to a
 
 ::: {.callout-warning collapse="true" title="Size slider quirk"}
 In ArcGIS Online, every time you select the "Adjust size automatically" option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option.
-:::
+
 
 ![](images/Workshop1/Step2/symbology-point-size.png){width="90%" fig-align="center"}
-
+:::
 
 ### Adjust style based on attribute
 
@@ -183,6 +189,12 @@ Now, what if we wanted to adjust the symbology based on an attribute? Let's say 
 As a result, you will see that the buildings are now filled with different colors based on their use. You can further customize the colors by clicking on the color ramp and selecting a different one.
 
 ![](images/Workshop1/Step2/symbology-by-attribute-result.png){width="90%" fig-align="center"}
+
+::: {.callout-warning collapse="true" title="b_temp? b_phase"}
+
+These field names are pretty cryptic. This is often the case with public data. If you want to learn more about this data, navigate over to the feature layer'
+
+:::
 
 ### Adjust layer transparency based on attribute
 
