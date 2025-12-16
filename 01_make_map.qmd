@@ -101,6 +101,7 @@ With that introduction, you now have the opportunity to start creating your own 
 
 ![](images/layer-properties.png){width="90%" fig-align="center"}
 
+
 Start by opening a new map in the [Map Viewer](https://ucsb.maps.arcgis.com/apps/mapviewer/index.html).
 
 ### Import lines layer (bike paths)
