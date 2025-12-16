@@ -113,16 +113,16 @@ From the **Layers** panel, click on the add layer button. Search 'My  organizati
 
 ![Adding a layer](images/add_a_layer)
 
-* I think we should pause here to discuss properties. * 
+**I think we should pause here to discuss properties.** 
 
 
-### * Challenge * Import points layer (bike racks)
+### *Challenge* Import points layer (bike racks)
 
 Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
 
 ![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png){width=90%}
 
-### * Challenge * Import via Groups
+### *Challenge* Import via Groups
 
 This time, navigate to the feature layer `UCSB Campus Buildings` 
 by first finding the "From Maps to Analysis" group. 
@@ -146,7 +146,8 @@ Now that you have added the layers to your map, save it by looking for the folde
 
 In there, you can add a title, tags, and a short description of your map.
 
-* aside *
+*Aside*
+
 Next to your campus profile, is a "tic tac toe" menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer. 
 
 ![](images/AGO-meatball-menu.png){width="90%" fig-align="center"}
@@ -282,7 +283,7 @@ Some of the bike racks are too close together. For point data, we have
 the option of using 'proportional symbols' or 'clustered symbols' to
 solve this visual clutter.
 
-** To do **: Insturctions for using clustered symbols for the bike racks layer to reduce visual clutter.
+**To do**: Instructions for using clustered symbols for the bike racks layer to reduce visual clutter.
 
 
 To do that, you need to look for the `Print` option in the left menu bar.
