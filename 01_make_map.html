@@ -172,7 +172,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#step-1-add-layers-to-your-map" id="toc-step-1-add-layers-to-your-map" class="nav-link" data-scroll-target="#step-1-add-layers-to-your-map">Step 1: Add layers to your map</a>
   <ul class="collapse">
   <li><a href="#import-lines-layer-bike-paths" id="toc-import-lines-layer-bike-paths" class="nav-link" data-scroll-target="#import-lines-layer-bike-paths">Import lines layer (bike paths)</a></li>
-  <li><a href="#challenge-import-points-layer-bike-racks" id="toc-challenge-import-points-layer-bike-racks" class="nav-link" data-scroll-target="#challenge-import-points-layer-bike-racks"><em>Challenge</em> Import points layer (bike racks)</a></li>
   </ul></li>
   <li><a href="#accessing-the-underlying-data" id="toc-accessing-the-underlying-data" class="nav-link" data-scroll-target="#accessing-the-underlying-data">Accessing the underlying data</a>
   <ul class="collapse">
@@ -320,9 +319,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <figcaption>Adding a layer</figcaption>
 </figure>
 </div>
-<p>::: {.callout-tip collapse=“true” title=“Challenge: Repeat the above steps to add the feature layer <code>bike_racks_ucsb</code> to your map.}</p>
-</section>
-<section id="challenge-import-points-layer-bike-racks" class="level3">
+<div class="callout callout-style-default callout-tip callout-titled" title="Challenge: Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Challenge: Repeat the above steps to add the feature layer <code>bike_racks_ucsb</code> to your map.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<section id="challenge-import-points-layer-bike-racks" class="level3 callout-body-container callout-body">
 <h3 class="anchored" data-anchor-id="challenge-import-points-layer-bike-racks"><em>Challenge</em> Import points layer (bike racks)</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -330,9 +338,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <figcaption>Add UCSB bike racks layer</figcaption>
 </figure>
 </div>
-<p>:::</p>
+</section>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Challenge: Find the 'From Maps to Analysis' group and add the `UCSB Campus Buildings` layer from there.">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -341,7 +351,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <section id="add-a-layer-via-groups" class="level3 callout-body-container callout-body">
 <h3 class="anchored" data-anchor-id="add-a-layer-via-groups">Add a layer via Groups</h3>
 <div class="quarto-figure quarto-figure-center">
@@ -400,7 +410,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>To change the size of the symbol, we can use the <code>Size</code> slider to reduce it to a more appropriate size. First, select “Adjust size automatically” to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.</p>
 <div class="callout callout-style-default callout-warning callout-titled" title="Size slider quirk">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -409,7 +419,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>In ArcGIS Online, every time you select the “Adjust size automatically” option, it will reset the size slider to a default value. So make sure to select your desired size <strong>after</strong> enabling that option.</p>
 <p><a href="images/Workshop1/Step2/symbology-point-size.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="images/Workshop1/Step2/symbology-point-size.png" class="img-fluid" style="width:70.0%"></a></p>
@@ -437,7 +447,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled" title="b_temp? b_phase">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -446,7 +456,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>These field names are pretty cryptic. This is often the case with public data. If you want to learn more about this data, navigate over to the feature layer’</p>
 </div>
@@ -1220,7 +1230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip collapse="true" title="Challenge:</span>
 <span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>Repeat the above steps to add the feature layer <span class="in">`bike_racks_ucsb`</span> to</span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>your map.}</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>your map."}</span>
 <span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="fu">### *Challenge* Import points layer (bike racks)</span></span>
 <span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
