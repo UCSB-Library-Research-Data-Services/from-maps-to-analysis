@@ -143,7 +143,7 @@ From the **Layers** panel, click on the add layer button. Search
 
 ::: {.callout-tip collapse="true" title="Challenge:
 Repeat the above steps to add the feature layer `bike_racks_ucsb` to
-your map.}
+your map."}
 
 ### *Challenge* Import points layer (bike racks)
 
