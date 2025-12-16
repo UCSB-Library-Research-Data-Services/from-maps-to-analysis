@@ -82,7 +82,7 @@ In general, make sure you choose a basemap that is easy to follow and is accurat
 
 ## Feature layers
 
-Feature layers are the layers you add on top of your basemap. They are the main information your map is aiming at communicating. In ArcGIS, When you add an existing layer to your map, it will show up under your `Layers`. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." (we call this a "meatball" menu) next to the layer to open the same panel.
+Feature layers are the layers you add on top of your basemap. They are the main information your map is aiming at communicating. In ArcGIS, When you add an existing layer to your map, it will show up under your `Layers`. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the `...` (we call this a "meatball" menu) next to the layer to open the same panel.
 
 # UCSB bike infrastructure map
 
@@ -94,13 +94,6 @@ Make sure you choose a basemap that is easy to follow and is a good reference. T
 
 - There will be a blue dot until you save
 - Once you save, more options will be available
-
-
-## Feature layers
-
-When you add an existing layer to your map, it will show up under your `Layers`. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." 
-(we call this a "meatball" menu) next to the layer to open the same panel.
-
 
 ## Step 1: Add layers to your map
 
@@ -130,7 +123,7 @@ by first finding the "From Maps to Analysis" group.
 
 ### Accessing the underlying data
 
-One advantage of those *feature layers* (are we consistent with our nomenclature?) is that there is often data associated with it. For example, if you click on the three dots on the right of a feature layer you can access their _attribute table_ using "Show table".
+One advantage of those *feature layers* (are we consistent with our nomenclature?) is that there is often data associated with it. For example, if you click on the three dots on the right of a feature layer you can access their 'attribute table' using `Show table`.
 
 ![attibute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png){width=90%}
 
