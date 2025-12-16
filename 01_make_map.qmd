@@ -160,10 +160,10 @@ To change the size of the symbol, we can use the `Size` slider to reduce it to a
 
 ::: {.callout-warning collapse="true" title="Size slider quirk"}
 In ArcGIS Online, every time you select the "Adjust size automatically" option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option.
-:::
+
 
 ![](images/Workshop1/Step2/symbology-point-size.png){width="90%" fig-align="center"}
-
+:::
 
 ### Adjust style based on attribute
 
@@ -179,6 +179,12 @@ Now, what if we wanted to adjust the symbology based on an attribute? Let's say 
 As a result, you will see that the buildings are now filled with different colors based on their use. You can further customize the colors by clicking on the color ramp and selecting a different one.
 
 ![](images/Workshop1/Step2/symbology-by-attribute-result.png){width="90%" fig-align="center"}
+
+::: {.callout-warning collapse="true" title="b_temp? b_phase"}
+
+These field names are pretty cryptic. This is often the case with public data. If you want to learn more about this data, navigate over to the feature layer'
+
+:::
 
 ### Adjust layer transparency based on attribute
 
