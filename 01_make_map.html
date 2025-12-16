@@ -172,8 +172,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#step-1-add-layers-to-your-map" id="toc-step-1-add-layers-to-your-map" class="nav-link" data-scroll-target="#step-1-add-layers-to-your-map">Step 1: Add layers to your map</a></li>
   <li><a href="#import-lines-layer-bike-paths" id="toc-import-lines-layer-bike-paths" class="nav-link" data-scroll-target="#import-lines-layer-bike-paths">Import lines layer (bike paths)</a></li>
-  <li><a href="#challenge-import-points-layer-bike-racks" id="toc-challenge-import-points-layer-bike-racks" class="nav-link" data-scroll-target="#challenge-import-points-layer-bike-racks">* Challenge * Import points layer (bike racks)</a></li>
-  <li><a href="#challenge-import-via-groups" id="toc-challenge-import-via-groups" class="nav-link" data-scroll-target="#challenge-import-via-groups">* Challenge * Import via Groups</a></li>
+  <li><a href="#challenge-import-points-layer-bike-racks" id="toc-challenge-import-points-layer-bike-racks" class="nav-link" data-scroll-target="#challenge-import-points-layer-bike-racks"><em>Challenge</em> Import points layer (bike racks)</a></li>
+  <li><a href="#challenge-import-via-groups" id="toc-challenge-import-via-groups" class="nav-link" data-scroll-target="#challenge-import-via-groups"><em>Challenge</em> Import via Groups</a></li>
   <li><a href="#accessing-the-underlying-data" id="toc-accessing-the-underlying-data" class="nav-link" data-scroll-target="#accessing-the-underlying-data">Accessing the underlying data</a></li>
   <li><a href="#save-your-map" id="toc-save-your-map" class="nav-link" data-scroll-target="#save-your-map">Save your map</a></li>
   </ul></li>
@@ -255,14 +255,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 <ul>
-<li><strong>Home</strong> will take you to the main landing page when you first sign in.</li>
-<li>The <strong>Gallery</strong> contains items from our ‘featured content’ group</li>
-<li><strong>Groups</strong> are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called <a href="https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview" target="_blank">From Maps to Analysis</a> which contains most of the data layers we will be using.</li>
-<li><strong>Content</strong> is where your created or uploaded content is listed. You can make folders in here to organize your layers and features.</li>
-<li><strong>Notebooks</strong> is ESRI’s version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.</li>
-<li><strong>Organization</strong> will take you back to our main page. This is not the same as Home.</li>
-<li><strong>Scene</strong>, or <strong>Scene Viewer</strong> is where you can create 3D GIS scenes, such as neighborhood models and digital twins.</li>
-<li><strong>Map</strong>, or <strong>Map Viewer</strong> is where you can create 2D maps. <strong><em>We will be focusing on using the Map Viewer for this workshop.</em></strong></li>
+<li><code>Home</code> will take you to the main landing page when you first sign in.</li>
+<li>The <code>Gallery</code> contains items from our ‘featured content’ group</li>
+<li><code>Groups</code> are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called <a href="https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview" target="_blank">From Maps to Analysis</a> which contains most of the data layers we will be using.</li>
+<li><code>Content</code> is where your created or uploaded content is listed. You can make folders in here to organize your layers and features.</li>
+<li><code>Notebooks</code> is ESRI’s version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.</li>
+<li><code>Organization</code> will take you back to our main page. This is not the same as Home.</li>
+<li><code>Scene</code>, or <code>Scene Viewer</code> is where you can create 3D GIS scenes, such as neighborhood models and digital twins.</li>
+<li><code>Map</code>, or <code>Map Viewer</code> is where you can create 2D maps. <strong><em>We will be focusing on using the Map Viewer for this workshop.</em></strong></li>
 </ul>
 </section>
 </section>
@@ -320,12 +320,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <figcaption>Adding a layer</figcaption>
 </figure>
 </div>
-<ul>
-<li>I think we should pause here to discuss properties. *</li>
-</ul>
+<p><strong>I think we should pause here to discuss properties.</strong></p>
 </section>
 <section id="challenge-import-points-layer-bike-racks" class="level3">
-<h3 class="anchored" data-anchor-id="challenge-import-points-layer-bike-racks">* Challenge * Import points layer (bike racks)</h3>
+<h3 class="anchored" data-anchor-id="challenge-import-points-layer-bike-racks"><em>Challenge</em> Import points layer (bike racks)</h3>
 <p>Repeat the above steps to add the feature layer <code>bike_racks_ucsb</code> to your map.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -335,7 +333,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 <section id="challenge-import-via-groups" class="level3">
-<h3 class="anchored" data-anchor-id="challenge-import-via-groups">* Challenge * Import via Groups</h3>
+<h3 class="anchored" data-anchor-id="challenge-import-via-groups"><em>Challenge</em> Import via Groups</h3>
 <p>This time, navigate to the feature layer <code>UCSB Campus Buildings</code> by first finding the “From Maps to Analysis” group.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -364,9 +362,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 <p>In there, you can add a title, tags, and a short description of your map.</p>
-<ul>
-<li>aside * Next to your campus profile, is a “tic tac toe” menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer.</li>
-</ul>
+<p><em>Aside</em> Next to your campus profile, is a “tic tac toe” menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="images/AGO-meatball-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="images/AGO-meatball-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
@@ -547,7 +543,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="fine-tune-symbols" class="level3">
 <h3 class="anchored" data-anchor-id="fine-tune-symbols">Fine tune symbols</h3>
 <p>Some of the bike racks are too close together. For point data, we have the option of using ‘proportional symbols’ or ‘clustered symbols’ to solve this visual clutter.</p>
-<p>** To do **: Insturctions for using clustered symbols for the bike racks layer to reduce visual clutter.</p>
+<p><strong>To do</strong>: Instructions for using clustered symbols for the bike racks layer to reduce visual clutter.</p>
 <p>To do that, you need to look for the <code>Print</code> option in the left menu bar.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -1105,14 +1101,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/main-menu-bar.png)</span>{width="90%" fig-align="center"}</span>
 <span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Home** will take you to the main landing page when you first sign in.</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The **Gallery** contains items from our 'featured content' group</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Groups** are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called <span class="co">[</span><span class="ot">From Maps to Analysis</span><span class="co">](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview)</span>{target="_blank"} which contains most of the data layers we will be using. </span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Content** is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. </span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Notebooks** is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Organization** will take you back to our main page. This is not the same as Home. </span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Scene**, or **Scene Viewer** is where you can create 3D GIS scenes, such as neighborhood models and digital twins. </span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Map**, or **Map Viewer** is where you can create 2D maps. ***We will be focusing on using the Map Viewer for this workshop.***</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`Home`</span> will take you to the main landing page when you first sign in.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The <span class="in">`Gallery`</span> contains items from our 'featured content' group</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`Groups`</span> are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called <span class="co">[</span><span class="ot">From Maps to Analysis</span><span class="co">](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview)</span>{target="_blank"} which contains most of the data layers we will be using. </span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`Content`</span> is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. </span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`Notebooks`</span> is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`Organization`</span> will take you back to our main page. This is not the same as Home. </span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`Scene`</span>, or <span class="in">`Scene Viewer`</span> is where you can create 3D GIS scenes, such as neighborhood models and digital twins. </span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`Map`</span>, or <span class="in">`Map Viewer`</span> is where you can create 2D maps. ***We will be focusing on using the Map Viewer for this workshop.***</span>
 <span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Map Viewer</span></span>
@@ -1163,16 +1159,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="al">![Adding a layer](images/add_a_layer)</span></span>
 <span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>I think we should pause here to discuss properties. * </span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>**I think we should pause here to discuss properties.** </span>
 <span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="fu">### * Challenge * Import points layer (bike racks)</span></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="fu">### *Challenge* Import points layer (bike racks)</span></span>
 <span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>Repeat the above steps to add the feature layer <span class="in">`bike_racks_ucsb`</span> to your map.</span>
 <span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="al">![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png)</span>{width=90%}</span>
 <span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="fu">### * Challenge * Import via Groups</span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="fu">### *Challenge* Import via Groups</span></span>
 <span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>This time, navigate to the feature layer <span class="in">`UCSB Campus Buildings`</span> </span>
 <span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>by first finding the "From Maps to Analysis" group. </span>
@@ -1198,7 +1194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>aside *</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>*Aside*</span>
 <span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>Next to your campus profile, is a "tic tac toe" menu with a drop-down menu of the Esri Apps. There are many tools here, but for the context of this workshop, we will be focusing on ArcGIS Online and the Map Viewer. </span>
 <span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/AGO-meatball-menu.png)</span>{width="90%" fig-align="center"}</span>
@@ -1334,7 +1330,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>the option of using 'proportional symbols' or 'clustered symbols' to</span>
 <span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>solve this visual clutter.</span>
 <span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>** To do **: Insturctions for using clustered symbols for the bike racks layer to reduce visual clutter.</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>**To do**: Instructions for using clustered symbols for the bike racks layer to reduce visual clutter.</span>
 <span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>To do that, you need to look for the <span class="in">`Print`</span> option in the left menu bar.</span>
