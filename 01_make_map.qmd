@@ -1,28 +1,40 @@
 ---
 title: "I want to make a map"
 lightbox: true
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-The goal of this lesson is to demonstrate how to make a simple map, suitable for inclusion in a publication, using ArcGIS Online. We will follow a typical workflow of:
-1 Starting with a basemap, 
-1 add feature layers from the UCSB campus, 
-1 draw annotations on top of the map, 
-1 preparing the map for presentation and exporting it. As an exercise, you will be creating a map that reflects your personal experience biking on the UCSB campus.
+The goal of this lesson is to demonstrate how to make a simple map,
+suitable for inclusion in a publication, using ArcGIS Online. We will
+follow a typical workflow of: 1 Starting with a basemap, 1 add feature
+layers from the UCSB campus, 1 draw annotations on top of the map, 1
+preparing the map for presentation and exporting it. As an exercise, you
+will be creating a map that reflects your personal experience biking on
+the UCSB campus.
 
-We will end up with a map something like this:
-# UCSB bike infrastructure map 
-
+We will end up with a map something like this: \# UCSB bike
+infrastructure map
 
 **Preliminary**: The below image of the final map is a placehold
 
-[Let's make something like this](https://arcg.is/0iD4jS0){target="_blank"}
+[Let's make something like
+this](https://arcg.is/0iD4jS0){target="_blank"}
 
-![Preliminary version of the possible result](images/export-finish-map.png){width="90%" fig-align="center"}
+![Preliminary version of the possible
+result](images/export-finish-map.png){width="90%" fig-align="center"}
 
-(it would be nice if we could put our map into an iframe, but 
-github doesn't support that)
+(it would be nice if we could put our map into an iframe, but github
+doesn't support that)
 
-As we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool. In fact, in many cases GIS is overkill, both because most of the features GIS tools provide will not be used and because the GIS interface can be cumbersome. But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that in turn opens up and provides an introduction to the world of spatial analysis.
+As we will discuss at the end of this lesson, there are many ways of
+making such a map without using a GIS tool. In fact, in many cases GIS
+is overkill, both because most of the features GIS tools provide will
+not be used and because the GIS interface can be cumbersome. But an
+advantage of GIS is that it opens up the possibility of treating map
+elements as data, and that in turn opens up and provides an introduction
+to the world of spatial analysis.
 
 ## Introduction to ArcGIS Online
 
@@ -30,32 +42,48 @@ A brief tour of the interface.
 
 ### Log on to ArcGIS Online
 
-<https://ucsb.maps.arcgis.com>{target="_blank"}
+[https://ucsb.maps.arcgis.com](https://ucsb.maps.arcgis.com){target="_blank"}
 
-Sign on with your UCSB NetID. You may need to enter "ucsb" into the url box. Do not use the ArcGIS login! This is for users who do NOT have a UCSB Net ID.
+Sign on with your UCSB NetID. You may need to enter "ucsb" into the url
+box. Do not use the ArcGIS login! This is for users who do NOT have a
+UCSB Net ID.
 
-![](images/arcgis-login.png){width=40% fig-align="center"}
+![](images/arcgis-login.png){width="40%" fig-align="center"}
 
-You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.
-
+You should have a similar landing page indicating that you are using the
+ArcGIS online under the UCSB license. You may need to authenticate with
+DUO on your phone.
 
 ### Tour of the user interface
 
-The main organization page lists the campus administrative contacts and open data groups available on campus. You can also see the latest content published by users on your campus.
+The main organization page lists the campus administrative contacts and
+open data groups available on campus. You can also see the latest
+content published by users on your campus.
 
-Along the top of the page, is the main tool bar. 
+Along the top of the page, is the main tool bar.
 
 ![](images/main-menu-bar.png){width="90%" fig-align="center"}
 
-- `Home` will take you to the main landing page when you first sign in.
-- The `Gallery` contains items from our 'featured content' group
-- `Groups` are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called [From Maps to Analysis](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview){target="_blank"} which contains most of the data layers we will be using. 
-- `Content` is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. 
-- `Notebooks` is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.
-- `Organization` will take you back to our main page. This is not the same as Home. 
-- `Scene`, or `Scene Viewer` is where you can create 3D GIS scenes, such as neighborhood models and digital twins.
-- `Map`, or `Map Viewer` is where you can create 2D maps. ***We will be focusing on using the Map Viewer for this workshop.***
-
+-   `Home` will take you to the main landing page when you first sign
+    in.
+-   The `Gallery` contains items from our 'featured content' group
+-   `Groups` are a list of groups which you can create or join. Some are
+    invitation only. These are popular when you are working in group
+    projects. For this workshop, we have created a group called [From
+    Maps to
+    Analysis](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview){target="_blank"}
+    which contains most of the data layers we will be using.
+-   `Content` is where your created or uploaded content is listed. You
+    can make folders in here to organize your layers and features.
+-   `Notebooks` is ESRI's version of a Jupyterhub-like environment. You
+    can use ArcPy here. This may not be available to you based on your
+    user role.
+-   `Organization` will take you back to our main page. This is not the
+    same as Home.
+-   `Scene`, or `Scene Viewer` is where you can create 3D GIS scenes,
+    such as neighborhood models and digital twins.
+-   `Map`, or `Map Viewer` is where you can create 2D maps. ***We will
+    be focusing on using the Map Viewer for this workshop.***
 
 ## The Map Viewer
 
@@ -65,69 +93,91 @@ Open a new, empty map by clicking "Map" on your top menu bar.
 
 ### Map main components
 
-In the Map Viewer there is a menu bar in the left column. This is where you can add items to your map. 
+In the Map Viewer there is a menu bar in the left column. This is where
+you can add items to your map.
 
--  Basemap (background)
--  Layers (your own or imported from others)
--  Symbology & legend
--  Save and open...
-
+-   Basemap (background)
+-   Layers (your own or imported from others)
+-   Symbology & legend
+-   Save and open...
 
 ### Basemap
 
-A new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default. 
+A new map will always open with a basemap. Esri has about 20 different
+basemaps available. We will start with the default.
 
- 
 ![](images/current-basemap.png){width="90%" fig-align="center"}
 
-Make sure you choose a basemap that is easy to follow and is a good reference. The default basemap layer in ArcGIS online is **Topographic**. 
+Make sure you choose a basemap that is easy to follow and is a good
+reference. The default basemap layer in ArcGIS online is
+**Topographic**.
 
 ### Save your work often
 
-- There will be a blue dot until you save
-- Once you save, more options will be available
+-   There will be a blue dot until you save
+-   Once you save, more options will be available
+-   ArcGIS Online **will not auto-save** your map
 
 ## Feature layers
 
-When you add an existing layer to your map, it will show up under your `Layers`. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the "..." 
-(we call this a "meatball" menu) next to the layer to open the same panel.
-
+When you add an existing layer to your map, it will show up under your
+`Layers`. When you want to see the layer properties, you can either use
+the menu on the right hand column to view its properties or use the
+"..." (we call this a "meatball" menu) next to the layer to open the
+same panel.
 
 ## Step 1: Add layers to your map
 
-With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes and line, bike racks as points, buildings as polygons) and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
-
+With that introduction, you now have the opportunity to start creating
+your own map. The goal here is to create a map of the bike
+infrastructure on campus (bike lanes and line, bike racks as points,
+buildings as polygons) and to then annotate on top of that some of your
+personal experience as a bicyclist or pedestrian on campus.
 
 ### Import lines layer (bike paths)
 
-From the **Layers** panel, click on the add layer button. Search `My organization` for 'UCSB OSM Paths'. There should be only one result.
+From the **Layers** panel, click on the add layer button. Search
+`My organization` for 'UCSB OSM Paths'. There should be only one result.
 
 ![Adding a layer](images/add_a_layer)
 
 ### *Challenge* Import points layer (bike racks)
 
-Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
+Repeat the above steps to add the feature layer `bike_racks_ucsb` to
+your map.
 
-![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png){width=90%}
+![Add UCSB bike racks
+layer](images/Workshop1/Step1/select-feature-point-layer.png){width="90%"}
 
 ### *Challenge* Import via Groups
 
-This time, navigate to the feature layer `UCSB Campus Buildings` 
-by first finding the "From Maps to Analysis" group. 
+This time, navigate to the feature layer `UCSB Campus Buildings` by
+first finding the "From Maps to Analysis" group.
 
-![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){width=90%}
+![Add UCSB buildings
+layer](images/Workshop1/Step1/select-feature-polygon-layer.png){width="90%"}
 
 ### Accessing the underlying data
 
-One advantage of those * feature layers * (are we consistent with our nomenclature?) is that there is often data associated with it. For example, if you click on the three dots on the right of a feature layer you can access their _attribute table_ using "Show table".
+One advantage of those \* feature layers \* (are we consistent with our
+nomenclature?) is that there is often data associated with it. For
+example, if you click on the three dots on the right of a feature layer
+you can access their *attribute table* using "Show table".
 
-![attibute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png){width=90%}
+![attibute table of UCSB buildings
+layer](images/Workshop1/Step1/attribute-table.png){width="90%"}
 
-We will see later how you can leverage these attributes to set the symbology of a layer according to categories or quantities provided by the attribute table. You can also compute new attributes either based on other attributes or geospatial information. However this will be for our second workshop.
-
+We will see later how you can leverage these attributes to set the
+symbology of a layer according to categories or quantities provided by
+the attribute table. You can also compute new attributes either based on
+other attributes or geospatial information. However this will be for our
+second workshop.
 
 ### Save early. Save often.
-Now that you have added the layers to your map, save it by looking for the folder icon in the left menu bar and then selecting the `Save as` option. 
+
+Now that you have added the layers to your map, save it by looking for
+the folder icon in the left menu bar and then selecting the `Save as`
+option.
 
 ![](images/Workshop1/Step1/save-as.png){width="40%" fig-align="center"}
 
@@ -135,184 +185,299 @@ In there, you can add a title, tags, and a short description of your map.
 
 ## Step 2: Customize symbology & transparency
 
-After adding our three layers, we have some work to do to make the map more readable. First, let's adjust the symbology of the bike racks layer to reduce its size and change its symbol to a bike icon.
+After adding our three layers, we have some work to do to make the map
+more readable. First, let's adjust the symbology of the bike racks layer
+to reduce its size and change its symbol to a bike icon.
 
-- Click on the layer `bike_racks_ucsb` to open its properties panel.
-- On the panel `Symbology`, click on `Edit layer style`.
-- Look for the `② Pick a style` option and select `Style options`.
-- Click on the pencil icon next to `Symbol style` to open the symbol selector.
+-   Click on the layer `bike_racks_ucsb` to open its properties panel.
+-   On the panel `Symbology`, click on `Edit layer style`.
+-   Look for the `② Pick a style` option and select `Style options`.
+-   Click on the pencil icon next to `Symbol style` to open the symbol
+    selector.
 
-There, we have multiple options to customize the symbol. Let's click on the current symbol chevron to open the full symbol gallery.
+There, we have multiple options to customize the symbol. Let's click on
+the current symbol chevron to open the full symbol gallery.
 
-From the menu, we can select several categories of symbols. Let's select the `Government` category and look for a bike parking icon. Click on the `Done` button to apply the changes and return to the symbol style panel. 
+From the menu, we can select several categories of symbols. Let's select
+the `Government` category and look for a bike parking icon. Click on the
+`Done` button to apply the changes and return to the symbol style panel.
 
-![](images/Workshop1/Step2/symbology-select-symbol.png){width="90%" fig-align="center"}
+![](images/Workshop1/Step2/symbology-select-symbol.png){width="90%"
+fig-align="center"}
 
-To change the size of the symbol, we can use the `Size` slider to reduce it to a more appropriate size. First, select "Adjust size automatically" to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.
+To change the size of the symbol, we can use the `Size` slider to reduce
+it to a more appropriate size. First, select "Adjust size automatically"
+to ensure the symbols to scale as you zoom in and out of the map. Then,
+you can use a custom size by moving the slider or entering a value; in
+our case, we selected 5.68 px.
 
 ::: {.callout-warning collapse="true" title="Size slider quirk"}
+
 In ArcGIS Online, every time you select the "Adjust size automatically" option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option.
-:::
+
 
 ![](images/Workshop1/Step2/symbology-point-size.png){width="90%" fig-align="center"}
+:::
 
 
 ### Adjust style based on attribute
 
-Now, what if we wanted to adjust the symbology based on an attribute? Let's say we wanted to fill each building with a different color based on its use (academic, residential, administrative, etc.). We can do that by changing the style of the `UCSB Campus Buildings` layer.
+Now, what if we wanted to adjust the symbology based on an attribute?
+Let's say we wanted to fill each building with a different color based
+on its use (academic, residential, administrative, etc.). We can do that
+by changing the style of the `UCSB Campus Buildings` layer.
 
-- Click on the layer `UCSB Campus Buildings` to open its properties panel.
-- On the panel `Symbology`, click on `Edit layer style`.
-- Look for the `① Choose attributes` option and select `+ Field`.
-- Select the attribute `b_use`, which stands for building use, and click on `Add`.
+-   Click on the layer `UCSB Campus Buildings` to open its properties
+    panel.
+-   On the panel `Symbology`, click on `Edit layer style`.
+-   Look for the `① Choose attributes` option and select `+ Field`.
+-   Select the attribute `b_use`, which stands for building use, and
+    click on `Add`.
 
-![](images/Workshop1/Step2/symbology-by-attribute.png){width="90%" fig-align="center"}
+![](images/Workshop1/Step2/symbology-by-attribute.png){width="90%"
+fig-align="center"}
 
-As a result, you will see that the buildings are now filled with different colors based on their use. You can further customize the colors by clicking on the color ramp and selecting a different one.
+As a result, you will see that the buildings are now filled with
+different colors based on their use. You can further customize the
+colors by clicking on the color ramp and selecting a different one.
 
-![](images/Workshop1/Step2/symbology-by-attribute-result.png){width="90%" fig-align="center"}
+![](images/Workshop1/Step2/symbology-by-attribute-result.png){width="90%"
+fig-align="center"}
+
+::: {.callout-warning collapse="true" title="b_temp? b_phase"}
+
+These field names are pretty cryptic. This is often the case with public data. If you want to learn more about this data, navigate over to the feature layer'
+
+:::
 
 ### Adjust layer transparency based on attribute
 
-Finally, let's say we wanted to adjust the transparency of cycleways based on the max speed allowed on each bike path. We can do that by changing the style of the `osm_cycleways` layer.
+Finally, let's say we wanted to adjust the transparency of cycleways
+based on the max speed allowed on each bike path. We can do that by
+changing the style of the `osm_cycleways` layer.
 
-- Click on the layer `osm_cycleways` to open its properties panel.
-- On the panel `Symbology`, click on `Edit layer style`.
-- Look for the `② Pick a style` option and select `Style options`.
-- Open the panel `Transparency by attribute` and switch the toggle to set the transparency based on attribute values.
-- Select the attribute `maxspeed`.
+-   Click on the layer `osm_cycleways` to open its properties panel.
+-   On the panel `Symbology`, click on `Edit layer style`.
+-   Look for the `② Pick a style` option and select `Style options`.
+-   Open the panel `Transparency by attribute` and switch the toggle to
+    set the transparency based on attribute values.
+-   Select the attribute `maxspeed`.
 
-As a result, you will see that the bike paths are now more transparent for higher speed limits and less transparent for lower speed limits.
+As a result, you will see that the bike paths are now more transparent
+for higher speed limits and less transparent for lower speed limits.
 
-To increase the visibility of the bike paths, we can increase the width of the lines by editing the `Width` slider on the `Symbol style` panel. We selected 3.75 px for this example.
+To increase the visibility of the bike paths, we can increase the width
+of the lines by editing the `Width` slider on the `Symbol style` panel.
+We selected 3.75 px for this example.
 
-![](images/Workshop1/Step2/symbology-transparency-by-attribute.png){width="90%" fig-align="center"}
+![](images/Workshop1/Step2/symbology-transparency-by-attribute.png){width="90%"
+fig-align="center"}
 
 Here is the final result of our symbology adjustments:
 
-![](images/Workshop1/Step2/symbology-final-result.png){width="90%" fig-align="center"}
+![](images/Workshop1/Step2/symbology-final-result.png){width="90%"
+fig-align="center"}
 
 ### Select a better basemap
 
-After adding the layers and customizing their symbology, we have a good, almost ready map. However, the current basemap (Topographic) is a bit too busy and makes it hard to see the features we added. Let's change it to a simpler basemap using the `Basemap` option in the left menu bar.
+After adding the layers and customizing their symbology, we have a good,
+almost ready map. However, the current basemap (Topographic) is a bit
+too busy and makes it hard to see the features we added. Let's change it
+to a simpler basemap using the `Basemap` option in the left menu bar.
 
-![](images/Workshop1/Step2/basemap-menu-location.png){width="40%" fig-align="center"}
+![](images/Workshop1/Step2/basemap-menu-location.png){width="40%"
+fig-align="center"}
 
-From the basemap gallery, we can select a simpler basemap. For this example, we selected the `Light Gray Canvas` basemap, which provides a clean background that makes our features stand out.
+From the basemap gallery, we can select a simpler basemap. For this
+example, we selected the `Light Gray Canvas` basemap, which provides a
+clean background that makes our features stand out.
 
-![](images/Workshop1/Step2/basemap-light-gray-canvas.png){width="90%" fig-align="center"}
+![](images/Workshop1/Step2/basemap-light-gray-canvas.png){width="90%"
+fig-align="center"}
 
 **Don't forget to save your map after making these changes!**
 
 ## Step 3: Annotate the map
 
-In addition to bringing external sources of information into a map (whether in the form of a basemap or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a "sketch layer."
+In addition to bringing external sources of information into a map
+(whether in the form of a basemap or additional feature layers), it is
+common to want to add new information. In many cases it is better to
+think of the new information as data, and to store it in its own feature
+layer. We will be describing this approach in the next workshop. For our
+purposes here, though, we will take the more straightforward approach of
+simply drawing on the map. The hand-drawn features will appear in what
+ArcGIS Online calls a "sketch layer."
 
-![](images/Workshop1/Step3/drawing-sketch-layer-menu.png){width="40%" fig-align="center"}
+![](images/Workshop1/Step3/drawing-sketch-layer-menu.png){width="40%"
+fig-align="center"}
 
-After adding the sketch layer to your workspace, a new menu will appear in the right column with drawing tools and configuration options.
+After adding the sketch layer to your workspace, a new menu will appear
+in the right column with drawing tools and configuration options.
 
 ![](images/Workshop1/Step3/drawing-sketch-bar-menu.png){width="40%" fig-align="center"}
 
 ### Drawing points in a sketch layer
 
-- Draw points where you were in a (near-)accident on a bike path, either as bicyclist of pedestrian.
+-   Draw points where you were in a (near-)accident on a bike path,
+    either as bicyclist of pedestrian.
 
-Zoom in to the location and add a point with the point drawing tool. You can customize the symbol, size, and color of the point in the sketch layer menu before adding it to the map. Put as many points as you like.
+Zoom in to the location and add a point with the point drawing tool. You
+can customize the symbol, size, and color of the point in the sketch
+layer menu before adding it to the map. Put as many points as you like.
 
 In our example, we add the following settings to the point symbol:
 
-- Size: 48 px
-- Vector marker (background): Blue (#2132cf)
+-   Size: 48 px
+-   Vector marker (background): Blue (#2132cf)
 
 ![](images/Workshop1/Step3/drawing-point-vector.png){width="90%" fig-align="center"}
 
 ### Challenge: Drawing lines and circles in a sketch layer
 
-- Draw a line where you think there should be a bike path but isn't.
+-   Draw a line where you think there should be a bike path but isn't.
 
-From the sketch layer menu, select the line drawing tool. Click on the map to start drawing the line, and click again to add vertices. Double-click to finish the line. 
+From the sketch layer menu, select the line drawing tool. Click on the
+map to start drawing the line, and click again to add vertices.
+Double-click to finish the line.
 
-![](images/Workshop1/Step3/drawing-line-vector.gif){width="90%" fig-align="center"}
+![](images/Workshop1/Step3/drawing-line-vector.gif){width="90%"
+fig-align="center"}
 
-You can customize the line symbol in the sketch layer menu before adding it to the map. In our example, we add the following settings to the line symbol:
+You can customize the line symbol in the sketch layer menu before adding
+it to the map. In our example, we add the following settings to the line
+symbol:
 
-- Width: 5 px
-- Dotted line pattern
-- Color: Light blue (#00c8ff) 
+-   Width: 5 px
+-   Dotted line pattern
+-   Color: Light blue (#00c8ff)
 
-![](images/Workshop1/Step3/drawing-line-style.png){width="90%" fig-align="center"}
+![](images/Workshop1/Step3/drawing-line-style.png){width="90%"
+fig-align="center"}
 
-- Draw a circle where you think there should be a bike parking lot but isn't.
+-   Draw a circle where you think there should be a bike parking lot but
+    isn't.
 
-Similarly to the line drawing tool, select the circle drawing tool from the sketch layer menu. Click on the map to draw the circle, and click on the select tool to finish the shape. You can also customize the symbol after drawing it by selecting it and changing its properties in the sketch layer menu. In our example, we add the following settings to the circle symbol:
+Similarly to the line drawing tool, select the circle drawing tool from
+the sketch layer menu. Click on the map to draw the circle, and click on
+the select tool to finish the shape. You can also customize the symbol
+after drawing it by selecting it and changing its properties in the
+sketch layer menu. In our example, we add the following settings to the
+circle symbol:
 
-- Fill color: Red (#d13434)
-- Fill transparency: 38%
+-   Fill color: Red (#d13434)
+-   Fill transparency: 38%
 
-![](images/Workshop1/Step3/drawing-circle-vector.gif){width="90%" fig-align="center"}
+![](images/Workshop1/Step3/drawing-circle-vector.gif){width="90%"
+fig-align="center"}
 
-- Rename the Sketch layer to "Annotations"
+-   Rename the Sketch layer to "Annotations"
 
-Finally, let's rename the sketch layer to "Annotations" to better reflect its purpose. Click on the three dots next to the sketch layer and select `Rename`. Enter the new name and click `OK`.
+Finally, let's rename the sketch layer to "Annotations" to better
+reflect its purpose. Click on the three dots next to the sketch layer
+and select `Rename`. Enter the new name and click `OK`.
 
 **Save your map after making these changes**
 
 ## Step 4: Prepare the map for publication
 
-Almost there! At this point you're ready to start packaging your map for publication.
+Almost there! At this point you're ready to start packaging your map for
+publication.
 
 ### Fine tune symbols
+
 Some of the bike racks are too close together. For point data, we have
 the option of using 'proportional symbols' or 'clustered symbols' to
 solve this visual clutter.
 
-**To do**: Instructions for using clustered symbols for the bike racks layer to reduce visual clutter.
+**To do**: Instructions for using clustered symbols for the bike racks
+layer to reduce visual clutter.
 
+To do that, you need to look for the `Print` option in the left menu
+bar.
 
-To do that, you need to look for the `Print` option in the left menu bar.
-
-![](images/Workshop1/Step4/export-print-menu.png){width="40%" fig-align="center"}
+![](images/Workshop1/Step4/export-print-menu.png){width="40%"
+fig-align="center"}
 
 For exporting the map you have two options:
 
-- Layout: This option allows you to create a more complex layout with additional map elements such as title, legend, scale bar, north arrow, etc. You can choose from several pre-defined templates or create your own custom layout.
-- Map only: With this option, you can export just the map itself without any additional elements. You can choose the file format (PNG, PDF, etc.) and the resolution of the exported map.
+-   Layout: This option allows you to create a more complex layout with
+    additional map elements such as title, legend, scale bar, north
+    arrow, etc. You can choose from several pre-defined templates or
+    create your own custom layout.
+-   Map only: With this option, you can export just the map itself
+    without any additional elements. You can choose the file format
+    (PNG, PDF, etc.) and the resolution of the exported map.
 
-For our purposes, we will select the `Layout` option to create a more complete map for publication.
+For our purposes, we will select the `Layout` option to create a more
+complete map for publication.
 
-In the layout menu, you can change the title of the map, select a `Template` (which is basically a standard page size and orientation), and select the `File format` for the export (e.g., PNG, PDF).
+In the layout menu, you can change the title of the map, select a
+`Template` (which is basically a standard page size and orientation),
+and select the `File format` for the export (e.g., PNG, PDF).
 
-You can also customize more the layout by enabling the `Advance options` panel. You can set the scale, add an author name, include copyright information, increase or decrease the resolution, indicate the [output spatial reference](https://developers.arcgis.com/rest/services-reference/enterprise/using-spatial-references/){target="_blank"}, and select to include legend, north arrow, and scale bar.
+You can also customize more the layout by enabling the `Advance options`
+panel. You can set the scale, add an author name, include copyright
+information, increase or decrease the resolution, indicate the [output
+spatial
+reference](https://developers.arcgis.com/rest/services-reference/enterprise/using-spatial-references/){target="_blank"},
+and select to include legend, north arrow, and scale bar.
 
-Adjust the zoom and position of the map in the preview window to ensure everything is visible and well-framed.
+Adjust the zoom and position of the map in the preview window to ensure
+everything is visible and well-framed.
 
-![](images/Workshop1/Step4/export-layout-menu.png){width="90%" fig-align="center"}
+![](images/Workshop1/Step4/export-layout-menu.png){width="90%"
+fig-align="center"}
 
 ## Step 5: Share your map
 
-When you're satisfied with the layout and settings, click on the `Export` button to generate the map. Depending on the selected file format and resolution, it may take a few moments to process the export.
+When you're satisfied with the layout and settings, click on the
+`Export` button to generate the map. Depending on the selected file
+format and resolution, it may take a few moments to process the export.
 
-The result will be list on the `Exports` panel, where you can save the file to your computer by clicking on the three dots next to the export and selecting `Save as`.
+The result will be list on the `Exports` panel, where you can save the
+file to your computer by clicking on the three dots next to the export
+and selecting `Save as`.
 
-![](images/Workshop1/Step4/export-save-as.png){width="40%" fig-align="center"}
+![](images/Workshop1/Step4/export-save-as.png){width="40%"
+fig-align="center"}
 
-This will save the exported map to you ArcGIS Online content. You can access it later from the `Content` menu in the top menu bar. The new item will be available as an Image file that you can download to your computer.
+This will save the exported map to you ArcGIS Online content. You can
+access it later from the `Content` menu in the top menu bar. The new
+item will be available as an Image file that you can download to your
+computer.
 
-![](images/Workshop1/Step4/export-download-image.png){width="90%" fig-align="center"}
+![](images/Workshop1/Step4/export-download-image.png){width="90%"
+fig-align="center"}
 
-**NOTE**: Public sharing is a little more complicated, it requires to set public permissions to all layers used in the map before sharing the map publicly.
+**NOTE**: Public sharing is a little more complicated, it requires to
+set public permissions to all layers used in the map before sharing the
+map publicly.
 
 ## Other appoaches
 
-There are many ways of making a simple map. Here are some alternative approaches.
+There are many ways of making a simple map. Here are some alternative
+approaches.
 
--  By screen grabbing: Create a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps). Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that. \[The following is probably too detailed...] It is possible to capture the base layer at higher-than-screen resolution by zooming in, panning and screen grabbing it in pieces, and merging the pieces using a tool like Adobe Photoshop. And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.
+-   By screen grabbing: Create a base layer by screen grabbing a source
+    map displayed in a web browser window (e.g., Google Maps). Then,
+    using a drawing tool (a dedicated drawing tool such as Adobe
+    Illustrator, or any program that provides drawing tools such as
+    Microsoft PowerPoint), import the screen grab and draw on top of
+    that. \[The following is probably too detailed...\] It is possible
+    to capture the base layer at higher-than-screen resolution by
+    zooming in, panning and screen grabbing it in pieces, and merging
+    the pieces using a tool like Adobe Photoshop. And by measuring
+    distances between known points, and/or carefully keeping track of
+    scale, it is possible to accurately position figures and
+    annotations.
 
--  Google Earth
+-   Google Earth
 
--  MapBox
+-   MapBox
 
--  OpenStreetMaps
+-   OpenStreetMaps
 
--  [CalTopo](https://caltopo.com) comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription.
+-   [CalTopo](https://caltopo.com) comes with a variety of base layers,
+    including multiple types of topographic maps, and it provides a
+    number of drawing and annotation tools. Certain features may require
+    a subscription.
