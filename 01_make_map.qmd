@@ -48,14 +48,14 @@ Along the top of the page, is the main tool bar.
 
 ![](images/main-menu-bar.png){width="90%" fig-align="center"}
 
-- **Home** will take you to the main landing page when you first sign in.
-- The **Gallery** contains items from our 'featured content' group
-- **Groups** are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called [From Maps to Analysis](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview){target="_blank"} which contains most of the data layers we will be using. 
-- **Content** is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. 
-- **Notebooks** is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.
-- **Organization** will take you back to our main page. This is not the same as Home. 
-- **Scene**, or **Scene Viewer** is where you can create 3D GIS scenes, such as neighborhood models and digital twins. 
-- **Map**, or **Map Viewer** is where you can create 2D maps. ***We will be focusing on using the Map Viewer for this workshop.***
+- `Home` will take you to the main landing page when you first sign in.
+- The `Gallery` contains items from our 'featured content' group
+- `Groups` are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called [From Maps to Analysis](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview){target="_blank"} which contains most of the data layers we will be using. 
+- `Content` is where your created or uploaded content is listed. You can make folders in here to organize your layers and features. 
+- `Notebooks` is ESRI's version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.
+- `Organization` will take you back to our main page. This is not the same as Home. 
+- `Scene`, or `Scene Viewer` is where you can create 3D GIS scenes, such as neighborhood models and digital twins. 
+- `Map`, or `Map Viewer` is where you can create 2D maps. ***We will be focusing on using the Map Viewer for this workshop.***
 
 
 ## The Map Viewer
