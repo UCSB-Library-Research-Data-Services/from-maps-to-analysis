@@ -139,13 +139,15 @@ personal experience as a bicyclist or pedestrian on campus.
 From the **Layers** panel, click on the add layer button. Search
 `My organization` for 'UCSB OSM Paths'. There should be only one result.
 
-![Adding a layer](images/add_a_layer)
+![Adding a layer](images/add_a_layer.png){width="20%"}
+
+
 
 ::: {.callout-tip collapse="true" title="Challenge:
 Repeat the above steps to add the feature layer `bike_racks_ucsb` to
 your map."}
 
-### *Challenge* Import points layer (bike racks)
+### Import points layer (bike racks)
 
 ![Add UCSB bike racks
 layer](images/Workshop1/Step1/select-feature-point-layer.png){width="90%"}
