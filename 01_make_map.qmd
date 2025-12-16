@@ -223,8 +223,7 @@ our case, we selected 5.68 px.
 
 In ArcGIS Online, every time you select the "Adjust size automatically" option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option.
 
-
-![](images/Workshop1/Step2/symbology-point-size.png){width="90%" fig-align="center"}
+![](images/Workshop1/Step2/symbology-point-size.png){width="70%"}
 :::
 
 
