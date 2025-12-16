@@ -64,7 +64,11 @@ Open a new, empty map by clicking "Map" on your top menu bar.
 
 ### Map main components
 
-In the Map Viewer there is a menu bar in the left column. This is where you can add items to your map. 
+Open a new, empty map by clicking "Map" on your top menu bar.
+
+![](images/new_empty_map.png){width="80%" fig-align="center"}
+
+## Map main components
 
 -  Layers (your own or imported from others)
 -  Basemap (background)
@@ -78,7 +82,6 @@ In the Map Viewer there is a menu bar in the left column. This is where you can 
 ### Basemap
 
 A new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default. 
-
  
 ![](images/current-basemap.png){width="90%" fig-align="center"}
 
