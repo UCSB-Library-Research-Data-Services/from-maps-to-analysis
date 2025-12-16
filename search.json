@@ -60,7 +60,7 @@
     "href": "01_make_map.html#the-map-viewer",
     "title": "I want to make a map",
     "section": "The Map Viewer",
-    "text": "The Map Viewer\nOpen a new, empty map by clicking “Map” on your top menu bar.\n\n\n\n\n\n\nMap main components\nIn the Map Viewer there is a menu bar in the left column. This is where you can add items to your map.\n\nBasemap (background)\nLayers (your own or imported from others)\nSymbology & legend\nSave and open…\n\n\n\nBasemap\nA new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default.\n\n\n\n\n\nMake sure you choose a basemap that is easy to follow and is a good reference. The default basemap layer in ArcGIS online is Topographic.\n\n\nSave your work often\n\nThere will be a blue dot until you save\nOnce you save, more options will be available\nArcGIS Online will not auto-save your map"
+    "text": "The Map Viewer\nOpen a new, empty map by clicking “Map” on your top menu bar.\n\n\n\n\n\n\nMap main components\nIn the Map Viewer there is a menu bar in the left column. This is where you can add items to your map.\n\nBasemap (background)\nLayers (your own or imported from others)\nSymbology & legend\nSave and open…\n\n\n\nBasemap\nA new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default.\n\n\n\n\n\nMake sure you choose a basemap that is easy to follow and is a good reference. The default basemap layer in ArcGIS online is Topographic.\n\n\nSave your work often\n\nThere will be a blue dot until you save\nOnce you save, more options will be available"
   },
   {
     "objectID": "01_make_map.html#feature-layers",
