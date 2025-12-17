@@ -26,7 +26,7 @@ We will end up with a map something like this:
 this](https://arcg.is/0iD4jS0){target="_blank"}
 
 ![Preliminary version of the possible
-result](images/export-finish-map.png){width="90%" fig-align="center"}
+result](images/export-finish-map.png){#fig-prelim width="90%" fig-align="center"}
 
 (it would be nice if we could put our map into an iframe, but github
 doesn't support that)
@@ -50,7 +50,7 @@ A brief tour of the interface.
 
 **Sign on with your UCSB NetID**. You may need to enter "ucsb" into the url box. **Do not use the ArcGIS login!** This is for users who do NOT have a UCSB Net ID.
 
-![ArcGIS Online login page for UCSB users](images/arcgis-login.png){width=40% fig-align="center"}
+![ArcGIS Online login page for UCSB users](images/arcgis-login.png){#fig-arcgis width=40% fig-align="center"}
 
 You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. _You may need to authenticate with DUO on your phone_.
 
@@ -62,7 +62,7 @@ content published by users on your campus.
 
 Along the top of the page, is the main tool bar.
 
-![ArcGIS Online main menu bar](images/main-menu-bar.png){width="90%" fig-align="center"}
+![ArcGIS Online main menu bar](images/main-menu-bar.png){#fig-menubar width="90%" fig-align="center"}
 
 -   `Home` will take you to the main landing page when you first sign
     in.
@@ -89,7 +89,7 @@ Along the top of the page, is the main tool bar.
 
 Open a new, empty map by clicking `Map` on your top menu bar.
 
-![Opening a new empty map](images/new_empty_map.png){size="50%" fig-align="center"}
+![Opening a new empty map](images/new_empty_map.png){#fig-emptymap size="50%" fig-align="center"}
 
 ### Map main components
 
@@ -104,7 +104,7 @@ In the Map Viewer there is a menu bar in the left column. This is where you can 
 
 The goal of a basemap, is to provide some context in terms of location and/or thematic. In ArcGIS online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the **Topographic** basemap. 
  
-![Default basemap](images/current-basemap.png){width="90%" fig-align="center"}
+![Default basemap](images/current-basemap.png){#fig-defaultmap width="90%" fig-align="center"}
 
 In general, make sure you choose a basemap that is easy to follow and is accurate in relation to the goal of your map. Avoid using busy basemaps that provide a lot of information not be relevant to the purpose of your map and can become confusing as you add your other layers on top of it.
 
@@ -132,7 +132,7 @@ With that introduction, you now have the opportunity to start creating your own 
 From the **Layers** panel, click on the add layer button. Search
 `My organization` for 'UCSB OSM Paths'. There should be only one result.
 
-![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){width="90%"}
+![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){#fig-addinglayer width="90%"}
 
 ::: {.callout-tip collapse="true" title="Challenge:"}
 Repeat the above steps to add the feature layer `bike_racks_ucsb` to
@@ -140,7 +140,7 @@ your map."}
 
 ### Import points layer (bike racks)
 
-![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png){width="90%"}
+![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png){#fig-bikeracks width="90%"}
 :::
 
 
@@ -150,7 +150,7 @@ the `UCSB Campus Buildings` layer from there."}
 
 ### Add a layer via Groups
 
-![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){width="90%"}
+![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){#fig-buildinglayers width="90%"}
 :::
 
 ### Reorder layers
@@ -174,7 +174,7 @@ For our map, the recommended order from top to bottom should be:
 
 To reorder the layers, click and hold on a layer name in the Layers panel, drag it to the desired position, and release.
 
-![Reorder feature layers](images/Workshop1/Step1/reorder-layers.gif){width="90%" fig-align="center"}
+![Reorder feature layers](images/Workshop1/Step1/reorder-layers.gif){#fig-reorderlayers width="90%" fig-align="center"}
 
 
 ### Accessing the underlying data
@@ -184,7 +184,7 @@ To reorder the layers, click and hold on a layer name in the Layers panel, drag 
 For example, if you click on the three dots on the right of a feature layer
 you can access their *attribute table* by selecting `Show table`.
 
-![Attribute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png){width="90%"}
+![Attribute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png){#fig-attribute width="90%"}
 
 We will see later how you can leverage these attributes to set the
 symbology of a layer according to categories or quantities provided by
@@ -198,7 +198,7 @@ the folder icon in the left menu bar and then selecting the `Save as`
 option.
 
 
-![Save as dialog in ArcGIS Online](images/Workshop1/Step1/save-as.png){width="40%" fig-align="center"}
+![Save as dialog in ArcGIS Online](images/Workshop1/Step1/save-as.png){#fig-saveas width="40%" fig-align="center"}
 
 In there, you can add a title, tags, and a short description of your map.
 :::
@@ -222,7 +222,7 @@ From the menu, we can select several categories of symbols. Let's select
 the `Government` category and look for a bike parking icon. Click on the
 `Done` button to apply the changes and return to the symbol style panel.
 
-![Selecting a bike parking symbol from the Government category](images/Workshop1/Step2/symbology-select-symbol.png){width="90%"
+![Selecting a bike parking symbol from the Government category](images/Workshop1/Step2/symbology-select-symbol.png){#fig-bikeparking width="90%"
 fig-align="center"}
 
 To change the size of the symbol, we can use the `Size` slider to reduce
@@ -235,7 +235,7 @@ our case, we selected 5.68 px.
 
 In ArcGIS Online, every time you select the "Adjust size automatically" option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option.
 
-![Symbol size settings with adjust size automatically option](images/Workshop1/Step2/symbology-point-size.png){width="70%"}
+![Symbol size settings with adjust size automatically option](images/Workshop1/Step2/symbology-point-size.png){#fig-symbolsize width="70%"}
 :::
 
 
@@ -253,13 +253,13 @@ by changing the style of the `UCSB Campus Buildings` layer.
 -   Select the attribute `b_use`, which stands for building use, and
     click on `Add`.
 
-![Adjusting symbology style by attribute](images/Workshop1/Step2/symbology-by-attribute.png){width="90%" fig-align="center"}
+![Adjusting symbology style by attribute](images/Workshop1/Step2/symbology-by-attribute.png){#fig-symbolstyle width="90%" fig-align="center"}
 
 As a result, you will see that the buildings are now filled with
 different colors based on their use. You can further customize the
 colors by clicking on the color ramp and selecting a different one.
 
-![Buildings colored by their use category](images/Workshop1/Step2/symbology-by-attribute-result.png){width="90%" fig-align="center"}
+![Buildings colored by their use category](images/Workshop1/Step2/symbology-by-attribute-result.png){#fig-buildingscolor width="90%" fig-align="center"}
 
 ::: {.callout-warning collapse="true" title="b_temp? b_phase"}
 
@@ -287,12 +287,12 @@ To increase the visibility of the bike paths, we can increase the width
 of the lines by editing the `Width` slider on the `Symbol style` panel.
 We selected 3.75 px for this example.
 
-![Setting transparency by maxspeed attribute](images/Workshop1/Step2/symbology-transparency-by-attribute.png){width="90%"
+![Setting transparency by maxspeed attribute](images/Workshop1/Step2/symbology-transparency-by-attribute.png){#fig-transparency width="90%"
 fig-align="center"}
 
 Here is the final result of our symbology adjustments:
 
-![Map with all symbology adjustments applied](images/Workshop1/Step2/symbology-final-result.png){width="90%"
+![Map with all symbology adjustments applied](images/Workshop1/Step2/symbology-final-result.png){#fig-allsymbols width="90%"
 fig-align="center"}
 
 ### Select a better basemap
@@ -302,14 +302,14 @@ almost ready map. However, the current basemap (Topographic) is a bit
 too busy and makes it hard to see the features we added. Let's change it
 to a simpler basemap using the `Basemap` option in the left menu bar.
 
-![Basemap option in the left menu bar](images/Workshop1/Step2/basemap-menu-location.png){width="40%"
+![Basemap option in the left menu bar](images/Workshop1/Step2/basemap-menu-location.png){#fig-basemapoption width="40%"
 fig-align="center"}
 
 From the basemap gallery, we can select a simpler basemap. For this
 example, we selected the `Light Gray Canvas` basemap, which provides a
 clean background that makes our features stand out.
 
-![Map with Light Gray Canvas basemap](images/Workshop1/Step2/basemap-light-gray-canvas.png){width="90%"
+![Map with Light Gray Canvas basemap](images/Workshop1/Step2/basemap-light-gray-canvas.png){#fig-lightgray width="90%"
 fig-align="center"}
 
 **Don't forget to save your map after making these changes!**
@@ -325,13 +325,13 @@ purposes here, though, we will take the more straightforward approach of
 simply drawing on the map. The hand-drawn features will appear in what
 ArcGIS Online calls a "sketch layer."
 
-![Sketch layer option in the left menu](images/Workshop1/Step3/drawing-sketch-layer-menu.png){width="40%"
+![Sketch layer option in the left menu](images/Workshop1/Step3/drawing-sketch-layer-menu.png){#fig-sketchlayer width="40%"
 fig-align="center"}
 
 After adding the sketch layer to your workspace, a new menu will appear
 in the right column with drawing tools and configuration options.
 
-![Sketch layer drawing tools menu](images/Workshop1/Step3/drawing-sketch-bar-menu.png){width="40%" fig-align="center"}
+![Sketch layer drawing tools menu](images/Workshop1/Step3/drawing-sketch-bar-menu.png){#fig-drawingtools width="40%" fig-align="center"}
 
 ### Drawing points in a sketch layer
 
@@ -347,7 +347,7 @@ In our example, we add the following settings to the point symbol:
 -   Size: 48 px
 -   Vector marker (background): Blue (#2132cf)
 
-![Point symbol customization settings](images/Workshop1/Step3/drawing-point-vector.png){width="90%" fig-align="center"}
+![Point symbol customization settings](images/Workshop1/Step3/drawing-point-vector.png){#fig-pointsymbol width="90%" fig-align="center"}
 
 ### Challenge: Drawing lines and circles in a sketch layer
 
@@ -357,7 +357,7 @@ From the sketch layer menu, select the line drawing tool. Click on the
 map to start drawing the line, and click again to add vertices.
 Double-click to finish the line.
 
-![Drawing a line on the map](images/Workshop1/Step3/drawing-line-vector.gif){width="90%" fig-align="center"}
+![Drawing a line on the map](images/Workshop1/Step3/drawing-line-vector.gif){#fig-drawingline width="90%" fig-align="center"}
 
 You can customize the line symbol in the sketch layer menu before adding
 it to the map. In our example, we add the following settings to the line
@@ -367,7 +367,7 @@ symbol:
 -   Dotted line pattern
 -   Color: Light blue (#00c8ff)
 
-![Line symbol customization settings](images/Workshop1/Step3/drawing-line-style.png){width="90%" fig-align="center"}
+![Line symbol customization settings](images/Workshop1/Step3/drawing-line-style.png){#fig-linesymbol width="90%" fig-align="center"}
 
 -   Draw a circle where you think there should be a bike parking lot but
     isn't.
@@ -382,7 +382,7 @@ circle symbol:
 -   Fill color: Red (#d13434)
 -   Fill transparency: 38%
 
-![Drawing a circle on the map](images/Workshop1/Step3/drawing-circle-vector.gif){width="90%"
+![Drawing a circle on the map](images/Workshop1/Step3/drawing-circle-vector.gif){#fig-drawingcircle width="90%"
 fig-align="center"}
 
 -   Rename the Sketch layer to "Annotations"
@@ -410,7 +410,7 @@ layer to reduce visual clutter.
 To do that, you need to look for the `Print` option in the left menu
 bar.
 
-![Print option in the left menu bar](images/Workshop1/Step4/export-print-menu.png){width="40%"
+![Print option in the left menu bar](images/Workshop1/Step4/export-print-menu.png){#fig-printoption width="40%"
 fig-align="center"}
 
 For exporting the map you have two options:
@@ -440,7 +440,7 @@ and select to include legend, north arrow, and scale bar.
 Adjust the zoom and position of the map in the preview window to ensure
 everything is visible and well-framed.
 
-![Map export layout configuration panel](images/Workshop1/Step4/export-layout-menu.png){width="90%"
+![Map export layout configuration panel](images/Workshop1/Step4/export-layout-menu.png){#fig-exportlayout width="90%"
 fig-align="center"}
 
 ## Step 5: Share your map
@@ -453,7 +453,7 @@ The result will be list on the `Exports` panel, where you can save the
 file to your computer by clicking on the three dots next to the export
 and selecting `Save as`.
 
-![Saving exported map from the Exports panel](images/Workshop1/Step4/export-save-as.png){width="40%"
+![Saving exported map from the Exports panel](images/Workshop1/Step4/export-save-as.png){#fig-savingmap width="40%"
 fig-align="center"}
 
 This will save the exported map to you ArcGIS Online content. You can
@@ -461,7 +461,7 @@ access it later from the `Content` menu in the top menu bar. The new
 item will be available as an Image file that you can download to your
 computer.
 
-![Downloading the exported map image from ArcGIS Online content](images/Workshop1/Step4/export-download-image.png){width="90%"
+![Downloading the exported map image from ArcGIS Online content](images/Workshop1/Step4/export-download-image.png){#fig-downloadmap width="90%"
 fig-align="center"}
 
 **NOTE**: Public sharing is a little more complicated, it requires to
