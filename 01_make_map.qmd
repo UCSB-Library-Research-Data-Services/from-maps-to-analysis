@@ -134,18 +134,19 @@ From the **Layers** panel, click on the add layer button. Search
 
 ![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){#fig-addinglayer width="90%"}
 
-::: {.callout-tip collapse="true" title="Challenge: Repeat 
-the above steps to add the feature layer `bike_racks_ucsb` to
-your map."}
+::: {.callout-tip collapse="true"}
+## Challenge: Repeat the above steps to add the feature layer `bike_racks_ucsb` to
+your map.
 
 ### Import points layer (bike racks)
 
-![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png){#fig-bikeracks width="90%"}
+![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png){#fig-bikeracks width="80%"}
 :::
 
 
-::: {.callout-tip collapse="true" title="Challenge: Find the 'From Maps to Analysis' group and add
-the `UCSB Campus Buildings` layer from there."}
+::: {.callout-tip collapse="true"}
+## Challenge: Find the 'From Maps to Analysis' group and add
+the `UCSB Campus Buildings` layer from there.
 
 ### Add a layer via Groups
 
