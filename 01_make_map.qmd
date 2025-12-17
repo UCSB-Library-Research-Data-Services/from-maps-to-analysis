@@ -134,7 +134,7 @@ From the **Layers** panel, click on the add layer button. Search
 
 ![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){#fig-addinglayer width="90%"}
 
-::: {.callout-tip collapse="true" title="Challenge:"}
+::: {.callout-tip collapse="true" title="Challenge:"
 Repeat the above steps to add the feature layer `bike_racks_ucsb` to
 your map."}
 
@@ -144,7 +144,7 @@ your map."}
 :::
 
 
-::: {.callout-tip collapse="true" title="Challenge:"}
+::: {.callout-tip collapse="true" title="Challenge:"
 Find the 'From Maps to Analysis' group and add
 the `UCSB Campus Buildings` layer from there."}
 
@@ -377,15 +377,14 @@ the sketch layer menu. Click on the map to draw the circle, and click on
 the select tool to finish the shape. You can also customize the symbol
 after drawing it by selecting it and changing its properties in the
 sketch layer menu. In our example, we add the following settings to the
-circle symbol:
+circle symbol. You can type in the values, or interactively select
+as in the animated figure.
 
 -   Fill color: Red (#d13434)
 -   Fill transparency: 38%
 
 ![Drawing a circle on the map](images/Workshop1/Step3/drawing-circle-vector.gif){#fig-drawingcircle width="90%"
 fig-align="center"}
-
--   Rename the Sketch layer to "Annotations"
 
 Finally, let's rename the sketch layer to "Annotations" to better
 reflect its purpose. Click on the three dots next to the sketch layer
@@ -464,9 +463,8 @@ computer.
 ![Downloading the exported map image from ArcGIS Online content](images/Workshop1/Step4/export-download-image.png){#fig-downloadmap width="90%"
 fig-align="center"}
 
-**NOTE**: Public sharing is a little more complicated, it requires to
-set public permissions to all layers used in the map before sharing the
-map publicly.
+**NOTE**: Public sharing is a little more complicated, it requires that all of
+the layers used in the map are also shared with the public. 
 
 ## Other appoaches
 
