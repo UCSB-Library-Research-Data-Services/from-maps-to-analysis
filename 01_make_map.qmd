@@ -467,7 +467,7 @@ fig-align="center"}
 **NOTE**: Public sharing is a little more complicated, it requires that all of
 the layers used in the map are also shared with the public. 
 
-## Other appoaches
+## Other approaches
 
 There are many ways of making a simple map. Here are some alternative
 approaches.
@@ -485,11 +485,11 @@ approaches.
     scale, it is possible to accurately position figures and
     annotations.
 
--   Google Earth
+-   [Google Earth](https://earth.google.com/)
 
--   MapBox
+-   [MapBox](https://www.mapbox.com/)
 
--   OpenStreetMaps
+-   [OpenStreetMaps](https://www.google.com/maps)
 
 -   [CalTopo](https://caltopo.com) comes with a variety of base layers,
     including multiple types of topographic maps, and it provides a
