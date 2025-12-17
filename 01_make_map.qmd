@@ -31,6 +31,10 @@ result](images/export-finish-map.png){#fig-prelim width="90%" fig-align="center"
 (it would be nice if we could put our map into an iframe, but github
 doesn't support that)
 
+<iframe width="900" height="700" allow="local-network-access; geolocation" title="Workshop campus bike map" src="https://ucsb.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=2b16d246ee4c4321852712b9b4652b74&theme=light&scroll=false&center=-119.847894,34.414117&scale=9027.977411" ></iframe>
+
+
+
 As we will discuss at the end of this lesson, there are many ways of
 making such a map without using a GIS tool. In fact, in many cases GIS
 is overkill, both because most of the features GIS tools provide will
@@ -135,8 +139,7 @@ From the **Layers** panel, click on the add layer button. Search
 ![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){#fig-addinglayer width="90%"}
 
 ::: {.callout-tip collapse="true"}
-## Challenge: Repeat the above steps to add the feature layer `bike_racks_ucsb` to
-your map.
+## Challenge: Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
 
 ### Import points layer (bike racks)
 
@@ -145,8 +148,7 @@ your map.
 
 
 ::: {.callout-tip collapse="true"}
-## Challenge: Find the 'From Maps to Analysis' group and add
-the `UCSB Campus Buildings` layer from there.
+## Challenge: Find the 'From Maps to Analysis' group and add the `UCSB Campus Buildings` layer from there.
 
 ### Add a layer via Groups
 
