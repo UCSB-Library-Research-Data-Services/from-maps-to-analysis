@@ -16,23 +16,17 @@ follow a typical workflow of:
 1. draw annotations on top of the map, 
 1. preparing the map for presentation and exporting it. As an exercise, you will be creating a map that reflects your personal experience biking on the UCSB campus.
 
-We will end up with a map something like this:
-
 ## Our goal for today 
-
-**Preliminary**: The below image of the final map is a placeholder
 
 [Let's make something like
 this](https://arcg.is/0iD4jS0){target="_blank"}
 
-![Preliminary version of the possible
-result](images/export-finish-map.png){#fig-prelim width="90%" fig-align="center"}
+Our map is also embedded interactively below.
 
-(it would be nice if we could put our map into an iframe, but github
-doesn't support that)
+![Preliminary version of the possible
+result](images/export-finish-map.png){#fig-prelim width="70%" fig-align="center"}
 
 <iframe width="900" height="700" allow="local-network-access; geolocation" title="Workshop campus bike map" src="https://ucsb.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=2b16d246ee4c4321852712b9b4652b74&theme=light&scroll=false&center=-119.847894,34.414117&scale=9027.977411" ></iframe>
-
 
 
 As we will discuss at the end of this lesson, there are many ways of
