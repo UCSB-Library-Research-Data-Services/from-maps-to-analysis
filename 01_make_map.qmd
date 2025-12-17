@@ -24,7 +24,7 @@ this](https://arcg.is/0iD4jS0){target="_blank"}
 Our map is also embedded interactively below.
 
 ![Preliminary version of the possible
-result](images/export-finish-map.png){#fig-prelim width="70%" fig-align="center"}
+result](images/export-finish-map-2.png){#fig-prelim width="70%" fig-align="center"}
 
 <iframe width="900" height="700" allow="local-network-access; geolocation" title="Workshop campus bike map" src="https://ucsb.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=2b16d246ee4c4321852712b9b4652b74&theme=light&scroll=false&center=-119.847894,34.414117&scale=9027.977411" ></iframe>
 
@@ -458,6 +458,11 @@ computer.
 
 ![Downloading the exported map image from ArcGIS Online content](images/Workshop1/Step4/export-download-image.png){#fig-downloadmap width="90%"
 fig-align="center"}
+
+![Jon's results are a bit different](images/export-finish-map-2.png){#fig-downloadmap width="90%"
+fig-align="center"}
+
+
 
 **NOTE**: Public sharing is a little more complicated, it requires that all of
 the layers used in the map are also shared with the public. 
