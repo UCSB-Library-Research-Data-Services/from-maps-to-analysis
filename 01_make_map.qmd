@@ -487,9 +487,9 @@ approaches.
 
 -   [Google Earth](https://earth.google.com/): An in-browser tool that allows you to view and add data layers with high-resolution google imagery. There are some fee based services in Google Earth, and you may need a plan to view some features. Historical satellite imagery is available. 
 
--   [MapBox](https://www.mapbox.com/): Mapbox has more features available for mobile users. 
+-   [MapBox](https://www.mapbox.com/): Mapbox has more features available for mobile users. Maps can be viewed and edited on mobile devices. 
 
--   [OpenStreetMaps](https://www.google.com/maps): OpenStreetMaps is 
+-   [OpenStreetMaps](https://www.google.com/maps): OpenStreetMaps is open source, managed and created by users worldwide. This data can also be downloaded and added to GIS software like ArcGIS Pro or QGIS.
 
 -   [CalTopo](https://caltopo.com) comes with a variety of base layers,
     including multiple types of topographic maps, and it provides a
