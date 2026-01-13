@@ -1,9 +1,6 @@
 ---
 title: "I want to make a map"
 lightbox: true
-editor: 
-  markdown: 
-    wrap: 72
 ---
 
 
@@ -18,13 +15,17 @@ follow a typical workflow of:
 
 ## Our goal for today 
 
-[Let's make something like
+Our goal is to develop a map of the UCSB campus that illustrates the current bicycle infrastructure, specifically highlighting bike paths and racks. Additionally, the map will incorporate information about related incidents (crash, theft, ...) and proposed improvements.
+
+[At the end of our session we should end up with something like
 this](https://arcg.is/0iD4jS0){target="_blank"}
 
-Our map is also embedded interactively below.
-
 ![Preliminary version of the possible
-result](images/export-finish-map-2.png){#fig-prelim width="70%" fig-align="center"}
+result](images/export-finish-map-2.png){#fig-prelim width="80%" fig-align="center"}
+
+<br>
+
+Our final interactive map is also embedded below:
 
 <iframe width="900" height="700" allow="local-network-access; geolocation" title="Workshop campus bike map" src="https://ucsb.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=2b16d246ee4c4321852712b9b4652b74&theme=light&scroll=false&center=-119.847894,34.414117&scale=9027.977411" ></iframe>
 
