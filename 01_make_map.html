@@ -194,7 +194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#step-5-share-your-map" id="toc-step-5-share-your-map" class="nav-link" data-scroll-target="#step-5-share-your-map">Step 5: Share your map</a></li>
   </ul></li>
   <li><a href="#sec-other-approaches" id="toc-sec-other-approaches" class="nav-link" data-scroll-target="#sec-other-approaches">Other approaches</a></li>
-  <li><a href="#sec-caveats" id="toc-sec-caveats" class="nav-link" data-scroll-target="#sec-caveats">Caveats to using ArcGIS Online</a></li>
+  <li><a href="#sec-caveats" id="toc-sec-caveats" class="nav-link" data-scroll-target="#sec-caveats">Caveats of using ArcGIS Online</a></li>
   </ul>
 </nav>
     </div>
@@ -228,7 +228,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Prepare the map for presentation and export it</li>
 </ol>
 <p>As we will describe under <a href="#sec-other-approaches">Other approaches</a> at the end of this lesson, there are many tools and techniques that can be used to create such a map. An advantage of using a GIS tool such as ArcGIS Online, and the central motivation for using GIS in this lesson, is that a GIS tool allow maps elements to be interpreted and manipulated as data, and in this way spatial analysis becomes possible.</p>
-<p>ArcGIS Online is but one of many GIS tools in existence. We use it in this lesson because it is in wide use in both commercial and academic settings. However, it is a proprietary and closed system that requires a paid subscription to use. We note limitations and ramifications of using ArcGIS Online on the reproducibility and citability of one’s work under <a href="#sec-caveats">Caveats of using ArcGIS Online</a> at the end of this lesson.</p>
+<p>ArcGIS Online is but one of many GIS tools in existence. We use it in this lesson because it is in wide use in both commercial and academic settings. However, it is important to recognize that it is a proprietary and closed system that requires a paid subscription to use. We note limitations and ramifications of using ArcGIS Online on the reproducibility and citability of one’s work under <a href="#sec-caveats">Caveats of using ArcGIS Online</a> at the end of this lesson.</p>
 <section id="our-goal-for-today" class="level1">
 <h1>Our goal for today</h1>
 <p>Our goal is to develop a map of the UCSB campus that illustrates the current bicycle infrastructure, specifically highlighting bike paths and racks. Additionally, the map will incorporate information about related incidents (crash, theft, …) and proposed improvements.</p>
@@ -296,7 +296,7 @@ Figure&nbsp;3: ArcGIS Online main menu bar
 <section id="the-map-viewer" class="level2">
 <h2 class="anchored" data-anchor-id="the-map-viewer">The Map Viewer</h2>
 <p>Open a new, empty map by clicking <code>Map</code> on your top menu bar.</p>
-<div id="fig-emptymap" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" size="50%">
+<div id="fig-emptymap" class="quarto-float quarto-figure quarto-figure-center anchored" size="50%" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-emptymap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <a href="images/new_empty_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;4: Opening a new empty map"><img src="images/new_empty_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" size="50%"></a>
@@ -840,8 +840,19 @@ Figure&nbsp;29: Downloading the exported map image from ArcGIS Online content
 </ul>
 </section>
 <section id="sec-caveats" class="level1">
-<h1>Caveats to using ArcGIS Online</h1>
-<p>TBD</p>
+<h1>Caveats of using ArcGIS Online</h1>
+<p>Two central concepts of open science are <strong>reproducibility</strong>, by which we mean the ability to inspect (if not re-execute or replicate) all the data sources, code, protocols, and other materials used in a study, and <strong>citation</strong>, the ability to persistently and openly refer to and access those same data sources, code, protocols, and other materials. Unfortunately, a proprietary, closed tool like ArcGIS Online fails to support open science in three important ways.</p>
+<ul>
+<li><p>The artifacts one works with in ArcGIS Online (layers, maps, StoryMaps, etc.) are stored internally and inaccessibly in an unknown, proprietary format. The data can be viewed or otherwise accessed <em>through</em> ArcGIS Online to be sure, and perhaps edited if one has a paid subscription, but the data in its raw form is inaccessible.</p></li>
+<li><p>The storage, commitment to persistence, and access costs of artifacts stored in ArcGIS Online are entirely dependent on a commercial company.</p></li>
+<li><p>Artifacts such as maps can be identified by URLs, but not by the DOI identifiers that are commonplace in scholarly communication, and which are often required by publishers, citation tracking systems, and academic promotion committees.</p></li>
+</ul>
+<p>An additional caveat that applies to all UI-based GIS tools, not just ArcGIS Online, is that operations are performed interactively. Unfortunately, interactive use does not create any kind of historical log of actions performed. While this style of interface allows for free and fast exploration, it comes at the cost of being able to reliably re-create processing steps. Notice in this workshop that the sequence of actions used to create your map are not recorded anywhere. For a map this may not matter, nor may it matter for a one-off analysis, but if you wanted to, say, apply the same set of steps to a new map, or if your work within ArcGIS Online involved spatial analysis, it will likely be critical that the processing steps be recorded in such a way that they can be inspected if not re-run.</p>
+<p>ArcGIS Online is a powerful too, to be sure. But to use it in a way that supports open, reproducible science, we recommend that you:</p>
+<ul>
+<li><p>Export newly-created feature layers as Shapefiles, and/or export attributes tables as CSV files, and make those files preserved and citable by storing in a data repository. Do not consider ArcGIS Online to be any kind of long-term repository.</p></li>
+<li><p>Express significant computations programmatically, so that they can be inspected and re-run.</p></li>
+</ul>
 
 
 <!-- -->
@@ -1314,7 +1325,7 @@ Figure&nbsp;29: Downloading the exported map image from ArcGIS Online content
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>As we will describe under <span class="co">[</span><span class="ot">Other approaches</span><span class="co">](#sec-other-approaches)</span> at the end of this lesson, there are many tools and techniques that can be used to create such a map. An advantage of using a GIS tool such as ArcGIS Online, and the central motivation for using GIS in this lesson, is that a GIS tool allow maps elements to be interpreted and manipulated as data, and in this way spatial analysis becomes possible.</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>ArcGIS Online is but one of many GIS tools in existence. We use it in this lesson because it is in wide use in both commercial and academic settings. However, it is a proprietary and closed system that requires a paid subscription to use.  We note limitations and ramifications of using ArcGIS Online on the reproducibility and citability of one's work under <span class="co">[</span><span class="ot">Caveats of using ArcGIS Online</span><span class="co">](#sec-caveats)</span> at the end of this lesson.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>ArcGIS Online is but one of many GIS tools in existence. We use it in this lesson because it is in wide use in both commercial and academic settings. However, it is important to recognize that it is a proprietary and closed system that requires a paid subscription to use. We note limitations and ramifications of using ArcGIS Online on the reproducibility and citability of one's work under <span class="co">[</span><span class="ot">Caveats of using ArcGIS Online</span><span class="co">](#sec-caveats)</span> at the end of this lesson.</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu"># Our goal for today</span></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
@@ -1653,9 +1664,23 @@ Figure&nbsp;29: Downloading the exported map image from ArcGIS Online content
 <span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">CalTopo</span><span class="co">](https://caltopo.com)</span> comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription.</span>
 <span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a><span class="fu"># Caveats to using ArcGIS Online {#sec-caveats}</span></span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a><span class="fu"># Caveats of using ArcGIS Online {#sec-caveats}</span></span>
 <span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>TBD</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>Two central concepts of open science are **reproducibility**, by which we mean the ability to inspect (if not re-execute or replicate) all the data sources, code, protocols, and other materials used in a study, and **citation**, the ability to persistently and openly refer to and access those same data sources, code, protocols, and other materials.  Unfortunately, a proprietary, closed tool like ArcGIS Online fails to support open science in three important ways.</span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The artifacts one works with in ArcGIS Online (layers, maps, StoryMaps, etc.) are stored internally and inaccessibly in an unknown, proprietary format. The data can be viewed or otherwise accessed *through* ArcGIS Online to be sure, and perhaps edited if one has a paid subscription, but the data in its raw form is inaccessible.</span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The storage, commitment to persistence, and access costs of artifacts stored in ArcGIS Online are entirely dependent on a commercial company.</span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Artifacts such as maps can be identified by URLs, but not by the DOI identifiers that are commonplace in scholarly communication, and which are often required by publishers, citation tracking systems, and academic promotion committees.</span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a>An additional caveat that applies to all UI-based GIS tools, not just ArcGIS Online, is that operations are performed interactively.  Unfortunately, interactive use does not create any kind of historical log of actions performed.  While this style of interface allows for free and fast exploration, it comes at the cost of being able to reliably re-create processing steps.  Notice in this workshop that the sequence of actions used to create your map are not recorded anywhere.  For a map this may not matter, nor may it matter for a one-off analysis, but if you wanted to, say, apply the same set of steps to a new map, or if your work within ArcGIS Online involved spatial analysis, it will likely be critical that the processing steps be recorded in such a way that they can be inspected if not re-run.</span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>ArcGIS Online is a powerful too, to be sure. But to use it in a way that supports open, reproducible science, we recommend that you:</span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Export newly-created feature layers as Shapefiles, and/or export attributes tables as CSV files, and make those files preserved and citable by storing in a data repository. Do not consider ArcGIS Online to be any kind of long-term repository.</span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Express significant computations programmatically, so that they can be inspected and re-run.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
