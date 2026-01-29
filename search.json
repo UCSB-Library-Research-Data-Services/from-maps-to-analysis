@@ -49,32 +49,53 @@
     "text": "The goal of this lesson is to demonstrate how to make a simple map, suitable for inclusion in a publication, using ArcGIS Online. As an exercise, you will be creating a map that reflects your personal experience biking on the UCSB campus. We will follow a typical workflow of:\nAs we will describe under Other approaches at the end of this lesson, there are many tools and techniques that can be used to create such a map. An advantage of using a GIS tool such as ArcGIS Online, and the central motivation for using GIS in this lesson, is that a GIS tool allow maps elements to be interpreted and manipulated as data, and in this way spatial analysis becomes possible.\nArcGIS Online is but one of many GIS tools in existence. We use it in this lesson because it is in wide use in both commercial and academic settings. However, it is a proprietary and closed system that requires a paid subscription to use. We note limitations and ramifications of using ArcGIS Online on the reproducibility and citability of one’s work under Caveats of using ArcGIS Online at the end of this lesson."
   },
   {
-    "objectID": "01_make_map.html#our-goal-for-today",
-    "href": "01_make_map.html#our-goal-for-today",
+    "objectID": "01_make_map.html#log-on-to-arcgis-online",
+    "href": "01_make_map.html#log-on-to-arcgis-online",
     "title": "I want to make a map",
-    "section": "Our goal for today",
-    "text": "Our goal for today\nOur goal is to develop a map of the UCSB campus that illustrates the current bicycle infrastructure, specifically highlighting bike paths and racks. Additionally, the map will incorporate information about related incidents (crash, theft, …) and proposed improvements.\nAt the end of our session we should end up with something like this\n\n\n\n\n\n\nFigure 1: Preliminary version of the possible result\n\n\n\n\nOur final interactive map is also embedded below:\n\n\nAs we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool. In fact, in many cases GIS is overkill, both because most of the features GIS tools provide will not be used and because the GIS interface can be cumbersome. But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that in turn opens up and provides an introduction to the world of spatial analysis."
+    "section": "Log on to ArcGIS Online",
+    "text": "Log on to ArcGIS Online\nhttps://ucsb.maps.arcgis.com\nSign on with your UCSB NetID. You may need to enter “ucsb” into the url box. Do not use the ArcGIS login! This is for users who do NOT have a UCSB Net ID.\n\n\n\n\n\n\nFigure 2: ArcGIS Online login page for UCSB users\n\n\n\nYou should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone."
   },
   {
-    "objectID": "01_make_map.html#introduction-to-arcgis-online",
-    "href": "01_make_map.html#introduction-to-arcgis-online",
+    "objectID": "01_make_map.html#tour-of-the-user-interface",
+    "href": "01_make_map.html#tour-of-the-user-interface",
     "title": "I want to make a map",
-    "section": "Introduction to ArcGIS Online",
-    "text": "Introduction to ArcGIS Online\nA brief tour of the interface.\n\nLog on to ArcGIS Online\nhttps://ucsb.maps.arcgis.com\nSign on with your UCSB NetID. You may need to enter “ucsb” into the url box. Do not use the ArcGIS login! This is for users who do NOT have a UCSB Net ID.\n\n\n\n\n\n\nFigure 2: ArcGIS Online login page for UCSB users\n\n\n\nYou should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. You may need to authenticate with DUO on your phone.\n\n\nTour of the user interface\nThe main organization page lists the campus administrative contacts and open data groups available on campus. You can also see the latest content published by users on your campus.\nAlong the top of the page, is the main tool bar.\n\n\n\n\n\n\nFigure 3: ArcGIS Online main menu bar\n\n\n\n\nHome will take you to the main landing page when you first sign in.\nThe Gallery contains items from our ‘featured content’ group\nGroups are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called From Maps to Analysis which contains most of the data layers we will be using.\nContent is where your created or uploaded content is listed. You can make folders in here to organize your layers and features.\nNotebooks is ESRI’s version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.\nOrganization will take you back to our main page. This is not the same as Home.\nScene, or Scene Viewer is where you can create 3D GIS scenes, such as neighborhood models and digital twins.\nMap, or Map Viewer is where you can create 2D maps. We will be focusing on using the Map Viewer for this workshop."
+    "section": "Tour of the user interface",
+    "text": "Tour of the user interface\nThe main organization page lists the campus administrative contacts and open data groups available on campus. You can also see the latest content published by users on your campus.\nAlong the top of the page, is the main tool bar.\n\n\n\n\n\n\nFigure 3: ArcGIS Online main menu bar\n\n\n\n\nHome will take you to the main landing page when you first sign in.\nThe Gallery contains items from our ‘featured content’ group\nGroups are a list of groups which you can create or join. Some are invitation only. These are popular when you are working in group projects. For this workshop, we have created a group called From Maps to Analysis which contains most of the data layers we will be using.\nContent is where your created or uploaded content is listed. You can make folders in here to organize your layers and features.\nNotebooks is ESRI’s version of a Jupyterhub-like environment. You can use ArcPy here. This may not be available to you based on your user role.\nOrganization will take you back to our main page. This is not the same as Home.\nScene, or Scene Viewer is where you can create 3D GIS scenes, such as neighborhood models and digital twins.\nMap, or Map Viewer is where you can create 2D maps. We will be focusing on using the Map Viewer for this workshop."
   },
   {
     "objectID": "01_make_map.html#the-map-viewer",
     "href": "01_make_map.html#the-map-viewer",
     "title": "I want to make a map",
     "section": "The Map Viewer",
-    "text": "The Map Viewer\nOpen a new, empty map by clicking Map on your top menu bar.\n\n\n\n\n\n\nFigure 4: Opening a new empty map\n\n\n\n\nMap main components\nIn the Map Viewer there is a menu bar in the left column. This is where you can add components to your map. The way to think about a map is that it is made of different layers that are added on top of each others. Each layer add a specific information to your map. In our example, we will have a layer for the bike paths, one for the bike racks, one for the buildings, and so on… The base layer is special and often made of an image (but does not have to be). It is called a ‘basemap’. Here are the main components of your map:\n\nBasemap (background)\nFeature Layers (your own or imported from others)\nSymbology & legend\nSave and open…\n\n\n\nBasemap\nThe goal of a basemap, is to provide some context in terms of location and/or thematic. In ArcGIS online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the Topographic basemap.\n\n\n\n\n\n\nFigure 5: Default basemap\n\n\n\nIn general, make sure you choose a basemap that is easy to follow and is accurate in relation to the goal of your map. Avoid using busy basemaps that provide a lot of information not be relevant to the purpose of your map and can become confusing as you add your other layers on top of it."
+    "text": "The Map Viewer\nOpen a new, empty map by clicking Map on your top menu bar.\n\n\n\n\n\n\nFigure 4: Opening a new empty map"
+  },
+  {
+    "objectID": "01_make_map.html#map-main-components",
+    "href": "01_make_map.html#map-main-components",
+    "title": "I want to make a map",
+    "section": "Map main components",
+    "text": "Map main components\nIn the Map Viewer there is a menu bar in the left column. This is where you can add components to your map. The way to think about a map is that it is made of different layers that are added on top of each others. Each layer add a specific information to your map. In our example, we will have a layer for the bike paths, one for the bike racks, one for the buildings, and so on… The base layer is special and often made of an image (but does not have to be). It is called a ‘basemap’. Here are the main components of your map:\n\nBasemap (background)\nFeature Layers (your own or imported from others)\nSymbology & legend\nSave and open…"
+  },
+  {
+    "objectID": "01_make_map.html#basemap",
+    "href": "01_make_map.html#basemap",
+    "title": "I want to make a map",
+    "section": "Basemap",
+    "text": "Basemap\nThe goal of a basemap, is to provide some context in terms of location and/or thematic. In ArcGIS online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the Topographic basemap.\n\n\n\n\n\n\nFigure 5: Default basemap\n\n\n\nIn general, make sure you choose a basemap that is easy to follow and is accurate in relation to the goal of your map. Avoid using busy basemaps that provide a lot of information not be relevant to the purpose of your map and can become confusing as you add your other layers on top of it."
   },
   {
     "objectID": "01_make_map.html#feature-layers",
     "href": "01_make_map.html#feature-layers",
     "title": "I want to make a map",
     "section": "Feature layers",
-    "text": "Feature layers\nFeature layers are the layers you add on top of your basemap. They are the main information your map is aiming at communicating. In ArcGIS, When you add an existing layer to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the ... (we call this a “meatball” menu) next to the layer to open the same panel.\n\nSave your work - Save early, save often\n\n\n\nsave\n\n\n\nThere will be a blue dot next to the “save” icon until you save\nOnce you save, more options will be available\nArcGIS Online will not auto-save your map"
+    "text": "Feature layers\nFeature layers are the layers you add on top of your basemap. They are the main information your map is aiming at communicating. In ArcGIS, When you add an existing layer to your map, it will show up under your Layers. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the ... (we call this a “meatball” menu) next to the layer to open the same panel."
+  },
+  {
+    "objectID": "01_make_map.html#save-your-work---save-early-save-often",
+    "href": "01_make_map.html#save-your-work---save-early-save-often",
+    "title": "I want to make a map",
+    "section": "Save your work - Save early, save often",
+    "text": "Save your work - Save early, save often\n\n\n\nsave\n\n\n\nThere will be a blue dot next to the “save” icon until you save\nOnce you save, more options will be available\nArcGIS Online will not auto-save your map"
   },
   {
     "objectID": "01_make_map.html#step-1-add-layers-to-your-map",
@@ -110,20 +131,6 @@
     "title": "I want to make a map",
     "section": "Step 5: Share your map",
     "text": "Step 5: Share your map\nWhen you’re satisfied with the layout and settings, click on the Export button to generate the map. Depending on the selected file format and resolution, it may take a few moments to process the export.\nThe result will be list on the Exports panel, where you can save the file to your computer by clicking on the three dots next to the export and selecting Save as.\n\n\n\n\n\n\nFigure 28: Saving exported map from the Exports panel\n\n\n\nThis will save the exported map to you ArcGIS Online content. You can access it later from the Content menu in the top menu bar. The new item will be available as an Image file that you can download to your computer.\n\n\n\n\n\n\nFigure 29: Downloading the exported map image from ArcGIS Online content\n\n\n\n\n\n\n\n\n\n\nJon’s results are a bit different\n\n\nNOTE: Public sharing is a little more complicated, it requires that all of the layers used in the map are also shared with the public."
-  },
-  {
-    "objectID": "01_make_map.html#sec-other-approaches",
-    "href": "01_make_map.html#sec-other-approaches",
-    "title": "I want to make a map",
-    "section": "Other approaches",
-    "text": "Other approaches\nThere are many ways of making a simple map. Here are some alternative approaches.\n\nBy screen grabbing: Create a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps). Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that. [The following is probably too detailed…] It is possible to capture the base layer at higher-than-screen resolution by zooming in, panning and screen grabbing it in pieces, and merging the pieces using a tool like Adobe Photoshop. And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.\nGoogle Earth: An in-browser tool that allows you to view and add data layers with high-resolution google imagery. There are some fee based services in Google Earth, and you may need a plan to view some features. Historical satellite imagery is available.\nMapBox: Mapbox has more features available for mobile users. Maps can be viewed and edited on mobile devices.\nOpenStreetMaps: OpenStreetMaps is open source, managed and created by users worldwide. This data can also be downloaded and added to GIS software like ArcGIS Pro or QGIS.\nCalTopo comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription."
-  },
-  {
-    "objectID": "01_make_map.html#sec-caveats",
-    "href": "01_make_map.html#sec-caveats",
-    "title": "I want to make a map",
-    "section": "Caveats to using ArcGIS Online",
-    "text": "Caveats to using ArcGIS Online\nTBD"
   },
   {
     "objectID": "02_intro_gis.html",
