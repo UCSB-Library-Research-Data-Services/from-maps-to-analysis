@@ -14,7 +14,7 @@ As we will describe under [Other approaches](#sec-other-approaches) at the end o
 
 ArcGIS Online is but one of many GIS tools in existence. We use it in this lesson because it is in wide use in both commercial and academic settings. However, it is a proprietary and closed system that requires a paid subscription to use.  We note limitations and ramifications of using ArcGIS Online on the reproducibility and citability of one's work under [Caveats of using ArcGIS Online](#sec-caveats) at the end of this lesson.
 
-## Our goal for today
+# Our goal for today
 
 Our goal is to develop a map of the UCSB campus that illustrates the current bicycle infrastructure, specifically highlighting bike paths and racks. Additionally, the map will incorporate information about related incidents (crash, theft, ...) and proposed improvements.
 
@@ -32,11 +32,11 @@ Our final interactive map is also embedded below:
 
 As we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool. In fact, in many cases GIS is overkill, both because most of the features GIS tools provide will not be used and because the GIS interface can be cumbersome. But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that in turn opens up and provides an introduction to the world of spatial analysis.
 
-## Introduction to ArcGIS Online
+# Introduction to ArcGIS Online
 
 A brief tour of the interface.
 
-### Log on to ArcGIS Online
+## Log on to ArcGIS Online
 
 [https://ucsb.maps.arcgis.com](https://ucsb.maps.arcgis.com){target="_blank"}
 
@@ -46,7 +46,7 @@ A brief tour of the interface.
 
 You should have a similar landing page indicating that you are using the ArcGIS online under the UCSB license. *You may need to authenticate with DUO on your phone*.
 
-### Tour of the user interface
+## Tour of the user interface
 
 The main organization page lists the campus administrative contacts and open data groups available on campus. You can also see the latest content published by users on your campus.
 
@@ -69,7 +69,7 @@ Open a new, empty map by clicking `Map` on your top menu bar.
 
 ![Opening a new empty map](images/new_empty_map.png){#fig-emptymap size="50%" fig-align="center"}
 
-### Map main components
+## Map main components
 
 In the Map Viewer there is a menu bar in the left column. This is where you can add components to your map. The way to think about a map is that it is made of different layers that are added on top of each others. Each layer add a specific information to your map. In our example, we will have a layer for the bike paths, one for the bike racks, one for the buildings, and so on... The base layer is special and often made of an image (but does not have to be). It is called a 'basemap'. Here are the main components of your map:
 
@@ -78,7 +78,7 @@ In the Map Viewer there is a menu bar in the left column. This is where you can 
 -   Symbology & legend
 -   Save and open...
 
-### Basemap
+## Basemap
 
 The goal of a basemap, is to provide some context in terms of location and/or thematic. In ArcGIS online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the **Topographic** basemap.
 
@@ -90,7 +90,7 @@ In general, make sure you choose a basemap that is easy to follow and is accurat
 
 Feature layers are the layers you add on top of your basemap. They are the main information your map is aiming at communicating. In ArcGIS, When you add an existing layer to your map, it will show up under your `Layers`. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the `...` (we call this a "meatball" menu) next to the layer to open the same panel.
 
-### Save your work - Save early, save often
+## Save your work - Save early, save often
 
 ![save](images/save.png)
 
@@ -337,7 +337,7 @@ This will save the exported map to you ArcGIS Online content. You can access it 
 
 **NOTE**: Public sharing is a little more complicated, it requires that all of the layers used in the map are also shared with the public.
 
-## Other approaches {#sec-other-approaches}
+# Other approaches {#sec-other-approaches}
 
 There are many ways of making a simple map. Here are some alternative approaches.
 
@@ -351,6 +351,6 @@ There are many ways of making a simple map. Here are some alternative approaches
 
 -   [CalTopo](https://caltopo.com) comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription.
 
-## Caveats to using ArcGIS Online {#sec-caveats}
+# Caveats to using ArcGIS Online {#sec-caveats}
 
 TBD
