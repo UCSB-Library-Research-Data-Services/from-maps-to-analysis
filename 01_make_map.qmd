@@ -12,7 +12,7 @@ The goal of this lesson is to demonstrate how to make a simple map, suitable for
 
 As we will describe under [Other approaches](#sec-other-approaches) at the end of this lesson, there are many tools and techniques that can be used to create such a map. An advantage of using a GIS tool such as ArcGIS Online, and the central motivation for using GIS in this lesson, is that a GIS tool allow maps elements to be interpreted and manipulated as data, and in this way spatial analysis becomes possible.
 
-ArcGIS Online is but one of many GIS tools in existence. We use it in this lesson because it is in wide use in both commercial and academic settings. However, it is a proprietary and closed system that requires a paid subscription to use.  We note limitations and ramifications of using ArcGIS Online on the reproducibility and citability of one's work under [Caveats of using ArcGIS Online](#sec-caveats) at the end of this lesson.
+ArcGIS Online is but one of many GIS tools in existence. We use it in this lesson because it is in wide use in both commercial and academic settings. However, it is important to recognize that it is a proprietary and closed system that requires a paid subscription to use. We note limitations and ramifications of using ArcGIS Online on the reproducibility and citability of one's work under [Caveats of using ArcGIS Online](#sec-caveats) at the end of this lesson.
 
 # Our goal for today
 
@@ -351,6 +351,20 @@ There are many ways of making a simple map. Here are some alternative approaches
 
 -   [CalTopo](https://caltopo.com) comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription.
 
-# Caveats to using ArcGIS Online {#sec-caveats}
+# Caveats of using ArcGIS Online {#sec-caveats}
 
-TBD
+Two central concepts of open science are **reproducibility**, by which we mean the ability to inspect (if not re-execute or replicate) all the data sources, code, protocols, and other materials used in a study, and **citation**, the ability to persistently and openly refer to and access those same data sources, code, protocols, and other materials.  Unfortunately, a proprietary, closed tool like ArcGIS Online fails to support open science in three important ways.
+
+- The artifacts one works with in ArcGIS Online (layers, maps, StoryMaps, etc.) are stored internally and inaccessibly in an unknown, proprietary format. The data can be viewed or otherwise accessed *through* ArcGIS Online to be sure, and perhaps edited if one has a paid subscription, but the data in its raw form is inaccessible.
+
+- The storage, commitment to persistence, and access costs of artifacts stored in ArcGIS Online are entirely dependent on a commercial company.
+
+- Artifacts such as maps can be identified by URLs, but not by the DOI identifiers that are commonplace in scholarly communication, and which are often required by publishers, citation tracking systems, and academic promotion committees.
+
+An additional caveat that applies to all UI-based GIS tools, not just ArcGIS Online, is that operations are performed interactively.  Unfortunately, interactive use does not create any kind of historical log of actions performed.  While this style of interface allows for free and fast exploration, it comes at the cost of being able to reliably re-create processing steps.  Notice in this workshop that the sequence of actions used to create your map are not recorded anywhere.  For a map this may not matter, nor may it matter for a one-off analysis, but if you wanted to, say, apply the same set of steps to a new map, or if your work within ArcGIS Online involved spatial analysis, it will likely be critical that the processing steps be recorded in such a way that they can be inspected if not re-run.
+
+ArcGIS Online is a powerful too, to be sure. But to use it in a way that supports open, reproducible science, we recommend that you:
+
+- Export newly-created feature layers as Shapefiles, and/or export attributes tables as CSV files, and make those files preserved and citable by storing in a data repository. Do not consider ArcGIS Online to be any kind of long-term repository.
+
+- Express significant computations programmatically, so that they can be inspected and re-run.
