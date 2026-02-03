@@ -88,7 +88,7 @@ Feature layers are the layers you add on top of your basemap. They are the main 
 
 ### Save your work - Save early, save often
 
-![save](images/save.png)
+![open your menu bar to find the "save" icon](images/save.png)
 
 -   There will be a blue dot next to the "save" icon until you save
 -   Once you save, more options will be available
