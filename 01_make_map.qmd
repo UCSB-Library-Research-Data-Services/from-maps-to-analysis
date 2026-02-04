@@ -126,6 +126,8 @@ From the **Layers** panel, click on the add layer button. Search `My organizatio
 ![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){#fig-buildinglayers width="90%"}
 :::
 
+### "about the data" here? 
+
 ### Reorder layers
 
 After importing the three layers, you'll notice they might not display optimally. There's a GIS convention for layer ordering that helps ensure all features remain visible:
