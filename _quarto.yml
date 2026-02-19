@@ -20,7 +20,7 @@ website:
         text: "Geospatial Analysis"
 format:
   html:
-    # theme: styles.scss
+    theme: styles.scss
     toc: true
     page-layout: full
     code-line-numbers: false
