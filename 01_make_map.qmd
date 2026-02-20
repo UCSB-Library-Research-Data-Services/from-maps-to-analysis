@@ -92,7 +92,7 @@ Feature layers are the layers you add on top of your basemap. They are the main 
 
 ## Save your work - Save early, save often
 
-![open your menu bar to find the "save" icon](images/save.png)
+![open your menu bar to find the "save" icon](images/save.png){height="50%"}
 
 -   There will be a blue dot next to the "save" icon until you save
 -   Once you save, more options will be available
@@ -160,10 +160,10 @@ For example, if you click on the three dots on the right of a feature layer you 
 
 We will see later how you can leverage these attributes to set the symbology of a layer according to categories or quantities provided by the attribute table. You can also compute new attributes either based on other attributes or geospatial information. However this will be for our second workshop.
 
-::: {.callout-note collapse="false" title="Save early. Save often."}
+::: {.callout-note collapse="true" title="Save early. Save often."}
 Now that you have added the layers to your map, save it by looking for the folder icon in the left menu bar and then selecting the `Save as` option.
 
-![Save as dialog in ArcGIS Online](images/Workshop1/Step1/save-as.png){#fig-saveas width="40%" fig-align="center"}
+![Save as dialog in ArcGIS Online](images/Workshop1/Step1/save-as.png){#fig-saveas width="30%" fig-align="center"}
 
 In there, you can add a title, tags, and a short description of your map.
 :::
