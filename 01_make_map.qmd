@@ -75,14 +75,14 @@ Open a new, empty map by clicking `Map` on your top menu bar.
 
 In the Map Viewer there is a menu bar in the left column. This is where you can add components to your map. The way to think about a map is that it is made of different layers that are added on top of each others. Each layer add a specific information to your map. In our example, we will have a layer for the bike paths, one for the bike racks, one for the buildings, and so on... The base layer is special and often made of an image (but does not have to be). It is called a 'basemap'. Here are the main components of your map:
 
--   Basemap (background)
--   Feature Layers (your own or imported from others)
--   Symbology & legend
--   Save and open...
+-   Basemap: there are many provided by AGO
+-   Layers: your own and/or those shared by others
+-   Legend: The symbology used on your map
+-   Save and open...: 
 
 ## Basemap
 
-The goal of a basemap, is to provide some context in terms of location and/or thematic. In ArcGIS online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the **Topographic** basemap.
+The goal of a basemap, is to provide context in terms of location and/or theme. In ArcGIS online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the **Topographic** basemap.
 
 ![Default basemap](images/current-basemap.png){#fig-defaultmap width="90%" fig-align="center"}
 
@@ -97,6 +97,8 @@ Feature layers are the layers you add on top of your basemap. They are the main 
 ![open your menu bar to find the "save" icon](images/save.png){height="50%"}
 
 -   There will be a blue dot next to the "save" icon until you save
+-   You can organize your all of your content into folders
+-- Let's make a folder for all of our work today. 'Bike Map Workshop'
 -   Once you save, more options will be available
 -   ArcGIS Online **will not auto-save** your map
 
@@ -110,7 +112,7 @@ With that introduction, you now have the opportunity to start creating your own 
 
 ### Import lines Feature layer (bike paths)
 
-From the **Layers** panel, click on the add layer button. Search `My organization` for 'UCSB OSM Paths'. There should be only one result.
+From the 'Layers' panel, click on the add layer button. Search `My organization` for 'UCSB OSM Paths'. There should be only one result.
 
 ![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){#fig-addinglayer width="90%"}
 
@@ -132,6 +134,8 @@ From the **Layers** panel, click on the add layer button. Search `My organizatio
 :::
 
 ### "about the data" here? 
+???
+Because some of the buildings look weird?
 
 ### Reorder layers
 
@@ -159,14 +163,14 @@ To reorder the layers, click and hold on a layer name in the Layers panel, drag 
 
 *Feature layers* are driven by data. Each point, line, or polygon has associated with it a row in an attribute table providing information on that specific record.
 
-For example, if you click on the three dots on the right of a feature layer you can access their *attribute table* by selecting `Show table`.
+For example, if you click on the three dots on the right of a feature layer you can access its *attribute table* by selecting `Show table`.
 
 ![Attribute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png){#fig-attribute width="90%"}
 
-We will see later how you can leverage these attributes to set the symbology of a layer according to categories or quantities provided by the attribute table. You can also compute new attributes either based on other attributes or geospatial information. However this will be for our second workshop.
+Your data can be visualized, selected, or analysed based on the columns of the attribute table. We will see later how you can leverage these attributes to set the symbology of a layer according to categories or quantities that are in the attribute table. You can also compute new attributes either based on other attributes or by performing analysis with other layers' information. We will cover analysis tools [in our second workshop](02_intro_gis.html).
 
-::: {.callout-note collapse="true" title="Save early. Save often."}
-Now that you have added the layers to your map, save it by looking for the folder icon in the left menu bar and then selecting the `Save as` option.
+::: {.callout-note collapse="true" title="Save often."}
+Now that you have added the layers to your map, it's a good idea to save it again. 
 
 ![Save as dialog in ArcGIS Online](images/Workshop1/Step1/save-as.png){#fig-saveas width="30%" fig-align="center"}
 

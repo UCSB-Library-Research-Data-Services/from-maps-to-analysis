@@ -17,7 +17,7 @@ We have organized this curriculum in three workshops:
 
 2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS online to learn how to:
 
--   add basemap
+-   adjust the background basemap
 -   add an existing layer to a map
 -   change symbology
 -   draw lines and polygons on a map
