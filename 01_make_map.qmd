@@ -313,7 +313,7 @@ Some of the bike racks are too close together. For point data, we have the optio
 
 To do that, you need to look for the `Print` option in the left menu bar.
 
-![Print option in the left menu bar](images/Workshop1/Step4/export-print-menu.png){#fig-printoption width="40%" fig-align="center"}
+![Print option in the left menu bar](images/Workshop1/Step4/export-print-menu.png){#fig-printoption width="35%" fig-align="center"}
 
 For exporting the map you have two options:
 
