@@ -271,9 +271,9 @@ In our example, we add the following settings to the point symbol:
 ![Point symbol customization settings](images/Workshop1/Step3/drawing-point-vector.png){#fig-pointsymbol width="90%" fig-align="center"}
 
 ::: {.callout-tip collapse="true"}
-### Challenge: Drawing lines and circles in a sketch layer
+## Challenge: Drawing lines and circles in a sketch layer
 
--   Draw a line where you think there should be a bike path but isn't.
+Draw a line where you think there should be a bike path but isn't.
 
 From the sketch layer menu, select the line drawing tool. Click on the map to start drawing the line, and click again to add vertices. Double-click to finish the line.
 
@@ -286,8 +286,12 @@ You can customize the line symbol in the sketch layer menu before adding it to t
 -   Color: Light blue (#00c8ff)
 
 ![Line symbol customization settings](images/Workshop1/Step3/drawing-line-style.png){#fig-linesymbol width="90%" fig-align="center"}
+:::
 
--   Draw a circle where you think there should be a bike parking lot but isn't.
+::: {.callout-tip collapse="true"}
+## Challenge: Drawing circles in a sketch layer
+
+Draw a circle where you think there should be a bike parking lot but isn't.
 
 Similarly to the line drawing tool, select the circle drawing tool from the sketch layer menu. Click on the map to draw the circle, and click on the select tool to finish the shape. You can also customize the symbol after drawing it by selecting it and changing its properties in the sketch layer menu. In our example, we add the following settings to the circle symbol. You can type in the values, or interactively select as in the animated figure.
 
@@ -296,8 +300,9 @@ Similarly to the line drawing tool, select the circle drawing tool from the sket
 
 ![Drawing a circle on the map](images/Workshop1/Step3/drawing-circle-vector.gif){#fig-drawingcircle width="90%" fig-align="center"}
 
-Finally, let's rename the sketch layer to "Annotations" to better reflect its purpose. Click on the three dots next to the sketch layer and select `Rename`. Enter the new name and click `OK`.
 :::
+
+Finally, let's rename the sketch layer to "Annotations" to better reflect its purpose. Click on the three dots next to the sketch layer and select `Rename`. Enter the new name and click `OK`.
 
 **Save your map after making these changes**
 
@@ -313,7 +318,7 @@ Some of the bike racks are too close together. For point data, we have the optio
 
 To do that, you need to look for the `Print` option in the left menu bar.
 
-![Print option in the left menu bar](images/Workshop1/Step4/export-print-menu.png){#fig-printoption width="35%" fig-align="center"}
+![Print option in the left menu bar](images/Workshop1/Step4/export-print-menu.png){#fig-printoption width="30%" fig-align="center"}
 
 For exporting the map you have two options:
 
