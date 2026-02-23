@@ -271,7 +271,7 @@ In our example, we add the following settings to the point symbol:
 ![Point symbol customization settings](images/Workshop1/Step3/drawing-point-vector.png){#fig-pointsymbol width="90%" fig-align="center"}
 
 ::: {.callout-tip collapse="true"}
-## Challenge: Drawing lines and circles in a sketch layer
+## Challenge: Drawing lines in a sketch layer
 
 Draw a line where you think there should be a bike path but isn't.
 
