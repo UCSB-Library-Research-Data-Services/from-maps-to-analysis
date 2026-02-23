@@ -38,7 +38,7 @@ A brief tour of the interface.
 
 ## Log on to ArcGIS Online
 
-[https://ucsb.maps.arcgis.com](https://ucsb.maps.arcgis.com){target="_blank"}
+**[https://ucsb.maps.arcgis.com](https://ucsb.maps.arcgis.com){target="_blank"}**
 
 **Sign on with your UCSB NetID**. You may need to enter "ucsb" into the url box. **Do not use the ArcGIS login!** This is for users who do NOT have a UCSB Net ID.
 
