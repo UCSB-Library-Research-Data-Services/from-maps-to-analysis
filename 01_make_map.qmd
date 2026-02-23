@@ -270,7 +270,7 @@ In our example, we add the following settings to the point symbol:
 
 ![Point symbol customization settings](images/Workshop1/Step3/drawing-point-vector.png){#fig-pointsymbol width="90%" fig-align="center"}
 
-
+::: {.callout-tip collapse="true"}
 ### Challenge: Drawing lines and circles in a sketch layer
 
 -   Draw a line where you think there should be a bike path but isn't.
@@ -297,6 +297,7 @@ Similarly to the line drawing tool, select the circle drawing tool from the sket
 ![Drawing a circle on the map](images/Workshop1/Step3/drawing-circle-vector.gif){#fig-drawingcircle width="90%" fig-align="center"}
 
 Finally, let's rename the sketch layer to "Annotations" to better reflect its purpose. Click on the three dots next to the sketch layer and select `Rename`. Enter the new name and click `OK`.
+:::
 
 **Save your map after making these changes**
 
