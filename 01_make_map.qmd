@@ -94,11 +94,11 @@ Feature layers are the layers you add on top of your basemap. They are the main 
 
 ## Save your work - Save early, save often
 
-![open your menu bar to find the "save" icon](images/save.png){height="50%"}
+![open your menu bar to find the `save` icon](images/save.png){height="50%"}
 
--   There will be a blue dot next to the "save" icon until you save
+-   There will be a blue dot next to the `save` icon until you save
 -   You can organize your all of your content into folders
--- Let's make a folder for all of our work today. 'Bike Map Workshop'
+-- Let's make a folder for all of our work today. **Bike Map Workshop**
 -   Once you save, more options will be available
 -   ArcGIS Online **will not auto-save** your map
 
@@ -112,7 +112,7 @@ With that introduction, you now have the opportunity to start creating your own 
 
 ### Import lines Feature layer (bike paths)
 
-From the 'Layers' panel, click on the add layer button. Search `My organization` for 'UCSB OSM Paths'. There should be only one result.
+From the **Layers** panel, click on the add layer button. Search `My organization` for **UCSB OSM Paths**. There should be only one result.
 
 ![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){#fig-addinglayer width="90%"}
 
@@ -192,10 +192,10 @@ From the menu, we can select several categories of symbols. Let's select the `Go
 
 ![Selecting a bike parking symbol from the Government category](images/Workshop1/Step2/symbology-select-symbol.png){#fig-bikeparking width="90%" fig-align="center"}
 
-To change the size of the symbol, we can use the `Size` slider to reduce it to a more appropriate size. First, select "Adjust size automatically" to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.
+To change the size of the symbol, we can use the `Size` slider to reduce it to a more appropriate size. First, select**Adjust size automatically** to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.
 
 ::: {.callout-warning collapse="true" title="Size slider quirk"}
-In ArcGIS Online, every time you select the "Adjust size automatically" option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option.
+In ArcGIS Online, every time you select the **Adjust size automatically** option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option.
 
 ![Symbol size settings with adjust size automatically option](images/Workshop1/Step2/symbology-point-size.png){#fig-symbolsize width="70%"}
 :::
@@ -253,7 +253,7 @@ From the basemap gallery, we can select a simpler basemap. For this example, we 
 
 ## Step 3: Annotate the map
 
-In addition to bringing external sources of information into a map (whether in the form of a basemap or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a "sketch layer."
+In addition to bringing external sources of information into a map (whether in the form of a basemap or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a **sketch layer**.
 
 ![Sketch layer option in the left menu](images/Workshop1/Step3/drawing-sketch-layer-menu.png){#fig-sketchlayer width="40%" fig-align="center"}
 
@@ -306,7 +306,7 @@ Similarly to the line drawing tool, select the circle drawing tool from the sket
 
 :::
 
-Finally, let's rename the sketch layer to "Annotations" to better reflect its purpose. Click on the three dots next to the sketch layer and select `Rename`. Enter the new name and click `OK`.
+Finally, let's rename the sketch layer to **Annotations** to better reflect its purpose. Click on the three dots next to the sketch layer and select `Rename`. Enter the new name and click `OK`.
 
 **Save your map after making these changes**
 
@@ -316,7 +316,7 @@ Almost there! At this point you're ready to start packaging your map for publica
 
 ### Fine tune symbols
 
-Some of the bike racks are too close together. For point data, we have the option of using 'proportional symbols' or 'clustered symbols' to solve this visual clutter.
+Some of the bike racks are too close together. For point data, we have the option of using proportional symbols or clustered symbols to solve this visual clutter.
 
 **To do**: Instructions for using clustered symbols for the bike racks layer to reduce visual clutter.
 
@@ -326,8 +326,8 @@ To do that, you need to look for the `Print` option in the left menu bar.
 
 For exporting the map you have two options:
 
--   Layout: This option allows you to create a more complex layout with additional map elements such as title, legend, scale bar, north arrow, etc. You can choose from several pre-defined templates or create your own custom layout.
--   Map only: With this option, you can export just the map itself without any additional elements. You can choose the file format (PNG, PDF, etc.) and the resolution of the exported map.
+-   `Layout`: This option allows you to create a more complex layout with additional map elements such as title, legend, scale bar, north arrow, etc. You can choose from several pre-defined templates or create your own custom layout.
+-   `Map only`: With this option, you can export just the map itself without any additional elements. You can choose the file format (PNG, PDF, etc.) and the resolution of the exported map.
 
 For our purposes, we will select the `Layout` option to create a more complete map for publication.
 
