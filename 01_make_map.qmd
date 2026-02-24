@@ -73,12 +73,12 @@ Open a new, empty map by clicking `Map` on your top menu bar.
 
 ## Map main components
 
-In the Map Viewer there is a menu bar in the left column. This is where you can add components to your map. The way to think about a map is that it is made of different layers that are added on top of each others. Each layer add a specific information to your map. In our example, we will have a layer for the bike paths, one for the bike racks, one for the buildings, and so on... The base layer is special and often made of an image (but does not have to be). It is called a 'basemap'. Here are the main components of your map:
+In the Map Viewer there is a menu bar in the left column. This is where you can add components to your map. The way to think about a map is that it is made of different layers that are added on top of each others. Each layer add a specific information to your map. In our example, we will have a layer for the bike paths, one for the bike racks, one for the buildings, and so on... The base layer is special and often made of an image (but does not have to be). It is called a **basemap**. Here are the main components of your map:
 
--   Basemap: there are many provided by AGO
--   Layers: your own and/or those shared by others
--   Legend: The symbology used on your map
--   Save and open...: 
+-   `Basemap`: there are many provided by AGO
+-   `Layers`: your own and/or those shared by others
+-   `Legend`: The symbology used on your map
+-   `Save and open...`: Where you save your content
 
 ## Basemap
 
