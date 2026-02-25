@@ -143,7 +143,7 @@ After importing the three layers, you'll notice they might not display optimally
 **Layer Order Convention (top to bottom):**
 
 -   Points (e.g., bike racks) - should be on top
--   Lines (e.g., bike paths) - in the middle\
+-   Lines (e.g., bike paths) - in the middle
 -   Polygons (e.g., buildings) - at the bottom
 
 This ordering ensures that smaller features aren't hidden beneath larger polygon areas.
