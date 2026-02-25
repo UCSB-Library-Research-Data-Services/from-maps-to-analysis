@@ -135,9 +135,6 @@ From the **Layers** panel, click on the add layer button. Search `My organizatio
 ![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){#fig-buildinglayers width="90%"}
 :::
 
-### "about the data" here? 
-???
-Because some of the buildings look weird?
 
 ### Reorder layers
 
