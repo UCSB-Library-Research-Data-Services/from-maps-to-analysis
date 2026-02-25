@@ -116,7 +116,7 @@ With that introduction, you now have the opportunity to start creating your own 
 From the **Layers** panel, click on the add layer button. Search `My organization` for **OSM_UCSB_Roads**. There should be only one result.
 
 
-![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){#fig-addinglayer width="90%"}
+![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){#fig-addinglayer}
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
