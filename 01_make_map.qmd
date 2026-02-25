@@ -112,7 +112,9 @@ With that introduction, you now have the opportunity to start creating your own 
 
 ### Import lines Feature layer (bike paths)
 
-From the **Layers** panel, click on the add layer button. Search `My organization` for **UCSB OSM Paths**. There should be only one result.
+
+From the **Layers** panel, click on the add layer button. Search `My organization` for **OSM_UCSB_Roads**. There should be only one result.
+
 
 ![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){#fig-addinglayer width="90%"}
 
@@ -152,7 +154,7 @@ This ordering ensures that smaller features aren't hidden beneath larger polygon
 For our map, the recommended order from top to bottom should be:
 
 1.  `bike_racks_ucsb` (top)
-2.  `UCSB OSM Paths` (middle)
+2.  `OSM_UCSB_Roads` (middle)
 3.  `UCSB Campus Buildings` (bottom)
 
 To reorder the layers, click and hold on a layer name in the Layers panel, drag it to the desired position, and release.
