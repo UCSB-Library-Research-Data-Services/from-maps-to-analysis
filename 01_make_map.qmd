@@ -156,7 +156,7 @@ For our map, the recommended order from top to bottom should be:
 
 To reorder the layers, click and hold on a layer name in the Layers panel, drag it to the desired position, and release.
 
-![Reorder feature layers](images/Workshop1/Step1/reorder-layers.gif){#fig-reorderlayers width="90%" fig-align="center"}
+![Reorder feature layers](images/Workshop1/Step1/reorder-layers.gif){#fig-reorderlayers fig-align="center"}
 
 ### Accessing the underlying data
 
@@ -193,11 +193,13 @@ From the menu, we can select several categories of symbols. Let's select the `Go
 
 To change the size of the symbol, we can use the `Size` slider to reduce it to a more appropriate size. First, select **Adjust size automatically** to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.
 
+
 ::: {.callout-warning collapse="true" title="Size slider quirk"}
-In ArcGIS Online, every time you select the **Adjust size automatically** option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option.
+In ArcGIS Online, every time you select the **Adjust size automatically** option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option. Also note that the size you choose is function of the current scale/zoom you are using on the map when you set this value for the first time.
 
 ![Symbol size settings with adjust size automatically option](images/Workshop1/Step2/symbology-point-size.png){#fig-symbolsize width="70%"}
 :::
+
 
 ### Adjust style based on attribute
 
