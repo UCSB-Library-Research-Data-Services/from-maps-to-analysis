@@ -75,14 +75,14 @@ Open a new, empty map by clicking `Map` on your top menu bar.
 
 In the Map Viewer there is a menu bar in the left column. This is where you can add components to your map. The way to think about a map is that it is made of different layers that are added on top of each others. Each layer add a specific information to your map. In our example, we will have a layer for the bike paths, one for the bike racks, one for the buildings, and so on... The base layer is special and often made of an image (but does not have to be). It is called a **basemap**. Here are the main components of your map:
 
--   `Basemap`: there are many provided by AGO
+-   `Basemap`: there are many provided by ArcGIS Online
 -   `Layers`: your own and/or those shared by others
 -   `Legend`: The symbology used on your map
 -   `Save and open...`: Where you save your content
 
 ## Basemap
 
-The goal of a basemap, is to provide context in terms of location and/or theme. In ArcGIS online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the **Topographic** basemap.
+The goal of a basemap, is to provide context in terms of location and/or theme. In ArcGIS Online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the **Topographic** basemap.
 
 ![Default basemap](images/current-basemap.png){#fig-defaultmap width="90%" fig-align="center"}
 

@@ -4,13 +4,14 @@ author:
   - name: Julien Brun
     url: https://brunj7.github.io/
     orcid: 0000-0002-7751-6238
+  - name: Jon Jablonski
+  - name: Kristi Liu
   - name: Jairo Melo Flórez
     orcid: 0000-0002-2020-1163
-  - name: Kristi Liu
   - name: Greg Janée
     url: https://www.library.ucsb.edu/staff/greg-janee
     orcid: 0000-0001-8785-0021
-  - name: Jon Jablonski
+
 date: last-modified
 citation: 
   url: https://ucsb-library-research-data-services.github.io/from-maps-to-analysis/
@@ -19,7 +20,7 @@ categories: [GIS, map, geospatial analysis]
 
 ## From Map to Analysis
 
-The Goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis without the need to have programming skills.
+The goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis without the need to have programming skills.
 
 We have organized this curriculum in three workshops:
 
