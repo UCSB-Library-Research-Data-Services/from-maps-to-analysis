@@ -39,7 +39,7 @@
     "href": "01_make_map.html#basemap",
     "title": "I want to make a map",
     "section": "Basemap",
-    "text": "Basemap\nThe goal of a basemap, is to provide context in terms of location and/or theme. In ArcGIS online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the Topographic basemap.\n\n\n\n\n\n\nFigure 5: Default basemap\n\n\n\nIn general, make sure you choose a basemap that is easy to follow and is accurate in relation to the goal of your map. Avoid using busy basemaps that provide a lot of information not be relevant to the purpose of your map and can become confusing as you add your other layers on top of it."
+    "text": "Basemap\nThe goal of a basemap, is to provide context in terms of location and/or theme. In ArcGIS online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the Topographic basemap.\n\n\n\n\n\n\nFigure 5: Default basemap\n\n\n\nIn general, make sure you choose a basemap that is easy to follow and accurate in relation to the goal of your map. Avoid using busy basemaps that provide information not relevant to the purpose of your map. Additionally, choose a basemap that does not visually conflict with or override the layers on top. The message of your map is whatever you layer and annotate on top of the basemap; the basemap is there only to provide context."
   },
   {
     "objectID": "01_make_map.html#feature-layers",
