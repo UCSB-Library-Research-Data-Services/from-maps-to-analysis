@@ -1,6 +1,16 @@
 ---
 title: "From Maps to Analysis"
-author: "UCSB Library"
+author:
+  - name: Julien Brun
+    url: https://brunj7.github.io/
+    orcid: 0000-0002-7751-6238
+  - name: Jairo Melo Flórez
+    orcid: 0000-0002-2020-1163
+  - name: Kristi Liu
+  - name: Greg Janée
+    url: https://www.library.ucsb.edu/staff/greg-janee
+    orcid: 0000-0001-8785-0021
+  - name: Jon Jablonski
 date: last-modified
 citation: 
   url: https://ucsb-library-research-data-services.github.io/from-maps-to-analysis/
