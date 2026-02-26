@@ -220,25 +220,22 @@ As a result, you will see that the buildings are now filled with different color
 These field names are pretty cryptic. This is often the case with public data. If you want to learn more about this data, navigate over to the feature layer'
 :::
 
-### Adjust layer transparency based on attribute
+### filter layer based on attribute
 
-Finally, let's say we wanted to adjust the transparency of cycleways based on the max speed allowed on each bike path. We can do that by changing the style of the `osm_cycleways` layer.
+Finally, we are interested in displaying bike paths from the `OSM_UCSB_Roads` layer that also contains roads, pathways and other features. We can filter the categories we are interested in using the filter function on the right sidebar.
 
--   Click on the layer `osm_cycleways` to open its properties panel.
--   On the panel `Symbology`, click on `Edit layer style`.
--   Look for the `② Pick a style` option and select `Style options`.
--   Open the panel `Transparency by attribute` and switch the toggle to set the transparency based on attribute values.
--   Select the attribute `maxspeed`.
+-   Click on the layer `OSM_UCSB_Roads` to select it.
+-   Click on the `Filter` button on the right sidebar (third from top).
+![Adding a filter to the road layer](images/Workshop1/Step2/symbology-filter-road.png){#fig-filter-selection  fig-align="center"}
+
+-   Click `Add new`
+-   In the condition box, choose the `highway` field and the `includes` and select `cycleway`
+-   Don't forget to save with the button at the bottom!
+
+![Filtering out the bike paths](images/Workshop1/Step2/symbology-road-conditional.png){#fig-filter-on  fig-align="center"}
 
 As a result, you will see that the bike paths are now more transparent for higher speed limits and less transparent for lower speed limits.
 
-To increase the visibility of the bike paths, we can increase the width of the lines by editing the `Width` slider on the `Symbol style` panel. We selected 3.75 px for this example.
-
-![Setting transparency by maxspeed attribute](images/Workshop1/Step2/symbology-transparency-by-attribute.png){#fig-transparency width="90%" fig-align="center"}
-
-Here is the final result of our symbology adjustments:
-
-![Map with all symbology adjustments applied](images/Workshop1/Step2/symbology-final-result.png){#fig-allsymbols width="90%" fig-align="center"}
 
 ### Select a better basemap
 
