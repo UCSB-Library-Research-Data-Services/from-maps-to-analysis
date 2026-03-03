@@ -335,6 +335,11 @@ You can also customize more the layout by enabling the `Advance options` panel. 
 
 Adjust the zoom and position of the map in the preview window to ensure everything is visible and well-framed.
 
+::: {.callout-tip}
+# Map resolution
+If your map is intended for **print publication**, it is recommended that you set your DPI value to 300 dpi. For **web or screen display**, 96 dpi is generally sufficient and will produce a smaller file size.
+:::
+
 ![Map export layout configuration panel](images/Workshop1/Step4/export-layout-menu.png){#fig-exportlayout width="90%" fig-align="center"}
 
 ## Step 5: Share your map
