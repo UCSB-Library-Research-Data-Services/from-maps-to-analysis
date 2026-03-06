@@ -312,12 +312,6 @@ Finally, let's rename the sketch layer to **Annotations** to better reflect its 
 
 Almost there! At this point you're ready to start packaging your map for publication.
 
-### Fine tune symbols
-
-Some of the bike racks are too close together. For point data, we have the option of using proportional symbols or clustered symbols to solve this visual clutter.
-
-**To do**: Instructions for using clustered symbols for the bike racks layer to reduce visual clutter.
-
 To do that, you need to look for the `Print` option in the left menu bar.
 
 ![Print option in the left menu bar](images/Workshop1/Step4/export-print-menu.png){#fig-printoption width="30%" fig-align="center"}
@@ -354,9 +348,10 @@ This will save the exported map to you ArcGIS Online content. You can access it 
 
 ![Downloading the exported map image from ArcGIS Online content](images/Workshop1/Step4/export-download-image.png){#fig-downloadmap width="90%" fig-align="center"}
 
-![Jon's results are a bit different](images/export-finish-map-2.png){width="90%" fig-align="center"}
-
-**NOTE**: Public sharing is a little more complicated, it requires that all of the layers used in the map are also shared with the public.
+::: {.callout-warning collapse="true"}
+# Public sharing
+You can share your map publicly and embed it on a website, just like we did at the beginning of this lesson. However, for this to work, you need to set the visibility of all your map layers to public.
+:::
 
 <hr>
 
