@@ -20,7 +20,7 @@ Our goal is to develop a map of the UCSB campus that illustrates the current bic
 
 [At the end of our session we should end up with something like this](https://arcg.is/0iD4jS0){target="_blank"}
 
-![Preliminary version of the possible result](images/export-finish-map-2.png){#fig-prelim width="80%" fig-align="center"}
+![Preliminary version of the possible result](images/Workshop1/final_map.png){#fig-prelim}
 
 <br>
 
@@ -116,7 +116,7 @@ With that introduction, you now have the opportunity to start creating your own 
 From the **Layers** panel, click on the add layer button. Search `My organization` for **OSM_UCSB_Roads**. There should be only one result.
 
 
-![Adding a layer](images/Workshop1/Step1/add-a-layer.gif){#fig-addinglayer}
+![Adding a layer](images/Workshop1/Step1/add-layers_small.gif){#fig-addinglayer}
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
