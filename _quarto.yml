@@ -6,7 +6,7 @@ execute:
   freeze: auto  # re-render only when source changes
 
 website:
-  title: "From Map to Analysis"
+  title: "From Maps to Analysis"
   navbar:
     tools:
       - icon: github
@@ -17,7 +17,7 @@ website:
       - href: index.qmd
         text: "I think I need GIS"
       - href: index.qmd
-        text: "Geospatial Analysis"
+        text: "Geospatial analysis"
 format:
   html:
     theme: styles.scss

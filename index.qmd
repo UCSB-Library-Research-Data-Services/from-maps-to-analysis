@@ -18,26 +18,24 @@ citation:
 categories: [GIS, map, geospatial analysis]
 ---
 
-## From Map to Analysis
-
 The goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis without the need to have programming skills.
 
-We have organized this curriculum in three workshops:
+We have organized this curriculum into three workshops:
 
 ## Workshop 1 - I want to make a map
 
-2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS online to learn how to:
+2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:
 
 -   adjust the background basemap
 -   add an existing layer to a map
 -   change symbology
 -   draw lines and polygons on a map
 
-Ends with data vs. maps aka Sketch Layer vs. Feature Layer
+The workshop ends with exporting a map suitable for inclusion in a publication.
 
 ## Workshop 2 - I think I need GIS
 
-2-3 hours workshop using ArcGIS online to conduct basic GIS data manipulations.
+2-3 hours workshop using ArcGIS Online to conduct basic GIS data manipulations.
 
 -   data import & export
 -   projections
@@ -45,7 +43,7 @@ Ends with data vs. maps aka Sketch Layer vs. Feature Layer
 
 Ends with an analysis, maybe zonal statistics?
 
-## Workshop 3 - Geospatial Analysis
+## Workshop 3 - Geospatial analysis
 
 4-hour workshop. Carpentry-like in ArcGIS Pro
 
