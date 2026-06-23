@@ -22,20 +22,22 @@ Types of data:
 
 Projections? Reprojection (raster, polygons) 
 
-- Import point data from a csv 
+How to add a new data layer: 
+- Import point data from a csv, lat/long csv file
+- Raster/DEM
+- Importing or uploading a dataset vs finding a good dataset in living atlas
+
 - Zonal statistics (simple)
 
 Add raster with another projection
-
-- NCOS? Bird observations (might becsv) 
+ 
 - Topographic map to compute solar panels location (maybe workshop 3?) 
 - Facilities data (buildings) 
 - DEM 
 - Bike paths
 - Trees
 
-Potential simple analysis as end product 
-
+Potential simple analysis as end product  (this section should be moved to 3) 
 - Zonal statistics 
 - Count number of points within a polygon 
 - Heatmap from points 
