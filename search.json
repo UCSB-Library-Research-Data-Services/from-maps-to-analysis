@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "From Maps to Analysis",
+    "section": "",
+    "text": "The goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis without the need to have programming skills.\nWe have organized this curriculum into three workshops:"
+  },
+  {
+    "objectID": "index.html#workshop-1---i-want-to-make-a-map",
+    "href": "index.html#workshop-1---i-want-to-make-a-map",
+    "title": "From Maps to Analysis",
+    "section": "Workshop 1 - I want to make a map",
+    "text": "Workshop 1 - I want to make a map\n2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:\n\nadjust the background basemap\nadd an existing layer to a map\nchange symbology\ndraw lines and polygons on a map\n\nThe workshop ends with exporting a map suitable for inclusion in a publication."
+  },
+  {
+    "objectID": "index.html#workshop-2---i-think-i-need-gis",
+    "href": "index.html#workshop-2---i-think-i-need-gis",
+    "title": "From Maps to Analysis",
+    "section": "Workshop 2 - I think I need GIS",
+    "text": "Workshop 2 - I think I need GIS\n2-3 hours workshop using ArcGIS Online to conduct basic GIS data manipulations.\n\ndata import & export\nprojections\nraster and vector data\n\nEnds with an analysis, maybe zonal statistics?"
+  },
+  {
+    "objectID": "index.html#workshop-3---geospatial-analysis",
+    "href": "index.html#workshop-3---geospatial-analysis",
+    "title": "From Maps to Analysis",
+    "section": "Workshop 3 - Geospatial analysis",
+    "text": "Workshop 3 - Geospatial analysis\n4-hour workshop. Carpentry-like in ArcGIS Pro\nData analysis centric:\n\nbuffering\ninterpolation\nzonal statistics\nraster calculation"
+  },
+  {
+    "objectID": "02_intro_gis.html",
+    "href": "02_intro_gis.html",
+    "title": "I think I need GIS",
+    "section": "",
+    "text": "Mimic Data Carpentry with local campus data\n\nFlush out what we want the end product to look like\n\nAnnotation vs geospatial data\nFeatures have attributes - a data table - columns have fixed data types (a lot of them) - for example bikes\nTypes of data:\n\nVector: Difference between point, line, and polygon\nRaster: an array of values that can be used\n\nSingle band\nMultibands\n\n\nProjections? Reprojection (raster, polygons)\nHow to add a new data layer: - Import point data from a csv, lat/long csv file - Raster/DEM - Importing or uploading a dataset vs finding a good dataset in living atlas\n\nZonal statistics (simple)\n\nAdd raster with another projection\n\nTopographic map to compute solar panels location (maybe workshop 3?)\nFacilities data (buildings)\nDEM\nBike paths\nTrees\n\nPotential simple analysis as end product (this section should be moved to 3) - Zonal statistics - Count number of points within a polygon - Heatmap from points - Buffering\nExporting data from GIS\n\nShapefile\ngeodatabase\n\nWhat tool?\n\nArcGIS online\nArcGIS pro\nQGIS"
+  },
+  {
     "objectID": "03_geospatial_analysis.html",
     "href": "03_geospatial_analysis.html",
     "title": "Geospatial analysis",
@@ -96,40 +131,5 @@
     "title": "I want to make a map",
     "section": "Step 5: Share your map",
     "text": "Step 5: Share your map\nWhen you’re satisfied with the layout and settings, click on the Export button to generate the map. Depending on the selected file format and resolution, it may take a few moments to process the export.\nThe result will be list on the Exports panel, where you can save the file to your computer by clicking on the three dots next to the export and selecting Save as.\n\n\n\n\n\n\nFigure 27: Saving exported map from the Exports panel\n\n\n\nThis will save the exported map to you ArcGIS Online content. You can access it later from the Content menu in the top menu bar. The new item will be available as an Image file that you can download to your computer.\n\n\n\n\n\n\nFigure 28: Downloading the exported map image from ArcGIS Online content\n\n\n\n\n\n\n\n\n\nWarningPublic sharing\n\n\n\n\n\nYou can share your map publicly and embed it on a website, just like we did at the beginning of this lesson. However, for this to work, you need to set the visibility of all your map layers to public."
-  },
-  {
-    "objectID": "02_intro_gis.html",
-    "href": "02_intro_gis.html",
-    "title": "I think I need GIS",
-    "section": "",
-    "text": "Mimic Data Carpentry with local campus data\n\nFlush out what we want the end product to look like\n\nAnnotation vs geospatial data\nFeatures have attributes - a data table - columns have fixed data types (a lot of them) - for example bikes\nTypes of data:\n\nVector: Difference between point, line, and polygon\nRaster: an array of values that can be used\n\nSingle band\nMultibands\n\n\nProjections? Reprojection (raster, polygons)\n\nImport point data from a csv\nZonal statistics (simple)\n\nAdd raster with another projection\n\nNCOS? Bird observations (might becsv)\nTopographic map to compute solar panels location (maybe workshop 3?)\nFacilities data (buildings)\nDEM\nBike paths\nTrees\n\nPotential simple analysis as end product\n\nZonal statistics\nCount number of points within a polygon\nHeatmap from points\nBuffering\n\nExporting data from GIS\n\nShapefile\ngeodatabase\n\nWhat tool?\n\nArcGIS online\nArcGIS pro\nQGIS"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "From Maps to Analysis",
-    "section": "",
-    "text": "The goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis without the need to have programming skills.\nWe have organized this curriculum into three workshops:"
-  },
-  {
-    "objectID": "index.html#workshop-1---i-want-to-make-a-map",
-    "href": "index.html#workshop-1---i-want-to-make-a-map",
-    "title": "From Maps to Analysis",
-    "section": "Workshop 1 - I want to make a map",
-    "text": "Workshop 1 - I want to make a map\n2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:\n\nadjust the background basemap\nadd an existing layer to a map\nchange symbology\ndraw lines and polygons on a map\n\nThe workshop ends with exporting a map suitable for inclusion in a publication."
-  },
-  {
-    "objectID": "index.html#workshop-2---i-think-i-need-gis",
-    "href": "index.html#workshop-2---i-think-i-need-gis",
-    "title": "From Maps to Analysis",
-    "section": "Workshop 2 - I think I need GIS",
-    "text": "Workshop 2 - I think I need GIS\n2-3 hours workshop using ArcGIS Online to conduct basic GIS data manipulations.\n\ndata import & export\nprojections\nraster and vector data\n\nEnds with an analysis, maybe zonal statistics?"
-  },
-  {
-    "objectID": "index.html#workshop-3---geospatial-analysis",
-    "href": "index.html#workshop-3---geospatial-analysis",
-    "title": "From Maps to Analysis",
-    "section": "Workshop 3 - Geospatial analysis",
-    "text": "Workshop 3 - Geospatial analysis\n4-hour workshop. Carpentry-like in ArcGIS Pro\nData analysis centric:\n\nbuffering\ninterpolation\nzonal statistics\nraster calculation"
   }
 ]
