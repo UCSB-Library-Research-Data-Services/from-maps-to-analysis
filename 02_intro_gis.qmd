@@ -38,9 +38,3 @@ Exporting data from GIS
 
 - Shapefile 
 - geodatabase
-
-What tool? 
-
-- ArcGIS online 
-- ArcGIS pro 
-- QGIS
