@@ -14,18 +14,18 @@
     "text": "Workshop 1 - I want to make a map\n2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:\n\nadjust the background basemap\nadd an existing layer to a map\nchange symbology\ndraw lines and polygons on a map\n\nThe workshop ends with exporting a map suitable for inclusion in a publication."
   },
   {
-    "objectID": "index.html#workshop-2---i-think-i-need-gis",
-    "href": "index.html#workshop-2---i-think-i-need-gis",
+    "objectID": "index.html#workshop-2---data-for-gis",
+    "href": "index.html#workshop-2---data-for-gis",
     "title": "From Maps to Analysis",
-    "section": "Workshop 2 - I think I need GIS",
-    "text": "Workshop 2 - I think I need GIS\n2-3 hours workshop using ArcGIS Online to conduct basic GIS data manipulations.\n\ndata import & export\nprojections\nraster and vector data\n\nEnds with an analysis, maybe zonal statistics?"
+    "section": "Workshop 2 - Data for GIS",
+    "text": "Workshop 2 - Data for GIS\n2-3 hours workshop using ArcGIS Online to conduct basic GIS data manipulations.\n\ndata import & export\ntabular data\nraster and vector data"
   },
   {
     "objectID": "index.html#workshop-3---geospatial-analysis",
     "href": "index.html#workshop-3---geospatial-analysis",
     "title": "From Maps to Analysis",
     "section": "Workshop 3 - Geospatial analysis",
-    "text": "Workshop 3 - Geospatial analysis\n4-hour workshop. Carpentry-like in ArcGIS Pro\nData analysis centric:\n\nbuffering\ninterpolation\nzonal statistics\nraster calculation"
+    "text": "Workshop 3 - Geospatial analysis\n4-hour workshop. Carpentry-like in ArcGIS Pro\nData analysis centric:\nIntro so spatial analysis and zonal statistics - buffering - interpolation - zonal statistics - raster calculation"
   },
   {
     "objectID": "02_intro_gis.html",
