@@ -34,7 +34,9 @@ How to add a new data layer:
 - Bike paths
 - Trees
 
-Credits: 
+Esri ArcGIS Credit Management Policy: 
+- Monitor your credits: All ArcGIS Online accounts created under the UCSB site license are allocated an initial balance of <b>1000 service credits</b>. Regularly check your credit balance through your user profile. 
+- Manage your content: Periodically review and delete unnecessary content to reduce storage costs. 
+- Data Stewardship: ArcGIS Online is a powerful platform for data analysis and visualization but should not be considered a permanent, long-term data archive. 
 - All the analysis in our workshops aren't costing us a significant amount of credits 
-- Quotas 
 - Stop saving global tiff files! 
