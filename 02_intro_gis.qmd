@@ -1,20 +1,18 @@
 ---
 title: "Data Types for GIS" 
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-Focus more on data 
--   Flush out what we want the end product to look like
+Focus more on data - Flush out what we want the end product to look like
 
-Annotation vs geospatial data
-- importing rather than sketching layers 
-    - Raster/DEM
-    - Lat/Long CSV file
-    - uploading your won dataset and/or finding a dataset in living atlas 
+Annotation vs geospatial data - importing rather than sketching layers -
+Raster/DEM - Lat/Long CSV file - uploading your won dataset and/or
+finding a dataset in living atlas
 
-Features have attributes
--   a data table/tabular data
--       columns have fixed data types (a lot of them)
--   for example bikes
+Features have attributes - a data table/tabular data - columns have
+fixed data types (a lot of them) - for example bikes
 
 Types of data:
 
@@ -23,20 +21,40 @@ Types of data:
     -   Single band
     -   Multibands
 
-How to add a new data layer: 
-- Import point data from a csv, lat/long csv file
-- Raster/DEM
-- Importing or uploading a dataset vs finding a good dataset in living atlas
+How to add a new data layer: - Import point data from a csv, lat/long
+csv file - Raster/DEM - Importing or uploading a dataset vs finding a
+good dataset in living atlas
 
+-   Facilities data (buildings)
+-   DEM
+-   Bike paths
+-   Trees
 
-- Facilities data (buildings) 
-- DEM 
-- Bike paths
-- Trees
+Esri ArcGIS Credit Management Policy:
 
-Esri ArcGIS Credit Management Policy: 
-- Monitor your credits: All ArcGIS Online accounts created under the UCSB site license are allocated an initial balance of <b>1000 service credits</b>. Regularly check your credit balance through your user profile. 
-- Manage your content: Periodically review and delete unnecessary content to reduce storage costs. 
-- Data Stewardship: ArcGIS Online is a powerful platform for data analysis and visualization but should not be considered a permanent, long-term data archive. 
-- All the analysis in our workshops aren't costing us a significant amount of credits 
-- Stop saving global tiff files! 
+-   Monitor your credits: All ArcGIS Online accounts created under the
+    UCSB site license are allocated an initial balance of **1000 service
+    credits**. Regularly check your credit balance through your user
+    profile.
+
+    -   Storage credits: depend on data size and how long content is
+        stored per month. Most commonly hosted feature layers like
+        points, lines, polygons and tables.
+
+    -   Transactions: credits used for specific transaction-based tools
+        in ArcGIS Online. These include feature and imagery analysis,
+        geocoding, or using premium content from ArcGIS Living Atlas.
+
+-   Manage your content: Periodically review and delete unnecessary
+    content to reduce storage costs.
+
+-   Data Stewardship: ArcGIS Online is a powerful platform for data
+    analysis and visualization but should not be considered a permanent,
+    long-term data archive. All the analysis in our workshops aren't
+    costing us a significant amount of credits.
+
+-   For more information, visit Esri's [Understand
+    Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
+    Page.
+
+-   ***Stop saving global .tiff files!***
