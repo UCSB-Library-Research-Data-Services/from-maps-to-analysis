@@ -1,16 +1,19 @@
 ---
-title: "I think I need GIS"
+title: "Data for GIS" 
 ---
 
-Mimic Data Carpentry with local campus data
-
+Focus more on data 
 -   Flush out what we want the end product to look like
 
 Annotation vs geospatial data
+- importing rather than sketching layers 
+    - Raster/DEM
+    - Lat/Long CSV file
+    - uploading your won dataset and/or finding a dataset in living atlas 
 
 Features have attributes
--   a data table
--   columns have fixed data types (a lot of them)
+-   a data table/tabular data
+-       columns have fixed data types (a lot of them)
 -   for example bikes
 
 Types of data:
@@ -20,28 +23,16 @@ Types of data:
     -   Single band
     -   Multibands
 
-Projections? Reprojection (raster, polygons) 
-
 How to add a new data layer: 
 - Import point data from a csv, lat/long csv file
 - Raster/DEM
 - Importing or uploading a dataset vs finding a good dataset in living atlas
 
-- Zonal statistics (simple)
 
-Add raster with another projection
- 
-- Topographic map to compute solar panels location (maybe workshop 3?) 
 - Facilities data (buildings) 
 - DEM 
 - Bike paths
 - Trees
-
-Potential simple analysis as end product  (this section should be moved to 3) 
-- Zonal statistics 
-- Count number of points within a polygon 
-- Heatmap from points 
-- Buffering
 
 Exporting data from GIS 
 
