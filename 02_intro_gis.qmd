@@ -1,9 +1,11 @@
 ---
-title: "Data Types for GIS" 
+title: "I think I want more Data" 
 editor: 
   markdown: 
     wrap: 72
 ---
+
+## I want to add more data 
 
 Focus more on data - Flush out what we want the end product to look like
 
@@ -28,7 +30,6 @@ good dataset in living atlas
 -   Facilities data (buildings)
 -   DEM
 -   Bike paths
--   Trees
 
 Esri ArcGIS Credit Management Policy:
 
