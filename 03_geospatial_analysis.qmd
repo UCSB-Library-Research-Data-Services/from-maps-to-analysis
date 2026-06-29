@@ -20,4 +20,10 @@ Data analysis:
 - zonal statistics
 - raster calculation
 
+Potential simple analysis as end product  (this section should be moved to 3) 
+- Zonal statistics 
+- Count number of points within a polygon 
+- Heatmap from points 
+- Buffering
+
 Heat map
