@@ -1,5 +1,5 @@
 ---
-title: "Data for GIS" 
+title: "Data Types for GIS" 
 ---
 
 Focus more on data 
