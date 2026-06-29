@@ -34,15 +34,13 @@ We have organized this curriculum into three workshops:
 
 The workshop ends with exporting a map suitable for inclusion in a publication.
 
-## Workshop 2 - I think I need GIS
+## Workshop 2 - Data for GIS
 
 2-3 hours workshop using ArcGIS Online to conduct basic GIS data manipulations.
 
 -   data import & export
--   projections
+-   tabular data
 -   raster and vector data
-
-Ends with an analysis, maybe zonal statistics?
 
 ## Workshop 3 - Geospatial analysis
 
@@ -50,6 +48,7 @@ Ends with an analysis, maybe zonal statistics?
 
 Data analysis centric:
 
+Intro so spatial analysis and zonal statistics
 -   buffering
 -   interpolation
 -   zonal statistics
