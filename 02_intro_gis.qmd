@@ -34,7 +34,7 @@ How to add a new data layer:
 - Bike paths
 - Trees
 
-Exporting data from GIS 
-
-- Shapefile 
-- geodatabase
+Credits: 
+- All the analysis in our workshops aren't costing us a significant amount of credits 
+- Quotas 
+- Stop saving global tiff files! 
