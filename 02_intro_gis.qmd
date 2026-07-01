@@ -28,8 +28,9 @@ csv file - Raster/DEM - Importing or uploading a dataset vs finding a
 good dataset in living atlas
 
 -   Facilities data (buildings)
--   DEM
--   Bike paths
+-   DEM (expanded to the foothills)
+-   Bike paths (a newly extended to roads version)
+-   Bus stops (lat-long csv file. for when you get tired)
 
 Esri ArcGIS Online Credits:
 
@@ -46,4 +47,29 @@ Esri ArcGIS Online Credits:
 -   Data Stewardship: Objects stored in ArcGIS Online should be considered
     ephemeral. The content depends on your access to the UCSB Library's 
     Higher Education Site License. 
+
+### Narrative
+
+* The story: we want to route a steep, safe bike ride off campus
+* Gather more data: we will add layers to our working map and save it in our own space (to review workshop 1).
+* The layers:
+Basically the same layers as workshop 1, but with larger extents. 
+** DEM around campus
+** Paths based on a provided and expanded extract from Open Stree Maps
+** Bike racks: A csv file hosted on ArcGIS Online that we will convert to a data layer (or a non-editable data layer that people will do a save-as on)
+* Outline of analysis
+** Turn the DEM into a slope layer
+** trace the inclines of the bike paths
+** add bike racks to path interections
+*** we might need to buffer the bike racks to get them to intersect
+** calculate the steepest route from the Library to a 
+
+....
+
+
+
+
+
+
+
 
