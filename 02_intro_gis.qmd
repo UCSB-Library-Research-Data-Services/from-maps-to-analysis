@@ -31,31 +31,19 @@ good dataset in living atlas
 -   DEM
 -   Bike paths
 
-Esri ArcGIS Credit Management Policy:
+Esri ArcGIS Online Credits:
 
--   Monitor your credits: All ArcGIS Online accounts created under the
-    UCSB site license are allocated an initial balance of **1000 service
-    credits**. Regularly check your credit balance through your user
-    profile.
+-   All ArcGIS Online accounts created under the
+    UCSB site license are allocated **1000 service
+    credits** per license year. 
 
-    -   Storage credits: depend on data size and how long content is
-        stored per month. Most commonly hosted feature layers like
-        points, lines, polygons and tables.
-
-    -   Transactions: credits used for specific transaction-based tools
-        in ArcGIS Online. These include feature and imagery analysis,
-        geocoding, or using premium content from ArcGIS Living Atlas.
-
--   Manage your content: Periodically review and delete unnecessary
-    content to reduce storage costs.
-
--   Data Stewardship: ArcGIS Online is a powerful platform for data
-    analysis and visualization but should not be considered a permanent,
-    long-term data archive. All the analysis in our workshops aren't
-    costing us a significant amount of credits.
-
--   For more information, visit Esri's [Understand
-    Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
+-   Transactions: Some analysis operations use credits. For more information,    visit Esri's [Understand Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
     Page.
 
--   ***Stop saving global .tiff files!***
+-   Manage your content: Periodically review and delete unnecessary
+    content.
+
+-   Data Stewardship: Objects stored in ArcGIS Online should be considered
+    ephemeral. The content depends on your access to the UCSB Library's 
+    Higher Education Site License. 
+
