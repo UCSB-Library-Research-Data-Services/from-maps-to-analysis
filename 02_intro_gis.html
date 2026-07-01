@@ -120,7 +120,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#i-want-to-add-more-data" id="toc-i-want-to-add-more-data" class="nav-link active" data-scroll-target="#i-want-to-add-more-data">I want to add more data</a></li>
+  <li><a href="#i-want-to-add-more-data" id="toc-i-want-to-add-more-data" class="nav-link active" data-scroll-target="#i-want-to-add-more-data">I want to add more data</a>
+  <ul class="collapse">
+  <li><a href="#narrative" id="toc-narrative" class="nav-link" data-scroll-target="#narrative">Narrative</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -163,8 +166,9 @@ ul.task-list li input[type="checkbox"] {
 <p>How to add a new data layer: - Import point data from a csv, lat/long csv file - Raster/DEM - Importing or uploading a dataset vs finding a good dataset in living atlas</p>
 <ul>
 <li>Facilities data (buildings)</li>
-<li>DEM</li>
-<li>Bike paths</li>
+<li>DEM (expanded to the foothills)</li>
+<li>Bike paths (a newly extended to roads version)</li>
+<li>Bus stops (lat-long csv file. for when you get tired)</li>
 </ul>
 <p>Esri ArcGIS Online Credits:</p>
 <ul>
@@ -173,8 +177,18 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Manage your content: Periodically review and delete unnecessary content.</p></li>
 <li><p>Data Stewardship: Objects stored in ArcGIS Online should be considered ephemeral. The content depends on your access to the UCSB Library’s Higher Education Site License.</p></li>
 </ul>
+<section id="narrative" class="level3">
+<h3 class="anchored" data-anchor-id="narrative">Narrative</h3>
+<ul>
+<li>The story: we want to route a steep, safe bike ride off campus</li>
+<li>Gather more data: we will add layers to our working map and save it in our own space (to review workshop 1).</li>
+<li>The layers: Basically the same layers as workshop 1, but with larger extents. ** DEM around campus ** Paths based on a provided and expanded extract from Open Stree Maps ** Bike racks: A csv file hosted on ArcGIS Online that we will convert to a data layer (or a non-editable data layer that people will do a save-as on)</li>
+<li>Outline of analysis ** Turn the DEM into a slope layer ** trace the inclines of the bike paths ** add bike racks to path interections *** we might need to buffer the bike racks to get them to intersect ** calculate the steepest route from the Library to a</li>
+</ul>
+<p>….</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
