@@ -5,7 +5,7 @@ editor:
     wrap: 72
 ---
 
-## I want to add more data 
+## I want to add more data
 
 Focus more on data - Flush out what we want the end product to look like
 
@@ -34,42 +34,35 @@ good dataset in living atlas
 
 Esri ArcGIS Online Credits:
 
--   All ArcGIS Online accounts created under the
-    UCSB site license are allocated **1000 service
-    credits** per license year. 
+-   All ArcGIS Online accounts created under the UCSB site license are
+    allocated **1000 service credits** per license year.
 
--   Transactions: Some analysis operations use credits. For more information,    visit Esri's [Understand Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
+-   Transactions: Some analysis operations use credits. For more
+    information, visit Esri's [Understand
+    Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
     Page.
 
 -   Manage your content: Periodically review and delete unnecessary
     content.
 
--   Data Stewardship: Objects stored in ArcGIS Online should be considered
-    ephemeral. The content depends on your access to the UCSB Library's 
-    Higher Education Site License. 
+-   Data Stewardship: Objects stored in ArcGIS Online should be
+    considered ephemeral. The content depends on your access to the UCSB
+    Library's Higher Education Site License.
 
 ### Narrative
 
-* The story: we want to route a steep, safe bike ride off campus
-* Gather more data: we will add layers to our working map and save it in our own space (to review workshop 1).
-* The layers:
-Basically the same layers as workshop 1, but with larger extents. 
-** DEM around campus
-** Paths based on a provided and expanded extract from Open Stree Maps
-** Bike racks: A csv file hosted on ArcGIS Online that we will convert to a data layer (or a non-editable data layer that people will do a save-as on)
-* Outline of analysis
-** Turn the DEM into a slope layer
-** trace the inclines of the bike paths
-** add bike racks to path interections
-*** we might need to buffer the bike racks to get them to intersect
-** calculate the steepest route from the Library to a 
+-   The story: we want to route a steep, safe bike ride off campus
+-   Gather more data: we will add layers to our working map and save it
+    in our own space (to review workshop 1).
+-   The layers: Basically the same layers as workshop 1, but with larger
+    extents. \*\* DEM around campus \*\* Paths based on a provided and
+    expanded extract from Open Street Maps \*\* Bike racks: A csv file
+    hosted on ArcGIS Online that we will convert to a data layer (or a
+    non-editable data layer that people will do a save-as on)
+-   Outline of analysis \*\* Turn the DEM into a slope layer \*\* trace
+    the inclines of the bike paths \*\* add bike racks to path
+    interections \*\*\* we might need to buffer the bike racks to get
+    them to intersect \*\* calculate the steepest route from the Library
+    to a
 
 ....
-
-
-
-
-
-
-
-
