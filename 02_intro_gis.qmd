@@ -70,4 +70,11 @@ Esri ArcGIS Online Credits:
     them to intersect \*\* calculate the steepest route from the Library
     to a
 
+
+Once your map has the slope raster and the road layer, go to raster analysis > Zonal Statistics as Table.
+Screenshot for settings
+This is going to make a TABLE. Not a layer. Now we join the table back to the line file. 
+Tools > Summarize data > Join Features
+Use the objectID. It might not be visible in the roads file. 
+
 ....
