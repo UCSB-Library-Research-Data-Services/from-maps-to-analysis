@@ -181,16 +181,21 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="narrative">Narrative</h3>
 <ul>
 <li>The story: we want to route a steep, safe bike ride off campus</li>
-<li>Gather more data: we will add layers to our working map and save it in our own space (to review workshop 1).</li>
+<li>Gather more data: we will add layers to our working map and save it in our own space (to review workshop 1).
+<ul>
 <li>Add DEM</li>
 <li>Calculate slope from dem</li>
 <li>Overlay slope onto lines (ie: edit attribute table)</li>
 <li>Highlight steepest route (max slope)</li>
 <li>Play with slider: Counts &amp; Amounts</li>
+</ul></li>
 <li>The layers: Basically the same layers as workshop 1, but with larger extents. ** DEM around campus ** Paths based on a provided and expanded extract from Open Street Maps ** Bike racks: A csv file hosted on ArcGIS Online that we will convert to a data layer (or a non-editable data layer that people will do a save-as on)</li>
 <li>Outline of analysis ** Turn the DEM into a slope layer ** trace the inclines of the bike paths ** add bike racks to path interections *** we might need to buffer the bike racks to get them to intersect ** calculate the steepest route from the Library to a</li>
 </ul>
-<p>Once your map has the slope raster and the road layer, go to raster analysis &gt; Zonal Statistics as Table. Screenshot for settings This is going to make a TABLE. Not a layer. Now we join the table back to the line file. Tools &gt; Summarize data &gt; Join Features Use the objectID. It might not be visible in the roads file.</p>
+<p>Once your map has the slope raster and the road layer, go to raster analysis &gt; Zonal Statistics as Table.</p>
+<p><img src="images/Workshop2/create_max_slope_table.png" class="img-fluid"></p>
+<p>This is going to make a TABLE. Not a layer. Now we join the table back to the line file. Tools &gt; Summarize data &gt; Join Features Use the objectID. It might not be visible in the roads file.</p>
+<p><img src="images/Workshop2/roads_over_slope.png" class="img-fluid"></p>
 <p>….</p>
 
 
