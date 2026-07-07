@@ -54,11 +54,11 @@ Esri ArcGIS Online Credits:
 -   The story: we want to route a steep, safe bike ride off campus
 -   Gather more data: we will add layers to our working map and save it
     in our own space (to review workshop 1).
-  - Add DEM
-  - Calculate slope from dem
-  - Overlay slope onto lines (ie: edit attribute table)
-  - Highlight steepest route (max slope)
-  - Play with slider: Counts & Amounts
+    - Add DEM
+    - Calculate slope from dem
+    - Overlay slope onto lines (ie: edit attribute table)
+    - Highlight steepest route (max slope)
+    - Play with slider: Counts & Amounts
 -   The layers: Basically the same layers as workshop 1, but with larger
     extents. \*\* DEM around campus \*\* Paths based on a provided and
     expanded extract from Open Street Maps \*\* Bike racks: A csv file
@@ -72,9 +72,13 @@ Esri ArcGIS Online Credits:
 
 
 Once your map has the slope raster and the road layer, go to raster analysis > Zonal Statistics as Table.
-Screenshot for settings
+
+![](images/Workshop2/create_max_slope_table.png)
+
 This is going to make a TABLE. Not a layer. Now we join the table back to the line file. 
 Tools > Summarize data > Join Features
 Use the objectID. It might not be visible in the roads file. 
+
+![](images/Workshop2/roads_over_slope.png)
 
 ....
