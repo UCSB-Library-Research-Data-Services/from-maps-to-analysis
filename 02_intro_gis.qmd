@@ -1,18 +1,23 @@
 ---
-title: "I think I want more Data" 
+title: "Let's Explore Data" 
 editor: 
   markdown: 
     wrap: 72
 ---
 
-## I want to add more data
+## Let's Explore Data
 
 Focus more on data - Flush out what we want the end product to look like
 
 Annotation vs geospatial data - importing rather than sketching layers -
-Raster/DEM - Lat/Long CSV file - uploading your won dataset and/or
-finding a dataset in living atlas
 
+- Raster versus vector data
+- Living Atlas data 
+- Import & export
+
+Raster/DEM - Lat/Long CSV file - uploading your own dataset 
+and/or finding a dataset in living atlas
+  
 Features have attributes - a data table/tabular data - columns have
 fixed data types (a lot of them) - for example bikes
 
@@ -46,8 +51,7 @@ Esri ArcGIS Online Credits:
     content.
 
 -   Data Stewardship: Objects stored in ArcGIS Online should be
-    considered ephemeral. The content depends on your access to the UCSB
-    Library's Higher Education Site License.
+    considered ephemeral. The content depends on your access to the UCSB Library's Higher Education Site License.
 
 ### Narrative
 
