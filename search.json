@@ -1,54 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "From Maps to Analysis",
-    "section": "",
-    "text": "The goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis without the need to have programming skills.\nWe have organized this curriculum into three workshops:"
-  },
-  {
-    "objectID": "index.html#workshop-1---i-want-to-make-a-map",
-    "href": "index.html#workshop-1---i-want-to-make-a-map",
-    "title": "From Maps to Analysis",
-    "section": "Workshop 1 - I want to make a map",
-    "text": "Workshop 1 - I want to make a map\n2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:\n\nadjust the background basemap\nadd an existing layer to a map\nchange symbology\ndraw lines and polygons on a map\n\nThe workshop ends with exporting a map suitable for inclusion in a publication."
-  },
-  {
-    "objectID": "index.html#workshop-2---data-for-gis",
-    "href": "index.html#workshop-2---data-for-gis",
-    "title": "From Maps to Analysis",
-    "section": "Workshop 2 - Data for GIS",
-    "text": "Workshop 2 - Data for GIS\n2-3 hours workshop using ArcGIS Online to conduct basic GIS data manipulations.\n\ndata import & export\ntabular data\nraster and vector data"
-  },
-  {
-    "objectID": "index.html#workshop-3---geospatial-analysis",
-    "href": "index.html#workshop-3---geospatial-analysis",
-    "title": "From Maps to Analysis",
-    "section": "Workshop 3 - Geospatial analysis",
-    "text": "Workshop 3 - Geospatial analysis\n4-hour workshop. Carpentry-like in ArcGIS Pro\nData analysis centric:\nIntro so spatial analysis and zonal statistics - buffering - interpolation - zonal statistics - raster calculation"
-  },
-  {
-    "objectID": "02_intro_gis.html",
-    "href": "02_intro_gis.html",
-    "title": "I think I want more Data",
-    "section": "",
-    "text": "Focus more on data - Flush out what we want the end product to look like\nAnnotation vs geospatial data - importing rather than sketching layers - Raster/DEM - Lat/Long CSV file - uploading your won dataset and/or finding a dataset in living atlas\nFeatures have attributes - a data table/tabular data - columns have fixed data types (a lot of them) - for example bikes\nTypes of data:\n\nVector: Difference between point, line, and polygon\nRaster: an array of values that can be used\n\nSingle band\nMultibands\n\n\nHow to add a new data layer: - Import point data from a csv, lat/long csv file - Raster/DEM - Importing or uploading a dataset vs finding a good dataset in living atlas\n\nFacilities data (buildings)\nDEM (expanded to the foothills)\nBike paths (a newly extended to roads version)\nBus stops (lat-long csv file. for when you get tired)\n\nEsri ArcGIS Online Credits:\n\nAll ArcGIS Online accounts created under the UCSB site license are allocated 1000 service credits per license year.\nTransactions: Some analysis operations use credits. For more information, visit Esri’s Understand Credits Page.\nManage your content: Periodically review and delete unnecessary content.\nData Stewardship: Objects stored in ArcGIS Online should be considered ephemeral. The content depends on your access to the UCSB Library’s Higher Education Site License.\n\n\n\n\nThe story: we want to route a steep, safe bike ride off campus\nGather more data: we will add layers to our working map and save it in our own space (to review workshop 1).\n\nAdd DEM\nCalculate slope from dem\nOverlay slope onto lines (ie: edit attribute table)\nHighlight steepest route (max slope)\nPlay with slider: Counts & Amounts\n\nThe layers: Basically the same layers as workshop 1, but with larger extents. ** DEM around campus ** Paths based on a provided and expanded extract from Open Street Maps ** Bike racks: A csv file hosted on ArcGIS Online that we will convert to a data layer (or a non-editable data layer that people will do a save-as on)\nOutline of analysis ** Turn the DEM into a slope layer ** trace the inclines of the bike paths ** add bike racks to path interections *** we might need to buffer the bike racks to get them to intersect ** calculate the steepest route from the Library to a\n\nOnce your map has the slope raster and the road layer, go to raster analysis &gt; Zonal Statistics as Table.\n\nThis is going to make a TABLE. Not a layer. Now we join the table back to the line file. Tools &gt; Summarize data &gt; Join Features Use the objectID. It might not be visible in the roads file.\n\n…."
-  },
-  {
-    "objectID": "02_intro_gis.html#i-want-to-add-more-data",
-    "href": "02_intro_gis.html#i-want-to-add-more-data",
-    "title": "I think I want more Data",
-    "section": "",
-    "text": "Focus more on data - Flush out what we want the end product to look like\nAnnotation vs geospatial data - importing rather than sketching layers - Raster/DEM - Lat/Long CSV file - uploading your won dataset and/or finding a dataset in living atlas\nFeatures have attributes - a data table/tabular data - columns have fixed data types (a lot of them) - for example bikes\nTypes of data:\n\nVector: Difference between point, line, and polygon\nRaster: an array of values that can be used\n\nSingle band\nMultibands\n\n\nHow to add a new data layer: - Import point data from a csv, lat/long csv file - Raster/DEM - Importing or uploading a dataset vs finding a good dataset in living atlas\n\nFacilities data (buildings)\nDEM (expanded to the foothills)\nBike paths (a newly extended to roads version)\nBus stops (lat-long csv file. for when you get tired)\n\nEsri ArcGIS Online Credits:\n\nAll ArcGIS Online accounts created under the UCSB site license are allocated 1000 service credits per license year.\nTransactions: Some analysis operations use credits. For more information, visit Esri’s Understand Credits Page.\nManage your content: Periodically review and delete unnecessary content.\nData Stewardship: Objects stored in ArcGIS Online should be considered ephemeral. The content depends on your access to the UCSB Library’s Higher Education Site License.\n\n\n\n\nThe story: we want to route a steep, safe bike ride off campus\nGather more data: we will add layers to our working map and save it in our own space (to review workshop 1).\n\nAdd DEM\nCalculate slope from dem\nOverlay slope onto lines (ie: edit attribute table)\nHighlight steepest route (max slope)\nPlay with slider: Counts & Amounts\n\nThe layers: Basically the same layers as workshop 1, but with larger extents. ** DEM around campus ** Paths based on a provided and expanded extract from Open Street Maps ** Bike racks: A csv file hosted on ArcGIS Online that we will convert to a data layer (or a non-editable data layer that people will do a save-as on)\nOutline of analysis ** Turn the DEM into a slope layer ** trace the inclines of the bike paths ** add bike racks to path interections *** we might need to buffer the bike racks to get them to intersect ** calculate the steepest route from the Library to a\n\nOnce your map has the slope raster and the road layer, go to raster analysis &gt; Zonal Statistics as Table.\n\nThis is going to make a TABLE. Not a layer. Now we join the table back to the line file. Tools &gt; Summarize data &gt; Join Features Use the objectID. It might not be visible in the roads file.\n\n…."
-  },
-  {
-    "objectID": "03_geospatial_analysis.html",
-    "href": "03_geospatial_analysis.html",
-    "title": "Geospatial analysis",
-    "section": "",
-    "text": "What tool?\n\nArcGIS pro\nQGIS\n\nAGO layers vs. local layers\n– very much ‘where are my files’ reinforcement like Unix Shell\nExample analysis: which parts of campus are least served by the bike path network?\nData analysis:\n\nbuffering\ninterpolation\nzonal statistics\nraster calculation\n\nPotential simple analysis as end product (this section should be moved to 3) - Zonal statistics - Count number of points within a polygon - Heatmap from points - Buffering\nHeat map"
-  },
-  {
     "objectID": "01_make_map.html",
     "href": "01_make_map.html",
     "title": "I want to make a map",
@@ -138,5 +89,54 @@
     "title": "I want to make a map",
     "section": "Step 5: Share your map",
     "text": "Step 5: Share your map\nWhen you’re satisfied with the layout and settings, click on the Export button to generate the map. Depending on the selected file format and resolution, it may take a few moments to process the export.\nThe result will be list on the Exports panel, where you can save the file to your computer by clicking on the three dots next to the export and selecting Save as.\n\n\n\n\n\n\nFigure 27: Saving exported map from the Exports panel\n\n\n\nThis will save the exported map to you ArcGIS Online content. You can access it later from the Content menu in the top menu bar. The new item will be available as an Image file that you can download to your computer.\n\n\n\n\n\n\nFigure 28: Downloading the exported map image from ArcGIS Online content\n\n\n\n\n\n\n\n\n\nWarningPublic sharing\n\n\n\n\n\nYou can share your map publicly and embed it on a website, just like we did at the beginning of this lesson. However, for this to work, you need to set the visibility of all your map layers to public."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "From Maps to Analysis",
+    "section": "",
+    "text": "The goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis without the need to have programming skills.\nWe have organized this curriculum into three workshops:"
+  },
+  {
+    "objectID": "index.html#workshop-1---i-want-to-make-a-map",
+    "href": "index.html#workshop-1---i-want-to-make-a-map",
+    "title": "From Maps to Analysis",
+    "section": "Workshop 1 - I want to make a map",
+    "text": "Workshop 1 - I want to make a map\n2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:\n\nadjust the background basemap\nadd an existing layer to a map\nchange symbology\ndraw lines and polygons on a map\n\nThe workshop ends with exporting a map suitable for inclusion in a publication."
+  },
+  {
+    "objectID": "index.html#workshop-2---data-for-gis",
+    "href": "index.html#workshop-2---data-for-gis",
+    "title": "From Maps to Analysis",
+    "section": "Workshop 2 - Data for GIS",
+    "text": "Workshop 2 - Data for GIS\n2-3 hours workshop using ArcGIS Online to conduct basic GIS data manipulations.\n\ndata import & export\ntabular data\nraster and vector data"
+  },
+  {
+    "objectID": "index.html#workshop-3---geospatial-analysis",
+    "href": "index.html#workshop-3---geospatial-analysis",
+    "title": "From Maps to Analysis",
+    "section": "Workshop 3 - Geospatial analysis",
+    "text": "Workshop 3 - Geospatial analysis\n4-hour workshop. Carpentry-like in ArcGIS Pro\nData analysis centric:\nIntro so spatial analysis and zonal statistics - buffering - interpolation - zonal statistics - raster calculation"
+  },
+  {
+    "objectID": "02_intro_gis.html",
+    "href": "02_intro_gis.html",
+    "title": "More Kinds of Data",
+    "section": "",
+    "text": "This lesson will focus more on the different types of data available in ArcGIS Online, and how to import your own data.\nAnnotation vs geospatial data - using feature data layers rather than sketches\nFeatures have attributes - a data table/tabular data - columns have fixed data types (a lot of them) - for example bikes\nRaster/DEM - Lat/Long CSV file - uploading your own dataset and/or finding a dataset in living atlas\nTypes of data:\n\nVector: Difference between point, line, and polygon\nRaster: an array of values that can be used\n\nSingle band\nMultibands\n\n\nHow to add a new data layer: - Import point data from a csv, lat/long csv file - Raster/DEM - Importing or uploading a dataset vs finding a good dataset in living atlas\n\nFacilities data (buildings)\nDEM (expanded to the foothills)\nBike paths (a newly extended to roads version)\nBus stops (lat-long csv file. for when you get tired)\n\nEsri ArcGIS Online Credits:\n\nAll ArcGIS Online accounts created under the UCSB site license are allocated 1000 service credits per license year.\nTransactions: Some analysis operations use credits. For more information, visit Esri’s Understand Credits Page.\nManage your content: Periodically review and delete unnecessary content.\nData Stewardship: Objects stored in ArcGIS Online should be considered ephemeral. The content depends on your access to the UCSB Library’s Higher Education Site License.\n\n\n\n\nThe story: we want to route a steep, safe bike ride off campus\nGather more data: we will add layers to our working map and save it in our own space (to review workshop 1).\n\nAdd DEM\nCalculate slope from dem\nOverlay slope onto lines (ie: edit attribute table)\nHighlight steepest route (max slope)\nPlay with slider: Counts & Amounts\n\nThe layers: Basically the same layers as workshop 1, but with larger extents. ** DEM around campus ** Paths based on a provided and expanded extract from Open Street Maps ** Bike racks: A csv file hosted on ArcGIS Online that we will convert to a data layer (or a non-editable data layer that people will do a save-as on)\nOutline of analysis ** Turn the DEM into a slope layer ** trace the inclines of the bike paths ** add bike racks to path interections *** we might need to buffer the bike racks to get them to intersect ** calculate the steepest route from the Library to a\n\nOnce your map has the slope raster and the road layer, go to raster analysis &gt; Zonal Statistics as Table.\n\nThis is going to make a TABLE. Not a layer. Now we join the table back to the line file. Tools &gt; Summarize data &gt; Join Features Use the objectID. It might not be visible in the roads file.\n\n…."
+  },
+  {
+    "objectID": "02_intro_gis.html#exploring-data-types-in-arcgis-online",
+    "href": "02_intro_gis.html#exploring-data-types-in-arcgis-online",
+    "title": "More Kinds of Data",
+    "section": "",
+    "text": "This lesson will focus more on the different types of data available in ArcGIS Online, and how to import your own data.\nAnnotation vs geospatial data - using feature data layers rather than sketches\nFeatures have attributes - a data table/tabular data - columns have fixed data types (a lot of them) - for example bikes\nRaster/DEM - Lat/Long CSV file - uploading your own dataset and/or finding a dataset in living atlas\nTypes of data:\n\nVector: Difference between point, line, and polygon\nRaster: an array of values that can be used\n\nSingle band\nMultibands\n\n\nHow to add a new data layer: - Import point data from a csv, lat/long csv file - Raster/DEM - Importing or uploading a dataset vs finding a good dataset in living atlas\n\nFacilities data (buildings)\nDEM (expanded to the foothills)\nBike paths (a newly extended to roads version)\nBus stops (lat-long csv file. for when you get tired)\n\nEsri ArcGIS Online Credits:\n\nAll ArcGIS Online accounts created under the UCSB site license are allocated 1000 service credits per license year.\nTransactions: Some analysis operations use credits. For more information, visit Esri’s Understand Credits Page.\nManage your content: Periodically review and delete unnecessary content.\nData Stewardship: Objects stored in ArcGIS Online should be considered ephemeral. The content depends on your access to the UCSB Library’s Higher Education Site License.\n\n\n\n\nThe story: we want to route a steep, safe bike ride off campus\nGather more data: we will add layers to our working map and save it in our own space (to review workshop 1).\n\nAdd DEM\nCalculate slope from dem\nOverlay slope onto lines (ie: edit attribute table)\nHighlight steepest route (max slope)\nPlay with slider: Counts & Amounts\n\nThe layers: Basically the same layers as workshop 1, but with larger extents. ** DEM around campus ** Paths based on a provided and expanded extract from Open Street Maps ** Bike racks: A csv file hosted on ArcGIS Online that we will convert to a data layer (or a non-editable data layer that people will do a save-as on)\nOutline of analysis ** Turn the DEM into a slope layer ** trace the inclines of the bike paths ** add bike racks to path interections *** we might need to buffer the bike racks to get them to intersect ** calculate the steepest route from the Library to a\n\nOnce your map has the slope raster and the road layer, go to raster analysis &gt; Zonal Statistics as Table.\n\nThis is going to make a TABLE. Not a layer. Now we join the table back to the line file. Tools &gt; Summarize data &gt; Join Features Use the objectID. It might not be visible in the roads file.\n\n…."
+  },
+  {
+    "objectID": "03_geospatial_analysis.html",
+    "href": "03_geospatial_analysis.html",
+    "title": "Geospatial analysis",
+    "section": "",
+    "text": "What tool?\n\nArcGIS pro\nQGIS\n\nAGO layers vs. local layers\n– very much ‘where are my files’ reinforcement like Unix Shell\nExample analysis: which parts of campus are least served by the bike path network?\nData analysis:\n\nbuffering\ninterpolation\nzonal statistics\nraster calculation\n\nPotential simple analysis as end product (this section should be moved to 3) - Zonal statistics - Count number of points within a polygon - Heatmap from points - Buffering\nHeat map"
   }
 ]
