@@ -60,28 +60,48 @@ Esri ArcGIS Online Credits:
 ### Review
 
 1. Explore data from the finished bike map in Lesson 1
+1. Play with slider: Counts & Amounts
+1. Do a 'save as' before moving on so that each Learner has their own map. Save that map into your own space. 
 
 ### New Material
-1. Save that map into your own space `hill_biking`
-1. Gather more data: we will add layers to our working map and save it
-    in our own space (to review workshop 1).
-    - Add DEM (a 1 channel raster)
-    - Play with slider: Counts & Amounts
+1. Our finished product is `Workshop Goleta bike map`
+    - we will take time to preview it here before building it
+
 -   The layers: Basically the same layers as workshop 1, but with larger
     extents. \*\* DEM around campus \*\* Paths based on a provided and
     expanded extract from Open Street Maps \*\* Bike racks: A csv file
     hosted on ArcGIS Online that we will convert to a data layer (or a
     non-editable data layer that people will do a save-as on)
+
+
+1. Starting with our freshly saved version of the map:
+1. Gather more data: we will add layers to our working map and save it
+    in our own space (to review workshop 1).
+    - Add `SantaBarbara_Merged_roads`
+      - Explore attributes and symbolize accordingly
+1. Add DEM (a 1 channel raster)
+    - `ucsb_local_dem`
+    - Explain data
+    - Show where it came from
+    - Explore stats
+    - callout: Living Atlas raster layers
+1. Add imagery
+1. Move on to more vectors
+    - we discussed putting bus stops and trailheads here
+    
+
+## This is more for lesson 3: Analysis
+    - Calculate slope from dem (also a one channel raster)
+    - Overlay slope onto lines (ie: edit attribute table)
+    - Highlight steepest route (max slope)
+
 -   Outline of analysis \*\* Turn the DEM into a slope layer \*\* trace
     the inclines of the bike paths \*\* add bike racks to path
     interections \*\*\* we might need to buffer the bike racks to get
     them to intersect \*\* calculate the steepest route from the Library
     to a
 
-## This is more for lesson 3: Analysis
-    - Calculate slope from dem (also a one channel raster)
-    - Overlay slope onto lines (ie: edit attribute table)
-    - Highlight steepest route (max slope)
+
 
 
 Once your map has the slope raster and the road layer, go to raster analysis > Zonal Statistics as Table.
