@@ -1,5 +1,5 @@
 ---
-title: "More Kinds of Data" 
+title: "Let's Explore Data" 
 editor: 
   markdown: 
     wrap: 72
@@ -11,8 +11,15 @@ This lesson will focus more on the different types of data available
 in ArcGIS Online, and how to import your own data.
 
 Annotation vs geospatial data - using feature data layers 
-rather than sketches
+rather than sketches  (Did we really do sketches in part 1?)
 
+- Raster versus vector data
+- Living Atlas data 
+- Import & export
+
+Raster/DEM - Lat/Long CSV file - uploading your own dataset 
+and/or finding a dataset in living atlas
+  
 Features have attributes - a data table/tabular data - columns have
 fixed data types (a lot of them) - for example bikes
 
@@ -49,18 +56,21 @@ Esri ArcGIS Online Credits:
     content.
 
 -   Data Stewardship: Objects stored in ArcGIS Online should be
-    considered ephemeral. The content depends on your access to the UCSB
-    Library's Higher Education Site License.
+    considered ephemeral. The content depends on your access to the UCSB Library's Higher Education Site License.
 
-### Narrative
+## Narrative
 
 -   The story: we want to route a steep, safe bike ride off campus
--   Gather more data: we will add layers to our working map and save it
+
+### Review
+
+1. Explore data from the finished bike map in Lesson 1
+
+### New Material
+1. Save that map into your own space `hill_biking`
+1. Gather more data: we will add layers to our working map and save it
     in our own space (to review workshop 1).
-    - Add DEM
-    - Calculate slope from dem
-    - Overlay slope onto lines (ie: edit attribute table)
-    - Highlight steepest route (max slope)
+    - Add DEM (a 1 channel raster)
     - Play with slider: Counts & Amounts
 -   The layers: Basically the same layers as workshop 1, but with larger
     extents. \*\* DEM around campus \*\* Paths based on a provided and
@@ -72,6 +82,11 @@ Esri ArcGIS Online Credits:
     interections \*\*\* we might need to buffer the bike racks to get
     them to intersect \*\* calculate the steepest route from the Library
     to a
+
+## This is more for lesson 3: Analysis
+    - Calculate slope from dem (also a one channel raster)
+    - Overlay slope onto lines (ie: edit attribute table)
+    - Highlight steepest route (max slope)
 
 
 Once your map has the slope raster and the road layer, go to raster analysis > Zonal Statistics as Table.

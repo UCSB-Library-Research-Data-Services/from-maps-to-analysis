@@ -20,13 +20,14 @@ leverage ArcGIS online to learn how to:
 Ends with data vs. maps and Sketch Layer vs. Feature Layer (in ArcGIS)
 
 
-## I think I need GIS
+## Exploring data
 
-2-3 hours workshop using ArcGIS online to conduct basic GIS data manipulations.
+2-3 hours workshop using ArcGIS Online to conduct basic GIS data 
+exploration and visualization.
 
-- data import & export
-- projections
-- raster and vector data
+- Raster versus vector data
+- Living Atlas data 
+- Import & export
 
 Ends with an analysis, maybe zonal statistics?
 
