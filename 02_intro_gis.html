@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-17e5a23d094ee4d3ea1f9bf67e0e3d54.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-196ea5643f3b265196950277884207f5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-27f92861258a155d9008da44635ead54.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -200,22 +200,44 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="review">Review</h3>
 <ol type="1">
 <li>Explore data from the finished bike map in Lesson 1</li>
+<li>Play with slider: Counts &amp; Amounts</li>
+<li>Do a ‘save as’ before moving on so that each Learner has their own map. Save that map into your own space.</li>
 </ol>
 </section>
 <section id="new-material" class="level3">
 <h3 class="anchored" data-anchor-id="new-material">New Material</h3>
 <ol type="1">
-<li>Save that map into your own space <code>hill_biking</code></li>
-<li>Gather more data: we will add layers to our working map and save it in our own space (to review workshop 1).
+<li>Our finished product is <code>Workshop Goleta bike map</code>
 <ul>
-<li>Add DEM (a 1 channel raster)</li>
-<li>Play with slider: Counts &amp; Amounts</li>
+<li>we will take time to preview it here before building it</li>
 </ul></li>
 </ol>
 <ul>
 <li>The layers: Basically the same layers as workshop 1, but with larger extents. ** DEM around campus ** Paths based on a provided and expanded extract from Open Street Maps ** Bike racks: A csv file hosted on ArcGIS Online that we will convert to a data layer (or a non-editable data layer that people will do a save-as on)</li>
-<li>Outline of analysis ** Turn the DEM into a slope layer ** trace the inclines of the bike paths ** add bike racks to path interections *** we might need to buffer the bike racks to get them to intersect ** calculate the steepest route from the Library to a</li>
 </ul>
+<ol type="1">
+<li>Starting with our freshly saved version of the map:</li>
+<li>Gather more data: we will add layers to our working map and save it in our own space (to review workshop 1).
+<ul>
+<li>Add <code>SantaBarbara_Merged_roads</code>
+<ul>
+<li>Explore attributes and symbolize accordingly</li>
+</ul></li>
+</ul></li>
+<li>Add DEM (a 1 channel raster)
+<ul>
+<li><code>ucsb_local_dem</code></li>
+<li>Explain data</li>
+<li>Show where it came from</li>
+<li>Explore stats</li>
+<li>callout: Living Atlas raster layers</li>
+</ul></li>
+<li>Add imagery</li>
+<li>Move on to more vectors
+<ul>
+<li>we discussed putting bus stops and trailheads here</li>
+</ul></li>
+</ol>
 </section>
 </section>
 <section id="this-is-more-for-lesson-3-analysis" class="level2">
@@ -223,6 +245,9 @@ ul.task-list li input[type="checkbox"] {
 <pre><code>- Calculate slope from dem (also a one channel raster)
 - Overlay slope onto lines (ie: edit attribute table)
 - Highlight steepest route (max slope)</code></pre>
+<ul>
+<li>Outline of analysis ** Turn the DEM into a slope layer ** trace the inclines of the bike paths ** add bike racks to path interections *** we might need to buffer the bike racks to get them to intersect ** calculate the steepest route from the Library to a</li>
+</ul>
 <p>Once your map has the slope raster and the road layer, go to raster analysis &gt; Zonal Statistics as Table.</p>
 <p><img src="images/Workshop2/create_max_slope_table.png" class="img-fluid"></p>
 <p>This is going to make a TABLE. Not a layer. Now we join the table back to the line file. Tools &gt; Summarize data &gt; Join Features Use the objectID. It might not be visible in the roads file.</p>
