@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -123,13 +152,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#exploring-data-types-in-arcgis-online" id="toc-exploring-data-types-in-arcgis-online" class="nav-link active" data-scroll-target="#exploring-data-types-in-arcgis-online">Exploring Data Types in ArcGIS Online</a></li>
+  <li><a href="#exploring-data-types-in-arcgis-online" id="toc-exploring-data-types-in-arcgis-online" class="nav-link active" data-scroll-target="#exploring-data-types-in-arcgis-online">Exploring Data Types in ArcGIS Online</a>
+  <ul class="collapse">
+  <li><a href="#annotations-vs.-geospatial-data" id="toc-annotations-vs.-geospatial-data" class="nav-link" data-scroll-target="#annotations-vs.-geospatial-data">Annotations vs.&nbsp;Geospatial Data</a></li>
+  <li><a href="#review-workshop-1-recap" id="toc-review-workshop-1-recap" class="nav-link" data-scroll-target="#review-workshop-1-recap">Review: Workshop 1 Recap</a></li>
+  <li><a href="#types-of-geospatial-data" id="toc-types-of-geospatial-data" class="nav-link" data-scroll-target="#types-of-geospatial-data">Types of Geospatial Data</a></li>
+  <li><a href="#finding-and-adding-data-layers" id="toc-finding-and-adding-data-layers" class="nav-link" data-scroll-target="#finding-and-adding-data-layers">Finding and Adding Data Layers</a></li>
+  </ul></li>
   <li><a href="#narrative" id="toc-narrative" class="nav-link" data-scroll-target="#narrative">Narrative</a>
   <ul class="collapse">
-  <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">Review</a></li>
-  <li><a href="#new-material" id="toc-new-material" class="nav-link" data-scroll-target="#new-material">New Material</a></li>
+  <li><a href="#the-story" id="toc-the-story" class="nav-link" data-scroll-target="#the-story">The Story</a></li>
   </ul></li>
-  <li><a href="#this-is-more-for-lesson-3-analysis" id="toc-this-is-more-for-lesson-3-analysis" class="nav-link" data-scroll-target="#this-is-more-for-lesson-3-analysis">This is more for lesson 3: Analysis</a></li>
+  <li><a href="#adding-new-material-to-an-old-map" id="toc-adding-new-material-to-an-old-map" class="nav-link" data-scroll-target="#adding-new-material-to-an-old-map">Adding New Material to an Old Map</a>
+  <ul class="collapse">
+  <li><a href="#add-roads" id="toc-add-roads" class="nav-link" data-scroll-target="#add-roads">Add Roads</a></li>
+  <li><a href="#digital-elevation-models-dem" id="toc-digital-elevation-models-dem" class="nav-link" data-scroll-target="#digital-elevation-models-dem">Digital Elevation Models (DEM)</a></li>
+  <li><a href="#layer-management-rasters-and-additional-vectors" id="toc-layer-management-rasters-and-additional-vectors" class="nav-link" data-scroll-target="#layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</a></li>
+  </ul></li>
+  <li><a href="#satellite-view" id="toc-satellite-view" class="nav-link" data-scroll-target="#satellite-view">Satellite view</a></li>
+  <li><a href="#vector-layers" id="toc-vector-layers" class="nav-link" data-scroll-target="#vector-layers">Vector Layers</a></li>
+  <li><a href="#looking-ahead-spatial-analysis-preview-for-workshop-3" id="toc-looking-ahead-spatial-analysis-preview-for-workshop-3" class="nav-link" data-scroll-target="#looking-ahead-spatial-analysis-preview-for-workshop-3">Looking Ahead: Spatial Analysis (Preview for Workshop 3)</a>
+  <ul class="collapse">
+  <li><a href="#analysis-workflow-overview" id="toc-analysis-workflow-overview" class="nav-link" data-scroll-target="#analysis-workflow-overview">Analysis Workflow Overview</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -157,104 +202,187 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="exploring-data-types-in-arcgis-online" class="level2">
 <h2 class="anchored" data-anchor-id="exploring-data-types-in-arcgis-online">Exploring Data Types in ArcGIS Online</h2>
-<p>This lesson will focus more on the different types of data available in ArcGIS Online, and how to import your own data.</p>
-<p>Annotation vs geospatial data - using feature data layers rather than sketches (Did we really do sketches in part 1?)</p>
+<p>This lesson focuses on understanding the different types of geographic data available in ArcGIS Online and learning how to import and work with your own data.</p>
+<section id="annotations-vs.-geospatial-data" class="level3">
+<h3 class="anchored" data-anchor-id="annotations-vs.-geospatial-data">Annotations vs.&nbsp;Geospatial Data</h3>
+<p>In Workshop 1, we introduced sketch layers to draw points, lines, and polygons directly on top of the map. While sketches are convenient for quick markups and annotations, they are not true GIS data layers. Sketches lack an underlying database table and cannot be queried, filtered, or used in spatial analysis.</p>
+<p>In contrast, <strong>geospatial feature layers</strong> link spatial geometries (points, lines, or polygons) to structured records in an <strong>attribute table</strong>. Each feature has defined attribute fields (e.g., name, speed limit, road type, elevation) with specific data types (such as text strings, integers, floats, and dates). This tabular structure makes it possible to filter features, symbolize data based on attributes, and calculate new spatial relationships.</p>
+</section>
+<section id="review-workshop-1-recap" class="level3">
+<h3 class="anchored" data-anchor-id="review-workshop-1-recap">Review: Workshop 1 Recap</h3>
+<ol type="1">
+<li>Open and explore the completed map from Workshop 1 (<code>Workshop campus bike map</code>).</li>
+<li>Review layer symbology and experiment with the style sliders (such as Counts &amp; Amounts).</li>
+<li>Perform a <strong>Save As</strong> before moving forward so each participant has their own working map copy saved in their personal ArcGIS Online workspace.</li>
+</ol>
+</section>
+<section id="types-of-geospatial-data" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-geospatial-data">Types of Geospatial Data</h3>
+<p>Geographic data generally falls into two primary models: <strong>vector</strong> and <strong>raster</strong>.</p>
+<section id="vector-data" class="level4">
+<h4 class="anchored" data-anchor-id="vector-data">Vector Data</h4>
+<p>Vector data represents discrete geographic features using coordinate geometry:</p>
 <ul>
-<li>Raster versus vector data</li>
-<li>Living Atlas data</li>
-<li>Import &amp; export</li>
+<li><strong>Points</strong>: Single <span class="math inline">\((X, Y)\)</span> coordinate pairs representing discrete locations (e.g., bike racks, bus stops, accident locations).</li>
+<li><strong>Lines (Polylines)</strong>: Ordered sequences of vertices connecting locations to represent linear features or networks (e.g., bike paths, roads, transit routes, streams).</li>
+<li><strong>Polygons</strong>: Closed shapes enclosing an area defined by connected coordinate vertices (e.g., campus buildings, land parcels, parks, water bodies).</li>
 </ul>
-<p>Raster/DEM - Lat/Long CSV file - uploading your own dataset and/or finding a dataset in living atlas</p>
-<p>Features have attributes - a data table/tabular data - columns have fixed data types (a lot of them) - for example bikes</p>
-<p>Raster/DEM - Lat/Long CSV file - uploading your own dataset and/or finding a dataset in living atlas</p>
-<p>Types of data:</p>
+<p>Every shape is tied to a row in an attribute table, where each column holds specific properties describing that feature. For example …</p>
+</section>
+<section id="raster-data" class="level4">
+<h4 class="anchored" data-anchor-id="raster-data">Raster Data</h4>
+<p>Raster data represents continuous phenomena across the landscape as a regular grid of square cells (pixels) organized into rows and columns:</p>
 <ul>
-<li>Vector: Difference between point, line, and polygon</li>
-<li>Raster: an array of values that can be used
-<ul>
-<li>Single band</li>
-<li>Multibands</li>
-</ul></li>
+<li><strong>Single-band rasters</strong>: Each pixel contains a single numerical value representing a continuous measurement (such as elevation in a Digital Elevation Model [DEM], slope, or temperature) or an integer code representing a category (such as land cover types).</li>
+<li><strong>Multi-band rasters</strong>: Each pixel contains multiple values across different spectral channels or bands (such as red, green, blue, and near-infrared bands in aerial photography or satellite imagery).</li>
 </ul>
-<p>How to add a new data layer: - Import point data from a csv, lat/long csv file - Raster/DEM - Importing or uploading a dataset vs finding a good dataset in living atlas</p>
+</section>
+</section>
+<section id="finding-and-adding-data-layers" class="level3">
+<h3 class="anchored" data-anchor-id="finding-and-adding-data-layers">Finding and Adding Data Layers</h3>
+<p>You can bring data into ArcGIS Online through several avenues:</p>
 <ul>
-<li>Facilities data (buildings)</li>
-<li>DEM (expanded to the foothills)</li>
-<li>Bike paths (a newly extended to roads version)</li>
-<li>Bus stops (lat-long csv file. for when you get tired)</li>
+<li><strong>Importing Tabular Data (CSV)</strong>: Import spreadsheet files containing latitude and longitude coordinates (e.g., bus stops or bike racks) and convert them directly into point feature layers.</li>
+<li><strong>Uploading Spatial Datasets</strong>: Upload spatial files from your local computer (such as Shapefiles, GeoJSON, or rasters) to publish them as hosted feature layers.</li>
+<li><strong>Living Atlas of the World</strong>: Browse and add datasets from Esri’s repository of global GIS data, including environmental, demographic statistics, infrastructure networks, and satellite imagery.</li>
 </ul>
-<p>Esri ArcGIS Online Credits:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Esri ArcGIS Online Credits
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><p>All ArcGIS Online accounts created under the UCSB site license are allocated <strong>1000 service credits</strong> per license year.</p></li>
-<li><p>Transactions: Some analysis operations use credits. For more information, visit Esri’s <a href="https://doc.arcgis.com/en/arcgis-online/administer/credits.htm">Understand Credits</a> Page.</p></li>
-<li><p>Manage your content: Periodically review and delete unnecessary content.</p></li>
-<li><p>Data Stewardship: Objects stored in ArcGIS Online should be considered ephemeral. The content depends on your access to the UCSB Library’s Higher Education Site License.</p></li>
+<li>All ArcGIS Online accounts created under the UCSB site license are allocated <strong>1000 service credits</strong> per license year.</li>
+<li><strong>Transactions</strong>: Some analysis operations and storage consume service credits. For more information, visit Esri’s <a href="https://doc.arcgis.com/en/arcgis-online/administer/credits.htm">Understand Credits</a> page.</li>
+<li><strong>Manage your content</strong>: Periodically review and delete unnecessary hosted layers and analysis outputs to conserve credits.</li>
+<li><strong>Data Stewardship</strong>: Objects stored in ArcGIS Online should be considered ephemeral. Your content access depends on the UCSB Library’s Higher Education Site License.</li>
 </ul>
+</div>
+</div>
+</section>
 </section>
 <section id="narrative" class="level2">
 <h2 class="anchored" data-anchor-id="narrative">Narrative</h2>
-<ul>
-<li>The story: we want to route a steep, safe bike ride off campus</li>
-</ul>
-<section id="review" class="level3">
-<h3 class="anchored" data-anchor-id="review">Review</h3>
-<ol type="1">
-<li>Explore data from the finished bike map in Lesson 1</li>
-<li>Play with slider: Counts &amp; Amounts</li>
-<li>Do a ‘save as’ before moving on so that each Learner has their own map. Save that map into your own space.</li>
-</ol>
-</section>
-<section id="new-material" class="level3">
-<h3 class="anchored" data-anchor-id="new-material">New Material</h3>
-<ol type="1">
-<li>Our finished product is <code>Workshop Goleta bike map</code>
-<ul>
-<li>we will take time to preview it here before building it</li>
-</ul></li>
-</ol>
-<ul>
-<li>The layers: Basically the same layers as workshop 1, but with larger extents. ** DEM around campus ** Paths based on a provided and expanded extract from Open Street Maps ** Bike racks: A csv file hosted on ArcGIS Online that we will convert to a data layer (or a non-editable data layer that people will do a save-as on)</li>
-</ul>
-<ol type="1">
-<li>Starting with our freshly saved version of the map:</li>
-<li>Gather more data: we will add layers to our working map and save it in our own space (to review workshop 1).
-<ul>
-<li>Add <code>SantaBarbara_Merged_roads</code>
-<ul>
-<li>Explore attributes and symbolize accordingly</li>
-</ul></li>
-</ul></li>
-<li>Add DEM (a 1 channel raster)
-<ul>
-<li><code>ucsb_local_dem</code></li>
-<li>Explain data</li>
-<li>Show where it came from</li>
-<li>Explore stats</li>
-<li>callout: Living Atlas raster layers</li>
-</ul></li>
-<li>Add imagery</li>
-<li>Move on to more vectors
-<ul>
-<li>we discussed putting bus stops and trailheads here</li>
-</ul></li>
-</ol>
+<section id="the-story" class="level3">
+<h3 class="anchored" data-anchor-id="the-story">The Story</h3>
+<p>Our goal is to plan a scenic, safe, and challenging bicycle route that leads from the UCSB campus into the surrounding Goleta community and the Santa Ynez foothills. To accomplish this, we need to expand beyond campus bike paths and incorporate regional road networks along with elevation data to analyze terrain and slope.</p>
 </section>
 </section>
-<section id="this-is-more-for-lesson-3-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="this-is-more-for-lesson-3-analysis">This is more for lesson 3: Analysis</h2>
-<pre><code>- Calculate slope from dem (also a one channel raster)
-- Overlay slope onto lines (ie: edit attribute table)
-- Highlight steepest route (max slope)</code></pre>
+<section id="adding-new-material-to-an-old-map" class="level2">
+<h2 class="anchored" data-anchor-id="adding-new-material-to-an-old-map">Adding New Material to an Old Map</h2>
+<p>Our finished product for this session will be the <code>Workshop Goleta bike map</code>. We will take time to preview this finished map before building it step by step.</p>
+<p>** link and screenshot of finished map goes here. **</p>
+<p>The layers we will work with expand upon Workshop 1 with a wider geographic extent:</p>
 <ul>
-<li>Outline of analysis ** Turn the DEM into a slope layer ** trace the inclines of the bike paths ** add bike racks to path interections *** we might need to buffer the bike racks to get them to intersect ** calculate the steepest route from the Library to a</li>
+<li><strong>Roads and Paths</strong>: An expanded street and bicycle path network covering the Goleta and Santa Barbara area, extracted from OpenStreetMap.</li>
+<li><strong>Digital Elevation Model (DEM)</strong>: A raster layer covering campus, the coastal plain, and extending into the foothills.</li>
+<li><strong>Transit</strong>: We may get tired, so we will add bus stops to our map in case we need to put our bike on the bus to get back to campus. We will create this layer from a CSV file.</li>
 </ul>
-<p>Once your map has the slope raster and the road layer, go to raster analysis &gt; Zonal Statistics as Table.</p>
+<section id="add-roads" class="level3">
+<h3 class="anchored" data-anchor-id="add-roads">Add Roads</h3>
+<p>To examine routes beyond campus, we zoom out to the broader regional area:</p>
+<ol type="1">
+<li>Start with your freshly saved copy of the map in your personal workspace.</li>
+<li>Add the <code>SantaBarbara_Merged_roads</code> layer from your organization or the workshop group.</li>
+<li>Open the attribute table to inspect fields such as highway classification, road surface, and speed limits, and symbolize the roads to distinguish bike-friendly streets from arterial highways.</li>
+</ol>
+</section>
+<section id="digital-elevation-models-dem" class="level3">
+<h3 class="anchored" data-anchor-id="digital-elevation-models-dem">Digital Elevation Models (DEM)</h3>
+<p>Next, we add a Digital Elevation Model: <code>ucsb_local_dem</code>.</p>
+<section id="what-is-a-dem" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-a-dem">What is a DEM?</h4>
+<p>A <strong>Digital Elevation Model (DEM)</strong> is a single-band continuous raster where each cell represents bare-earth surface elevation relative to a vertical datum (mean sea level). The <code>ucsb_local_dem</code> dataset covers the UCSB campus, Goleta Slough, and the rising Santa Ynez foothills, derived from high-resolution USGS 3D Elevation Program (3DEP) LiDAR surveys.</p>
+<p>In the layer properties, explore the raster statistics: note the minimum elevation near sea level (0) along the coast and slough, rising to hundreds of feet in the foothills, as well as the grid cell resolution. (make sure we are feet and not meters)</p>
+</section>
+<section id="applying-color-schemes" class="level4">
+<h4 class="anchored" data-anchor-id="applying-color-schemes">Applying Color Schemes</h4>
+<p>By default, continuous raster layers display using a grayscale “Stretch” renderer (low values dark, high values light). To clearly distinguish elevation changes across the coastal plain and mountains, let’s change the symbology to a continuous or diverging color ramp (e.g., a below-and-above zero diverging ramp or an elevation palette).</p>
+<p><img src="images/Workshop2/dem_options.png" class="img-fluid"></p>
+</section>
+<section id="creating-shaded-relief-hillshade-on-the-fly" class="level4">
+<h4 class="anchored" data-anchor-id="creating-shaded-relief-hillshade-on-the-fly">Creating Shaded Relief (Hillshade) on the Fly</h4>
+<p>To give the terrain realistic three-dimensional depth and surface texture, we can generate a shaded relief visualization dynamically:</p>
+<ol type="1">
+<li>Duplicate the <code>ucsb_local_dem</code> layer.</li>
+<li>Rename the two DEM layers for clarity: name the top layer <code>Elevation (Color)</code> and the bottom layer <code>Elevation (Shaded Relief)</code>.</li>
+<li>Change the symbology style to <strong>Shaded Relief</strong>.</li>
+</ol>
+<section id="lighting-our-terrain" class="level5">
+<h5 class="anchored" data-anchor-id="lighting-our-terrain">Lighting our terrain</h5>
+<p>Shaded relief simulates how sunlight illuminates terrain, casting shadows based on the position of the sun measured as two angles: Azimuth and Altitude</p>
+<ul>
+<li><strong>Azimuth</strong>: The compass direction from which the illumination source (the sun) originates, measured in degrees clockwise from north (0° = North, 90° = East, 180° = South, 270° = West). In cartography, the sun is traditionally positioned in the northwest (315°) or west (270°) to match how the human brain interprets light and shadow, preventing an optical illusion known as “relief inversion” where mountains appear as valleys. For our map, we position the light source from the west.</li>
+<li><strong>Altitude</strong>: The angle of the sun above the horizon, measured from 0° (level with the horizon at sunrise/sunset) to 90° (directly overhead at solar noon). A lower altitude (e.g., 30°–45°, typical of low winter sun) produces longer, more dramatic shadows that accentuate ridgelines, canyons, and valleys.</li>
+</ul>
+<p><img src="images/Workshop2/relief_options.png" class="img-fluid"></p>
+<p>Adjust the transparency of the top colored elevation layer so the shaded relief beneath shows through, creating an illuminated 3D terrain effect under our roads.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Workshop2/western_light.png" class="img-fluid figure-img" alt="A rainbow colored hillshaded map with roads showing the software interface"></p>
+<figcaption>Current status of our map with colored DEM and shaded relief</figcaption>
+</figure>
+</div>
+<p>Save your map at this point.</p>
+</section>
+</section>
+</section>
+<section id="layer-management-rasters-and-additional-vectors" class="level3">
+<h3 class="anchored" data-anchor-id="layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</h3>
+<ol type="1">
+<li><strong>Re-order layers</strong>: Ensure vector layers (roads and paths) remain on top of the raster elevation layers in the layer stack so they are not hidden.</li>
+<li><strong>Categorical Rasters vs.&nbsp;Continuous Rasters</strong>:
+<ul>
+<li>While elevation is a <strong>continuous raster</strong> (values change smoothly along a numerical gradient), other rasters are <strong>categorical rasters</strong> (e.g., land cover classification datasets from the Living Atlas, where integer cell values represent categories such as urban development, forest, or water). ** let’s be adding one here **</li>
+</ul></li>
+<li><strong>Imagery Layers vs.&nbsp;Basemaps</strong>:
+<ul>
+<li>An <strong>basemap</strong> sits at the bottom of the map canvas, serving purely as a static background context. Esri has options that are satellite and aerial views.</li>
+<li>An <strong>imagery layer</strong> is a data layer added to your map stack. It can be re-ordered above or below other layers, adjusted with transparency and blend modes, queried for pixel values, and analyze for groundcover characteristics.</li>
+<li>Below we will add a Planet satellite view to campus to explore.</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="satellite-view" class="level2">
+<h2 class="anchored" data-anchor-id="satellite-view">Satellite view</h2>
+</section>
+<section id="vector-layers" class="level2">
+<h2 class="anchored" data-anchor-id="vector-layers">Vector Layers</h2>
+<pre><code>- Import bus stops or trailheads from a CSV spreadsheet using
+  coordinate columns (latitude and longitude) to see how external
+  tabular data integrates with existing road and elevation layers.
+- Refresh memory on building layer
+- Add a living atlas layer?</code></pre>
+</section>
+<section id="looking-ahead-spatial-analysis-preview-for-workshop-3" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead-spatial-analysis-preview-for-workshop-3">Looking Ahead: Spatial Analysis (Preview for Workshop 3)</h2>
+<p>In Workshop 3, we dive deeper into quantitative spatial analysis. The data layers we prepared today form the foundation for analyzing terrain and route difficulty:</p>
+<pre><code>- Calculate slope from the DEM (a single-channel continuous raster measuring steepness)
+- Overlay slope values onto road segments
+- Identify and highlight the steepest climbs (maximum slope)</code></pre>
+<section id="analysis-workflow-overview" class="level3">
+<h3 class="anchored" data-anchor-id="analysis-workflow-overview">Analysis Workflow Overview</h3>
+<ol type="1">
+<li><strong>Slope Calculation</strong>: Use raster analysis tools to calculate a slope raster from the DEM, expressing terrain steepness in degrees or percent rise.</li>
+<li><strong>Zonal Statistics as Table</strong>: With the slope raster and the road network loaded, run <strong>Raster Analysis &gt; Zonal Statistics as Table</strong> to compute summary statistics (such as the maximum or mean slope) for each road line.</li>
+</ol>
 <p><img src="images/Workshop2/create_max_slope_table.png" class="img-fluid"></p>
-<p>This is going to make a TABLE. Not a layer. Now we join the table back to the line file. Tools &gt; Summarize data &gt; Join Features Use the objectID. It might not be visible in the roads file.</p>
+<ol start="3" type="1">
+<li><strong>Joining Statistics to Roads</strong>: The zonal statistics tool outputs a standalone data table. To visualize these slope measurements on the map, join the table back to the road vector layer using <strong>Tools &gt; Summarize data &gt; Join Features</strong>, matching on a common identifier such as <code>OBJECTID</code>.</li>
+</ol>
 <p><img src="images/Workshop2/roads_over_slope.png" class="img-fluid"></p>
-<p>….</p>
+<ol start="4" type="1">
+<li>Once joined, roads can be symbolized by slope steepness, allowing us to pinpoint the steepest hill climbs for our ride!</li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
