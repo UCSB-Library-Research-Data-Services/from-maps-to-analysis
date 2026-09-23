@@ -5,11 +5,13 @@ editor:
     wrap: 72
 ---
 
-## Let's Explore Data
+## Exploring Data Types in ArcGIS Online
 
-Focus more on data - Flush out what we want the end product to look like
+This lesson will focus more on the different types of data available
+in ArcGIS Online, and how to import your own data.
 
-Annotation vs geospatial data - importing rather than sketching layers
+Annotation vs geospatial data - using feature data layers 
+rather than sketches  (Did we really do sketches in part 1?)
 
 - Raster versus vector data
 - Living Atlas data 
@@ -20,6 +22,9 @@ and/or finding a dataset in living atlas
   
 Features have attributes - a data table/tabular data - columns have
 fixed data types (a lot of them) - for example bikes
+
+Raster/DEM - Lat/Long CSV file - uploading your own dataset and/or
+finding a dataset in living atlas
 
 Types of data:
 
