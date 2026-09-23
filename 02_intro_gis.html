@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>More Kinds of Data – From Maps to Analysis</title>
+<title>Let’s Explore Data – From Maps to Analysis</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-17e5a23d094ee4d3ea1f9bf67e0e3d54.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6d52a55975b835fb0846f9cf10f3a175.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-196ea5643f3b265196950277884207f5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./02_intro_gis.html" aria-current="page"> 
-<span class="menu-text">I think I need GIS</span></a>
+<span class="menu-text">Exploring data</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
@@ -123,10 +123,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#exploring-data-types-in-arcgis-online" id="toc-exploring-data-types-in-arcgis-online" class="nav-link active" data-scroll-target="#exploring-data-types-in-arcgis-online">Exploring Data Types in ArcGIS Online</a>
+  <li><a href="#exploring-data-types-in-arcgis-online" id="toc-exploring-data-types-in-arcgis-online" class="nav-link active" data-scroll-target="#exploring-data-types-in-arcgis-online">Exploring Data Types in ArcGIS Online</a></li>
+  <li><a href="#narrative" id="toc-narrative" class="nav-link" data-scroll-target="#narrative">Narrative</a>
   <ul class="collapse">
-  <li><a href="#narrative" id="toc-narrative" class="nav-link" data-scroll-target="#narrative">Narrative</a></li>
+  <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">Review</a></li>
+  <li><a href="#new-material" id="toc-new-material" class="nav-link" data-scroll-target="#new-material">New Material</a></li>
   </ul></li>
+  <li><a href="#this-is-more-for-lesson-3-analysis" id="toc-this-is-more-for-lesson-3-analysis" class="nav-link" data-scroll-target="#this-is-more-for-lesson-3-analysis">This is more for lesson 3: Analysis</a></li>
   </ul>
 </nav>
     </div>
@@ -135,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">More Kinds of Data</h1>
+<h1 class="title">Let’s Explore Data</h1>
 </div>
 
 
@@ -155,7 +158,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="exploring-data-types-in-arcgis-online" class="level2">
 <h2 class="anchored" data-anchor-id="exploring-data-types-in-arcgis-online">Exploring Data Types in ArcGIS Online</h2>
 <p>This lesson will focus more on the different types of data available in ArcGIS Online, and how to import your own data.</p>
-<p>Annotation vs geospatial data - using feature data layers rather than sketches</p>
+<p>Annotation vs geospatial data - using feature data layers rather than sketches (Did we really do sketches in part 1?)</p>
+<ul>
+<li>Raster versus vector data</li>
+<li>Living Atlas data</li>
+<li>Import &amp; export</li>
+</ul>
+<p>Raster/DEM - Lat/Long CSV file - uploading your own dataset and/or finding a dataset in living atlas</p>
 <p>Features have attributes - a data table/tabular data - columns have fixed data types (a lot of them) - for example bikes</p>
 <p>Raster/DEM - Lat/Long CSV file - uploading your own dataset and/or finding a dataset in living atlas</p>
 <p>Types of data:</p>
@@ -181,21 +190,39 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Manage your content: Periodically review and delete unnecessary content.</p></li>
 <li><p>Data Stewardship: Objects stored in ArcGIS Online should be considered ephemeral. The content depends on your access to the UCSB Library’s Higher Education Site License.</p></li>
 </ul>
-<section id="narrative" class="level3">
-<h3 class="anchored" data-anchor-id="narrative">Narrative</h3>
+</section>
+<section id="narrative" class="level2">
+<h2 class="anchored" data-anchor-id="narrative">Narrative</h2>
 <ul>
 <li>The story: we want to route a steep, safe bike ride off campus</li>
+</ul>
+<section id="review" class="level3">
+<h3 class="anchored" data-anchor-id="review">Review</h3>
+<ol type="1">
+<li>Explore data from the finished bike map in Lesson 1</li>
+</ol>
+</section>
+<section id="new-material" class="level3">
+<h3 class="anchored" data-anchor-id="new-material">New Material</h3>
+<ol type="1">
+<li>Save that map into your own space <code>hill_biking</code></li>
 <li>Gather more data: we will add layers to our working map and save it in our own space (to review workshop 1).
 <ul>
-<li>Add DEM</li>
-<li>Calculate slope from dem</li>
-<li>Overlay slope onto lines (ie: edit attribute table)</li>
-<li>Highlight steepest route (max slope)</li>
+<li>Add DEM (a 1 channel raster)</li>
 <li>Play with slider: Counts &amp; Amounts</li>
 </ul></li>
+</ol>
+<ul>
 <li>The layers: Basically the same layers as workshop 1, but with larger extents. ** DEM around campus ** Paths based on a provided and expanded extract from Open Street Maps ** Bike racks: A csv file hosted on ArcGIS Online that we will convert to a data layer (or a non-editable data layer that people will do a save-as on)</li>
 <li>Outline of analysis ** Turn the DEM into a slope layer ** trace the inclines of the bike paths ** add bike racks to path interections *** we might need to buffer the bike racks to get them to intersect ** calculate the steepest route from the Library to a</li>
 </ul>
+</section>
+</section>
+<section id="this-is-more-for-lesson-3-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="this-is-more-for-lesson-3-analysis">This is more for lesson 3: Analysis</h2>
+<pre><code>- Calculate slope from dem (also a one channel raster)
+- Overlay slope onto lines (ie: edit attribute table)
+- Highlight steepest route (max slope)</code></pre>
 <p>Once your map has the slope raster and the road layer, go to raster analysis &gt; Zonal Statistics as Table.</p>
 <p><img src="images/Workshop2/create_max_slope_table.png" class="img-fluid"></p>
 <p>This is going to make a TABLE. Not a layer. Now we join the table back to the line file. Tools &gt; Summarize data &gt; Join Features Use the objectID. It might not be visible in the roads file.</p>
@@ -203,7 +230,6 @@ ul.task-list li input[type="checkbox"] {
 <p>….</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
