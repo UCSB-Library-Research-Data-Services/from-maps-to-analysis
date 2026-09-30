@@ -239,15 +239,17 @@ Save your map at this point.
 
 ## Satellite view
 
+- placeholder for Planet image of Goleta- 
+
 ##  Vector Layers
     - Import bus stops or trailheads from a CSV spreadsheet using
       coordinate columns (latitude and longitude) to see how external
       tabular data integrates with existing road and elevation layers.
     - Refresh memory on building layer
-    - Add a living atlas layer?
+    - 
 
 
-## Looking Ahead: Spatial Analysis (Preview for Workshop 3)
+## Preview for Workshop 3: Looking Ahead to Spatial Analysis
 
 In Workshop 3, we dive deeper into quantitative spatial analysis. The
 data layers we prepared today form the foundation for analyzing terrain
