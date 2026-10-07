@@ -1,5 +1,5 @@
 ---
-title: "Let's Explore Data" 
+title: "Using your Data" 
 editor: 
   markdown: 
     wrap: 72
