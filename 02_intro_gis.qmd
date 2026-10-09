@@ -122,8 +122,12 @@ geographic extent:
 -   **Trailheads**: We need to find out where the trails are and where
     they start. We will create this layer from a CSV file.
 
-\`let's not forget to tell the Learners what old layers to remove (ie:
-the roads)
+::: callout-note
+### Keeping a clean workspace
+
+let's not forget to remove old layers from the current map (ie: the
+roads)
+:::
 
 ### Add Roads
 
@@ -229,7 +233,8 @@ Save your map at this point.
         **categorical rasters** (e.g., land cover classification
         datasets from the Living Atlas, where integer cell values
         represent categories such as urban development, forest, or
-        water). \*\* let's be adding one here \*\*
+        water).
+    -   \*\* let's be adding one here \*\*
 
 -   JJ living atlas landcover layers screenshot \*
     ![](images/Workshop2/landcover_result.png)
@@ -260,14 +265,26 @@ symbolized with a divergent color scheme.
 
 ## Satellite view
 
--   placeholder for Planet image of Goleta-
+-   placeholder for Planet image of Goleta
 
-## Vector Layers
+## Creating Vector Layers by .CSV files
+
+Import `SantaBarbara_County_Trailheads` from a CSV spreadsheet using
+coordinate columns (latitude and longitude) to see how external tabular
+data integrates with existing road and elevation layers.
+
+Coordinate systems can be divided into two categories: Projected and
+Geographic Coordinate Systems.
+
+-   **Projected** Coordinate Systems use a 2D flat surface to define
+    locations and is always based on a geographic coordinate system.
+    Locations are identified by x,y coordinates.
+
+-   **Geographic** Coordinate Systems use a 3D spherical surface to
+    define locations on earth. A point is referred by its longitude and
+    latitude.
 
 ```         
-- Import trailheads from a CSV spreadsheet using
-  coordinate columns (latitude and longitude) to see how external
-  tabular data integrates with existing road and elevation layers.
 - Refresh memory on building layer
 - 
 ```
