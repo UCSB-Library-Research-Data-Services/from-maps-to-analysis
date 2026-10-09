@@ -7,11 +7,11 @@ editor:
 
 ## Exploring Data Types in ArcGIS Online
 
-This lesson focuses on understanding the different types of geographic
+This lesson focuses on learning more about the different types of geographic
 data available in ArcGIS Online and learning how to import and work with
 your own data.
 
-### Annotations vs. Geospatial Data
+### Summary of Workshop 1: Annotations vs. Geospatial Data
 
 In Workshop 1, we introduced sketch layers to draw points, lines, and
 polygons directly on top of the map. While sketches are convenient for
@@ -27,7 +27,7 @@ strings, numbers, and dates). This tabular structure makes it
 possible to filter features, symbolize data based on its attributes, and
 calculate spatial relationships.
 
-### Review: Workshop 1 Recap
+### Review exercise: Workshop 1 Recap
 
 1.  Open and explore the completed map from Workshop 1
     (`Workshop campus bike map`).
@@ -73,21 +73,6 @@ regular grid of square cells (pixels) organized into rows and columns:
   different spectral channels or bands (such as red, green, blue, and
   near-infrared bands in aerial photography or satellite imagery).
 
-### Finding and Adding Data Layers
-
-You can bring data into ArcGIS Online through several avenues:
-
-- **Importing Tabular Data (CSV)**: Import spreadsheet files containing
-  latitude and longitude coordinates (e.g., bus stops or bike racks) and convert them directly into point feature
-  layers.
-- **Uploading Spatial Datasets**: Upload spatial files from your local
-  computer (such as Shapefiles, GeoJSON, or rasters) to publish them as
-  hosted feature layers.
-- **Living Atlas of the World**: Browse and add datasets from Esri's
-  repository of global GIS data, including
-  environmental, demographic statistics, infrastructure
-  networks, and satellite imagery.
-
 ::: callout-note
 ### Esri ArcGIS Online Credits
 
@@ -104,10 +89,11 @@ You can bring data into ArcGIS Online through several avenues:
   Library's Higher Education Site License.
 :::
 
+
+
 ## Narrative
 
 ### The Story
-
 Our goal is to plan a scenic, safe, and challenging bicycle route that
 leads from the UCSB campus into the surrounding Goleta community and the
 Santa Ynez foothills. To accomplish this, we need to expand beyond
@@ -115,9 +101,8 @@ campus bike paths and incorporate regional road networks along with
 elevation data to analyze terrain and slope.
 
 
-
 ## Adding New Material to an Old Map
-
+### Setting up your workspace
 Our finished product for this session will be the
 `Workshop Goleta bike map`. We will take time to preview this finished
 map before building it step by step.
@@ -125,7 +110,6 @@ map before building it step by step.
 ** link and screenshot of finished map goes here. **
 Work in progress version:
 https://arcg.is/1yz0KP3
-
 
 The layers we will work with expand upon Workshop 1 with a wider
 geographic extent:
@@ -136,6 +120,9 @@ geographic extent:
 - **Digital Elevation Model (DEM)**: A raster layer covering campus, the
   coastal plain, and extending into the foothills.
 - **Transit**: We may get tired, so we will add bus stops to our map in case we need to put our bike on the bus to get back to campus. We will create this layer from a CSV file. 
+
+`let's not forget to tell the Learners what old layers to remove (ie: the roads)
+
 
 ### Add Roads
 
@@ -158,6 +145,8 @@ Next, we add a Digital Elevation Model: `ucsb_local_dem`.
 
 By default, a `single channel` or `one band` raster is displayed as grayscale.
 
+** do we need a screenshot of the DEM as it comes in by default? **
+
 #### What is a DEM?
 
 A **Digital Elevation Model (DEM)** is a single-band continuous raster
@@ -171,6 +160,7 @@ elevation near sea level (0) along the coast and slough, rising
 to hundreds of feet in the foothills, as well as the grid cell
 resolution. (make sure we are feet and not meters)
 
+
 #### Applying Color Schemes
 
 By default, continuous raster layers display using a grayscale "Stretch"
@@ -179,7 +169,6 @@ elevation changes across the coastal plain and mountains, let's change the
 symbology to a continuous or diverging color ramp (e.g., a
 below-and-above zero diverging ramp or an elevation palette).
 
-
 ![](images/Workshop2/dem_options.png)
 
 * insert screenshot of results of divergent DEM
@@ -187,8 +176,8 @@ below-and-above zero diverging ramp or an elevation palette).
 
 
 #### Creating Shaded Relief (Hillshade) on the Fly
-
-To give the terrain realistic three-dimensional depth and surface
+One use for a DEM is to make a shaded relief layer.
+That is a classic view that gives the terrain realistic three-dimensional depth and surface
 texture, we can generate a shaded relief visualization dynamically:
 
 1.  Duplicate the `ucsb_local_dem` layer.
@@ -237,8 +226,16 @@ Save your map at this point.
       as urban development, forest, or water). ** let's be adding one here **
       
 * JJ living atlas landcover layers screenshot *
-      
-      
+![](images/Workshop2/landcover_result.png)
+
+### Introducing slope
+We made this slope layer for you. We learn how it was made in workshop 3
+![](images/Workshop2/roads_over_slope.png)
+Here's that same slope layer symbolized with a divergent color scheme.
+![](images/Workshop2/slope.png)
+
+
+
 ### Layer Management, Rasters, and Additional Vectors
 
 1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
@@ -268,6 +265,9 @@ Save your map at this point.
       tabular data integrates with existing road and elevation layers.
     - Refresh memory on building layer
     - 
+
+## Exporting Data
+How do we get stuff out of there?
 
 
 ## Preview for Workshop 3: Looking Ahead to Spatial Analysis
