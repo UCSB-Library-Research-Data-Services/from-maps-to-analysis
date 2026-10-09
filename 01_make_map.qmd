@@ -26,7 +26,7 @@ Our goal is to develop a map of the UCSB campus that illustrates the current bic
 
 Our final interactive map is also embedded below:
 
-<iframe width="900" height="700" allow="local-network-access; geolocation" title="Workshop campus bike map" src="https://ucsb.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&amp;webmap=2b16d246ee4c4321852712b9b4652b74&amp;theme=light&amp;scroll=false&amp;center=-119.847894,34.414117&amp;scale=9027.977411">
+<iframe width="900" height="700" allow="local-network-access; geolocation" title="Workshop campus bike map" src="https://ucsb.maps.arcgis.com/apps/Embed/index.html?configurableview=true&amp;webmap=2b16d246ee4c4321852712b9b4652b74&amp;theme=light&amp;scroll=false&amp;center=-119.847894,34.414117&amp;scale=9027.977411">
 
 </iframe>
 
