@@ -1,0 +1,485 @@
+full_id,osm_id,osm_type,operator_w,object_str,descriptio,name_en,website,not_networ,addr_stree,addr_state,addr_postc,addr_house,addr_city,direction,designatio,passenger_,level,departures,check_date,ref_signed,routes,bearing,wheelchair,type,tactile_pa,shelter,route_ref,ref,public_tra,operator,network_wi,network__1,network,name,lon,lit,lat,highway,bus,bin,bench
+n451025876,"451025876",node,,,,,,,,,,,,,,,,,,,,,yes,bus stop,no,yes,"11;15x;24x","20",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,UCSB North Hall,"-119.8478447",yes,"34.4152912004",bus_stop,yes,yes,yes
+n451025877,"451025877",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,no,,,platform,"SBMTD;UCSB Shuttle",en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,UCSB Elings Hall,"-119.839665501",,"34.4149290997",bus_stop,yes,,yes
+n631251555,"631251555",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Storke & El Colegio,"-119.8699057",,"34.4179448001",bus_stop,yes,no,yes
+n631253458,"631253458",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"92",platform,SBMTD,,Q7419232,Santa Barbara MTD,El Colegio & Santa Catalina,,no,,bus_stop,yes,no,yes
+n648613521,"648613521",node,,,,,,,,,,,,,,,,,,,"25",E,yes,,no,yes,,"144",platform,SBMTD,,Q7419232,"Santa Barbara MTD;Clean Air Express","SB MTD Hollister and Pacific Oaks;Hollister at Pacific Oaks",,no,,bus_stop,yes,no,yes
+n648613522,"648613522",node,,,,,,,,,,,,,,,,,,no,"25",W,,,no,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,SB MTD Hollister and Pacific Oaks,,no,,bus_stop,yes,no,no
+n648613523,"648613523",node,,,,,,,,,,,,,,,,,,,,E,,,no,yes,,"284",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Camino Real Marketplace,,yes,,bus_stop,yes,yes,yes
+n648613524,"648613524",node,,,,,,,,,,,,,,,,,,,"25",N,,,,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Los Carneros and El Colegio,,,,bus_stop,yes,,
+n648613525,"648613525",node,,,,,,,,,,,,,,,,,,,,,yes,bus stop,no,no,"15x;23;24x;25;27","42",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,"Santa Barbara MTD;UCSB Shuttle",UCSB North Hall,"-119.848107",yes,"34.4149611001",bus_stop,yes,yes,yes
+n648613527,"648613527",node,,,,,,,,,,,,,,,,,,,"11, 15x, 23, 24x, 25",SE,yes,,no,no,,"719",platform,SBMTD,,Q7419232,Santa Barbara MTD,El Colegio & Stadium Road,,yes,,bus_stop,yes,no,yes
+n648613528,"648613528",node,,,,,,,,,,,,,,,,,,,,W,,,no,yes,,"928",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Storke,,yes,,bus_stop,yes,yes,yes
+n648613529,"648613529",node,,,,,,,,,,,,,,,,,,,"25",W,,,no,no,,"312",platform,SBMTD,,Q7419232,Santa Barbara MTD,SB MTD Hollister and Cannon Green,,no,,bus_stop,yes,no,yes
+n648613530,"648613530",node,,,,,,,,,,,,,,,,,,,"25",W,,,no,no,,"959",platform,SBMTD,,Q7419232,Santa Barbara MTD,SB MTD Hollister and Entrance,,no,,bus_stop,yes,yes,yes
+n648613531,"648613531",node,,,,,,,,,,,,,,,,,,,"25",E,,,no,no,,"110",platform,SBMTD,,Q7419232,Santa Barbara MTD,SB MTD Hollister and Entrance,,no,,bus_stop,yes,yes,yes
+n648613534,"648613534",node,,,,,,,,,,,,,,,,,,no,,,yes,,no,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Los Carneros Road,,yes,,bus_stop,yes,yes,yes
+n652671178,"652671178",node,,,,,,,,,,,,,,,,,,,"25",E,,,no,no,,"753",platform,SBMTD,,Q7419232,Santa Barbara MTD,SB MTD Hollister and Cannon Green,,no,,bus_stop,yes,yes,yes
+n652671181,"652671181",node,,,,,,,,,,,,,,,,,,,"11, 15x, 23, 24x, 25",W,yes,,no,yes,,"336",platform,SBMTD,,Q7419232,Santa Barbara MTD,El Colegio & Stadium Road,,yes,,bus_stop,yes,no,yes
+n652671184,"652671184",node,,,,,,,,,,,,,,,,,,,"11, 23, 24x, 25",W,yes,,no,yes,,"1063",platform,SBMTD,,Q7419232,Santa Barbara MTD,El Colegio & Embarcadero del Mar,,yes,,bus_stop,yes,no,yes
+n652671195,"652671195",node,,,,,,,,,,,,,,,,,,,,W,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Glen Annie,,,,bus_stop,yes,,yes
+n652671224,"652671224",node,,,,,,,,,,,,,,,,,,,"25",S,,,,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Los Carneros and El Colegio,,,,bus_stop,yes,,
+n653114431,"653114431",node,,,,,,,,,,,,,,,,,,,,S,,bus stop,no,yes,,"26",platform,SBMTD,,Q7419232,Santa Barbara MTD,Storke & Hollister,"-119.8698512",yes,"34.4296336996",bus_stop,yes,yes,yes
+n672581783,"672581783",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"252",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Calle Laureles,,,,bus_stop,yes,,yes
+n672581787,"672581787",node,,,,,,,,,,,,,,,,,2026-09-06,,,,,,no,no,,"814",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Calle Laureles,,,,bus_stop,yes,yes,yes
+n672581929,"672581929",node,,,,,,,,,,,,,,,,,2026-06-22,,,,,,,no,,"584",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Alamar,,,,bus_stop,yes,,yes
+n672581930,"672581930",node,,,,,,,,,,,,,,,,,2026-07-09,,,,,,no,yes,,"251",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Alamar,,,,bus_stop,yes,yes,yes
+n874856613,"874856613",node,,,,,,,,,,,,,,,,,,,,,,,,yes,"12x;21x;24x","4",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Transit Center (express routes),,,,bus_stop,yes,,yes
+n874969279,"874969279",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"667",platform,SBMTD,,Q7419232,Santa Barbara MTD,Carrillo & Bath,,,,bus_stop,yes,,yes
+n874969289,"874969289",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Chapala & Anapamu,,,,bus_stop,yes,,yes
+n874969309,"874969309",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Chapala & Sola,,,,bus_stop,yes,,yes
+n874969315,"874969315",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"390",platform,SBMTD,,Q7419232,Santa Barbara MTD,Arrellaga & De la Vina,,no,,bus_stop,yes,yes,yes
+n874969322,"874969322",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Arrellaga & Castillo,,,,bus_stop,yes,yes,yes
+n875151333,"875151333",node,,,,,,,,,,,,,,,,no,,,,,yes,,no,yes,,"373",platform,SBMTD,,Q7419232,Santa Barbara MTD,Storke & Phelps,,no,,bus_stop,yes,yes,yes
+n875151337,"875151337",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,no,,"1069",platform,SBMTD,,Q7419232,Santa Barbara MTD,El Colegio & Camino Corto,"-119.8656439",no,"34.417513",bus_stop,yes,no,no
+n875151338,"875151338",node,,,,,,,,,,,,,,,,,,,,,yes,,no,yes,,"1064",platform,SBMTD,,Q7419232,Santa Barbara MTD,El Colegio & Los Carneros,,yes,,bus_stop,yes,no,yes
+n875151342,"875151342",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"372",platform,SBMTD,,Q7419232,Santa Barbara MTD,Storke & Whittier,,no,,bus_stop,yes,no,no
+n875151348,"875151348",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,yes,,"876",platform,SBMTD,,Q7419232,Santa Barbara MTD,Storke & El Colegio,"-119.8696665",no,"34.4183319998",bus_stop,yes,no,yes
+n875151358,"875151358",node,,,,,,,,,,,,,,,,timetable,,,,,yes,bus stop,no,no,,"374",platform,SBMTD,,Q7419232,Santa Barbara MTD,Storke & Santa Felicia,"-119.8695026",yes,"34.4267199999",bus_stop,yes,no,no
+n875230184,"875230184",node,,,,,,,,,,,,,,,,timetable,,,,,yes,,no,no,,"108",platform,SBMTD,,Q7419232,Santa Barbara MTD,Storke & Hollister,,no,,bus_stop,yes,yes,yes
+n875230190,"875230190",node,,,,,,,,,,,,,,,,,,,,,yes,,no,no,,"281",platform,SBMTD,,Q7419232,Santa Barbara MTD,Storke & Market Place Drive,,no,,bus_stop,yes,yes,yes
+n875230195,"875230195",node,,,,,,,,,,,,,,,,,,,,,yes,,no,no,,"1065",platform,SBMTD,,Q7419232,Santa Barbara MTD,El Colegio & Los Carneros,,yes,,bus_stop,yes,no,no
+n875230204,"875230204",node,,,,,,,,,,,,,,,,,,,,,yes,,no,no,,"877",platform,SBMTD,,Q7419232,Santa Barbara MTD,Storke & Santa Felicia,,no,,bus_stop,yes,no,no
+n875230205,"875230205",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"879",platform,SBMTD,,Q7419232,Santa Barbara MTD,Storke & Phelps,,no,,bus_stop,yes,yes,no
+n889536240,"889536240",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Bath & Micheltorena,,,,bus_stop,yes,yes,yes
+n889536245,"889536245",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"831",platform,SBMTD,,Q7419232,Santa Barbara MTD,State & Ontare,,,,bus_stop,yes,yes,yes
+n889536248,"889536248",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Treasure,,,,bus_stop,yes,,no
+n889536253,"889536253",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,De la Vina & Victoria,,,,bus_stop,yes,,yes
+n889536257,"889536257",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"397",platform,SBMTD,,Q7419232,Santa Barbara MTD,Bath & Valerio,,no,,bus_stop,yes,yes,yes
+n889536263,"889536263",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"327",platform,SBMTD,,Q7419232,Santa Barbara MTD,Bath & Los Olivos,,no,,bus_stop,yes,no,yes
+n889536266,"889536266",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"295",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Hitchcock,,,,bus_stop,yes,yes,yes
+n889536271,"889536271",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Junipero & Castillo,,,,bus_stop,yes,,yes
+n889536274,"889536274",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Junipero & Calle Real,,,,bus_stop,yes,,yes
+n889536279,"889536279",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Las Positas & Stanley,,,,bus_stop,yes,,no
+n889536280,"889536280",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Anapamu & Bath,,,,bus_stop,yes,,yes
+n889536281,"889536281",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Treasure & Samarkand,,,,bus_stop,yes,,
+n889536282,"889536282",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Bath & Pueblo (Cottage Hospital),,,,bus_stop,yes,no,yes
+n889536283,"889536283",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,De la Vina & Micheltorena,,,,bus_stop,yes,no,yes
+n889536286,"889536286",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Hitchcock & Calle Real,,,,bus_stop,yes,,yes
+n889536291,"889536291",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"621",platform,"SBMTD;Ventura County Transportation Commission",,"Q7419232;Q7920384","Santa Barbara MTD;Clean Air Express;VCTC Intercity","Bath & Pueblo (Cottage Hospital);Pueblo at Castillo (Cottage);Bath and Pueblo NB (Cottage Hospital)",,yes,,bus_stop,yes,no,yes
+n889536293,"889536293",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,De la Vina & Islay,,,,bus_stop,yes,,yes
+n889536294,"889536294",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Junipero & Alamar,,,,bus_stop,yes,no,yes
+n889536298,"889536298",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,San Onofre & Las Positas,,,,bus_stop,yes,,yes
+n889536300,"889536300",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"15",platform,SBMTD,,Q7419232,Santa Barbara MTD,State & San Roque,,no,,bus_stop,yes,yes,yes
+n889536305,"889536305",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Treasure & Calle Real,,,,bus_stop,yes,,no
+n889536308,"889536308",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Bath & Los Olivos,,,,bus_stop,yes,yes,yes
+n889536311,"889536311",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"255",platform,SBMTD,,Q7419232,Santa Barbara MTD,State & Ontare,,,,bus_stop,yes,yes,yes
+n889536317,"889536317",node,,,,,,,,,,,,,,,,,,,,,,,yes,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Hitchcock & La Rada,,,,bus_stop,yes,yes,yes
+n889536320,"889536320",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"823",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Hope,,,,bus_stop,yes,yes,yes
+n889536321,"889536321",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Bath & Mission,,,,bus_stop,yes,no,yes
+n889536327,"889536327",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Treasure & Tallant (Samarkand),,,,bus_stop,yes,,
+n889536331,"889536331",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Junipero & Castillo,,,,bus_stop,yes,,yes
+n889536332,"889536332",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Bath & Victoria,,,,bus_stop,yes,,yes
+n889536336,"889536336",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & La Cumbre,,,,bus_stop,yes,,yes
+n889536340,"889536340",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"42956",platform,"SBMTD;Ventura County Transportation Commission",en:Santa Barbara Metropolitan Transit District,"Q7419232;Q7920384","Santa Barbara MTD;VCTC Intercity;Clean Air Express","De la Vina & Mission;Mission at De La Vina (Cottage)",,,,bus_stop,yes,,yes
+n889536343,"889536343",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Las Positas & Stanley,,,,bus_stop,yes,,no
+n889536345,"889536345",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,De la Vina & Anapamu,,,,bus_stop,yes,,yes
+n889536348,"889536348",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"254",platform,SBMTD,,Q7419232,Santa Barbara MTD,State & Broadmoor,,,,bus_stop,yes,,yes
+n889536353,"889536353",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"17",platform,SBMTD,,Q7419232,Santa Barbara MTD,State & Broadmoor,,,,bus_stop,yes,,yes
+n889536355,"889536355",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hitchcock & State,,,,bus_stop,yes,yes,yes
+n889536358,"889536358",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Bath & Islay,,,,bus_stop,yes,no,yes
+n889536364,"889536364",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"156",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & La Cumbre,,,,bus_stop,yes,,yes
+n889536365,"889536365",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,San Onofre & Las Positas,,,,bus_stop,yes,,yes
+n889536368,"889536368",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Junipero & Calle Real,,,,bus_stop,yes,,yes
+n907832121,"907832121",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"219",platform,SBMTD,,Q7419232,Santa Barbara MTD,Mission & Chino,,,,bus_stop,yes,,no
+n907832122,"907832122",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"621",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Andres & Anapamu,,yes,,bus_stop,yes,yes,yes
+n907832123,"907832123",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"2",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Andres & Valerio,,,,bus_stop,yes,,yes
+n907832125,"907832125",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"656",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Andres & Sola,,,,bus_stop,yes,,yes
+n907832128,"907832128",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"1",platform,SBMTD,,Q7419232,Santa Barbara MTD,Modoc & Portesuello,,,,bus_stop,yes,,no
+n907832129,"907832129",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"652",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Andres & Micheltorena,,,,bus_stop,yes,yes,yes
+n907832131,"907832131",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"225",platform,SBMTD,,Q7419232,Santa Barbara MTD,Modoc & Oak,,,,bus_stop,yes,,no
+n907832133,"907832133",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"655",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Andres & Pedregosa,,,,bus_stop,yes,,yes
+n907832137,"907832137",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"224",platform,SBMTD,,Q7419232,Santa Barbara MTD,Carrillo & San Andres,,,,bus_stop,yes,yes,yes
+n907832138,"907832138",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"218",platform,SBMTD,,Q7419232,Santa Barbara MTD,Portesuello & Gillespie,,,,bus_stop,yes,,no
+n907832139,"907832139",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"221",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Andres & Micheltorena,,,,bus_stop,yes,yes,yes
+n907832140,"907832140",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"222",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Andres & Sola,,,,bus_stop,yes,,yes
+n907832142,"907832142",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,San Andres & Valerio,,,,bus_stop,yes,,yes
+n907832146,"907832146",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"223",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Andres & Anapamu,,,,bus_stop,yes,,yes
+n907832147,"907832147",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"220",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Andres & Pedregosa,,,,bus_stop,yes,,yes
+n907832148,"907832148",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"200",platform,SBMTD,,Q7419232,Santa Barbara MTD,Carrillo & Bath,,yes,,bus_stop,yes,yes,yes
+n907832154,"907832154",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"3",platform,SBMTD,,Q7419232,Santa Barbara MTD,Carrillo & San Pascual,,,,bus_stop,yes,,yes
+n907899737,"907899737",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Anapamu & Garden,,,,bus_stop,yes,,yes
+n907899744,"907899744",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Anapamu & Garden,,,,bus_stop,yes,,yes
+n907899749,"907899749",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Anapamu & State,,,,bus_stop,yes,,yes
+n907899751,"907899751",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"41675",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,"Q7419232;Q7920384","Santa Barbara MTD;VCTC Intercity;Clean Air Express","Anacapa & Anapamu;Anacapa at Anapamu (SB Library);Anacapa at Anapamu",,,,bus_stop,yes,,yes
+n907899754,"907899754",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Anapamu & Nopal,,,,bus_stop,yes,,no
+n907899759,"907899759",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Milpas & Figueroa,,,,bus_stop,yes,,no
+n907899760,"907899760",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Anapamu & Alta Vista (SBHS),,,,bus_stop,yes,,yes
+n907899762,"907899762",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Anapamu & Olive,,,,bus_stop,yes,,yes
+n907899763,"907899763",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Anapamu & Santa Barbara,,,,bus_stop,yes,,yes
+n907899764,"907899764",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Carrillo & Anacapa,,,,bus_stop,yes,yes,yes
+n907899766,"907899766",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Anapamu & Olive,,,,bus_stop,yes,,no
+n907899767,"907899767",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Milpas & Figueroa,,,,bus_stop,yes,,yes
+n907899768,"907899768",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Anapamu & Nopal (SBHS),,,,bus_stop,yes,,no
+n907960760,"907960760",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Santa Cruz,,,,bus_stop,yes,,yes
+n907960761,"907960761",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Meigs & Aurora,,,,bus_stop,yes,,yes
+n907960763,"907960763",node,,,,,,,,,,,,,,,"0",,,,,,yes,,no,no,,"846",platform,SBMTD,,Q7419232,Santa Barbara MTD,Rancheria & Gutierrez,,yes,,bus_stop,yes,yes,yes
+n907960766,"907960766",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Carrillo & Miramonte,,,,bus_stop,yes,,no
+n907960768,"907960768",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Loma Alta (SBCC),,,,bus_stop,yes,,yes
+n907960770,"907960770",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Santa Fe,,,,bus_stop,yes,,yes
+n907960773,"907960773",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"392",platform,SBMTD,,Q7419232,Santa Barbara MTD,Coronel & Wentworth,,yes,,bus_stop,yes,no,no
+n907960774,"907960774",node,,,,,,,,,,,,,,,"0",,,,,,yes,,no,no,,"189",platform,SBMTD,,Q7419232,Santa Barbara MTD,Montecito & Rancheria,,yes,,bus_stop,yes,no,no
+n907960775,"907960775",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Terrace,,,,bus_stop,yes,,yes
+n907960780,"907960780",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"863",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Pascual & Ortega,,,,bus_stop,yes,yes,yes
+n907960781,"907960781",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Carrillo & Vista del Pueblo,,,,bus_stop,yes,,no
+n907960782,"907960782",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"694",platform,SBMTD,,Q7419232,Santa Barbara MTD,Coronel & Wentworth,,no,,bus_stop,yes,no,no
+n907960784,"907960784",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Meigs & La Coronilla,,,,bus_stop,yes,,no
+n907960787,"907960787",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"391",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Pascual & Ortega,,,,bus_stop,yes,yes,yes
+n907960788,"907960788",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"75",platform,SBMTD,,Q7419232,Santa Barbara MTD,Rancheria & Gutierrez,,no,,bus_stop,yes,no,no
+n907960791,"907960791",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Carrillo & Vista del Pueblo,,,,bus_stop,yes,,no
+n907960793,"907960793",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Oceano,,,,bus_stop,yes,,yes
+n907960798,"907960798",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Meigs & Red Rose Way,,,,bus_stop,yes,,no
+n907960799,"907960799",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Meigs & Ricardo,,,,bus_stop,yes,,no
+n907960800,"907960800",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Mira Mesa,,,,bus_stop,yes,,yes
+n907960806,"907960806",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Meigs & La Coronilla,,,,bus_stop,yes,,no
+n907960807,"907960807",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,San Andres & Canon Perdido,,,,bus_stop,yes,,yes
+n907960808,"907960808",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Carrillo & Chino,,,,bus_stop,yes,,no
+n907960813,"907960813",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & La Marina,,,,bus_stop,yes,,yes
+n907960814,"907960814",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Meigs East,"-119.7215091",,"34.4015435002",bus_stop,yes,,no
+n907960815,"907960815",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & La Marina,,,,bus_stop,yes,,yes
+n907960821,"907960821",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Meigs,"-119.7215841",,"34.4012863997",bus_stop,yes,,yes
+n907960823,"907960823",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & San Rafael,,,,bus_stop,yes,,yes
+n907960824,"907960824",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"53",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Pascual & Canon Perdido,,,,bus_stop,yes,yes,yes
+n907960825,"907960825",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Weldon,,,,bus_stop,yes,,yes
+n907960827,"907960827",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Meigs & Dolores,,,,bus_stop,yes,,yes
+n907960830,"907960830",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"22",platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Loma Alta (SBCC),,yes,,bus_stop,yes,yes,yes
+n907960833,"907960833",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Canon Perdido & San Pascual,,,,bus_stop,yes,yes,yes
+n907960835,"907960835",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Salida del Sol,,,,bus_stop,yes,,yes
+n908207375,"908207375",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle de los Amigos & Valle Verde,,,,bus_stop,yes,,
+n908207377,"908207377",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Alan,,,,bus_stop,yes,,yes
+n908207378,"908207378",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Chapala & Haley,,,,bus_stop,yes,,yes
+n908207390,"908207390",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,De la Vina & Canon Perdido,,,,bus_stop,yes,,yes
+n908207397,"908207397",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Haley & Bath,,,,bus_stop,yes,,yes
+n908207400,"908207400",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Casiano & Mariana,,,,bus_stop,yes,,yes
+n908207416,"908207416",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle de los Amigos & Senda Verde,,,,bus_stop,yes,,no
+n908207424,"908207424",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Torino & Veronica Springs,,,,bus_stop,yes,,no
+n908207430,"908207430",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle de los Amigos & Senda Verde,,,,bus_stop,yes,,yes
+n908207451,"908207451",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Haley & Bath,,,,bus_stop,yes,yes,yes
+n908207455,"908207455",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Las Positas & Richelle,,,,bus_stop,yes,,yes
+n908207462,"908207462",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,,,,,Las Positas & Cliff,,,,bus_stop,yes,,
+n908207484,"908207484",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Las Positas & Cliff,,,,bus_stop,yes,,no
+n908207487,"908207487",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Oliver,,,,bus_stop,yes,,yes
+n908207504,"908207504",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Meigs West,,,,bus_stop,yes,,yes
+n908207510,"908207510",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Arroyo Burro Beach,,,,bus_stop,yes,,
+n908207513,"908207513",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Chapala & Cota,,,,bus_stop,yes,,yes
+n908207522,"908207522",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,De la Vina & Haley,,,,bus_stop,yes,yes,yes
+n908207526,"908207526",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"64",platform,SBMTD,,Q7419232,Santa Barbara MTD,Castillo & Montecito,,no,,bus_stop,yes,yes,yes
+n908207530,"908207530",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle de los Amigos & Cingo Amigos,,,,bus_stop,yes,,no
+n908207536,"908207536",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Mariana & Casiano,,,,bus_stop,yes,,yes
+n908207539,"908207539",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Torino & Barcelona,,,,bus_stop,yes,,no
+n908207543,"908207543",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Torino & Palermo,,,,bus_stop,yes,,yes
+n908207557,"908207557",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Torino & Calle de los Amigos,,,,bus_stop,yes,,yes
+n908207563,"908207563",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Fellowship,,,,bus_stop,yes,,yes
+n908207567,"908207567",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Chapala & De la Guerra,,,,bus_stop,yes,,yes
+n908207591,"908207591",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,La Cumbre Country Club,,,,bus_stop,yes,,
+n908207595,"908207595",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Torino & Palermo,,,,bus_stop,yes,,no
+n908207601,"908207601",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Las Positas Park,,,,bus_stop,yes,,no
+n908207628,"908207628",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Las Positas & Richelle,,,,bus_stop,yes,,no
+n908207637,"908207637",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Torino & Calle de los Amigos,,,,bus_stop,yes,,yes
+n908207648,"908207648",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Castillo & Montecito,,,,bus_stop,yes,,no
+n908207650,"908207650",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,La Cumbre Country Club,,,,bus_stop,yes,,
+n908207656,"908207656",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Hillside House,,,,bus_stop,yes,,no
+n908207667,"908207667",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Mohawk,,,,bus_stop,yes,,yes
+n908207669,"908207669",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,La Cumbre Plaza,,,,bus_stop,yes,,yes
+n908207671,"908207671",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,De la Vina & Ortega,,,,bus_stop,yes,,yes
+n908207680,"908207680",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle de los Amigos & Modoc,,,,bus_stop,yes,,no
+n908207683,"908207683",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Flora Vista,,,,bus_stop,yes,,yes
+n908207687,"908207687",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Chapala & Canon Perdido,,,,bus_stop,yes,,yes
+n908207704,"908207704",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle de los Amigos & Valle Verde,,,,bus_stop,yes,,
+n908207706,"908207706",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Veronica Springs & Torino,,,,bus_stop,yes,,no
+n908207709,"908207709",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle de los Amigos & Mariana,,,,bus_stop,yes,,yes
+n908207723,"908207723",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Hillside House,,,,bus_stop,yes,,no
+n908207730,"908207730",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cliff & Mesa Lane,,,,bus_stop,yes,,yes
+n908577718,"908577718",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Goleta Beach,,,,bus_stop,yes,,no
+n908577719,"908577719",node,,,,,,,,,,,,,,,,,2026-06-09,,,,,,no,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Islay,,,,bus_stop,yes,no,yes
+n908577722,"908577722",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"761",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & Walnut,,,,bus_stop,yes,,yes
+n908577729,"908577729",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"290",platform,SBMTD,,Q7419232,Santa Barbara MTD,Goleta Valley Community Center,,,,bus_stop,yes,yes,yes
+n908577730,"908577730",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Sola & Chapala,,,,bus_stop,yes,no,yes
+n908577733,"908577733",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"261",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & San Antonio,,,,bus_stop,yes,,yes
+n908577739,"908577739",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,State & Los Olivos,,,,bus_stop,yes,no,yes
+n908577741,"908577741",node,,,,,,,,,,,,,,,,,2026-06-10,,,,,,no,yes,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Arrellaga,,,,bus_stop,yes,yes,yes
+n908577743,"908577743",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"926",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & Puente,,,,bus_stop,yes,,yes
+n908577749,"908577749",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"273",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & La Patera,,no,,bus_stop,yes,no,no
+n908577751,"908577751",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Quinto,,,,bus_stop,yes,,yes
+n908577752,"908577752",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"274",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Robin Hill,,,,bus_stop,yes,,no
+n908577759,"908577759",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"25;49372",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,"Q7419232;Q7920384","Santa Barbara MTD;UCSB Shuttle;VCTC Intercity;Clean Air Express","Hollister & Kellogg;Hollister at Kellogg;Hollister and Kellogg Eastbound",,yes,,bus_stop,yes,yes,yes
+n908577762,"908577762",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"292",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & Via El Cuadro,,,,bus_stop,yes,,yes
+n908577763,"908577763",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Pedregosa,,,,bus_stop,yes,,yes
+n908577768,"908577768",node,,,,,,,,,,,,,,,,,2026-07-09,,,,,,,no,,"294",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & El Mercado,,,,bus_stop,yes,,yes
+n908577772,"908577772",node,,,,,,,,,,,,,,,,,2026-07-02,,,,,,no,no,,"256",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Hope,,,,bus_stop,yes,yes,yes
+n908577774,"908577774",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"272",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & David Love,,,,bus_stop,yes,no,yes
+n908577777,"908577777",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"257",platform,SBMTD,,Q7419232,Santa Barbara MTD,State & Highway 154,,yes,,bus_stop,yes,yes,yes
+n908577781,"908577781",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,State & Pueblo,,,,bus_stop,yes,yes,yes
+n908577784,"908577784",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"289;49371",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,"Q7419232;Q7920384","Santa Barbara MTD;UCSB Shuttle;VCTC Intercity;Clean Air Express","Hollister & Pine;Hollister at Pine;Hollister and Pine",,,,bus_stop,yes,yes,yes
+n908577788,"908577788",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"266",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,"Santa Barbara MTD;Clean Air Express","Hollister & Patterson;Hollister at Patterson",,,,bus_stop,yes,,yes
+n908577791,"908577791",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"24",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & Turnpike,,no,,bus_stop,yes,yes,yes
+n908577794,"908577794",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,State & Pueblo,,,,bus_stop,yes,no,yes
+n908577798,"908577798",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Fairview & Airport Plaza,"-119.8307034",,"34.4328737003",bus_stop,yes,yes,yes
+n908577800,"908577800",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,State & Sola,,,,bus_stop,yes,,yes
+n908577803,"908577803",node,,,,,,,,,,,,,,,,timetable,,,,,,,no,yes,,"754",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & Coromar,,yes,,bus_stop,yes,yes,yes
+n908577811,"908577811",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"264",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & Walnut,,,,bus_stop,yes,,yes
+n908577814,"908577814",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Mission,"-119.7145269",,"34.4306231996",bus_stop,yes,,yes
+n908577817,"908577817",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"265",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & Lassen,,,,bus_stop,yes,,yes
+n908577819,"908577819",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Fairview & Fowler,"-119.8306982",,"34.4276741002",bus_stop,yes,no,no
+n908577826,"908577826",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"752",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Auhay East,,,,bus_stop,yes,,yes
+n908577829,"908577829",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"824",platform,SBMTD,,Q7419232,Santa Barbara MTD,State & Highway 154,,,,bus_stop,yes,,yes
+n908577835,"908577835",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"279;49369",platform,SBMTD,,"Q7419232;Q7920384","Santa Barbara MTD;VCTC Intercity","Hollister & Los Carneros Road;Hollister and Los Carneros",,no,,bus_stop,yes,no,yes
+n908577839,"908577839",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"299",platform,SBMTD,,Q7419232,Santa Barbara MTD,Anacapa & Sola,,yes,,bus_stop,yes,no,yes
+n908577847,"908577847",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"253",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Calle Palo Colorado,,no,,bus_stop,yes,yes,yes
+n908577850,"908577850",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"1045",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Sumida Gardens,,,,bus_stop,yes,,yes
+n908577851,"908577851",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Goleta Beach,,,,bus_stop,yes,,no
+n908577858,"908577858",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"263",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & San Marcos Road,,,,bus_stop,yes,,yes
+n908577860,"908577860",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"29",platform,SBMTD,,Q7419232,Santa Barbara MTD,State & Las Positas,,,,bus_stop,yes,,yes
+n908577861,"908577861",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"931",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Los Carneros Way,,no,,bus_stop,yes,no,yes
+n908577867,"908577867",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"181;48154",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,"Q7419232;Q7920384","Santa Barbara MTD;UCSB Shuttle;VCTC Intercity;Clean Air Express","Hollister & Nectarine;Hollister at Nectarine;Hollister and Nectarine;Hollister at Pine",,,,bus_stop,yes,yes,yes
+n908577870,"908577870",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"27",platform,SBMTD,,Q7419232,Santa Barbara MTD,Santa Felicia & Market Place Drive,,no,,bus_stop,yes,yes,yes
+n908577872,"908577872",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"268",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,"Santa Barbara MTD;UCSB Shuttle","Hollister & Ward;Hollister at Ward",,,,bus_stop,yes,,yes
+n908577876,"908577876",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"293",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & Auhay West,,,,bus_stop,yes,,yes
+n908577879,"908577879",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"287",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Griggs,,yes,,bus_stop,yes,yes,yes
+n908577882,"908577882",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"16",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,"Santa Barbara MTD;Clean Air Express",State & La Cumbre,,yes,,bus_stop,yes,yes,yes
+n908577885,"908577885",node,,,,,,,,,,,,,,,,,2026-06-22,,,,,,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Valerio,,,,bus_stop,yes,no,yes
+n908577887,"908577887",node,,,,,,,,,,,,,,,,,2026-07-16,,,,,,no,no,,"262",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & Puente,,,,bus_stop,yes,no,yes
+n908577890,"908577890",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"276",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Willow Springs,,,,bus_stop,yes,yes,yes
+n908577895,"908577895",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"925;48153",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,"Q7419232;Q7920384","Santa Barbara MTD;UCSB Shuttle;VCTC Intercity;Clean Air Express","Hollister & Kellogg;Hollister at Kellogg;Hollister and Kellogg Westbound",,yes,,bus_stop,yes,yes,yes
+n908577896,"908577896",node,,,,,,,,,,,,,,yes,,,,,,,,,,yes,,"278;48156",platform,SBMTD,,"Q7419232;Q7920384","Santa Barbara MTD;VCTC Intercity;Clean Air Express","Hollister & Cremona;Hollister and Cremona;Hollister at Cremona Drive",,,,bus_stop,yes,no,yes
+n908577899,"908577899",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"286",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Hartley,,,,bus_stop,yes,no,yes
+n908577906,"908577906",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"85",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,"Santa Barbara MTD;Clean Air Express","Hollister & Patterson;Hollister at Patterson",,,,bus_stop,yes,,yes
+n908577907,"908577907",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Valerio,,,,bus_stop,yes,,yes
+n908577915,"908577915",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"755",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & La Patera,,no,,bus_stop,yes,no,yes
+n908577917,"908577917",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"930",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Ward,,,,bus_stop,yes,,yes
+n908577918,"908577918",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Mission,"-119.7144358",,"34.4307427998",bus_stop,yes,,yes
+n908577923,"908577923",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"291",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & San Ricardo,,,,bus_stop,yes,,yes
+n908577926,"908577926",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"280;49368",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,"Q7419232;Q7920384","Santa Barbara MTD;VCTC Intercity","Hollister & Coromar;Hollister Avenue/Coromar Drive",,yes,,bus_stop,yes,no,yes
+n908577929,"908577929",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Fairview & Fowler,"-119.8303726",,"34.4271151002",bus_stop,yes,no,yes
+n908577932,"908577932",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"270",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Orange,,yes,,bus_stop,yes,yes,yes
+n908577934,"908577934",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"157",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & Turnpike,,no,,bus_stop,yes,yes,yes
+n908577937,"908577937",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"258",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & Nogal,,,,bus_stop,yes,,yes
+n908577940,"908577940",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Constance,,,,bus_stop,yes,,yes
+n908577942,"908577942",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"180;48155",platform,SBMTD,,"Q7419232;Q7920384","Santa Barbara MTD;VCTC Intercity;Clean Air Express","Hollister & Aero Camino;Hollister and Aero Camino Westbound;Hollister at Aero Camino",,yes,,bus_stop,yes,no,yes
+n908577949,"908577949",node,,,,,,,,,,,,,,,,,2026-06-10,,,,,,no,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Arrellaga,,,,bus_stop,yes,yes,yes
+n908577951,"908577951",node,,,,,,,,,,,,,,,,,2026-06-22,,,,,,no,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Constance,,,,bus_stop,yes,no,yes
+n908577952,"908577952",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"285;49370",platform,SBMTD,,"Q7419232;Q7920384","Santa Barbara MTD;VCTC Intercity;Clean Air Express","Hollister & Adams;Hollister and Aero Camino Eastbound;Hollister at Aero Camino",,,,bus_stop,yes,no,yes
+n908577958,"908577958",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"1044",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Sumida Gardens,,,,bus_stop,yes,,yes
+n908577961,"908577961",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"927",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & San Marcos Road,,,,bus_stop,yes,,yes
+n908577963,"908577963",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"259",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Auhay East,,,,bus_stop,yes,no,yes
+n908577967,"908577967",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"277",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Los Carneros Way,,,,bus_stop,yes,,yes
+n908577970,"908577970",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"288",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Fairview,,,,bus_stop,yes,,yes
+n908577973,"908577973",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"271",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Lopez,,yes,,bus_stop,yes,yes,yes
+n908577976,"908577976",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & Quinto,,,,bus_stop,yes,,yes
+n908577979,"908577979",node,,,,,,,,,,,,,,,,,,,,,,,no,"no;yes",,"728",platform,SBMTD,,Q7419232,Santa Barbara MTD,Fairview & Airport Plaza,,yes,,bus_stop,yes,yes,yes
+n908577982,"908577982",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Micheltorena & State,,,,bus_stop,yes,no,yes
+n908577985,"908577985",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"260",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Sport Center,"-119.7776268",,"34.4388938003",bus_stop,yes,no,yes
+n908577987,"908577987",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"87",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Hollister & Arboleda,,,,bus_stop,yes,,yes
+n908577990,"908577990",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"296",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,State & De la Vina,,yes,,bus_stop,yes,no,yes
+n908577996,"908577996",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"269",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Wendy's,,,,bus_stop,yes,yes,yes
+n910812210,"910812210",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"941",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Turnpike East,,,,bus_stop,yes,,yes
+n910812212,"910812212",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"893",platform,SBMTD,,Q7419232,Santa Barbara MTD,University & San Marcos,,yes,,bus_stop,yes,no,no
+n910812219,"910812219",node,,,,,,,,,,,,,,,,,,,,,,,,,,"701",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Social Services,,,,bus_stop,yes,,
+n910812221,"910812221",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Pesetas Lane & Calle Real,,,,bus_stop,yes,,yes
+n910812225,"910812225",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"420",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Patterson,,,,bus_stop,yes,,yes
+n910812233,"910812233",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"419",platform,SBMTD,,Q7419232,Santa Barbara MTD,University & Ribera,,,,bus_stop,yes,,yes
+n910812238,"910812238",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,La Colina & Lee,,,,bus_stop,yes,,no
+n910812242,"910812242",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"637",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Calle Real & El Sueno,,,,bus_stop,yes,,yes
+n910812245,"910812245",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"31",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Turnpike West,,yes,,bus_stop,yes,no,no
+n910812249,"910812249",node,,,,,,,,,,,,,,,,,,,,,yes,,,no,,"307",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Kingston,,,,bus_stop,yes,,yes
+n910812253,"910812253",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"638",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Kellogg,,,,bus_stop,yes,,yes
+n910812266,"910812266",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"415",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Turnpike West,,,,bus_stop,yes,no,no
+n910812267,"910812267",node,,,,,,,,,,,,,,,,,2026-06-24,,,,,,,no,,"643",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Calle Real & Old Mill,,,,bus_stop,yes,,yes
+n910812268,"910812268",node,,,,,,,,,,,,,,,,,,,,,yes,,,no,,"114",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Kingston,,,,bus_stop,yes,,yes
+n910812282,"910812282",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"418",platform,SBMTD,,Q7419232,Santa Barbara MTD,University & San Marcos,,yes,,bus_stop,yes,no,no
+n910812286,"910812286",node,,,,,,,,,,,,,,,,,2026-07-25,,,,,,,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Calle Real & San Antonio,,,,bus_stop,yes,,no
+n910812293,"910812293",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,County Health - Outpatients,,,,bus_stop,yes,,
+n910812294,"910812294",node,,,,,,,,,,,,,,,,,,,,,yes,,,no,,"942",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Kellogg,,,,bus_stop,yes,,yes
+n910812295,"910812295",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"642",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Pebble Hill,,,,bus_stop,yes,no,yes
+n910812308,"910812308",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"417",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Marcos & Calle Real,,yes,,bus_stop,yes,no,yes
+n910812310,"910812310",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,County Health - Outpatients,,,,bus_stop,yes,,
+n910812313,"910812313",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,La Cumbre & La Colina,,,,bus_stop,yes,,
+n910812315,"910812315",node,,,,,,,,,,,,,,,,,,,,,,,,,,"705",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,VA Clinic,,,,bus_stop,yes,,
+n910812318,"910812318",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"635",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real Center,,,,bus_stop,yes,,yes
+n910812321,"910812321",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"940",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Turnpike East,,,,bus_stop,yes,yes,yes
+n910812331,"910812331",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"858",platform,SBMTD,,Q7419232,Santa Barbara MTD,San Marcos & Calle Real,,no,,bus_stop,yes,no,yes
+n910812333,"910812333",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,La Colina & Pesetas Lane,,,,bus_stop,yes,,yes
+n910812335,"910812335",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"704",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,VA Clinic,,,,bus_stop,yes,,
+n910812340,"910812340",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"410",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Calle Real & Old Mill,,,,bus_stop,yes,,yes
+n910812342,"910812342",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"890",platform,SBMTD,,Q7419232,Santa Barbara MTD,University & Patterson,,,,bus_stop,yes,,yes
+n910812351,"910812351",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"416",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Pebble Hill,,,,bus_stop,yes,no,no
+n910812353,"910812353",node,,,,,,,,,,,,,,,,,,,,,yes,,no,yes,,"421",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Maravilla,,,,bus_stop,yes,no,yes
+n910812355,"910812355",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"722",platform,SBMTD,,Q7419232,Santa Barbara MTD,Encina Road & Encina Lane,,,,bus_stop,yes,,no
+n910812364,"910812364",node,,,,,,,,,,,,,,,,,2026-09-02,,,,,,,no,,"636",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real Center,,,,bus_stop,yes,,yes
+n910812367,"910812367",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,"721",platform,SBMTD,,Q7419232,Santa Barbara MTD,Encina & Calle Real,,,,bus_stop,yes,,yes
+n910812374,"910812374",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"411",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & El Sueno,,,,bus_stop,yes,,yes
+n910812376,"910812376",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"32",platform,SBMTD,,Q7419232,Santa Barbara MTD,University & Patterson,,,,bus_stop,yes,,yes
+n910812380,"910812380",node,,,,,,,,,,,,,,,,,,,,,,,,,,"702",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Social Services,,,,bus_stop,yes,,
+n910812386,"910812386",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,La Cumbre & Via Lucero,,,,bus_stop,yes,,
+n910812387,"910812387",node,,,,,,,,,,,,,,,,,,,,,yes,,,no,,"641",platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Maravilla,,,,bus_stop,yes,,yes
+n910812390,"910812390",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"891",platform,SBMTD,,Q7419232,Santa Barbara MTD,University & Ribera,,,,bus_stop,yes,,yes
+n910812398,"910812398",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,,platform,SBMTD,,Q7419232,"Santa Barbara MTD;Clean Air Express","Calle Real & Pesetas Lane;Calle Real at Pesetas Lane",,,,bus_stop,yes,,yes
+n910827492,"910827492",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"35",platform,SBMTD,,Q7419232,Santa Barbara MTD,Encina Road & Fairview,,,,bus_stop,yes,,yes
+n910827499,"910827499",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"1081",platform,SBMTD,,Q7419232,Santa Barbara MTD,Encina Road & Encina Lane,,,,bus_stop,yes,,yes
+n910827512,"910827512",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Patterson & Overpass,,,,bus_stop,yes,,
+n910827516,"910827516",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Patterson & Hollister,,,,bus_stop,yes,,
+n910827522,"910827522",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"308",platform,SBMTD,,Q7419232,Santa Barbara MTD,Encina & Calle Real,,,,bus_stop,yes,,yes
+n910827532,"910827532",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"33",platform,SBMTD,,Q7419232,Santa Barbara MTD,Fairview & Encina,,,,bus_stop,yes,yes,yes
+n1396633686,"1396633686",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"756",platform,SBMTD,,Q7419232,"Santa Barbara MTD;Clean Air Express",Hollister at Coronado,,no,,bus_stop,yes,yes,yes
+n1396633688,"1396633688",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"79",platform,SBMTD,,Q7419232,Santa Barbara MTD,,,no,,bus_stop,yes,yes,yes
+n1396633689,"1396633689",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,,,,bus_stop,yes,,
+n1396633692,"1396633692",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,,,,bus_stop,yes,,
+n1396633693,"1396633693",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"109",platform,SBMTD,,Q7419232,Santa Barbara MTD,,,yes,,bus_stop,yes,yes,yes
+n1396633694,"1396633694",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"315",platform,SBMTD,,Q7419232,Santa Barbara MTD,,,yes,,bus_stop,yes,yes,yes
+n1396633697,"1396633697",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,,,,bus_stop,yes,,
+n1671456559,"1671456559",node,,,,,,,,,,,,"90",State and La Cumbre,,,,,,,,,,,,,,platform,SBMTD,,,,Alameda & Bassano,,,,bus_stop,yes,,
+n2910152086,"2910152086",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,"608",platform,SBMTD,,Q7419232,Santa Barbara MTD,Abrego & Camino Pescadero,"-119.858881897",,"34.4141555867",bus_stop,yes,,
+n2910152090,"2910152090",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Alameda Padre Serra & Bonita,"-119.708269377",,"34.4385507509",bus_stop,yes,,
+n2910152091,"2910152091",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Alameda Padre Serra & Laussen,"-119.705945574",,"34.43812457",bus_stop,yes,,
+n2910152092,"2910152092",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Alameda Padre Serra & Moreno,"-119.703690586",,"34.4377491748",bus_stop,yes,,
+n2910152094,"2910152094",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,no,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Anacapa & De La Guerra,"-119.697643981",,"34.420476934",bus_stop,yes,no,no
+n2910152095,"2910152095",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,"Santa Barbara MTD;Clean Air Express","Anacapa & Ortega;Anacapa at Ortega",,,,bus_stop,yes,,
+n2910152419,"2910152419",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Brandon & Calle Real,"-119.891133043",,"34.4329035481",bus_stop,yes,,
+n2910152420,"2910152420",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Brandon & Durham,"-119.89181136",,"34.434370593",bus_stop,yes,,
+n2910152421,"2910152421",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,,,Brandon & Evergreen,"-119.892780954",,"34.4397498522",bus_stop,yes,,
+n2910152422,"2910152422",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Brandon & Hempstead,"-119.891981581",,"34.4351133139",bus_stop,yes,,
+n2910152423,"2910152423",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Brandon & Padova,"-119.892748649",,"34.4372127891",bus_stop,yes,,
+n2910152430,"2910152430",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & Jenna,"-119.897990694",,"34.4365946787",bus_stop,yes,,
+n2910152445,"2910152445",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Calle Real & San Rossano,"-119.889304269",,"34.4327586497",bus_stop,yes,,
+n2910152460,"2910152460",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,no,,"59",platform,SBMTD,,Q7419232,Santa Barbara MTD,Camino Pescadero & El Colegio,"-119.858673818",no,"34.4169049208",bus_stop,yes,yes,yes
+n2910152489,"2910152489",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathdral Oaks & Los Carneros,"-119.855705903",,"34.4458111464",bus_stop,yes,,
+n2910152491,"2910152491",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Cambridge,"-119.820633139",,"34.4513768139",bus_stop,yes,,
+n2910152493,"2910152493",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Camino del Remedio,"-119.776675453",,"34.4520399383",bus_stop,yes,,
+n2910152494,"2910152494",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Camino del Rio,"-119.779530667",,"34.4528717844",bus_stop,yes,,
+n2910152495,"2910152495",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & El Sueno,"-119.770413662",,"34.4500485843",bus_stop,yes,,
+n2910152496,"2910152496",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Fairview,"-119.830829776",,"34.45145467",bus_stop,yes,,
+n2910152498,"2910152498",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,"675",platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Kellogg,"-119.811981798",,"34.4529322428",bus_stop,yes,,
+n2910152500,"2910152500",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,"535",platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Patterson,"-119.808359969",,"34.4532316693",bus_stop,yes,,
+n2910152601,"2910152601",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Rancho SB Mobile Home Park,"-119.767052983",,"34.4493421594",bus_stop,yes,,
+n2910152602,"2910152602",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Ribera,"-119.800192507",,"34.4515539136",bus_stop,yes,,
+n2910152603,"2910152603",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,no,,"678",platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & San Marcos Rd,"-119.796374847",yes,"34.4515028134",bus_stop,yes,no,yes
+n2910152604,"2910152604",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & San Marguerita,"-119.837781732",,"34.4514394562",bus_stop,yes,,
+n2910152605,"2910152605",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Santa Margarita,"-119.8369089",,"34.4512699997",bus_stop,yes,,
+n2910152606,"2910152606",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & The Country Club,"-119.825754978",,"34.4514843116",bus_stop,yes,,
+n2910152607,"2910152607",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Turnpike,"-119.789870353",,"34.4513229408",bus_stop,yes,,
+n2910152608,"2910152608",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Via Chaparral,"-119.765664339",,"34.4499646037",bus_stop,yes,,
+n2910152609,"2910152609",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Windsor,"-119.844521574",,"34.4511491856",bus_stop,yes,,
+n2910152611,"2910152611",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Catherdral Oaks & Arundel,"-119.822119767",,"34.4512889504",bus_stop,yes,,
+n2910152612,"2910152612",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,"671",platform,SBMTD,,Q7419232,Santa Barbara MTD,Catherdral Oaks & Camino Cascada,"-119.817831344",,"34.4523554494",bus_stop,yes,,
+n2910152613,"2910152613",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Catherdral Oaks & Camino del Retrio,"-119.775771702",,"34.451904996",bus_stop,yes,,
+n2910152647,"2910152647",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Colusa & Del Norte,"-119.87272465;-119.872682633",,"34.4357837044;34.4358317824",bus_stop,yes,,
+n2910152657,"2910152657",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,De La Guerra & Laguna,,,,bus_stop,yes,,
+n2910152658,"2910152658",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,De La Guerra & Olive,,,,bus_stop,yes,,no
+n2910152659,"2910152659",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,De La Guerra & Quarantina,,,,bus_stop,yes,,
+n2910152660,"2910152660",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,De La Guerra & Salsipuedes,"-119.692666051",,"34.4258286023",bus_stop,yes,,
+n2910152669,"2910152669",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,,,,,Del Norte & Calaveras,"-119.878208557",,"34.4364224559",bus_stop,yes,,
+n2910152670,"2910152670",node,,,,,,,,,,,,"180",,,,,,,,,,,,,,,platform,,,,,Del Norte & Calaveras,"-119.878289161",,"34.4365244107",bus_stop,yes,,
+n2910152671,"2910152671",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Del Norte & Colusa,"-119.872232116",,"34.4357500978",bus_stop,yes,,
+n2910152672,"2910152672",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,,,,,Del Norte & Mendocino,"-119.876553878",,"34.4364324837",bus_stop,yes,,
+n2910152673,"2910152673",node,,,,,,,,,,,,"180",,,,,,,,,,,,,,,platform,,,,,Del Norte & Mendocino,"-119.876538651",,"34.4365324172",bus_stop,yes,,
+n2910152691,"2910152691",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Elwood Station & San Blanco,"-119.885070113",,"34.4340678479",bus_stop,yes,,
+n2910152695,"2910152695",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Encina Road & Encina Lane,"-119.8282653",,"34.4429851001",bus_stop,yes,,
+n2910152696,"2910152696",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,no,,"164",platform,SBMTD,,Q7419232,Santa Barbara MTD,Encina Road & Fairview,"-119.8300418",,"34.4429421999",bus_stop,yes,,yes
+n2910152698,"2910152698",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,,,Evergreen & Redwood Way,"-119.894044393",,"34.4401602272",bus_stop,yes,,
+n2910152804,"2910152804",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Figueroa & Anacapa,,,,bus_stop,yes,no,yes
+n2910152805,"2910152805",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Figueroa & Santa Barbara,,,,bus_stop,yes,,
+n2910152807,"2910152807",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Foothill & Cocopah,"-119.757050491",,"34.4517739114",bus_stop,yes,,
+n2910152808,"2910152808",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Foothill & La Colina JHS,"-119.756681063",,"34.4519412045",bus_stop,yes,,
+n2910152809,"2910152809",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Garden & Cañon Perdido,,,,bus_stop,yes,,
+n2910152810,"2910152810",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Garden & Carrillo,,,,bus_stop,yes,,
+n2910152811,"2910152811",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Garden & Los Olivos,,,,bus_stop,yes,,
+n2910152812,"2910152812",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Garden & Micheltorena,"-119.704724066",,"34.4292060674",bus_stop,yes,,
+n2910152813,"2910152813",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Garden & Mission,"-119.711533893",,"34.4342058648",bus_stop,yes,,
+n2910152814,"2910152814",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Garden & Pedregosa,,,,bus_stop,yes,,
+n2910152815,"2910152815",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Garden & Sola,"-119.703375194",,"34.428300751",bus_stop,yes,,
+n2910152816,"2910152816",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Garden & Valerio,"-119.707669687",,"34.4313556205",bus_stop,yes,,
+n2910152817,"2910152817",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Garden & Victoria,,,,bus_stop,yes,,
+n2910152822,"2910152822",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Gutierrez & Santa Barbara,"-119.691657146",,"34.4182300936",bus_stop,yes,,
+n2910152826,"2910152826",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,"41677",platform,"SBMTD;Ventura County Transportation Commission",en:Santa Barbara Metropolitan Transit District,"Q7419232;Q7920384","Santa Barbara MTD;VCTC Intercity;Clean Air Express","Haley & Garden;Haley at Garden","-119.692504345",,"34.4196774351",bus_stop,yes,,
+n2910152827,"2910152827",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,Haley & Santa Barbara,"-119.693437527",,"34.4187361404",bus_stop,yes,,
+n2910152896,"2910152896",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,La Cumbre & Foothill,"-119.751267096",,"34.4551071934",bus_stop,yes,,
+n2910152898,"2910152898",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,La Cumbre & La Cumbre Hills,"-119.751019877",,"34.4492020243",bus_stop,yes,,
+n2910152899,"2910152899",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,La Cumbre & Pueblo,"-119.751038316",,"34.4514798842",bus_stop,yes,,
+n2910152900,"2910152900",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,La Cumbre & State St,"-119.751053463",,"34.440801027",bus_stop,yes,,
+n2910152905,"2910152905",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Las Encinas & Puesta Del Sol,"-119.714894285",,"34.4421109534",bus_stop,yes,,
+n2910152912,"2910152912",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Lasuen & Alvarado,"-119.704667332",,"34.4384723266",bus_stop,yes,,
+n2910152913,"2910152913",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Los Olivos & Old Mission,,,,bus_stop,yes,,
+n2910152938,"2910152938",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Mission Canyon & Las Encinas,"-119.713458749",,"34.4421484148",bus_stop,yes,,
+n2910152944,"2910152944",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Natural History Museum,"-119.71447408",,"34.4412976277",bus_stop,yes,,
+n2910152954,"2910152954",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Placer & Del Norte,"-119.88330226",,"34.4365928709",bus_stop,yes,,
+n2910152955,"2910152955",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Placer & Padova,"-119.883462808",,"34.4371976376",bus_stop,yes,,
+n2910152967,"2910152967",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,SBCC & West Campus,"-119.701664308",,"34.4039449194",bus_stop,yes,,
+n2910152972,"2910152972",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Salisbury & Padova,"-119.895191598",,"34.437142445",bus_stop,yes,,
+n2910152973,"2910152973",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,,,Salisbury & San Napoli,"-119.894699976",,"34.4391147792",bus_stop,yes,,
+n2910153085,"2910153085",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,no,,"603",platform,SBMTD,,Q7419232,Santa Barbara MTD,Abrego & Camino Corto,"-119.866521548",yes,"34.4144613495",bus_stop,yes,no,no
+n2910153086,"2910153086",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Westside Community Center,"-119.709786191",,"34.4197478467",bus_stop,yes,,
+n2910153087,"2910153087",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Winchester Cyn & Bradford,"-119.900526123",,"34.4349163622",bus_stop,yes,,
+n2910153089,"2910153089",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.693596727",,"34.4082029977",bus_stop,yes,yes,yes
+n2910153090,"2910153090",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.692502045",,"34.4092208418",bus_stop,yes,yes,no
+n2910153091,"2910153091",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.691714827",,"34.4101431359",bus_stop,yes,,
+n2910153092,"2910153092",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,no,,"1055",platform,SBMTD,,Q7419232,Santa Barbara MTD,Embarcadero & Sabado Tarde,"-119.85628351",yes,"34.4104974391",bus_stop,yes,no,no
+n2910153093,"2910153093",node,,,,,,,,,,,,,,,,no,,,,,,bus stop,no,no,,"490",platform,SBMTD,,Q7419232,Santa Barbara MTD,Ocean and Sabado Tarde,"-119.853307662",,"34.4108675891",bus_stop,yes,no,yes
+n2910153102,"2910153102",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,"1056",platform,SBMTD,,Q7419232,Santa Barbara MTD,brego & Camino Pescadero,"-119.858996046",,"34.4142105778",bus_stop,yes,,
+n2910153111,"2910153111",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.718748045",,"34.4163952824",bus_stop,yes,,
+n2910153112,"2910153112",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.718469164",,"34.41665402",bus_stop,yes,,
+n2910153113,"2910153113",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.722380533",,"34.416744058",bus_stop,yes,,
+n2910153118,"2910153118",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.717138918",,"34.4176538361",bus_stop,yes,,
+n2910153121,"2910153121",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.720737784",,"34.4183376045",bus_stop,yes,,
+n2910153123,"2910153123",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.694523059",,"34.418839332",bus_stop,yes,,
+n2910153124,"2910153124",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.715731581",,"34.4192356304",bus_stop,yes,,
+n2910153126,"2910153126",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.695208045",,"34.4192856696",bus_stop,yes,,
+n2910153131,"2910153131",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.693470953",,"34.4209250071",bus_stop,yes,,
+n2910153132,"2910153132",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"610",platform,SBMTD,en:Santa Barbara Metropolitan Transit District,Q7419232,Santa Barbara MTD,,,yes,,bus_stop,yes,no,yes
+n2910153134,"2910153134",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.712906014",,"34.4218914187",bus_stop,yes,,
+n2910153135,"2910153135",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Cota & Olive,"-119.691285338",,"34.4230214568",bus_stop,yes,yes,yes
+n2910153137,"2910153137",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.710552097",,"34.4240693248",bus_stop,yes,,
+n2910153138,"2910153138",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,no,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,,"-119.705439003",,"34.4241732786",bus_stop,yes,no,no
+n3760963042,"3760963042",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"282",platform,SBMTD,,Q7419232,Santa Barbara MTD,Santa Felicia & Storke,,,,bus_stop,yes,,no
+n5248274112,"5248274112",node,,,,,,,,,,,,,,,,,,,,E,yes,,no,yes,,"28",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Storke,,yes,,bus_stop,yes,yes,yes
+n5307443077,"5307443077",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,La Cumbre & Pueblo,"-119.751038316",,"34.4514798842",bus_stop,yes,,
+n5338863519,"5338863519",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"1053",platform,SBMTD,,Q7419232,Santa Barbara MTD,Seville & Embarcadero del Mar,,,,bus_stop,yes,no,yes
+n5338863520,"5338863520",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,,,,,Sharkeez Bus,,,,bus_stop,yes,,yes
+n5338863621,"5338863621",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"1052",platform,SBMTD,,Q7419232,Santa Barbara MTD,Seville & Embarcadero del Mar,,,,bus_stop,yes,,yes
+n5382414258,"5382414258",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"371",platform,SBMTD,,Q7419232,Santa Barbara MTD,Sierra Madre,,yes,,bus_stop,yes,no,yes
+n5479668222,"5479668222",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"60",platform,SBMTD,,Q7419232,Santa Barbara MTD,Camino del Sur & Picasso,,yes,,bus_stop,yes,no,yes
+n6038095740,"6038095740",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"283",platform,SBMTD,,Q7419232,Santa Barbara MTD,Santa Felicia & Girsh Park,,no,,bus_stop,yes,no,no
+n6083761352,"6083761352",node,,,,,,,,,,,,,,no,,,,,,,,,no,no,,"932",platform,SBMTD,,Q7419232,Santa Barbara MTD,Hollister & Los Carneros Road,,no,,bus_stop,yes,no,yes
+n6083829538,"6083829538",node,,,,,,,,,,,,,,,,,,,,,,,,,,"703",platform,SBMTD,,Q7419232,Santa Barbara MTD,County Health,,,,bus_stop,yes,,
+n6088782823,"6088782823",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,"536",platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Kellogg,"-119.811981798",,"34.4529322428",bus_stop,yes,,
+n6088782824,"6088782824",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,"548",platform,SBMTD,,Q7419232,Santa Barbara MTD,Cathedral Oaks & Avedina Pequena,"-119.811246432",,"34.4529195017",bus_stop,yes,,
+n6088782825,"6088782825",node,,,,,,,,,,,,,,,,,,,,,,bus stop,,,,"537",platform,SBMTD,,Q7419232,Santa Barbara MTD,Catherdral Oaks & Camino Cascada,,,,bus_stop,yes,,
+n7695927480,"7695927480",node,,,,,,,,,,,,,,,,,,,,,,bus stop,no,yes,,"647",platform,SBMTD,,Q7419232,Santa Barbara MTD,Camino Pescadero & Cervantes,"-119.85861",yes,"34.41665",bus_stop,yes,no,yes
+n8250597710,"8250597710",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,,platform,,,,,VISTA,,,,bus_stop,yes,no,yes
+n9227828917,"9227828917",node,,,,,https://www.flixbus.com/bus/santa-barbara-ca/santa-barbara-bus-stop,Q15712258,Chapala Street,CA,"93101","224",Santa Barbara,,,,,,,no,,,,,no,no,,,platform,,,Q1881378,Flixbus,Santa Barbara Bus Stop,,yes,,bus_stop,yes,no,no
+n9518373208,"9518373208",node,,,,"Santa Barbara, CA - Amtrak Station",,,,,,,,,,,,,,,,,,,no,yes,,,platform,"San Joaquin Joint Powers Authority;LOSSAN Rail Corridor Agency",,,Amtrak Thruway,"Santa Barbara, CA (SBA)",,,,bus_stop,yes,yes,yes
+n9518419359,"9518419359",node,,,UCSB Bus Loop on Ocean Road,"Goleta, CA – UCSB",,,,,,,,,,,,,,,,,yes,,no,no,,,platform,"San Joaquin Joint Powers Authority;LOSSAN Rail Corridor Agency",,,Amtrak Thruway,"Santa Barbara, CA Univ of California, Santa Barbara (SBU)",,,,bus_stop,yes,no,yes
+n9635164062,"9635164062",node,,,,,,,,,,,,,,,,,,,,,,,,,,"40430",platform,,,Q7920384,VCTC Intercity,Gutierrez at Garden,,,,bus_stop,yes,,
+n9635219662,"9635219662",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"41676",platform,,,Q7920384,VCTC Intercity,Anacapa at De La Guerra (SB City Hall),,no,,bus_stop,yes,yes,yes
+n9635235667,"9635235667",node,,,,,,,,,,,,,,,,,,,,,,,,no,,"40431",platform,,,Q7920384,"VCTC Intercity;Clean Air Express",Santa Barbara at De La Guerra,,,,bus_stop,yes,,
+n9635235668,"9635235668",node,,,,,,,,,,,,,,,,,,,,,,,,,,"40432",platform,,,Q7920384,"VCTC Intercity;Clean Air Express","Figueroa at Santa Barbara St (Courthouse);Figueroa (Courthouse)",,,,bus_stop,yes,,
+n9635235669,"9635235669",node,,,,,,,,,,,,,,,,,,,,,,,,,,"41674",platform,,,Q7920384,VCTC Intercity,Figueroa at Chapala (MTD Transit Center),,,,bus_stop,yes,,
+n9642170470,"9642170470",node,,,,,,,,,,,,,,,,,,,,,yes,,,yes,,,platform,UC Santa Barbara Transportation & Parking Services,,,UCSB Transportation,Goleta Amtrak Station,,yes,,bus_stop,yes,yes,yes
+n10718026585,"10718026585",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"48157",platform,,,Q7920384,"VCTC Intercity;Clean Air Express",Cortona at Castilian,,no,,bus_stop,yes,no,no
+n10718026588,"10718026588",node,,,,,,,,,,,,,,,,,,,,,,,,,,"48158",platform,,,Q7920384,"VCTC Intercity;Clean Air Express",Castilian at Los Carneros,,,,bus_stop,yes,,
+n10718026589,"10718026589",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"40280",platform,,,Q7920384,VCTC Intercity,Los Carneros Road / Karl Storz Way Northbound,,yes,,bus_stop,yes,no,no
+n10718026590,"10718026590",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"49367",platform,,,Q7920384,VCTC Intercity,Los Carneros Road / Karl Storz Way Southbound,,,,bus_stop,yes,no,no
+n10774742181,"10774742181",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,HollPalAlt O,platform,,,,Clean Air Express,Hollister at Palo Alto,,no,,bus_stop,yes,no,no
+n10774782285,"10774782285",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"1102",platform,,,,Clean Air Express,Hollister at Village Way,,yes,,bus_stop,yes,yes,yes
+n10774793387,"10774793387",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,,platform,,,,Clean Air Express,Cortona at Castilian,,,,bus_stop,yes,no,no
+n10774829252,"10774829252",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,,,,Clean Air Express,Castilian at Los Carneros,,,,bus_stop,yes,,
+n10774829253,"10774829253",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,,,,Clean Air Express,Cremona Drive,,,,bus_stop,yes,,
+n10933314790,"10933314790",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,,,,Clean Air Express,Robin Hill at Lindmar,,,,bus_stop,yes,,
+n10933314791,"10933314791",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,,,,Clean Air Express,Robin Hill at Lindmar,,,,bus_stop,yes,,
+n10933314792,"10933314792",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,,,,Clean Air Express,County Admin. Campus (Calle Real),,,,bus_stop,yes,,
+n10962622239,"10962622239",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"184",platform,,,,Clean Air Express,Anacapa at Carrillo,,no,,bus_stop,yes,no,yes
+n11523651021,"11523651021",node,,El Colegio,,,,,,,,,,,,,,timetable,,,"11, 24x, 28",E,yes,,no,no,,"1066",platform,SBMTD,,Q7419232,Santa Barbara MTD,El Colegio & Embarcadero del Mar,,yes,,bus_stop,yes,yes,no
+n12849899293,"12849899293",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,,,,,Foothill & Cieneguitas,,,,bus_stop,yes,,yes
+n12849945018,"12849945018",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,,platform,SBMTD,,Q7419232,Santa Barbara MTD,Foothill & Cieneguitas,,,,bus_stop,yes,yes,yes
+n12951102578,"12951102578",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,,platform,,,,,,,,,bus_stop,yes,yes,yes
+n13076896970,"13076896970",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"1117",platform,,,,,,,yes,,bus_stop,yes,no,yes
+n13188040396,"13188040396",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,,,,,,,,,bus_stop,yes,,
+n13337203526,"13337203526",node,,,,,,,,,,,,,,,,yes,,,,,,,,no,,,platform,Santa Barbara MTD,,Q7419232,Santa Barbara MTD,Verano & Primavera,,,,bus_stop,yes,,
+n13374516166,"13374516166",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"606",platform,SBMTD,,Q7419232,Santa Barbara MTD,Abrego & Camino Del Sur,,yes,,bus_stop,yes,no,yes
+n13395802329,"13395802329",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"1123",platform,,,,,,,no,,bus_stop,yes,no,yes
+n13571333887,"13571333887",node,,,,,,,,,,,,,,,,,,,,,,,no,no,,"958",platform,,,,,,,no,,bus_stop,yes,no,yes
+n13571598901,"13571598901",node,,,,,,,,,,,,,,,,no,,,,,,,no,no,,"834",platform,SBMTD,,Q7419232,Santa Barbara MTD,Ocean and Sabado Tarde,,yes,,bus_stop,yes,no,yes
+n13655679966,"13655679966",node,,,,,,,,,,,,,,,,,,,,,,,no,yes,,"313",platform,,,,,,,no,,bus_stop,yes,no,no
+n13998136095,"13998136095",node,,,,,,,,,,,,,,,,,,,,,,,,no,,,platform,,,,,,,,,bus_stop,yes,,yes
+n14083692477,"14083692477",node,,,,,,,,,,,,,,,,,,,,,,,,yes,,,platform,,,,,,,,,bus_stop,yes,yes,yes
+n14088787911,"14088787911",node,https://www.sbairbus.com,,,,,,State Street,CA,"93101","3845",Santa Barbara,,,,,,,no,,,,,no,yes,,,platform,Santa Barbara Airbus,,,,Santa Barbara,,,,bus_stop,yes,yes,yes
+n14103985300,"14103985300",node,,,,,,,,,,,,,,,,,,,,,,,,,,,platform,,,,,,,,,bus_stop,yes,,
