@@ -154,10 +154,9 @@ window.Quarto = {
   <ul>
   <li><a href="#exploring-data-types-in-arcgis-online" id="toc-exploring-data-types-in-arcgis-online" class="nav-link active" data-scroll-target="#exploring-data-types-in-arcgis-online">Exploring Data Types in ArcGIS Online</a>
   <ul class="collapse">
-  <li><a href="#annotations-vs.-geospatial-data" id="toc-annotations-vs.-geospatial-data" class="nav-link" data-scroll-target="#annotations-vs.-geospatial-data">Annotations vs.&nbsp;Geospatial Data</a></li>
-  <li><a href="#review-workshop-1-recap" id="toc-review-workshop-1-recap" class="nav-link" data-scroll-target="#review-workshop-1-recap">Review: Workshop 1 Recap</a></li>
+  <li><a href="#summary-of-workshop-1-annotations-vs.-geospatial-data" id="toc-summary-of-workshop-1-annotations-vs.-geospatial-data" class="nav-link" data-scroll-target="#summary-of-workshop-1-annotations-vs.-geospatial-data">Summary of Workshop 1: Annotations vs.&nbsp;Geospatial Data</a></li>
+  <li><a href="#review-exercise-workshop-1-recap" id="toc-review-exercise-workshop-1-recap" class="nav-link" data-scroll-target="#review-exercise-workshop-1-recap">Review exercise: Workshop 1 Recap</a></li>
   <li><a href="#types-of-geospatial-data" id="toc-types-of-geospatial-data" class="nav-link" data-scroll-target="#types-of-geospatial-data">Types of Geospatial Data</a></li>
-  <li><a href="#finding-and-adding-data-layers" id="toc-finding-and-adding-data-layers" class="nav-link" data-scroll-target="#finding-and-adding-data-layers">Finding and Adding Data Layers</a></li>
   </ul></li>
   <li><a href="#narrative" id="toc-narrative" class="nav-link" data-scroll-target="#narrative">Narrative</a>
   <ul class="collapse">
@@ -165,13 +164,16 @@ window.Quarto = {
   </ul></li>
   <li><a href="#adding-new-material-to-an-old-map" id="toc-adding-new-material-to-an-old-map" class="nav-link" data-scroll-target="#adding-new-material-to-an-old-map">Adding New Material to an Old Map</a>
   <ul class="collapse">
+  <li><a href="#setting-up-your-workspace" id="toc-setting-up-your-workspace" class="nav-link" data-scroll-target="#setting-up-your-workspace">Setting up your workspace</a></li>
   <li><a href="#add-roads" id="toc-add-roads" class="nav-link" data-scroll-target="#add-roads">Add Roads</a></li>
   <li><a href="#digital-elevation-models-dem" id="toc-digital-elevation-models-dem" class="nav-link" data-scroll-target="#digital-elevation-models-dem">Digital Elevation Models (DEM)</a></li>
   <li><a href="#another-type-of-raster" id="toc-another-type-of-raster" class="nav-link" data-scroll-target="#another-type-of-raster">Another type of raster</a></li>
+  <li><a href="#introducing-slope" id="toc-introducing-slope" class="nav-link" data-scroll-target="#introducing-slope">Introducing slope</a></li>
   <li><a href="#layer-management-rasters-and-additional-vectors" id="toc-layer-management-rasters-and-additional-vectors" class="nav-link" data-scroll-target="#layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</a></li>
   </ul></li>
   <li><a href="#satellite-view" id="toc-satellite-view" class="nav-link" data-scroll-target="#satellite-view">Satellite view</a></li>
   <li><a href="#vector-layers" id="toc-vector-layers" class="nav-link" data-scroll-target="#vector-layers">Vector Layers</a></li>
+  <li><a href="#exporting-data" id="toc-exporting-data" class="nav-link" data-scroll-target="#exporting-data">Exporting Data</a></li>
   <li><a href="#preview-for-workshop-3-looking-ahead-to-spatial-analysis" id="toc-preview-for-workshop-3-looking-ahead-to-spatial-analysis" class="nav-link" data-scroll-target="#preview-for-workshop-3-looking-ahead-to-spatial-analysis">Preview for Workshop 3: Looking Ahead to Spatial Analysis</a>
   <ul class="collapse">
   <li><a href="#analysis-workflow-overview" id="toc-analysis-workflow-overview" class="nav-link" data-scroll-target="#analysis-workflow-overview">Analysis Workflow Overview</a></li>
@@ -203,14 +205,14 @@ window.Quarto = {
 
 <section id="exploring-data-types-in-arcgis-online" class="level2">
 <h2 class="anchored" data-anchor-id="exploring-data-types-in-arcgis-online">Exploring Data Types in ArcGIS Online</h2>
-<p>This lesson focuses on understanding the different types of geographic data available in ArcGIS Online and learning how to import and work with your own data.</p>
-<section id="annotations-vs.-geospatial-data" class="level3">
-<h3 class="anchored" data-anchor-id="annotations-vs.-geospatial-data">Annotations vs.&nbsp;Geospatial Data</h3>
+<p>This lesson focuses on learning more about the different types of geographic data available in ArcGIS Online and learning how to import and work with your own data.</p>
+<section id="summary-of-workshop-1-annotations-vs.-geospatial-data" class="level3">
+<h3 class="anchored" data-anchor-id="summary-of-workshop-1-annotations-vs.-geospatial-data">Summary of Workshop 1: Annotations vs.&nbsp;Geospatial Data</h3>
 <p>In Workshop 1, we introduced sketch layers to draw points, lines, and polygons directly on top of the map. While sketches are convenient for quick markups and annotations, they are not true GIS data layers. Sketches lack an underlying database table and cannot be queried, filtered, or used in spatial analysis.</p>
 <p>In contrast, <strong>geospatial feature layers</strong> link geometries (points, lines, or polygons) to structured records in an <strong>attribute table</strong>. Each feature has defined attributes, or fields (e.g., name, speed limit, road type, elevation) with specific data types (such as text strings, numbers, and dates). This tabular structure makes it possible to filter features, symbolize data based on its attributes, and calculate spatial relationships.</p>
 </section>
-<section id="review-workshop-1-recap" class="level3">
-<h3 class="anchored" data-anchor-id="review-workshop-1-recap">Review: Workshop 1 Recap</h3>
+<section id="review-exercise-workshop-1-recap" class="level3">
+<h3 class="anchored" data-anchor-id="review-exercise-workshop-1-recap">Review exercise: Workshop 1 Recap</h3>
 <ol type="1">
 <li>Open and explore the completed map from Workshop 1 (<code>Workshop campus bike map</code>).</li>
 <li>Review layer symbology and experiment with the style sliders (such as Counts &amp; Amounts).</li>
@@ -237,16 +239,6 @@ window.Quarto = {
 <li><strong>Single-band rasters</strong>: Each pixel contains a single numerical value representing a continuous measurement (such as elevation in a Digital Elevation Model [DEM], slope, or temperature) or an integer code representing a category (such as land cover types).</li>
 <li><strong>Multi-band rasters</strong>: Each pixel contains multiple values across different spectral channels or bands (such as red, green, blue, and near-infrared bands in aerial photography or satellite imagery).</li>
 </ul>
-</section>
-</section>
-<section id="finding-and-adding-data-layers" class="level3">
-<h3 class="anchored" data-anchor-id="finding-and-adding-data-layers">Finding and Adding Data Layers</h3>
-<p>You can bring data into ArcGIS Online through several avenues:</p>
-<ul>
-<li><strong>Importing Tabular Data (CSV)</strong>: Import spreadsheet files containing latitude and longitude coordinates (e.g., bus stops or bike racks) and convert them directly into point feature layers.</li>
-<li><strong>Uploading Spatial Datasets</strong>: Upload spatial files from your local computer (such as Shapefiles, GeoJSON, or rasters) to publish them as hosted feature layers.</li>
-<li><strong>Living Atlas of the World</strong>: Browse and add datasets from Esri’s repository of global GIS data, including environmental, demographic statistics, infrastructure networks, and satellite imagery.</li>
-</ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -267,6 +259,7 @@ window.Quarto = {
 </div>
 </section>
 </section>
+</section>
 <section id="narrative" class="level2">
 <h2 class="anchored" data-anchor-id="narrative">Narrative</h2>
 <section id="the-story" class="level3">
@@ -276,6 +269,8 @@ window.Quarto = {
 </section>
 <section id="adding-new-material-to-an-old-map" class="level2">
 <h2 class="anchored" data-anchor-id="adding-new-material-to-an-old-map">Adding New Material to an Old Map</h2>
+<section id="setting-up-your-workspace" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-your-workspace">Setting up your workspace</h3>
 <p>Our finished product for this session will be the <code>Workshop Goleta bike map</code>. We will take time to preview this finished map before building it step by step.</p>
 <p>** link and screenshot of finished map goes here. ** Work in progress version: https://arcg.is/1yz0KP3</p>
 <p>The layers we will work with expand upon Workshop 1 with a wider geographic extent:</p>
@@ -284,6 +279,8 @@ window.Quarto = {
 <li><strong>Digital Elevation Model (DEM)</strong>: A raster layer covering campus, the coastal plain, and extending into the foothills.</li>
 <li><strong>Transit</strong>: We may get tired, so we will add bus stops to our map in case we need to put our bike on the bus to get back to campus. We will create this layer from a CSV file.</li>
 </ul>
+<p>`let’s not forget to tell the Learners what old layers to remove (ie: the roads)</p>
+</section>
 <section id="add-roads" class="level3">
 <h3 class="anchored" data-anchor-id="add-roads">Add Roads</h3>
 <p>To examine routes beyond campus, we zoom out to the broader regional area:</p>
@@ -300,6 +297,7 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="digital-elevation-models-dem">Digital Elevation Models (DEM)</h3>
 <p>Next, we add a Digital Elevation Model: <code>ucsb_local_dem</code>.</p>
 <p>By default, a <code>single channel</code> or <code>one band</code> raster is displayed as grayscale.</p>
+<p>** do we need a screenshot of the DEM as it comes in by default? **</p>
 <section id="what-is-a-dem" class="level4">
 <h4 class="anchored" data-anchor-id="what-is-a-dem">What is a DEM?</h4>
 <p>A <strong>Digital Elevation Model (DEM)</strong> is a single-band continuous raster where each cell represents bare-earth surface elevation relative to a vertical datum (mean sea level). The <code>ucsb_local_dem</code> dataset covers the UCSB campus, Goleta Slough, and the rising Santa Ynez foothills, derived from high-resolution USGS 3D Elevation Program (3DEP) LiDAR surveys.</p>
@@ -315,7 +313,7 @@ window.Quarto = {
 </section>
 <section id="creating-shaded-relief-hillshade-on-the-fly" class="level4">
 <h4 class="anchored" data-anchor-id="creating-shaded-relief-hillshade-on-the-fly">Creating Shaded Relief (Hillshade) on the Fly</h4>
-<p>To give the terrain realistic three-dimensional depth and surface texture, we can generate a shaded relief visualization dynamically:</p>
+<p>One use for a DEM is to make a shaded relief layer. That is a classic view that gives the terrain realistic three-dimensional depth and surface texture, we can generate a shaded relief visualization dynamically:</p>
 <ol type="1">
 <li>Duplicate the <code>ucsb_local_dem</code> layer.</li>
 <li>Rename the two DEM layers for clarity: name the top layer <code>Elevation (Color)</code> and the bottom layer <code>Elevation (Shaded Relief)</code>.</li>
@@ -350,8 +348,12 @@ window.Quarto = {
 </ul></li>
 </ol>
 <ul>
-<li>JJ living atlas landcover layers screenshot *</li>
+<li>JJ living atlas landcover layers screenshot * <img src="images/Workshop2/landcover_result.png" class="img-fluid"></li>
 </ul>
+</section>
+<section id="introducing-slope" class="level3">
+<h3 class="anchored" data-anchor-id="introducing-slope">Introducing slope</h3>
+<p>We made this slope layer for you. We learn how it was made in workshop 3 <img src="images/Workshop2/roads_over_slope.png" class="img-fluid"> Here’s that same slope layer symbolized with a divergent color scheme. <img src="images/Workshop2/slope.png" class="img-fluid"></p>
 </section>
 <section id="layer-management-rasters-and-additional-vectors" class="level3">
 <h3 class="anchored" data-anchor-id="layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</h3>
@@ -379,6 +381,10 @@ window.Quarto = {
   tabular data integrates with existing road and elevation layers.
 - Refresh memory on building layer
 - </code></pre>
+</section>
+<section id="exporting-data" class="level2">
+<h2 class="anchored" data-anchor-id="exporting-data">Exporting Data</h2>
+<p>How do we get stuff out of there?</p>
 </section>
 <section id="preview-for-workshop-3-looking-ahead-to-spatial-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="preview-for-workshop-3-looking-ahead-to-spatial-analysis">Preview for Workshop 3: Looking Ahead to Spatial Analysis</h2>
