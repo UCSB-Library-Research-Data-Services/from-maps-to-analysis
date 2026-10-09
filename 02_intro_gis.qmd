@@ -284,6 +284,15 @@ Geographic Coordinate Systems.
     define locations on earth. A point is referred by its longitude and
     latitude.
 
+Download and open the `SantaBarbara_County_Trailhead.csv` onto your
+device.
+
+::: {.callout-tip collapse="true"}
+###Mini Challenge
+
+how many trails are in this csv file?
+:::
+
 ```         
 - Refresh memory on building layer
 - 
