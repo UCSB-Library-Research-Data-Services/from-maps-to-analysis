@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Using your Data – From Maps to Analysis</title>
+<title>Using more Data – From Maps to Analysis</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -167,6 +167,7 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#add-roads" id="toc-add-roads" class="nav-link" data-scroll-target="#add-roads">Add Roads</a></li>
   <li><a href="#digital-elevation-models-dem" id="toc-digital-elevation-models-dem" class="nav-link" data-scroll-target="#digital-elevation-models-dem">Digital Elevation Models (DEM)</a></li>
+  <li><a href="#another-type-of-raster" id="toc-another-type-of-raster" class="nav-link" data-scroll-target="#another-type-of-raster">Another type of raster</a></li>
   <li><a href="#layer-management-rasters-and-additional-vectors" id="toc-layer-management-rasters-and-additional-vectors" class="nav-link" data-scroll-target="#layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</a></li>
   </ul></li>
   <li><a href="#satellite-view" id="toc-satellite-view" class="nav-link" data-scroll-target="#satellite-view">Satellite view</a></li>
@@ -183,7 +184,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Using your Data</h1>
+<h1 class="title">Using more Data</h1>
 </div>
 
 
@@ -206,7 +207,7 @@ window.Quarto = {
 <section id="annotations-vs.-geospatial-data" class="level3">
 <h3 class="anchored" data-anchor-id="annotations-vs.-geospatial-data">Annotations vs.&nbsp;Geospatial Data</h3>
 <p>In Workshop 1, we introduced sketch layers to draw points, lines, and polygons directly on top of the map. While sketches are convenient for quick markups and annotations, they are not true GIS data layers. Sketches lack an underlying database table and cannot be queried, filtered, or used in spatial analysis.</p>
-<p>In contrast, <strong>geospatial feature layers</strong> link spatial geometries (points, lines, or polygons) to structured records in an <strong>attribute table</strong>. Each feature has defined attribute fields (e.g., name, speed limit, road type, elevation) with specific data types (such as text strings, integers, floats, and dates). This tabular structure makes it possible to filter features, symbolize data based on attributes, and calculate new spatial relationships.</p>
+<p>In contrast, <strong>geospatial feature layers</strong> link geometries (points, lines, or polygons) to structured records in an <strong>attribute table</strong>. Each feature has defined attributes, or fields (e.g., name, speed limit, road type, elevation) with specific data types (such as text strings, numbers, and dates). This tabular structure makes it possible to filter features, symbolize data based on its attributes, and calculate spatial relationships.</p>
 </section>
 <section id="review-workshop-1-recap" class="level3">
 <h3 class="anchored" data-anchor-id="review-workshop-1-recap">Review: Workshop 1 Recap</h3>
@@ -276,7 +277,7 @@ window.Quarto = {
 <section id="adding-new-material-to-an-old-map" class="level2">
 <h2 class="anchored" data-anchor-id="adding-new-material-to-an-old-map">Adding New Material to an Old Map</h2>
 <p>Our finished product for this session will be the <code>Workshop Goleta bike map</code>. We will take time to preview this finished map before building it step by step.</p>
-<p>** link and screenshot of finished map goes here. **</p>
+<p>** link and screenshot of finished map goes here. ** Work in progress version: https://arcg.is/1yz0KP3</p>
 <p>The layers we will work with expand upon Workshop 1 with a wider geographic extent:</p>
 <ul>
 <li><strong>Roads and Paths</strong>: An expanded street and bicycle path network covering the Goleta and Santa Barbara area, extracted from OpenStreetMap.</li>
@@ -291,10 +292,14 @@ window.Quarto = {
 <li>Add the <code>SantaBarbara_Merged_roads</code> layer from your organization or the workshop group.</li>
 <li>Open the attribute table to inspect fields such as highway classification, road surface, and speed limits, and symbolize the roads to distinguish bike-friendly streets from arterial highways.</li>
 </ol>
+<ul>
+<li>screenshot of map with roads</li>
+</ul>
 </section>
 <section id="digital-elevation-models-dem" class="level3">
 <h3 class="anchored" data-anchor-id="digital-elevation-models-dem">Digital Elevation Models (DEM)</h3>
 <p>Next, we add a Digital Elevation Model: <code>ucsb_local_dem</code>.</p>
+<p>By default, a <code>single channel</code> or <code>one band</code> raster is displayed as grayscale.</p>
 <section id="what-is-a-dem" class="level4">
 <h4 class="anchored" data-anchor-id="what-is-a-dem">What is a DEM?</h4>
 <p>A <strong>Digital Elevation Model (DEM)</strong> is a single-band continuous raster where each cell represents bare-earth surface elevation relative to a vertical datum (mean sea level). The <code>ucsb_local_dem</code> dataset covers the UCSB campus, Goleta Slough, and the rising Santa Ynez foothills, derived from high-resolution USGS 3D Elevation Program (3DEP) LiDAR surveys.</p>
@@ -304,6 +309,9 @@ window.Quarto = {
 <h4 class="anchored" data-anchor-id="applying-color-schemes">Applying Color Schemes</h4>
 <p>By default, continuous raster layers display using a grayscale “Stretch” renderer (low values dark, high values light). To clearly distinguish elevation changes across the coastal plain and mountains, let’s change the symbology to a continuous or diverging color ramp (e.g., a below-and-above zero diverging ramp or an elevation palette).</p>
 <p><img src="images/Workshop2/dem_options.png" class="img-fluid"></p>
+<ul>
+<li>insert screenshot of results of divergent DEM</li>
+</ul>
 </section>
 <section id="creating-shaded-relief-hillshade-on-the-fly" class="level4">
 <h4 class="anchored" data-anchor-id="creating-shaded-relief-hillshade-on-the-fly">Creating Shaded Relief (Hillshade) on the Fly</h4>
@@ -328,19 +336,28 @@ window.Quarto = {
 <figcaption>Current status of our map with colored DEM and shaded relief</figcaption>
 </figure>
 </div>
+<p>This is a bit of an artificial example, because Esri offers a wide variety of hillshade basemaps in the Living Atlas</p>
 <p>Save your map at this point.</p>
 </section>
 </section>
 </section>
-<section id="layer-management-rasters-and-additional-vectors" class="level3">
-<h3 class="anchored" data-anchor-id="layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</h3>
-<ol type="1">
-<li><strong>Re-order layers</strong>: Ensure vector layers (roads and paths) remain on top of the raster elevation layers in the layer stack so they are not hidden.</li>
+<section id="another-type-of-raster" class="level3">
+<h3 class="anchored" data-anchor-id="another-type-of-raster">Another type of raster</h3>
+<ol start="2" type="1">
 <li><strong>Categorical Rasters vs.&nbsp;Continuous Rasters</strong>:
 <ul>
 <li>While elevation is a <strong>continuous raster</strong> (values change smoothly along a numerical gradient), other rasters are <strong>categorical rasters</strong> (e.g., land cover classification datasets from the Living Atlas, where integer cell values represent categories such as urban development, forest, or water). ** let’s be adding one here **</li>
 </ul></li>
-<li><strong>Imagery Layers vs.&nbsp;Basemaps</strong>:
+</ol>
+<ul>
+<li>JJ living atlas landcover layers screenshot *</li>
+</ul>
+</section>
+<section id="layer-management-rasters-and-additional-vectors" class="level3">
+<h3 class="anchored" data-anchor-id="layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</h3>
+<ol type="1">
+<li><p><strong>Re-order layers</strong>: Ensure vector layers (roads and paths) remain on top of the raster elevation layers in the layer stack so they are not hidden.</p></li>
+<li><p><strong>Imagery Layers vs.&nbsp;Basemaps</strong>:</p>
 <ul>
 <li>An <strong>basemap</strong> sits at the bottom of the map canvas, serving purely as a static background context. Esri has options that are satellite and aerial views.</li>
 <li>An <strong>imagery layer</strong> is a data layer added to your map stack. It can be re-ordered above or below other layers, adjusted with transparency and blend modes, queried for pixel values, and analyze for groundcover characteristics.</li>
