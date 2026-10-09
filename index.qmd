@@ -29,14 +29,14 @@ We have organized this curriculum into three workshops:
 
 -   adjust the background basemap
 -   add an existing layer to a map
--   change symbology
+-   change symbology of vector data
 -   draw lines and polygons on a map
 
 The workshop ends with exporting a map suitable for inclusion in a publication.
 
 ## Workshop 2 - Exploring more geospatial data
 
-2-3 hours workshop using ArcGIS Online to conduct basic GIS data exploration and visualization.
+3 hour workshop using ArcGIS Online to conduct basic GIS data exploration and visualization.
 
 -   raster versus vector data
 -   Living Atlas data
