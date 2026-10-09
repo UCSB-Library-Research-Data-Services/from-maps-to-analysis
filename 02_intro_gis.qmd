@@ -269,24 +269,29 @@ symbolized with a divergent color scheme.
 
 ## Creating Vector Layers by .CSV files
 
-Import `SantaBarbara_County_Trailheads` from a CSV spreadsheet using
-coordinate columns (latitude and longitude) to see how external tabular
-data integrates with existing road and elevation layers.
+In this section we will import `SantaBarbara_County_Trailheads` from a
+CSV spreadsheet using coordinate columns (latitude and longitude) to see
+how external tabular data integrates with existing road and elevation
+layers.
 
 Coordinate systems can be divided into two categories: Projected and
 Geographic Coordinate Systems.
 
 -   **Projected** Coordinate Systems use a 2D flat surface to define
-    locations and is always based on a geographic coordinate system.
-    Locations are identified by x,y coordinates.
+    locations and is measured in linear units. Locations are identified
+    by x,y coordinates
 
--   **Geographic** Coordinate Systems use a 3D spherical surface to
-    define locations on earth. A point is referred by its longitude and
-    latitude.
+-   **Geographic** Coordinate Systems use a 3D spherical surface
+    measured in angular units to define locations on earth. A point is
+    referred by its latitude and longitude.
 
-Download and open the `SantaBarbara_County_Trailhead.csv` onto your
+::: {.callout-note collapse="true" title="CRS"}
+In ArcGIS Online, the default projection and coordinate reference system
+(CRS) is WGS 1984 Web Mercator Auxilary Sphere
+:::
+
+Download and open the `SantaBarbara_County_Trailheads.csv` onto your
 device.
-
 
 ```         
 - Refresh memory on building layer
