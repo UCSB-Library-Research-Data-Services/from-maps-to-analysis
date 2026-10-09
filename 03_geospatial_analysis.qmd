@@ -2,6 +2,9 @@
 title: "Geospatial analysis"
 ---
 
+As you can guess, this part is still a work in progress. Check
+back winter quarter, 2027 to see our progress
+
 What tool?
 
 - ArcGIS pro

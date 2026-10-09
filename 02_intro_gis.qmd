@@ -1,5 +1,5 @@
 ---
-title: "Using your Data" 
+title: "Using more Data" 
 editor: 
   markdown: 
     wrap: 72
@@ -19,13 +19,13 @@ quick markups and annotations, they are not true GIS data layers.
 Sketches lack an underlying database table and cannot be queried,
 filtered, or used in spatial analysis.
 
-In contrast, **geospatial feature layers** link spatial geometries
+In contrast, **geospatial feature layers** link geometries
 (points, lines, or polygons) to structured records in an **attribute
-table**. Each feature has defined attribute fields (e.g., name, speed
+table**. Each feature has defined attributes, or fields (e.g., name, speed
 limit, road type, elevation) with specific data types (such as text
-strings, integers, floats, and dates). This tabular structure makes it
-possible to filter features, symbolize data based on attributes, and
-calculate new spatial relationships.
+strings, numbers, and dates). This tabular structure makes it
+possible to filter features, symbolize data based on its attributes, and
+calculate spatial relationships.
 
 ### Review: Workshop 1 Recap
 
@@ -123,6 +123,9 @@ Our finished product for this session will be the
 map before building it step by step.
 
 ** link and screenshot of finished map goes here. **
+Work in progress version:
+https://arcg.is/1yz0KP3
+
 
 The layers we will work with expand upon Workshop 1 with a wider
 geographic extent:
@@ -147,9 +150,13 @@ area:
     classification, road surface, and speed limits, and symbolize the
     roads to distinguish bike-friendly streets from arterial highways.
 
+* screenshot of map with roads
+
 ### Digital Elevation Models (DEM)
 
 Next, we add a Digital Elevation Model: `ucsb_local_dem`.
+
+By default, a `single channel` or `one band` raster is displayed as grayscale.
 
 #### What is a DEM?
 
@@ -172,7 +179,12 @@ elevation changes across the coastal plain and mountains, let's change the
 symbology to a continuous or diverging color ramp (e.g., a
 below-and-above zero diverging ramp or an elevation palette).
 
+
 ![](images/Workshop2/dem_options.png)
+
+* insert screenshot of results of divergent DEM
+
+
 
 #### Creating Shaded Relief (Hillshade) on the Fly
 
@@ -212,19 +224,28 @@ under our roads.
 ![Current status of our map with colored DEM and shaded
 relief](images/Workshop2/western_light.png){fig-alt="A rainbow colored hillshaded map with roads showing the software interface"}
 
+This is a bit of an artificial example, because Esri offers a wide variety of hillshade basemaps in the Living Atlas
+
 Save your map at this point.
 
-### Layer Management, Rasters, and Additional Vectors
-
-1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
-    on top of the raster elevation layers in the layer stack so they are
-    not hidden.
+### Another type of raster
 2.  **Categorical Rasters vs. Continuous Rasters**:
     - While elevation is a **continuous raster** (values change smoothly
       along a numerical gradient), other rasters are **categorical
       rasters** (e.g., land cover classification datasets from the
       Living Atlas, where integer cell values represent categories such
       as urban development, forest, or water). ** let's be adding one here **
+      
+* JJ living atlas landcover layers screenshot *
+      
+      
+### Layer Management, Rasters, and Additional Vectors
+
+1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
+    on top of the raster elevation layers in the layer stack so they are
+    not hidden.
+
+
 3.  **Imagery Layers vs. Basemaps**:
     - An **basemap** sits at the bottom of the map canvas,
       serving purely as a static background context. Esri has options that are
