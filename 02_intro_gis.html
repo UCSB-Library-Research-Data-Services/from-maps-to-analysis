@@ -172,7 +172,7 @@ window.Quarto = {
   <li><a href="#layer-management-rasters-and-additional-vectors" id="toc-layer-management-rasters-and-additional-vectors" class="nav-link" data-scroll-target="#layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</a></li>
   </ul></li>
   <li><a href="#satellite-view" id="toc-satellite-view" class="nav-link" data-scroll-target="#satellite-view">Satellite view</a></li>
-  <li><a href="#vector-layers" id="toc-vector-layers" class="nav-link" data-scroll-target="#vector-layers">Vector Layers</a></li>
+  <li><a href="#creating-vector-layers-by-.csv-files" id="toc-creating-vector-layers-by-.csv-files" class="nav-link" data-scroll-target="#creating-vector-layers-by-.csv-files">Creating Vector Layers by .CSV files</a></li>
   <li><a href="#exporting-data" id="toc-exporting-data" class="nav-link" data-scroll-target="#exporting-data">Exporting Data</a></li>
   <li><a href="#preview-for-workshop-3-looking-ahead-to-spatial-analysis" id="toc-preview-for-workshop-3-looking-ahead-to-spatial-analysis" class="nav-link" data-scroll-target="#preview-for-workshop-3-looking-ahead-to-spatial-analysis">Preview for Workshop 3: Looking Ahead to Spatial Analysis</a>
   <ul class="collapse">
@@ -280,7 +280,19 @@ window.Quarto = {
 <li><strong>Transit</strong>: We may get tired, so we will add bus stops to our map in case we need to put our bike on the bus to get back to campus.</li>
 <li><strong>Trailheads</strong>: We need to find out where the trails are and where they start. We will create this layer from a CSV file.</li>
 </ul>
-<p>`let’s not forget to tell the Learners what old layers to remove (ie: the roads)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Keeping a clean workspace
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>let’s not forget to remove old layers from the current map (ie: the roads)</p>
+</div>
+</div>
 </section>
 <section id="add-roads" class="level3">
 <h3 class="anchored" data-anchor-id="add-roads">Add Roads</h3>
@@ -345,7 +357,8 @@ window.Quarto = {
 <ol start="2" type="1">
 <li><strong>Categorical Rasters vs.&nbsp;Continuous Rasters</strong>:
 <ul>
-<li>While elevation is a <strong>continuous raster</strong> (values change smoothly along a numerical gradient), other rasters are <strong>categorical rasters</strong> (e.g., land cover classification datasets from the Living Atlas, where integer cell values represent categories such as urban development, forest, or water). ** let’s be adding one here **</li>
+<li>While elevation is a <strong>continuous raster</strong> (values change smoothly along a numerical gradient), other rasters are <strong>categorical rasters</strong> (e.g., land cover classification datasets from the Living Atlas, where integer cell values represent categories such as urban development, forest, or water).</li>
+<li>** let’s be adding one here **</li>
 </ul></li>
 </ol>
 <ul>
@@ -372,15 +385,18 @@ window.Quarto = {
 <section id="satellite-view" class="level2">
 <h2 class="anchored" data-anchor-id="satellite-view">Satellite view</h2>
 <ul>
-<li>placeholder for Planet image of Goleta-</li>
+<li>placeholder for Planet image of Goleta</li>
 </ul>
 </section>
-<section id="vector-layers" class="level2">
-<h2 class="anchored" data-anchor-id="vector-layers">Vector Layers</h2>
-<pre><code>- Import trailheads from a CSV spreadsheet using
-  coordinate columns (latitude and longitude) to see how external
-  tabular data integrates with existing road and elevation layers.
-- Refresh memory on building layer
+<section id="creating-vector-layers-by-.csv-files" class="level2">
+<h2 class="anchored" data-anchor-id="creating-vector-layers-by-.csv-files">Creating Vector Layers by .CSV files</h2>
+<p>Import <code>SantaBarbara_County_Trailheads</code> from a CSV spreadsheet using coordinate columns (latitude and longitude) to see how external tabular data integrates with existing road and elevation layers.</p>
+<p>Coordinate systems can be divided into two categories: Projected and Geographic Coordinate Systems.</p>
+<ul>
+<li><p><strong>Projected</strong> Coordinate Systems use a 2D flat surface to define locations and is always based on a geographic coordinate system. Locations are identified by x,y coordinates.</p></li>
+<li><p><strong>Geographic</strong> Coordinate Systems use a 3D spherical surface to define locations on earth. A point is referred by its longitude and latitude.</p></li>
+</ul>
+<pre><code>- Refresh memory on building layer
 - </code></pre>
 </section>
 <section id="exporting-data" class="level2">
