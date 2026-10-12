@@ -18,6 +18,8 @@ website:
         text: "Exploring more data"
       - href: index.qmd
         text: "Geospatial analysis"
+      - href: data_sources.qmd
+        text: "Data"
 format:
   html:
     theme: styles.scss
