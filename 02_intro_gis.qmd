@@ -186,7 +186,6 @@ dynamically:
     `Elevation (Shaded Relief)`.
 3.  Change the symbology style to **Shaded Relief**.
 
-#### Lighting our terrain
 
 Shaded relief simulates how sunlight illuminates terrain, casting
 shadows based on the position of the sun measured as two angles: Azimuth
@@ -207,6 +206,9 @@ and Altitude
 
 ![](images/Workshop2/relief_options.png)
 
+We can adjust those angles to show the sun in the morning or evening here in Santa Barbara.
+
+
 Adjust the transparency of the top colored elevation layer so the shaded
 relief beneath shows through, creating an illuminated 3D terrain effect
 under our roads.
@@ -214,10 +216,15 @@ under our roads.
 ![Current status of our map with colored DEM and shaded
 relief](images/Workshop2/western_light.png){fig-alt="A rainbow colored hillshaded map with roads showing the software interface"}
 
+This matches interim map 3 in our group. 
+
 This is a bit of an artificial example, because Esri offers a wide
 variety of hillshade basemaps in the Living Atlas
 
 Save your map at this point.
+
+
+
 
 ### Another type of raster
 
