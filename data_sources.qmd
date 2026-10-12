@@ -1,0 +1,98 @@
+---
+title: "Workshop Data Sources"
+---
+
+This page provides an inventory of all the starting datasets used across the three lessons in the *From Maps to Analysis* workshop series, presented in order of appearance.
+
+Links are provided to ArcGIS Online items, Living Atlas layers, and source files hosted in the GitHub repository so instructors and learners can locate and access the initial data.
+
+---
+
+## Workshop 1: I Want to Make a Map
+
+### 1. Basemaps (Topographic & Light Gray Canvas)
+- **Format:** ArcGIS Online Basemap / Vector Tile Service
+- **Access / Source:** 
+  - [Esri Topographic Basemap](https://www.arcgis.com/home/item.html?id=7dc6cea0b7a34a199662e79ffb8726a4){target="_blank"} (default initial basemap)
+  - [Light Gray Canvas Basemap](https://www.arcgis.com/home/item.html?id=291da5eab3a0412593b66d384379f89f){target="_blank"}
+- **Description:** Contextual background reference maps provided by Esri via the ArcGIS Online Basemap Gallery. Learners start with the default Topographic basemap and switch to the Light Gray Canvas basemap for clearer visibility of vector overlays.
+
+### 2. OSM_UCSB_Roads / OpenStreetMap Highways for North America
+- **Format:** ArcGIS Online Hosted Feature Layer View (Lines / Polylines)
+- **Access / Source:** 
+  - [OpenStreetMap Highways for North America on ArcGIS Online / Living Atlas](https://www.arcgis.com/home/item.html?id=7afec250e02845868db89c83949a672f){target="_blank"}
+  - In lesson instructions: Search `My organization` for **`OSM_UCSB_Roads`**
+- **Description:** Street, pathway, and cycleway network extracted from OpenStreetMap. In Workshop 1, learners filter this layer by `highway = 'cycleway'` to display bicycle paths across the UCSB campus and Isla Vista.
+
+### 3. bike_racks_ucsb
+- **Format:** ArcGIS Online Hosted Feature Layer (Points)
+- **Access / Source:** [bike_racks_ucsb Item on UCSB ArcGIS Online](https://ucsb.maps.arcgis.com/home/item.html?id=1f19721e8809472cb80b1ccdf5dc7859){target="_blank"} (Item ID: `1f19721e8809472cb80b1ccdf5dc7859`)
+- **Description:** Point feature layer containing campus bicycle parking locations and rack counts, generated from centroids of campus bike parking areas.
+
+### 4. UCSB Campus Buildings
+- **Format:** ArcGIS Online Hosted Feature Layer (Polygons)
+- **Access / Source:** 
+  - [UCSB Campus Buildings Item on UCSB ArcGIS Online](https://ucsb.maps.arcgis.com/home/item.html?id=2bde3dac8bdc443ea4ed451c2b88ecb6){target="_blank"} (Item ID: `2bde3dac8bdc443ea4ed451c2b88ecb6`)
+  - Alternative / Updated version: [UCSB Campus Buildings 2026](https://ucsb.maps.arcgis.com/home/item.html?id=37a1b0043ee04299b913acd018b5031f){target="_blank"} (Item ID: `37a1b0043ee04299b913acd018b5031f`)
+- **Description:** Polygon building footprints for UCSB campus facilities and outlying properties, exported from Facilities CAD data. Used to teach attribute inspection and symbology styling based on the building use field (`b_use`).
+
+### 5. Annotations (Sketch Layer)
+- **Format:** User-generated ArcGIS Online Map Sketch Layer (Points, Lines, Polygons)
+- **Access / Source:** Created interactively via the Map Viewer sketch tools.
+- **Description:** Hand-drawn vector annotations used to record personal experiences and observations directly onto the map (e.g., accident/near-miss incident points, proposed bike paths, and potential bike parking locations).
+
+---
+
+## Workshop 2: Exploring More Geospatial Data
+
+### 6. SantaBarbara_Merged_roads
+- **Format:** ArcGIS Online Hosted Feature Layer (Lines / Polylines)
+- **Access / Source:** [SantaBarbara_Merged_roads Item on UCSB ArcGIS Online](https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9){target="_blank"} (Item ID: `6729661d7b8043558c2fe6ada62f0df9`)
+- **Description:** Regional road and bicycle path network covering Goleta and Santa Barbara, created by merging OpenStreetMap paths and Esri Living Atlas local roads while removing restricted highways (US 101, CA 217, CA 154) where bicycles are prohibited.
+
+### 7. ucsb_local_dem
+- **Format:** ArcGIS Online Tiled Imagery Layer / Raster (Single-band continuous raster)
+- **Access / Source:** Available in the workshop organization content and the [From Maps to Analysis Group](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview){target="_blank"}
+- **Description:** Bare-earth Digital Elevation Model (DEM) of the Santa Barbara and Goleta area derived from high-resolution USGS 3DEP LiDAR survey data. Used to explore raster statistics, apply continuous/divergent color ramps, and generate dynamic hillshades (shaded relief).
+
+### 8. USA Annual NLCD - Land Cover
+- **Format:** ArcGIS Living Atlas Image Service (Multi-temporal categorical raster)
+- **Access / Source:** [USA Annual NLCD - Land Cover on Living Atlas](https://www.arcgis.com/home/item.html?id=32e2ccc6416746a9a72b4d216813f84f){target="_blank"} (Item ID: `32e2ccc6416746a9a72b4d216813f84f`)
+- **Description:** 30-meter resolution time-series raster from the Multi-Resolution Land Characteristics Consortium (MRLC) and USGS, categorizing the landscape into 16 modified Anderson Level II land cover classes. Used to introduce categorical rasters.
+
+### 9. Pre-calculated Slope Layer (`SantaBarbara_slope`)
+- **Format:** ArcGIS Online Tiled Imagery Layer / Raster
+- **Access / Source:** Shared through the [From Maps to Analysis Group](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview){target="_blank"} (Item ID: `ee0b2ecf12db4ff48aea0d730852bd08`)
+- **Description:** Terrain slope raster calculated from the regional DEM to illustrate terrain steepness. Provided as a pre-computed starting layer in Workshop 2 and analyzed further in Workshop 3.
+
+### 10. Bus Stops (Goleta & Santa Barbara)
+- **Format:** CSV spreadsheet / Vector Point Layer
+- **Access / Source:**
+  - Repository files:
+    - [`source_data/Goleta_Bus_Stops.csv`](source_data/Goleta_Bus_Stops.csv)
+    - [`source_data/Santa_Barbara_Bus_Stops.csv`](source_data/Santa_Barbara_Bus_Stops.csv)
+  - Hosted feature layer (Goleta): Item ID `a71f35ca2c3a47119bb883e73a409e61` in workshop maps
+- **Description:** Point datasets of Santa Barbara Metropolitan Transit District (SBMTD) bus stops with coordinate attributes (`lat`, `lon`), platform specifications, and route references derived from OpenStreetMap.
+
+### 11. Santa Barbara County Trails / Trailheads (`SB_County_Trails.csv`)
+- **Format:** CSV tabular spreadsheet (Latitude / Longitude coordinates)
+- **Access / Source:** 
+  - Repository file: [`source_data/SB_County_Trails.csv`](source_data/SB_County_Trails.csv)
+  - In lesson text: referenced as `SantaBarbara_County_Trailheads.csv` / `SB_County_Trails.csv`
+- **Description:** Point locations of trailheads and trails throughout Santa Barbara County, including difficulty, distance, and elevation gain. Used to demonstrate importing external tabular CSV files with geographic coordinates into ArcGIS Online.
+
+---
+
+## Workshop 3: Geospatial Analysis
+
+Workshop 3 focuses on spatial analysis operations using the layers introduced in earlier sessions:
+
+### 12. Digital Elevation Model (`ucsb_local_dem`) & Slope Analysis
+- **Format:** Single-band continuous raster
+- **Access / Source:** Same as in Workshop 2 ([From Maps to Analysis Group](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview){target="_blank"}).
+- **Description:** Used as the input raster for calculating terrain slope and executing raster calculations and zonal statistics.
+
+### 13. Street & Route Network (`SantaBarbara_Merged_roads` / Campus Network)
+- **Format:** Hosted Feature Layer (Polylines)
+- **Access / Source:** [SantaBarbara_Merged_roads](https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9){target="_blank"}.
+- **Description:** Serves as the vector input for spatial analysis workflows, including calculating road buffer zones (e.g., 30-meter proximity buffers) and summarizing slope statistics per road segment via Zonal Statistics as Table.
