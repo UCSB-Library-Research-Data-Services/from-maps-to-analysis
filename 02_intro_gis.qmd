@@ -297,9 +297,20 @@ device.
 - Refresh memory on building layer
 ```
 
+## Editing Data
+
+Potential narrative: adding the new ILP bike path to your own personal bike path layer.
+
 ## Exporting Data
 
+How do we get stuff out of ArcGIS Online?
+
+with a caveat that it's not a particularly good way to store and share data.
+
+see also: the token economy
+
 How do we get stuff out of there?
+
 
 ## Preview for Workshop 3: Looking Ahead to Spatial Analysis
 

@@ -28,7 +28,7 @@ We have organized this curriculum into three workshops:
 2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:
 
 -   adjust the background basemap
--   add an existing layer to a map
+-   add an existing data layer to a map
 -   change symbology of vector data
 -   draw lines and polygons on a map
 
@@ -36,20 +36,22 @@ The workshop ends with exporting a map suitable for inclusion in a publication.
 
 ## Workshop 2 - Exploring more geospatial data
 
-3 hour workshop using ArcGIS Online to conduct basic GIS data exploration and visualization.
+3-hour workshop using ArcGIS Online to conduct basic GIS data exploration and visualization.
 
--   raster versus vector data
+-   more about vector data
+-   raster data
 -   Living Atlas data
 -   data import & export
 
 ## Workshop 3 - Geospatial analysis
 
-4-hour workshop. Carpentry-like in ArcGIS Pro
+4-hour workshop. A Carpentry-like, hands-on session introducing the 
+analytical features of ArcGIS Online versus Pro on a Windows desktop.
 
-Data analysis centric:
+This session will introduce the learner to the differences between Online and Pro. We will cover topics such as:
 
-Intro to spatial analysis and zonal statistics
+-   raster calculation
 -   buffering
 -   interpolation
 -   zonal statistics
--   raster calculation
+
