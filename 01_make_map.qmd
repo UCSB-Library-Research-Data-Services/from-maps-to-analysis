@@ -210,7 +210,7 @@ As a result, you will see that the buildings are now filled with different color
 ![Buildings colored by their use category](images/Workshop1/Step2/symbology-by-attribute-result.png){#fig-buildingscolor width="90%" fig-align="center"}
 
 
-### filter layer based on attribute
+### Filter layer based on attribute
 
 Finally, we are interested in displaying bike paths from the `OSM_UCSB_Roads` layer that also contains roads, pathways and other features. We can filter the categories we are interested in using the filter function on the right sidebar.
 
