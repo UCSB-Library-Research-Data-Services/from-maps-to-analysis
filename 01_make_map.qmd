@@ -209,9 +209,6 @@ As a result, you will see that the buildings are now filled with different color
 
 ![Buildings colored by their use category](images/Workshop1/Step2/symbology-by-attribute-result.png){#fig-buildingscolor width="90%" fig-align="center"}
 
-::: {.callout-warning collapse="true" title="b_temp? b_phase"}
-These field names are pretty cryptic. This is often the case with public data. If you want to learn more about this data, navigate over to the feature layer'
-:::
 
 ### filter layer based on attribute
 
