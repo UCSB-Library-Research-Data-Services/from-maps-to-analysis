@@ -16,7 +16,7 @@ ArcGIS Online is but one of many GIS tools in existence. We use it in this lesso
 
 # Our goal for today
 
-Our goal is to develop a map of the UCSB campus that illustrates the current bicycle infrastructure, specifically highlighting bike paths and racks. Additionally, the map will incorporate information about related incidents (crash, theft, ...) and proposed improvements.
+Our goal is to develop a map of the UCSB campus that illustrates the current bicycle infrastructure, specifically highlighting bike paths and racks. Additionally, the map will incorporate information about related incidents (crash, injuries, ...) and proposed improvements.
 
 [At the end of our session we should end up with something like this](https://arcg.is/0iD4jS0){target="_blank"}
 
@@ -40,7 +40,7 @@ A brief tour of the interface.
 
 ## Log on to ArcGIS Online
 
-**[https://ucsb.maps.arcgis.com](https://ucsb.maps.arcgis.com){target="_blank"}**
+[**https://ucsb.maps.arcgis.com**](https://ucsb.maps.arcgis.com){target="_blank"}
 
 **Sign on with your UCSB NetID**. You may need to enter "ucsb" into the url box. **Do not use the ArcGIS login!** This is for users who do NOT have a UCSB NetID.
 
@@ -86,7 +86,7 @@ The goal of a basemap, is to provide context in terms of location and/or theme. 
 
 ![Default basemap](images/current-basemap.png){#fig-defaultmap width="90%" fig-align="center"}
 
-In general, make sure you choose a basemap that is easy to follow and accurate in relation to the goal of your map. Avoid using busy basemaps that provide information not relevant to the purpose of your map. Additionally, choose a basemap that does not visually conflict with or override the layers on top.  The *message* of your map is whatever you layer and annotate on top of the basemap; the basemap is there only to provide context. 
+In general, make sure you choose a basemap that is easy to follow and accurate in relation to the goal of your map. Avoid using busy basemaps that provide information not relevant to the purpose of your map. Additionally, choose a basemap that does not visually conflict with or override the layers on top. The *message* of your map is whatever you layer and annotate on top of the basemap; the basemap is there only to provide context.
 
 ## Feature layers
 
@@ -97,8 +97,7 @@ Feature layers are the layers you add on top of your basemap. They are the main 
 ![open your menu bar to find the `save` icon](images/save.png){height="50%"}
 
 -   There will be a blue dot next to the `save` icon until you save
--   You can organize your all of your content into folders
--- Let's make a folder for all of our work today. **Bike Map Workshop**
+-   You can organize your all of your content into folders -- Let's make a folder for all of our work today. **Bike Map Workshop**
 -   Once you save, more options will be available
 -   ArcGIS Online **will not auto-save** your map
 
@@ -112,9 +111,7 @@ With that introduction, you now have the opportunity to start creating your own 
 
 ### Import lines Feature layer (bike paths)
 
-
 From the **Layers** panel, click on the add layer button. Search `My organization` for **OSM_UCSB_Roads**. There should be only one result.
-
 
 ![Adding a layer](images/Workshop1/Step1/add-layers_small.gif){#fig-addinglayer}
 
@@ -126,7 +123,6 @@ From the **Layers** panel, click on the add layer button. Search `My organizatio
 ![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png){#fig-bikeracks width="80%"}
 :::
 
-
 ::: {.callout-tip collapse="true"}
 ## Challenge: Find the 'From Maps to Analysis' group and add the `UCSB Campus Buildings` layer from there.
 
@@ -134,7 +130,6 @@ From the **Layers** panel, click on the add layer button. Search `My organizatio
 
 ![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){#fig-buildinglayers width="90%"}
 :::
-
 
 ### Reorder layers
 
@@ -169,7 +164,7 @@ For example, if you click on the three dots on the right of a feature layer you 
 Your data can be visualized, selected, or analysed based on the columns of the attribute table. We will see later how you can leverage these attributes to set the symbology of a layer according to categories or quantities that are in the attribute table. You can also compute new attributes either based on other attributes or by performing analysis with other layers' information. We will cover analysis tools [in our second workshop](02_intro_gis.html).
 
 ::: {.callout-note collapse="true" title="Save often."}
-Now that you have added the layers to your map, it's a good idea to save it again. 
+Now that you have added the layers to your map, it's a good idea to save it again.
 
 ![Save as dialog in ArcGIS Online](images/Workshop1/Step1/save-as.png){#fig-saveas width="30%" fig-align="center"}
 
@@ -193,13 +188,11 @@ From the menu, we can select several categories of symbols. Let's select the `Go
 
 To change the size of the symbol, we can use the `Size` slider to reduce it to a more appropriate size. First, select **Adjust size automatically** to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.
 
-
 ::: {.callout-warning collapse="false" title="Size slider quirk"}
 In ArcGIS Online, every time you select the **Adjust size automatically** option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option. Also note that the size you choose is function of the current scale/zoom you are using on the map when you set this value for the first time.
 
 ![Symbol size settings with adjust size automatically option](images/Workshop1/Step2/symbology-point-size.png){#fig-symbolsize width="70%"}
 :::
-
 
 ### Adjust style based on attribute
 
@@ -225,17 +218,18 @@ These field names are pretty cryptic. This is often the case with public data. I
 Finally, we are interested in displaying bike paths from the `OSM_UCSB_Roads` layer that also contains roads, pathways and other features. We can filter the categories we are interested in using the filter function on the right sidebar.
 
 -   Click on the layer `OSM_UCSB_Roads` to select it.
--   Click on the `Filter` button on the right sidebar (third from top).
-![Adding a filter to the road layer](images/Workshop1/Step2/symbology-filter-road.png){#fig-filter-selection  fig-align="center"}
+
+-   Click on the `Filter` button on the right sidebar (third from top). ![Adding a filter to the road layer](images/Workshop1/Step2/symbology-filter-road.png){#fig-filter-selection fig-align="center"}
 
 -   Click `Add new`
+
 -   In the condition box, choose the `highway` field and the `includes` and select `cycleway`
+
 -   Don't forget to save with the button at the bottom!
 
-![Filtering out the bike paths](images/Workshop1/Step2/symbology-road-conditional.png){#fig-filter-on  fig-align="center"}
+![Filtering out the bike paths](images/Workshop1/Step2/symbology-road-conditional.png){#fig-filter-on fig-align="center"}
 
 As a result, you will see that the bike paths are now more transparent for higher speed limits and less transparent for lower speed limits.
-
 
 ### Select a better basemap
 
@@ -301,7 +295,6 @@ Similarly to the line drawing tool, select the circle drawing tool from the sket
 -   Fill transparency: 38%
 
 ![Drawing a circle on the map](images/Workshop1/Step3/drawing-circle-vector.gif){#fig-drawingcircle width="90%" fig-align="center"}
-
 :::
 
 Finally, let's rename the sketch layer to **Annotations** to better reflect its purpose. Click on the three dots next to the sketch layer and select `Rename`. Enter the new name and click `OK`.
@@ -329,8 +322,9 @@ You can also customize more the layout by enabling the `Advance options` panel. 
 
 Adjust the zoom and position of the map in the preview window to ensure everything is visible and well-framed.
 
-::: {.callout-tip}
+::: callout-tip
 # Map resolution
+
 If your map is intended for **print publication**, it is recommended that you set your DPI value to 300 dpi. For **web or screen display**, 96 dpi is generally sufficient and will produce a smaller file size.
 :::
 
@@ -350,6 +344,7 @@ This will save the exported map to you ArcGIS Online content. You can access it 
 
 ::: {.callout-warning collapse="true"}
 # Public sharing
+
 You can share your map publicly and embed it on a website, just like we did at the beginning of this lesson. However, for this to work, you need to set the visibility of all your map layers to public.
 :::
 
@@ -373,18 +368,18 @@ There are many ways of making a simple map. Here are some alternative approaches
 
 # Caveats of using ArcGIS Online {#sec-caveats}
 
-Two central concepts of open science are **reproducibility**, by which we mean the ability to inspect (if not re-execute or replicate) all the data sources, code, protocols, and other materials used in a study, and **citation**, the ability to persistently and openly refer to and access those same data sources, code, protocols, and other materials.  Unfortunately, a proprietary, closed tool like ArcGIS Online fails to support open science in three important ways.
+Two central concepts of open science are **reproducibility**, by which we mean the ability to inspect (if not re-execute or replicate) all the data sources, code, protocols, and other materials used in a study, and **citation**, the ability to persistently and openly refer to and access those same data sources, code, protocols, and other materials. Unfortunately, a proprietary, closed tool like ArcGIS Online fails to support open science in three important ways.
 
-- The artifacts one works with in ArcGIS Online (layers, maps, StoryMaps, etc.) are stored internally and inaccessibly in an unknown, proprietary format. The data can be viewed or otherwise accessed *through* ArcGIS Online to be sure, and perhaps edited if one has a paid subscription, but the data in its raw form is inaccessible.
+-   The artifacts one works with in ArcGIS Online (layers, maps, StoryMaps, etc.) are stored internally and inaccessibly in an unknown, proprietary format. The data can be viewed or otherwise accessed *through* ArcGIS Online to be sure, and perhaps edited if one has a paid subscription, but the data in its raw form is inaccessible.
 
-- The storage, commitment to persistence, and access costs of artifacts stored in ArcGIS Online are entirely dependent on a commercial company.
+-   The storage, commitment to persistence, and access costs of artifacts stored in ArcGIS Online are entirely dependent on a commercial company.
 
-- Artifacts such as maps can be identified by URLs, but not by the DOI identifiers that are commonplace in scholarly communication, and which are often required by publishers, citation tracking systems, and academic promotion committees.
+-   Artifacts such as maps can be identified by URLs, but not by the DOI identifiers that are commonplace in scholarly communication, and which are often required by publishers, citation tracking systems, and academic promotion committees.
 
-An additional caveat that applies to all UI-based GIS tools, not just ArcGIS Online, is that operations are performed interactively.  Unfortunately, interactive use does not create any kind of historical log of actions performed.  While this style of interface allows for free and fast exploration, it comes at the cost of being able to reliably re-create processing steps.  Notice in this workshop that the sequence of actions used to create your map are not recorded anywhere.  For a map this may not matter, nor may it matter for a one-off analysis, but if you wanted to, say, apply the same set of steps to a new map, or if your work within ArcGIS Online involved spatial analysis, it will likely be critical that the processing steps be recorded in such a way that they can be inspected if not re-run.
+An additional caveat that applies to all UI-based GIS tools, not just ArcGIS Online, is that operations are performed interactively. Unfortunately, interactive use does not create any kind of historical log of actions performed. While this style of interface allows for free and fast exploration, it comes at the cost of being able to reliably re-create processing steps. Notice in this workshop that the sequence of actions used to create your map are not recorded anywhere. For a map this may not matter, nor may it matter for a one-off analysis, but if you wanted to, say, apply the same set of steps to a new map, or if your work within ArcGIS Online involved spatial analysis, it will likely be critical that the processing steps be recorded in such a way that they can be inspected if not re-run.
 
 ArcGIS Online is a powerful tool, to be sure. But to use it in a way that supports open, reproducible science, we recommend that you:
 
-- Export newly-created feature layers as Shapefiles, and/or export attributes tables as CSV files, and make those files preserved and citable by storing them in a data repository. Do not consider ArcGIS Online to be any kind of long-term repository.
+-   Export newly-created feature layers as Shapefiles, and/or export attributes tables as CSV files, and make those files preserved and citable by storing them in a data repository. Do not consider ArcGIS Online to be any kind of long-term repository.
 
-- Express significant computations programmatically, so that they can be inspected and re-run.
+-   Express significant computations programmatically, so that they can be inspected and re-run.
