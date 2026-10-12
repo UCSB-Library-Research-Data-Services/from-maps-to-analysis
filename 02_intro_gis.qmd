@@ -5,13 +5,13 @@ editor:
     wrap: 72
 ---
 
-## Exploring Data Types in ArcGIS Online
+# Exploring Data in ArcGIS Online
 
 This lesson focuses on learning more about the different types of
 geographic data available in ArcGIS Online and learning how to import
 and work with your own data.
 
-### Summary of Workshop 1: Annotations vs. Geospatial Data
+## Summary of Workshop 1: Annotations vs. Geospatial Data
 
 In Workshop 1, we introduced sketch layers to draw points, lines, and
 polygons directly on top of the map. While sketches are convenient for
@@ -33,17 +33,15 @@ relationships.
     (`Workshop campus bike map`).
 2.  Review layer symbology and experiment with the style sliders (such
     as Counts & Amounts).
-3.  Perform a **Save As** before moving forward so each participant has
-    their own working map copy saved in their personal ArcGIS Online
-    workspace.
+3.  Review how points, lines, and polygons are different
+4.  Perform a **Save As** before moving forward so that you have your own working map copy saved in your personal ArcGIS Online workspace.
 
-### Types of Geospatial Data
+## Types of Geospatial Data
 
 Geographic data generally falls into two primary models: **vector** and
 **raster**.
 
-#### Vector Data
-
+### Vector Data
 Vector data represents discrete geographic features using coordinate
 geometry:
 
@@ -59,7 +57,7 @@ geometry:
 Every shape is tied to a row in an attribute table, where each column
 holds specific properties describing that feature. For example ...
 
-#### Raster Data
+### Raster Data
 
 Raster data represents continuous phenomena across the landscape as a
 regular grid of square cells (pixels) organized into rows and columns:
@@ -72,33 +70,18 @@ regular grid of square cells (pixels) organized into rows and columns:
     different spectral channels or bands (such as red, green, blue, and
     near-infrared bands in aerial photography or satellite imagery).
 
-::: callout-note
-### Esri ArcGIS Online Credits
 
--   All ArcGIS Online accounts created under the UCSB site license are
-    allocated **1000 service credits** per license year.
--   **Transactions**: Some analysis operations and storage consume
-    service credits. For more information, visit Esri's [Understand
-    Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
-    page.
--   **Manage your content**: Periodically review and delete unnecessary
-    hosted layers and analysis outputs to conserve credits.
--   **Data Stewardship**: Objects stored in ArcGIS Online should be
-    considered ephemeral. Your content access depends on the UCSB
-    Library's Higher Education Site License.
-:::
 
-## Narrative
+## The Story So Far and Adding New Material to Your Map
 
-### The Story
+In the first workshop, we created a bicycle map of campus and Isla Vista
+using pre-existing data.
 
-Our goal is to plan a scenic, safe, and challenging bicycle route that
+Our goal for part 2 is to plan a challenging bicycle route that
 leads from the UCSB campus into the surrounding Goleta community and the
 Santa Ynez foothills. To accomplish this, we need to expand beyond
 campus bike paths and incorporate regional road networks along with
 elevation data to analyze terrain and slope.
-
-## Adding New Material to an Old Map
 
 ### Setting up your workspace
 
@@ -106,11 +89,10 @@ Our finished product for this session will be the
 `Workshop Goleta bike map`. We will take time to preview this finished
 map before building it step by step.
 
-\*\* link and screenshot of finished map goes here. \*\* Work in
-progress version: https://arcg.is/1yz0KP3
+\*\* link and screenshot of finished map goes here. 
+[Work in progress version: (https://arcg.is/1yz0KP3)](https://arcg.is/1yz0KP3)
 
-The layers we will work with expand upon Workshop 1 with a wider
-geographic extent:
+The layers for this workshop will all have a wider extent than those from  Workshop 1:
 
 -   **Roads and Paths**: An expanded street and bicycle path network
     covering the Goleta and Santa Barbara area, extracted from
@@ -122,15 +104,20 @@ geographic extent:
 -   **Trailheads**: We need to find out where the trails are and where
     they start. We will create this layer from a CSV file.
 
+::: callout-challenge
+Which vector layers in the map are:
+--points
+--lines
+--polygons
+:::
+
 ::: callout-note
 ### Keeping a clean workspace
-
 let's not forget to remove old layers from the current map (ie: the
 roads)
 :::
 
-### Add Roads
-
+### Add More Roads
 To examine routes beyond campus, we zoom out to the broader regional
 area:
 
@@ -142,11 +129,17 @@ area:
     classification, road surface, and speed limits, and symbolize the
     roads to distinguish bike-friendly streets from arterial highways.
 
--   screenshot of map with roads
+* TO DO *
+-   screenshot of map with roads symbolized for bikes
+
+## Raster Data 
+basic definition and diagram of pixelated image goes here
 
 ### Digital Elevation Models (DEM)
+Let's add a Digital Elevation Model to out map: `ucsb_local_dem`
 
-Next, we add a Digital Elevation Model: `ucsb_local_dem`.
+The value of each pixel in a DEM represents elevation. What do you think are 
+the units of `ucsb_local_dem`?
 
 By default, a `single channel` or `one band` raster is displayed as
 grayscale.
@@ -154,20 +147,19 @@ grayscale.
 \*\* do we need a screenshot of the DEM as it comes in by default? \*\*
 
 #### What is a DEM?
-
 A **Digital Elevation Model (DEM)** is a single-band continuous raster
 where each cell represents bare-earth surface elevation relative to a
-vertical datum (mean sea level). The `ucsb_local_dem` dataset covers the
-UCSB campus, Goleta Slough, and the rising Santa Ynez foothills, derived
-from high-resolution USGS 3D Elevation Program (3DEP) LiDAR surveys.
+vertical datum (mean sea level). The `ucsb_local_dem` dataset was derived
+from a high-resolution USGS LiDAR survey (3D Elevation Program (3DEP)).
+
+\*\* define continuous \*\*
 
 In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
 (make sure we are feet and not meters)
 
-#### Applying Color Schemes
-
+### Applying Raster Color Schemes
 By default, continuous raster layers display using a grayscale "Stretch"
 renderer (low values dark, high values light). To clearly distinguish
 elevation changes across the coastal plain and mountains, let's change
@@ -178,7 +170,7 @@ below-and-above zero diverging ramp or an elevation palette).
 
 -   insert screenshot of results of divergent DEM
 
-#### Creating Shaded Relief (Hillshade) on the Fly
+### Creating Shaded Relief (Hillshade) on the Fly
 
 One use for a DEM is to make a shaded relief layer. That is a classic
 view that gives the terrain realistic three-dimensional depth and
@@ -191,7 +183,7 @@ dynamically:
     `Elevation (Shaded Relief)`.
 3.  Change the symbology style to **Shaded Relief**.
 
-##### Lighting our terrain
+#### Lighting our terrain
 
 Shaded relief simulates how sunlight illuminates terrain, casting
 shadows based on the position of the sun measured as two angles: Azimuth
@@ -241,12 +233,12 @@ Save your map at this point.
 
 ### Introducing slope
 
-We made this slope layer for you. We learn how it was made in workshop 3
+We made this slope layer for you. We will learn how it was made in workshop 3
 ![](images/Workshop2/roads_over_slope.png) Here's that same slope layer
 symbolized with a divergent color scheme.
 ![](images/Workshop2/slope.png)
 
-### Layer Management, Rasters, and Additional Vectors
+## Layer Management, Rasters, and Additional Vectors
 
 1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
     on top of the raster elevation layers in the layer stack so they are
@@ -263,11 +255,41 @@ symbolized with a divergent color scheme.
         analyze for groundcover characteristics.
     -   Below we will add a Planet satellite view to campus to explore.
 
-## Satellite view
+::: callout-note
+### Esri ArcGIS Online Credits
+
+-   All ArcGIS Online accounts created under the UCSB site license are
+    allocated **1000 service credits** per license year.
+-   **Transactions**: Some analysis operations and storage consume
+    service credits. For more information, visit Esri's [Understand
+    Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
+    page.
+-   **Manage your content**: Periodically review and delete unnecessary
+    hosted layers and analysis outputs to conserve credits.
+-   **Data Stewardship**: Objects stored in ArcGIS Online should be
+    considered ephemeral. Your content access depends on the UCSB
+    Library's Higher Education Site License.
+:::
+
+
+## Multi-band Rasters 
+So far we have worked with single-channel, or 1-band rasters. However, perhaps we
+are more familiar with 3-channel images, because our eyes see best in the
+red-green-blue color space. For geospatial data, think of this as satellite
+or aerial views.
+
+For digital images, 3 'bands' of wavelengths are stored separately. When the
+computer combines them together, 
 
 -   placeholder for Planet image of Goleta
 
-## Creating Vector Layers by .CSV files
+
+
+## Importing data into ArcGIS Online
+Uploading an image to ArcGIS Online takes up storage, so we aren't going to 
+do that.
+
+### Creating Vector Layers by .CSV files
 
 In this section we will import `SantaBarbara_County_Trailheads` from a
 CSV spreadsheet using coordinate columns (latitude and longitude) to see
