@@ -67,10 +67,12 @@ Links are provided to ArcGIS Online items, Living Atlas layers, and source files
 - **Access / Source:** Shared through the [From Maps to Analysis Group](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview){target="_blank"} (Item ID: `ee0b2ecf12db4ff48aea0d730852bd08`)
 - **Description:** Terrain slope raster calculated from the regional DEM to illustrate terrain steepness. Provided as a pre-computed starting layer in Workshop 2 and analyzed further in Workshop 3.
 
-### https://ucsb.maps.arcgis.com/home/item.html?id=fe7e24e58be14d54b7f327db4cac50d2#overview
-Hey opencode: flesh out this one and renumber the subsequent
+### 10. Multi-band Satellite Imagery / Planet Satellite View of Goleta
+- **Format:** ArcGIS Online Imagery Layer / Tiled Imagery Layer (Multi-band continuous raster)
+- **Access / Source:** [Planet Satellite View on UCSB ArcGIS Online](https://ucsb.maps.arcgis.com/home/item.html?id=fe7e24e58be14d54b7f327db4cac50d2#overview){target="_blank"} (Item ID: `fe7e24e58be14d54b7f327db4cac50d2`)
+- **Description:** High-resolution multi-band (RGB) satellite imagery covering the UCSB campus and surrounding Goleta area, captured by Planet Labs and hosted by the UCSB DREAM Lab. Used in Workshop 2 to illustrate multi-band rasters (combining red, green, and blue spectral bands) and demonstrate the distinction between interactive operational imagery layers and static basemaps.
 
-### 10. Bus Stops (Goleta & Santa Barbara)
+### 11. Bus Stops (Goleta & Santa Barbara)
 - **Format:** CSV spreadsheet / Vector Point Layer
 - **Access / Source:**
   - Repository files:
@@ -79,7 +81,7 @@ Hey opencode: flesh out this one and renumber the subsequent
   - Hosted feature layer (Goleta): Item ID `a71f35ca2c3a47119bb883e73a409e61` in workshop maps
 - **Description:** Point datasets of Santa Barbara Metropolitan Transit District (SBMTD) bus stops with coordinate attributes (`lat`, `lon`), platform specifications, and route references derived from OpenStreetMap.
 
-### 11. Santa Barbara County Trails / Trailheads (`SB_County_Trails.csv`)
+### 12. Santa Barbara County Trails / Trailheads (`SB_County_Trails.csv`)
 - **Format:** CSV tabular spreadsheet (Latitude / Longitude coordinates)
 - **Access / Source:** 
   - Repository file: [`source_data/SB_County_Trails.csv`](source_data/SB_County_Trails.csv)
@@ -92,12 +94,12 @@ Hey opencode: flesh out this one and renumber the subsequent
 
 Workshop 3 focuses on spatial analysis operations using the layers introduced in earlier sessions:
 
-### 12. Digital Elevation Model (`ucsb_local_dem`) & Slope Analysis
+### 13. Digital Elevation Model (`ucsb_local_dem`) & Slope Analysis
 - **Format:** Single-band continuous raster
 - **Access / Source:** Same as in Workshop 2 ([From Maps to Analysis Group](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview){target="_blank"}).
 - **Description:** Used as the input raster for calculating terrain slope and executing raster calculations and zonal statistics.
 
-### 13. Street & Route Network (`SantaBarbara_Merged_roads` / Campus Network)
+### 14. Street & Route Network (`SantaBarbara_Merged_roads` / Campus Network)
 - **Format:** Hosted Feature Layer (Polylines)
 - **Access / Source:** [SantaBarbara_Merged_roads](https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9){target="_blank"}.
 - **Description:** Serves as the vector input for spatial analysis workflows, including calculating road buffer zones (e.g., 30-meter proximity buffers) and summarizing slope statistics per road segment via Zonal Statistics as Table.
