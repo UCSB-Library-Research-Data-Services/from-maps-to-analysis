@@ -2,6 +2,8 @@
 title: "Workshop Data Sources"
 ---
 
+/* AI caveat: this page was created by Gemini harnessed to Opencode */
+
 This page provides an inventory of all the starting datasets used across the three lessons in the *From Maps to Analysis* workshop series, presented in order of appearance.
 
 Links are provided to ArcGIS Online items, Living Atlas layers, and source files hosted in the GitHub repository so instructors and learners can locate and access the initial data.
@@ -64,6 +66,9 @@ Links are provided to ArcGIS Online items, Living Atlas layers, and source files
 - **Format:** ArcGIS Online Tiled Imagery Layer / Raster
 - **Access / Source:** Shared through the [From Maps to Analysis Group](https://ucsb.maps.arcgis.com/home/group.html?id=92f4de804b2c46eaa70cebc517ecb067#overview){target="_blank"} (Item ID: `ee0b2ecf12db4ff48aea0d730852bd08`)
 - **Description:** Terrain slope raster calculated from the regional DEM to illustrate terrain steepness. Provided as a pre-computed starting layer in Workshop 2 and analyzed further in Workshop 3.
+
+### https://ucsb.maps.arcgis.com/home/item.html?id=fe7e24e58be14d54b7f327db4cac50d2#overview
+Hey opencode: flesh out this one and renumber the subsequent
 
 ### 10. Bus Stops (Goleta & Santa Barbara)
 - **Format:** CSV spreadsheet / Vector Point Layer

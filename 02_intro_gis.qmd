@@ -11,34 +11,37 @@ This lesson focuses on learning more about the different types of
 geographic data available in ArcGIS Online and learning how to import
 and work with your own data.
 
-## Summary of Workshop 1: Annotations vs. Data
+## Review: Annotations vs. Data
 
-In [Workshop 1](https://rds.library.ucsb.edu/from-maps-to-analysis/01_make_map.html), we started with sketch layers to draw points, lines, and
-polygons directly on top of the map. While sketches are convenient for
-quick markups and annotations, they are not true GIS data layers.
-Sketches lack an underlying database table and cannot be queried,
-filtered, or used in spatial analysis.
+In [Workshop
+1](https://rds.library.ucsb.edu/from-maps-to-analysis/01_make_map.html),
+we started with sketch layers to draw points, lines, and polygons
+directly on top of the map. While sketches are convenient for quick
+markups and annotations, they are not true GIS data layers. Sketches
+lack an underlying database table and cannot be queried, filtered, or
+used in spatial analysis.
 
-In contrast, **feature layers** link geometries (points,
-lines, or polygons) to structured records in an **attribute table**.
-Each feature has defined attributes, or fields (e.g., name, speed limit,
-road type, elevation) with specific data types (such as text strings,
-numbers, and dates). This tabular structure makes it possible to filter
-features, symbolize data based on its attributes, and calculate spatial
+In contrast, **feature layers** link geometries (points, lines, or
+polygons) to structured records in an **attribute table**. Each feature
+has defined attributes, or fields (e.g., name, speed limit, road type,
+elevation) with specific data types (such as text strings, numbers, and
+dates). This tabular structure makes it possible to filter features,
+symbolize data based on its attributes, and calculate spatial
 relationships.
 
-### Review exercise: Workshop 1 Recap
+### Exercise: Workshop 1 Recap
 
 1.  Open and explore the completed map from Workshop 1
     (`Workshop campus bike map`).
-1.  Review layer symbology and experiment with the style sliders (such
+2.  Review layer symbology and experiment with the style sliders (such
     as Counts & Amounts).
-1.  Review how points, lines, and polygons are different
-1.  Refresh memory on building layer
-1.  Perform a **Save As** before moving forward so that you have your
+3.  Review how points, lines, and polygons are different
+4.  Refresh memory on building layer
+5.  Perform a **Save As** before moving forward so that you have your
     own working map copy saved in your personal ArcGIS Online workspace.
 
 ## Preview: our end goal
+
 Our finished product for this session will be the
 `Workshop Goleta bike map`. We will take time to preview this finished
 map before building it step by step.
@@ -46,16 +49,19 @@ map before building it step by step.
 \*\* link and screenshot of finished map goes here. [Work in progress
 version: (https://arcg.is/1yz0KP3)](https://arcg.is/1yz0KP3)
 
-
-
-
 ## Types of Geospatial Data
 
 Geographic data generally falls into two primary models: **vector** and
 **raster**.
 
+![The difference in geospatial work is the same as between Adobe
+Illustrator (vectors) and Photoshop (rasters) (image credit: [Graphic
+Mama](https://graphicmama.com/blog/vector-and-raster-whats-the-difference/)](images/Workshop2/graphicmamacartoon.jpg){fig-alt="A cartoon visually comparing mathematically calculated vectors veersus grids of square pixel rasters"}
+
 ### Vector Data
-So far we have only looked at vector data. Vector data represents discrete geographic features using coordinate geometry:
+
+So far we have only looked at vector data. Vector data represents
+discrete geographic features using coordinate geometry:
 
 - **Points**: Single $(X, Y)$ coordinate pairs representing discrete
   locations (e.g., bike racks, bus stops, accident locations).
@@ -70,8 +76,9 @@ Every shape is tied to a row in an attribute table, where each column
 holds specific properties describing that feature. For example ...
 
 ### Raster Data
-Raster data represents the landscape as a
-regular grid of square cells (pixels) organized into rows and columns:
+
+Raster data represents the landscape as a regular grid of square cells
+(pixels) organized into rows and columns.
 
 - **Single-band rasters**: Each pixel contains a single numerical value
   representing a continuous measurement (such as elevation in a Digital
@@ -81,27 +88,28 @@ regular grid of square cells (pixels) organized into rows and columns:
   different spectral channels or bands (such as red, green, blue, and
   near-infrared bands in aerial photography or satellite imagery).
 
-## The Story So Far and Adding New Material to Your Map
+## The Story So Far 
 
 In the first workshop, we created a bicycle map of campus and Isla Vista
 using pre-existing data.
 
-Our goal for part 2 is to plan a challenging and comfortable bicycle route 
-that leads from the UCSB campus into the surrounding Goleta community and the Santa
-Ynez foothills. To accomplish this, we need to expand beyond campus bike
-paths and incorporate regional road networks along with elevation data
-to analyze terrain and slope.
+Our goal for part 2 is to plan a challenging and comfortable bicycle
+route that leads from the UCSB campus into the surrounding Goleta
+community and the Santa Ynez foothills. To accomplish this, we need to
+expand beyond campus bike paths and incorporate regional road networks
+along with elevation data to analyze terrain and slope.
 
-### Setting up your workspace
+### Adding New Material to Your Map 
 
-The layers for this workshop will all have a wider extent than those
-from Workshop 1. For example,
-[SantaBarbara_Merged_roads](https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9)** is an expanded street and bicycle path network
-covering the Goleta and Santa Barbara area, extracted from
-OpenStreetMap and an Esri Living Atlas layer. We have already excluded major
-highways from this layer--because we know you won't want to bicycle on them.
+Let's set up our workspaces together. The layers for this workshop all
+have a wider extent than those from Workshop 1. For example,
+[SantaBarbara_Merged_roads](https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9)\*\*
+is an expanded street and bicycle path network covering the Goleta and
+Santa Barbara area, extracted from OpenStreetMap and an Esri Living
+Atlas layer. We have already excluded major highways from this
+layer--because we know you won't want to bicycle on them.
 
-Add this layer now. 
+Add this layer now.
 
 To examine routes beyond campus, we zoom out to the broader regional
 area:
@@ -118,28 +126,31 @@ area:
 - screenshot of map with roads symbolized for bikes
 
 ::: callout-challenge
-Compare the previous road file to rhis one
+Compare the previous road file to this one
+
 Which vector layers in the map are: --points --lines --polygons
 :::
 
 ::: callout-note
 Keeping a clean workspace
 
-let's not forget to remove old layers from the current map (ie: the old roads
-roads)
+let's not forget to remove old layers from the current map (ie: the old
+roads roads)
 :::
 
-## Raster Data
+## Working with Raster Data
 
-* basic definition and diagram of pixelated image goes here
-* ArcGIS Online variations: while these all start somewhere as TIFFs, they
-  are ingested into AGO as `Tiled imagery layers`
+When outside of ArcGIS Online, geospatial raster data comes in many
+different forms. TIFFs, Grids, netCDF, iiif, web map services. Too many
+to list!
 
+- ArcGIS Online variations: while these all start somewhere as TIFFs,
+  they are all (generally?) ingested into AGO as `Tiled imagery layers`
 
 ### Digital Elevation Models (DEM)
 
-Let's add a Digital Elevation Model to out map: `ucsb_local_dem`. 
-By default, a `single channel` or `one band` raster is displayed as
+Let's add a Digital Elevation Model to out map: `ucsb_local_dem`. By
+default, a `single channel` or `one band` raster is displayed as
 grayscale, with low values black and high values white.
 
 The value of each pixel in a DEM represents elevation. What do you think
@@ -147,9 +158,10 @@ are the units of `ucsb_local_dem`?
 
 \*\* do we need a screenshot of the DEM as it comes in by default? \*\*
 
-Each pixel, or cell, in our  DEM represents bare-earth surface elevation relative to a vertical datum (mean sea level). The `ucsb_local_dem` dataset was
-derived from a high-resolution USGS LiDAR survey (3D Elevation Program
-(3DEP)).
+Each pixel, or cell, in our DEM represents bare-earth surface elevation
+relative to a vertical datum (mean sea level). The `ucsb_local_dem`
+dataset was derived from a high-resolution USGS LiDAR survey (3D
+Elevation Program (3DEP)).
 
 \*\* define continuous \*\*
 
@@ -162,7 +174,8 @@ hundreds of feet in the foothills, as well as the grid cell resolution.
 Does our DEM contain negative values? Why?
 :::
 
-### Applying Color Schemes
+#### Applying Color Schemes
+
 By default, continuous raster layers display using a grayscale "Stretch"
 renderer (low values dark, high values light). To clearly distinguish
 elevation changes across the coastal plain and mountains, let's change
@@ -173,8 +186,8 @@ below-and-above zero diverging ramp or an elevation palette).
 
 - insert screenshot of results of divergent DEM
 
+#### Creating Shaded Relief (Hillshade) on the Fly
 
-### Creating Shaded Relief (Hillshade) on the Fly
 One use for a DEM is to make a shaded relief layer. That is a classic
 view that gives the terrain realistic three-dimensional depth and
 surface texture, we can generate a shaded relief visualization
@@ -185,7 +198,6 @@ dynamically:
     `Elevation (Color)` and the bottom layer
     `Elevation (Shaded Relief)`.
 3.  Change the symbology style to **Shaded Relief**.
-
 
 Shaded relief simulates how sunlight illuminates terrain, casting
 shadows based on the position of the sun measured as two angles: Azimuth
@@ -206,8 +218,8 @@ and Altitude
 
 ![](images/Workshop2/relief_options.png)
 
-We can adjust those angles to show the sun in the morning or evening here in Santa Barbara.
-
+We can adjust those angles to show the sun in the morning or evening
+here in Santa Barbara.
 
 Adjust the transparency of the top colored elevation layer so the shaded
 relief beneath shows through, creating an illuminated 3D terrain effect
@@ -216,40 +228,70 @@ under our roads.
 ![Current status of our map with colored DEM and shaded
 relief](images/Workshop2/western_light.png){fig-alt="A rainbow colored hillshaded map with roads showing the software interface"}
 
-This matches interim map 3 in our group. 
+This matches interim map 3 in our group.
 
 This is a bit of an artificial example, because Esri offers a wide
-variety of hillshade basemaps in the Living Atlas
+variety of hillshade basemaps in the Living Atlas. Also: that was a
+rather lengthy aside.
 
-Save your map at this point.
+Now would be an excellent point to save your map.
 
+### Categorical Rasters
 
+**Categorical vs. Continuous Data**
 
+Continuous data are best represented by numbers, and are logically
+consistent when you do so. Smaller numbers = less of some measurement.
 
-### Another type of raster
+On the other hand, categorical data can be text or numeric. The value of
+any numbers used do not necessarily reflect any mathematical value, but
+it may. For example, while the values below have a natural order (3
+Little Piggies Construction Scale), the numbers are ordinal, but
+arbitrary:
 
-2.  **Categorical Rasters vs. Continuous Rasters**:
-    - While elevation is a **continuous raster** (values change smoothly
-      along a numerical gradient), other rasters are **categorical
-      rasters** (e.g., land cover classification datasets from the
-      Living Atlas, where integer cell values represent categories such
-      as urban development, forest, or water).
-    - \*\* let's be adding one here \*\*
+- 1 = reinforced concrete or steel beam
+- 2 = wood stick construction
+- 3 = baked brick masonry
+- 4 = adobe
+- 5 = sun brick / mud daub
+- 6 = straw bail
 
-- JJ living atlas landcover layers screenshot \*
-  ![](images/Workshop2/landcover_result.png)
+- While elevation is a **continuous raster** (values change smoothly
+  along a numerical gradient), other rasters are **categorical rasters**
+  (e.g., land cover classification datasets from the Living Atlas, where
+  integer cell values represent categories such as urban development,
+  forest, or water).
 
-### Introducing slope
+One particularly arbitrary type of categorical data is land cover.
+- ![](images/Workshop2/landcover_result.png)
 
-We made this slope layer for you. We will learn how it was made in
-workshop 3 ![](images/Workshop2/roads_over_slope.png) Here's that same
-slope layer symbolized with a divergent color scheme.
+### Calculated Raster Data: Slope
+
+When we made the hillshade visualization above, that was a sort of
+calculation based on the DEM.
+
+You can also perform calculations to turn a DEM into a slope layer. We
+made this slope layer for you. This is another continuous dataset. You
+can call it derivative data.
+
+We will learn how it was made in workshop 3, but for now we will use it
+to examine, with our eyes, where the steepest bike routes up into our
+foothills are: ![](images/Workshop2/roads_over_slope.png)
+
+**POP QUIZ:** Below same slope layer, zoomed in to campus, and
+symbolized with a divergent color scheme. What does this tell you is
+incorrect about something we said earlier regarding our DEM?
+
 ![](images/Workshop2/slope.png)
+
+Resymbolize your slope layer to a color scheme that makes sense to you.
+Look up into the foothills. Which paths look steepest?
+
+![](images/Workshop2/symbolizing_slope.png){width="60%"}
 
 ## Layer Management, Rasters, and Additional Vectors
 
 Add in the bus stop layer
-
 
 1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
     on top of the raster elevation layers in the layer stack so they are
@@ -267,7 +309,7 @@ Add in the bus stop layer
     - Below we will add a Planet satellite view to campus to explore.
 
 ::: callout-note
-### Esri ArcGIS Online Credits
+#### Esri ArcGIS Online Credits
 
 - All ArcGIS Online accounts created under the UCSB site license are
   allocated **1000 service credits** per license year.
@@ -290,7 +332,13 @@ best in the red-green-blue color space. For geospatial data, think of
 this as satellite or aerial views.
 
 For digital images, 3 'bands' of wavelengths are stored separately. When
-the computer combines them together,
+the computer combines them together, we humans see something akin to
+what we see when we look at nature with our eyes. However, we can swap
+in other bandwidths of radiation, such as near infrared, or microwave,
+and see completely other things.
+
+The DREAM Lab hosts several satellite views of campus created by a
+private satellite firm. Let's add one of those layers now:
 
 - placeholder for Planet image of Goleta
 
@@ -299,33 +347,29 @@ the computer combines them together,
 Uploading an image to ArcGIS Online takes up storage, so we aren't going
 to do that.
 
-### Creating Vector Layers by .CSV files
+### Creating Vector Layers from .CSV files
 
 In this section we will import `SantaBarbara_County_Trailheads` from a
-CSV spreadsheet using coordinate columns (latitude and longitude) to see
-how external tabular data integrates with existing road and elevation
-layers.
-
-Coordinate systems can be divided into two categories: Projected and
-Geographic Coordinate Systems.
-
-- **Projected** Coordinate Systems use a 2D flat surface to define
-  locations and is measured in linear units. Locations are identified by
-  x,y coordinates
-
-- **Geographic** Coordinate Systems use a 3D spherical surface measured
-  in angular units to define locations on earth. A point is referred by
-  its latitude and longitude.
+CSV file that contains columns for latitude and longitude coordinates.
+For our bicycle ride, this will show where we will be leaving the public
+roads, and entering Santa Barbara's excellent mountain biking territory.
 
 ::: {.callout-note collapse="true" title="CRS"}
 In ArcGIS Online, the default projection and coordinate reference system
 (CRS) is WGS 1984 Web Mercator Auxilary Sphere
+
+Coordinate systems can be divided into two categories: Projected and Geographic Coordinate Systems.
+
+Projected Coordinate Systems use a 2D flat surface to define locations and is measured in linear units. Locations are identified by x,y coordinates
+
+Geographic Coordinate Systems use a 3D spherical surface measured in angular units to define locations on earth. A point is referred by its latitude and longitude.
+
+Examine the csv file: does it tell you anything about the coordinate system that we are dealing with?
+
 :::
 
 Download and open the `SantaBarbara_County_Trailheads.csv` onto your
 device.
-
-
 
 ## Editing Data
 
@@ -342,6 +386,11 @@ data.
 see also: the token economy
 
 How do we get stuff out of there?
+
+## Completing the Story
+So where shall we ride our bicycles?
+
+
 
 ## Preview for Workshop 3: Looking Ahead to Spatial Analysis
 
