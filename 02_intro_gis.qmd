@@ -57,7 +57,7 @@ Geographic data generally falls into two primary models: **vector** and
 
 ![The difference in geospatial work is the same as between Adobe
 Illustrator (vectors) and Photoshop (rasters) (image credit: [Graphic
-Mama](https://graphicmama.com/blog/vector-and-raster-whats-the-difference/)](images/workshop2graphicmamacartoon.jpg){fig-alt="A cartoon visually comparing mathematically calculated vectors veersus grids of square pixel rasters"}
+Mama](https://graphicmama.com/blog/vector-and-raster-whats-the-difference/)](images/workshop2/graphicmamacartoon.jpg){fig-alt="A cartoon visually comparing mathematically calculated vectors veersus grids of square pixel rasters"}
 
 ### Vector Data
 
@@ -184,7 +184,7 @@ elevation changes across the coastal plain and mountains, let's change
 the symbology to a continuous or diverging color ramp (e.g., a
 below-and-above zero diverging ramp or an elevation palette).
 
-![](images/workshop2dem_options.png)
+![](images/workshop2/dem_options.png)
 
 - insert screenshot of results of divergent DEM
 
@@ -218,7 +218,7 @@ and Altitude
   sun) produces longer, more dramatic shadows that accentuate
   ridgelines, canyons, and valleys.
 
-![](images/workshop2relief_options.png)
+![](images/workshop2/relief_options.png)
 
 We can adjust those angles to show the sun in the morning or evening
 here in Santa Barbara.
@@ -228,7 +228,7 @@ relief beneath shows through, creating an illuminated 3D terrain effect
 under our roads.
 
 ![Current status of our map with colored DEM and shaded
-relief](images/workshop2western_light.png){fig-alt="A rainbow colored hillshaded map with roads showing the software interface"}
+relief](images/workshop2/western_light.png){fig-alt="A rainbow colored hillshaded map with roads showing the software interface"}
 
 This matches interim map 3 in our group.
 
@@ -265,7 +265,7 @@ arbitrary:
   forest, or water).
 
 One particularly arbitrary type of categorical data is land cover.
-- ![](images/workshop2landcover_result.png)
+- ![](images/workshop2/landcover_result.png)
 
 ### Calculated Raster Data: Slope
 
@@ -278,18 +278,18 @@ can call it derivative data.
 
 We will learn how it was made in workshop 3, but for now we will use it
 to examine, with our eyes, where the steepest bike routes up into our
-foothills are: ![](images/workshop2roads_over_slope.png)
+foothills are: ![](images/workshop2/roads_over_slope.png)
 
 **POP QUIZ:** Below same slope layer, zoomed in to campus, and
 symbolized with a divergent color scheme. What does this tell you is
 incorrect about something we said earlier regarding our DEM?
 
-![](images/workshop2slope.png)
+![](images/workshop2/slope.png)
 
 Resymbolize your slope layer to a color scheme that makes sense to you.
 Look up into the foothills. Which paths look steepest?
 
-![](images/workshop2symbolizing_slope.png){width="60%"}
+![](images/workshop2/symbolizing_slope.png){width="60%"}
 
 ## Layer Management, Rasters, and Additional Vectors
 
@@ -374,31 +374,31 @@ device.
 
 - Add layer from file 
 
-![](images/workshop2import_csv-add.png){fig-alt="Unfold the Add menu" width=50%}
+![](images/workshop2/import_csv-add.png){fig-alt="Unfold the Add menu" width=50%}
 
 - Select "Your Device" and browse to the csv file you want to import
 
-![](images/workshop2import_csv-file.png){fig-alt="Browse or drop file" width=80%}
+![](images/workshop2/import_csv-file.png){fig-alt="Browse or drop file" width=80%}
 
 - Leave the default option Create a hosted feature layer and add it to the map
 
-![](images/workshop2import_csv-layer.png){fig-alt="Select 'hosted feature'" width=80%}
+![](images/workshop2/import_csv-layer.png){fig-alt="Select 'hosted feature'" width=80%}
 
 - Select the attributes you would like to import as well as rename fields as you see necessary. You can also use this step to rename any of the field. Let's select all the fileds up to "Overview" and Rename "Title" as "Name". It is also a good practice to check that the field types are aligned with what you were expecting.
 
-![](images/workshop2import_csv-field.png){fig-alt="Select the attributes you want to import and rename them as needed" width=100%}
+![](images/workshop2/import_csv-field.png){fig-alt="Select the attributes you want to import and rename them as needed" width=100%}
 
 - Match the latitude and longitude information used by ArcGIS to generate the location with your data attributes.
 
-![](images/workshop2import_csv-latlong.png){fig-alt="Match the Latitude and longitude attribute from your data with the information that ArcGIS will use to create the spatial locations" width=80%}
+![](images/workshop2/import_csv-latlong.png){fig-alt="Match the Latitude and longitude attribute from your data with the information that ArcGIS will use to create the spatial locations" width=80%}
 
 - Save your new data layer under your user account creating a `ucsb_bike` folder if you have not one yet
 
-![](images/workshop2import_csv-save.png){fig-alt="Interface to Save your new layer under your account" width=80%}
+![](images/workshop2/import_csv-save.png){fig-alt="Interface to Save your new layer under your account" width=80%}
 
 - Zoom out to see the trailhead locations! Of course now we need to make it look better :)
 
-![](images/workshop2import_csv-map.png){fig-alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity" width=100%}
+![](images/workshop2/import_csv-map.png){fig-alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity" width=100%}
 
 
 ::: {.callout-note collapse="false" title="CRS"}
@@ -479,7 +479,7 @@ and route difficulty:
     to compute summary statistics (such as the maximum or mean slope)
     for each road line.
 
-![](images/workshop2create_max_slope_table.png)
+![](images/workshop2/create_max_slope_table.png)
 
 3.  **Joining Statistics to Roads**: The zonal statistics tool outputs a
     standalone data table. To visualize these slope measurements on the
@@ -487,7 +487,7 @@ and route difficulty:
     Summarize data \> Join Features**, matching on a common identifier
     such as `OBJECTID`.
 
-![](images/workshop2roads_over_slope.png)
+![](images/workshop2/roads_over_slope.png)
 
 4.  Once joined, roads can be symbolized by slope steepness, allowing us
     to pinpoint the steepest hill climbs for our ride!
