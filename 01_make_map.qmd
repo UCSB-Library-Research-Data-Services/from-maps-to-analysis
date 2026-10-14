@@ -20,7 +20,7 @@ Our goal is to develop a map of the UCSB campus that illustrates the current bic
 
 [At the end of our session we should end up with something like this](https://arcg.is/0iD4jS0){target="_blank"}
 
-![Preliminary version of the possible result](images/Workshop1/final_map.png){#fig-prelim}
+![Preliminary version of the possible result](images/workshop1/final_map.png){#fig-prelim}
 
 <br>
 
@@ -113,14 +113,14 @@ With that introduction, you now have the opportunity to start creating your own 
 
 From the **Layers** panel, click on the add layer button. Search `My organization` for **OSM_UCSB_Roads**. There should be only one result.
 
-![Adding a layer](images/Workshop1/Step1/add-layers_small.gif){#fig-addinglayer}
+![Adding a layer](images/workshop1/Step1/add-layers_small.gif){#fig-addinglayer}
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
 
 ### Import points layer (bike racks)
 
-![Add UCSB bike racks layer](images/Workshop1/Step1/select-feature-point-layer.png){#fig-bikeracks width="80%"}
+![Add UCSB bike racks layer](images/workshop1/Step1/select-feature-point-layer.png){#fig-bikeracks width="80%"}
 :::
 
 ::: {.callout-tip collapse="true"}
@@ -128,7 +128,7 @@ From the **Layers** panel, click on the add layer button. Search `My organizatio
 
 ### Add a layer via Groups
 
-![Add UCSB buildings layer](images/Workshop1/Step1/select-feature-polygon-layer.png){#fig-buildinglayers width="90%"}
+![Add UCSB buildings layer](images/workshop1/Step1/select-feature-polygon-layer.png){#fig-buildinglayers width="90%"}
 :::
 
 ### Reorder layers
@@ -151,7 +151,7 @@ For our map, the recommended order from top to bottom should be:
 
 To reorder the layers, click and hold on a layer name in the Layers panel, drag it to the desired position, and release.
 
-![Reorder feature layers](images/Workshop1/Step1/reorder-layers_small.gif){#fig-reorderlayers fig-align="center"}
+![Reorder feature layers](images/workshop1/Step1/reorder-layers_small.gif){#fig-reorderlayers fig-align="center"}
 
 ### Accessing the underlying data
 
@@ -159,14 +159,14 @@ To reorder the layers, click and hold on a layer name in the Layers panel, drag 
 
 For example, if you click on the three dots on the right of a feature layer you can access its *attribute table* by selecting `Show table`.
 
-![Attribute table of UCSB buildings layer](images/Workshop1/Step1/attribute-table.png){#fig-attribute width="90%"}
+![Attribute table of UCSB buildings layer](images/workshop1/Step1/attribute-table.png){#fig-attribute width="90%"}
 
 Your data can be visualized, selected, or analysed based on the columns of the attribute table. We will see later how you can leverage these attributes to set the symbology of a layer according to categories or quantities that are in the attribute table. You can also compute new attributes either based on other attributes or by performing analysis with other layers' information. We will cover analysis tools [in our second workshop](02_intro_gis.html).
 
 ::: {.callout-note collapse="true" title="Save often."}
 Now that you have added the layers to your map, it's a good idea to save it again.
 
-![Save as dialog in ArcGIS Online](images/Workshop1/Step1/save-as.png){#fig-saveas width="30%" fig-align="center"}
+![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas width="30%" fig-align="center"}
 
 In there, you can add a title, tags, and a short description of your map.
 :::
@@ -184,14 +184,14 @@ There, we have multiple options to customize the symbol. Let's click on the curr
 
 From the menu, we can select several categories of symbols. Let's select the `Government` category and look for a bike parking icon. Click on the `Done` button to apply the changes and return to the symbol style panel.
 
-![Selecting a bike parking symbol from the Government category](images/Workshop1/Step2/symbology-select-symbol.png){#fig-bikeparking width="90%" fig-align="center"}
+![Selecting a bike parking symbol from the Government category](images/workshop1/Step2/symbology-select-symbol.png){#fig-bikeparking width="90%" fig-align="center"}
 
 To change the size of the symbol, we can use the `Size` slider to reduce it to a more appropriate size. First, select **Adjust size automatically** to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.
 
 ::: {.callout-warning collapse="false" title="Size slider quirk"}
 In ArcGIS Online, every time you select the **Adjust size automatically** option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option. Also note that the size you choose is function of the current scale/zoom you are using on the map when you set this value for the first time.
 
-![Symbol size settings with adjust size automatically option](images/Workshop1/Step2/symbology-point-size.png){#fig-symbolsize width="70%"}
+![Symbol size settings with adjust size automatically option](images/workshop1/Step2/symbology-point-size.png){#fig-symbolsize width="70%"}
 :::
 
 ### Adjust style based on attribute
@@ -203,11 +203,11 @@ Now, what if we wanted to adjust the symbology based on an attribute? Let's say 
 -   Look for the `① Choose attributes` option and select `+ Field`.
 -   Select the attribute `b_use`, which stands for building use, and click on `Add`.
 
-![Adjusting symbology style by attribute](images/Workshop1/Step2/symbology-by-attribute.png){#fig-symbolstyle width="90%" fig-align="center"}
+![Adjusting symbology style by attribute](images/workshop1/Step2/symbology-by-attribute.png){#fig-symbolstyle width="90%" fig-align="center"}
 
 As a result, you will see that the buildings are now filled with different colors based on their use. You can further customize the colors by clicking on the color ramp and selecting a different one.
 
-![Buildings colored by their use category](images/Workshop1/Step2/symbology-by-attribute-result.png){#fig-buildingscolor width="90%" fig-align="center"}
+![Buildings colored by their use category](images/workshop1/Step2/symbology-by-attribute-result.png){#fig-buildingscolor width="90%" fig-align="center"}
 
 
 ### Filter layer based on attribute
@@ -216,7 +216,7 @@ Finally, we are interested in displaying bike paths from the `OSM_UCSB_Roads` la
 
 -   Click on the layer `OSM_UCSB_Roads` to select it.
 
--   Click on the `Filter` button on the right sidebar (third from top). ![Adding a filter to the road layer](images/Workshop1/Step2/symbology-filter-road.png){#fig-filter-selection fig-align="center"}
+-   Click on the `Filter` button on the right sidebar (third from top). ![Adding a filter to the road layer](images/workshop1/Step2/symbology-filter-road.png){#fig-filter-selection fig-align="center"}
 
 -   Click `Add new`
 
@@ -224,7 +224,7 @@ Finally, we are interested in displaying bike paths from the `OSM_UCSB_Roads` la
 
 -   Don't forget to save with the button at the bottom!
 
-![Filtering out the bike paths](images/Workshop1/Step2/symbology-road-conditional.png){#fig-filter-on fig-align="center"}
+![Filtering out the bike paths](images/workshop1/Step2/symbology-road-conditional.png){#fig-filter-on fig-align="center"}
 
 As a result, you will see that the bike paths are now more transparent for higher speed limits and less transparent for lower speed limits.
 
@@ -232,11 +232,11 @@ As a result, you will see that the bike paths are now more transparent for highe
 
 After adding the layers and customizing their symbology, we have a good, almost ready map. However, the current basemap (Topographic) is a bit too busy and makes it hard to see the features we added. Let's change it to a simpler basemap using the `Basemap` option in the left menu bar.
 
-![Basemap option in the left menu bar](images/Workshop1/Step2/basemap-menu-location.png){#fig-basemapoption width="40%" fig-align="center"}
+![Basemap option in the left menu bar](images/workshop1/Step2/basemap-menu-location.png){#fig-basemapoption width="40%" fig-align="center"}
 
 From the basemap gallery, we can select a simpler basemap. For this example, we selected the `Light Gray Canvas` basemap, which provides a clean background that makes our features stand out.
 
-![Map with Light Gray Canvas basemap](images/Workshop1/Step2/basemap-light-gray-canvas.png){#fig-lightgray width="90%" fig-align="center"}
+![Map with Light Gray Canvas basemap](images/workshop1/Step2/basemap-light-gray-canvas.png){#fig-lightgray width="90%" fig-align="center"}
 
 **Don't forget to save your map after making these changes!**
 
@@ -244,11 +244,11 @@ From the basemap gallery, we can select a simpler basemap. For this example, we 
 
 In addition to bringing external sources of information into a map (whether in the form of a basemap or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a **sketch layer**.
 
-![Sketch layer option in the left menu](images/Workshop1/Step3/drawing-sketch-layer-menu.png){#fig-sketchlayer width="40%" fig-align="center"}
+![Sketch layer option in the left menu](images/workshop1/Step3/drawing-sketch-layer-menu.png){#fig-sketchlayer width="40%" fig-align="center"}
 
 After adding the sketch layer to your workspace, a new menu will appear in the right column with drawing tools and configuration options.
 
-![Sketch layer drawing tools menu](images/Workshop1/Step3/drawing-sketch-bar-menu.png){#fig-drawingtools width="40%" fig-align="center"}
+![Sketch layer drawing tools menu](images/workshop1/Step3/drawing-sketch-bar-menu.png){#fig-drawingtools width="40%" fig-align="center"}
 
 ### Drawing points in a sketch layer
 
@@ -261,7 +261,7 @@ In our example, we add the following settings to the point symbol:
 -   Size: 48 px
 -   Vector marker (background): Blue (#2132cf)
 
-![Point symbol customization settings](images/Workshop1/Step3/drawing-point-vector.png){#fig-pointsymbol width="90%" fig-align="center"}
+![Point symbol customization settings](images/workshop1/Step3/drawing-point-vector.png){#fig-pointsymbol width="90%" fig-align="center"}
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: Drawing lines in a sketch layer
@@ -270,7 +270,7 @@ Draw a line where you think there should be a bike path but isn't.
 
 From the sketch layer menu, select the line drawing tool. Click on the map to start drawing the line, and click again to add vertices. Double-click to finish the line.
 
-![Drawing a line on the map](images/Workshop1/Step3/drawing-line-vector.gif){#fig-drawingline width="90%" fig-align="center"}
+![Drawing a line on the map](images/workshop1/Step3/drawing-line-vector.gif){#fig-drawingline width="90%" fig-align="center"}
 
 You can customize the line symbol in the sketch layer menu before adding it to the map. In our example, we add the following settings to the line symbol:
 
@@ -278,7 +278,7 @@ You can customize the line symbol in the sketch layer menu before adding it to t
 -   Dotted line pattern
 -   Color: Light blue (#00c8ff)
 
-![Line symbol customization settings](images/Workshop1/Step3/drawing-line-style.png){#fig-linesymbol width="90%" fig-align="center"}
+![Line symbol customization settings](images/workshop1/Step3/drawing-line-style.png){#fig-linesymbol width="90%" fig-align="center"}
 :::
 
 ::: {.callout-tip collapse="true"}
@@ -291,7 +291,7 @@ Similarly to the line drawing tool, select the circle drawing tool from the sket
 -   Fill color: Red (#d13434)
 -   Fill transparency: 38%
 
-![Drawing a circle on the map](images/Workshop1/Step3/drawing-circle-vector.gif){#fig-drawingcircle width="90%" fig-align="center"}
+![Drawing a circle on the map](images/workshop1/Step3/drawing-circle-vector.gif){#fig-drawingcircle width="90%" fig-align="center"}
 :::
 
 Finally, let's rename the sketch layer to **Annotations** to better reflect its purpose. Click on the three dots next to the sketch layer and select `Rename`. Enter the new name and click `OK`.
@@ -304,7 +304,7 @@ Almost there! At this point you're ready to start packaging your map for publica
 
 To do that, you need to look for the `Print` option in the left menu bar.
 
-![Print option in the left menu bar](images/Workshop1/Step4/export-print-menu.png){#fig-printoption width="30%" fig-align="center"}
+![Print option in the left menu bar](images/workshop1/Step4/export-print-menu.png){#fig-printoption width="30%" fig-align="center"}
 
 For exporting the map you have two options:
 
@@ -325,7 +325,7 @@ Adjust the zoom and position of the map in the preview window to ensure everythi
 If your map is intended for **print publication**, it is recommended that you set your DPI value to 300 dpi. For **web or screen display**, 96 dpi is generally sufficient and will produce a smaller file size.
 :::
 
-![Map export layout configuration panel](images/Workshop1/Step4/export-layout-menu.png){#fig-exportlayout width="90%" fig-align="center"}
+![Map export layout configuration panel](images/workshop1/Step4/export-layout-menu.png){#fig-exportlayout width="90%" fig-align="center"}
 
 ## Step 5: Share your map
 
@@ -333,11 +333,11 @@ When you're satisfied with the layout and settings, click on the `Export` button
 
 The result will be list on the `Exports` panel, where you can save the file to your computer by clicking on the three dots next to the export and selecting `Save as`.
 
-![Saving exported map from the Exports panel](images/Workshop1/Step4/export-save-as.png){#fig-savingmap width="40%" fig-align="center"}
+![Saving exported map from the Exports panel](images/workshop1/Step4/export-save-as.png){#fig-savingmap width="40%" fig-align="center"}
 
 This will save the exported map to you ArcGIS Online content. You can access it later from the `Content` menu in the top menu bar. The new item will be available as an Image file that you can download to your computer.
 
-![Downloading the exported map image from ArcGIS Online content](images/Workshop1/Step4/export-download-image.png){#fig-downloadmap width="90%" fig-align="center"}
+![Downloading the exported map image from ArcGIS Online content](images/workshop1/Step4/export-download-image.png){#fig-downloadmap width="90%" fig-align="center"}
 
 ::: {.callout-warning collapse="true"}
 # Public sharing
