@@ -425,6 +425,11 @@ There are pletor of CRSs that all have different accuracy and other advantages d
 ::: {.callout-tip collapse="true"}
 ## Challenge - Make the trailhead layer look nice
 
+- Choose the trail `Difficulty` attribute to add a color ramp
+- Give a title to the legend
+- Reorder the fields so their are matching the difficulty order (and not the alphabetical one)
+- Choose a good color ramp
+- Increase the point size
 
 :::
 
