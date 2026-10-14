@@ -401,7 +401,7 @@ device.
 ![](images/workshop2/import_csv-map.png){fig-alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity" width=100%}
 
 
-::: {.callout-note collapse="false" title="CRS"}f
+::: {.callout-note collapse="false" title="CRS"}
 ## A note on Coordinate Reference Systems
 
 In ArcGIS Online, the default projection and Coordinate Reference System
