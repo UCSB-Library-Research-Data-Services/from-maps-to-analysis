@@ -348,7 +348,8 @@ private satellite firm. Let's add one of those layers now:
 ## Importing data into ArcGIS Online
 
 Uploading a raster image to ArcGIS Online takes up storage, so we aren't going
-to do that.
+to do that. However we can also add vector and tabular data to our map!
+
 
 ### Creating Vector Layers from .CSV files
 
@@ -357,11 +358,23 @@ CSV spreadsheet using coordinate columns (latitude and longitude) to see
 how external tabular data can be transformed into a geospatial layer and 
 integrate with existing road and elevation layers.
 
+Download and open the `SantaBarbara_County_Trailheads.csv` onto your
+device.
+
+::: {.callout-tip collapse="true"}
+## Challenge - Inspect the trailhead data
+
+- What are the attributes stored in this dataset?
+- Which attributes are storing the geospatial information?
+- What is the quality of this dataset? Anything suspect?
+:::
+
+
 #### CSV import wizard
 
 - Add layer from file 
 
-![](images/workshop2/import_csv-add.png){fig-alt="Unfold the Add menu" width=80%}
+![](images/workshop2/import_csv-add.png){fig-alt="Unfold the Add menu" width=50%}
 
 - Select "Your Device" and browse to the csv file you want to import
 
@@ -373,9 +386,9 @@ integrate with existing road and elevation layers.
 
 - Select the attributes you would like to import as well as rename fields as you see necessary. You can also use this step to rename any of the field. Let's select all the fileds up to "Overview" and Rename "Title" as "Name". It is also a good practice to check that the field types are aligned with what you were expecting.
 
-![](images/workshop2/import_csv-field.png){fig-alt="Select the attributes you want to import and rename them as needed" width=80%}
+![](images/workshop2/import_csv-field.png){fig-alt="Select the attributes you want to import and rename them as needed" width=100%}
 
-- Match the latitude and longitude information used by ArcGIs to generate the location with your data attributes.
+- Match the latitude and longitude information used by ArcGIS to generate the location with your data attributes.
 
 ![](images/workshop2/import_csv-latlong.png){fig-alt="Match the Latitude and longitude attribute from your data with the information that ArcGIS will use to create the spatial locations" width=80%}
 
@@ -385,13 +398,16 @@ integrate with existing road and elevation layers.
 
 - Zoom out to see the trailhead locations! Of course now we need to make it look better :)
 
-![](images/workshop2/import_csv-map.png){fig-alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity" width=80%}
+![](images/workshop2/import_csv-map.png){fig-alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity" width=100%}
 
 
-### A note on Geographic Coordinate Systems
+::: {.callout-note collapse="false" title="CRS"}f
+## A note on Coordinate Reference System
 
-Coordinate systems can be divided into two categories: Projected and
-Geographic Coordinate Systems.
+In ArcGIS Online, the default projection and Coordinate Reference System
+(CRS) is WGS 1984 Web Mercator Auxilary Sphere, also used by the Global Positioning System ([GPS](https://en.wikipedia.org/wiki/Global_Positioning_System))
+
+Coordinate systems can be divided into two categories: Projected and Geographic Coordinate Systems.
 
 - **Projected** Coordinate Systems use a 2D flat surface to define
   locations and is measured in linear units. Locations are identified by
@@ -401,24 +417,16 @@ Geographic Coordinate Systems.
   in angular units to define locations on earth. A point is referred by
   its latitude and longitude.
 
+**Examine the csv file: does it tell you anything about the coordinate system that we are dealing with?**
+:::
 
-::: {.callout-note collapse="true" title="CRS"}
+::: {.callout-tip collapse="true"}
+## Challenge - Make the trailhead layer look nice
 
-In ArcGIS Online, the default projection and coordinate reference system
-(CRS) is WGS 1984 Web Mercator Auxilary Sphere
-
-Coordinate systems can be divided into two categories: Projected and Geographic Coordinate Systems.
-
-Projected Coordinate Systems use a 2D flat surface to define locations and is measured in linear units. Locations are identified by x,y coordinates
-
-Geographic Coordinate Systems use a 3D spherical surface measured in angular units to define locations on earth. A point is referred by its latitude and longitude.
-
-Examine the csv file: does it tell you anything about the coordinate system that we are dealing with?
 
 :::
 
-Download and open the `SantaBarbara_County_Trailheads.csv` onto your
-device.
+
 
 ## Editing Data
 
