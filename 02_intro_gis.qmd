@@ -402,12 +402,12 @@ device.
 
 
 ::: {.callout-note collapse="false" title="CRS"}f
-## A note on Coordinate Reference System
+## A note on Coordinate Reference Systems
 
 In ArcGIS Online, the default projection and Coordinate Reference System
-(CRS) is WGS 1984 Web Mercator Auxilary Sphere, also used by the Global Positioning System ([GPS](https://en.wikipedia.org/wiki/Global_Positioning_System))
+(CRS) is WGS 1984 Web Mercator Auxilary Sphere, also used by the Global Positioning System ([GPS](https://en.wikipedia.org/wiki/Global_Positioning_System)).
 
-Coordinate systems can be divided into two categories: Projected and Geographic Coordinate Systems.
+Coordinate systems can be divided into two main categories: Projected and Geographic Coordinate Systems.
 
 - **Projected** Coordinate Systems use a 2D flat surface to define
   locations and is measured in linear units. Locations are identified by
@@ -416,6 +416,8 @@ Coordinate systems can be divided into two categories: Projected and Geographic 
 - **Geographic** Coordinate Systems use a 3D spherical surface measured
   in angular units to define locations on earth. A point is referred by
   its latitude and longitude.
+  
+There are pletor of CRSs that all have different accuracy and other advantages depending on your location and extenst of your area of interest. Here is a good website to look at the different CRSs: <https://epsg.io/>
 
 **Examine the csv file: does it tell you anything about the coordinate system that we are dealing with?**
 :::
