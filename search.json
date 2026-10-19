@@ -228,7 +228,7 @@
     "href": "02_intro_gis.html#exporting-data",
     "title": "Using more Data",
     "section": "Exporting Data",
-    "text": "Exporting Data\nHow do we get stuff out of ArcGIS Online?\nwith a caveat that it’s not a particularly good way to store and share data.\nsee also: the token economy\nHow do we get stuff out of there?"
+    "text": "Exporting Data\nAt some point in your analysis, you might want to also download the data in addition to your map, for example, to move to a scripted environment such as R and Python. This is a multi-step process: first, you will have to export the feature layer in a downloadable format; then you will be able to download this layer to your local computer.\nYou can not export a layer from the Map Viewer, you will need to first return to the “My Content” view. You can do this by using the “Burger” menu at the top-left of your Map view and selecting Content.\nOnce in the My content view, locate and click on the spatial trailhead layer you imported from the CSV file to go to the Overview page of that layer.\n\nUnfold the menu on the right completely, select Export data, and choose the GeoJSON format.\n\nOn the next window, leave the default options and choose your ucsb_bike folder as location. Click on Export. Note that exporting data can take some time, so be patient :)\n\nOnce the export is done, you should automatically be redirected to the Overview page of this new dataset. This time, Download should be available in the menu on the right side of the page. Click on it and select a location on your local computer and a filename.\n\nsee also: the token economy &lt;= Call-out box?"
   },
   {
     "objectID": "02_intro_gis.html#completing-the-story",
