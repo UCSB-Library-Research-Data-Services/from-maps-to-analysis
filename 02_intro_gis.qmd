@@ -378,13 +378,13 @@ device.
 
 - Select "Your Device" and browse to the csv file you want to import
 
-![](images/workshop2/import_csv-file.png){fig-alt="Browse or drop file" width=80%}
+![](images/workshop2/import_csv-file.png){fig-alt="Browse or drop file" width=70%}
 
-- Leave the default option Create a hosted feature layer and add it to the map
+- Leave the default option "Create a hosted feature layer and add it to the map" and click Next
 
 ![](images/workshop2/import_csv-layer.png){fig-alt="Select 'hosted feature'" width=80%}
 
-- Select the attributes you would like to import as well as rename fields as you see necessary. You can also use this step to rename any of the field. Let's select all the fileds up to "Overview" and Rename "Title" as "Name". It is also a good practice to check that the field types are aligned with what you were expecting.
+- Select the attributes you would like to import as well as rename fields as you see necessary. You can also use this step to rename any of the field. Let's select all the fields up to "Overview" and Rename "Title" as "Name". It is also a good practice to check that the field types are aligned with what you were expecting.
 
 ![](images/workshop2/import_csv-field.png){fig-alt="Select the attributes you want to import and rename them as needed" width=100%}
 
@@ -454,6 +454,7 @@ How do we get stuff out of there?
 
 
 ## Completing the Story
+
 So where shall we ride our bicycles?
 
 
