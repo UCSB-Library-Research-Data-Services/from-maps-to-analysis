@@ -374,11 +374,11 @@ device.
 
 - Add layer from file 
 
-![](images/workshop2/import_csv-add.png){fig-alt="Unfold the Add menu" width=50%}
+![](images/workshop2/import_csv-add.png){fig-alt="Unfold the Add menu" width=40%}
 
 - Select "Your Device" and browse to the csv file you want to import
 
-![](images/workshop2/import_csv-file.png){fig-alt="Browse or drop file" width=70%}
+![](images/workshop2/import_csv-file.png){fig-alt="Browse or drop file"  width=80%}
 
 - Leave the default option "Create a hosted feature layer and add it to the map" and click Next
 
