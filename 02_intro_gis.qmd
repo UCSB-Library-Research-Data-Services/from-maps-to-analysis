@@ -444,23 +444,23 @@ bike path layer.
 
 ## Exporting Data
 
-At some point in your analysis, you might want to also download the data in addition to your map, for example, to move to a scripted environment such as R and Python. This is a multi-step process: first, you will have to export the feature layer in a downloadable format; then you will be able to download this layer to your local computer.
+At some point in your analysis, you might want to also download the data in addition to your map, for example, to move to a scripted environment such as R and Python to conduct statistical analysis. This is a multi-step process: first, you will have to export the feature layer in a downloadable format; then you will be able to download this layer to your local computer.
 
 You can not export a layer from the Map Viewer, you will need to first return to the “My Content” view. You can do this by using the “Burger” menu at the top-left of your Map view and selecting Content. 
 
-Once in the My content view, locate and click on the spatial trailhead layer you imported from the CSV file to go to the Overview page of that layer.
+- Once in the My content view, locate and click on the spatial trailhead layer you imported from the CSV file to go to the Overview page of that layer.
 
 ![](images/workshop2/export-overview.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads." width=100%}
 
-Unfold the menu on the right completely, select Export data, and choose the GeoJSON format. 
+- Unfold the menu on the right completely, select Export data, and choose the GeoJSON format. 
 
 ![](images/workshop2/export-overview_uncollapsed.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads with the option menu on the right uncollapsed and showing the Export Data option" width=100%}
 
-On the next window, leave the default options and choose your ucsb_bike folder as location. Click on Export. Note that exporting data can take some time, so be patient :) 
+- On the next window, leave the default options and choose your ucsb_bike folder as location. Click on Export. Note that exporting data can take some time, so be patient :) 
 
 ![](images/workshop2/export-geojson.png){fig-alt="Wizzard page to export a geojson file: title, Folder location, Categories, Tags and Summary are the available options" width=50%}
 
-Once the export is done, you should automatically be redirected to the Overview page of this new dataset. This time, Download should be available in the menu on the right side of the page. Click on it and select a location on your local computer and a filename.
+- Once the export is completed, you should automatically be redirected to the Overview page of this new dataset. This time, Download should be available in the menu on the right side of the page. Click on it and select a location on your local computer and a filename.
 
 ![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option avaialble" width=100%}
 
