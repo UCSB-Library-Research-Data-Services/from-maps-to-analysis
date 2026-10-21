@@ -5,9 +5,20 @@ editor:
     wrap: 72
 ---
 
+
+=======
+## Learning objectives
+
 This lesson focuses on learning more about the different types of
 geographic data available in ArcGIS Online and learning how to import
-and work with your own data.
+and work with your own data. At the end of this workshop you will:
+
+- Have a better understanding of the vector and raster geospatial data types
+- Know how to import your own data into ArcGIS Online
+- Know how to edit or add data to a feature layer
+- Know how to do computation on raster
+- Know how to export data from ArcGIS Online to your local machine
+
 
 ## Review: Annotations vs. Data
 
@@ -193,6 +204,7 @@ below-and-above zero diverging ramp or an elevation palette).
 
 -   insert screenshot of results of divergent DEM
 
+<<<<<<< HEAD
 #### Creating Shaded Relief (Hillshade) on the Fly
 
 One use for a DEM is to make a shaded relief layer. That is a classic
@@ -243,6 +255,8 @@ variety of hillshade basemaps in the Living Atlas. Also: that was a
 rather lengthy aside.
 
 Now would be an excellent point to save your map.
+=======
+>>>>>>> 9c6f3412c0da36a61849fbb86eefcbe07094194a
 
 ### Categorical Rasters
 
@@ -511,11 +525,70 @@ width="100%"}
 
 see also: the token economy \<= Call-out box?
 
+
+
 ## Completing the Story
 
 So where shall we ride our bicycles?
 
+
+
 <hr>
+
+
+
+## How to improve your map
+
+### Creating Shaded Relief (Hillshade) on the Fly
+
+One use for a DEM is to make a shaded relief layer. That is a classic
+view that gives the terrain realistic three-dimensional depth and
+surface texture, we can generate a shaded relief visualization
+dynamically:
+
+1.  Duplicate the `ucsb_local_dem` layer.
+2.  Rename the two DEM layers for clarity: name the top layer
+    `Elevation (Color)` and the bottom layer
+    `Elevation (Shaded Relief)`.
+3.  Change the symbology style to **Shaded Relief**.
+
+Shaded relief simulates how sunlight illuminates terrain, casting
+shadows based on the position of the sun measured as two angles: Azimuth
+and Altitude
+
+- **Azimuth**: The compass direction from which the illumination source
+  (the sun) originates, measured in degrees clockwise from north (0° =
+  North, 90° = East, 180° = South, 270° = West). In cartography, the sun
+  is traditionally positioned in the northwest (315°) or west (270°) to
+  match how the human brain interprets light and shadow, preventing an
+  optical illusion known as "relief inversion" where mountains appear as
+  valleys. For our map, we position the light source from the west.
+- **Altitude**: The angle of the sun above the horizon, measured from 0°
+  (level with the horizon at sunrise/sunset) to 90° (directly overhead
+  at solar noon). A lower altitude (e.g., 30°–45°, typical of low winter
+  sun) produces longer, more dramatic shadows that accentuate
+  ridgelines, canyons, and valleys.
+
+![](images/workshop2/relief_options.png)
+
+We can adjust those angles to show the sun in the morning or evening
+here in Santa Barbara.
+
+Adjust the transparency of the top colored elevation layer so the shaded
+relief beneath shows through, creating an illuminated 3D terrain effect
+under our roads.
+
+![Current status of our map with colored DEM and shaded
+relief](images/workshop2/western_light.png){fig-alt="A rainbow colored hillshaded map with roads showing the software interface"}
+
+This matches interim map 3 in our group.
+
+This is a bit of an artificial example, because Esri offers a wide
+variety of hillshade basemaps in the Living Atlas. Also: that was a
+rather lengthy aside.
+
+Now would be an excellent point to save your map.
+
 
 ## Preview for Workshop 3: Looking Ahead to Spatial Analysis
 
@@ -551,3 +624,4 @@ and route difficulty:
 
 4.  Once joined, roads can be symbolized by slope steepness, allowing us
     to pinpoint the steepest hill climbs for our ride!
+
