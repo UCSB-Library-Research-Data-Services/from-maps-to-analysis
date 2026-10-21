@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "data_sources.html",
-    "href": "data_sources.html",
-    "title": "Workshop Data Sources",
-    "section": "",
-    "text": "/* AI caveat: this page was created by Gemini harnessed to Opencode */\nThis page provides an inventory of all the starting datasets used across the three lessons in the From Maps to Analysis workshop series, presented in order of appearance.\nLinks are provided to ArcGIS Online items, Living Atlas layers, and source files hosted in the GitHub repository so instructors and learners can locate and access the initial data."
-  },
-  {
-    "objectID": "data_sources.html#workshop-1-i-want-to-make-a-map",
-    "href": "data_sources.html#workshop-1-i-want-to-make-a-map",
-    "title": "Workshop Data Sources",
-    "section": "Workshop 1: I Want to Make a Map",
-    "text": "Workshop 1: I Want to Make a Map\n\n1. Basemaps (Topographic & Light Gray Canvas)\n\nFormat: ArcGIS Online Basemap / Vector Tile Service\nAccess / Source:\n\nEsri Topographic Basemap (default initial basemap)\nLight Gray Canvas Basemap\n\nDescription: Contextual background reference maps provided by Esri via the ArcGIS Online Basemap Gallery. Learners start with the default Topographic basemap and switch to the Light Gray Canvas basemap for clearer visibility of vector overlays.\n\n\n\n2. OSM_UCSB_Roads / OpenStreetMap Highways for North America\n\nFormat: ArcGIS Online Hosted Feature Layer View (Lines / Polylines)\nAccess / Source:\n\nOpenStreetMap Highways for North America on ArcGIS Online / Living Atlas\nIn lesson instructions: Search My organization for OSM_UCSB_Roads\n\nDescription: Street, pathway, and cycleway network extracted from OpenStreetMap. In Workshop 1, learners filter this layer by highway = 'cycleway' to display bicycle paths across the UCSB campus and Isla Vista.\n\n\n\n3. bike_racks_ucsb\n\nFormat: ArcGIS Online Hosted Feature Layer (Points)\nAccess / Source: bike_racks_ucsb Item on UCSB ArcGIS Online (Item ID: 1f19721e8809472cb80b1ccdf5dc7859)\nDescription: Point feature layer containing campus bicycle parking locations and rack counts, generated from centroids of campus bike parking areas.\n\n\n\n4. UCSB Campus Buildings\n\nFormat: ArcGIS Online Hosted Feature Layer (Polygons)\nAccess / Source:\n\nUCSB Campus Buildings Item on UCSB ArcGIS Online (Item ID: 2bde3dac8bdc443ea4ed451c2b88ecb6)\nAlternative / Updated version: UCSB Campus Buildings 2026 (Item ID: 37a1b0043ee04299b913acd018b5031f)\n\nDescription: Polygon building footprints for UCSB campus facilities and outlying properties, exported from Facilities CAD data. Used to teach attribute inspection and symbology styling based on the building use field (b_use).\n\n\n\n5. Annotations (Sketch Layer)\n\nFormat: User-generated ArcGIS Online Map Sketch Layer (Points, Lines, Polygons)\nAccess / Source: Created interactively via the Map Viewer sketch tools.\nDescription: Hand-drawn vector annotations used to record personal experiences and observations directly onto the map (e.g., accident/near-miss incident points, proposed bike paths, and potential bike parking locations)."
-  },
-  {
-    "objectID": "data_sources.html#workshop-2-exploring-more-geospatial-data",
-    "href": "data_sources.html#workshop-2-exploring-more-geospatial-data",
-    "title": "Workshop Data Sources",
-    "section": "Workshop 2: Exploring More Geospatial Data",
-    "text": "Workshop 2: Exploring More Geospatial Data\n\n6. SantaBarbara_Merged_roads\n\nFormat: ArcGIS Online Hosted Feature Layer (Lines / Polylines)\nAccess / Source: SantaBarbara_Merged_roads Item on UCSB ArcGIS Online (Item ID: 6729661d7b8043558c2fe6ada62f0df9)\nDescription: Regional road and bicycle path network covering Goleta and Santa Barbara, created by merging OpenStreetMap paths and Esri Living Atlas local roads while removing restricted highways (US 101, CA 217, CA 154) where bicycles are prohibited.\n\n\n\n7. ucsb_local_dem\n\nFormat: ArcGIS Online Tiled Imagery Layer / Raster (Single-band continuous raster)\nAccess / Source: Available in the workshop organization content and the From Maps to Analysis Group\nDescription: Bare-earth Digital Elevation Model (DEM) of the Santa Barbara and Goleta area derived from high-resolution USGS 3DEP LiDAR survey data. Used to explore raster statistics, apply continuous/divergent color ramps, and generate dynamic hillshades (shaded relief).\n\n\n\n8. USA Annual NLCD - Land Cover\n\nFormat: ArcGIS Living Atlas Image Service (Multi-temporal categorical raster)\nAccess / Source: USA Annual NLCD - Land Cover on Living Atlas (Item ID: 32e2ccc6416746a9a72b4d216813f84f)\nDescription: 30-meter resolution time-series raster from the Multi-Resolution Land Characteristics Consortium (MRLC) and USGS, categorizing the landscape into 16 modified Anderson Level II land cover classes. Used to introduce categorical rasters.\n\n\n\n9. Pre-calculated Slope Layer (SantaBarbara_slope)\n\nFormat: ArcGIS Online Tiled Imagery Layer / Raster\nAccess / Source: Shared through the From Maps to Analysis Group (Item ID: ee0b2ecf12db4ff48aea0d730852bd08)\nDescription: Terrain slope raster calculated from the regional DEM to illustrate terrain steepness. Provided as a pre-computed starting layer in Workshop 2 and analyzed further in Workshop 3.\n\n\n\n10. Multi-band Satellite Imagery / Planet Satellite View of Goleta\n\nFormat: ArcGIS Online Imagery Layer / Tiled Imagery Layer (Multi-band continuous raster)\nAccess / Source: Planet Satellite View on UCSB ArcGIS Online (Item ID: fe7e24e58be14d54b7f327db4cac50d2)\nDescription: High-resolution multi-band (RGB) satellite imagery covering the UCSB campus and surrounding Goleta area, captured by Planet Labs and hosted by the UCSB DREAM Lab. Used in Workshop 2 to illustrate multi-band rasters (combining red, green, and blue spectral bands) and demonstrate the distinction between interactive operational imagery layers and static basemaps.\n\n\n\n11. Bus Stops (Goleta & Santa Barbara)\n\nFormat: CSV spreadsheet / Vector Point Layer\nAccess / Source:\n\nRepository files:\n\nsource_data/Goleta_Bus_Stops.csv\nsource_data/Santa_Barbara_Bus_Stops.csv\n\nHosted feature layer (Goleta): Item ID a71f35ca2c3a47119bb883e73a409e61 in workshop maps\n\nDescription: Point datasets of Santa Barbara Metropolitan Transit District (SBMTD) bus stops with coordinate attributes (lat, lon), platform specifications, and route references derived from OpenStreetMap.\n\n\n\n12. Santa Barbara County Trails / Trailheads (SB_County_Trails.csv)\n\nFormat: CSV tabular spreadsheet (Latitude / Longitude coordinates)\nAccess / Source:\n\nRepository file: source_data/SB_County_Trails.csv\nIn lesson text: referenced as SantaBarbara_County_Trailheads.csv / SB_County_Trails.csv\n\nDescription: Point locations of trailheads and trails throughout Santa Barbara County, including difficulty, distance, and elevation gain. Used to demonstrate importing external tabular CSV files with geographic coordinates into ArcGIS Online."
-  },
-  {
-    "objectID": "data_sources.html#workshop-3-geospatial-analysis",
-    "href": "data_sources.html#workshop-3-geospatial-analysis",
-    "title": "Workshop Data Sources",
-    "section": "Workshop 3: Geospatial Analysis",
-    "text": "Workshop 3: Geospatial Analysis\nWorkshop 3 focuses on spatial analysis operations using the layers introduced in earlier sessions:\n\n13. Digital Elevation Model (ucsb_local_dem) & Slope Analysis\n\nFormat: Single-band continuous raster\nAccess / Source: Same as in Workshop 2 (From Maps to Analysis Group).\nDescription: Used as the input raster for calculating terrain slope and executing raster calculations and zonal statistics.\n\n\n\n14. Street & Route Network (SantaBarbara_Merged_roads / Campus Network)\n\nFormat: Hosted Feature Layer (Polylines)\nAccess / Source: SantaBarbara_Merged_roads.\nDescription: Serves as the vector input for spatial analysis workflows, including calculating road buffer zones (e.g., 30-meter proximity buffers) and summarizing slope statistics per road segment via Zonal Statistics as Table."
-  },
-  {
     "objectID": "01_make_map.html",
     "href": "01_make_map.html",
     "title": "I want to make a map",
@@ -119,32 +91,74 @@
     "text": "Step 5: Share your map\nWhen you’re satisfied with the layout and settings, click on the Export button to generate the map. Depending on the selected file format and resolution, it may take a few moments to process the export.\nThe result will be list on the Exports panel, where you can save the file to your computer by clicking on the three dots next to the export and selecting Save as.\n\n\n\n\n\n\nFigure 27: Saving exported map from the Exports panel\n\n\n\nThis will save the exported map to you ArcGIS Online content. You can access it later from the Content menu in the top menu bar. The new item will be available as an Image file that you can download to your computer.\n\n\n\n\n\n\nFigure 28: Downloading the exported map image from ArcGIS Online content\n\n\n\n\n\n\n\n\n\nWarningPublic sharing\n\n\n\n\n\nYou can share your map publicly and embed it on a website, just like we did at the beginning of this lesson. However, for this to work, you need to set the visibility of all your map layers to public."
   },
   {
-    "objectID": "03_geospatial_analysis.html",
-    "href": "03_geospatial_analysis.html",
-    "title": "Geospatial analysis",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "From Maps to Analysis",
     "section": "",
-    "text": "As you can guess, this part is still a work in progress. Check back winter quarter, 2027 to see our progress\nWe are still discussing what tool to emphasize. Will we leave ArcGIS Online behind for part 3 of the series?\nWill we move to the Free and Open Source QGIS?\nStay tuned to find out!"
+    "text": "The goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis without the need to have programming skills.\nWe have organized this curriculum into three workshops:"
   },
   {
-    "objectID": "03_geospatial_analysis.html#ago-layers-vs.-local-layers",
-    "href": "03_geospatial_analysis.html#ago-layers-vs.-local-layers",
-    "title": "Geospatial analysis",
-    "section": "AGO layers vs. local layers",
-    "text": "AGO layers vs. local layers\nKeeping track of where the data underlying layers is located is challenging even for advanced geospatial analysts.\n– Will this session turn out to be very much a ‘where are my files’ reinforcement like we try to make the Unix Shell?"
+    "objectID": "index.html#workshop-1---i-want-to-make-a-map",
+    "href": "index.html#workshop-1---i-want-to-make-a-map",
+    "title": "From Maps to Analysis",
+    "section": "Workshop 1 - I want to make a map",
+    "text": "Workshop 1 - I want to make a map\n2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:\n\nadjust the background basemap\nadd an existing data layer to a map\nchange symbology of vector data\ndraw lines and polygons on a map\n\nThe workshop ends with exporting a map suitable for inclusion in a publication."
   },
   {
-    "objectID": "03_geospatial_analysis.html#flavors-of-data-analysis",
-    "href": "03_geospatial_analysis.html#flavors-of-data-analysis",
-    "title": "Geospatial analysis",
-    "section": "Flavors of data analysis:",
-    "text": "Flavors of data analysis:\n\nbuffering\ninterpolation\nzonal statistics\nraster calculation\n\n\nRaster calculations\nExample analysis: from workshop 2, how did that slope layer get made? With a raster calculation.\n\n\nBuffering\nExample analysis: maybe your friend is really afraid of heights, and wants to make sure that the route doesn’t include super steep drop offs.\n\nbuffer 30 meters around the streets\nThere’s a chance to teach about credits here. The buffer costs 2.x credits.\ngotcha: layers much have unique names across the organization. So use your initials in this step. sb_jj_roads_buffer\nFind clusters of large values in the pixels that lay underneath the buffer.\nhighlight any intersection with areas where there are large numbers of very steep pixels nearby.\nCutting a raster to a mask is called nibbling\n\n\n\nanother\nWhich parts of campus are least served by the bike path network?\nPotential simple analysis as end product (this section should be moved to 3) - Zonal statistics - Count number of points within a polygon - Heatmap from points - Buffering"
+    "objectID": "index.html#workshop-2---exploring-more-geospatial-data",
+    "href": "index.html#workshop-2---exploring-more-geospatial-data",
+    "title": "From Maps to Analysis",
+    "section": "Workshop 2 - Exploring more geospatial data",
+    "text": "Workshop 2 - Exploring more geospatial data\n3-hour workshop using ArcGIS Online to conduct basic GIS data exploration and visualization.\n\nmore about vector data\nraster data\nLiving Atlas data\ndata import & export"
+  },
+  {
+    "objectID": "index.html#workshop-3---geospatial-analysis",
+    "href": "index.html#workshop-3---geospatial-analysis",
+    "title": "From Maps to Analysis",
+    "section": "Workshop 3 - Geospatial analysis",
+    "text": "Workshop 3 - Geospatial analysis\n4-hour workshop. A Carpentry-like, hands-on session introducing the analytical features of ArcGIS Online versus Pro on a Windows desktop.\nThis session will introduce the learner to the differences between Online and Pro. We will cover topics such as:\n\nraster calculation\nbuffering\ninterpolation\nzonal statistics"
+  },
+  {
+    "objectID": "data_sources.html",
+    "href": "data_sources.html",
+    "title": "Workshop Data Sources",
+    "section": "",
+    "text": "/* AI caveat: this page was created by Gemini harnessed to Opencode */\nThis page provides an inventory of all the starting datasets used across the three lessons in the From Maps to Analysis workshop series, presented in order of appearance.\nLinks are provided to ArcGIS Online items, Living Atlas layers, and source files hosted in the GitHub repository so instructors and learners can locate and access the initial data."
+  },
+  {
+    "objectID": "data_sources.html#workshop-1-i-want-to-make-a-map",
+    "href": "data_sources.html#workshop-1-i-want-to-make-a-map",
+    "title": "Workshop Data Sources",
+    "section": "Workshop 1: I Want to Make a Map",
+    "text": "Workshop 1: I Want to Make a Map\n\n1. Basemaps (Topographic & Light Gray Canvas)\n\nFormat: ArcGIS Online Basemap / Vector Tile Service\nAccess / Source:\n\nEsri Topographic Basemap (default initial basemap)\nLight Gray Canvas Basemap\n\nDescription: Contextual background reference maps provided by Esri via the ArcGIS Online Basemap Gallery. Learners start with the default Topographic basemap and switch to the Light Gray Canvas basemap for clearer visibility of vector overlays.\n\n\n\n2. OSM_UCSB_Roads / OpenStreetMap Highways for North America\n\nFormat: ArcGIS Online Hosted Feature Layer View (Lines / Polylines)\nAccess / Source:\n\nOpenStreetMap Highways for North America on ArcGIS Online / Living Atlas\nIn lesson instructions: Search My organization for OSM_UCSB_Roads\n\nDescription: Street, pathway, and cycleway network extracted from OpenStreetMap. In Workshop 1, learners filter this layer by highway = 'cycleway' to display bicycle paths across the UCSB campus and Isla Vista.\n\n\n\n3. bike_racks_ucsb\n\nFormat: ArcGIS Online Hosted Feature Layer (Points)\nAccess / Source: bike_racks_ucsb Item on UCSB ArcGIS Online (Item ID: 1f19721e8809472cb80b1ccdf5dc7859)\nDescription: Point feature layer containing campus bicycle parking locations and rack counts, generated from centroids of campus bike parking areas.\n\n\n\n4. UCSB Campus Buildings\n\nFormat: ArcGIS Online Hosted Feature Layer (Polygons)\nAccess / Source:\n\nUCSB Campus Buildings Item on UCSB ArcGIS Online (Item ID: 2bde3dac8bdc443ea4ed451c2b88ecb6)\nAlternative / Updated version: UCSB Campus Buildings 2026 (Item ID: 37a1b0043ee04299b913acd018b5031f)\n\nDescription: Polygon building footprints for UCSB campus facilities and outlying properties, exported from Facilities CAD data. Used to teach attribute inspection and symbology styling based on the building use field (b_use).\n\n\n\n5. Annotations (Sketch Layer)\n\nFormat: User-generated ArcGIS Online Map Sketch Layer (Points, Lines, Polygons)\nAccess / Source: Created interactively via the Map Viewer sketch tools.\nDescription: Hand-drawn vector annotations used to record personal experiences and observations directly onto the map (e.g., accident/near-miss incident points, proposed bike paths, and potential bike parking locations)."
+  },
+  {
+    "objectID": "data_sources.html#workshop-2-exploring-more-geospatial-data",
+    "href": "data_sources.html#workshop-2-exploring-more-geospatial-data",
+    "title": "Workshop Data Sources",
+    "section": "Workshop 2: Exploring More Geospatial Data",
+    "text": "Workshop 2: Exploring More Geospatial Data\n\n6. SantaBarbara_Merged_roads\n\nFormat: ArcGIS Online Hosted Feature Layer (Lines / Polylines)\nAccess / Source: SantaBarbara_Merged_roads Item on UCSB ArcGIS Online (Item ID: 6729661d7b8043558c2fe6ada62f0df9)\nDescription: Regional road and bicycle path network covering Goleta and Santa Barbara, created by merging OpenStreetMap paths and Esri Living Atlas local roads while removing restricted highways (US 101, CA 217, CA 154) where bicycles are prohibited.\n\n\n\n7. ucsb_local_dem\n\nFormat: ArcGIS Online Tiled Imagery Layer / Raster (Single-band continuous raster)\nAccess / Source: Available in the workshop organization content and the From Maps to Analysis Group\nDescription: Bare-earth Digital Elevation Model (DEM) of the Santa Barbara and Goleta area derived from high-resolution USGS 3DEP LiDAR survey data. Used to explore raster statistics, apply continuous/divergent color ramps, and generate dynamic hillshades (shaded relief).\n\n\n\n8. USA Annual NLCD - Land Cover\n\nFormat: ArcGIS Living Atlas Image Service (Multi-temporal categorical raster)\nAccess / Source: USA Annual NLCD - Land Cover on Living Atlas (Item ID: 32e2ccc6416746a9a72b4d216813f84f)\nDescription: 30-meter resolution time-series raster from the Multi-Resolution Land Characteristics Consortium (MRLC) and USGS, categorizing the landscape into 16 modified Anderson Level II land cover classes. Used to introduce categorical rasters.\n\n\n\n9. Pre-calculated Slope Layer (SantaBarbara_slope)\n\nFormat: ArcGIS Online Tiled Imagery Layer / Raster\nAccess / Source: Shared through the From Maps to Analysis Group (Item ID: ee0b2ecf12db4ff48aea0d730852bd08)\nDescription: Terrain slope raster calculated from the regional DEM to illustrate terrain steepness. Provided as a pre-computed starting layer in Workshop 2 and analyzed further in Workshop 3.\n\n\n\n10. Multi-band Satellite Imagery / Planet Satellite View of Goleta\n\nFormat: ArcGIS Online Imagery Layer / Tiled Imagery Layer (Multi-band continuous raster)\nAccess / Source: Planet Satellite View on UCSB ArcGIS Online (Item ID: fe7e24e58be14d54b7f327db4cac50d2)\nDescription: High-resolution multi-band (RGB) satellite imagery covering the UCSB campus and surrounding Goleta area, captured by Planet Labs and hosted by the UCSB DREAM Lab. Used in Workshop 2 to illustrate multi-band rasters (combining red, green, and blue spectral bands) and demonstrate the distinction between interactive operational imagery layers and static basemaps.\n\n\n\n11. Bus Stops (Goleta & Santa Barbara)\n\nFormat: CSV spreadsheet / Vector Point Layer\nAccess / Source:\n\nRepository files:\n\nsource_data/Goleta_Bus_Stops.csv\nsource_data/Santa_Barbara_Bus_Stops.csv\n\nHosted feature layer (Goleta): Item ID a71f35ca2c3a47119bb883e73a409e61 in workshop maps\n\nDescription: Point datasets of Santa Barbara Metropolitan Transit District (SBMTD) bus stops with coordinate attributes (lat, lon), platform specifications, and route references derived from OpenStreetMap.\n\n\n\n12. Santa Barbara County Trails / Trailheads (SB_County_Trails.csv)\n\nFormat: CSV tabular spreadsheet (Latitude / Longitude coordinates)\nAccess / Source:\n\nRepository file: source_data/SB_County_Trails.csv\nIn lesson text: referenced as SantaBarbara_County_Trailheads.csv / SB_County_Trails.csv\n\nDescription: Point locations of trailheads and trails throughout Santa Barbara County, including difficulty, distance, and elevation gain. Used to demonstrate importing external tabular CSV files with geographic coordinates into ArcGIS Online."
+  },
+  {
+    "objectID": "data_sources.html#workshop-3-geospatial-analysis",
+    "href": "data_sources.html#workshop-3-geospatial-analysis",
+    "title": "Workshop Data Sources",
+    "section": "Workshop 3: Geospatial Analysis",
+    "text": "Workshop 3: Geospatial Analysis\nWorkshop 3 focuses on spatial analysis operations using the layers introduced in earlier sessions:\n\n13. Digital Elevation Model (ucsb_local_dem) & Slope Analysis\n\nFormat: Single-band continuous raster\nAccess / Source: Same as in Workshop 2 (From Maps to Analysis Group).\nDescription: Used as the input raster for calculating terrain slope and executing raster calculations and zonal statistics.\n\n\n\n14. Street & Route Network (SantaBarbara_Merged_roads / Campus Network)\n\nFormat: Hosted Feature Layer (Polylines)\nAccess / Source: SantaBarbara_Merged_roads.\nDescription: Serves as the vector input for spatial analysis workflows, including calculating road buffer zones (e.g., 30-meter proximity buffers) and summarizing slope statistics per road segment via Zonal Statistics as Table."
   },
   {
     "objectID": "02_intro_gis.html",
     "href": "02_intro_gis.html",
     "title": "Using more Data",
     "section": "",
-    "text": "This lesson focuses on learning more about the different types of geographic data available in ArcGIS Online and learning how to import and work with your own data."
+    "text": "This lesson focuses on learning more about the different types of geographic data available in ArcGIS Online and learning how to import and work with your own data. At the end of this workshop you will:\n\nHave a better understanding of the vector and raster geospatial data types\nKnow how to import your own data into ArcGIS Online\nKnow how to edit or add data to a feature layer\nKnow how to do computation on raster\nKnow how to export data from ArcGIS Online to your local machine"
+  },
+  {
+    "objectID": "02_intro_gis.html#learning-objectives",
+    "href": "02_intro_gis.html#learning-objectives",
+    "title": "Using more Data",
+    "section": "",
+    "text": "This lesson focuses on learning more about the different types of geographic data available in ArcGIS Online and learning how to import and work with your own data. At the end of this workshop you will:\n\nHave a better understanding of the vector and raster geospatial data types\nKnow how to import your own data into ArcGIS Online\nKnow how to edit or add data to a feature layer\nKnow how to do computation on raster\nKnow how to export data from ArcGIS Online to your local machine"
   },
   {
     "objectID": "02_intro_gis.html#review-annotations-vs.-data",
@@ -245,31 +259,24 @@
     "text": "Preview for Workshop 3: Looking Ahead to Spatial Analysis\nIn Workshop 3, we dive deeper into quantitative spatial analysis. The data layers we prepared today form the foundation for analyzing terrain and route difficulty:\n- Calculate slope from the DEM (a single-channel continuous raster measuring steepness)\n- Overlay slope values onto road segments\n- Identify and highlight the steepest climbs (maximum slope)\n\nAnalysis Workflow Overview\n\nSlope Calculation: Use raster analysis tools to calculate a slope raster from the DEM, expressing terrain steepness in degrees or percent rise.\nZonal Statistics as Table: With the slope raster and the road network loaded, run Raster Analysis &gt; Zonal Statistics as Table to compute summary statistics (such as the maximum or mean slope) for each road line.\n\n\n\nJoining Statistics to Roads: The zonal statistics tool outputs a standalone data table. To visualize these slope measurements on the map, join the table back to the road vector layer using Tools &gt; Summarize data &gt; Join Features, matching on a common identifier such as OBJECTID.\n\n\n\nOnce joined, roads can be symbolized by slope steepness, allowing us to pinpoint the steepest hill climbs for our ride!"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "From Maps to Analysis",
+    "objectID": "03_geospatial_analysis.html",
+    "href": "03_geospatial_analysis.html",
+    "title": "Geospatial analysis",
     "section": "",
-    "text": "The goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis without the need to have programming skills.\nWe have organized this curriculum into three workshops:"
+    "text": "As you can guess, this part is still a work in progress. Check back winter quarter, 2027 to see our progress\nWe are still discussing what tool to emphasize. Will we leave ArcGIS Online behind for part 3 of the series?\nWill we move to the Free and Open Source QGIS?\nStay tuned to find out!"
   },
   {
-    "objectID": "index.html#workshop-1---i-want-to-make-a-map",
-    "href": "index.html#workshop-1---i-want-to-make-a-map",
-    "title": "From Maps to Analysis",
-    "section": "Workshop 1 - I want to make a map",
-    "text": "Workshop 1 - I want to make a map\n2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:\n\nadjust the background basemap\nadd an existing data layer to a map\nchange symbology of vector data\ndraw lines and polygons on a map\n\nThe workshop ends with exporting a map suitable for inclusion in a publication."
+    "objectID": "03_geospatial_analysis.html#ago-layers-vs.-local-layers",
+    "href": "03_geospatial_analysis.html#ago-layers-vs.-local-layers",
+    "title": "Geospatial analysis",
+    "section": "AGO layers vs. local layers",
+    "text": "AGO layers vs. local layers\nKeeping track of where the data underlying layers is located is challenging even for advanced geospatial analysts.\n– Will this session turn out to be very much a ‘where are my files’ reinforcement like we try to make the Unix Shell?"
   },
   {
-    "objectID": "index.html#workshop-2---exploring-more-geospatial-data",
-    "href": "index.html#workshop-2---exploring-more-geospatial-data",
-    "title": "From Maps to Analysis",
-    "section": "Workshop 2 - Exploring more geospatial data",
-    "text": "Workshop 2 - Exploring more geospatial data\n3-hour workshop using ArcGIS Online to conduct basic GIS data exploration and visualization.\n\nmore about vector data\nraster data\nLiving Atlas data\ndata import & export"
-  },
-  {
-    "objectID": "index.html#workshop-3---geospatial-analysis",
-    "href": "index.html#workshop-3---geospatial-analysis",
-    "title": "From Maps to Analysis",
-    "section": "Workshop 3 - Geospatial analysis",
-    "text": "Workshop 3 - Geospatial analysis\n4-hour workshop. A Carpentry-like, hands-on session introducing the analytical features of ArcGIS Online versus Pro on a Windows desktop.\nThis session will introduce the learner to the differences between Online and Pro. We will cover topics such as:\n\nraster calculation\nbuffering\ninterpolation\nzonal statistics"
+    "objectID": "03_geospatial_analysis.html#flavors-of-data-analysis",
+    "href": "03_geospatial_analysis.html#flavors-of-data-analysis",
+    "title": "Geospatial analysis",
+    "section": "Flavors of data analysis:",
+    "text": "Flavors of data analysis:\n\nbuffering\ninterpolation\nzonal statistics\nraster calculation\n\n\nRaster calculations\nExample analysis: from workshop 2, how did that slope layer get made? With a raster calculation.\n\n\nBuffering\nExample analysis: maybe your friend is really afraid of heights, and wants to make sure that the route doesn’t include super steep drop offs.\n\nbuffer 30 meters around the streets\nThere’s a chance to teach about credits here. The buffer costs 2.x credits.\ngotcha: layers much have unique names across the organization. So use your initials in this step. sb_jj_roads_buffer\nFind clusters of large values in the pixels that lay underneath the buffer.\nhighlight any intersection with areas where there are large numbers of very steep pixels nearby.\nCutting a raster to a mask is called nibbling\n\n\n\nanother\nWhich parts of campus are least served by the bike path network?\nPotential simple analysis as end product (this section should be moved to 3) - Zonal statistics - Count number of points within a polygon - Heatmap from points - Buffering"
   }
 ]
