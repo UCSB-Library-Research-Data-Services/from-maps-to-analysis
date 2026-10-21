@@ -185,6 +185,10 @@ window.Quarto = {
   <li><a href="#editing-data" id="toc-editing-data" class="nav-link" data-scroll-target="#editing-data">Editing Data</a></li>
   <li><a href="#exporting-data" id="toc-exporting-data" class="nav-link" data-scroll-target="#exporting-data">Exporting Data</a></li>
   <li><a href="#completing-the-story" id="toc-completing-the-story" class="nav-link" data-scroll-target="#completing-the-story">Completing the Story</a></li>
+  <li><a href="#how-to-improve-your-map" id="toc-how-to-improve-your-map" class="nav-link" data-scroll-target="#how-to-improve-your-map">How to improve your map</a>
+  <ul class="collapse">
+  <li><a href="#creating-shaded-relief-hillshade-on-the-fly" id="toc-creating-shaded-relief-hillshade-on-the-fly" class="nav-link" data-scroll-target="#creating-shaded-relief-hillshade-on-the-fly">Creating Shaded Relief (Hillshade) on the Fly</a></li>
+  </ul></li>
   <li><a href="#preview-for-workshop-3-looking-ahead-to-spatial-analysis" id="toc-preview-for-workshop-3-looking-ahead-to-spatial-analysis" class="nav-link" data-scroll-target="#preview-for-workshop-3-looking-ahead-to-spatial-analysis">Preview for Workshop 3: Looking Ahead to Spatial Analysis</a>
   <ul class="collapse">
   <li><a href="#analysis-workflow-overview" id="toc-analysis-workflow-overview" class="nav-link" data-scroll-target="#analysis-workflow-overview">Analysis Workflow Overview</a></li>
@@ -326,32 +330,6 @@ Note
 <ul>
 <li>insert screenshot of results of divergent DEM</li>
 </ul>
-</section>
-<section id="creating-shaded-relief-hillshade-on-the-fly" class="level4">
-<h4 class="anchored" data-anchor-id="creating-shaded-relief-hillshade-on-the-fly">Creating Shaded Relief (Hillshade) on the Fly</h4>
-<p>One use for a DEM is to make a shaded relief layer. That is a classic view that gives the terrain realistic three-dimensional depth and surface texture, we can generate a shaded relief visualization dynamically:</p>
-<ol type="1">
-<li>Duplicate the <code>ucsb_local_dem</code> layer.</li>
-<li>Rename the two DEM layers for clarity: name the top layer <code>Elevation (Color)</code> and the bottom layer <code>Elevation (Shaded Relief)</code>.</li>
-<li>Change the symbology style to <strong>Shaded Relief</strong>.</li>
-</ol>
-<p>Shaded relief simulates how sunlight illuminates terrain, casting shadows based on the position of the sun measured as two angles: Azimuth and Altitude</p>
-<ul>
-<li><strong>Azimuth</strong>: The compass direction from which the illumination source (the sun) originates, measured in degrees clockwise from north (0° = North, 90° = East, 180° = South, 270° = West). In cartography, the sun is traditionally positioned in the northwest (315°) or west (270°) to match how the human brain interprets light and shadow, preventing an optical illusion known as “relief inversion” where mountains appear as valleys. For our map, we position the light source from the west.</li>
-<li><strong>Altitude</strong>: The angle of the sun above the horizon, measured from 0° (level with the horizon at sunrise/sunset) to 90° (directly overhead at solar noon). A lower altitude (e.g., 30°–45°, typical of low winter sun) produces longer, more dramatic shadows that accentuate ridgelines, canyons, and valleys.</li>
-</ul>
-<p><img src="images/workshop2/relief_options.png" class="img-fluid"></p>
-<p>We can adjust those angles to show the sun in the morning or evening here in Santa Barbara.</p>
-<p>Adjust the transparency of the top colored elevation layer so the shaded relief beneath shows through, creating an illuminated 3D terrain effect under our roads.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/workshop2/western_light.png" class="img-fluid figure-img" alt="A rainbow colored hillshaded map with roads showing the software interface"></p>
-<figcaption>Current status of our map with colored DEM and shaded relief</figcaption>
-</figure>
-</div>
-<p>This matches interim map 3 in our group.</p>
-<p>This is a bit of an artificial example, because Esri offers a wide variety of hillshade basemaps in the Living Atlas. Also: that was a rather lengthy aside.</p>
-<p>Now would be an excellent point to save your map.</p>
 </section>
 </section>
 <section id="categorical-rasters" class="level3">
@@ -557,6 +535,35 @@ Note
 <h2 class="anchored" data-anchor-id="completing-the-story">Completing the Story</h2>
 <p>So where shall we ride our bicycles?</p>
 <hr>
+</section>
+<section id="how-to-improve-your-map" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-improve-your-map">How to improve your map</h2>
+<section id="creating-shaded-relief-hillshade-on-the-fly" class="level3">
+<h3 class="anchored" data-anchor-id="creating-shaded-relief-hillshade-on-the-fly">Creating Shaded Relief (Hillshade) on the Fly</h3>
+<p>One use for a DEM is to make a shaded relief layer. That is a classic view that gives the terrain realistic three-dimensional depth and surface texture, we can generate a shaded relief visualization dynamically:</p>
+<ol type="1">
+<li>Duplicate the <code>ucsb_local_dem</code> layer.</li>
+<li>Rename the two DEM layers for clarity: name the top layer <code>Elevation (Color)</code> and the bottom layer <code>Elevation (Shaded Relief)</code>.</li>
+<li>Change the symbology style to <strong>Shaded Relief</strong>.</li>
+</ol>
+<p>Shaded relief simulates how sunlight illuminates terrain, casting shadows based on the position of the sun measured as two angles: Azimuth and Altitude</p>
+<ul>
+<li><strong>Azimuth</strong>: The compass direction from which the illumination source (the sun) originates, measured in degrees clockwise from north (0° = North, 90° = East, 180° = South, 270° = West). In cartography, the sun is traditionally positioned in the northwest (315°) or west (270°) to match how the human brain interprets light and shadow, preventing an optical illusion known as “relief inversion” where mountains appear as valleys. For our map, we position the light source from the west.</li>
+<li><strong>Altitude</strong>: The angle of the sun above the horizon, measured from 0° (level with the horizon at sunrise/sunset) to 90° (directly overhead at solar noon). A lower altitude (e.g., 30°–45°, typical of low winter sun) produces longer, more dramatic shadows that accentuate ridgelines, canyons, and valleys.</li>
+</ul>
+<p><img src="images/workshop2/relief_options.png" class="img-fluid"></p>
+<p>We can adjust those angles to show the sun in the morning or evening here in Santa Barbara.</p>
+<p>Adjust the transparency of the top colored elevation layer so the shaded relief beneath shows through, creating an illuminated 3D terrain effect under our roads.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/workshop2/western_light.png" class="img-fluid figure-img" alt="A rainbow colored hillshaded map with roads showing the software interface"></p>
+<figcaption>Current status of our map with colored DEM and shaded relief</figcaption>
+</figure>
+</div>
+<p>This matches interim map 3 in our group.</p>
+<p>This is a bit of an artificial example, because Esri offers a wide variety of hillshade basemaps in the Living Atlas. Also: that was a rather lengthy aside.</p>
+<p>Now would be an excellent point to save your map.</p>
+</section>
 </section>
 <section id="preview-for-workshop-3-looking-ahead-to-spatial-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="preview-for-workshop-3-looking-ahead-to-spatial-analysis">Preview for Workshop 3: Looking Ahead to Spatial Analysis</h2>
