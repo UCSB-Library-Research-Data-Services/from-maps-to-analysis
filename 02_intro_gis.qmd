@@ -193,7 +193,8 @@ elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
 (make sure we are feet and not meters)
 
-::: callout-challenge
+::: callout-tip
+## Challenge
 Does our DEM contain negative values? Why?
 :::
 
@@ -209,59 +210,8 @@ below-and-above zero diverging ramp or an elevation palette).
 
 -   insert screenshot of results of divergent DEM
 
-<<<<<<< HEAD
-#### Creating Shaded Relief (Hillshade) on the Fly
 
-One use for a DEM is to make a shaded relief layer. That is a classic
-view that gives the terrain realistic three-dimensional depth and
-surface texture, we can generate a shaded relief visualization
-dynamically:
 
-1.  Duplicate the `ucsb_local_dem` layer.
-2.  Rename the two DEM layers for clarity: name the top layer
-    `Elevation (Color)` and the bottom layer
-    `Elevation (Shaded Relief)`.
-3.  Change the symbology style to **Shaded Relief**.
-
-Shaded relief simulates how sunlight illuminates terrain, casting
-shadows based on the position of the sun measured as two angles: Azimuth
-and Altitude
-
--   **Azimuth**: The compass direction from which the illumination
-    source (the sun) originates, measured in degrees clockwise from
-    north (0° = North, 90° = East, 180° = South, 270° = West). In
-    cartography, the sun is traditionally positioned in the northwest
-    (315°) or west (270°) to match how the human brain interprets light
-    and shadow, preventing an optical illusion known as "relief
-    inversion" where mountains appear as valleys. For our map, we
-    position the light source from the west.
--   **Altitude**: The angle of the sun above the horizon, measured from
-    0° (level with the horizon at sunrise/sunset) to 90° (directly
-    overhead at solar noon). A lower altitude (e.g., 30°–45°, typical of
-    low winter sun) produces longer, more dramatic shadows that
-    accentuate ridgelines, canyons, and valleys.
-
-![](images/workshop2/relief_options.png)
-
-We can adjust those angles to show the sun in the morning or evening
-here in Santa Barbara.
-
-Adjust the transparency of the top colored elevation layer so the shaded
-relief beneath shows through, creating an illuminated 3D terrain effect
-under our roads.
-
-![Current status of our map with colored DEM and shaded
-relief](images/workshop2/western_light.png){fig-alt="A rainbow colored hillshaded map with roads showing the software interface"}
-
-This matches interim map 3 in our group.
-
-This is a bit of an artificial example, because Esri offers a wide
-variety of hillshade basemaps in the Living Atlas. Also: that was a
-rather lengthy aside.
-
-Now would be an excellent point to save your map.
-=======
->>>>>>> 9c6f3412c0da36a61849fbb86eefcbe07094194a
 
 ### Categorical Rasters
 
@@ -402,19 +352,16 @@ device.
 
 -   Add layer from file
 
-![](images/workshop2/import_csv-add.png){fig-alt="Unfold the Add menu"
-width="40%"}
+![](images/workshop2/import_csv-add.png){fig-alt="Unfold the Add menu" width="40%"}
 
 -   Select "Your Device" and browse to the csv file you want to import
 
-![](images/workshop2/import_csv-file.png){fig-alt="Browse or drop file"
-width="80%"}
+![](images/workshop2/import_csv-file.png){fig-alt="Browse or drop file" width="80%"}
 
 -   Leave the default option "Create a hosted feature layer and add it
     to the map" and click Next
 
-![](images/workshop2/import_csv-layer.png){fig-alt="Select 'hosted feature'"
-width="80%"}
+![](images/workshop2/import_csv-layer.png){fig-alt="Select 'hosted feature'" width="80%"}
 
 -   Select the attributes you would like to import as well as rename
     fields as you see necessary. You can also use this step to rename
@@ -422,26 +369,22 @@ width="80%"}
     Rename "Title" as "Name". It is also a good practice to check that
     the field types are aligned with what you were expecting.
 
-![](images/workshop2/import_csv-field.png){fig-alt="Select the attributes you want to import and rename them as needed"
-width="100%"}
+![](images/workshop2/import_csv-field.png){fig-alt="Select the attributes you want to import and rename them as needed" width="100%"}
 
 -   Match the latitude and longitude information used by ArcGIS to
     generate the location with your data attributes.
 
-![](images/workshop2/import_csv-latlong.png){fig-alt="Match the Latitude and longitude attribute from your data with the information that ArcGIS will use to create the spatial locations"
-width="80%"}
+![](images/workshop2/import_csv-latlong.png){fig-alt="Match the Latitude and longitude attribute from your data with the information that ArcGIS will use to create the spatial locations" width="80%"}
 
 -   Save your new data layer under your user account creating a
     `ucsb_bike` folder if you have not one yet
 
-![](images/workshop2/import_csv-save.png){fig-alt="Interface to Save your new layer under your account"
-width="80%"}
+![](images/workshop2/import_csv-save.png){fig-alt="Interface to Save your new layer under your account" width="80%"}
 
 -   Zoom out to see the trailhead locations! Of course now we need to
     make it look better :)
 
-![](images/workshop2/import_csv-map.png){fig-alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity"
-width="100%"}
+![](images/workshop2/import_csv-map.png){fig-alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity" width="100%"}
 
 ::: {.callout-note collapse="false" title="CRS"}
 ## A note on Coordinate Reference Systems
@@ -504,21 +447,18 @@ menu at the top-left of your Map view and selecting Content.
     trailhead layer you imported from the CSV file to go to the Overview
     page of that layer.
 
-![](images/workshop2/export-overview.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads."
-width="100%"}
+![](images/workshop2/export-overview.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads. "width="100%"}
 
 -   Unfold the menu on the right completely, select Export data, and
     choose the GeoJSON format.
 
-![](images/workshop2/export-overview_uncollapsed.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads with the option menu on the right uncollapsed and showing the Export Data option"
-width="100%"}
+![](images/workshop2/export-overview_uncollapsed.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads with the option menu on the right uncollapsed and showing the Export Data option"width="100%"}
 
 -   On the next window, leave the default options and choose your
     ucsb_bike folder as location. Click on Export. Note that exporting
     data can take some time, so be patient :)
 
-![](images/workshop2/export-geojson.png){fig-alt="Wizzard page to export a geojson file: title, Folder location, Categories, Tags and Summary are the available options"
-width="50%"}
+![](images/workshop2/export-geojson.png){fig-alt="Wizzard page to export a geojson file: title, Folder location, Categories, Tags and Summary are the available options" width="50%"}
 
 -   Once the export is completed, you should automatically be redirected
     to the Overview page of this new dataset. This time, Download should
