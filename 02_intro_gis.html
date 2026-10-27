@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-36b0b5132996e368dba5a78941f6c871.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-196ea5643f3b265196950277884207f5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cd28c5491f75ef1715370243d3e3bbb0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -174,11 +174,9 @@ window.Quarto = {
   <li><a href="#working-with-raster-data" id="toc-working-with-raster-data" class="nav-link" data-scroll-target="#working-with-raster-data">Working with Raster Data</a>
   <ul class="collapse">
   <li><a href="#digital-elevation-models-dem" id="toc-digital-elevation-models-dem" class="nav-link" data-scroll-target="#digital-elevation-models-dem">Digital Elevation Models (DEM)</a></li>
-  </ul></li>
-  <li><a href="#now-would-be-an-excellent-point-to-save-your-map." id="toc-now-would-be-an-excellent-point-to-save-your-map." class="nav-link" data-scroll-target="#now-would-be-an-excellent-point-to-save-your-map.">Now would be an excellent point to save your map.</a>
-  <ul class="collapse">
   <li><a href="#categorical-rasters" id="toc-categorical-rasters" class="nav-link" data-scroll-target="#categorical-rasters">Categorical Rasters</a></li>
   <li><a href="#calculated-raster-data-slope" id="toc-calculated-raster-data-slope" class="nav-link" data-scroll-target="#calculated-raster-data-slope">Calculated Raster Data: Slope</a></li>
+  </ul></li>
   <li><a href="#layer-management-rasters-and-additional-vectors" id="toc-layer-management-rasters-and-additional-vectors" class="nav-link" data-scroll-target="#layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</a></li>
   <li><a href="#multi-band-rasters" id="toc-multi-band-rasters" class="nav-link" data-scroll-target="#multi-band-rasters">Multi-band Rasters</a></li>
   <li><a href="#importing-data-into-arcgis-online" id="toc-importing-data-into-arcgis-online" class="nav-link" data-scroll-target="#importing-data-into-arcgis-online">Importing data into ArcGIS Online</a>
@@ -195,7 +193,6 @@ window.Quarto = {
   <li><a href="#preview-for-workshop-3-looking-ahead-to-spatial-analysis" id="toc-preview-for-workshop-3-looking-ahead-to-spatial-analysis" class="nav-link" data-scroll-target="#preview-for-workshop-3-looking-ahead-to-spatial-analysis">Preview for Workshop 3: Looking Ahead to Spatial Analysis</a>
   <ul class="collapse">
   <li><a href="#analysis-workflow-overview" id="toc-analysis-workflow-overview" class="nav-link" data-scroll-target="#analysis-workflow-overview">Analysis Workflow Overview</a></li>
-  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -356,8 +353,18 @@ Note
 <p>Each pixel, or cell, in our DEM represents bare-earth surface elevation relative to a vertical datum (mean sea level). The <code>ucsb_local_dem</code> dataset was derived from a high-resolution USGS LiDAR survey (3D Elevation Program (3DEP)).</p>
 <p>** define continuous **</p>
 <p>In the layer properties, explore the raster statistics: note the minimum elevation near sea level (0) along the coast and slough, rising to hundreds of feet in the foothills, as well as the grid cell resolution. (make sure we are feet and not meters)</p>
-<div class="callout-challenge">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Challenge
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Does our DEM contain negative values? Why?</p>
+</div>
 </div>
 <section id="applying-color-schemes" class="level4">
 <h4 class="anchored" data-anchor-id="applying-color-schemes">Applying Color Schemes</h4>
@@ -366,49 +373,8 @@ Note
 <ul>
 <li>insert screenshot of results of divergent DEM</li>
 </ul>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD #### Creating Shaded Relief (Hillshade) on the Fly</p>
-<p>One use for a DEM is to make a shaded relief layer. That is a classic view that gives the terrain realistic three-dimensional depth and surface texture, we can generate a shaded relief visualization dynamically:</p>
-<ol type="1">
-<li>Duplicate the <code>ucsb_local_dem</code> layer.</li>
-<li>Rename the two DEM layers for clarity: name the top layer <code>Elevation (Color)</code> and the bottom layer <code>Elevation (Shaded Relief)</code>.</li>
-<li>Change the symbology style to <strong>Shaded Relief</strong>.</li>
-</ol>
-<p>Shaded relief simulates how sunlight illuminates terrain, casting shadows based on the position of the sun measured as two angles: Azimuth and Altitude</p>
-<ul>
-<li><strong>Azimuth</strong>: The compass direction from which the illumination source (the sun) originates, measured in degrees clockwise from north (0° = North, 90° = East, 180° = South, 270° = West). In cartography, the sun is traditionally positioned in the northwest (315°) or west (270°) to match how the human brain interprets light and shadow, preventing an optical illusion known as “relief inversion” where mountains appear as valleys. For our map, we position the light source from the west.</li>
-<li><strong>Altitude</strong>: The angle of the sun above the horizon, measured from 0° (level with the horizon at sunrise/sunset) to 90° (directly overhead at solar noon). A lower altitude (e.g., 30°–45°, typical of low winter sun) produces longer, more dramatic shadows that accentuate ridgelines, canyons, and valleys.</li>
-</ul>
-<p><img src="images/workshop2/relief_options.png" class="img-fluid"></p>
-<p>We can adjust those angles to show the sun in the morning or evening here in Santa Barbara.</p>
-<p>Adjust the transparency of the top colored elevation layer so the shaded relief beneath shows through, creating an illuminated 3D terrain effect under our roads.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/workshop2/western_light.png" class="img-fluid figure-img" alt="A rainbow colored hillshaded map with roads showing the software interface"></p>
-<figcaption>Current status of our map with colored DEM and shaded relief</figcaption>
-</figure>
-</div>
-<p>This matches interim map 3 in our group.</p>
-<p>This is a bit of an artificial example, because Esri offers a wide variety of hillshade basemaps in the Living Atlas. Also: that was a rather lengthy aside.</p>
 </section>
 </section>
-</section>
-<section id="now-would-be-an-excellent-point-to-save-your-map." class="level1">
-<h1>Now would be an excellent point to save your map.</h1>
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<p>9c6f3412c0da36a61849fbb86eefcbe07094194a</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <section id="categorical-rasters" class="level3">
 <h3 class="anchored" data-anchor-id="categorical-rasters">Categorical Rasters</h3>
 <p><strong>Categorical vs.&nbsp;Continuous Data</strong></p>
@@ -434,6 +400,7 @@ Note
 <p><img src="images/workshop2/slope.png" class="img-fluid"></p>
 <p>Resymbolize your slope layer to a color scheme that makes sense to you. Look up into the foothills. Which paths look steepest?</p>
 <p><img src="images/workshop2/symbolizing_slope.png" class="img-fluid" style="width:60.0%"></p>
+</section>
 </section>
 <section id="layer-management-rasters-and-additional-vectors" class="level2">
 <h2 class="anchored" data-anchor-id="layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</h2>
@@ -483,7 +450,7 @@ Note
 <p>In this section we will import <code>SantaBarbara_County_Trailheads.csv</code> from a CSV spreadsheet using coordinate columns (latitude and longitude) to see how external tabular data can be transformed into a geospatial layer and integrate with existing road and elevation layers.</p>
 <p>Download and open the <code>SantaBarbara_County_Trailheads.csv</code> onto your device.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -492,7 +459,7 @@ Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>What are the attributes stored in this dataset?</li>
@@ -533,7 +500,7 @@ Note
 </ul>
 <p><img src="images/workshop2/import_csv-map.png" class="img-fluid" style="width:100.0%" alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity"></p>
 <div class="callout callout-style-default callout-note callout-titled" title="CRS">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -542,7 +509,7 @@ Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
 <section id="a-note-on-coordinate-reference-systems" class="level2 callout-body-container callout-body">
 <h2 class="anchored" data-anchor-id="a-note-on-coordinate-reference-systems">A note on Coordinate Reference Systems</h2>
 <p>In ArcGIS Online, the default projection and Coordinate Reference System (CRS) is WGS 1984 Web Mercator Auxilary Sphere, also used by the Global Positioning System (<a href="https://en.wikipedia.org/wiki/Global_Positioning_System">GPS</a>).</p>
@@ -557,7 +524,7 @@ Note
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -566,7 +533,7 @@ Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Choose the trail <code>Difficulty</code> attribute to add a color ramp</li>
@@ -592,7 +559,7 @@ Note
 <ul>
 <li>Once in the My content view, locate and click on the spatial trailhead layer you imported from the CSV file to go to the Overview page of that layer.</li>
 </ul>
-<p><img src="images/workshop2/export-overview.png" class="img-fluid" style="width:100.0%" alt="Overview page for the feature layer of Santa Barbara County trailheads."></p>
+<p><img src="images/workshop2/export-overview.png" class="img-fluid" style="width:100.0%" alt="Overview page for the feature layer of Santa Barbara County trailheads. "></p>
 <ul>
 <li>Unfold the menu on the right completely, select Export data, and choose the GeoJSON format.</li>
 </ul>
@@ -663,7 +630,6 @@ Note
 </ol>
 
 
-</section>
 </section>
 </section>
 

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://UCSB-Library-Research-Data-Services.github.io/from-maps-to-analysis/01_make_map.html</loc>
-    <lastmod>2026-10-27T17:39:58.521Z</lastmod>
-  </url>
-  <url>
     <loc>https://UCSB-Library-Research-Data-Services.github.io/from-maps-to-analysis/index.html</loc>
-    <lastmod>2026-10-27T17:39:58.746Z</lastmod>
+    <lastmod>2026-10-27T18:21:34.761Z</lastmod>
   </url>
   <url>
     <loc>https://UCSB-Library-Research-Data-Services.github.io/from-maps-to-analysis/data_sources.html</loc>
-    <lastmod>2026-10-27T17:39:58.521Z</lastmod>
+    <lastmod>2026-10-27T18:21:34.436Z</lastmod>
   </url>
   <url>
-    <loc>https://UCSB-Library-Research-Data-Services.github.io/from-maps-to-analysis/02_intro_gis.html</loc>
-    <lastmod>2026-10-27T17:39:58.521Z</lastmod>
+    <loc>https://UCSB-Library-Research-Data-Services.github.io/from-maps-to-analysis/01_make_map.html</loc>
+    <lastmod>2026-10-27T18:21:34.436Z</lastmod>
   </url>
   <url>
     <loc>https://UCSB-Library-Research-Data-Services.github.io/from-maps-to-analysis/03_geospatial_analysis.html</loc>
-    <lastmod>2026-10-27T17:39:58.521Z</lastmod>
+    <lastmod>2026-10-27T18:21:34.436Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UCSB-Library-Research-Data-Services.github.io/from-maps-to-analysis/02_intro_gis.html</loc>
+    <lastmod>2026-10-27T18:21:34.436Z</lastmod>
   </url>
 </urlset>
