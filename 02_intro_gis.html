@@ -129,7 +129,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./02_intro_gis.html" aria-current="page"> 
-<span class="menu-text">Exploring more data</span></a>
+<span class="menu-text">Using my own data</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
@@ -156,10 +156,10 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#review-annotations-vs.-data" id="toc-review-annotations-vs.-data" class="nav-link" data-scroll-target="#review-annotations-vs.-data">Review: Annotations vs.&nbsp;Data</a>
   <ul class="collapse">
-  <li><a href="#exercise-workshop-1-recap" id="toc-exercise-workshop-1-recap" class="nav-link" data-scroll-target="#exercise-workshop-1-recap">Exercise: Workshop 1 Recap</a></li>
+  <li><a href="#workshop-1-recap" id="toc-workshop-1-recap" class="nav-link" data-scroll-target="#workshop-1-recap">Workshop 1 Recap</a></li>
   </ul></li>
   <li><a href="#preview-our-end-goal" id="toc-preview-our-end-goal" class="nav-link" data-scroll-target="#preview-our-end-goal">Preview: our end goal</a></li>
   <li><a href="#geographic-data" id="toc-geographic-data" class="nav-link" data-scroll-target="#geographic-data">Geographic data</a>
@@ -223,11 +223,11 @@ window.Quarto = {
 
 
 <section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
-<p>This lesson focuses on learning more about the different types of geographic data available in ArcGIS Online and learning how to import and work with your own data. At the end of this workshop you will:</p>
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>This lesson focuses on learning more about the different types of geographic data and learning how to import and work with your own data in ArcGIS Online. At the end of this workshop you will:</p>
 <ul>
 <li>Have a better understanding of the vector and raster geospatial data types</li>
-<li>Know how to import your own data into ArcGIS Online</li>
+<li>Know how to import external data into ArcGIS Online</li>
 <li>Know how to edit or add data to a feature layer</li>
 <li>Know how to do computation on raster</li>
 <li>Know how to export data from ArcGIS Online to your local machine</li>
@@ -237,38 +237,44 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="review-annotations-vs.-data">Review: Annotations vs.&nbsp;Data</h2>
 <p>In <a href="https://rds.library.ucsb.edu/from-maps-to-analysis/01_make_map.html">Workshop 1</a>, we started with sketch layers to draw points, lines, and polygons directly on top of the map. While sketches are convenient for quick markups and annotations, they are not true GIS data layers. Sketches lack an underlying database table and cannot be queried, filtered, or used in spatial analysis.</p>
 <p>In contrast, <strong>feature layers</strong> link geometries (points, lines, or polygons) to structured records in an <strong>attribute table</strong>. Each feature has defined attributes, or fields (e.g., name, speed limit, road type, elevation) with specific data types (such as text strings, numbers, and dates). This tabular structure makes it possible to filter features, symbolize data based on its attributes, and calculate spatial relationships.</p>
-<section id="exercise-workshop-1-recap" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-workshop-1-recap">Exercise: Workshop 1 Recap</h3>
+<section id="workshop-1-recap" class="level3">
+<h3 class="anchored" data-anchor-id="workshop-1-recap">Workshop 1 Recap</h3>
+<p>Let’s start a new map for the larger campus area and its bicycle infrastructure</p>
 <ol type="1">
-<li>Open and explore the completed map from Workshop 1 (<code>Workshop campus bike map</code>).</li>
-<li>Review layer symbology and experiment with the style sliders (such as Counts &amp; Amounts).</li>
-<li>Review how points, lines, and polygons are different</li>
-<li>Refresh memory on building layer</li>
-<li>Perform a <strong>Save As</strong> before moving forward so that you have your own working map copy saved in your personal ArcGIS Online workspace.</li>
+<li>Log on to ArcGIS Online <a href="https://ucsb.maps.arcgis.com" target="_blank"><strong>https://ucsb.maps.arcgis.com</strong></a>. <strong>Sign on with your UCSB NetID</strong>, do not use the ArcGIS login!</li>
+<li>Open a new, empty map by clicking <code>Map</code> on your top menu bar. <img src="images/main-menu-bar.png" id="fig-menubar" class="img-fluid quarto-figure quarto-figure-center anchored" style="width:90.0%" alt="ArcGIS Online main menu bar"></li>
+<li>From the <strong>Layers</strong> panel, click on the <strong>Add</strong> layer button. Search <code>My organization</code> for <strong>UCSB Campus Buildings</strong>. Choose the top result.</li>
 </ol>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Tip</span>Challenge: Workshop 1 Recap
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p>Layers from Workshop 1 used in Workshop 2</p>
-<ul>
-<li><code>OSM_UCSB_Roads</code></li>
-</ul>
+<p>Using the <a href="./01_make_map.html#step-1-add-layers-to-your-map">workshop 1 materials</a> as reference, do the following tasks:</p>
+<ol type="1">
+<li>Add symbology to the building layer using the <code>b_use</code> column.<br>
+</li>
+<li>Repeat the above steps to add the feature layer <code>bike_racks_ucsb</code> to your map.</li>
+<li>Experiment with the dit size and color for the bike racks.</li>
+<li>Perform a <strong>Save</strong> before moving forward and name your map <strong>Goleta bike map</strong></li>
+</ol>
 </div>
 </div>
+</div>
+<hr>
 </section>
 </section>
 <section id="preview-our-end-goal" class="level2">
 <h2 class="anchored" data-anchor-id="preview-our-end-goal">Preview: our end goal</h2>
 <p>Our finished product for this session will be the <code>Workshop Goleta bike map</code>. We will take time to preview this finished map before building it step by step.</p>
 <p>** link and screenshot of finished map goes here. <a href="https://arcg.is/1yz0KP3">Work in progress version: (https://arcg.is/1yz0KP3)</a></p>
-<hr>
 </section>
 <section id="geographic-data" class="level2">
 <h2 class="anchored" data-anchor-id="geographic-data">Geographic data</h2>
