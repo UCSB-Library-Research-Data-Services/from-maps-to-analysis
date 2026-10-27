@@ -53,8 +53,8 @@ Using the [workshop 1 materials](01_make_map.qmd#step-1-add-layers-to-your-map) 
 
 1.  Add symbology to the building layer using the `b_use` column.  
 1.  Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
-1.  Experiment with the dit size and color for the bike racks.
-1.  Perform a **Save** before moving forward and name your map **Goleta bike map**
+1.  Experiment with the dot size and color for the bike racks.
+1.  Perform a **Save As** before moving to workshop 2 and name your map **Goleta bike map**
 :::
 
 <hr>
