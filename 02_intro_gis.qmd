@@ -5,14 +5,14 @@ editor:
     wrap: 72
 ---
 
-## Learning objectives
+## Learning Objectives
 
 This lesson focuses on learning more about the different types of
-geographic data available in ArcGIS Online and learning how to import
-and work with your own data. At the end of this workshop you will:
+geographic data and learning how to import and work with your own data in ArcGIS Online. 
+At the end of this workshop you will:
 
 - Have a better understanding of the vector and raster geospatial data types
-- Know how to import your own data into ArcGIS Online
+- Know how to import external data into ArcGIS Online
 - Know how to edit or add data to a feature layer
 - Know how to do computation on raster
 - Know how to export data from ArcGIS Online to your local machine
@@ -36,22 +36,28 @@ dates). This tabular structure makes it possible to filter features,
 symbolize data based on its attributes, and calculate spatial
 relationships.
 
-### Exercise: Workshop 1 Recap
+### Workshop 1 Recap
 
-1.  Open and explore the completed map from Workshop 1
-    (`Workshop campus bike map`).
-2.  Review layer symbology and experiment with the style sliders (such
-    as Counts & Amounts).
-3.  Review how points, lines, and polygons are different
-4.  Refresh memory on building layer
-5.  Perform a **Save As** before moving forward so that you have your
-    own working map copy saved in your personal ArcGIS Online workspace.
+Let's start a new map for the larger campus area and its bicycle infrastructure
 
-::: callout-note
-Layers from Workshop 1 used in Workshop 2
+1. Log on to ArcGIS Online [**https://ucsb.maps.arcgis.com**](https://ucsb.maps.arcgis.com){target="_blank"}. **Sign on with your UCSB NetID**, do not use the ArcGIS login!
+1. Open a new, empty map by clicking `Map` on your top menu bar.
+   ![ArcGIS Online main menu bar](images/main-menu-bar.png){#fig-menubar width="90%" fig-align="center"}
+1. From the **Layers** panel, click on the **Add** layer button. Search `My organization` for **UCSB Campus Buildings**. Choose the top result.
 
--   `OSM_UCSB_Roads`
+
+::: {.callout-tip collapse="false"}
+## Challenge: Workshop 1 Recap
+
+Using the [workshop 1 materials](01_make_map.qmd#step-1-add-layers-to-your-map) as reference, do the following tasks:
+
+1.  Add symbology to the building layer using the `b_use` column.  
+1.  Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
+1.  Experiment with the dit size and color for the bike racks.
+1.  Perform a **Save** before moving forward and name your map **Goleta bike map**
 :::
+
+<hr>
 
 ## Preview: our end goal
 
@@ -62,7 +68,7 @@ map before building it step by step.
 \*\* link and screenshot of finished map goes here. [Work in progress
 version: (https://arcg.is/1yz0KP3)](https://arcg.is/1yz0KP3)
 
-<hr>
+
 
 ## Geographic data
 
@@ -102,6 +108,7 @@ Raster data represents the landscape as a regular grid of square cells
 -   **Multi-band rasters**: Each pixel contains multiple values across
     different spectral channels or bands (such as red, green, blue, and
     near-infrared bands in aerial photography or satellite imagery).
+
 
 ## The Story So Far
 
