@@ -14,7 +14,7 @@ At the end of this workshop you will:
 - Have a better understanding of the vector and raster geospatial data types
 - Know how to import external data into ArcGIS Online
 - Know how to edit or add data to a feature layer
-- Know how to do computation on raster
+- Better understand the difference between continuous and categorical raster layers
 - Know how to export data from ArcGIS Online to your local machine
 
 
@@ -147,7 +147,7 @@ area:
 -   TO DO \*
 -   screenshot of map with roads symbolized for bikes
 
-::: callout-challenge
+::: callout-tip
 Compare the previous road file to this one
 
 Which vector layers in the map are: --points --lines --polygons
@@ -249,12 +249,9 @@ One particularly arbitrary type of categorical data is land cover. -
 
 ### Calculated Raster Data: Slope
 
-When we made the hillshade visualization above, that was a sort of
-calculation based on the DEM.
-
-You can also perform calculations to turn a DEM into a slope layer. We
-made this slope layer for you. This is another continuous dataset. You
-can call it derivative data.
+You can also perform calculations to turn a DEM into a slope layer. We already
+made this slope layer for you as it can be a computing intensive task. This is another 
+continuous dataset. You can call it derivative data.
 
 We will learn how it was made in workshop 3, but for now we will use it
 to examine, with our eyes, where the steepest bike routes up into our
@@ -467,9 +464,6 @@ menu at the top-left of your Map view and selecting Content.
 
 ![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option avaialble"
 width="100%"}
-
-see also: the token economy \<= Call-out box?
-
 
 
 ## Completing the Story
