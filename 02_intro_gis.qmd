@@ -465,7 +465,7 @@ menu at the top-left of your Map view and selecting Content.
     be available in the menu on the right side of the page. Click on it
     and select a location on your local computer and a filename.
 
-![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option avaialble"
+![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option available"
 width="100%"}
 
 see also: the token economy \<= Call-out box?
