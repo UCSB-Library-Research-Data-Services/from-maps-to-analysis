@@ -160,6 +160,7 @@ let's not forget to remove old layers from the current map (ie: the old
 roads roads)
 :::
 
+
 ## Working with Raster Data
 
 When outside of ArcGIS Online, geospatial raster data comes in many
@@ -211,8 +212,6 @@ below-and-above zero diverging ramp or an elevation palette).
 -   insert screenshot of results of divergent DEM
 
 
-
-
 ### Categorical Rasters
 
 **Categorical vs. Continuous Data**
@@ -238,14 +237,14 @@ arbitrary:
 
 -   6 = straw bail
 
--   While elevation is a **continuous raster** (values change smoothly
-    along a numerical gradient), other rasters are **categorical
-    rasters** (e.g., land cover classification datasets from the Living
-    Atlas, where integer cell values represent categories such as urban
-    development, forest, or water).
+While elevation is a **continuous raster** (values change smoothly
+along a numerical gradient representing a quantity), other rasters are 
+**categorical rasters** (e.g., land cover classification datasets from the Living
+Atlas, where integer cell values represent categories such as urban
+development, forest, or water).
 
-One particularly arbitrary type of categorical data is land cover. -
 ![](images/workshop2/landcover_result.png)
+
 
 ### Calculated Raster Data: Slope
 
@@ -267,6 +266,7 @@ Resymbolize your slope layer to a color scheme that makes sense to you.
 Look up into the foothills. Which paths look steepest?
 
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
+
 
 ## Layer Management, Rasters, and Additional Vectors
 
@@ -303,6 +303,7 @@ Add in the bus stop layer
     Library's Higher Education Site License.
 :::
 
+
 ## Multi-band Rasters
 
 So far we have worked with single-channel, or 1-band rasters. However,
@@ -320,6 +321,7 @@ The DREAM Lab hosts several satellite views of campus created by a
 private satellite firm. Let's add one of those layers now:
 
 -   placeholder for Planet image of Goleta
+
 
 ## Importing data into ArcGIS Online
 
@@ -402,8 +404,8 @@ and Geographic Coordinate Systems.
     measured in angular units to define locations on earth. A point is
     referred by its latitude and longitude.
 
-There are pletor of CRSs that all have different accuracy and other
-advantages depending on your location and extenst of your area of
+There are plethora of CRSs that all have different accuracy and other
+advantages depending on your location and extent of your area of
 interest. Here is a good website to look at the different CRSs:
 <https://epsg.io/>
 
@@ -422,10 +424,14 @@ system that we are dealing with?**
 -   Increase the point size
 :::
 
+
 ## Editing Data
 
 Potential narrative: adding the new ILP bike path to your own personal
 bike path layer.
+
+Highlight the best/favorite trails: <https://santabarbaraca.com/itinerary/best-hikes-in-santa-barbara/>
+
 
 ## Exporting Data
 
