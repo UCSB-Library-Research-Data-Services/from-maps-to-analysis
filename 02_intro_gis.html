@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-36b0b5132996e368dba5a78941f6c871.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-196ea5643f3b265196950277884207f5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cd28c5491f75ef1715370243d3e3bbb0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -226,7 +226,7 @@ window.Quarto = {
 <li>Have a better understanding of the vector and raster geospatial data types</li>
 <li>Know how to import external data into ArcGIS Online</li>
 <li>Know how to edit or add data to a feature layer</li>
-<li>Know how to do computation on raster</li>
+<li>Better understand the difference between continuous and categorical raster layers</li>
 <li>Know how to export data from ArcGIS Online to your local machine</li>
 </ul>
 </section>
@@ -319,9 +319,19 @@ window.Quarto = {
 <li>TO DO *</li>
 <li>screenshot of map with roads symbolized for bikes</li>
 </ul>
-<div class="callout-challenge">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Compare the previous road file to this one</p>
 <p>Which vector layers in the map are: –points –lines –polygons</p>
+</div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -387,14 +397,13 @@ Note
 <li><p>4 = adobe</p></li>
 <li><p>5 = sun brick / mud daub</p></li>
 <li><p>6 = straw bail</p></li>
-<li><p>While elevation is a <strong>continuous raster</strong> (values change smoothly along a numerical gradient), other rasters are <strong>categorical rasters</strong> (e.g., land cover classification datasets from the Living Atlas, where integer cell values represent categories such as urban development, forest, or water).</p></li>
 </ul>
-<p>One particularly arbitrary type of categorical data is land cover. - <img src="images/workshop2/landcover_result.png" class="img-fluid"></p>
+<p>While elevation is a <strong>continuous raster</strong> (values change smoothly along a numerical gradient representing a quantity), other rasters are <strong>categorical rasters</strong> (e.g., land cover classification datasets from the Living Atlas, where integer cell values represent categories such as urban development, forest, or water).</p>
+<p><img src="images/workshop2/landcover_result.png" class="img-fluid"></p>
 </section>
 <section id="calculated-raster-data-slope" class="level3">
 <h3 class="anchored" data-anchor-id="calculated-raster-data-slope">Calculated Raster Data: Slope</h3>
-<p>When we made the hillshade visualization above, that was a sort of calculation based on the DEM.</p>
-<p>You can also perform calculations to turn a DEM into a slope layer. We made this slope layer for you. This is another continuous dataset. You can call it derivative data.</p>
+<p>You can also perform calculations to turn a DEM into a slope layer. We already made this slope layer for you as it can be a computing intensive task. This is another continuous dataset. You can call it derivative data.</p>
 <p>We will learn how it was made in workshop 3, but for now we will use it to examine, with our eyes, where the steepest bike routes up into our foothills are: <img src="images/workshop2/roads_over_slope.png" class="img-fluid"></p>
 <p><strong>POP QUIZ:</strong> Below same slope layer, zoomed in to campus, and symbolized with a divergent color scheme. What does this tell you is incorrect about something we said earlier regarding our DEM?</p>
 <p><img src="images/workshop2/slope.png" class="img-fluid"></p>
@@ -450,7 +459,7 @@ Note
 <p>In this section we will import <code>SantaBarbara_County_Trailheads.csv</code> from a CSV spreadsheet using coordinate columns (latitude and longitude) to see how external tabular data can be transformed into a geospatial layer and integrate with existing road and elevation layers.</p>
 <p>Download and open the <code>SantaBarbara_County_Trailheads.csv</code> onto your device.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -459,7 +468,7 @@ Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>What are the attributes stored in this dataset?</li>
@@ -500,7 +509,7 @@ Note
 </ul>
 <p><img src="images/workshop2/import_csv-map.png" class="img-fluid" style="width:100.0%" alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity"></p>
 <div class="callout callout-style-default callout-note callout-titled" title="CRS">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -509,7 +518,7 @@ Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
 <section id="a-note-on-coordinate-reference-systems" class="level2 callout-body-container callout-body">
 <h2 class="anchored" data-anchor-id="a-note-on-coordinate-reference-systems">A note on Coordinate Reference Systems</h2>
 <p>In ArcGIS Online, the default projection and Coordinate Reference System (CRS) is WGS 1984 Web Mercator Auxilary Sphere, also used by the Global Positioning System (<a href="https://en.wikipedia.org/wiki/Global_Positioning_System">GPS</a>).</p>
@@ -518,13 +527,13 @@ Note
 <li><p><strong>Projected</strong> Coordinate Systems use a 2D flat surface to define locations and is measured in linear units. Locations are identified by x,y coordinates</p></li>
 <li><p><strong>Geographic</strong> Coordinate Systems use a 3D spherical surface measured in angular units to define locations on earth. A point is referred by its latitude and longitude.</p></li>
 </ul>
-<p>There are pletor of CRSs that all have different accuracy and other advantages depending on your location and extenst of your area of interest. Here is a good website to look at the different CRSs: <a href="https://epsg.io/" class="uri">https://epsg.io/</a></p>
+<p>There are plethora of CRSs that all have different accuracy and other advantages depending on your location and extent of your area of interest. Here is a good website to look at the different CRSs: <a href="https://epsg.io/" class="uri">https://epsg.io/</a></p>
 <p><strong>Examine the csv file: does it tell you anything about the coordinate system that we are dealing with?</strong></p>
 </section>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -533,7 +542,7 @@ Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Choose the trail <code>Difficulty</code> attribute to add a color ramp</li>
@@ -551,6 +560,7 @@ Note
 <section id="editing-data" class="level2">
 <h2 class="anchored" data-anchor-id="editing-data">Editing Data</h2>
 <p>Potential narrative: adding the new ILP bike path to your own personal bike path layer.</p>
+<p>Highlight the best/favorite trails: <a href="https://santabarbaraca.com/itinerary/best-hikes-in-santa-barbara/" class="uri">https://santabarbaraca.com/itinerary/best-hikes-in-santa-barbara/</a></p>
 </section>
 <section id="exporting-data" class="level2">
 <h2 class="anchored" data-anchor-id="exporting-data">Exporting Data</h2>
@@ -572,7 +582,6 @@ Note
 <li>Once the export is completed, you should automatically be redirected to the Overview page of this new dataset. This time, Download should be available in the menu on the right side of the page. Click on it and select a location on your local computer and a filename.</li>
 </ul>
 <p><img src="images/workshop2/export-download.png" class="img-fluid" style="width:100.0%" alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option avaialble"></p>
-<p>see also: the token economy &lt;= Call-out box?</p>
 </section>
 <section id="completing-the-story" class="level2">
 <h2 class="anchored" data-anchor-id="completing-the-story">Completing the Story</h2>
