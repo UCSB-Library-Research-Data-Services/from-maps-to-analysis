@@ -1,5 +1,5 @@
 ---
-title: "Using more Data" 
+title: "Working with Data" 
 editor: 
   markdown: 
     wrap: 72
