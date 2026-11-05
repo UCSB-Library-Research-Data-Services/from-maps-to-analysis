@@ -10,7 +10,7 @@ website:
   navbar:
     tools:
       - icon: github
-        href: https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis
+        href: https://rds.library.ucsb.edu/from-maps-to-analysis/
     left:
       - href: 01_make_map.qmd
         text: "I want to make a map"
