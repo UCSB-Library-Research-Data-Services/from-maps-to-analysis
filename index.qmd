@@ -5,14 +5,14 @@ author:
     url: https://brunj7.github.io/
     orcid: 0000-0002-7751-6238
   - name: Jon Jablonski
+    orcid: 0009-0007-0104-4135
+  - name: Greg Janée
+    url: https://www.library.ucsb.edu/staff/greg-janee
+    orcid: 0000-0001-8785-0021
   - name: Kristi Liu
     orcid: 0000-0003-0679-0202
   - name: Jairo Melo Flórez
     orcid: 0000-0002-2020-1163
-  - name: Greg Janée
-    url: https://www.library.ucsb.edu/staff/greg-janee
-    orcid: 0000-0001-8785-0021
-
 date: last-modified
 citation: 
   url: https://ucsb-library-research-data-services.github.io/from-maps-to-analysis/
@@ -25,7 +25,7 @@ We have organized this curriculum into three workshops:
 
 ## Workshop 1 - I want to make a map
 
-2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:
+3-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:
 
 -   adjust the background basemap
 -   add an existing data layer to a map
@@ -33,6 +33,7 @@ We have organized this curriculum into three workshops:
 -   draw lines and polygons on a map
 
 The workshop ends with exporting a map suitable for inclusion in a publication.
+
 
 ## Workshop 2 - Exploring more geospatial data
 
@@ -42,6 +43,7 @@ The workshop ends with exporting a map suitable for inclusion in a publication.
 -   raster data
 -   Living Atlas data
 -   data import & export
+
 
 ## Workshop 3 - Geospatial analysis
 
