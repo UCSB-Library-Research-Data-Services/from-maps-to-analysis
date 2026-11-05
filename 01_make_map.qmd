@@ -196,7 +196,7 @@ In there, you can add a title, tags, and a short description of your map.
 
 After adding our three layers, we have some work to do to make the map more readable. First, let's adjust the symbology of the bike racks layer to reduce its size and change its symbol to a bike icon.
 
--   Click on the layer `bike_racks_ucsb` to open its properties panel.
+-   Click on the layer `UCSB Bike Racks` to open its properties panel.
 -   On the panel `Symbology`, click on `Edit layer style`.
 -   Look for the `② Pick a style` option and select `Style options`.
 -   Click on the pencil icon next to `Symbol style` to open the symbol selector.
@@ -217,9 +217,9 @@ In ArcGIS Online, every time you select the **Adjust size automatically** option
 
 ### Adjust style based on attribute
 
-Now, what if we wanted to adjust the symbology based on an attribute? Let's say we wanted to fill each building with a different color based on its use (academic, residential, administrative, etc.). We can do that by changing the style of the `UCSB Campus Buildings` layer.
+Now, what if we wanted to adjust the symbology based on an attribute? Let's say we wanted to fill each building with a different color based on its use (academic, residential, administrative, etc.). We can do that by changing the style of the `UCSB Campus Buildings 2026` layer.
 
--   Click on the layer `UCSB Campus Buildings` to open its properties panel.
+-   Click on the layer `UCSB Campus Buildings 2026` to open its properties panel.
 -   On the panel `Symbology`, click on `Edit layer style`.
 -   Look for the `① Choose attributes` option and select `+ Field`.
 -   Select the attribute `b_use`, which stands for building use, and click on `Add`.
@@ -233,9 +233,9 @@ As a result, you will see that the buildings are now filled with different color
 
 ### Filter layer based on attribute
 
-Finally, we are interested in displaying bike paths from the `OSM_UCSB_Roads` layer that also contains roads, pathways and other features. We can filter the categories we are interested in using the filter function on the right sidebar.
+Finally, we are interested in displaying bike paths from the `UCSB neighborhood paths and roads` layer that also contains roads, pathways and other features. We can filter the categories we are interested in using the filter function on the right sidebar.
 
--   Click on the layer `OSM_UCSB_Roads` to select it.
+-   Click on the layer `UCSB neighborhood paths and roads` to select it.
 
 -   Click on the `Filter` button on the right sidebar (third from top). ![Adding a filter to the road layer](images/workshop1/Step2/symbology-filter-road.png){#fig-filter-selection fig-align="center"}
 
