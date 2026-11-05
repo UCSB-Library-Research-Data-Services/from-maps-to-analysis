@@ -113,7 +113,14 @@ With that introduction, you now have the opportunity to start creating your own 
 
 From the **Layers** panel, click on the add layer button. Search `My organization` for **UCSB neighborhood paths and roads**. There should be only one result.
 
-![Adding a layer (click on the image to view it more clearly)](images/workshop1/Step1/add-layers_small.gif){#fig-addinglayer}
+::: {#fig-addinglayer}
+```{=html}
+<video controls autoplay loop muted playsinline width="100%">
+  <source src="images/workshop1/Step1/add-layers.mp4" type="video/mp4">
+</video>
+```
+Adding a layer
+:::
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: Repeat the above steps to add the feature layer `UCSB Bike Racks` to your map.
