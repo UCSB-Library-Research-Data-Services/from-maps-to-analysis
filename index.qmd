@@ -4,14 +4,17 @@ author:
   - name: Julien Brun
     url: https://brunj7.github.io/
     orcid: 0000-0002-7751-6238
-  - name: Jon Jablonski
+  - name: Jon Jablonsk
+    url: https://www.library.ucsb.edu/staff/jon-jablonski
     orcid: 0009-0007-0104-4135
   - name: Greg Janée
     url: https://www.library.ucsb.edu/staff/greg-janee
     orcid: 0000-0001-8785-0021
   - name: Kristi Liu
+    url: https://www.library.ucsb.edu/staff/kristi-liu
     orcid: 0000-0003-0679-0202
   - name: Jairo Melo Flórez
+    url: https://www.library.ucsb.edu/staff/jairo-melo-florez
     orcid: 0000-0002-2020-1163
 date: last-modified
 citation: 
