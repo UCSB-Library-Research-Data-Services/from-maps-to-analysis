@@ -11,14 +11,14 @@
     "href": "index.html#workshop-1---i-want-to-make-a-map",
     "title": "From Maps to Analysis",
     "section": "Workshop 1 - I want to make a map",
-    "text": "Workshop 1 - I want to make a map\n2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:\n\nadjust the background basemap\nadd an existing data layer to a map\nchange symbology of vector data\ndraw lines and polygons on a map\n\nThe workshop ends with exporting a map suitable for inclusion in a publication."
+    "text": "Workshop 1 - I want to make a map\n3-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and leverage ArcGIS Online to learn how to:\n\nadjust the background basemap\nadd an existing data layer to a map\nchange symbology of vector data\ndraw lines and polygons on a map\n\nThe workshop ends with exporting a map suitable for inclusion in a publication."
   },
   {
-    "objectID": "index.html#workshop-2---exploring-more-geospatial-data",
-    "href": "index.html#workshop-2---exploring-more-geospatial-data",
+    "objectID": "index.html#workshop-2---working-with-data",
+    "href": "index.html#workshop-2---working-with-data",
     "title": "From Maps to Analysis",
-    "section": "Workshop 2 - Exploring more geospatial data",
-    "text": "Workshop 2 - Exploring more geospatial data\n3-hour workshop using ArcGIS Online to conduct basic GIS data exploration and visualization.\n\nmore about vector data\nraster data\nLiving Atlas data\ndata import & export"
+    "section": "Workshop 2 - Working with data",
+    "text": "Workshop 2 - Working with data\n3-hour workshop using ArcGIS Online to conduct basic GIS data exploration and visualization.\n\nmore about vector data\nraster data\nLiving Atlas data\ndata import & export"
   },
   {
     "objectID": "index.html#workshop-3---geospatial-analysis",
