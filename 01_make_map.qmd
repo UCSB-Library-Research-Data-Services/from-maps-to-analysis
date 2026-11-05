@@ -161,6 +161,11 @@ For example, if you click on the three dots on the right of a feature layer you 
 
 ![Attribute table of UCSB buildings layer](images/workshop1/Step1/attribute-table.png){#fig-attribute width="90%"}
 
+In ArcGIS Online feature layers, we can understand the relationship between rows, columns, and features as follows:
+
+- Each **row** represents a **feature**: A row (record) corresponds to a individual spatial object on the map, such as a specific bike rack, a segment of a bike path, or a building.
+- Each **column** represents an **attribute**: Each column (fields) corresponds to one specific attribute category or field name, such as the name of a building, the type of bike rack, or the length of a bike path. The value in each cell represents the specific attribute for that feature.
+
 Your data can be visualized, selected, or analysed based on the columns of the attribute table. We will see later how you can leverage these attributes to set the symbology of a layer according to categories or quantities that are in the attribute table. You can also compute new attributes either based on other attributes or by performing analysis with other layers' information. We will cover analysis tools [in our second workshop](02_intro_gis.html).
 
 ::: {.callout-note collapse="true" title="Save often."}
