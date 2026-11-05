@@ -151,7 +151,7 @@
     "href": "01_make_map.html#preview-for-workshop-2-working-with-data",
     "title": "I want to make a map",
     "section": "Preview for Workshop 2: Working with data",
-    "text": "Preview for Workshop 2: Working with data\nIn Workshop 2, we dive deeper into managing and manipulating various types of geospatial data using ArcGIS online. Coniuning our story about biking experience, we will use terrain information combined with local trailheads to investigate how accessible by bike those trails are. We will learn to:\n\nHave a better understanding of the vector and raster geospatial data types\nKnow how to import external data into ArcGIS Online\nKnow how to edit or add data to a feature layer\nBetter understand the difference between continuous and categorical raster layers\nKnow how to export data from ArcGIS Online to your local machine"
+    "text": "Preview for Workshop 2: Working with data\nIn Workshop 2, we dive deeper into managing and manipulating various types of geospatial data in ArcGIS online. Building on our biking project from Workshop 1, we will combine terrain data with local trailhead locations to analyze trail accessibility by bike.\nIn this second session, you will learn to:\n\nUnderstand the vector and raster geospatial data types\nImport external data into ArcGIS Online\nCreate, edit, and update data of feature layers\nExport processed data from ArcGIS Online back to your local machine"
   },
   {
     "objectID": "01_make_map.html#sec-other-approaches",
