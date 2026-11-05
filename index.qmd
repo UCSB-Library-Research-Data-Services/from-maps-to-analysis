@@ -19,7 +19,7 @@ author:
 date: last-modified
 citation: 
   url: https://ucsb-library-research-data-services.github.io/from-maps-to-analysis/
-categories: [GIS, map, geospatial analysis]
+categories: [GIS, map, geospatial analysis, ArcGIS]
 ---
 
 The goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis without the need to have programming skills.
