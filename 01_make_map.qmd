@@ -131,7 +131,7 @@ Adding a layer
 :::
 
 ::: {.callout-tip collapse="true"}
-## Challenge: Find the 'From Maps to Analysis' group and add the `UCSB campus buildings 2026` layer from there.
+## Challenge: Find the 'From Maps to Analysis' group and add the `UCSB Campus Buildings 2026` layer from there.
 
 ### Add a layer via Groups
 
