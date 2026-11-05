@@ -349,13 +349,14 @@ You can share your map publicly and embed it on a website, just like we did at t
 
 ## Preview for Workshop 2: Working with data
 
-In Workshop 2, we dive deeper into managing and manipulating various types of geospatial data using ArcGIS online. Coniuning our story about biking experience, we will use terrain information combined with local trailheads to investigate how accessible by bike those trails are. We will learn to:
+In Workshop 2, we dive deeper into managing and manipulating various types of geospatial data in ArcGIS online. Building on our biking project from Workshop 1, we will combine terrain data with local trailhead locations to analyze trail accessibility by bike. 
 
-- Have a better understanding of the vector and raster geospatial data types
-- Know how to import external data into ArcGIS Online
-- Know how to edit or add data to a feature layer
-- Better understand the difference between continuous and categorical raster layers
-- Know how to export data from ArcGIS Online to your local machine
+In this second session, you will learn to:
+
+- Understand the vector and raster geospatial data types
+- Import external data into ArcGIS Online
+- Create, edit, and update data of feature layers
+- Export processed data from ArcGIS Online back to your local machine
 
 
 <hr>
