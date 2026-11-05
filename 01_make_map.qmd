@@ -113,7 +113,7 @@ With that introduction, you now have the opportunity to start creating your own 
 
 From the **Layers** panel, click on the add layer button. Search `My organization` for **UCSB neighborhood paths and roads**. There should be only one result.
 
-![Adding a layer](images/workshop1/Step1/add-layers_small.gif){#fig-addinglayer}
+![Adding a layer (click on the image to view it more clearly)](images/workshop1/Step1/add-layers_small.gif){#fig-addinglayer}
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: Repeat the above steps to add the feature layer `UCSB Bike Racks` to your map.
@@ -151,7 +151,7 @@ For our map, the recommended order from top to bottom should be:
 
 To reorder the layers, click and hold on a layer name in the Layers panel, drag it to the desired position, and release.
 
-![Reorder feature layers](images/workshop1/Step1/reorder-layers_small.gif){#fig-reorderlayers fig-align="center"}
+![Reorder feature layers (click on the image to view it more clearly)](images/workshop1/Step1/reorder-layers_small.gif){#fig-reorderlayers fig-align="center"}
 
 ### Accessing the underlying data
 
@@ -275,7 +275,7 @@ Draw a line where you think there should be a bike path but isn't.
 
 From the sketch layer menu, select the line drawing tool. Click on the map to start drawing the line, and click again to add vertices. Double-click to finish the line.
 
-![Drawing a line on the map](images/workshop1/Step3/drawing-line-vector.gif){#fig-drawingline width="90%" fig-align="center"}
+![Drawing a line on the map (click on the image to view it more clearly)](images/workshop1/Step3/drawing-line-vector.gif){#fig-drawingline width="90%" fig-align="center"}
 
 You can customize the line symbol in the sketch layer menu before adding it to the map. In our example, we add the following settings to the line symbol:
 
@@ -296,7 +296,7 @@ Similarly to the line drawing tool, select the circle drawing tool from the sket
 -   Fill color: Red (#d13434)
 -   Fill transparency: 38%
 
-![Drawing a circle on the map](images/workshop1/Step3/drawing-circle-vector.gif){#fig-drawingcircle width="90%" fig-align="center"}
+![Drawing a circle on the map (click on the image to view it more clearly)](images/workshop1/Step3/drawing-circle-vector.gif){#fig-drawingcircle width="90%" fig-align="center"}
 :::
 
 Finally, let's rename the sketch layer to **Annotations** to better reflect its purpose. Click on the three dots next to the sketch layer and select `Rename`. Enter the new name and click `OK`.
