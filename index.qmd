@@ -35,7 +35,7 @@ We have organized this curriculum into three workshops:
 The workshop ends with exporting a map suitable for inclusion in a publication.
 
 
-## Workshop 2 - Exploring more geospatial data
+## Workshop 2 - Working with data
 
 3-hour workshop using ArcGIS Online to conduct basic GIS data exploration and visualization.
 
