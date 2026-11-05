@@ -158,7 +158,16 @@ For our map, the recommended order from top to bottom should be:
 
 To reorder the layers, click and hold on a layer name in the Layers panel, drag it to the desired position, and release.
 
-![Reorder feature layers (click on the image to view it more clearly)](images/workshop1/Step1/reorder-layers_small.gif){#fig-reorderlayers fig-align="center"}
+![Reorder feature layers (click on the image to view it more clearly)](images/workshop1/Step1/reorder-layers.gif){#fig-reorderlayers fig-align="center"}
+
+::: {#fig-addinglayer}
+```{=html}
+<video controls autoplay loop muted playsinline width="100%">
+  <source src="images/workshop1/Step1/reorder-layers.mp4" type="video/mp4">
+</video>
+```
+Reorder feature layers
+:::
 
 ### Accessing the underlying data
 
