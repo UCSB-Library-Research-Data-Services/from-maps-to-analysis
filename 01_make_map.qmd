@@ -297,7 +297,7 @@ After adding the layers and customizing their symbology, we have a good, almost 
 
 From the basemap gallery, we can select another basemap. In our case, we will select the **Terrain with Labels** basemap, which is a lighter version of the Topographic basemap. This will make our features stand out more and make the map easier to read.
 
-![Map with Light Gray Canvas basemap](images/workshop1/Step2/basemap-topo-labels-canvas.png){#fig-topolabels width="90%" fig-align="center"}
+![Map with Terrain with Labels basemap](images/workshop1/Step2/basemap-topo-labels-canvas.png){#fig-topolabels width="90%" fig-align="center"}
 
 **Don't forget to save your map after making these changes!**
 
