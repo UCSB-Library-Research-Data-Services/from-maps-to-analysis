@@ -12,36 +12,36 @@ Links are provided to ArcGIS Online items, Living Atlas layers, and source files
 
 ## Workshop 1: I Want to Make a Map
 
-### 1. Basemaps (Topographic & Light Gray Canvas)
+### 1. Basemaps (Topographic & Terrain with Labels)
 - **Format:** ArcGIS Online Basemap / Vector Tile Service
 - **Access / Source:** 
   - [Esri Topographic Basemap](https://www.arcgis.com/home/item.html?id=7dc6cea0b7a34a199662e79ffb8726a4){target="_blank"} (default initial basemap)
-  - [Light Gray Canvas Basemap](https://www.arcgis.com/home/item.html?id=291da5eab3a0412593b66d384379f89f){target="_blank"}
-- **Description:** Contextual background reference maps provided by Esri via the ArcGIS Online Basemap Gallery. Learners start with the default Topographic basemap and switch to the Light Gray Canvas basemap for clearer visibility of vector overlays.
+  - [Terrain with Labels Basemap](https://www.arcgis.com/home/item.html?id=fe0034f6fb9949f2be6ab0c3211a68fb){target="_blank"}
+- **Description:** Contextual background reference maps provided by Esri via the ArcGIS Online Basemap Gallery. Learners start with the default Topographic basemap and switch to the Terrain with Labels basemap for clearer visibility of vector overlays.
 
-### 2. OSM_UCSB_Roads / OpenStreetMap Highways for North America
+### 2. UCSB neighborhood paths and roads
 - **Format:** ArcGIS Online Hosted Feature Layer View (Lines / Polylines)
 - **Access / Source:** 
   - [OpenStreetMap Highways for North America on ArcGIS Online / Living Atlas](https://www.arcgis.com/home/item.html?id=7afec250e02845868db89c83949a672f){target="_blank"}
-  - In lesson instructions: Search `My organization` for **`OSM_UCSB_Roads`**
-- **Description:** Street, pathway, and cycleway network extracted from OpenStreetMap. In Workshop 1, learners filter this layer by `highway = 'cycleway'` to display bicycle paths across the UCSB campus and Isla Vista.
+  - In lesson instructions: Search `My organization` for **`UCSB neighborhood paths and roads`**
+- **Description:** Street, pathway, and cycleway network extracted from OpenStreetMap. In Workshop 1, learners filter this layer by `highway` includes `cycleway` to display bicycle paths across the UCSB campus and Isla Vista.
 
-### 3. bike_racks_ucsb
+### 3. UCSB Bike Racks
 - **Format:** ArcGIS Online Hosted Feature Layer (Points)
-- **Access / Source:** [bike_racks_ucsb Item on UCSB ArcGIS Online](https://ucsb.maps.arcgis.com/home/item.html?id=1f19721e8809472cb80b1ccdf5dc7859){target="_blank"} (Item ID: `1f19721e8809472cb80b1ccdf5dc7859`)
+- **Access / Source:** [UCSB Bike Racks Item on UCSB ArcGIS Online](https://ucsb.maps.arcgis.com/home/item.html?id=1f19721e8809472cb80b1ccdf5dc7859){target="_blank"} (Item ID: `1f19721e8809472cb80b1ccdf5dc7859`)
 - **Description:** Point feature layer containing campus bicycle parking locations and rack counts, generated from centroids of campus bike parking areas.
 
-### 4. UCSB Campus Buildings
+### 4. UCSB Campus Buildings 2026
 - **Format:** ArcGIS Online Hosted Feature Layer (Polygons)
 - **Access / Source:** 
-  - [UCSB Campus Buildings Item on UCSB ArcGIS Online](https://ucsb.maps.arcgis.com/home/item.html?id=2bde3dac8bdc443ea4ed451c2b88ecb6){target="_blank"} (Item ID: `2bde3dac8bdc443ea4ed451c2b88ecb6`)
-  - Alternative / Updated version: [UCSB Campus Buildings 2026](https://ucsb.maps.arcgis.com/home/item.html?id=37a1b0043ee04299b913acd018b5031f){target="_blank"} (Item ID: `37a1b0043ee04299b913acd018b5031f`)
-- **Description:** Polygon building footprints for UCSB campus facilities and outlying properties, exported from Facilities CAD data. Used to teach attribute inspection and symbology styling based on the building use field (`b_use`).
+  - [UCSB Campus Buildings 2026 Item on UCSB ArcGIS Online](https://ucsb.maps.arcgis.com/home/item.html?id=37a1b0043ee04299b913acd018b5031f){target="_blank"} (Item ID: `37a1b0043ee04299b913acd018b5031f`)
+  - Earlier version: [UCSB Campus Buildings](https://ucsb.maps.arcgis.com/home/item.html?id=2bde3dac8bdc443ea4ed451c2b88ecb6){target="_blank"} (Item ID: `2bde3dac8bdc443ea4ed451c2b88ecb6`)
+- **Description:** Polygon building footprints for UCSB campus facilities and outlying properties, exported from Facilities CAD data. Used to teach attribute inspection and symbology styling based on the building type field (`BLDGTYPE`).
 
-### 5. Annotations (Sketch Layer)
-- **Format:** User-generated ArcGIS Online Map Sketch Layer (Points, Lines, Polygons)
+### 5. Proposed Improvements (Sketch Layer)
+- **Format:** User-generated ArcGIS Online Map Sketch Layer (Lines, Circles / Polygons)
 - **Access / Source:** Created interactively via the Map Viewer sketch tools.
-- **Description:** Hand-drawn vector annotations used to record personal experiences and observations directly onto the map (e.g., accident/near-miss incident points, proposed bike paths, and potential bike parking locations).
+- **Description:** Hand-drawn vector annotations used to mock up a campus active transportation proposal directly onto the map (a proposed bike path connector and a pedestrian safety dismount zone).
 
 ---
 
