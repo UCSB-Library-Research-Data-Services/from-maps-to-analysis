@@ -303,7 +303,12 @@ From the basemap gallery, we can select another basemap. In our case, we will se
 
 In addition to bringing in structured geospatial data layers, maps are often used to sketch ideas, mock up proposals, or add contextual annotations. This is a common practice in urban planning and design.
 
-We can add these annotations by creating a **sketch layer**. Unlike feature layers, sketch layers are designed for drawing shapes (points, lines, polygons, circles, text) directly onto the map as descriptive elements.
+We can add these annotations by creating a **sketch layer**. Unlike feature layers, sketch layers are designed for drawing shapes (points, lines, polygons, circles, text) directly onto the map as descriptive elements.  Sketch layers differ from feature layers in a few other ways as well:
+
+- Sketch layers can contain different kinds of geometries (points, lines, polygons), while feature layers are typically constrained to a single geometry type.
+- Sketch layers are part of the map, and stored in the map, while feature layers are independent objects that are stored separately and which the map references.
+- Sketch layer shapes do not have attributes, and sketch layers do not have attribute tables.
+- Sketch layers do not appear in the map legend.
 
 ![Sketch layer option in the left menu](images/workshop1/Step3/drawing-sketch-layer-menu.png){#fig-sketchlayer width="40%" fig-align="center"}
 
