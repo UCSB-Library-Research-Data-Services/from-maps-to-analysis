@@ -291,7 +291,9 @@ From the basemap gallery, we can select another basemap. In our case, we will se
 
 ## Step 3: Annotate the map
 
-In addition to bringing external sources of information into a map (whether in the form of a basemap or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a **sketch layer**.
+In addition to bringing in structured geospatial data layers, maps are often used to sketch ideas, mock up proposals, or add contextual annotations. This is a common practice in urban planning and design.
+
+We can add these annotations by creating a **sketch layer**. Unlike feature layers, sketch layers are designed for drawing shapes (points, lines, polygons, circles, text) directly onto the map as descriptive elements.
 
 ![Sketch layer option in the left menu](images/workshop1/Step3/drawing-sketch-layer-menu.png){#fig-sketchlayer width="40%" fig-align="center"}
 
@@ -299,53 +301,62 @@ After adding the sketch layer to your workspace, a new menu will appear in the r
 
 ![Sketch layer drawing tools menu](images/workshop1/Step3/drawing-sketch-bar-menu.png){#fig-drawingtools width="40%" fig-align="center"}
 
-### Drawing points in a sketch layer
+### The Campus Access Proposal
 
--   Draw points where you were in a (near-)accident on a bike path, either as bicyclist of pedestrian.
+Imagine you are a campus active transportation planner. Your goal is to propose an infrastructure upgrade that connects an existing bike path to a campus building with high bike-parking density (visible from your `UCSB Bike Racks` and `Buildings` layers) where no direct bike path currently exists. 
 
-Zoom in to the location and add a point with the point drawing tool. You can customize the symbol, size, and color of the point in the sketch layer menu before adding it to the map. Put as many points as you like.
+To present your proposal, you will add exactly **two** sketches to your map: a proposed connecting path and a safety dismount zone.
 
-In our example, we add the following settings to the point symbol:
+### 1. Proposed Path Connector (Line)
 
--   Size: 48 px
--   Vector marker (background): Blue (#2132cf)
+Find a major campus building that is near a bike path but lacks a direct bike-lane connection to its entrance or bike racks. 
 
-![Point symbol customization settings](images/workshop1/Step3/drawing-point-vector.png){#fig-pointsymbol width="90%" fig-align="center"}
+- Select the **line drawing tool** from the sketch layer menu.
+- Click on an existing bike path to start drawing your proposed route, click to add vertices (turns) along pedestrian pathways or open spaces, and **double-click** to finish the line at the building's entrance plaza.
 
-::: {.callout-tip collapse="true"}
-## Challenge: Drawing lines in a sketch layer
+Customize the line symbol in the sketch layer menu to make it look like a planning proposal:
 
-Draw a line where you think there should be a bike path but isn't.
+- **Width:** `2 px`
+- **Pattern:** `Dotted` or `Dashed`
+- **Color:** Light Blue (`#5aaac4`) or an eye-catching accent color of your choice.
 
-From the sketch layer menu, select the line drawing tool. Click on the map to start drawing the line, and click again to add vertices. Double-click to finish the line.
-
-![Drawing a line on the map (click on the image to view it more clearly)](images/workshop1/Step3/drawing-line-vector.gif){#fig-drawingline width="90%" fig-align="center"}
-
-You can customize the line symbol in the sketch layer menu before adding it to the map. In our example, we add the following settings to the line symbol:
-
--   Width: 5 px
--   Dotted line pattern
--   Color: Light blue (#00c8ff)
-
-![Line symbol customization settings](images/workshop1/Step3/drawing-line-style.png){#fig-linesymbol width="90%" fig-align="center"}
+::: {#fig-drawingline}
+```{=html}
+<video controls autoplay loop muted playsinline width="100%">
+  <source src="images/workshop1/Step3/drawing-line.mp4" type="video/mp4">
+</video>
+```
+Drawing a proposed route line on the map
 :::
 
-::: {.callout-tip collapse="true"}
-## Challenge: Drawing circles in a sketch layer
+### 2. Pedestrian Safety Dismount Zone (Circle or Polygon)
 
-Draw a circle where you think there should be a bike parking lot but isn't.
+Because your proposed path ends at a busy building entrance, we need to designate a safety buffer zone where bicyclists must dismount to prevent conflicts with pedestrians entering and exiting the building.
 
-Similarly to the line drawing tool, select the circle drawing tool from the sketch layer menu. Click on the map to draw the circle, and click on the select tool to finish the shape. You can also customize the symbol after drawing it by selecting it and changing its properties in the sketch layer menu. In our example, we add the following settings to the circle symbol. You can type in the values, or interactively select as in the animated figure.
+- Select the **circle drawing tool** (or polygon tool) from the sketch layer menu.
+- Click and drag near the building entrance to create a buffer zone covering the plaza where the new path terminates.
+- Click on the select tool to finish the shape.
 
--   Fill color: Red (#d13434)
--   Fill transparency: 38%
+Customize the zone to look like a semi-transparent advisory overlay:
 
-![Drawing a circle on the map (click on the image to view it more clearly)](images/workshop1/Step3/drawing-circle-vector.gif){#fig-drawingcircle width="90%" fig-align="center"}
+- **Fill color:** Red (`#d13434`) or Orange
+- **Fill transparency:** `40%` (allowing the underlying basemap and buildings to remain visible)
+- **Outline:** Thin solid line or no outline
+
+::: {#fig-drawingcircle}
+```{=html}
+<video controls autoplay loop muted playsinline width="100%">
+  <source src="images/workshop1/Step3/drawing-circle.mp4" type="video/mp4">
+</video>
+```
+Drawing a dismount zone circle on the map
 :::
 
-Finally, let's rename the sketch layer to **Annotations** to better reflect its purpose. Click on the three dots next to the sketch layer and select `Rename`. Enter the new name and click `OK`.
+---
 
-**Save your map after making these changes**
+Finally, rename your sketch layer to **Proposed Improvements** to reflect its purpose. Click on the three dots next to the sketch layer, select `Rename`, enter the new name, and click `OK`.
+
+**Save your map after making these changes!**
 
 ## Step 4: Prepare the map for publication
 
