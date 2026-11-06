@@ -4,7 +4,7 @@ author:
   - name: Julien Brun
     url: https://brunj7.github.io/
     orcid: 0000-0002-7751-6238
-  - name: Jon Jablonsk
+  - name: Jon Jablonski
     url: https://www.library.ucsb.edu/staff/jon-jablonski
     orcid: 0009-0007-0104-4135
   - name: Greg Janée
