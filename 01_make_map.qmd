@@ -158,8 +158,6 @@ For our map, the recommended order from top to bottom should be:
 
 To reorder the layers, click and hold on a layer name in the Layers panel, drag it to the desired position, and release.
 
-![Reorder feature layers (click on the image to view it more clearly)](images/workshop1/Step1/reorder-layers.gif){#fig-reorderlayers fig-align="center"}
-
 ::: {#fig-addinglayer}
 ```{=html}
 <video controls autoplay loop muted playsinline width="100%">
@@ -194,41 +192,63 @@ In there, you can add a title, tags, and a short description of your map.
 
 ## Step 2: Customize symbology & transparency
 
-After adding our three layers, we have some work to do to make the map more readable. First, let's adjust the symbology of the bike racks layer to reduce its size and change its symbol to a bike icon.
+After adding our three layers, we have some work to do to make the map more readable. Let's begin by adjusting the visibility of the `UCSB Bike Racks` layer. Currently, each bike rack is represented by a blue circle, which makes it difficult to identify the number of bike racks in a given area. We can use the **aggregation** feature to group the bike racks into dinamic clusters, which will facilitate the visualization of the number of bike racks in a given area. This feature will automatically group the bike racks into clusters based on the map scale, so that when you zoom in, the clusters will break apart into individual bike racks.
 
--   Click on the layer `UCSB Bike Racks` to open its properties panel.
--   On the panel `Symbology`, click on `Edit layer style`.
--   Look for the `② Pick a style` option and select `Style options`.
--   Click on the pencil icon next to `Symbol style` to open the symbol selector.
+To enable aggregation, follow these steps:
 
-There, we have multiple options to customize the symbol. Let's click on the current symbol chevron to open the full symbol gallery.
+- Click on the layer `UCSB Bike Racks` to open its properties panel.
+- On the right side panel, click on the Aggregation button (the fifth button from the top).
+- In the Aggregation panel, select the `Clustering` option. This will enable the clustering of bike racks based on the map scale.
 
-From the menu, we can select several categories of symbols. Let's select the `Government` category and look for a bike parking icon. Click on the `Done` button to apply the changes and return to the symbol style panel.
+![Enabling aggregation for the bike racks layer](images/workshop1/Step2/aggregation-bike-racks.png){#fig-aggregation width="90%" fig-align="center"}
 
-![Selecting a bike parking symbol from the Government category](images/workshop1/Step2/symbology-select-symbol.png){#fig-bikeparking width="90%" fig-align="center"}
+We can also adjust the transparency of the circles representing the bike racks to smooth the circles overlap. To do this, follow these steps:
 
-To change the size of the symbol, we can use the `Size` slider to reduce it to a more appropriate size. First, select **Adjust size automatically** to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.
+- Click on the layer `UCSB Bike Racks` to open its properties panel.
+- On the right side panel, click on the `Styles` button (the second button from the top).
+- In the Styles panel, go to the **Pick a style** section, and click on the `Style options` button.
+- In the Style options panel, click on the edit button (the pencil icon) next to the symbol in the Symbol style list.
+- In the Symbol style panel, set the `Fill transparency` to 30%. Changes will be applied immediately to the map.
 
-::: {.callout-warning collapse="false" title="Size slider quirk"}
-In ArcGIS Online, every time you select the **Adjust size automatically** option, it will reset the size slider to a default value. So make sure to select your desired size **after** enabling that option. Also note that the size you choose is function of the current scale/zoom you are using on the map when you set this value for the first time.
+![Adjusting the transparency of the bike racks layer](images/workshop1/Step2/transparency-bike-racks.png){#fig-transparency width="90%" fig-align="center"}
 
-![Symbol size settings with adjust size automatically option](images/workshop1/Step2/symbology-point-size.png){#fig-symbolsize width="70%"}
-:::
+To have a better view of the bike racks area, click on the three dots next to the `UCSB Bike Racks` layer and select `Zoom to layer`. This will zoom in to the extent of the bike racks layer.
+
+![Zooming to the extent of the bike racks layer](images/workshop1/Step2/zoom-to-bike-racks.png){#fig-zoom width="90%" fig-align="center"}
 
 ### Adjust style based on attribute
 
-Now, what if we wanted to adjust the symbology based on an attribute? Let's say we wanted to fill each building with a different color based on its use (academic, residential, administrative, etc.). We can do that by changing the style of the `UCSB Campus Buildings 2026` layer.
+Our map is starting to look good, but you can notice that the buildings are all filled with the same color (orange in our case). Although the buildings are not the main focus of our map, this layer can be useful to provide context, so we can adjust the symbology to make it more informative. 
 
--   Click on the layer `UCSB Campus Buildings 2026` to open its properties panel.
--   On the panel `Symbology`, click on `Edit layer style`.
--   Look for the `① Choose attributes` option and select `+ Field`.
--   Select the attribute `b_use`, which stands for building use, and click on `Add`.
+To achieve this, we can adjust the symbology of the `UCSB Campus Buildings 2026` layer based on an attribute. Our first step is to identify the attribute we want to use. We can open the layer attribute table as we previously showed, or we can see the available attributes directly from the Styles panel. To do this, follow these steps:
 
-![Adjusting symbology style by attribute](images/workshop1/Step2/symbology-by-attribute.png){#fig-symbolstyle width="90%" fig-align="center"}
+- Click on the layer `UCSB Campus Buildings 2026` to open its properties panel.
+- On the right side panel, click on the `Styles` button (the second button from the top).
+- In the Styles panel, go to the **Chose attributes** section, and click on the `+ Field` button. This will show you the available attributes for this layer.
 
-As a result, you will see that the buildings are now filled with different colors based on their use. You can further customize the colors by clicking on the color ramp and selecting a different one.
+![List of available attributes for the UCSB Campus Buildings 2026 layer](images/workshop1/Step2/attributes-list.png){#fig-attributes width="30%" fig-align="center"}
 
-![Buildings colored by their use category](images/workshop1/Step2/symbology-by-attribute-result.png){#fig-buildingscolor width="90%" fig-align="center"}
+To explore the values of the attributes, you can click on the (i) icon next to the attribute name. This will show you the metadata for that attribute and a list with its top 10 values. 
+
+For this exercise, we will use the `BLDGTYPE` attribute, which represents the building type (e.g., housing, academic and administrative, recreation, parking, etc.). This attribute will allow us to fill each building with a different color based on its use.
+
+- Check the box next to the `BLDGTYPE` attribute and click on the `Add` button. This will add the attribute to the **Chose attributes** section, and set a predefined color ramp to fill the buildings areas based on their use.
+
+![Adding the BLDGTYPE attribute to the Styles panel](images/workshop1/Step2/add-attribute.png){#fig-addattribute width="90%" fig-align="center"}
+
+We can select a color ramp that better fits our map:
+
+- In the Styles panel, click on the `Style options` button in **Types (unique symbols)** section.
+- Click on the edit button (the pencil icon) next to the color ramp in the Symbol style list.
+- In the Symbol style panel, click on the edit button (the pencil icon) next to the color ramp in the Colors section.
+- Select the *Stone and Gravel* color ramp. Changes will be applied immediately to the map.
+
+![Changing the color ramp for the BLDGTYPE attribute](images/workshop1/Step2/change-color-ramp.png){#fig-changecolorramp width="90%" fig-align="center"}
+
+In this specific layer we also have a category with no label and zero records. We can remove this category by clicking the check box next to it and selecting `Remove` from the contextual menu.
+
+![Removing the empty category from the BLDGTYPE attribute](images/workshop1/Step2/remove-empty-category.png){#fig-removeempty width="30%" fig-align="center"}
+
 
 
 ### Filter layer based on attribute
