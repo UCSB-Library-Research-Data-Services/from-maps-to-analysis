@@ -33,8 +33,6 @@ Our final interactive map is also embedded below:
 
 <arcgis-embedded-map style="height:600px;width:700px;" item-id="99931eb33b1144598bdecd5c21b7c8d8" theme="light" heading-enabled legend-enabled information-enabled share-enabled time-zone-label-enabled center="-119.84576230906848,34.41226485167855" scale="18055.954822" portal-url="https://ucsb.maps.arcgis.com"></arcgis-embedded-map>
 
-As we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool. In fact, in many cases GIS is overkill, both because most of the features GIS tools provide will not be used and because the GIS interface can be cumbersome. But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that in turn opens up and provides an introduction to the world of spatial analysis.
-
 <hr>
 
 # Introduction to ArcGIS Online
