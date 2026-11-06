@@ -23,7 +23,7 @@ ArcGIS Online is but one of many GIS tools in existence. We use it in this lesso
 
 Our goal is to develop a map of the UCSB campus that illustrates the current bicycle infrastructure, specifically highlighting bike paths and racks. Additionally, the map will incorporate annotations for proposed infrastructure improvements, such as a connecting bike path and a pedestrian safety dismount zone.
 
-[At the end of our session we should end up with something like this](https://arcg.is/0iD4jS0){target="_blank"}
+[At the end of our session we should end up with something like this](https://arcg.is/POiGO1){target="_blank"}
 
 ![Preliminary version of the possible result](images/workshop1/final_map.jpg){#fig-prelim}
 
