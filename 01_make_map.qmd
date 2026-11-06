@@ -315,7 +315,7 @@ After adding the sketch layer to your workspace, a new menu will appear in the r
 
 ### The Campus Access Proposal
 
-Imagine you are a campus active transportation planner. Your goal is to propose an infrastructure upgrade that connects an existing bike path to a campus building with high bike-parking density (visible from your `UCSB Bike Racks` and `Buildings` layers) where no direct bike path currently exists. 
+Imagine you are a campus active transportation planner. Your goal is to propose an infrastructure upgrade that connects an existing bike path to a campus building with high bike-parking density (visible from your `UCSB Bike Racks` and `UCSB Campus Buildings 2026` layers) where no direct bike path currently exists. 
 
 To present your proposal, you will add exactly **two** sketches to your map: a proposed connecting path and a safety dismount zone.
 
