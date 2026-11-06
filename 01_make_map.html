@@ -77,6 +77,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="https://js.arcgis.com/5.1/embeddable-components/"></script>
 
 
 </head>
@@ -156,11 +157,13 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#adjust-style-based-on-attribute" id="toc-adjust-style-based-on-attribute" class="nav-link" data-scroll-target="#adjust-style-based-on-attribute">Adjust style based on attribute</a></li>
   <li><a href="#filter-layer-based-on-attribute" id="toc-filter-layer-based-on-attribute" class="nav-link" data-scroll-target="#filter-layer-based-on-attribute">Filter layer based on attribute</a></li>
-  <li><a href="#select-a-better-basemap" id="toc-select-a-better-basemap" class="nav-link" data-scroll-target="#select-a-better-basemap">Select a better basemap</a></li>
+  <li><a href="#select-a-different-basemap" id="toc-select-a-different-basemap" class="nav-link" data-scroll-target="#select-a-different-basemap">Select a different basemap</a></li>
   </ul></li>
   <li><a href="#step-3-annotate-the-map" id="toc-step-3-annotate-the-map" class="nav-link" data-scroll-target="#step-3-annotate-the-map">Step 3: Annotate the map</a>
   <ul class="collapse">
-  <li><a href="#drawing-points-in-a-sketch-layer" id="toc-drawing-points-in-a-sketch-layer" class="nav-link" data-scroll-target="#drawing-points-in-a-sketch-layer">Drawing points in a sketch layer</a></li>
+  <li><a href="#the-campus-access-proposal" id="toc-the-campus-access-proposal" class="nav-link" data-scroll-target="#the-campus-access-proposal">The Campus Access Proposal</a></li>
+  <li><a href="#proposed-path-connector-line" id="toc-proposed-path-connector-line" class="nav-link" data-scroll-target="#proposed-path-connector-line">1. Proposed Path Connector (Line)</a></li>
+  <li><a href="#pedestrian-safety-dismount-zone-circle-or-polygon" id="toc-pedestrian-safety-dismount-zone-circle-or-polygon" class="nav-link" data-scroll-target="#pedestrian-safety-dismount-zone-circle-or-polygon">2. Pedestrian Safety Dismount Zone (Circle or Polygon)</a></li>
   </ul></li>
   <li><a href="#step-4-prepare-the-map-for-publication" id="toc-step-4-prepare-the-map-for-publication" class="nav-link" data-scroll-target="#step-4-prepare-the-map-for-publication">Step 4: Prepare the map for publication</a></li>
   <li><a href="#step-5-share-your-map" id="toc-step-5-share-your-map" class="nav-link" data-scroll-target="#step-5-share-your-map">Step 5: Share your map</a></li>
@@ -193,23 +196,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The goal of this lesson is to demonstrate how to make a simple map, suitable for inclusion in a publication, using ArcGIS Online. As an exercise, you will be creating a map that reflects your personal experience biking on the UCSB campus. We will follow a typical workflow of:</p>
+<p>The goal of this lesson is to demonstrate how to make a simple map, suitable for inclusion in a publication, using ArcGIS Online. As an exercise, you will be creating a map of the UCSB campus bicycle infrastructure and proposing a campus access improvement. We will follow a typical workflow of:</p>
 <ol type="1">
 <li>Start with a basemap</li>
 <li>Add feature layers from the UCSB campus</li>
 <li>Draw annotations on top of the map</li>
 <li>Prepare the map for presentation and export it</li>
 </ol>
-<p>As we will describe under <a href="#sec-other-approaches">Other approaches</a> at the end of this lesson, there are many tools and techniques that can be used to create such a map. An advantage of using a GIS tool such as ArcGIS Online, and the central motivation for using GIS in this lesson, is that a GIS tool allow maps elements to be interpreted and manipulated as data, and in this way spatial analysis becomes possible.</p>
+<p>As we will describe under <a href="#sec-other-approaches">Other approaches</a> at the end of this lesson, there are many tools and techniques that can be used to create such a map. An advantage of using a GIS tool such as ArcGIS Online, and the central motivation for using GIS in this lesson, is that a GIS tool allows map elements to be interpreted and manipulated as data, and in this way spatial analysis becomes possible.</p>
 <p>ArcGIS Online is but one of many GIS tools in existence. We use it in this lesson because it is in wide use in both commercial and academic settings. However, it is important to recognize that it is a proprietary and closed system that requires a paid subscription to use. We note limitations and ramifications of using ArcGIS Online on the reproducibility and citability of one’s work under <a href="#sec-caveats">Caveats of using ArcGIS Online</a> at the end of this lesson.</p>
 <section id="our-goal-for-today" class="level1">
 <h1>Our goal for today</h1>
-<p>Our goal is to develop a map of the UCSB campus that illustrates the current bicycle infrastructure, specifically highlighting bike paths and racks. Additionally, the map will incorporate information about related incidents (crash, injuries, …) and proposed improvements.</p>
+<p>Our goal is to develop a map of the UCSB campus that illustrates the current bicycle infrastructure, specifically highlighting bike paths and racks. Additionally, the map will incorporate annotations for proposed infrastructure improvements, such as a connecting bike path and a pedestrian safety dismount zone.</p>
 <p><a href="https://arcg.is/0iD4jS0" target="_blank">At the end of our session we should end up with something like this</a></p>
 <div id="fig-prelim" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-prelim-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/final_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Preliminary version of the possible result"><img src="images/workshop1/final_map.png" class="img-fluid figure-img"></a>
+<a href="images/workshop1/final_map.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Preliminary version of the possible result"><img src="images/workshop1/final_map.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-prelim-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Preliminary version of the possible result
@@ -218,9 +221,7 @@ Figure&nbsp;1: Preliminary version of the possible result
 </div>
 <p><br></p>
 <p>Our final interactive map is also embedded below:</p>
-<iframe width="900" height="700" allow="local-network-access; geolocation" title="Workshop campus bike map" src="https://ucsb.maps.arcgis.com/apps/Embed/index.html?configurableview=true&amp;webmap=2b16d246ee4c4321852712b9b4652b74&amp;theme=light&amp;scroll=false&amp;center=-119.847894,34.414117&amp;scale=9027.977411">
-</iframe>
-<p>As we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool. In fact, in many cases GIS is overkill, both because most of the features GIS tools provide will not be used and because the GIS interface can be cumbersome. But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that in turn opens up and provides an introduction to the world of spatial analysis.</p>
+<p><arcgis-embedded-map style="height:600px;width:700px;" item-id="99931eb33b1144598bdecd5c21b7c8d8" theme="light" heading-enabled="" legend-enabled="" information-enabled="" share-enabled="" time-zone-label-enabled="" center="-119.84576230906848,34.41226485167855" scale="18055.954822" portal-url="https://ucsb.maps.arcgis.com"></arcgis-embedded-map></p>
 <hr>
 </section>
 <section id="introduction-to-arcgis-online" class="level1">
@@ -245,7 +246,7 @@ Figure&nbsp;2: ArcGIS Online login page for UCSB users
 <section id="tour-of-the-user-interface" class="level2">
 <h2 class="anchored" data-anchor-id="tour-of-the-user-interface">Tour of the user interface</h2>
 <p>The main organization page lists the campus administrative contacts and open data groups available on campus. You can also see the latest content published by users on your campus.</p>
-<p>Along the top of the page, is the main tool bar.</p>
+<p>Along the top of the page is the main toolbar.</p>
 <div id="fig-menubar" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-menubar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -271,10 +272,10 @@ Figure&nbsp;3: ArcGIS Online main menu bar
 <section id="the-map-viewer" class="level1">
 <h1>The Map Viewer</h1>
 <p>Open a new, empty map by clicking <code>Map</code> on your top menu bar.</p>
-<div id="fig-emptymap" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" size="50%">
+<div id="fig-emptymap" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-emptymap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/new_empty_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;4: Opening a new empty map"><img src="images/new_empty_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" size="50%"></a>
+<a href="images/new_empty_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;4: Opening a new empty map"><img src="images/new_empty_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-emptymap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;4: Opening a new empty map
@@ -283,7 +284,7 @@ Figure&nbsp;4: Opening a new empty map
 </div>
 <section id="main-map-components" class="level2">
 <h2 class="anchored" data-anchor-id="main-map-components">Main Map components</h2>
-<p>In the Map Viewer there is a menu bar in the left column. This is where you can add components to your map. The way to think about a map is that it is made of different layers that are added on top of each others. Each layer add a specific information to your map. In our example, we will have a layer for the bike paths, one for the bike racks, one for the buildings, and so on… The base layer is special and often made of an image (but does not have to be). It is called a <strong>basemap</strong>. Here are the main components of your map:</p>
+<p>In the Map Viewer there is a menu bar in the left column. This is where you can add components to your map. The way to think about a map is that it is made of different layers that are added on top of each other. Each layer adds specific information to your map. In our example, we will have a layer for the bike paths, one for the bike racks, one for the buildings, and so on… The base layer is special and often made of an image (but does not have to be). It is called a <strong>basemap</strong>. Here are the main components of your map:</p>
 <ul>
 <li><code>Basemap</code>: there are many provided by ArcGIS Online</li>
 <li><code>Layers</code>: your own and/or those shared by others</li>
@@ -293,7 +294,7 @@ Figure&nbsp;4: Opening a new empty map
 </section>
 <section id="basemap" class="level2">
 <h2 class="anchored" data-anchor-id="basemap">Basemap</h2>
-<p>The goal of a basemap, is to provide context in terms of location and/or theme. In ArcGIS Online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the <strong>Topographic</strong> basemap.</p>
+<p>The goal of a basemap is to provide context in terms of location and/or theme. In ArcGIS Online, a new map will always open with a basemap. Esri has about 20 different basemaps available. We will start with the default: the <strong>Topographic</strong> basemap.</p>
 <div id="fig-defaultmap" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-defaultmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -308,19 +309,23 @@ Figure&nbsp;5: Default basemap
 </section>
 <section id="feature-layers" class="level2">
 <h2 class="anchored" data-anchor-id="feature-layers">Feature layers</h2>
-<p>Feature layers are the layers you add on top of your basemap. They are the main information your map is aiming at communicating. In ArcGIS, When you add an existing layer to your map, it will show up under your <code>Layers</code>. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the <code>...</code> (we call this a “meatball” menu) next to the layer to open the same panel.</p>
+<p>Feature layers are the layers you add on top of your basemap. They are the main information your map is aiming at communicating. In ArcGIS, when you add an existing layer to your map, it will show up under your <code>Layers</code>. When you want to see the layer properties, you can either use the menu on the right hand column to view its properties or use the <code>...</code> (we call this a “meatball” menu) next to the layer to open the same panel.</p>
 </section>
 <section id="save-your-work---save-early-save-often" class="level2">
 <h2 class="anchored" data-anchor-id="save-your-work---save-early-save-often">Save your work - Save early, save often</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/save.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="open your menu bar to find the save icon"><img src="images/save.png" style="height:50.0%" alt="open your menu bar to find the save icon" class="figure-img"></a></p>
-<figcaption>open your menu bar to find the <code>save</code> icon</figcaption>
+<div id="fig-saveicon" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-saveicon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/save.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;6: Open your menu bar to find the Save and open icon"><img src="images/save.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-saveicon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Open your menu bar to find the <code>Save and open</code> icon
+</figcaption>
 </figure>
 </div>
 <ul>
 <li>There will be a blue dot next to the <code>save</code> icon until you save</li>
-<li>You can organize your all of your content into folders – Let’s make a folder for all of our work today. <strong>bike_map_workshop</strong></li>
+<li>You can organize all of your content into folders – Let’s make a folder for all of our work today. <strong>bike_map_workshop</strong></li>
 <li>Once you save, more options will be available</li>
 <li>ArcGIS Online <strong>will not auto-save</strong> your map</li>
 </ul>
@@ -329,19 +334,21 @@ Figure&nbsp;5: Default basemap
 </section>
 <section id="ucsb-bike-infrastructure-map" class="level1">
 <h1>UCSB bike infrastructure map</h1>
-<p>With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes and line, bike racks as points, buildings as polygons) and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.</p>
+<p>With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes as lines, bike racks as points, buildings as polygons) and to then annotate on top of that a campus access proposal for bicyclists and pedestrians.</p>
 <section id="step-1-add-layers-to-your-map" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-add-layers-to-your-map">Step 1: Add layers to your map</h2>
 <section id="import-lines-feature-layer-bike-paths" class="level3">
 <h3 class="anchored" data-anchor-id="import-lines-feature-layer-bike-paths">Import lines Feature layer (bike paths)</h3>
-<p>From the <strong>Layers</strong> panel, click on the add layer button. Search <code>My organization</code> for <strong>OSM_UCSB_Roads</strong>. There should be only one result.</p>
+<p>From the <strong>Layers</strong> panel, click on the add layer button. Search <code>My organization</code> for <strong>UCSB neighborhood paths and roads</strong>. There should be only one result.</p>
 <div id="fig-addinglayer" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-addinglayer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step1/add-layers_small.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;6: Adding a layer"><img src="images/workshop1/Step1/add-layers_small.gif" class="img-fluid figure-img"></a>
+<video controls="" autoplay="" loop="" muted="" playsinline="" width="100%">
+  <source src="images/workshop1/Step1/add-layers.mp4" type="video/mp4">
+</video>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-addinglayer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Adding a layer
+Figure&nbsp;7: Adding a layer
 </figcaption>
 </figure>
 </div>
@@ -351,7 +358,7 @@ Figure&nbsp;6: Adding a layer
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Challenge: Repeat the above steps to add the feature layer <code>bike_racks_ucsb</code> to your map.
+<span class="screen-reader-only">Tip</span>Challenge: Repeat the above steps to add the feature layer <code>UCSB Bike Racks</code> to your map.
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -361,10 +368,10 @@ Figure&nbsp;6: Adding a layer
 <div id="fig-bikeracks" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-bikeracks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step1/select-feature-point-layer.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figure&nbsp;7: Add UCSB bike racks layer"><img src="images/workshop1/Step1/select-feature-point-layer.png" class="img-fluid figure-img" style="width:80.0%"></a>
+<a href="images/workshop1/Step1/select-feature-point-layer.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;8: Add UCSB bike racks layer"><img src="images/workshop1/Step1/select-feature-point-layer.png" class="img-fluid figure-img" style="width:80.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bikeracks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: Add UCSB bike racks layer
+Figure&nbsp;8: Add UCSB bike racks layer
 </figcaption>
 </figure>
 </div>
@@ -377,7 +384,7 @@ Figure&nbsp;7: Add UCSB bike racks layer
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Challenge: Find the ‘From Maps to Analysis’ group and add the <code>UCSB Campus Buildings</code> layer from there.
+<span class="screen-reader-only">Tip</span>Challenge: Find the ‘From Maps to Analysis’ group and add the <code>UCSB Campus Buildings 2026</code> layer from there.
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -387,10 +394,10 @@ Figure&nbsp;7: Add UCSB bike racks layer
 <div id="fig-buildinglayers" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-buildinglayers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step1/select-feature-polygon-layer.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figure&nbsp;8: Add UCSB buildings layer"><img src="images/workshop1/Step1/select-feature-polygon-layer.png" class="img-fluid figure-img" style="width:90.0%"></a>
+<a href="images/workshop1/Step1/select-feature-polygon-layer.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figure&nbsp;9: Add UCSB buildings layer"><img src="images/workshop1/Step1/select-feature-polygon-layer.png" class="img-fluid figure-img" style="width:90.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-buildinglayers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8: Add UCSB buildings layer
+Figure&nbsp;9: Add UCSB buildings layer
 </figcaption>
 </figure>
 </div>
@@ -410,18 +417,20 @@ Figure&nbsp;8: Add UCSB buildings layer
 <p>This ordering ensures that smaller features aren’t hidden beneath larger polygon areas.</p>
 <p>For our map, the recommended order from top to bottom should be:</p>
 <ol type="1">
-<li><code>bike_racks_ucsb</code> (top)</li>
-<li><code>OSM_UCSB_Roads</code> (middle)</li>
-<li><code>UCSB Campus Buildings</code> (bottom)</li>
+<li><code>UCSB Bike Racks</code> (top)</li>
+<li><code>UCSB neighborhood paths and roads</code> (middle)</li>
+<li><code>UCSB Campus Buildings 2026</code> (bottom)</li>
 </ol>
 <p>To reorder the layers, click and hold on a layer name in the Layers panel, drag it to the desired position, and release.</p>
-<div id="fig-reorderlayers" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<div id="fig-reorderlayers" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-reorderlayers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step1/reorder-layers_small.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figure&nbsp;9: Reorder feature layers"><img src="images/workshop1/Step1/reorder-layers_small.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+<video controls="" autoplay="" loop="" muted="" playsinline="" width="100%">
+  <source src="images/workshop1/Step1/reorder-layers.mp4" type="video/mp4">
+</video>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reorderlayers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;9: Reorder feature layers
+Figure&nbsp;10: Reorder feature layers
 </figcaption>
 </figure>
 </div>
@@ -433,13 +442,18 @@ Figure&nbsp;9: Reorder feature layers
 <div id="fig-attribute" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-attribute-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step1/attribute-table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Figure&nbsp;10: Attribute table of UCSB buildings layer"><img src="images/workshop1/Step1/attribute-table.png" class="img-fluid figure-img" style="width:90.0%"></a>
+<a href="images/workshop1/Step1/attribute-table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figure&nbsp;11: Attribute table of UCSB buildings layer"><img src="images/workshop1/Step1/attribute-table.png" class="img-fluid figure-img" style="width:90.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-attribute-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10: Attribute table of UCSB buildings layer
+Figure&nbsp;11: Attribute table of UCSB buildings layer
 </figcaption>
 </figure>
 </div>
+<p>In ArcGIS Online feature layers, we can understand the relationship between rows, columns, and features as follows:</p>
+<ul>
+<li>Each <strong>row</strong> represents a <strong>feature</strong>: A row (record) corresponds to an individual spatial object on the map, such as a specific bike rack, a segment of a bike path, or a building.</li>
+<li>Each <strong>column</strong> represents an <strong>attribute</strong>: Each column (field) corresponds to one specific attribute category or field name, such as the name of a building, the type of bike rack, or the length of a bike path. The value in each cell represents the specific attribute for that feature.</li>
+</ul>
 <p>Your data can be visualized, selected, or analysed based on the columns of the attribute table. We will see later how you can leverage these attributes to set the symbology of a layer according to categories or quantities that are in the attribute table. You can also compute new attributes either based on other attributes or by performing analysis with other layers’ information. We will cover analysis tools <a href="02_intro_gis.html">in our second workshop</a>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
@@ -454,13 +468,13 @@ Figure&nbsp;10: Attribute table of UCSB buildings layer
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Now that you have added the layers to your map, it’s a good idea to save it again.</p>
-<div id="fig-saveas" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<div id="fig-saveas-step1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-saveas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step1/save-as.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Figure&nbsp;11: Save as dialog in ArcGIS Online"><img src="images/workshop1/Step1/save-as.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></a>
+<div aria-describedby="fig-saveas-step1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step1/save-as.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figure&nbsp;12: Save as dialog in ArcGIS Online"><img src="images/workshop1/Step1/save-as.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-saveas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11: Save as dialog in ArcGIS Online
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-saveas-step1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12: Save as dialog in ArcGIS Online
 </figcaption>
 </figure>
 </div>
@@ -472,126 +486,225 @@ Figure&nbsp;11: Save as dialog in ArcGIS Online
 </section>
 <section id="step-2-customize-symbology-transparency" class="level2">
 <h2 class="anchored" data-anchor-id="step-2-customize-symbology-transparency">Step 2: Customize symbology &amp; transparency</h2>
-<p>After adding our three layers, we have some work to do to make the map more readable. First, let’s adjust the symbology of the bike racks layer to reduce its size and change its symbol to a bike icon.</p>
+<p>After adding our three layers, we have some work to do to make the map more readable. Let’s begin by adjusting the visibility of the <code>UCSB Bike Racks</code> layer. Currently, each bike rack is represented by a blue circle, which makes it difficult to identify the number of bike racks in a given area. We can use the <strong>aggregation</strong> feature to group the bike racks into dynamic clusters, which will facilitate the visualization of the number of bike racks in a given area. This feature will automatically group the bike racks into clusters based on the map scale, so that when you zoom in, the clusters will break apart into individual bike racks.</p>
+<p>To enable aggregation, follow these steps:</p>
 <ul>
-<li>Click on the layer <code>bike_racks_ucsb</code> to open its properties panel.</li>
-<li>On the panel <code>Symbology</code>, click on <code>Edit layer style</code>.</li>
-<li>Look for the <code>② Pick a style</code> option and select <code>Style options</code>.</li>
-<li>Click on the pencil icon next to <code>Symbol style</code> to open the symbol selector.</li>
+<li>Click on the layer <code>UCSB Bike Racks</code> to open its properties panel.</li>
+<li>On the right side panel, click on the Aggregation button (the fifth button from the top).</li>
+<li>In the Aggregation panel, select the <code>Clustering</code> option. This will enable the clustering of bike racks based on the map scale.</li>
 </ul>
-<p>There, we have multiple options to customize the symbol. Let’s click on the current symbol chevron to open the full symbol gallery.</p>
-<p>From the menu, we can select several categories of symbols. Let’s select the <code>Government</code> category and look for a bike parking icon. Click on the <code>Done</code> button to apply the changes and return to the symbol style panel.</p>
-<div id="fig-bikeparking" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<div id="fig-aggregation" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-bikeparking-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step2/symbology-select-symbol.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Figure&nbsp;12: Selecting a bike parking symbol from the Government category"><img src="images/workshop1/Step2/symbology-select-symbol.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
+<div aria-describedby="fig-aggregation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step2/aggregation-bike-racks.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Figure&nbsp;13: Enabling aggregation for the bike racks layer"><img src="images/workshop1/Step2/aggregation-bike-racks.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bikeparking-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;12: Selecting a bike parking symbol from the Government category
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-aggregation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13: Enabling aggregation for the bike racks layer
 </figcaption>
 </figure>
 </div>
-<p>To change the size of the symbol, we can use the <code>Size</code> slider to reduce it to a more appropriate size. First, select <strong>Adjust size automatically</strong> to ensure the symbols to scale as you zoom in and out of the map. Then, you can use a custom size by moving the slider or entering a value; in our case, we selected 5.68 px.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Size slider quirk
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>In ArcGIS Online, every time you select the <strong>Adjust size automatically</strong> option, it will reset the size slider to a default value. So make sure to select your desired size <strong>after</strong> enabling that option. Also note that the size you choose is function of the current scale/zoom you are using on the map when you set this value for the first time.</p>
-<div id="fig-symbolsize" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>We can also adjust the transparency of the circles representing the bike racks to smooth the circle overlap. To do this, follow these steps:</p>
+<ul>
+<li>Click on the layer <code>UCSB Bike Racks</code> to open its properties panel.</li>
+<li>On the right side panel, click on the <code>Styles</code> button (the second button from the top).</li>
+<li>In the Styles panel, go to the <strong>Pick a style</strong> section, and click on the <code>Style options</code> button.</li>
+<li>In the Style options panel, click on the edit button (the pencil icon) next to the symbol in the Symbol style list.</li>
+<li>In the Symbol style panel, set the <code>Fill transparency</code> to 30%. Changes will be applied immediately to the map.</li>
+</ul>
+<div id="fig-transparency" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-symbolsize-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step2/symbology-point-size.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Figure&nbsp;13: Symbol size settings with adjust size automatically option"><img src="images/workshop1/Step2/symbology-point-size.png" class="img-fluid figure-img" style="width:70.0%"></a>
+<div aria-describedby="fig-transparency-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step2/transparency-bike-racks.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Figure&nbsp;14: Adjusting the transparency of the bike racks layer"><img src="images/workshop1/Step2/transparency-bike-racks.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-symbolsize-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;13: Symbol size settings with adjust size automatically option
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-transparency-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14: Adjusting the transparency of the bike racks layer
 </figcaption>
 </figure>
 </div>
+<p>To have a better view of the bike racks area, click on the three dots next to the <code>UCSB Bike Racks</code> layer and select <code>Zoom to layer</code>. This will zoom in to the extent of the bike racks layer.</p>
+<div id="fig-zoom" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-zoom-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step2/zoom-to-bike-racks.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Figure&nbsp;15: Zooming to the extent of the bike racks layer"><img src="images/workshop1/Step2/zoom-to-bike-racks.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
 </div>
-</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-zoom-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;15: Zooming to the extent of the bike racks layer
+</figcaption>
+</figure>
 </div>
 <section id="adjust-style-based-on-attribute" class="level3">
 <h3 class="anchored" data-anchor-id="adjust-style-based-on-attribute">Adjust style based on attribute</h3>
-<p>Now, what if we wanted to adjust the symbology based on an attribute? Let’s say we wanted to fill each building with a different color based on its use (academic, residential, administrative, etc.). We can do that by changing the style of the <code>UCSB Campus Buildings</code> layer.</p>
+<p>Our map is starting to look good, but you can notice that the buildings are all filled with the same color (orange in our case). Although the buildings are not the main focus of our map, this layer can be useful to provide context, so we can adjust the symbology to make it more informative.</p>
+<p>To achieve this, we can adjust the symbology of the <code>UCSB Campus Buildings 2026</code> layer based on an attribute. Our first step is to identify the attribute we want to use. We can open the layer attribute table as we previously showed, or we can see the available attributes directly from the Styles panel. To do this, follow these steps:</p>
 <ul>
-<li>Click on the layer <code>UCSB Campus Buildings</code> to open its properties panel.</li>
-<li>On the panel <code>Symbology</code>, click on <code>Edit layer style</code>.</li>
-<li>Look for the <code>① Choose attributes</code> option and select <code>+ Field</code>.</li>
-<li>Select the attribute <code>b_use</code>, which stands for building use, and click on <code>Add</code>.</li>
+<li>Click on the layer <code>UCSB Campus Buildings 2026</code> to open its properties panel.</li>
+<li>On the right side panel, click on the <code>Styles</code> button (the second button from the top).</li>
+<li>In the Styles panel, go to the <strong>Choose attributes</strong> section, and click on the <code>+ Field</code> button. This will show you the available attributes for this layer.</li>
 </ul>
-<div id="fig-symbolstyle" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<div id="fig-attributes" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-symbolstyle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step2/symbology-by-attribute.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Figure&nbsp;14: Adjusting symbology style by attribute"><img src="images/workshop1/Step2/symbology-by-attribute.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
+<div aria-describedby="fig-attributes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step2/attributes-list.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Figure&nbsp;16: List of available attributes for the UCSB Campus Buildings 2026 layer"><img src="images/workshop1/Step2/attributes-list.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-symbolstyle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14: Adjusting symbology style by attribute
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-attributes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16: List of available attributes for the UCSB Campus Buildings 2026 layer
 </figcaption>
 </figure>
 </div>
-<p>As a result, you will see that the buildings are now filled with different colors based on their use. You can further customize the colors by clicking on the color ramp and selecting a different one.</p>
-<div id="fig-buildingscolor" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<p>To explore the values of the attributes, you can click on the (i) icon next to the attribute name. This will show you the metadata for that attribute and a list with its top 10 values.</p>
+<p>For this exercise, we will use the <code>BLDGTYPE</code> attribute, which represents the building type (e.g., housing, academic and administrative, recreation, parking, etc.). This attribute will allow us to fill each building with a different color based on its use.</p>
+<ul>
+<li>Check the box next to the <code>BLDGTYPE</code> attribute and click on the <code>Add</code> button. This will add the attribute to the <strong>Choose attributes</strong> section, and set a predefined color ramp to fill the building areas based on their use.</li>
+</ul>
+<div id="fig-addattribute" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-buildingscolor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step2/symbology-by-attribute-result.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Figure&nbsp;15: Buildings colored by their use category"><img src="images/workshop1/Step2/symbology-by-attribute-result.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
+<div aria-describedby="fig-addattribute-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step2/add-attribute.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Figure&nbsp;17: Adding the BLDGTYPE attribute to the Styles panel"><img src="images/workshop1/Step2/add-attribute.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-buildingscolor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15: Buildings colored by their use category
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-addattribute-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;17: Adding the BLDGTYPE attribute to the Styles panel
+</figcaption>
+</figure>
+</div>
+<p>We can select a color ramp that better fits our map:</p>
+<ul>
+<li>In the Styles panel, click on the <code>Style options</code> button in <strong>Types (unique symbols)</strong> section.</li>
+<li>Click on the edit button (the pencil icon) next to the color ramp in the Symbol style list.</li>
+<li>In the Symbol style panel, click on the edit button (the pencil icon) next to the color ramp in the Colors section.</li>
+<li>Select the <em>Stone and Gravel</em> color ramp. Changes will be applied immediately to the map.</li>
+</ul>
+<div id="fig-changecolorramp" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-changecolorramp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step2/change-color-ramp.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Figure&nbsp;18: Changing the color ramp for the BLDGTYPE attribute"><img src="images/workshop1/Step2/change-color-ramp.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-changecolorramp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;18: Changing the color ramp for the BLDGTYPE attribute
+</figcaption>
+</figure>
+</div>
+<p>In this specific layer we also have a category with no label and zero records. We can remove this category by clicking the check box next to it and selecting <code>Remove</code> from the contextual menu.</p>
+<div id="fig-removeempty" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-removeempty-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step2/remove-empty-category.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Figure&nbsp;19: Removing the empty category from the BLDGTYPE attribute"><img src="images/workshop1/Step2/remove-empty-category.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-removeempty-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;19: Removing the empty category from the BLDGTYPE attribute
 </figcaption>
 </figure>
 </div>
 </section>
 <section id="filter-layer-based-on-attribute" class="level3">
 <h3 class="anchored" data-anchor-id="filter-layer-based-on-attribute">Filter layer based on attribute</h3>
-<p>Finally, we are interested in displaying bike paths from the <code>OSM_UCSB_Roads</code> layer that also contains roads, pathways and other features. We can filter the categories we are interested in using the filter function on the right sidebar.</p>
+<p>Finally, we are interested in displaying bike paths from the <code>UCSB neighborhood paths and roads</code> layer that also contains roads, pathways and other features. We can filter the categories we are interested in using the filter function on the right sidebar.</p>
 <ul>
-<li><p>Click on the layer <code>OSM_UCSB_Roads</code> to select it.</p></li>
-<li><p>Click on the <code>Filter</code> button on the right sidebar (third from top). <img src="images/workshop1/Step2/symbology-filter-road.png" id="fig-filter-selection" class="img-fluid quarto-figure quarto-figure-center anchored" alt="Adding a filter to the road layer"></p></li>
+<li><p>Click on the layer <code>UCSB neighborhood paths and roads</code> to select it.</p></li>
+<li><p>Click on the <code>Filter</code> button on the right sidebar (third from top).</p>
+<div id="fig-filter-selection" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-filter-selection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step2/symbology-filter-road.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Figure&nbsp;20: Adding a filter to the road layer"><img src="images/workshop1/Step2/symbology-filter-road.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-filter-selection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20: Adding a filter to the road layer
+</figcaption>
+</figure>
+</div></li>
 <li><p>Click <code>Add new</code></p></li>
-<li><p>In the condition box, choose the <code>highway</code> field and the <code>includes</code> and select <code>cycleway</code></p></li>
+<li><p>In the condition box, choose the <code>highway</code> field and the <code>includes</code> condition, and select <code>cycleway</code></p></li>
 <li><p>Don’t forget to save with the button at the bottom!</p></li>
 </ul>
 <div id="fig-filter-on" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-filter-on-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step2/symbology-road-conditional.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Figure&nbsp;16: Filtering out the bike paths"><img src="images/workshop1/Step2/symbology-road-conditional.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+<a href="images/workshop1/Step2/symbology-road-conditional.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="Figure&nbsp;21: Filtering out the bike paths"><img src="images/workshop1/Step2/symbology-road-conditional.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-filter-on-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;16: Filtering out the bike paths
+Figure&nbsp;21: Filtering out the bike paths
 </figcaption>
 </figure>
 </div>
-<p>As a result, you will see that the bike paths are now more transparent for higher speed limits and less transparent for lower speed limits.</p>
+<p>Because bike paths are relevant to our map, we can change the color to make them stand out more. To do this we can change the symbol color to a warm, earthy ochre color that contrasts with the blue of the bike racks and colors of the basemap.</p>
+<ul>
+<li>Click on the layer <code>UCSB neighborhood paths and roads</code> to select it.</li>
+<li>Click on the <code>Styles</code> button on the right sidebar (second from top).</li>
+<li>In the Styles panel, click on the <code>Style options</code> button in <strong>Types (unique symbols)</strong> section.</li>
+<li>Click on the edit button (the pencil icon) next to the symbol in the Symbol style list.</li>
+<li>In the Symbol style panel, click on the color box and type in the <span data-bs-toggle="tooltip" title="A 6-digit code used to represent colors on screens" style="border-bottom: 1px dashed #666; cursor: help;">hex code</span> <code>d67d1e</code> for the ochre color.</li>
+</ul>
+<div id="fig-changecolorroad" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-changecolorroad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step2/change-color-road.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Figure&nbsp;22: Changing the color of the bike paths"><img src="images/workshop1/Step2/change-color-road.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-changecolorroad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22: Changing the color of the bike paths
+</figcaption>
+</figure>
+</div>
+<ul>
+<li>Change the width of the line to 2 px to match the width of the basemap roads.</li>
+</ul>
+<div id="fig-changewidthroad" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-changewidthroad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step2/change-width-road.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21" title="Figure&nbsp;23: Changing the width of the bike paths"><img src="images/workshop1/Step2/change-width-road.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-changewidthroad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;23: Changing the width of the bike paths
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Save often.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Now that you have customized the symbology of your layers, it’s a good idea to save your map again.</p>
+<div id="fig-saveas-step2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-saveas-step2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step1/save-as.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22" title="Figure&nbsp;24: Save as dialog in ArcGIS Online"><img src="images/workshop1/Step1/save-as.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-saveas-step2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24: Save as dialog in ArcGIS Online
+</figcaption>
+</figure>
+</div>
+<p>In there, you can add a title, tags, and a short description of your map.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="select-a-better-basemap" class="level3">
-<h3 class="anchored" data-anchor-id="select-a-better-basemap">Select a better basemap</h3>
-<p>After adding the layers and customizing their symbology, we have a good, almost ready map. However, the current basemap (Topographic) is a bit too busy and makes it hard to see the features we added. Let’s change it to a simpler basemap using the <code>Basemap</code> option in the left menu bar.</p>
+<section id="select-a-different-basemap" class="level3">
+<h3 class="anchored" data-anchor-id="select-a-different-basemap">Select a different basemap</h3>
+<p>After adding the layers and customizing their symbology, we have a good, almost ready map. However, the current basemap (Topographic) is a bit too busy and makes it hard to see the features we added. Let’s change it to a different basemap using the <code>Basemap</code> option in the left menu bar.</p>
 <div id="fig-basemapoption" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-basemapoption-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step2/basemap-menu-location.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Figure&nbsp;17: Basemap option in the left menu bar"><img src="images/workshop1/Step2/basemap-menu-location.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a>
+<a href="images/workshop1/Step2/basemap-menu-location.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23" title="Figure&nbsp;25: Basemap option in the left menu bar"><img src="images/workshop1/Step2/basemap-menu-location.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-basemapoption-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;17: Basemap option in the left menu bar
+Figure&nbsp;25: Basemap option in the left menu bar
 </figcaption>
 </figure>
 </div>
-<p>From the basemap gallery, we can select a simpler basemap. For this example, we selected the <code>Light Gray Canvas</code> basemap, which provides a clean background that makes our features stand out.</p>
-<div id="fig-lightgray" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<p>From the basemap gallery, we can select another basemap. In our case, we will select the <strong>Terrain with Labels</strong> basemap, which is a lighter version of the Topographic basemap. This will make our features stand out more and make the map easier to read.</p>
+<div id="fig-topolabels" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-lightgray-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step2/basemap-light-gray-canvas.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="Figure&nbsp;18: Map with Light Gray Canvas basemap"><img src="images/workshop1/Step2/basemap-light-gray-canvas.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
+<div aria-describedby="fig-topolabels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/workshop1/Step2/basemap-topo-labels-canvas.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24" title="Figure&nbsp;26: Map with Terrain with Labels basemap"><img src="images/workshop1/Step2/basemap-topo-labels-canvas.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lightgray-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;18: Map with Light Gray Canvas basemap
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-topolabels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;26: Map with Terrain with Labels basemap
 </figcaption>
 </figure>
 </div>
@@ -600,14 +713,15 @@ Figure&nbsp;18: Map with Light Gray Canvas basemap
 </section>
 <section id="step-3-annotate-the-map" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-annotate-the-map">Step 3: Annotate the map</h2>
-<p>In addition to bringing external sources of information into a map (whether in the form of a basemap or additional feature layers), it is common to want to add new information. In many cases it is better to think of the new information as data, and to store it in its own feature layer. We will be describing this approach in the next workshop. For our purposes here, though, we will take the more straightforward approach of simply drawing on the map. The hand-drawn features will appear in what ArcGIS Online calls a <strong>sketch layer</strong>.</p>
+<p>In addition to bringing in structured geospatial data layers, maps are often used to sketch ideas, mock up proposals, or add contextual annotations. This is a common practice in urban planning and design.</p>
+<p>We can add these annotations by creating a <strong>sketch layer</strong>. Unlike feature layers, sketch layers are designed for drawing shapes (points, lines, polygons, circles, text) directly onto the map as descriptive elements.</p>
 <div id="fig-sketchlayer" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sketchlayer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step3/drawing-sketch-layer-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Figure&nbsp;19: Sketch layer option in the left menu"><img src="images/workshop1/Step3/drawing-sketch-layer-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a>
+<a href="images/workshop1/Step3/drawing-sketch-layer-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25" title="Figure&nbsp;27: Sketch layer option in the left menu"><img src="images/workshop1/Step3/drawing-sketch-layer-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sketchlayer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;19: Sketch layer option in the left menu
+Figure&nbsp;27: Sketch layer option in the left menu
 </figcaption>
 </figure>
 </div>
@@ -615,110 +729,73 @@ Figure&nbsp;19: Sketch layer option in the left menu
 <div id="fig-drawingtools" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-drawingtools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step3/drawing-sketch-bar-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21" title="Figure&nbsp;20: Sketch layer drawing tools menu"><img src="images/workshop1/Step3/drawing-sketch-bar-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a>
+<a href="images/workshop1/Step3/drawing-sketch-bar-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26" title="Figure&nbsp;28: Sketch layer drawing tools menu"><img src="images/workshop1/Step3/drawing-sketch-bar-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-drawingtools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20: Sketch layer drawing tools menu
+Figure&nbsp;28: Sketch layer drawing tools menu
 </figcaption>
 </figure>
 </div>
-<section id="drawing-points-in-a-sketch-layer" class="level3">
-<h3 class="anchored" data-anchor-id="drawing-points-in-a-sketch-layer">Drawing points in a sketch layer</h3>
+<section id="the-campus-access-proposal" class="level3">
+<h3 class="anchored" data-anchor-id="the-campus-access-proposal">The Campus Access Proposal</h3>
+<p>Imagine you are a campus active transportation planner. Your goal is to propose an infrastructure upgrade that connects an existing bike path to a campus building with high bike-parking density (visible from your <code>UCSB Bike Racks</code> and <code>UCSB Campus Buildings 2026</code> layers) where no direct bike path currently exists.</p>
+<p>To present your proposal, you will add exactly <strong>two</strong> sketches to your map: a proposed connecting path and a safety dismount zone.</p>
+</section>
+<section id="proposed-path-connector-line" class="level3">
+<h3 class="anchored" data-anchor-id="proposed-path-connector-line">1. Proposed Path Connector (Line)</h3>
+<p>Find a major campus building that is near a bike path but lacks a direct bike-lane connection to its entrance or bike racks.</p>
 <ul>
-<li>Draw points where you were in a (near-)accident on a bike path, either as bicyclist of pedestrian.</li>
+<li>Select the <strong>line drawing tool</strong> from the sketch layer menu.</li>
+<li>Click on an existing bike path to start drawing your proposed route, click to add vertices (turns) along pedestrian pathways or open spaces, and <strong>double-click</strong> to finish the line at the building’s entrance plaza.</li>
 </ul>
-<p>Zoom in to the location and add a point with the point drawing tool. You can customize the symbol, size, and color of the point in the sketch layer menu before adding it to the map. Put as many points as you like.</p>
-<p>In our example, we add the following settings to the point symbol:</p>
+<p>Customize the line symbol in the sketch layer menu to make it look like a planning proposal:</p>
 <ul>
-<li>Size: 48 px</li>
-<li>Vector marker (background): Blue (#2132cf)</li>
+<li><strong>Width:</strong> <code>2 px</code></li>
+<li><strong>Pattern:</strong> <code>Dotted</code> or <code>Dashed</code></li>
+<li><strong>Color:</strong> Light Blue (<code>#5aaac4</code>) or an eye-catching accent color of your choice.</li>
 </ul>
-<div id="fig-pointsymbol" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-pointsymbol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step3/drawing-point-vector.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22" title="Figure&nbsp;21: Point symbol customization settings"><img src="images/workshop1/Step3/drawing-point-vector.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pointsymbol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;21: Point symbol customization settings
-</figcaption>
-</figure>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Challenge: Drawing lines in a sketch layer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Draw a line where you think there should be a bike path but isn’t.</p>
-<p>From the sketch layer menu, select the line drawing tool. Click on the map to start drawing the line, and click again to add vertices. Double-click to finish the line.</p>
-<div id="fig-drawingline" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<div id="fig-drawingline" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-drawingline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step3/drawing-line-vector.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-23" title="Figure&nbsp;22: Drawing a line on the map"><img src="images/workshop1/Step3/drawing-line-vector.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
+<video controls="" autoplay="" loop="" muted="" playsinline="" width="100%">
+  <source src="images/workshop1/Step3/drawing-line.mp4" type="video/mp4">
+</video>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-drawingline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;22: Drawing a line on the map
+Figure&nbsp;29: Drawing a proposed route line on the map
 </figcaption>
 </figure>
 </div>
-<p>You can customize the line symbol in the sketch layer menu before adding it to the map. In our example, we add the following settings to the line symbol:</p>
+</section>
+<section id="pedestrian-safety-dismount-zone-circle-or-polygon" class="level3">
+<h3 class="anchored" data-anchor-id="pedestrian-safety-dismount-zone-circle-or-polygon">2. Pedestrian Safety Dismount Zone (Circle or Polygon)</h3>
+<p>Because your proposed path ends at a busy building entrance, we need to designate a safety buffer zone where bicyclists must dismount to prevent conflicts with pedestrians entering and exiting the building.</p>
 <ul>
-<li>Width: 5 px</li>
-<li>Dotted line pattern</li>
-<li>Color: Light blue (#00c8ff)</li>
+<li>Select the <strong>circle drawing tool</strong> (or polygon tool) from the sketch layer menu.</li>
+<li>Click and drag near the building entrance to create a buffer zone covering the plaza where the new path terminates.</li>
+<li>Click on the select tool to finish the shape.</li>
 </ul>
-<div id="fig-linesymbol" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-linesymbol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step3/drawing-line-style.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24" title="Figure&nbsp;23: Line symbol customization settings"><img src="images/workshop1/Step3/drawing-line-style.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linesymbol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;23: Line symbol customization settings
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Challenge: Drawing circles in a sketch layer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Draw a circle where you think there should be a bike parking lot but isn’t.</p>
-<p>Similarly to the line drawing tool, select the circle drawing tool from the sketch layer menu. Click on the map to draw the circle, and click on the select tool to finish the shape. You can also customize the symbol after drawing it by selecting it and changing its properties in the sketch layer menu. In our example, we add the following settings to the circle symbol. You can type in the values, or interactively select as in the animated figure.</p>
+<p>Customize the zone to look like a semi-transparent advisory overlay:</p>
 <ul>
-<li>Fill color: Red (#d13434)</li>
-<li>Fill transparency: 38%</li>
+<li><strong>Fill color:</strong> Red (<code>#d13434</code>) or Orange</li>
+<li><strong>Fill transparency:</strong> <code>40%</code> (allowing the underlying basemap and buildings to remain visible)</li>
+<li><strong>Outline:</strong> Thin solid line or no outline</li>
 </ul>
-<div id="fig-drawingcircle" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<div id="fig-drawingcircle" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-drawingcircle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step3/drawing-circle-vector.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-25" title="Figure&nbsp;24: Drawing a circle on the map"><img src="images/workshop1/Step3/drawing-circle-vector.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
+<video controls="" autoplay="" loop="" muted="" playsinline="" width="100%">
+  <source src="images/workshop1/Step3/drawing-circle.mp4" type="video/mp4">
+</video>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-drawingcircle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;24: Drawing a circle on the map
+Figure&nbsp;30: Drawing a dismount zone circle on the map
 </figcaption>
 </figure>
 </div>
-</div>
-</div>
-</div>
-<p>Finally, let’s rename the sketch layer to <strong>Annotations</strong> to better reflect its purpose. Click on the three dots next to the sketch layer and select <code>Rename</code>. Enter the new name and click <code>OK</code>.</p>
-<p><strong>Save your map after making these changes</strong></p>
+<hr>
+<p>Finally, rename your sketch layer to <strong>Proposed Improvements</strong> to reflect its purpose. Click on the three dots next to the sketch layer, select <code>Rename</code>, enter the new name, and click <code>OK</code>.</p>
+<p><strong>Save your map after making these changes!</strong></p>
 </section>
 </section>
 <section id="step-4-prepare-the-map-for-publication" class="level2">
@@ -728,10 +805,10 @@ Figure&nbsp;24: Drawing a circle on the map
 <div id="fig-printoption" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-printoption-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step4/export-print-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26" title="Figure&nbsp;25: Print option in the left menu bar"><img src="images/workshop1/Step4/export-print-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></a>
+<a href="images/workshop1/Step4/export-print-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27" title="Figure&nbsp;31: Print option in the left menu bar"><img src="images/workshop1/Step4/export-print-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-printoption-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;25: Print option in the left menu bar
+Figure&nbsp;31: Print option in the left menu bar
 </figcaption>
 </figure>
 </div>
@@ -742,7 +819,7 @@ Figure&nbsp;25: Print option in the left menu bar
 </ul>
 <p>For our purposes, we will select the <code>Layout</code> option to create a more complete map for publication.</p>
 <p>In the layout menu, you can change the title of the map, select a <code>Template</code> (which is basically a standard page size and orientation), and select the <code>File format</code> for the export (e.g., PNG, PDF).</p>
-<p>You can also customize more the layout by enabling the <code>Advance options</code> panel. You can set the scale, add an author name, include copyright information, increase or decrease the resolution, indicate the <a href="https://developers.arcgis.com/rest/services-reference/enterprise/using-spatial-references/" target="_blank">output spatial reference</a>, and select to include legend, north arrow, and scale bar.</p>
+<p>You can also customize the layout further by enabling the <code>Advanced options</code> panel. You can set the scale, add an author name, include copyright information, increase or decrease the resolution, indicate the <a href="https://developers.arcgis.com/rest/services-reference/enterprise/using-spatial-references/" target="_blank">output spatial reference</a>, and select to include legend, north arrow, and scale bar.</p>
 <p>Adjust the zoom and position of the map in the preview window to ensure everything is visible and well-framed.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -760,10 +837,10 @@ Figure&nbsp;25: Print option in the left menu bar
 <div id="fig-exportlayout" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-exportlayout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step4/export-layout-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27" title="Figure&nbsp;26: Map export layout configuration panel"><img src="images/workshop1/Step4/export-layout-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
+<a href="images/workshop1/Step4/export-layout-menu.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28" title="Figure&nbsp;32: Map export layout configuration panel"><img src="images/workshop1/Step4/export-layout-menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exportlayout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;26: Map export layout configuration panel
+Figure&nbsp;32: Map export layout configuration panel
 </figcaption>
 </figure>
 </div>
@@ -771,30 +848,30 @@ Figure&nbsp;26: Map export layout configuration panel
 <section id="step-5-share-your-map" class="level2">
 <h2 class="anchored" data-anchor-id="step-5-share-your-map">Step 5: Share your map</h2>
 <p>When you’re satisfied with the layout and settings, click on the <code>Export</code> button to generate the map. Depending on the selected file format and resolution, it may take a few moments to process the export.</p>
-<p>The result will be list on the <code>Exports</code> panel, where you can save the file to your computer by clicking on the three dots next to the export and selecting <code>Save as</code>.</p>
+<p>The result will be listed in the <code>Exports</code> panel, where you can save the file to your computer by clicking on the three dots next to the export and selecting <code>Save as</code>.</p>
 <div id="fig-savingmap" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-savingmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step4/export-save-as.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28" title="Figure&nbsp;27: Saving exported map from the Exports panel"><img src="images/workshop1/Step4/export-save-as.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a>
+<a href="images/workshop1/Step4/export-save-as.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29" title="Figure&nbsp;33: Saving exported map from the Exports panel"><img src="images/workshop1/Step4/export-save-as.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-savingmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;27: Saving exported map from the Exports panel
+Figure&nbsp;33: Saving exported map from the Exports panel
 </figcaption>
 </figure>
 </div>
-<p>This will save the exported map to you ArcGIS Online content. You can access it later from the <code>Content</code> menu in the top menu bar. The new item will be available as an Image file that you can download to your computer.</p>
+<p>This will save the exported map to your ArcGIS Online content. You can access it later from the <code>Content</code> menu in the top menu bar. The new item will be available as an Image file that you can download to your computer.</p>
 <div id="fig-downloadmap" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-downloadmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/workshop1/Step4/export-download-image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29" title="Figure&nbsp;28: Downloading the exported map image from ArcGIS Online content"><img src="images/workshop1/Step4/export-download-image.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
+<a href="images/workshop1/Step4/export-download-image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30" title="Figure&nbsp;34: Downloading the exported map image from ArcGIS Online content"><img src="images/workshop1/Step4/export-download-image.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-downloadmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;28: Downloading the exported map image from ArcGIS Online content
+Figure&nbsp;34: Downloading the exported map image from ArcGIS Online content
 </figcaption>
 </figure>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -803,7 +880,7 @@ Figure&nbsp;28: Downloading the exported map image from ArcGIS Online content
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>You can share your map publicly and embed it on a website, just like we did at the beginning of this lesson. However, for this to work, you need to set the visibility of all your map layers to public.</p>
 </div>
@@ -830,7 +907,7 @@ Figure&nbsp;28: Downloading the exported map image from ArcGIS Online content
 <li><p>By screen grabbing: Create a base layer by screen grabbing a source map displayed in a web browser window (e.g., Google Maps). Then, using a drawing tool (a dedicated drawing tool such as Adobe Illustrator, or any program that provides drawing tools such as Microsoft PowerPoint), import the screen grab and draw on top of that. It is possible to capture the base layer at higher-than-screen resolution by zooming in, panning and screen grabbing it in pieces, and merging the pieces using a tool like Adobe Photoshop. And by measuring distances between known points, and/or carefully keeping track of scale, it is possible to accurately position figures and annotations.</p></li>
 <li><p><a href="https://earth.google.com/">Google Earth</a>: An in-browser tool that allows you to view and add data layers with high-resolution Google imagery. There are some fee based services in Google Earth, and you may need a plan to view some features. Historical satellite imagery is available.</p></li>
 <li><p><a href="https://www.mapbox.com/">Mapbox</a>: Mapbox has more features available for mobile users. Maps can be viewed and edited on mobile devices.</p></li>
-<li><p><a href="https://www.google.com/maps">OpenStreetMaps</a>: OpenStreetMaps is open source and managed and created by users worldwide. This data can also be downloaded and added to GIS software like ArcGIS Pro or QGIS.</p></li>
+<li><p><a href="https://www.openstreetmap.org/">OpenStreetMap</a>: OpenStreetMap is open source and managed and created by users worldwide. This data can also be downloaded and added to GIS software like ArcGIS Pro or QGIS.</p></li>
 <li><p><a href="https://caltopo.com">CalTopo</a> comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription.</p></li>
 </ul>
 <hr>
