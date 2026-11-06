@@ -31,7 +31,7 @@ Our goal is to develop a map of the UCSB campus that illustrates the current bic
 
 Our final interactive map is also embedded below:
 
- <arcgis-embedded-map style="height:600px;width:700px;" item-id="99931eb33b1144598bdecd5c21b7c8d8" theme="light" heading-enabled legend-enabled information-enabled share-enabled time-zone-label-enabled center="-119.84576230906848,34.41226485167855"scale="18055.954822" portal-url="https://ucsb.maps.arcgis.com"></arcgis-embedded-map>
+<arcgis-embedded-map style="height:600px;width:700px;" item-id="99931eb33b1144598bdecd5c21b7c8d8" theme="light" heading-enabled legend-enabled information-enabled share-enabled time-zone-label-enabled center="-119.84576230906848,34.41226485167855" scale="18055.954822" portal-url="https://ucsb.maps.arcgis.com"></arcgis-embedded-map>
 
 As we will discuss at the end of this lesson, there are many ways of making such a map without using a GIS tool. In fact, in many cases GIS is overkill, both because most of the features GIS tools provide will not be used and because the GIS interface can be cumbersome. But an advantage of GIS is that it opens up the possibility of treating map elements as data, and that in turn opens up and provides an introduction to the world of spatial analysis.
 
@@ -72,7 +72,7 @@ Along the top of the page, is the main tool bar.
 
 Open a new, empty map by clicking `Map` on your top menu bar.
 
-![Opening a new empty map](images/new_empty_map.png){#fig-emptymap size="50%" fig-align="center"}
+![Opening a new empty map](images/new_empty_map.png){#fig-emptymap width="50%" fig-align="center"}
 
 ## Main Map components
 
@@ -161,7 +161,7 @@ For our map, the recommended order from top to bottom should be:
 
 To reorder the layers, click and hold on a layer name in the Layers panel, drag it to the desired position, and release.
 
-::: {#fig-addinglayer}
+::: {#fig-reorderlayers}
 ```{=html}
 <video controls autoplay loop muted playsinline width="100%">
   <source src="images/workshop1/Step1/reorder-layers.mp4" type="video/mp4">
@@ -188,7 +188,7 @@ Your data can be visualized, selected, or analysed based on the columns of the a
 ::: {.callout-note collapse="true" title="Save often."}
 Now that you have added the layers to your map, it's a good idea to save it again.
 
-![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas width="30%" fig-align="center"}
+![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas-step1 width="30%" fig-align="center"}
 
 In there, you can add a title, tags, and a short description of your map.
 :::
@@ -227,7 +227,9 @@ To achieve this, we can adjust the symbology of the `UCSB Campus Buildings 2026`
 
 - Click on the layer `UCSB Campus Buildings 2026` to open its properties panel.
 - On the right side panel, click on the `Styles` button (the second button from the top).
-- In the Styles panel, go to the **Chose attributes** section, and click on the `+ Field` button. This will show you the available attributes for this layer. ![List of available attributes for the UCSB Campus Buildings 2026 layer](images/workshop1/Step2/attributes-list.png){#fig-attributes width="30%" fig-align="center"}
+- In the Styles panel, go to the **Chose attributes** section, and click on the `+ Field` button. This will show you the available attributes for this layer.
+
+![List of available attributes for the UCSB Campus Buildings 2026 layer](images/workshop1/Step2/attributes-list.png){#fig-attributes width="30%" fig-align="center"}
 
 To explore the values of the attributes, you can click on the (i) icon next to the attribute name. This will show you the metadata for that attribute and a list with its top 10 values. 
 
@@ -242,7 +244,9 @@ We can select a color ramp that better fits our map:
 - In the Styles panel, click on the `Style options` button in **Types (unique symbols)** section.
 - Click on the edit button (the pencil icon) next to the color ramp in the Symbol style list.
 - In the Symbol style panel, click on the edit button (the pencil icon) next to the color ramp in the Colors section.
-- Select the *Stone and Gravel* color ramp. Changes will be applied immediately to the map. ![Changing the color ramp for the BLDGTYPE attribute](images/workshop1/Step2/change-color-ramp.png){#fig-changecolorramp width="90%" fig-align="center"}
+- Select the *Stone and Gravel* color ramp. Changes will be applied immediately to the map.
+
+![Changing the color ramp for the BLDGTYPE attribute](images/workshop1/Step2/change-color-ramp.png){#fig-changecolorramp width="90%" fig-align="center"}
 
 In this specific layer we also have a category with no label and zero records. We can remove this category by clicking the check box next to it and selecting `Remove` from the contextual menu.
 
@@ -253,7 +257,10 @@ In this specific layer we also have a category with no label and zero records. W
 Finally, we are interested in displaying bike paths from the `UCSB neighborhood paths and roads` layer that also contains roads, pathways and other features. We can filter the categories we are interested in using the filter function on the right sidebar.
 
 -   Click on the layer `UCSB neighborhood paths and roads` to select it.
--   Click on the `Filter` button on the right sidebar (third from top). ![Adding a filter to the road layer](images/workshop1/Step2/symbology-filter-road.png){#fig-filter-selection fig-align="center"}
+-   Click on the `Filter` button on the right sidebar (third from top).
+
+    ![Adding a filter to the road layer](images/workshop1/Step2/symbology-filter-road.png){#fig-filter-selection fig-align="center"}
+
 -   Click `Add new`
 -   In the condition box, choose the `highway` field and the `includes` and select `cycleway`
 -   Don't forget to save with the button at the bottom!
@@ -270,12 +277,14 @@ Because bike paths are relevant to our map, we can change the color to make them
 
 ![Changing the color of the bike paths](images/workshop1/Step2/change-color-road.png){#fig-changecolorroad width="90%" fig-align="center"}
 
-- Change the width of the line to 2 px to match the width of the basemap roads. ![Changing the width of the bike paths](images/workshop1/Step2/change-width-road.png){#fig-changewidthroad width="90%" fig-align="center"}
+- Change the width of the line to 2 px to match the width of the basemap roads.
+
+![Changing the width of the bike paths](images/workshop1/Step2/change-width-road.png){#fig-changewidthroad width="90%" fig-align="center"}
 
 ::: {.callout-note collapse="true" title="Save often."}
 Now that you have customized the symbology of your layers, it's a good idea to save your map again.
 
-![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas width="30%" fig-align="center"}
+![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas-step2 width="30%" fig-align="center"}
 
 In there, you can add a title, tags, and a short description of your map.
 :::
@@ -435,7 +444,7 @@ There are many ways of making a simple map. Here are some alternative approaches
 
 -   [Mapbox](https://www.mapbox.com/): Mapbox has more features available for mobile users. Maps can be viewed and edited on mobile devices.
 
--   [OpenStreetMaps](https://www.google.com/maps): OpenStreetMaps is open source and managed and created by users worldwide. This data can also be downloaded and added to GIS software like ArcGIS Pro or QGIS.
+-   [OpenStreetMap](https://www.openstreetmap.org/): OpenStreetMap is open source and managed and created by users worldwide. This data can also be downloaded and added to GIS software like ArcGIS Pro or QGIS.
 
 -   [CalTopo](https://caltopo.com) comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription.
 
