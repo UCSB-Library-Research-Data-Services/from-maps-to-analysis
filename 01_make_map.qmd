@@ -97,7 +97,7 @@ Feature layers are the layers you add on top of your basemap. They are the main 
 
 ## Save your work - Save early, save often
 
-![open your menu bar to find the `save` icon](images/workshop1/Step1/save-as.png){#fig-saveas width="30%" fig-align="center"}
+![Open your menu bar to find the `Save and open` icon](images/save.png){#fig-saveicon width="30%" fig-align="center"}
 
 -   There will be a blue dot next to the `save` icon until you save
 -   You can organize all of your content into folders -- Let's make a folder for all of our work today. **bike_map_workshop**
