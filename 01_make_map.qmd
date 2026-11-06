@@ -277,15 +277,15 @@ Now that you have customized the symbology of your layers, it's a good idea to s
 In there, you can add a title, tags, and a short description of your map.
 :::
 
-### Select a better basemap
+### Select a different basemap
 
-After adding the layers and customizing their symbology, we have a good, almost ready map. However, the current basemap (Topographic) is a bit too busy and makes it hard to see the features we added. Let's change it to a simpler basemap using the `Basemap` option in the left menu bar.
+After adding the layers and customizing their symbology, we have a good, almost ready map. However, the current basemap (Topographic) is a bit too busy and makes it hard to see the features we added. Let's change it to a different basemap using the `Basemap` option in the left menu bar.
 
 ![Basemap option in the left menu bar](images/workshop1/Step2/basemap-menu-location.png){#fig-basemapoption width="40%" fig-align="center"}
 
-From the basemap gallery, we can select a simpler basemap. For this example, we selected the `Light Gray Canvas` basemap, which provides a clean background that makes our features stand out.
+From the basemap gallery, we can select another basemap. In our case, we will select the **Terrain with Labels** basemap, which is a lighter version of the Topographic basemap. This will make our features stand out more and make the map easier to read.
 
-![Map with Light Gray Canvas basemap](images/workshop1/Step2/basemap-light-gray-canvas.png){#fig-lightgray width="90%" fig-align="center"}
+![Map with Light Gray Canvas basemap](images/workshop1/Step2/basemap-topo-labels-canvas.png){#fig-topolabels width="90%" fig-align="center"}
 
 **Don't forget to save your map after making these changes!**
 
