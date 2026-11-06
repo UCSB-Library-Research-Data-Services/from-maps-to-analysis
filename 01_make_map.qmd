@@ -257,7 +257,25 @@ Finally, we are interested in displaying bike paths from the `UCSB neighborhood 
 
 ![Filtering out the bike paths](images/workshop1/Step2/symbology-road-conditional.png){#fig-filter-on fig-align="center"}
 
-As a result, you will see that the bike paths are now more transparent for higher speed limits and less transparent for lower speed limits.
+Because bike paths are relevant to our map, we can change the color to make them stand out more. To do this we can change the symbol color to a warm, earthy ochre color that contrasts with the blue of the bike racks and colors of the basemap.
+
+- Click on the layer `UCSB neighborhood paths and roads` to select it.
+- Click on the `Styles` button on the right sidebar (second from top).
+- In the Styles panel, click on the `Style options` button in **Types (unique symbols)** section.
+- Click on the edit button (the pencil icon) next to the symbol in the Symbol style list.
+- In the Symbol style panel, click on the color box and type in the <span data-bs-toggle="tooltip" title="A 6-digit code used to represent colors on screens" style="border-bottom: 1px dashed #666; cursor: help;">hex code</span> `d67d1e` for the ochre color. 
+
+![Changing the color of the bike paths](images/workshop1/Step2/change-color-road.png){#fig-changecolorroad width="90%" fig-align="center"}
+
+- Change the width of the line to 2 px to match the width of the basemap roads. ![Changing the width of the bike paths](images/workshop1/Step2/change-width-road.png){#fig-changewidthroad width="90%" fig-align="center"}
+
+::: {.callout-note collapse="true" title="Save often."}
+Now that you have customized the symbology of your layers, it's a good idea to save your map again.
+
+![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas width="30%" fig-align="center"}
+
+In there, you can add a title, tags, and a short description of your map.
+:::
 
 ### Select a better basemap
 
