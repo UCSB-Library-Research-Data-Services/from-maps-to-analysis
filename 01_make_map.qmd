@@ -8,7 +8,7 @@ format:
                 <script type="module" src="https://js.arcgis.com/5.1/embeddable-components/"></script>
 ---
 
-The goal of this lesson is to demonstrate how to make a simple map, suitable for inclusion in a publication, using ArcGIS Online. As an exercise, you will be creating a map that reflects your personal experience biking on the UCSB campus. We will follow a typical workflow of:
+The goal of this lesson is to demonstrate how to make a simple map, suitable for inclusion in a publication, using ArcGIS Online. As an exercise, you will be creating a map of the UCSB campus bicycle infrastructure and proposing a campus access improvement. We will follow a typical workflow of:
 
 1.  Start with a basemap
 2.  Add feature layers from the UCSB campus
@@ -21,7 +21,7 @@ ArcGIS Online is but one of many GIS tools in existence. We use it in this lesso
 
 # Our goal for today
 
-Our goal is to develop a map of the UCSB campus that illustrates the current bicycle infrastructure, specifically highlighting bike paths and racks. Additionally, the map will incorporate information about related incidents (crash, injuries, ...) and proposed improvements.
+Our goal is to develop a map of the UCSB campus that illustrates the current bicycle infrastructure, specifically highlighting bike paths and racks. Additionally, the map will incorporate annotations for proposed infrastructure improvements, such as a connecting bike path and a pedestrian safety dismount zone.
 
 [At the end of our session we should end up with something like this](https://arcg.is/0iD4jS0){target="_blank"}
 
@@ -108,7 +108,7 @@ Feature layers are the layers you add on top of your basemap. They are the main 
 
 # UCSB bike infrastructure map
 
-With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes as lines, bike racks as points, buildings as polygons) and to then annotate on top of that some of your personal experience as a bicyclist or pedestrian on campus.
+With that introduction, you now have the opportunity to start creating your own map. The goal here is to create a map of the bike infrastructure on campus (bike lanes as lines, bike racks as points, buildings as polygons) and to then annotate on top of that a campus access proposal for bicyclists and pedestrians.
 
 ## Step 1: Add layers to your map
 
