@@ -224,9 +224,7 @@ To achieve this, we can adjust the symbology of the `UCSB Campus Buildings 2026`
 
 - Click on the layer `UCSB Campus Buildings 2026` to open its properties panel.
 - On the right side panel, click on the `Styles` button (the second button from the top).
-- In the Styles panel, go to the **Chose attributes** section, and click on the `+ Field` button. This will show you the available attributes for this layer.
-
-![List of available attributes for the UCSB Campus Buildings 2026 layer](images/workshop1/Step2/attributes-list.png){#fig-attributes width="30%" fig-align="center"}
+- In the Styles panel, go to the **Chose attributes** section, and click on the `+ Field` button. This will show you the available attributes for this layer. ![List of available attributes for the UCSB Campus Buildings 2026 layer](images/workshop1/Step2/attributes-list.png){#fig-attributes width="30%" fig-align="center"}
 
 To explore the values of the attributes, you can click on the (i) icon next to the attribute name. This will show you the metadata for that attribute and a list with its top 10 values. 
 
@@ -241,28 +239,20 @@ We can select a color ramp that better fits our map:
 - In the Styles panel, click on the `Style options` button in **Types (unique symbols)** section.
 - Click on the edit button (the pencil icon) next to the color ramp in the Symbol style list.
 - In the Symbol style panel, click on the edit button (the pencil icon) next to the color ramp in the Colors section.
-- Select the *Stone and Gravel* color ramp. Changes will be applied immediately to the map.
-
-![Changing the color ramp for the BLDGTYPE attribute](images/workshop1/Step2/change-color-ramp.png){#fig-changecolorramp width="90%" fig-align="center"}
+- Select the *Stone and Gravel* color ramp. Changes will be applied immediately to the map. ![Changing the color ramp for the BLDGTYPE attribute](images/workshop1/Step2/change-color-ramp.png){#fig-changecolorramp width="90%" fig-align="center"}
 
 In this specific layer we also have a category with no label and zero records. We can remove this category by clicking the check box next to it and selecting `Remove` from the contextual menu.
 
 ![Removing the empty category from the BLDGTYPE attribute](images/workshop1/Step2/remove-empty-category.png){#fig-removeempty width="30%" fig-align="center"}
-
-
 
 ### Filter layer based on attribute
 
 Finally, we are interested in displaying bike paths from the `UCSB neighborhood paths and roads` layer that also contains roads, pathways and other features. We can filter the categories we are interested in using the filter function on the right sidebar.
 
 -   Click on the layer `UCSB neighborhood paths and roads` to select it.
-
 -   Click on the `Filter` button on the right sidebar (third from top). ![Adding a filter to the road layer](images/workshop1/Step2/symbology-filter-road.png){#fig-filter-selection fig-align="center"}
-
 -   Click `Add new`
-
 -   In the condition box, choose the `highway` field and the `includes` and select `cycleway`
-
 -   Don't forget to save with the button at the bottom!
 
 ![Filtering out the bike paths](images/workshop1/Step2/symbology-road-conditional.png){#fig-filter-on fig-align="center"}
