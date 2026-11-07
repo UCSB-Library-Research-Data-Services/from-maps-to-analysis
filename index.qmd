@@ -2,7 +2,7 @@
 title: "From Maps to Analysis"
 author:
   - name: Julien Brun
-    url: https://brunj7.github.io/
+    url: https://www.library.ucsb.edu/staff/julien-brun
     orcid: 0000-0002-7751-6238
   - name: Jon Jablonski
     url: https://www.library.ucsb.edu/staff/jon-jablonski
