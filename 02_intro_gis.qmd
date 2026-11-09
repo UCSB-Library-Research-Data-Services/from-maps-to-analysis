@@ -60,7 +60,6 @@ do the following tasks:
 :::
 
 
-
 ::: {.callout-note collapse="false"}
 ## Save often
 
