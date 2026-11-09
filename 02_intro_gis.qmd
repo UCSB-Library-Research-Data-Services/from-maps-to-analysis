@@ -226,8 +226,6 @@ To do: put in screenshot with attribut table of raster here.
 :::
 
 
-:::
-
 #### Applying Color Schemes
 
 By default, continuous raster layers display using a grayscale "Stretch"
