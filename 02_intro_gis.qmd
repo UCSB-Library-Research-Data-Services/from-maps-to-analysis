@@ -68,6 +68,7 @@ Once satisfied, Don't forget to save your map!!
 
 Select "Save As" and add a title **"Goleta Trailhead Map - YourInitials"**, and a short description of your map.
 
+
 <hr>
 
 ## Preview: our end goal
