@@ -118,6 +118,15 @@ Raster data represents the landscape as a regular grid of square cells
     different spectral channels or bands (such as red, green, blue, and
     near-infrared bands in aerial photography or satellite imagery).
 
+Below is a single band raster. The value of each pixel is elevation.
+
+![](images/workshop2/wkshp_2_dem_example.png)
+
+Below is an 8-band raster with bands 7 (near IR) as red, band 3 as
+green, and 'coastal blue' as blue.
+
+![](images/workshop2/false_color.png)
+
 ## The Story So Far
 
 In the first workshop, we created a bicycle map of campus and Isla Vista
@@ -153,7 +162,8 @@ area:
     roads to distinguish bike-friendly streets from arterial highways.
 
 -   TO DO \*
--   screenshot of map with roads symbolized for bikes. Map 1 currently has default blue.
+-   screenshot of map with roads symbolized for bikes. Map 1 currently
+    has default blue.
 
 ::: callout-tip
 Compare the previous road file to this one
