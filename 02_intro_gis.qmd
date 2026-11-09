@@ -153,7 +153,7 @@ area:
     roads to distinguish bike-friendly streets from arterial highways.
 
 -   TO DO \*
--   screenshot of map with roads symbolized for bikes
+-   screenshot of map with roads symbolized for bikes. Map 1 currently has default blue.
 
 ::: callout-tip
 Compare the previous road file to this one
