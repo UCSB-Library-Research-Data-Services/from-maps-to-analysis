@@ -60,6 +60,7 @@ do the following tasks:
 :::
 
 
+
 ::: {.callout-note collapse="false"}
 ## Save often
 
@@ -166,6 +167,7 @@ area:
 3.  Open the attribute table to inspect fields such as highway
     classification, road surface, and speed limits, and symbolize the
     roads to distinguish bike-friendly streets from arterial highways.
+4. Filter out the bike paths
 
 
 ::: {.callout-tip collapse="false"}
@@ -175,6 +177,7 @@ area:
 1. Increase the line width to 3px
 :::
 
+![Map with UCSB & local bike insfrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths" width="90%" fig-align="center"}
 
 ## Adding Raster Data
 
@@ -194,7 +197,7 @@ grayscale, with low values black and high values white.
 
 Your map with DEM should look something like this by default:
 
-![](images/workshop2/wkshp2_map_2_defaultDEM.png){fig-alt="By default, DEMs appear as almost black for low elevations to white for high elevations"}
+![Digital Elevation Model added to the map](images/workshop2/wkshp2_map_2_defaultDEM.png){fig-alt="By default, DEMs appear as almost black for low elevations to white for high elevations"  width="90%" fig-align="center"}
 
 Each pixel, or cell, in our DEM represents bare-earth surface elevation
 relative to a vertical datum (mean sea level). The `ucsb_local_dem`
@@ -208,6 +211,7 @@ A DEM is an example of a **continuous raster** as the values stored in each cell
 In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
+
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: Does our DEM contain negative values? Why?
@@ -289,8 +293,7 @@ theoretical bike ride?
 
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
 
-
-## Multi-band Rasters
+### Multi-band Rasters
 
 So far we have worked with single-channel, or 1-band rasters. However,
 perhaps we are more familiar with 3-channel images, because our eyes see
@@ -308,7 +311,44 @@ Labs, a private satellite firm. It's fleet of PlanetScope satellites
 captures imagery in 8 bandwidth divisions of the electromagnetic
 spectrum. 8-band images. Let's add one of those layers now:
 
--   placeholder for Planet image of Goleta
+
+**placeholder for Planet image of Goleta**
+
+
+## Layer Management, Rasters, and Additional Vectors
+
+1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
+    on top of the raster elevation layers in the layer stack so they are
+    not hidden.
+
+2.  **Imagery Layers vs. Basemaps**:
+
+    -   An **basemap** sits at the bottom of the map canvas, serving
+        purely as a static background context. Esri has options that are
+        satellite and aerial views.
+    -   An **imagery layer** is a data layer added to your map stack. It
+        can be re-ordered above or below other layers, adjusted with
+        transparency and blend modes, queried for pixel values, and
+        analyze for groundcover characteristics.
+        
+        
+**Time to save our map!!!**
+
+::: callout-note
+## Esri ArcGIS Online Credits
+
+-   All ArcGIS Online accounts created under the UCSB site license are
+    allocated **1000 service credits** per license year.
+-   **Transactions**: Some analysis operations and storage consume
+    service credits. For more information, visit Esri's [Understand
+    Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
+    page.
+-   **Manage your content**: Periodically review and delete unnecessary
+    hosted layers and analysis outputs to conserve credits.
+-   **Data Stewardship**: Objects stored in ArcGIS Online should be
+    considered ephemeral. Your content access depends on the UCSB
+    Library's Higher Education Site License.
+:::
 
 It's initial appearance is dark -- work on its visualization. Here are
 some good settings to use:
