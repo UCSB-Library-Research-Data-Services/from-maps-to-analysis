@@ -68,11 +68,6 @@ Once satisfied, Don't forget to save your map!!
 ![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas-step1 width="30%" fig-align="center"}
 
 Select "Save As" and add a title **"Goleta Trailhead Map - YourInitials"**, and a short description of your map.
-<<<<<<< HEAD
-
-=======
-:::
->>>>>>> c25053c (add printscreen for starting map)
 
 <hr>
 
@@ -87,10 +82,7 @@ YES WE KNOW THIS ISN'T HERE YET
 \*\* link and screenshot of finished map goes here. [Work in progress
 version: (https://arcg.is/1yz0KP3)](https://arcg.is/1yz0KP3)
 
-<<<<<<< HEAD
-=======
 
->>>>>>> c25053c (add printscreen for starting map)
 ## Geographic data
 
 Geographic data generally falls into two primary models: **vector** and
@@ -175,14 +167,7 @@ area:
 3.  Open the attribute table to inspect fields such as highway
     classification, road surface, and speed limits, and symbolize the
     roads to distinguish bike-friendly streets from arterial highways.
-<<<<<<< HEAD
 
--   TO DO \*
--   screenshot of map with roads symbolized for bikes. Map 1 currently
-    has default blue.
-=======
-4. Filter out the bike paths
->>>>>>> c25053c (add printscreen for starting map)
 
 ::: {.callout-tip collapse="false"}
 ## Modify bike path symbology
@@ -191,16 +176,11 @@ area:
 1. Increase the line width to 3px
 :::
 
-<<<<<<< HEAD
-## Adding Raster Data
-=======
-![Map with UCSB & local bike insfrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths" width="90%" fig-align="center"}
 
-## Working with Raster Data
->>>>>>> c25053c (add printscreen for starting map)
+## Adding Raster Data
 
 When outside of ArcGIS Online, geospatial raster data comes in many
-different forms. TIFFs, Grids, netCDF, iiif, web map services. Too many
+different formats. TIFFs, Grids, netCDF, iiif, web map services. Too many
 to list!
 
 -   ArcGIS Online variations: while these all start somewhere as TIFFs,
@@ -213,9 +193,6 @@ Let's add a Digital Elevation Model to out map: `ucsb_local_dem`. By
 default, a `single channel` or `one band` raster is displayed as
 grayscale, with low values black and high values white.
 
-The value of each pixel in a DEM represents elevation. What do you think
-are the units of `ucsb_local_dem`?
-
 Your map with DEM should look something like this by default:
 
 ![](images/workshop2/wkshp2_map_2_defaultDEM.png){fig-alt="By default, DEMs appear as almost black for low elevations to white for high elevations"}
@@ -225,7 +202,9 @@ relative to a vertical datum (mean sea level). The `ucsb_local_dem`
 dataset was derived from a high-resolution USGS LiDAR survey (3D
 Elevation Program (3DEP)).
 
-A DEM is an example of a continuous raster as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space alon. Other examples of continuous raster would be precipitation measurements, air quality index, ocean salinity, or distance from a road.
+**POP QUIZ:** What do you think are the units of `ucsb_local_dem`?
+
+A DEM is an example of a **continuous raster** as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space alon. Other examples of continuous raster would be precipitation measurements, air quality index, ocean salinity, or distance from a road.
 
 In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
