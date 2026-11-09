@@ -210,6 +210,8 @@ below-and-above zero diverging ramp or an elevation palette).
 
 ![](images/workshop2/dem_options.png)
 
+Here is below an example of a widely used color scale for DEM, with lower elevation display in blue and green and higher elevation in brown and white.
+
 ![Digital Elevation Model with color sclae](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and gree for lower elevation" width="90%" fig-align="center"}
 
 
@@ -255,7 +257,9 @@ continuous dataset. You can call it derivative data.
 
 We will learn how it was made in workshop 3, but for now we will use it
 to examine, with our eyes, where the steepest bike routes up into our
-foothills are: ![](images/workshop2/roads_over_slope.png)
+foothills are. Add this raster layer by searching for `SantaBarbara_slope` within the UCSB organization: 
+
+![](images/workshop2/roads_over_slope.png)
 
 **POP QUIZ:** Below same slope layer, zoomed in to campus, and
 symbolized with a divergent color scheme. What does this tell you is
@@ -290,8 +294,6 @@ private satellite firm. Let's add one of those layers now:
 
 ## Layer Management, Rasters, and Additional Vectors
 
-Add in the bus stop layer
-
 1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
     on top of the raster elevation layers in the layer stack so they are
     not hidden.
@@ -305,7 +307,9 @@ Add in the bus stop layer
         can be re-ordered above or below other layers, adjusted with
         transparency and blend modes, queried for pixel values, and
         analyze for groundcover characteristics.
-    -   Below we will add a Planet satellite view to campus to explore.
+        
+        
+**Time to save our map!!!**
 
 ::: callout-note
 ## Esri ArcGIS Online Credits
