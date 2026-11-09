@@ -44,7 +44,7 @@ Let's start a new map for the larger campus area and its bicycle infrastructure
 1. Log on to ArcGIS Online [**https://ucsb.maps.arcgis.com**](https://ucsb.maps.arcgis.com){target="_blank"}. **Sign on with your UCSB NetID**, do not use the ArcGIS login!
 1. Open a new, empty map by clicking `Map` on your top menu bar.
    ![ArcGIS Online main menu bar](images/main-menu-bar.png){#fig-menubar width="90%" fig-align="center"}
-1. From the **Layers** panel, click on the **Add** layer button. Search `My organization` for **UCSB Campus Buildings 2026 **. Choose the top result.
+1. From the **Layers** panel, click on the **Add** layer button. Search `My organization` for **UCSB Campus Buildings 2026**. Choose the top result.
 
 ::: {.callout-tip collapse="false"}
 ## Challenge: Workshop 1 Recap
@@ -56,6 +56,7 @@ do the following tasks:
 1.  Add symbology to the building layer using the `BLDGTYPE` column.  
 1.  Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
 1.  Experiment with the dot size and color for the bike racks.
+1.  Change the default basemap to `Light Gray Canvas`
 :::
 
 
@@ -67,7 +68,11 @@ Once satisfied, Don't forget to save your map!!
 ![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas-step1 width="30%" fig-align="center"}
 
 Select "Save As" and add a title **"Goleta Trailhead Map - YourInitials"**, and a short description of your map.
+<<<<<<< HEAD
 
+=======
+:::
+>>>>>>> c25053c (add printscreen for starting map)
 
 <hr>
 
@@ -82,6 +87,10 @@ YES WE KNOW THIS ISN'T HERE YET
 \*\* link and screenshot of finished map goes here. [Work in progress
 version: (https://arcg.is/1yz0KP3)](https://arcg.is/1yz0KP3)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c25053c (add printscreen for starting map)
 ## Geographic data
 
 Geographic data generally falls into two primary models: **vector** and
@@ -166,25 +175,29 @@ area:
 3.  Open the attribute table to inspect fields such as highway
     classification, road surface, and speed limits, and symbolize the
     roads to distinguish bike-friendly streets from arterial highways.
+<<<<<<< HEAD
 
 -   TO DO \*
 -   screenshot of map with roads symbolized for bikes. Map 1 currently
     has default blue.
+=======
+4. Filter out the bike paths
+>>>>>>> c25053c (add printscreen for starting map)
 
 ::: {.callout-tip collapse="false"}
-Compare the previous road file to this one
+## Modify bike path symbology
 
-Which vector layers in the map are: --points --lines --polygons
+1. Replace the "<Null>" in the legend with "Bike path"
+1. Increase the line width to 3px
 :::
 
-::: {.callout-note}
-Keeping a clean workspace
-
-let's not forget to remove old layers from the current map (ie: the old
-roads roads)
-:::
-
+<<<<<<< HEAD
 ## Adding Raster Data
+=======
+![Map with UCSB & local bike insfrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths" width="90%" fig-align="center"}
+
+## Working with Raster Data
+>>>>>>> c25053c (add printscreen for starting map)
 
 When outside of ArcGIS Online, geospatial raster data comes in many
 different forms. TIFFs, Grids, netCDF, iiif, web map services. Too many
@@ -295,40 +308,6 @@ theoretical bike ride?
 
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
 
-## Layer Management, Rasters, and Additional Vectors
-
-Add in the bus stop layer
-
-1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
-    on top of the raster elevation layers in the layer stack so they are
-    not hidden.
-
-2.  **Imagery Layers vs. Basemaps**:
-
-    -   An **basemap** sits at the bottom of the map canvas, serving
-        purely as a static background context. Esri has options that are
-        satellite and aerial views.
-    -   An **imagery layer** is a data layer added to your map stack. It
-        can be re-ordered above or below other layers, adjusted with
-        transparency and blend modes, queried for pixel values, and
-        analyze for groundcover characteristics.
-    -   Below we will add a Planet satellite view to campus to explore.
-
-::: callout-note
-#### Esri ArcGIS Online Credits
-
--   All ArcGIS Online accounts created under the UCSB site license are
-    allocated **1000 service credits** per license year.
--   **Transactions**: Some analysis operations and storage consume
-    service credits. For more information, visit Esri's [Understand
-    Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
-    page.
--   **Manage your content**: Periodically review and delete unnecessary
-    hosted layers and analysis outputs to conserve credits.
--   **Data Stewardship**: Objects stored in ArcGIS Online should be
-    considered ephemeral. Your content access depends on the UCSB
-    Library's Higher Education Site License.
-:::
 
 ## Multi-band Rasters
 
@@ -369,6 +348,23 @@ At this point your map should look something like this:
 ![](images/workshop2/wkshp2_map_5.png)
 
 ## Importing data into ArcGIS Online
+
+::: callout-note
+## Esri ArcGIS Online Credits
+
+-   All ArcGIS Online accounts created under the UCSB site license are
+    allocated **1000 service credits** per license year.
+-   **Transactions**: Some analysis operations and storage consume
+    service credits. For more information, visit Esri's [Understand
+    Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
+    page.
+-   **Manage your content**: Periodically review and delete unnecessary
+    hosted layers and analysis outputs to conserve credits.
+-   **Data Stewardship**: Objects stored in ArcGIS Online should be
+    considered ephemeral. Your content access depends on the UCSB
+    Library's Higher Education Site License.
+:::
+
 
 Uploading a raster image to ArcGIS Online takes up storage, so we aren't
 going to do that. However we can also add vector and tabular data to our
@@ -460,10 +456,10 @@ There are plethora of CRSs that all have different accuracy and other
 advantages depending on your location and extent of your area of
 interest. Here is a good website to look at the different CRSs:
 <https://epsg.io/>
-
-**Examine the csv file: does it tell you anything about the coordinate
-system that we are dealing with?**
 :::
+
+**POP QUIZ:** Examine the csv file - does it tell you anything about the coordinate
+system that we are dealing with?
 
 ::: {.callout-tip collapse="false"}
 ## Challenge - Make the trailhead layer look nice
