@@ -156,13 +156,13 @@ area:
 -   TO DO \*
 -   screenshot of map with roads symbolized for bikes
 
-::: callout-tip
+::: {.callout-tip collapse="false"}
 Compare the previous road file to this one
 
 Which vector layers in the map are: --points --lines --polygons
 :::
 
-::: callout-note
+::: {.callout-note}
 Keeping a clean workspace
 
 let's not forget to remove old layers from the current map (ie: the old
@@ -196,15 +196,16 @@ relative to a vertical datum (mean sea level). The `ucsb_local_dem`
 dataset was derived from a high-resolution USGS LiDAR survey (3D
 Elevation Program (3DEP)).
 
-A DEM is an example of a continuous raster as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space alon. Other examples of continuous raster would be precipitation measurements, chemical concentrations, suitability models, or distance from a road.
+A DEM is an example of a continuous raster as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space alon. Other examples of continuous raster would be precipitation measurements, air quality index, ocean salinity, or distance from a road.
 
 In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
 (make sure we are feet and not meters)
 
-::: callout-tip
+::: {.callout-tip}
 ## Challenge
+
 Does our DEM contain negative values? Why?
 :::
 
@@ -221,7 +222,7 @@ below-and-above zero diverging ramp or an elevation palette).
 -   insert screenshot of results of divergent DEM
 
 
-### Categorical Rasters
+### Categorical Raster - Land Cover
 
 **Categorical vs. Continuous Data**
 
