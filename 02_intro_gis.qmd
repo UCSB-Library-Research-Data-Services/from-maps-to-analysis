@@ -8,15 +8,16 @@ editor:
 ## Learning Objectives
 
 This lesson focuses on learning more about the different types of
-geographic data and learning how to import and work with your own data in ArcGIS Online. 
-At the end of this workshop you will:
+geographic data and learning how to import and work with your own data
+in ArcGIS Online. At the end of this workshop you will:
 
-- Have a better understanding of the vector and raster geospatial data types
-- Know how to import external data into ArcGIS Online
-- Know how to edit or add data to a feature layer
-- Better understand the difference between continuous and categorical raster layers
-- Know how to export data from ArcGIS Online to your local machine
-
+-   Have a better understanding of the vector and raster geospatial data
+    types
+-   Know how to import external data into ArcGIS Online
+-   Know how to edit or add data to a feature layer
+-   Better understand the difference between continuous and categorical
+    raster layers
+-   Know how to export data from ArcGIS Online to your local machine
 
 ## Review: Annotations vs. Data
 
@@ -38,23 +39,33 @@ relationships.
 
 ### Workshop 1 Recap
 
-Let's start a new map for the larger campus area and its bicycle infrastructure
+Let's start a new map for the larger campus area and its bicycle
+infrastructure
 
-1. Log on to ArcGIS Online [**https://ucsb.maps.arcgis.com**](https://ucsb.maps.arcgis.com){target="_blank"}. **Sign on with your UCSB NetID**, do not use the ArcGIS login!
-1. Open a new, empty map by clicking `Map` on your top menu bar.
-   ![ArcGIS Online main menu bar](images/main-menu-bar.png){#fig-menubar width="90%" fig-align="center"}
-1. From the **Layers** panel, click on the **Add** layer button. Search `My organization` for **UCSB Campus Buildings**. Choose the top result.
-
+1.  Log on to ArcGIS Online
+    [**https://ucsb.maps.arcgis.com**](https://ucsb.maps.arcgis.com){target="_blank"}.
+    **Sign on with your UCSB NetID**, do not use the ArcGIS login!
+2.  Open a new, empty map by clicking `Map` on your top menu bar.
+    ![ArcGIS Online main menu
+    bar](images/main-menu-bar.png){#fig-menubar width="90%"
+    fig-align="center"}
+3.  From the **Layers** panel, click on the **Add** layer button. Search
+    `My organization` for **UCSB Campus Buildings**. Choose the top
+    result.
 
 ::: {.callout-tip collapse="false"}
 ## Challenge: Workshop 1 Recap
 
-Using the [workshop 1 materials](01_make_map.qmd#step-1-add-layers-to-your-map) as reference, do the following tasks:
+Using the [workshop 1
+materials](01_make_map.qmd#step-1-add-layers-to-your-map) as reference,
+do the following tasks:
 
-1.  Add symbology to the building layer using the `b_use` column.  
-1.  Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
-1.  Experiment with the dot size and color for the bike racks.
-1.  Perform a **Save As** before moving to workshop 2 and name your map **Goleta bike map**
+1.  Add symbology to the building layer using the `b_use` column.\
+2.  Repeat the above steps to add the feature layer `bike_racks_ucsb` to
+    your map.
+3.  Experiment with the dot size and color for the bike racks.
+4.  Perform a **Save As** before moving to workshop 2 and name your map
+    **Goleta bike map**
 :::
 
 <hr>
@@ -65,10 +76,10 @@ Our finished product for this session will be the
 `Workshop Goleta bike map`. We will take time to preview this finished
 map before building it step by step.
 
+YES WE KNOW THIS ISN'T HERE YET
+
 \*\* link and screenshot of finished map goes here. [Work in progress
 version: (https://arcg.is/1yz0KP3)](https://arcg.is/1yz0KP3)
-
-
 
 ## Geographic data
 
@@ -96,6 +107,8 @@ discrete geographic features using coordinate geometry:
 Every shape is tied to a row in an attribute table, where each column
 holds specific properties describing that feature. For example ...
 
+* KRISTI ISSUE #86 *
+
 ### Raster Data
 
 Raster data represents the landscape as a regular grid of square cells
@@ -109,6 +122,14 @@ Raster data represents the landscape as a regular grid of square cells
     different spectral channels or bands (such as red, green, blue, and
     near-infrared bands in aerial photography or satellite imagery).
 
+Below is a single band raster. The value of each pixel is elevation.
+
+![](images/workshop2/wkshp_2_dem_example.png)
+
+Below is an 8-band raster with bands 7 (near IR) as red, band 3 as
+green, and 'coastal blue' as blue.
+
+![](images/workshop2/false_color.png)
 
 ## The Story So Far
 
@@ -145,7 +166,8 @@ area:
     roads to distinguish bike-friendly streets from arterial highways.
 
 -   TO DO \*
--   screenshot of map with roads symbolized for bikes
+-   screenshot of map with roads symbolized for bikes. Map 1 currently
+    has default blue.
 
 ::: callout-tip
 Compare the previous road file to this one
@@ -160,8 +182,7 @@ let's not forget to remove old layers from the current map (ie: the old
 roads roads)
 :::
 
-
-## Working with Raster Data
+## Adding Raster Data
 
 When outside of ArcGIS Online, geospatial raster data comes in many
 different forms. TIFFs, Grids, netCDF, iiif, web map services. Too many
@@ -180,7 +201,9 @@ grayscale, with low values black and high values white.
 The value of each pixel in a DEM represents elevation. What do you think
 are the units of `ucsb_local_dem`?
 
-\*\* do we need a screenshot of the DEM as it comes in by default? \*\*
+Your map with DEM should look something like this by default:
+
+![](images/workshop2/wkshp2_map_2_defaultDEM.png){fig-alt="By default, DEMs appear as almost black for low elevations to white for high elevations"}
 
 Each pixel, or cell, in our DEM represents bare-earth surface elevation
 relative to a vertical datum (mean sea level). The `ucsb_local_dem`
@@ -194,9 +217,15 @@ elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
 (make sure we are feet and not meters)
 
-::: callout-tip
-## Challenge
-Does our DEM contain negative values? Why?
+
+::: {.callout-tip collapse="true"}
+## Challenge: Does our DEM contain negative values? Why?
+
+## yes. because sea level. 
+To do: put in screenshot with attribut table of raster here. 
+:::
+
+
 :::
 
 #### Applying Color Schemes
@@ -211,7 +240,6 @@ below-and-above zero diverging ramp or an elevation palette).
 
 -   insert screenshot of results of divergent DEM
 
-
 ### Categorical Rasters
 
 **Categorical vs. Continuous Data**
@@ -221,36 +249,34 @@ consistent when you do so. Smaller numbers = less of some measurement.
 
 On the other hand, categorical data can be text or numeric. The value of
 any numbers used do not necessarily reflect any mathematical value, but
-it may. For example, while the values below have a natural order (3
-Little Piggies Construction Scale), the numbers are ordinal, but
+it may. For example, while the values below have a natural order (The 3
+Little Piggies Construction Scale), the numbers are *ordinal* but
 arbitrary:
 
 -   1 = reinforced concrete or steel beam
-
 -   2 = wood stick construction
-
 -   3 = baked brick masonry
-
 -   4 = adobe
-
 -   5 = sun brick / mud daub
-
 -   6 = straw bail
 
-While elevation is a **continuous raster** (values change smoothly
-along a numerical gradient representing a quantity), other rasters are 
-**categorical rasters** (e.g., land cover classification datasets from the Living
-Atlas, where integer cell values represent categories such as urban
-development, forest, or water).
+While elevation is a **continuous raster** (values change smoothly along
+a numerical gradient representing a quantity), other rasters are
+**categorical rasters** (e.g., land cover classification datasets from
+the Living Atlas, where integer cell values represent categories such as
+urban development, forest, or water).
 
 ![](images/workshop2/landcover_result.png)
 
+Show the legend to see the category names. Open the attribute table to
+compare it to what appears for vector data:
 
 ### Calculated Raster Data: Slope
 
-You can also perform calculations to turn a DEM into a slope layer. We already
-made this slope layer for you as it can be a computing intensive task. This is another 
-continuous dataset. You can call it derivative data.
+You can also perform calculations to turn a DEM into a slope layer. We
+already made this slope layer for you as it can be a computing intensive
+task. This is another continuous dataset. You can call it derivative
+data.
 
 We will learn how it was made in workshop 3, but for now we will use it
 to examine, with our eyes, where the steepest bike routes up into our
@@ -258,15 +284,16 @@ foothills are: ![](images/workshop2/roads_over_slope.png)
 
 **POP QUIZ:** Below same slope layer, zoomed in to campus, and
 symbolized with a divergent color scheme. What does this tell you is
-incorrect about something we said earlier regarding our DEM?
+incorrect about something we said earlier regarding our DEM? (DTM vs
+DSM)
 
 ![](images/workshop2/slope.png)
 
 Resymbolize your slope layer to a color scheme that makes sense to you.
-Look up into the foothills. Which paths look steepest?
+Look up into the foothills. Which paths look steepest for our
+theoretical bike ride?
 
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
-
 
 ## Layer Management, Rasters, and Additional Vectors
 
@@ -303,7 +330,6 @@ Add in the bus stop layer
     Library's Higher Education Site License.
 :::
 
-
 ## Multi-band Rasters
 
 So far we have worked with single-channel, or 1-band rasters. However,
@@ -317,11 +343,30 @@ what we see when we look at nature with our eyes. However, we can swap
 in other bandwidths of radiation, such as near infrared, or microwave,
 and see completely other things.
 
-The DREAM Lab hosts several satellite views of campus created by a
-private satellite firm. Let's add one of those layers now:
+The DREAM Lab hosts several satellite views of campus created by Planet
+Labs, a private satellite firm. It's fleet of PlanetScope satellites
+captures imagery in 8 bandwidth divisions of the electromagnetic
+spectrum. 8-band images. Let's add one of those layers now:
 
 -   placeholder for Planet image of Goleta
 
+It's initial appearance is dark -- work on its visualization. Here are
+some good settings to use:
+
+![](images/workshop2/wkshp2_map_5_planetscopesettings.png){fig-alt="settings as they appear in the lesson text."}
+
+Showing bands 6, 4, and 2 as Red, Green, and Blue respectively will give
+a good approximation of human vision. `Gamma` is a degree of adjustment
+which changes the mathematics of the values of pixels into ranges that
+match the combination of computer monitors and the human eye. Adjust
+this so that it appears most natural on your screen.
+
+Challenge: play with different band combinations. What do you thing Band
+1 is good for?
+
+At this point your map should look something like this:
+
+![](images/workshop2/wkshp2_map_5.png)
 
 ## Importing data into ArcGIS Online
 
@@ -351,16 +396,19 @@ device.
 
 -   Add layer from file
 
-![](images/workshop2/import_csv-add.png){fig-alt="Unfold the Add menu" width="40%"}
+![](images/workshop2/import_csv-add.png){fig-alt="Unfold the Add menu"
+width="40%"}
 
 -   Select "Your Device" and browse to the csv file you want to import
 
-![](images/workshop2/import_csv-file.png){fig-alt="Browse or drop file" width="80%"}
+![](images/workshop2/import_csv-file.png){fig-alt="Browse or drop file"
+width="80%"}
 
 -   Leave the default option "Create a hosted feature layer and add it
     to the map" and click Next
 
-![](images/workshop2/import_csv-layer.png){fig-alt="Select 'hosted feature'" width="80%"}
+![](images/workshop2/import_csv-layer.png){fig-alt="Select 'hosted feature'"
+width="80%"}
 
 -   Select the attributes you would like to import as well as rename
     fields as you see necessary. You can also use this step to rename
@@ -368,22 +416,26 @@ device.
     Rename "Title" as "Name". It is also a good practice to check that
     the field types are aligned with what you were expecting.
 
-![](images/workshop2/import_csv-field.png){fig-alt="Select the attributes you want to import and rename them as needed" width="100%"}
+![](images/workshop2/import_csv-field.png){fig-alt="Select the attributes you want to import and rename them as needed"
+width="100%"}
 
 -   Match the latitude and longitude information used by ArcGIS to
     generate the location with your data attributes.
 
-![](images/workshop2/import_csv-latlong.png){fig-alt="Match the Latitude and longitude attribute from your data with the information that ArcGIS will use to create the spatial locations" width="80%"}
+![](images/workshop2/import_csv-latlong.png){fig-alt="Match the Latitude and longitude attribute from your data with the information that ArcGIS will use to create the spatial locations"
+width="80%"}
 
 -   Save your new data layer under your user account creating a
     `ucsb_bike` folder if you have not one yet
 
-![](images/workshop2/import_csv-save.png){fig-alt="Interface to Save your new layer under your account" width="80%"}
+![](images/workshop2/import_csv-save.png){fig-alt="Interface to Save your new layer under your account"
+width="80%"}
 
 -   Zoom out to see the trailhead locations! Of course now we need to
     make it look better :)
 
-![](images/workshop2/import_csv-map.png){fig-alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity" width="100%"}
+![](images/workshop2/import_csv-map.png){fig-alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity"
+width="100%"}
 
 ::: {.callout-note collapse="false" title="CRS"}
 ## A note on Coordinate Reference Systems
@@ -424,14 +476,13 @@ system that we are dealing with?**
 -   Increase the point size
 :::
 
-
 ## Editing Data
 
 Potential narrative: adding the new ILP bike path to your own personal
 bike path layer.
 
-Highlight the best/favorite trails: <https://santabarbaraca.com/itinerary/best-hikes-in-santa-barbara/>
-
+Highlight the best/favorite trails:
+<https://santabarbaraca.com/itinerary/best-hikes-in-santa-barbara/>
 
 ## Exporting Data
 
@@ -450,18 +501,21 @@ menu at the top-left of your Map view and selecting Content.
     trailhead layer you imported from the CSV file to go to the Overview
     page of that layer.
 
-![](images/workshop2/export-overview.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads. "width="100%"}
+![](images/workshop2/export-overview.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads. "
+width="100%"}
 
 -   Unfold the menu on the right completely, select Export data, and
     choose the GeoJSON format.
 
-![](images/workshop2/export-overview_uncollapsed.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads with the option menu on the right uncollapsed and showing the Export Data option"width="100%"}
+![](images/workshop2/export-overview_uncollapsed.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads with the option menu on the right uncollapsed and showing the Export Data option"
+width="100%"}
 
 -   On the next window, leave the default options and choose your
     ucsb_bike folder as location. Click on Export. Note that exporting
     data can take some time, so be patient :)
 
-![](images/workshop2/export-geojson.png){fig-alt="Wizzard page to export a geojson file: title, Folder location, Categories, Tags and Summary are the available options" width="50%"}
+![](images/workshop2/export-geojson.png){fig-alt="Wizzard page to export a geojson file: title, Folder location, Categories, Tags and Summary are the available options"
+width="50%"}
 
 -   Once the export is completed, you should automatically be redirected
     to the Overview page of this new dataset. This time, Download should
@@ -471,16 +525,11 @@ menu at the top-left of your Map view and selecting Content.
 ![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option available"
 width="100%"}
 
-
 ## Completing the Story
 
 So where shall we ride our bicycles?
 
-
-
 <hr>
-
-
 
 ## How to improve your map
 
@@ -501,18 +550,19 @@ Shaded relief simulates how sunlight illuminates terrain, casting
 shadows based on the position of the sun measured as two angles: Azimuth
 and Altitude
 
-- **Azimuth**: The compass direction from which the illumination source
-  (the sun) originates, measured in degrees clockwise from north (0° =
-  North, 90° = East, 180° = South, 270° = West). In cartography, the sun
-  is traditionally positioned in the northwest (315°) or west (270°) to
-  match how the human brain interprets light and shadow, preventing an
-  optical illusion known as "relief inversion" where mountains appear as
-  valleys. For our map, we position the light source from the west.
-- **Altitude**: The angle of the sun above the horizon, measured from 0°
-  (level with the horizon at sunrise/sunset) to 90° (directly overhead
-  at solar noon). A lower altitude (e.g., 30°–45°, typical of low winter
-  sun) produces longer, more dramatic shadows that accentuate
-  ridgelines, canyons, and valleys.
+-   **Azimuth**: The compass direction from which the illumination
+    source (the sun) originates, measured in degrees clockwise from
+    north (0° = North, 90° = East, 180° = South, 270° = West). In
+    cartography, the sun is traditionally positioned in the northwest
+    (315°) or west (270°) to match how the human brain interprets light
+    and shadow, preventing an optical illusion known as "relief
+    inversion" where mountains appear as valleys. For our map, we
+    position the light source from the west.
+-   **Altitude**: The angle of the sun above the horizon, measured from
+    0° (level with the horizon at sunrise/sunset) to 90° (directly
+    overhead at solar noon). A lower altitude (e.g., 30°–45°, typical of
+    low winter sun) produces longer, more dramatic shadows that
+    accentuate ridgelines, canyons, and valleys.
 
 ![](images/workshop2/relief_options.png)
 
@@ -533,7 +583,6 @@ variety of hillshade basemaps in the Living Atlas. Also: that was a
 rather lengthy aside.
 
 Now would be an excellent point to save your map.
-
 
 ## Preview for Workshop 3: Looking Ahead to Spatial Analysis
 
@@ -569,4 +618,3 @@ and route difficulty:
 
 4.  Once joined, roads can be symbolized by slope steepness, allowing us
     to pinpoint the steepest hill climbs for our ride!
-
