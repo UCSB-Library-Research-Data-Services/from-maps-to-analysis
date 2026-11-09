@@ -43,7 +43,7 @@ Let's start a new map for the larger campus area and its bicycle infrastructure
 1. Log on to ArcGIS Online [**https://ucsb.maps.arcgis.com**](https://ucsb.maps.arcgis.com){target="_blank"}. **Sign on with your UCSB NetID**, do not use the ArcGIS login!
 1. Open a new, empty map by clicking `Map` on your top menu bar.
    ![ArcGIS Online main menu bar](images/main-menu-bar.png){#fig-menubar width="90%" fig-align="center"}
-1. From the **Layers** panel, click on the **Add** layer button. Search `My organization` for **UCSB Campus Buildings**. Choose the top result.
+1. From the **Layers** panel, click on the **Add** layer button. Search `My organization` for **UCSB Campus Buildings 2026 **. Choose the top result.
 
 
 ::: {.callout-tip collapse="false"}
@@ -51,10 +51,18 @@ Let's start a new map for the larger campus area and its bicycle infrastructure
 
 Using the [workshop 1 materials](01_make_map.qmd#step-1-add-layers-to-your-map) as reference, do the following tasks:
 
-1.  Add symbology to the building layer using the `b_use` column.  
+1.  Add symbology to the building layer using the `BLDGTYPE` column.  
 1.  Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
 1.  Experiment with the dot size and color for the bike racks.
-1.  Perform a **Save As** before moving to workshop 2 and name your map **Goleta bike map**
+:::
+
+
+::: {.callout-note collapse="true" title="Save often."}
+Once satisfied, Don't forget to save your map!! 
+
+![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas-step1 width="30%" fig-align="center"}
+
+Select "Save As" and add a title "Santa Barbara Trailhead Map - YourInitials", and a short description of your map.
 :::
 
 <hr>
@@ -413,13 +421,13 @@ interest. Here is a good website to look at the different CRSs:
 system that we are dealing with?**
 :::
 
-::: {.callout-tip collapse="true"}
+::: {.callout-tip collapse="false"}
 ## Challenge - Make the trailhead layer look nice
 
 -   Choose the trail `Difficulty` attribute to add a color ramp
--   Give a title to the legend
--   Reorder the fields so their are matching the difficulty order (and
+-   Reorder the categories so their are matching the difficulty order (and
     not the alphabetical one)
+-   Give a title to the legend
 -   Choose a good color ramp
 -   Increase the point size
 :::
