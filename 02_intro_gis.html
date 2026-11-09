@@ -168,18 +168,17 @@ window.Quarto = {
   <li><a href="#vector-data" id="toc-vector-data" class="nav-link" data-scroll-target="#vector-data">Vector Data</a></li>
   <li><a href="#raster-data" id="toc-raster-data" class="nav-link" data-scroll-target="#raster-data">Raster Data</a></li>
   </ul></li>
-  <li><a href="#the-story-so-far" id="toc-the-story-so-far" class="nav-link" data-scroll-target="#the-story-so-far">The Story So Far</a>
-  <ul class="collapse">
+  <li><a href="#the-story-so-far" id="toc-the-story-so-far" class="nav-link" data-scroll-target="#the-story-so-far">The Story So Far</a></li>
   <li><a href="#adding-new-material-to-your-map" id="toc-adding-new-material-to-your-map" class="nav-link" data-scroll-target="#adding-new-material-to-your-map">Adding New Material to Your Map</a></li>
-  </ul></li>
   <li><a href="#adding-raster-data" id="toc-adding-raster-data" class="nav-link" data-scroll-target="#adding-raster-data">Adding Raster Data</a>
   <ul class="collapse">
-  <li><a href="#digital-elevation-models-dem" id="toc-digital-elevation-models-dem" class="nav-link" data-scroll-target="#digital-elevation-models-dem">Digital Elevation Models (DEM)</a></li>
-  <li><a href="#categorical-rasters" id="toc-categorical-rasters" class="nav-link" data-scroll-target="#categorical-rasters">Categorical Rasters</a></li>
+  <li><a href="#continuous-raster---digital-elevation-models-dem" id="toc-continuous-raster---digital-elevation-models-dem" class="nav-link" data-scroll-target="#continuous-raster---digital-elevation-models-dem">Continuous Raster - Digital Elevation Models (DEM)</a></li>
+  <li><a href="#categorical-raster---land-cover" id="toc-categorical-raster---land-cover" class="nav-link" data-scroll-target="#categorical-raster---land-cover">Categorical Raster - Land Cover</a></li>
   <li><a href="#calculated-raster-data-slope" id="toc-calculated-raster-data-slope" class="nav-link" data-scroll-target="#calculated-raster-data-slope">Calculated Raster Data: Slope</a></li>
+  <li><a href="#multi-band-rasters" id="toc-multi-band-rasters" class="nav-link" data-scroll-target="#multi-band-rasters">Multi-band Rasters</a></li>
   </ul></li>
   <li><a href="#layer-management-rasters-and-additional-vectors" id="toc-layer-management-rasters-and-additional-vectors" class="nav-link" data-scroll-target="#layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</a></li>
-  <li><a href="#multi-band-rasters" id="toc-multi-band-rasters" class="nav-link" data-scroll-target="#multi-band-rasters">Multi-band Rasters</a></li>
+  <li><a href="#layer-management-raster-and-additiona-vectors" id="toc-layer-management-raster-and-additiona-vectors" class="nav-link" data-scroll-target="#layer-management-raster-and-additiona-vectors">Layer Management, Raster, and Additiona Vectors</a></li>
   <li><a href="#importing-data-into-arcgis-online" id="toc-importing-data-into-arcgis-online" class="nav-link" data-scroll-target="#importing-data-into-arcgis-online">Importing data into ArcGIS Online</a>
   <ul class="collapse">
   <li><a href="#creating-vector-layers-from-.csv-files" id="toc-creating-vector-layers-from-.csv-files" class="nav-link" data-scroll-target="#creating-vector-layers-from-.csv-files">Creating Vector Layers from .CSV files</a></li>
@@ -241,7 +240,7 @@ window.Quarto = {
 <ol type="1">
 <li>Log on to ArcGIS Online <a href="https://ucsb.maps.arcgis.com" target="_blank"><strong>https://ucsb.maps.arcgis.com</strong></a>. <strong>Sign on with your UCSB NetID</strong>, do not use the ArcGIS login!</li>
 <li>Open a new, empty map by clicking <code>Map</code> on your top menu bar. <img src="images/main-menu-bar.png" id="fig-menubar" class="img-fluid quarto-figure quarto-figure-center anchored" style="width:90.0%" alt="ArcGIS Online main menu bar"></li>
-<li>From the <strong>Layers</strong> panel, click on the <strong>Add</strong> layer button. Search <code>My organization</code> for <strong>UCSB Campus Buildings</strong>. Choose the top result.</li>
+<li>From the <strong>Layers</strong> panel, click on the <strong>Add</strong> layer button. Search <code>My organization</code> for <strong>UCSB Campus Buildings 2026</strong>. Choose the top result.</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
@@ -257,12 +256,39 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Using the <a href="./01_make_map.html#step-1-add-layers-to-your-map">workshop 1 materials</a> as reference, do the following tasks:</p>
 <ol type="1">
-<li>Add symbology to the building layer using the <code>b_use</code> column.<br>
+<li>Add symbology to the building layer using the <code>BLDGTYPE</code> column.<br>
 </li>
 <li>Repeat the above steps to add the feature layer <code>bike_racks_ucsb</code> to your map.</li>
 <li>Experiment with the dot size and color for the bike racks.</li>
-<li>Perform a <strong>Save As</strong> before moving to workshop 2 and name your map <strong>Goleta bike map</strong></li>
+<li>Change the default basemap to <code>Light Gray Canvas</code></li>
 </ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Save often
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Once satisfied, Don’t forget to save your map!!</p>
+<div id="fig-saveas-step1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-saveas-step1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/workshop1/Step1/save-as.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-saveas-step1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Save as dialog in ArcGIS Online
+</figcaption>
+</figure>
+</div>
+<p>Select “Save As” and add a title <strong>“Goleta Trailhead Map - YourInitials”</strong>, and a short description of your map.</p>
 </div>
 </div>
 </div>
@@ -306,7 +332,7 @@ window.Quarto = {
 </ul>
 <p>Below is a single band raster. The value of each pixel is elevation.</p>
 <p><img src="images/workshop2/wkshp_2_dem_example.png" class="img-fluid"></p>
-<p>Below is an 8-band raster with bands 7 (near IR) as red, band 3 as green, and ‘coastal blue’ as blue.</p>
+<p>Below is an 8-band raster with band #7 (near IR) as red, band #3 (green) as green, and band #1 (coastal blue) as blue. This type of image displays are often called “false-color” because they do not respect the RGB channel alignment. This can help to highloght some features, such as vegetation that has a strong signalin near infrared (NIR) wavelengths</p>
 <p><img src="images/workshop2/false_color.png" class="img-fluid"></p>
 </section>
 </section>
@@ -314,65 +340,63 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="the-story-so-far">The Story So Far</h2>
 <p>In the first workshop, we created a bicycle map of campus and Isla Vista using pre-existing data.</p>
 <p>Our goal for part 2 is to plan a challenging and comfortable bicycle route that leads from the UCSB campus into the surrounding Goleta community and the Santa Ynez foothills. To accomplish this, we need to expand beyond campus bike paths and incorporate regional road networks along with elevation data to analyze terrain and slope.</p>
-<section id="adding-new-material-to-your-map" class="level3">
-<h3 class="anchored" data-anchor-id="adding-new-material-to-your-map">Adding New Material to Your Map</h3>
-<p>Let’s set up our workspaces together. The layers for this workshop all have a wider extent than those from Workshop 1. For example, <a href="https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9">SantaBarbara_Merged_roads</a>** is an expanded street and bicycle path network covering the Goleta and Santa Barbara area, extracted from OpenStreetMap and an Esri Living Atlas layer. We have already excluded major highways from this layer–because we know you won’t want to bicycle on them.</p>
-<p>Add this layer now.</p>
+</section>
+<section id="adding-new-material-to-your-map" class="level2">
+<h2 class="anchored" data-anchor-id="adding-new-material-to-your-map">Adding New Material to Your Map</h2>
+<p>Let’s set up our workspaces together. The layers for this workshop all have a wider extent than those from Workshop 1. For example, <a href="https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9" target="_blank">SantaBarbara_Merged_roads</a> is an expanded street and bicycle path network covering the Goleta and Santa Barbara area, extracted from OpenStreetMap and an Esri Living Atlas layer. We have already excluded major highways from this layer – because we know you won’t want to bicycle on them.</p>
 <p>To examine routes beyond campus, we zoom out to the broader regional area:</p>
 <ol type="1">
 <li>Start with your freshly saved copy of the map in your personal workspace.</li>
 <li>Add the <code>SantaBarbara_Merged_roads</code> layer from your organization or the workshop group.</li>
 <li>Open the attribute table to inspect fields such as highway classification, road surface, and speed limits, and symbolize the roads to distinguish bike-friendly streets from arterial highways.</li>
+<li>Filter out the bike paths</li>
 </ol>
-<ul>
-<li>TO DO *</li>
-<li>screenshot of map with roads symbolized for bikes. Map 1 currently has default blue.</li>
-</ul>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+<span class="screen-reader-only">Tip</span>Modify bike path symbology
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p>Compare the previous road file to this one</p>
-<p>Which vector layers in the map are: –points –lines –polygons</p>
+<ol type="1">
+<li>Replace the “<null>” in the legend with “Bike path”</null></li>
+<li>Increase the line width to 3px</li>
+</ol>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/workshop2/w2_start_map.png" class="img-fluid figure-img" style="width:90.0%" alt="Starting map with UCSB buildings, Bike racks, and local bike paths"></p>
+<figcaption>Map with UCSB &amp; local bike insfrastructure</figcaption>
+</figure>
 </div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Keeping a clean workspace</p>
-<p>let’s not forget to remove old layers from the current map (ie: the old roads roads)</p>
-</div>
-</div>
-</section>
 </section>
 <section id="adding-raster-data" class="level2">
 <h2 class="anchored" data-anchor-id="adding-raster-data">Adding Raster Data</h2>
-<p>When outside of ArcGIS Online, geospatial raster data comes in many different forms. TIFFs, Grids, netCDF, iiif, web map services. Too many to list!</p>
+<p>When outside of ArcGIS Online, geospatial raster data comes in many different formats. TIFFs, Grids, netCDF, iiif, web map services. Too many to list!</p>
 <ul>
 <li>ArcGIS Online variations: while these all start somewhere as TIFFs, they are all (generally?) ingested into AGO as <code>Tiled imagery layers</code></li>
 </ul>
-<section id="digital-elevation-models-dem" class="level3">
-<h3 class="anchored">Digital Elevation Models (DEM)</h3>
+<section id="continuous-raster---digital-elevation-models-dem" class="level3">
+<h3 class="anchored">Continuous Raster - Digital Elevation Models (DEM)</h3>
 <p>Let’s add a Digital Elevation Model to out map: <code>ucsb_local_dem</code>. By default, a <code>single channel</code> or <code>one band</code> raster is displayed as grayscale, with low values black and high values white.</p>
-<p>The value of each pixel in a DEM represents elevation. What do you think are the units of <code>ucsb_local_dem</code>?</p>
 <p>Your map with DEM should look something like this by default:</p>
-<p><img src="images/workshop2/wkshp2_map_2_defaultDEM.png" class="img-fluid" alt="By default, DEMs appear as almost black for low elevations to white for high elevations"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/workshop2/wkshp2_map_2_defaultDEM.png" class="img-fluid figure-img" style="width:90.0%" alt="By default, DEMs appear as almost black for low elevations to white for high elevations"></p>
+<figcaption>Digital Elevation Model added to the map</figcaption>
+</figure>
+</div>
 <p>Each pixel, or cell, in our DEM represents bare-earth surface elevation relative to a vertical datum (mean sea level). The <code>ucsb_local_dem</code> dataset was derived from a high-resolution USGS LiDAR survey (3D Elevation Program (3DEP)).</p>
-<p>** define continuous **</p>
-<p>In the layer properties, explore the raster statistics: note the minimum elevation near sea level (0) along the coast and slough, rising to hundreds of feet in the foothills, as well as the grid cell resolution. (make sure we are feet and not meters)</p>
+<p><strong>POP QUIZ:</strong> What do you think are the units of <code>ucsb_local_dem</code>?</p>
+<p>A DEM is an example of a <strong>continuous raster</strong> as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space alon. Other examples of continuous raster would be precipitation measurements, air quality index, ocean salinity, or distance from a road.</p>
+<p>In the layer properties, explore the raster statistics: note the minimum elevation near sea level (0) along the coast and slough, rising to hundreds of feet in the foothills, as well as the grid cell resolution.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -390,18 +414,21 @@ Note
 </section>
 </div>
 </div>
-<p>:::</p>
 <section id="applying-color-schemes" class="level4">
 <h4 class="anchored" data-anchor-id="applying-color-schemes">Applying Color Schemes</h4>
 <p>By default, continuous raster layers display using a grayscale “Stretch” renderer (low values dark, high values light). To clearly distinguish elevation changes across the coastal plain and mountains, let’s change the symbology to a continuous or diverging color ramp (e.g., a below-and-above zero diverging ramp or an elevation palette).</p>
 <p><img src="images/workshop2/dem_options.png" class="img-fluid"></p>
-<ul>
-<li>insert screenshot of results of divergent DEM</li>
-</ul>
+<p>Here is below an example of a widely used color scale for DEM, with lower elevation display in blue and green and higher elevation in brown and white.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/workshop2/w2_dem_colored.png" class="img-fluid figure-img" style="width:90.0%" alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and gree for lower elevation"></p>
+<figcaption>Digital Elevation Model with color sclae</figcaption>
+</figure>
+</div>
 </section>
 </section>
-<section id="categorical-rasters" class="level3">
-<h3 class="anchored" data-anchor-id="categorical-rasters">Categorical Rasters</h3>
+<section id="categorical-raster---land-cover" class="level3">
+<h3 class="anchored" data-anchor-id="categorical-raster---land-cover">Categorical Raster - Land Cover</h3>
 <p><strong>Categorical vs.&nbsp;Continuous Data</strong></p>
 <p>Continuous data are best represented by numbers, and are logically consistent when you do so. Smaller numbers = less of some measurement.</p>
 <p>On the other hand, categorical data can be text or numeric. The value of any numbers used do not necessarily reflect any mathematical value, but it may. For example, while the values below have a natural order (The 3 Little Piggies Construction Scale), the numbers are <em>ordinal</em> but arbitrary:</p>
@@ -420,25 +447,32 @@ Note
 <section id="calculated-raster-data-slope" class="level3">
 <h3 class="anchored" data-anchor-id="calculated-raster-data-slope">Calculated Raster Data: Slope</h3>
 <p>You can also perform calculations to turn a DEM into a slope layer. We already made this slope layer for you as it can be a computing intensive task. This is another continuous dataset. You can call it derivative data.</p>
-<p>We will learn how it was made in workshop 3, but for now we will use it to examine, with our eyes, where the steepest bike routes up into our foothills are: <img src="images/workshop2/roads_over_slope.png" class="img-fluid"></p>
+<p>We will learn how it was made in workshop 3, but for now we will use it to examine, with our eyes, where the steepest bike routes up into our foothills are. Add this raster layer by searching for <code>SantaBarbara_slope</code> within the UCSB organization:</p>
+<p><img src="images/workshop2/roads_over_slope.png" class="img-fluid"></p>
 <p><strong>POP QUIZ:</strong> Below same slope layer, zoomed in to campus, and symbolized with a divergent color scheme. What does this tell you is incorrect about something we said earlier regarding our DEM? (DTM vs DSM)</p>
 <p><img src="images/workshop2/slope.png" class="img-fluid"></p>
 <p>Resymbolize your slope layer to a color scheme that makes sense to you. Look up into the foothills. Which paths look steepest for our theoretical bike ride?</p>
 <p><img src="images/workshop2/symbolizing_slope.png" class="img-fluid" style="width:60.0%"></p>
 </section>
+<section id="multi-band-rasters" class="level3">
+<h3 class="anchored" data-anchor-id="multi-band-rasters">Multi-band Rasters</h3>
+<p>So far we have worked with single-channel, or 1-band rasters. However, perhaps we are more familiar with 3-channel images, because our eyes see best in the red-green-blue color space. For geospatial data, think of this as satellite or aerial views.</p>
+<p>For digital images, 3 ‘bands’ of wavelengths are stored separately. When the computer combines them together, we humans see something akin to what we see when we look at nature with our eyes. However, we can swap in other bandwidths of radiation, such as near infrared, or microwave, and see completely other things.</p>
+<p>The DREAM Lab hosts several satellite views of campus created by Planet Labs, a private satellite firm. It’s fleet of PlanetScope satellites captures imagery in 8 bandwidth divisions of the electromagnetic spectrum. 8-band images. Let’s add one of those layers now:</p>
+<p><strong>placeholder for Planet image of Goleta</strong></p>
+</section>
 </section>
 <section id="layer-management-rasters-and-additional-vectors" class="level2">
 <h2 class="anchored" data-anchor-id="layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</h2>
-<p>Add in the bus stop layer</p>
 <ol type="1">
 <li><p><strong>Re-order layers</strong>: Ensure vector layers (roads and paths) remain on top of the raster elevation layers in the layer stack so they are not hidden.</p></li>
 <li><p><strong>Imagery Layers vs.&nbsp;Basemaps</strong>:</p>
 <ul>
 <li>An <strong>basemap</strong> sits at the bottom of the map canvas, serving purely as a static background context. Esri has options that are satellite and aerial views.</li>
 <li>An <strong>imagery layer</strong> is a data layer added to your map stack. It can be re-ordered above or below other layers, adjusted with transparency and blend modes, queried for pixel values, and analyze for groundcover characteristics.</li>
-<li>Below we will add a Planet satellite view to campus to explore.</li>
 </ul></li>
 </ol>
+<p><strong>Time to save our map!!!</strong></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -457,31 +491,64 @@ Note
 </ul>
 </div>
 </div>
-</section>
-<section id="multi-band-rasters" class="level2">
-<h2 class="anchored" data-anchor-id="multi-band-rasters">Multi-band Rasters</h2>
-<p>So far we have worked with single-channel, or 1-band rasters. However, perhaps we are more familiar with 3-channel images, because our eyes see best in the red-green-blue color space. For geospatial data, think of this as satellite or aerial views.</p>
-<p>For digital images, 3 ‘bands’ of wavelengths are stored separately. When the computer combines them together, we humans see something akin to what we see when we look at nature with our eyes. However, we can swap in other bandwidths of radiation, such as near infrared, or microwave, and see completely other things.</p>
-<p>The DREAM Lab hosts several satellite views of campus created by Planet Labs, a private satellite firm. It’s fleet of PlanetScope satellites captures imagery in 8 bandwidth divisions of the electromagnetic spectrum. 8-band images. Let’s add one of those layers now:</p>
-<ul>
-<li>placeholder for Planet image of Goleta</li>
-</ul>
 <p>It’s initial appearance is dark – work on its visualization. Here are some good settings to use:</p>
 <p><img src="images/workshop2/wkshp2_map_5_planetscopesettings.png" class="img-fluid" alt="settings as they appear in the lesson text."></p>
 <p>Showing bands 6, 4, and 2 as Red, Green, and Blue respectively will give a good approximation of human vision. <code>Gamma</code> is a degree of adjustment which changes the mathematics of the values of pixels into ranges that match the combination of computer monitors and the human eye. Adjust this so that it appears most natural on your screen.</p>
-<p>Challenge: play with different band combinations. What do you thing Band 1 is good for?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Challenge: play with different band combinations. What do you think Band
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>1 is good for?</p>
+</div>
+</div>
+</section>
+<section id="layer-management-raster-and-additiona-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="layer-management-raster-and-additiona-vectors">Layer Management, Raster, and Additiona Vectors</h2>
+<ol type="1">
+<li><strong>Re-order layers</strong>: Ensure vector layers (roads and paths) remain on top of the raster elevation layers in the layer stack so they are not hidden.</li>
+<li><strong>Imagery Layers vs Basemaps</strong>:
+<ul>
+<li>An <strong>basemap</strong> sits at the bottom of the map canvas, serving purely as a static background context. Esri has options that are satellite and aerial views.</li>
+<li>An <strong>imagery layer</strong> is a data layer added to your map stack. It can be re-ordered above or below other layers, adjusted with transparency and blend modes, queried for pixel values, and analyze for groundcover characteristics.</li>
+</ul></li>
+</ol>
 <p>At this point your map should look something like this:</p>
 <p><img src="images/workshop2/wkshp2_map_5.png" class="img-fluid"></p>
+<p><strong>Time to save our map!!!</strong></p>
 </section>
 <section id="importing-data-into-arcgis-online" class="level2">
 <h2 class="anchored" data-anchor-id="importing-data-into-arcgis-online">Importing data into ArcGIS Online</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Esri ArcGIS Online Credits
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>All ArcGIS Online accounts created under the UCSB site license are allocated <strong>1000 service credits</strong> per license year.</li>
+<li><strong>Transactions</strong>: Some analysis operations and storage consume service credits. For more information, visit Esri’s <a href="https://doc.arcgis.com/en/arcgis-online/administer/credits.htm">Understand Credits</a> page.</li>
+<li><strong>Manage your content</strong>: Periodically review and delete unnecessary hosted layers and analysis outputs to conserve credits.</li>
+<li><strong>Data Stewardship</strong>: Objects stored in ArcGIS Online should be considered ephemeral. Your content access depends on the UCSB Library’s Higher Education Site License.</li>
+</ul>
+</div>
+</div>
 <p>Uploading a raster image to ArcGIS Online takes up storage, so we aren’t going to do that. However we can also add vector and tabular data to our map!</p>
 <section id="creating-vector-layers-from-.csv-files" class="level3">
 <h3 class="anchored">Creating Vector Layers from .CSV files</h3>
 <p>In this section we will import <code>SantaBarbara_County_Trailheads.csv</code> from a CSV spreadsheet using coordinate columns (latitude and longitude) to see how external tabular data can be transformed into a geospatial layer and integrate with existing road and elevation layers.</p>
-<p>Download and open the <code>SantaBarbara_County_Trailheads.csv</code> onto your device.</p>
+<p>Download and open the <a href="https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv"><code>SantaBarbara_County_Trailheads.csv</code></a> onto your device.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -490,7 +557,7 @@ Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>What are the attributes stored in this dataset?</li>
@@ -531,7 +598,7 @@ Note
 </ul>
 <p><img src="images/workshop2/import_csv-map.png" class="img-fluid" style="width:100.0%" alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity"></p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -540,7 +607,7 @@ Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
 <section id="a-note-on-coordinate-reference-systems" class="level2 callout-body-container callout-body">
 <h2 class="anchored" data-anchor-id="a-note-on-coordinate-reference-systems">A note on Coordinate Reference Systems</h2>
 <p>In ArcGIS Online, the default projection and Coordinate Reference System (CRS) is WGS 1984 Web Mercator Auxilary Sphere, also used by the Global Positioning System (<a href="https://en.wikipedia.org/wiki/Global_Positioning_System">GPS</a>).</p>
@@ -550,12 +617,12 @@ Note
 <li><p><strong>Geographic</strong> Coordinate Systems use a 3D spherical surface measured in angular units to define locations on earth. A point is referred by its latitude and longitude.</p></li>
 </ul>
 <p>There are plethora of CRSs that all have different accuracy and other advantages depending on your location and extent of your area of interest. Here is a good website to look at the different CRSs: <a href="https://epsg.io/" class="uri">https://epsg.io/</a></p>
-<p><strong>Examine the csv file: does it tell you anything about the coordinate system that we are dealing with?</strong></p>
 </section>
 </div>
 </div>
+<p><strong>POP QUIZ:</strong> Examine the csv file - does it tell you anything about the coordinate system that we are dealing with?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -564,12 +631,12 @@ Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Choose the trail <code>Difficulty</code> attribute to add a color ramp</li>
+<li>Reorder the categories so their are matching the difficulty order (and not the alphabetical one)</li>
 <li>Give a title to the legend</li>
-<li>Reorder the fields so their are matching the difficulty order (and not the alphabetical one)</li>
 <li>Choose a good color ramp</li>
 <li>Increase the point size</li>
 </ul>
@@ -591,7 +658,7 @@ Note
 <ul>
 <li>Once in the My content view, locate and click on the spatial trailhead layer you imported from the CSV file to go to the Overview page of that layer.</li>
 </ul>
-<p><img src="images/workshop2/export-overview.png" class="img-fluid" style="width:100.0%" alt="Overview page for the feature layer of Santa Barbara County trailheads. "></p>
+<p><img src="images/workshop2/export-overview.png" class="img-fluid" style="width:100.0%" alt="Overview page for the feature layer of Santa Barbara County trailheads."></p>
 <ul>
 <li>Unfold the menu on the right completely, select Export data, and choose the GeoJSON format.</li>
 </ul>
@@ -603,7 +670,7 @@ Note
 <ul>
 <li>Once the export is completed, you should automatically be redirected to the Overview page of this new dataset. This time, Download should be available in the menu on the right side of the page. Click on it and select a location on your local computer and a filename.</li>
 </ul>
-<p><img src="images/workshop2/export-download.png" class="img-fluid" style="width:100.0%" alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option avaialble"></p>
+<p><img src="images/workshop2/export-download.png" class="img-fluid" style="width:100.0%" alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option available"></p>
 </section>
 <section id="completing-the-story" class="level2">
 <h2 class="anchored" data-anchor-id="completing-the-story">Completing the Story</h2>
