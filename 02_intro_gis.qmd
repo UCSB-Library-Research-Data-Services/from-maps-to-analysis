@@ -179,17 +179,16 @@ Let's add a Digital Elevation Model to out map: `ucsb_local_dem`. By
 default, a `single channel` or `one band` raster is displayed as
 grayscale, with low values black and high values white.
 
-The value of each pixel in a DEM represents elevation. What do you think
-are the units of `ucsb_local_dem`?
-
-\*\* do we need a screenshot of the DEM as it comes in by default? \*\*
+![Map with UCSB & local bike insfrastructure](images/workshop2/w2_dem_added.png){fig-alt="Digital Elevation Model added to the map" width="90%" fig-align="center"}
 
 Each pixel, or cell, in our DEM represents bare-earth surface elevation
 relative to a vertical datum (mean sea level). The `ucsb_local_dem`
 dataset was derived from a high-resolution USGS LiDAR survey (3D
 Elevation Program (3DEP)).
 
-A DEM is an example of a continuous raster as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space alon. Other examples of continuous raster would be precipitation measurements, air quality index, ocean salinity, or distance from a road.
+**POP QUIZ:** What do you think are the units of `ucsb_local_dem`?
+
+A DEM is an example of a **continuous raster** as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space alon. Other examples of continuous raster would be precipitation measurements, air quality index, ocean salinity, or distance from a road.
 
 In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
