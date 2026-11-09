@@ -360,7 +360,8 @@ Note
 <h3 class="anchored" data-anchor-id="digital-elevation-models-dem">Digital Elevation Models (DEM)</h3>
 <p>Let’s add a Digital Elevation Model to out map: <code>ucsb_local_dem</code>. By default, a <code>single channel</code> or <code>one band</code> raster is displayed as grayscale, with low values black and high values white.</p>
 <p>The value of each pixel in a DEM represents elevation. What do you think are the units of <code>ucsb_local_dem</code>?</p>
-<p>** do we need a screenshot of the DEM as it comes in by default? **</p>
+<p>Your map with DEM should look something like this by default:</p>
+<p><img src="images/workshop2/wkshp2_map_2_defaultDEM.png" class="img-fluid" alt="By default, DEMs appear as almost black for low elevations to white for high elevations"></p>
 <p>Each pixel, or cell, in our DEM represents bare-earth surface elevation relative to a vertical datum (mean sea level). The <code>ucsb_local_dem</code> dataset was derived from a high-resolution USGS LiDAR survey (3D Elevation Program (3DEP)).</p>
 <p>** define continuous **</p>
 <p>In the layer properties, explore the raster statistics: note the minimum elevation near sea level (0) along the coast and slough, rising to hundreds of feet in the foothills, as well as the grid cell resolution. (make sure we are feet and not meters)</p>
@@ -390,25 +391,26 @@ Note
 <h3 class="anchored" data-anchor-id="categorical-rasters">Categorical Rasters</h3>
 <p><strong>Categorical vs.&nbsp;Continuous Data</strong></p>
 <p>Continuous data are best represented by numbers, and are logically consistent when you do so. Smaller numbers = less of some measurement.</p>
-<p>On the other hand, categorical data can be text or numeric. The value of any numbers used do not necessarily reflect any mathematical value, but it may. For example, while the values below have a natural order (3 Little Piggies Construction Scale), the numbers are ordinal, but arbitrary:</p>
+<p>On the other hand, categorical data can be text or numeric. The value of any numbers used do not necessarily reflect any mathematical value, but it may. For example, while the values below have a natural order (The 3 Little Piggies Construction Scale), the numbers are <em>ordinal</em> but arbitrary:</p>
 <ul>
-<li><p>1 = reinforced concrete or steel beam</p></li>
-<li><p>2 = wood stick construction</p></li>
-<li><p>3 = baked brick masonry</p></li>
-<li><p>4 = adobe</p></li>
-<li><p>5 = sun brick / mud daub</p></li>
-<li><p>6 = straw bail</p></li>
+<li>1 = reinforced concrete or steel beam</li>
+<li>2 = wood stick construction</li>
+<li>3 = baked brick masonry</li>
+<li>4 = adobe</li>
+<li>5 = sun brick / mud daub</li>
+<li>6 = straw bail</li>
 </ul>
 <p>While elevation is a <strong>continuous raster</strong> (values change smoothly along a numerical gradient representing a quantity), other rasters are <strong>categorical rasters</strong> (e.g., land cover classification datasets from the Living Atlas, where integer cell values represent categories such as urban development, forest, or water).</p>
 <p><img src="images/workshop2/landcover_result.png" class="img-fluid"></p>
+<p>Show the legend to see the category names. Open the attribute table to compare it to what appears for vector data:</p>
 </section>
 <section id="calculated-raster-data-slope" class="level3">
 <h3 class="anchored" data-anchor-id="calculated-raster-data-slope">Calculated Raster Data: Slope</h3>
 <p>You can also perform calculations to turn a DEM into a slope layer. We already made this slope layer for you as it can be a computing intensive task. This is another continuous dataset. You can call it derivative data.</p>
 <p>We will learn how it was made in workshop 3, but for now we will use it to examine, with our eyes, where the steepest bike routes up into our foothills are: <img src="images/workshop2/roads_over_slope.png" class="img-fluid"></p>
-<p><strong>POP QUIZ:</strong> Below same slope layer, zoomed in to campus, and symbolized with a divergent color scheme. What does this tell you is incorrect about something we said earlier regarding our DEM?</p>
+<p><strong>POP QUIZ:</strong> Below same slope layer, zoomed in to campus, and symbolized with a divergent color scheme. What does this tell you is incorrect about something we said earlier regarding our DEM? (DTM vs DSM)</p>
 <p><img src="images/workshop2/slope.png" class="img-fluid"></p>
-<p>Resymbolize your slope layer to a color scheme that makes sense to you. Look up into the foothills. Which paths look steepest?</p>
+<p>Resymbolize your slope layer to a color scheme that makes sense to you. Look up into the foothills. Which paths look steepest for our theoretical bike ride?</p>
 <p><img src="images/workshop2/symbolizing_slope.png" class="img-fluid" style="width:60.0%"></p>
 </section>
 </section>
@@ -447,10 +449,16 @@ Note
 <h2 class="anchored" data-anchor-id="multi-band-rasters">Multi-band Rasters</h2>
 <p>So far we have worked with single-channel, or 1-band rasters. However, perhaps we are more familiar with 3-channel images, because our eyes see best in the red-green-blue color space. For geospatial data, think of this as satellite or aerial views.</p>
 <p>For digital images, 3 ‘bands’ of wavelengths are stored separately. When the computer combines them together, we humans see something akin to what we see when we look at nature with our eyes. However, we can swap in other bandwidths of radiation, such as near infrared, or microwave, and see completely other things.</p>
-<p>The DREAM Lab hosts several satellite views of campus created by a private satellite firm. Let’s add one of those layers now:</p>
+<p>The DREAM Lab hosts several satellite views of campus created by Planet Labs, a private satellite firm. It’s fleet of PlanetScope satellites captures imagery in 8 bandwidth divisions of the electromagnetic spectrum. 8-band images. Let’s add one of those layers now:</p>
 <ul>
 <li>placeholder for Planet image of Goleta</li>
 </ul>
+<p>It’s initial appearance is dark – work on its visualization. Here are some good settings to use:</p>
+<p><img src="images/workshop2/wkshp2_map_5_planetscopesettings.png" class="img-fluid" alt="settings as they appear in the lesson text."></p>
+<p>Showing bands 6, 4, and 2 as Red, Green, and Blue respectively will give a good approximation of human vision. <code>Gamma</code> is a degree of adjustment which changes the mathematics of the values of pixels into ranges that match the combination of computer monitors and the human eye. Adjust this so that it appears most natural on your screen.</p>
+<p>Challenge: play with different band combinations. What do you thing Band 1 is good for?</p>
+<p>At this point your map should look something like this:</p>
+<p><img src="images/workshop2/wkshp2_map_5.png" class="img-fluid"></p>
 </section>
 <section id="importing-data-into-arcgis-online" class="level2">
 <h2 class="anchored" data-anchor-id="importing-data-into-arcgis-online">Importing data into ArcGIS Online</h2>
