@@ -68,6 +68,7 @@ Once satisfied, Don't forget to save your map!!
 ![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas-step1 width="30%" fig-align="center"}
 
 Select "Save As" and add a title **"Goleta Trailhead Map - YourInitials"**, and a short description of your map.
+:::
 
 <hr>
 
@@ -149,13 +150,11 @@ along with elevation data to analyze terrain and slope.
 
 Let's set up our workspaces together. The layers for this workshop all
 have a wider extent than those from Workshop 1. For example,
-[SantaBarbara_Merged_roads](https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9)\*\*
+[SantaBarbara_Merged_roads](https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9){target="_blank"}
 is an expanded street and bicycle path network covering the Goleta and
 Santa Barbara area, extracted from OpenStreetMap and an Esri Living
 Atlas layer. We have already excluded major highways from this
-layer--because we know you won't want to bicycle on them.
-
-Add this layer now.
+layer -- because we know you won't want to bicycle on them.
 
 To examine routes beyond campus, we zoom out to the broader regional
 area:
@@ -327,15 +326,13 @@ this so that it appears most natural on your screen.
 1 is good for?
 :::
 
-At this point your map should look something like this:
 
-![](images/workshop2/wkshp2_map_5.png)
-
+## Layer Management, Raster, and Additiona Vectors
 
 1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
     on top of the raster elevation layers in the layer stack so they are
     not hidden.
-
+2.  **Imagery Layers vs Basemaps**:
     -   An **basemap** sits at the bottom of the map canvas, serving
         purely as a static background context. Esri has options that are
         satellite and aerial views.
@@ -344,8 +341,13 @@ At this point your map should look something like this:
         transparency and blend modes, queried for pixel values, and
         analyze for groundcover characteristics.
         
+  
+At this point your map should look something like this:
+
+![](images/workshop2/wkshp2_map_5.png)  
         
 **Time to save our map!!!**
+
 
 ## Importing data into ArcGIS Online
 
@@ -376,7 +378,7 @@ a CSV spreadsheet using coordinate columns (latitude and longitude) to
 see how external tabular data can be transformed into a geospatial layer
 and integrate with existing road and elevation layers.
 
-Download and open the `SantaBarbara_County_Trailheads.csv` onto your
+Download and open the [`SantaBarbara_County_Trailheads.csv`](https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv) onto your
 device.
 
 ::: {.callout-tip collapse="true"}
