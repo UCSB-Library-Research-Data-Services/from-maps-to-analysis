@@ -62,7 +62,7 @@ Once satisfied, Don't forget to save your map!!
 
 ![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas-step1 width="30%" fig-align="center"}
 
-Select "Save As" and add a title "Santa Barbara Trailhead Map - YourInitials", and a short description of your map.
+Select "Save As" and add a title "Goleta Trailhead Map - YourInitials", and a short description of your map.
 :::
 
 <hr>
@@ -129,7 +129,8 @@ community and the Santa Ynez foothills. To accomplish this, we need to
 expand beyond campus bike paths and incorporate regional road networks
 along with elevation data to analyze terrain and slope.
 
-### Adding New Material to Your Map
+
+## Adding New Material to Your Map
 
 Let's set up our workspaces together. The layers for this workshop all
 have a wider extent than those from Workshop 1. For example,
@@ -179,7 +180,7 @@ to list!
     they are all (generally?) ingested into AGO as
     `Tiled imagery layers`
 
-### Digital Elevation Models (DEM)
+### Continuous Raster - Digital Elevation Models (DEM)
 
 Let's add a Digital Elevation Model to out map: `ucsb_local_dem`. By
 default, a `single channel` or `one band` raster is displayed as
@@ -195,7 +196,7 @@ relative to a vertical datum (mean sea level). The `ucsb_local_dem`
 dataset was derived from a high-resolution USGS LiDAR survey (3D
 Elevation Program (3DEP)).
 
-\*\* define continuous \*\*
+A DEM is an example of a continuous raster as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space alon. Other examples of continuous raster would be precipitation measurements, chemical concentrations, suitability models, or distance from a road.
 
 In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
