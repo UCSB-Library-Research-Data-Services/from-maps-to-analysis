@@ -76,6 +76,8 @@ Our finished product for this session will be the
 `Workshop Goleta bike map`. We will take time to preview this finished
 map before building it step by step.
 
+YES WE KNOW THIS ISN'T HERE YET
+
 \*\* link and screenshot of finished map goes here. [Work in progress
 version: (https://arcg.is/1yz0KP3)](https://arcg.is/1yz0KP3)
 
@@ -104,6 +106,8 @@ discrete geographic features using coordinate geometry:
 
 Every shape is tied to a row in an attribute table, where each column
 holds specific properties describing that feature. For example ...
+
+* KRISTI ISSUE #86 *
 
 ### Raster Data
 
@@ -178,7 +182,7 @@ let's not forget to remove old layers from the current map (ie: the old
 roads roads)
 :::
 
-## Working with Raster Data
+## Adding Raster Data
 
 When outside of ArcGIS Online, geospatial raster data comes in many
 different forms. TIFFs, Grids, netCDF, iiif, web map services. Too many
@@ -213,10 +217,15 @@ elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
 (make sure we are feet and not meters)
 
-::: callout-tip
-## Challenge
 
-Does our DEM contain negative values? Why?
+::: {.callout-tip collapse="true"}
+## Challenge: Does our DEM contain negative values? Why?
+
+## yes. because sea level. 
+To do: put in screenshot with attribut table of raster here. 
+:::
+
+
 :::
 
 #### Applying Color Schemes
