@@ -39,19 +39,12 @@ relationships.
 
 ### Workshop 1 Recap
 
-Let's start a new map for the larger campus area and its bicycle
-infrastructure
+Let's start a new map for the larger campus area and its bicycle infrastructure
 
-1.  Log on to ArcGIS Online
-    [**https://ucsb.maps.arcgis.com**](https://ucsb.maps.arcgis.com){target="_blank"}.
-    **Sign on with your UCSB NetID**, do not use the ArcGIS login!
-2.  Open a new, empty map by clicking `Map` on your top menu bar.
-    ![ArcGIS Online main menu
-    bar](images/main-menu-bar.png){#fig-menubar width="90%"
-    fig-align="center"}
-3.  From the **Layers** panel, click on the **Add** layer button. Search
-    `My organization` for **UCSB Campus Buildings**. Choose the top
-    result.
+1. Log on to ArcGIS Online [**https://ucsb.maps.arcgis.com**](https://ucsb.maps.arcgis.com){target="_blank"}. **Sign on with your UCSB NetID**, do not use the ArcGIS login!
+1. Open a new, empty map by clicking `Map` on your top menu bar.
+   ![ArcGIS Online main menu bar](images/main-menu-bar.png){#fig-menubar width="90%" fig-align="center"}
+1. From the **Layers** panel, click on the **Add** layer button. Search `My organization` for **UCSB Campus Buildings 2026 **. Choose the top result.
 
 ::: {.callout-tip collapse="false"}
 ## Challenge: Workshop 1 Recap
@@ -60,12 +53,20 @@ Using the [workshop 1
 materials](01_make_map.qmd#step-1-add-layers-to-your-map) as reference,
 do the following tasks:
 
-1.  Add symbology to the building layer using the `b_use` column.\
-2.  Repeat the above steps to add the feature layer `bike_racks_ucsb` to
-    your map.
-3.  Experiment with the dot size and color for the bike racks.
-4.  Perform a **Save As** before moving to workshop 2 and name your map
-    **Goleta bike map**
+1.  Add symbology to the building layer using the `BLDGTYPE` column.  
+1.  Repeat the above steps to add the feature layer `bike_racks_ucsb` to your map.
+1.  Experiment with the dot size and color for the bike racks.
+:::
+
+
+::: {.callout-note collapse="false"}
+## Save often
+
+Once satisfied, Don't forget to save your map!! 
+
+![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas-step1 width="30%" fig-align="center"}
+
+Select "Save As" and add a title **"Santa Barbara Trailhead Map - YourInitials"**, and a short description of your map.
 :::
 
 <hr>
@@ -126,8 +127,8 @@ Below is a single band raster. The value of each pixel is elevation.
 
 ![](images/workshop2/wkshp_2_dem_example.png)
 
-Below is an 8-band raster with bands 7 (near IR) as red, band 3 as
-green, and 'coastal blue' as blue.
+Below is an 8-band raster with band #7 (near IR) as red, band #3 (green) as
+green, and band #1 (coastal blue) as blue. This type of image displays are often called "false-color" because they do not respect the RGB channel alignment. This can help to highloght some features, such as vegetation that has a strong signalin near infrared (NIR) wavelengths
 
 ![](images/workshop2/false_color.png)
 
@@ -463,13 +464,13 @@ interest. Here is a good website to look at the different CRSs:
 system that we are dealing with?**
 :::
 
-::: {.callout-tip collapse="true"}
+::: {.callout-tip collapse="false"}
 ## Challenge - Make the trailhead layer look nice
 
 -   Choose the trail `Difficulty` attribute to add a color ramp
--   Give a title to the legend
--   Reorder the fields so their are matching the difficulty order (and
+-   Reorder the categories so their are matching the difficulty order (and
     not the alphabetical one)
+-   Give a title to the legend
 -   Choose a good color ramp
 -   Increase the point size
 :::
@@ -499,8 +500,7 @@ menu at the top-left of your Map view and selecting Content.
     trailhead layer you imported from the CSV file to go to the Overview
     page of that layer.
 
-![](images/workshop2/export-overview.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads. "
-width="100%"}
+![](images/workshop2/export-overview.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads." width="100%"}
 
 -   Unfold the menu on the right completely, select Export data, and
     choose the GeoJSON format.
