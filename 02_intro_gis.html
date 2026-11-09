@@ -172,7 +172,7 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#adding-new-material-to-your-map" id="toc-adding-new-material-to-your-map" class="nav-link" data-scroll-target="#adding-new-material-to-your-map">Adding New Material to Your Map</a></li>
   </ul></li>
-  <li><a href="#working-with-raster-data" id="toc-working-with-raster-data" class="nav-link" data-scroll-target="#working-with-raster-data">Working with Raster Data</a>
+  <li><a href="#adding-raster-data" id="toc-adding-raster-data" class="nav-link" data-scroll-target="#adding-raster-data">Adding Raster Data</a>
   <ul class="collapse">
   <li><a href="#digital-elevation-models-dem" id="toc-digital-elevation-models-dem" class="nav-link" data-scroll-target="#digital-elevation-models-dem">Digital Elevation Models (DEM)</a></li>
   <li><a href="#categorical-rasters" id="toc-categorical-rasters" class="nav-link" data-scroll-target="#categorical-rasters">Categorical Rasters</a></li>
@@ -272,6 +272,7 @@ window.Quarto = {
 <section id="preview-our-end-goal" class="level2">
 <h2 class="anchored" data-anchor-id="preview-our-end-goal">Preview: our end goal</h2>
 <p>Our finished product for this session will be the <code>Workshop Goleta bike map</code>. We will take time to preview this finished map before building it step by step.</p>
+<p>YES WE KNOW THIS ISN’T HERE YET</p>
 <p>** link and screenshot of finished map goes here. <a href="https://arcg.is/1yz0KP3">Work in progress version: (https://arcg.is/1yz0KP3)</a></p>
 </section>
 <section id="geographic-data" class="level2">
@@ -292,6 +293,9 @@ window.Quarto = {
 <li><strong>Polygons</strong>: Closed shapes enclosing an area defined by connected coordinate vertices (e.g., campus buildings, land parcels, parks, water bodies).</li>
 </ul>
 <p>Every shape is tied to a row in an attribute table, where each column holds specific properties describing that feature. For example …</p>
+<ul>
+<li>KRISTI ISSUE #86 *</li>
+</ul>
 </section>
 <section id="raster-data" class="level3">
 <h3 class="anchored" data-anchor-id="raster-data">Raster Data</h3>
@@ -354,14 +358,14 @@ Note
 </div>
 </section>
 </section>
-<section id="working-with-raster-data" class="level2">
-<h2 class="anchored" data-anchor-id="working-with-raster-data">Working with Raster Data</h2>
+<section id="adding-raster-data" class="level2">
+<h2 class="anchored" data-anchor-id="adding-raster-data">Adding Raster Data</h2>
 <p>When outside of ArcGIS Online, geospatial raster data comes in many different forms. TIFFs, Grids, netCDF, iiif, web map services. Too many to list!</p>
 <ul>
 <li>ArcGIS Online variations: while these all start somewhere as TIFFs, they are all (generally?) ingested into AGO as <code>Tiled imagery layers</code></li>
 </ul>
 <section id="digital-elevation-models-dem" class="level3">
-<h3 class="anchored" data-anchor-id="digital-elevation-models-dem">Digital Elevation Models (DEM)</h3>
+<h3 class="anchored">Digital Elevation Models (DEM)</h3>
 <p>Let’s add a Digital Elevation Model to out map: <code>ucsb_local_dem</code>. By default, a <code>single channel</code> or <code>one band</code> raster is displayed as grayscale, with low values black and high values white.</p>
 <p>The value of each pixel in a DEM represents elevation. What do you think are the units of <code>ucsb_local_dem</code>?</p>
 <p>Your map with DEM should look something like this by default:</p>
@@ -370,18 +374,23 @@ Note
 <p>** define continuous **</p>
 <p>In the layer properties, explore the raster statistics: note the minimum elevation near sea level (0) along the coast and slough, rising to hundreds of feet in the foothills, as well as the grid cell resolution. (make sure we are feet and not meters)</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Challenge
+<span class="screen-reader-only">Tip</span>Challenge: Does our DEM contain negative values? Why?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<section id="yes.-because-sea-level." class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="yes.-because-sea-level.">yes. because sea level.</h2>
+<p>To do: put in screenshot with attribut table of raster here.</p>
+</section>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>Does our DEM contain negative values? Why?</p>
-</div>
-</div>
+<p>:::</p>
 <section id="applying-color-schemes" class="level4">
 <h4 class="anchored" data-anchor-id="applying-color-schemes">Applying Color Schemes</h4>
 <p>By default, continuous raster layers display using a grayscale “Stretch” renderer (low values dark, high values light). To clearly distinguish elevation changes across the coastal plain and mountains, let’s change the symbology to a continuous or diverging color ramp (e.g., a below-and-above zero diverging ramp or an elevation palette).</p>
