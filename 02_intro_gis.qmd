@@ -209,7 +209,6 @@ A DEM is an example of a **continuous raster** as the values stored in each cell
 In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
-(make sure we are feet and not meters)
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: Does our DEM contain negative values? Why?
@@ -229,7 +228,7 @@ below-and-above zero diverging ramp or an elevation palette).
 
 ![](images/workshop2/dem_options.png)
 
--   insert screenshot of results of divergent DEM
+![Digital Elevation Model with color sclae](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and gree for lower elevation" width="90%" fig-align="center"}
 
 
 ### Categorical Raster - Land Cover
