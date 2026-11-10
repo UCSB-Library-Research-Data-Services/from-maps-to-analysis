@@ -165,8 +165,8 @@ Below is a single band raster. The value of each pixel is elevation.
 Below is an 8-band raster with band #7 (near IR) as red, band #3 (green)
 as green, and band #1 (coastal blue) as blue. This type of image
 displays are often called "false-color" because they do not respect the
-RGB channel alignment. This can help to highloght some features, such as
-vegetation that has a strong signalin near infrared (NIR) wavelengths
+RGB channel alignment. This can help to highlight some features, such as
+vegetation that has a strong signal in near infrared (NIR) wavelengths
 
 ![](images/workshop2/false_color.png)
 
@@ -225,7 +225,7 @@ roads roads)
 :::
 
 ![Map with UCSB & local bike
-insfrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths"
+infrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths"
 width="90%" fig-align="center"}
 
 ## exploring Raster Data
@@ -259,7 +259,7 @@ Elevation Program (3DEP)).
 
 A DEM is an example of a **continuous raster** as the values stored in
 each cell correspond to a quantity gradient (elevation in meters)
-changing in space alon. Other examples of continuous raster would be
+changing in space . Other examples of continuous raster would be
 precipitation measurements, air quality index, ocean salinity, or
 distance from a road.
 
@@ -298,7 +298,7 @@ lower elevation display in blue and green and higher elevation in brown
 and white.
 
 ![Digital Elevation Model with color
-scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and gree for lower elevation"
+scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higher elevation, blue and green for lower elevation"
 width="90%" fig-align="center"}
 
 #### 'Binning' a raster
@@ -437,7 +437,7 @@ this so that it appears most natural on your screen.
 1 is good for?
 :::
 
-## Layer Management, Raster, and Additiona Vectors
+## Layer Management, Raster, and Additional Vectors
 
 1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
     on top of the raster elevation layers in the layer stack so they are
@@ -449,7 +449,7 @@ this so that it appears most natural on your screen.
     -   An **imagery layer** is a data layer added to your map stack. It
         can be re-ordered above or below other layers, adjusted with
         transparency and blend modes, queried for pixel values, and
-        analyze for groundcover characteristics.
+        analyze for ground cover characteristics.
 
 At this point your map should look something like this:
 
@@ -547,7 +547,7 @@ width="100%"}
 ## A note on Coordinate Reference Systems
 
 In ArcGIS Online, the default projection and Coordinate Reference System
-(CRS) is WGS 1984 Web Mercator Auxilary Sphere, also used by the Global
+(CRS) is WGS 1984 Web Mercator Auxiliary Sphere, also used by the Global
 Positioning System
 ([GPS](https://en.wikipedia.org/wiki/Global_Positioning_System)).
 
@@ -639,6 +639,29 @@ This should open the Editor panel on the right of your map
 panel](images/workshop2/w2_editor_panel.png){fig-alt="Feature layer Editor panel"
 width="50%"}
 
+This should open the Editor panel on the right of your map
+
+![Feature layer Editor panel](images/workshop2/w2_editor_panel.png){fig-alt="Feature layer Editor panel" width="40%"}
+
+The top part (in red) of this panel lets you edit the feature layer elements. Below, you can add new features to existing layers (for our trailhead layer in magenta).
+
+Since we want to move our trailhead locations individually, we can use the `Select by point` tool (next to the hand) to:
+
+1. Select a point of interest by clicking on it.
+
+![](images/workshop2/w2_edit-select_tool.png){fig-alt="Select by Point tool" width="90%" fig-align="center"}
+
+2. Once selected, the dot should have a cyan halo around it and you should see its values for the attributes on the right.
+
+![](images/workshop2/w2_edit-selected_point.png){fig-alt="Trailhead in the ocean selected" width="90%" fig-align="center"}
+
+3. Then drag the point to the new location, close by the building.
+
+4. Confirm the change, by clicking on the blue "Update" button at the bottom of the panel.
+
+![](images/workshop2/w2_edit-moved_point.png){fig-alt="Trailhead location moved to the beach" width="90%" fig-align="center"}
+
+
 The top part (in red) of this panel lets you edit the feature layer
 elements. Below, you can add new features to existing layers (for our
 county layer in magenta).
@@ -676,17 +699,56 @@ entities.**
 
 ### Adding a New Feature
 
+Looking around UCSB campus location, we realized that there is no point for the campus lagoon trail!! Let's add it to
+the map. We will decide that the trail starts next to the marine lab.
+
+To add a point to our trailhead layer:
+
+1. Click on `New Feature` in the edit panel for this layer
+2. Your cursor should become a cross, click on the map to place your point
+3. Fill out the information for this new point (leave lat/long blank)
+4. Hit "Create" to add your new feature to the layer
+
+![](images/workshop2/w2_edit-add_point.png){fig-alt="Add new feature point next to the UCSB Marine lab" width="70%" fig-align="center"}
+
+Make sure to get out of the `Create features` mode before clicking again on the map!
+
+::: {.callout-note collapse="false"}
+Note that the geospatial information used by ArcGIS online to display the point is **not** store in the attribute table.
+This is why the Latitude and Longitude values could be left blank and the point still being displayed!
+:::
+
 ### Editing the Attribute Table
+
+You can also edit the information underlying the data by directly modifying the table. You can add/remove attributes as well as directly editing the values.
+
+#### Adding an attribute
+
+Now that we have added a new trailhead, we might want to add a new attribute that will let us track if a specific point
+is from the original dataset or something that we have added. You can add an attribute using the `Field` tool on the right
+![](images/workshop2/w2_field_button.png){fig-alt="Field icon that looks like text with a bar at the bottom" width="5%"}.
+This should open a new panel listing all the current fields and at the button you should see an `+ Add field` button.
+
+1. Click on it
+1. Choose "Numeric" -> "Integer" & click "Next"
+1. Enter the following values & click "Add field"
+
+![](images/workshop2/w2_field-parameters.png){fig-alt="Parameters used to create the new field" width="90%"}
+Now you should have the "Added" field listed in the field list on the right panel. 
 
 #### Editing values
 
-#### Adding attribute
+Let's open the table to have a look at the values.
 
-Potential narrative: adding the new ILP bike path to your own personal
-bike path layer.
+The new field has been added as the last column. The point we created should be at the bottom of the table, as the last row.
 
-Highlight the best/favorite trails:
-<https://santabarbaraca.com/itinerary/best-hikes-in-santa-barbara/>
+There are two ways to edit values in a table. You can double-click on a cell and change the values, or you can use the
+pen logo at the end of the rows that will open back the "Edit Feature" pane we used previously. Let's directly modify the 
+values by double-clicking in the new "Added" column and setting the value to 1. Also notice that the other "Distance" 
+values all have a unit, let's add Miles to the 1.5 we entered previously.
+
+![Attibute table with the newly entered values](images/workshop2/w2_values-table.png){fig-alt="Attibute table with the newly entered values" width="100%" fig-align="center"}
+
 
 ## Exporting Data
 
@@ -718,7 +780,7 @@ width="100%"}
     ucsb_bike folder as location. Click on Export. Note that exporting
     data can take some time, so be patient :)
 
-![](images/workshop2/export-geojson.png){fig-alt="Wizzard page to export a geojson file: title, Folder location, Categories, Tags and Summary are the available options"
+![](images/workshop2/export-geojson.png){fig-alt="Wizard page to export a geojson file: title, Folder location, Categories, Tags and Summary are the available options"
 width="50%"}
 
 -   Once the export is completed, you should automatically be redirected
@@ -726,7 +788,7 @@ width="50%"}
     be available in the menu on the right side of the page. Click on it
     and select a location on your local computer and a filename.
 
-![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option available"
+![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Download option available"
 width="100%"}
 
 ## Completing the Story
@@ -766,7 +828,7 @@ and Altitude
     0° (level with the horizon at sunrise/sunset) to 90° (directly
     overhead at solar noon). A lower altitude (e.g., 30°–45°, typical of
     low winter sun) produces longer, more dramatic shadows that
-    accentuate ridgelines, canyons, and valleys.
+    accentuate ridge lines, canyons, and valleys.
 
 ![](images/workshop2/relief_options.png)
 
