@@ -120,6 +120,7 @@ From the **Layers** panel, click on the add layer button. Search `My organizatio
   <source src="images/workshop1/Step1/add-layers.mp4" type="video/mp4">
 </video>
 ```
+
 Adding a layer
 :::
 
@@ -165,6 +166,7 @@ To reorder the layers, click and hold on a layer name in the Layers panel, drag 
   <source src="images/workshop1/Step1/reorder-layers.mp4" type="video/mp4">
 </video>
 ```
+
 Reorder feature layers
 :::
 
@@ -178,8 +180,8 @@ For example, if you click on the three dots on the right of a feature layer you 
 
 In ArcGIS Online feature layers, we can understand the relationship between rows, columns, and features as follows:
 
-- Each **row** represents a **feature**: A row (record) corresponds to an individual spatial object on the map, such as a specific bike rack, a segment of a bike path, or a building.
-- Each **column** represents an **attribute**: Each column (field) corresponds to one specific attribute category or field name, such as the name of a building, the type of bike rack, or the length of a bike path. The value in each cell represents the specific attribute for that feature.
+-   Each **row** represents a **feature**: A row (record) corresponds to an individual spatial object on the map, such as a specific bike rack, a segment of a bike path, or a building.
+-   Each **column** represents an **attribute**: Each column (field) corresponds to one specific attribute category or field name, such as the name of a building, the type of bike rack, or the length of a bike path. The value in each cell represents the specific attribute for that feature.
 
 Your data can be visualized, selected, or analysed based on the columns of the attribute table. We will see later how you can leverage these attributes to set the symbology of a layer according to categories or quantities that are in the attribute table. You can also compute new attributes either based on other attributes or by performing analysis with other layers' information. We will cover analysis tools [in our second workshop](02_intro_gis.html).
 
@@ -197,19 +199,19 @@ After adding our three layers, we have some work to do to make the map more read
 
 To enable aggregation, follow these steps:
 
-- Click on the layer `UCSB Bike Racks` to open its properties panel.
-- On the right side panel, click on the Aggregation button (the fifth button from the top).
-- In the Aggregation panel, select the `Clustering` option. This will enable the clustering of bike racks based on the map scale.
+-   Click on the layer `UCSB Bike Racks` to open its properties panel.
+-   On the right side panel, click on the Aggregation button (the fifth button from the top).
+-   In the Aggregation panel, select the `Clustering` option. This will enable the clustering of bike racks based on the map scale.
 
 ![Enabling aggregation for the bike racks layer](images/workshop1/Step2/aggregation-bike-racks.png){#fig-aggregation width="90%" fig-align="center"}
 
 We can also adjust the transparency of the circles representing the bike racks to smooth the circle overlap. To do this, follow these steps:
 
-- Click on the layer `UCSB Bike Racks` to open its properties panel.
-- On the right side panel, click on the `Styles` button (the second button from the top).
-- In the Styles panel, go to the **Pick a style** section, and click on the `Style options` button.
-- In the Style options panel, click on the edit button (the pencil icon) next to the symbol in the Symbol style list.
-- In the Symbol style panel, set the `Fill transparency` to 30%. Changes will be applied immediately to the map.
+-   Click on the layer `UCSB Bike Racks` to open its properties panel.
+-   On the right side panel, click on the `Styles` button (the second button from the top).
+-   In the Styles panel, go to the **Pick a style** section, and click on the `Style options` button.
+-   In the Style options panel, click on the edit button (the pencil icon) next to the symbol in the Symbol style list.
+-   In the Symbol style panel, set the `Fill transparency` to 30%. Changes will be applied immediately to the map.
 
 ![Adjusting the transparency of the bike racks layer](images/workshop1/Step2/transparency-bike-racks.png){#fig-transparency width="90%" fig-align="center"}
 
@@ -219,30 +221,30 @@ To have a better view of the bike racks area, click on the three dots next to th
 
 ### Adjust style based on attribute
 
-Our map is starting to look good, but you can notice that the buildings are all filled with the same color (orange in our case). Although the buildings are not the main focus of our map, this layer can be useful to provide context, so we can adjust the symbology to make it more informative. 
+Our map is starting to look good, but you can notice that the buildings are all filled with the same color (orange in our case). Although the buildings are not the main focus of our map, this layer can be useful to provide context, so we can adjust the symbology to make it more informative.
 
 To achieve this, we can adjust the symbology of the `UCSB Campus Buildings 2026` layer based on an attribute. Our first step is to identify the attribute we want to use. We can open the layer attribute table as we previously showed, or we can see the available attributes directly from the Styles panel. To do this, follow these steps:
 
-- Click on the layer `UCSB Campus Buildings 2026` to open its properties panel.
-- On the right side panel, click on the `Styles` button (the second button from the top).
-- In the Styles panel, go to the **Choose attributes** section, and click on the `+ Field` button. This will show you the available attributes for this layer.
+-   Click on the layer `UCSB Campus Buildings 2026` to open its properties panel.
+-   On the right side panel, click on the `Styles` button (the second button from the top).
+-   In the Styles panel, go to the **Choose attributes** section, and click on the `+ Field` button. This will show you the available attributes for this layer.
 
 ![List of available attributes for the UCSB Campus Buildings 2026 layer](images/workshop1/Step2/attributes-list.png){#fig-attributes width="30%" fig-align="center"}
 
-To explore the values of the attributes, you can click on the (i) icon next to the attribute name. This will show you the metadata for that attribute and a list with its top 10 values. 
+To explore the values of the attributes, you can click on the (i) icon next to the attribute name. This will show you the metadata for that attribute and a list with its top 10 values.
 
 For this exercise, we will use the `BLDGTYPE` attribute, which represents the building type (e.g., housing, academic and administrative, recreation, parking, etc.). This attribute will allow us to fill each building with a different color based on its use.
 
-- Check the box next to the `BLDGTYPE` attribute and click on the `Add` button. This will add the attribute to the **Choose attributes** section, and set a predefined color ramp to fill the building areas based on their use.
+-   Check the box next to the `BLDGTYPE` attribute and click on the `Add` button. This will add the attribute to the **Choose attributes** section, and set a predefined color ramp to fill the building areas based on their use.
 
 ![Adding the BLDGTYPE attribute to the Styles panel](images/workshop1/Step2/add-attribute.png){#fig-addattribute width="90%" fig-align="center"}
 
 We can select a color ramp that better fits our map:
 
-- In the Styles panel, click on the `Style options` button in **Types (unique symbols)** section.
-- Click on the edit button (the pencil icon) next to the color ramp in the Symbol style list.
-- In the Symbol style panel, click on the edit button (the pencil icon) next to the color ramp in the Colors section.
-- Select the *Stone and Gravel* color ramp. Changes will be applied immediately to the map.
+-   In the Styles panel, click on the `Style options` button in **Types (unique symbols)** section.
+-   Click on the edit button (the pencil icon) next to the color ramp in the Symbol style list.
+-   In the Symbol style panel, click on the edit button (the pencil icon) next to the color ramp in the Colors section.
+-   Select the *Stone and Gravel* color ramp. Changes will be applied immediately to the map.
 
 ![Changing the color ramp for the BLDGTYPE attribute](images/workshop1/Step2/change-color-ramp.png){#fig-changecolorramp width="90%" fig-align="center"}
 
@@ -255,27 +257,30 @@ In this specific layer we also have a category with no label and zero records. W
 Finally, we are interested in displaying bike paths from the `UCSB neighborhood paths and roads` layer that also contains roads, pathways and other features. We can filter the categories we are interested in using the filter function on the right sidebar.
 
 -   Click on the layer `UCSB neighborhood paths and roads` to select it.
+
 -   Click on the `Filter` button on the right sidebar (third from top).
 
     ![Adding a filter to the road layer](images/workshop1/Step2/symbology-filter-road.png){#fig-filter-selection fig-align="center"}
 
 -   Click `Add new`
+
 -   In the condition box, choose the `highway` field and the `includes` condition, and select `cycleway`
+
 -   Don't forget to save with the button at the bottom!
 
 ![Filtering out the bike paths](images/workshop1/Step2/symbology-road-conditional.png){#fig-filter-on fig-align="center"}
 
 Because bike paths are relevant to our map, we can change the color to make them stand out more. To do this we can change the symbol color to a warm, earthy ochre color that contrasts with the blue of the bike racks and colors of the basemap.
 
-- Click on the layer `UCSB neighborhood paths and roads` to select it.
-- Click on the `Styles` button on the right sidebar (second from top).
-- In the Styles panel, click on the `Style options` button in **Types (unique symbols)** section.
-- Click on the edit button (the pencil icon) next to the symbol in the Symbol style list.
-- In the Symbol style panel, click on the color box and type in the <span data-bs-toggle="tooltip" title="A 6-digit code used to represent colors on screens" style="border-bottom: 1px dashed #666; cursor: help;">hex code</span> `d67d1e` for the ochre color. 
+-   Click on the layer `UCSB neighborhood paths and roads` to select it.
+-   Click on the `Styles` button on the right sidebar (second from top).
+-   In the Styles panel, click on the `Style options` button in **Types (unique symbols)** section.
+-   Click on the edit button (the pencil icon) next to the symbol in the Symbol style list.
+-   In the Symbol style panel, click on the color box and type in the [hex code]{data-bs-toggle="tooltip" title="A 6-digit code used to represent colors on screens" style="border-bottom: 1px dashed #666; cursor: help;"} `d67d1e` for the ochre color.
 
 ![Changing the color of the bike paths](images/workshop1/Step2/change-color-road.png){#fig-changecolorroad width="90%" fig-align="center"}
 
-- Change the width of the line to 2 px to match the width of the basemap roads.
+-   Change the width of the line to 2 px to match the width of the basemap roads.
 
 ![Changing the width of the bike paths](images/workshop1/Step2/change-width-road.png){#fig-changewidthroad width="90%" fig-align="center"}
 
@@ -303,12 +308,12 @@ From the basemap gallery, we can select another basemap. In our case, we will se
 
 In addition to bringing in structured geospatial data layers, maps are often used to sketch ideas, mock up proposals, or add contextual annotations. This is a common practice in urban planning and design.
 
-We can add these annotations by creating a **sketch layer**. Unlike feature layers, sketch layers are designed for drawing shapes (points, lines, polygons, circles, text) directly onto the map as descriptive elements.  Sketch layers differ from feature layers in a few other ways as well:
+We can add these annotations by creating a **sketch layer**. Unlike feature layers, sketch layers are designed for drawing shapes (points, lines, polygons, circles, text) directly onto the map as descriptive elements. Sketch layers differ from feature layers in a few other ways as well:
 
-- Sketch layers can contain different kinds of geometries (points, lines, polygons), while feature layers are typically constrained to a single geometry type.
-- Sketch layers are part of the map, and stored in the map, while feature layers are independent objects that are stored separately and which the map references.
-- Sketch layer shapes do not have attributes, and sketch layers do not have attribute tables.
-- Sketch layers do not appear in the map legend.
+-   Sketch layers can contain different kinds of geometries (points, lines, polygons), while feature layers are typically constrained to a single geometry type.
+-   Sketch layers are part of the map, and stored in the map, while feature layers are independent objects that are stored separately and which the map references.
+-   Sketch layer shapes do not have attributes, and sketch layers do not have attribute tables.
+-   Sketch layers do not appear in the map legend.
 
 ![Sketch layer option in the left menu](images/workshop1/Step3/drawing-sketch-layer-menu.png){#fig-sketchlayer width="40%" fig-align="center"}
 
@@ -318,22 +323,22 @@ After adding the sketch layer to your workspace, a new menu will appear in the r
 
 ### The Campus Access Proposal
 
-Imagine you are a campus active transportation planner. Your goal is to propose an infrastructure upgrade that connects an existing bike path to a campus building with high bike-parking density (visible from your `UCSB Bike Racks` and `UCSB Campus Buildings 2026` layers) where no direct bike path currently exists. 
+Imagine you are a campus active transportation planner. Your goal is to propose an infrastructure upgrade that connects an existing bike path to a campus building with high bike-parking density (visible from your `UCSB Bike Racks` and `UCSB Campus Buildings 2026` layers) where no direct bike path currently exists.
 
 To present your proposal, you will add exactly **two** sketches to your map: a proposed connecting path and a safety dismount zone.
 
 ### 1. Proposed Path Connector (Line)
 
-Find a major campus building that is near a bike path but lacks a direct bike-lane connection to its entrance or bike racks. 
+Find a major campus building that is near a bike path but lacks a direct bike-lane connection to its entrance or bike racks.
 
-- Select the **line drawing tool** from the sketch layer menu.
-- Click on an existing bike path to start drawing your proposed route, click to add vertices (turns) along pedestrian pathways or open spaces, and **double-click** to finish the line at the building's entrance plaza.
+-   Select the **line drawing tool** from the sketch layer menu.
+-   Click on an existing bike path to start drawing your proposed route, click to add vertices (turns) along pedestrian pathways or open spaces, and **double-click** to finish the line at the building's entrance plaza.
 
 Customize the line symbol in the sketch layer menu to make it look like a planning proposal:
 
-- **Width:** `2 px`
-- **Pattern:** `Dotted` or `Dashed`
-- **Color:** Light Blue (`#5aaac4`) or an eye-catching accent color of your choice.
+-   **Width:** `2 px`
+-   **Pattern:** `Dotted` or `Dashed`
+-   **Color:** Light Blue (`#5aaac4`) or an eye-catching accent color of your choice.
 
 ::: {#fig-drawingline}
 ```{=html}
@@ -341,6 +346,7 @@ Customize the line symbol in the sketch layer menu to make it look like a planni
   <source src="images/workshop1/Step3/drawing-line.mp4" type="video/mp4">
 </video>
 ```
+
 Drawing a proposed route line on the map
 :::
 
@@ -348,15 +354,15 @@ Drawing a proposed route line on the map
 
 Because your proposed path ends at a busy building entrance, we need to designate a safety buffer zone where bicyclists must dismount to prevent conflicts with pedestrians entering and exiting the building.
 
-- Select the **circle drawing tool** (or polygon tool) from the sketch layer menu.
-- Click and drag near the building entrance to create a buffer zone covering the plaza where the new path terminates.
-- Click on the select tool to finish the shape.
+-   Select the **circle drawing tool** (or polygon tool) from the sketch layer menu.
+-   Click and drag near the building entrance to create a buffer zone covering the plaza where the new path terminates.
+-   Click on the select tool to finish the shape.
 
 Customize the zone to look like a semi-transparent advisory overlay:
 
-- **Fill color:** Red (`#d13434`) or Orange
-- **Fill transparency:** `40%` (allowing the underlying basemap and buildings to remain visible)
-- **Outline:** Thin solid line or no outline
+-   **Fill color:** Red (`#d13434`) or Orange
+-   **Fill transparency:** `40%` (allowing the underlying basemap and buildings to remain visible)
+-   **Outline:** Thin solid line or no outline
 
 ::: {#fig-drawingcircle}
 ```{=html}
@@ -364,10 +370,11 @@ Customize the zone to look like a semi-transparent advisory overlay:
   <source src="images/workshop1/Step3/drawing-circle.mp4" type="video/mp4">
 </video>
 ```
+
 Drawing a dismount zone circle on the map
 :::
 
----
+------------------------------------------------------------------------
 
 Finally, rename your sketch layer to **Proposed Improvements** to reflect its purpose. Click on the three dots next to the sketch layer, select `Rename`, enter the new name, and click `OK`.
 
@@ -424,18 +431,16 @@ You can share your map publicly and embed it on a website, just like we did at t
 
 ## Preview for Workshop 2: Working with data
 
-In Workshop 2, we dive deeper into managing and manipulating various types of geospatial data in ArcGIS online. Building on our biking project from Workshop 1, we will combine terrain data with local trailhead locations to analyze trail accessibility by bike. 
+In Workshop 2, we dive deeper into managing and manipulating various types of geospatial data in ArcGIS online. Building on our biking project from Workshop 1, we will combine terrain data with local trailhead locations to analyze trail accessibility by bike.
 
 In this second session, you will learn to:
 
-- Understand the vector and raster geospatial data types
-- Import external data into ArcGIS Online
-- Create, edit, and update data of feature layers
-- Export processed data from ArcGIS Online back to your local machine
-
+-   Understand the vector and raster geospatial data types
+-   Import external data into ArcGIS Online
+-   Create, edit, and update data of feature layers
+-   Export processed data from ArcGIS Online back to your local machine
 
 <hr>
-
 
 ## Other approaches {#sec-other-approaches}
 
@@ -452,7 +457,6 @@ There are many ways of making a simple map. Here are some alternative approaches
 -   [CalTopo](https://caltopo.com) comes with a variety of base layers, including multiple types of topographic maps, and it provides a number of drawing and annotation tools. Certain features may require a subscription.
 
 <hr>
-
 
 ## Caveats of using ArcGIS Online {#sec-caveats}
 

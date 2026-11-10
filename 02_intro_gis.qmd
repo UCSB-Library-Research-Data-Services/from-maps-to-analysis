@@ -39,12 +39,19 @@ relationships.
 
 ### Workshop 1 Recap
 
-Let's start a new map for the larger campus area and its bicycle infrastructure
+Let's start a new map for the larger campus area and its bicycle
+infrastructure
 
-1. Log on to ArcGIS Online [**https://ucsb.maps.arcgis.com**](https://ucsb.maps.arcgis.com){target="_blank"}. **Sign on with your UCSB NetID**, do not use the ArcGIS login!
-1. Open a new, empty map by clicking `Map` on your top menu bar.
-   ![ArcGIS Online main menu bar](images/main-menu-bar.png){#fig-menubar width="90%" fig-align="center"}
-1. From the **Layers** panel, click on the **Add** layer button. Search `My organization` for **UCSB Campus Buildings 2026**. Choose the top result.
+1.  Log on to ArcGIS Online
+    [**https://ucsb.maps.arcgis.com**](https://ucsb.maps.arcgis.com){target="_blank"}.
+    **Sign on with your UCSB NetID**, do not use the ArcGIS login!
+2.  Open a new, empty map by clicking `Map` on your top menu bar.
+    ![ArcGIS Online main menu
+    bar](images/main-menu-bar.png){#fig-menubar width="90%"
+    fig-align="center"}
+3.  From the **Layers** panel, click on the **Add** layer button. Search
+    `My organization` for **UCSB Campus Buildings 2026**. Choose the top
+    result.
 
 ::: {.callout-tip collapse="false"}
 ## Challenge: Workshop 1 Recap
@@ -62,18 +69,19 @@ do the following tasks:
 5.  If you weren't able to keep up, [open this
     map](https://ucsb.maps.arcgis.com/home/item.html?id=2b16d246ee4c4321852712b9b4652b74#overview)
     and do a `Save as..`.
-
 :::
-
 
 ::: {.callout-note collapse="false"}
 ## Save often
 
-Once satisfied, Don't forget to save your map!! 
+Once satisfied, Don't forget to save your map!!
 
-![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas-step1 width="30%" fig-align="center"}
+![Save as dialog in ArcGIS
+Online](images/workshop1/Step1/save-as.png){#fig-saveas-step1
+width="30%" fig-align="center"}
 
-Select "Save As" and add a title **"Goleta Trailhead Map - YourInitials"**, and a short description of your map.
+Select "Save As" and add a title **"Goleta Trailhead Map -
+YourInitials"**, and a short description of your map.
 :::
 
 <hr>
@@ -88,7 +96,6 @@ YES WE KNOW THIS ISN'T HERE YET
 
 \*\* link and screenshot of finished map goes here. [Work in progress
 version: (https://arcg.is/1yz0KP3)](https://arcg.is/1yz0KP3)
-
 
 ## Raster vs Vector Data
 
@@ -114,7 +121,8 @@ discrete geographic features using coordinate geometry:
     water bodies).
 
 Every shape is tied to a row in an attribute table, where each column
-holds specific properties describing that feature. For example, if we pop open the table and look at the attributes for the Library, 
+holds specific properties describing that feature. For example, if we
+pop open the table and look at the attributes for the Library,
 
 ![Opening the Attribute Table](images/workshop2/library-poly.png)
 
@@ -124,7 +132,6 @@ holds specific properties describing that feature. For example, if we pop open t
   <source src="images/workshop2/attributes.mp4" type="video/mp4">
 </video>
 ```
-Looking at the Attribute Table
 :::
 
 ### Raster Data
@@ -144,8 +151,11 @@ Below is a single band raster. The value of each pixel is elevation.
 
 ![](images/workshop2/wkshp_2_dem_example.png)
 
-Below is an 8-band raster with band #7 (near IR) as red, band #3 (green) as
-green, and band #1 (coastal blue) as blue. This type of image displays are often called "false-color" because they do not respect the RGB channel alignment. This can help to highloght some features, such as vegetation that has a strong signalin near infrared (NIR) wavelengths
+Below is an 8-band raster with band #7 (near IR) as red, band #3 (green)
+as green, and band #1 (coastal blue) as blue. This type of image
+displays are often called "false-color" because they do not respect the
+RGB channel alignment. This can help to highloght some features, such as
+vegetation that has a strong signalin near infrared (NIR) wavelengths
 
 ![](images/workshop2/false_color.png)
 
@@ -169,8 +179,8 @@ have a wider extent than those from Workshop 1. For example,
 [SantaBarbara_Merged_roads](https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9){target="_blank"}
 is an expanded street and bicycle path network covering the Goleta and
 Santa Barbara area, extracted from OpenStreetMap and an Esri Living
-Atlas layer. We have already excluded major highways from this
-layer -- because we know you won't want to bicycle on them.
+Atlas layer. We have already excluded major highways from this layer --
+because we know you won't want to bicycle on them.
 
 To examine routes beyond campus, we zoom out to the broader regional
 area:
@@ -182,7 +192,7 @@ area:
 3.  Open the attribute table to inspect fields such as highway
     classification, road surface, and speed limits, and symbolize the
     roads to distinguish bike-friendly streets from arterial highways.
-4. Filter out the bike paths
+4.  Filter out the bike paths
 
 -   GOTCHA: most of the attribute data is blank. We will leave all of
     the roads turned on.
@@ -192,8 +202,8 @@ area:
 ::: {.callout-tip collapse="false"}
 ### Modify vector symbology
 
-1. Replace the "<Null>" in the legend with "Bike path"
-1. Increase the line width to 3px
+1.  Replace the "<Null>" in the legend with "Bike path"
+2.  Increase the line width to 3px
 :::
 
 ::: callout-note
@@ -202,13 +212,16 @@ Keeping a clean workspace
 Let's not forget to remove old layers from the current map (ie: the old
 roads roads)
 :::
-![Map with UCSB & local bike insfrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths" width="90%" fig-align="center"}
+
+![Map with UCSB & local bike
+insfrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths"
+width="90%" fig-align="center"}
 
 ## exploring Raster Data
 
 When outside of ArcGIS Online, geospatial raster data comes in many
-different formats. TIFFs, Grids, netCDF, iiif, web map services. Too many
-to list!
+different formats. TIFFs, Grids, netCDF, iiif, web map services. Too
+many to list!
 
 -   ArcGIS Online variations: while these all start somewhere as TIFFs,
     they are all (generally?) ingested into AGO as
@@ -222,7 +235,9 @@ grayscale, with low values black and high values white.
 
 Your map with DEM should look something like this by default:
 
-![Digital Elevation Model added to the map](images/workshop2/wkshp2_map_2_defaultDEM.png){fig-alt="By default, DEMs appear as almost black for low elevations to white for high elevations"  width="90%" fig-align="center"}
+![Digital Elevation Model added to the
+map](images/workshop2/wkshp2_map_2_defaultDEM.png){fig-alt="By default, DEMs appear as almost black for low elevations to white for high elevations"
+width="90%" fig-align="center"}
 
 Each pixel, or cell, in our DEM represents bare-earth surface elevation
 relative to a vertical datum (mean sea level). The `ucsb_local_dem`
@@ -231,7 +246,11 @@ Elevation Program (3DEP)).
 
 **POP QUIZ:** What do you think are the units of `ucsb_local_dem`?
 
-A DEM is an example of a **continuous raster** as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space alon. Other examples of continuous raster would be precipitation measurements, air quality index, ocean salinity, or distance from a road.
+A DEM is an example of a **continuous raster** as the values stored in
+each cell correspond to a quantity gradient (elevation in meters)
+changing in space alon. Other examples of continuous raster would be
+precipitation measurements, air quality index, ocean salinity, or
+distance from a road.
 
 In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
@@ -245,7 +264,6 @@ hundreds of feet in the foothills, as well as the grid cell resolution.
 To do: put in screenshot with properties here.
 :::
 
-
 #### Applying a Divergent Color Scheme
 
 By default, continuous raster layers display using a grayscale "Stretch"
@@ -256,24 +274,28 @@ a below-and-above zero diverging ramp or an elevation palette). Select
 the DEM layer and open the Styles menu
 (![](images/workshop2/styles_icon.png))
 
-to use 'Stretch', we have to force zero to be the middle value.
-When we need to do this, we look at the DEM's actual minimum and maximum values, and take whichever number has the larger absolute value. Use that exact number as both a negative minimum and a positive maximum in the Statistics table. (e.g.: 1218 feet)
-
+to use 'Stretch', we have to force zero to be the middle value. When we
+need to do this, we look at the DEM's actual minimum and maximum values,
+and take whichever number has the larger absolute value. Use that exact
+number as both a negative minimum and a positive maximum in the
+Statistics table. (e.g.: 1218 feet)
 
 ![](images/workshop2/dem_options.png)
 
-Here is below an example of a widely used color scale for DEM, with lower elevation display in blue and green and higher elevation in brown and white.
+Here is below an example of a widely used color scale for DEM, with
+lower elevation display in blue and green and higher elevation in brown
+and white.
 
-![Digital Elevation Model with color scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and gree for lower elevation" width="90%" fig-align="center"}
-
+![Digital Elevation Model with color
+scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and gree for lower elevation"
+width="90%" fig-align="center"}
 
 #### 'Binning' a raster
 
-It's sometimes easier to divide a raster into classes. You can do this on the fly 
-in ArcGIS Online by changing the symbology 
+It's sometimes easier to divide a raster into classes. You can do this
+on the fly in ArcGIS Online by changing the symbology
 
 ....
-
 
 ### Calculated Raster Data: Slope
 
@@ -284,7 +306,8 @@ data.
 
 We will learn how it was made in workshop 3, but for now we will use it
 to examine, with our eyes, where the steepest bike routes up into our
-foothills are. Add this raster layer by searching for `SantaBarbara_slope` within the UCSB organization: 
+foothills are. Add this raster layer by searching for
+`SantaBarbara_slope` within the UCSB organization:
 
 ![](images/workshop2/roads_over_slope.png)
 
@@ -300,7 +323,6 @@ Look up into the foothills. Which paths look steepest for our
 theoretical bike ride?
 
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
-
 
 ### Categorical Raster - Land Cover
 
@@ -333,7 +355,6 @@ urban development, forest, or water).
 Show the legend to see the category names. Open the attribute table to
 compare it to what appears for vector data:
 
-
 ### Multi-band Rasters
 
 So far we have worked with single-channel, or 1-band rasters. However,
@@ -352,9 +373,7 @@ Labs, a private satellite firm. It's fleet of PlanetScope satellites
 captures imagery in 8 bandwidth divisions of the electromagnetic
 spectrum. 8-band images. Let's add one of those layers now:
 
-
 **placeholder for Planet image of Goleta**
-
 
 ## Layer Management, Rasters, and Additional Vectors
 
@@ -371,8 +390,7 @@ spectrum. 8-band images. Let's add one of those layers now:
         can be re-ordered above or below other layers, adjusted with
         transparency and blend modes, queried for pixel values, and
         analyze for groundcover characteristics.
-        
-        
+
 **Time to save our map!!!**
 
 ::: callout-note
@@ -402,11 +420,11 @@ which changes the mathematics of the values of pixels into ranges that
 match the combination of computer monitors and the human eye. Adjust
 this so that it appears most natural on your screen.
 
-:::{.callout-tip}
+::: callout-tip
 ## Challenge: play with different band combinations. What do you think Band
+
 1 is good for?
 :::
-
 
 ## Layer Management, Raster, and Additiona Vectors
 
@@ -421,14 +439,12 @@ this so that it appears most natural on your screen.
         can be re-ordered above or below other layers, adjusted with
         transparency and blend modes, queried for pixel values, and
         analyze for groundcover characteristics.
-        
-  
+
 At this point your map should look something like this:
 
-![](images/workshop2/wkshp2_map_5.png)  
-        
-**Time to save our map!!!**
+![](images/workshop2/wkshp2_map_5.png)
 
+**Time to save our map!!!**
 
 ## Importing data into ArcGIS Online
 
@@ -459,8 +475,9 @@ a CSV spreadsheet using coordinate columns (latitude and longitude) to
 see how external tabular data can be transformed into a geospatial layer
 and integrate with existing road and elevation layers.
 
-Download and open the [`SantaBarbara_County_Trailheads.csv`](https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv) onto your
-device.
+Download and open the
+[`SantaBarbara_County_Trailheads.csv`](https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv)
+onto your device.
 
 ::: {.callout-tip collapse="true"}
 ## Challenge - Inspect the trailhead data
@@ -540,15 +557,15 @@ interest. Here is a good website to look at the different CRSs:
 <https://epsg.io/>
 :::
 
-**POP QUIZ:** Examine the csv file - does it tell you anything about the coordinate
-system that we are dealing with?
+**POP QUIZ:** Examine the csv file - does it tell you anything about the
+coordinate system that we are dealing with?
 
 ::: {.callout-tip collapse="false"}
 ## Challenge - Make the trailhead layer look nice
 
 -   Choose the trail `Difficulty` attribute to add a color ramp
--   Reorder the categories so their are matching the difficulty order (and
-    not the alphabetical one)
+-   Reorder the categories so their are matching the difficulty order
+    (and not the alphabetical one)
 -   Give a title to the legend
 -   Choose a good color ramp
 -   Increase the point size
@@ -579,7 +596,8 @@ menu at the top-left of your Map view and selecting Content.
     trailhead layer you imported from the CSV file to go to the Overview
     page of that layer.
 
-![](images/workshop2/export-overview.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads." width="100%"}
+![](images/workshop2/export-overview.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads."
+width="100%"}
 
 -   Unfold the menu on the right completely, select Export data, and
     choose the GeoJSON format.
