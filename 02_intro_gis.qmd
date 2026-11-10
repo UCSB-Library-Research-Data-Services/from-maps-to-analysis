@@ -512,7 +512,17 @@ system that we are dealing with?
 -   Give a title to the legend "Trail difficulty"
 :::
 
-## Editing Data
+## Editing Feature Layers
+
+### Editing Values
+
+### Editing Geospatial Information
+
+### Adding a New Feature
+
+
+
+
 
 Potential narrative: adding the new ILP bike path to your own personal
 bike path layer.
