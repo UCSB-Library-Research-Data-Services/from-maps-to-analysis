@@ -533,7 +533,8 @@ system that we are dealing with?
 -   Give a title to the legend "Trail difficulty"
 :::
 
-In the end, you should have a similar legend: 
+
+In the end, you should have a legend similar to the following: 
 
 ![](images/workshop2/w2_trailhead_legend.png){fig-alt="Legend for trailheads with color ranging from yellow - green for easy moderate to red purple for harder ones" width="30%"}
 
@@ -602,6 +603,15 @@ You have edited the layer! **Note that if it is a layer used in multiple maps (b
 
 
 
+
+=======
+## Editing Feature Layers
+
+### Editing Values
+
+### Editing Geospatial Information
+
+### Adding a New Feature
 
 
 
