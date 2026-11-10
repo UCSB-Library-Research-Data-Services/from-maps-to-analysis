@@ -126,13 +126,8 @@ pop open the table and look at the attributes for the Library,
 
 ![Opening the Attribute Table](images/workshop2/library-poly.png)
 
-::: {#fig-viewattributes}
-```{=html}
-<video controls autoplay loop muted playsinline width="100%">
-  <source src="images/workshop2/attributes.mp4" type="video/mp4">
-</video>
-```
-:::
+![Library polygon attributes](images/workshop2/library-attributes.png)
+
 
 ### Raster Data
 
