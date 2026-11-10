@@ -637,43 +637,11 @@ This should open the Editor panel on the right of your map
 
 ![Feature layer Editor
 panel](images/workshop2/w2_editor_panel.png){fig-alt="Feature layer Editor panel"
-width="50%"}
-
-This should open the Editor panel on the right of your map
-
-![Feature layer Editor
-panel](images/workshop2/w2_editor_panel.png){fig-alt="Feature layer Editor panel"
 width="40%"}
 
 The top part (in red) of this panel lets you edit the feature layer
 elements. Below, you can add new features to existing layers (for our
 trailhead layer in magenta).
-
-Since we want to move our trailhead locations individually, we can use
-the `Select by point` tool (next to the hand) to:
-
-1.  Select a point of interest by clicking on it.
-
-![](images/workshop2/w2_edit-select_tool.png){fig-alt="Select by Point tool"
-width="90%" fig-align="center"}
-
-2.  Once selected, the dot should have a cyan halo around it and you
-    should see its values for the attributes on the right.
-
-![](images/workshop2/w2_edit-selected_point.png){fig-alt="Trailhead in the ocean selected"
-width="90%" fig-align="center"}
-
-3.  Then drag the point to the new location, close by the building.
-
-4.  Confirm the change, by clicking on the blue "Update" button at the
-    bottom of the panel.
-
-![](images/workshop2/w2_edit-moved_point.png){fig-alt="Trailhead location moved to the beach"
-width="90%" fig-align="center"}
-
-The top part (in red) of this panel lets you edit the feature layer
-elements. Below, you can add new features to existing layers (for our
-county layer in magenta).
 
 Since we want to move our trailhead locations individually, we can use
 the `Select by point` tool (next to the hand) to:
