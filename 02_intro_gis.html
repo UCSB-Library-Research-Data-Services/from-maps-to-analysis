@@ -163,18 +163,18 @@ window.Quarto = {
   <li><a href="#workshop-1-recap" id="toc-workshop-1-recap" class="nav-link" data-scroll-target="#workshop-1-recap">Workshop 1 Recap</a></li>
   </ul></li>
   <li><a href="#preview-our-end-goal" id="toc-preview-our-end-goal" class="nav-link" data-scroll-target="#preview-our-end-goal">Preview: our end goal</a></li>
-  <li><a href="#geographic-data" id="toc-geographic-data" class="nav-link" data-scroll-target="#geographic-data">Geographic data</a>
+  <li><a href="#raster-vs-vector-data" id="toc-raster-vs-vector-data" class="nav-link" data-scroll-target="#raster-vs-vector-data">Raster vs Vector Data</a>
   <ul class="collapse">
   <li><a href="#vector-data" id="toc-vector-data" class="nav-link" data-scroll-target="#vector-data">Vector Data</a></li>
   <li><a href="#raster-data" id="toc-raster-data" class="nav-link" data-scroll-target="#raster-data">Raster Data</a></li>
-  </ul></li>
   <li><a href="#the-story-so-far" id="toc-the-story-so-far" class="nav-link" data-scroll-target="#the-story-so-far">The Story So Far</a></li>
-  <li><a href="#adding-raster-data-to-your-map" id="toc-adding-raster-data-to-your-map" class="nav-link" data-scroll-target="#adding-raster-data-to-your-map">Adding Raster Data to Your Map</a></li>
-  <li><a href="#adding-raster-data" id="toc-adding-raster-data" class="nav-link" data-scroll-target="#adding-raster-data">Adding Raster Data</a>
+  </ul></li>
+  <li><a href="#exploring-vector-data" id="toc-exploring-vector-data" class="nav-link" data-scroll-target="#exploring-vector-data">Exploring Vector Data</a></li>
+  <li><a href="#exploring-raster-data" id="toc-exploring-raster-data" class="nav-link" data-scroll-target="#exploring-raster-data">exploring Raster Data</a>
   <ul class="collapse">
   <li><a href="#continuous-raster---digital-elevation-models-dem" id="toc-continuous-raster---digital-elevation-models-dem" class="nav-link" data-scroll-target="#continuous-raster---digital-elevation-models-dem">Continuous Raster - Digital Elevation Models (DEM)</a></li>
-  <li><a href="#categorical-raster---land-cover" id="toc-categorical-raster---land-cover" class="nav-link" data-scroll-target="#categorical-raster---land-cover">Categorical Raster - Land Cover</a></li>
   <li><a href="#calculated-raster-data-slope" id="toc-calculated-raster-data-slope" class="nav-link" data-scroll-target="#calculated-raster-data-slope">Calculated Raster Data: Slope</a></li>
+  <li><a href="#categorical-raster---land-cover" id="toc-categorical-raster---land-cover" class="nav-link" data-scroll-target="#categorical-raster---land-cover">Categorical Raster - Land Cover</a></li>
   <li><a href="#multi-band-rasters" id="toc-multi-band-rasters" class="nav-link" data-scroll-target="#multi-band-rasters">Multi-band Rasters</a></li>
   </ul></li>
   <li><a href="#layer-management-rasters-and-additional-vectors" id="toc-layer-management-rasters-and-additional-vectors" class="nav-link" data-scroll-target="#layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</a></li>
@@ -302,8 +302,8 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 <p>YES WE KNOW THIS ISN’T HERE YET</p>
 <p>** link and screenshot of finished map goes here. <a href="https://arcg.is/1yz0KP3">Work in progress version: (https://arcg.is/1yz0KP3)</a></p>
 </section>
-<section id="geographic-data" class="level2">
-<h2 class="anchored" data-anchor-id="geographic-data">Geographic data</h2>
+<section id="raster-vs-vector-data" class="level2">
+<h2 class="anchored" data-anchor-id="raster-vs-vector-data">Raster vs Vector Data</h2>
 <p>Geographic data generally falls into two primary models: <strong>vector</strong> and <strong>raster</strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -336,14 +336,14 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 <p>Below is an 8-band raster with band #7 (near IR) as red, band #3 (green) as green, and band #1 (coastal blue) as blue. This type of image displays are often called “false-color” because they do not respect the RGB channel alignment. This can help to highloght some features, such as vegetation that has a strong signalin near infrared (NIR) wavelengths</p>
 <p><img src="images/workshop2/false_color.png" class="img-fluid"></p>
 </section>
-</section>
-<section id="the-story-so-far" class="level2">
-<h2 class="anchored" data-anchor-id="the-story-so-far">The Story So Far</h2>
+<section id="the-story-so-far" class="level3">
+<h3 class="anchored" data-anchor-id="the-story-so-far">The Story So Far</h3>
 <p>In the first workshop, we created a bicycle map of campus and Isla Vista using pre-existing data.</p>
 <p>Our goal for part 2 is to plan a challenging and comfortable bicycle route that leads from the UCSB campus into the surrounding Goleta community and the Santa Ynez foothills. And we want to put our bike on the bus on the way back. To accomplish this, we need to expand beyond campus bike paths and incorporate regional road networks; we want to look at elevation data to look for steep climbs and long views; and we need to find those bus stops.</p>
 </section>
-<section id="adding-raster-data-to-your-map" class="level2">
-<h2 class="anchored" data-anchor-id="adding-raster-data-to-your-map">Adding Raster Data to Your Map</h2>
+</section>
+<section id="exploring-vector-data" class="level2">
+<h2 class="anchored" data-anchor-id="exploring-vector-data">Exploring Vector Data</h2>
 <p>Let’s set up our workspaces together. The layers for this workshop all have a wider extent than those from Workshop 1. For example, <a href="https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9" target="_blank">SantaBarbara_Merged_roads</a> is an expanded street and bicycle path network covering the Goleta and Santa Barbara area, extracted from OpenStreetMap and an Esri Living Atlas layer. We have already excluded major highways from this layer – because we know you won’t want to bicycle on them.</p>
 <p>To examine routes beyond campus, we zoom out to the broader regional area:</p>
 <ol type="1">
@@ -362,7 +362,7 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Modify bike path symbology
+<span class="screen-reader-only">Tip</span>Modify vector symbology
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -396,8 +396,8 @@ Note
 </figure>
 </div>
 </section>
-<section id="adding-raster-data" class="level2">
-<h2 class="anchored" data-anchor-id="adding-raster-data">Adding Raster Data</h2>
+<section id="exploring-raster-data" class="level2">
+<h2 class="anchored" data-anchor-id="exploring-raster-data">exploring Raster Data</h2>
 <p>When outside of ArcGIS Online, geospatial raster data comes in many different formats. TIFFs, Grids, netCDF, iiif, web map services. Too many to list!</p>
 <ul>
 <li>ArcGIS Online variations: while these all start somewhere as TIFFs, they are all (generally?) ingested into AGO as <code>Tiled imagery layers</code></li>
@@ -433,8 +433,8 @@ Note
 </section>
 </div>
 </div>
-<section id="applying-color-schemes" class="level4">
-<h4 class="anchored" data-anchor-id="applying-color-schemes">Applying Color Schemes</h4>
+<section id="applying-a-divergent-color-scheme" class="level4">
+<h4 class="anchored" data-anchor-id="applying-a-divergent-color-scheme">Applying a Divergent Color Scheme</h4>
 <p>By default, continuous raster layers display using a grayscale “Stretch” renderer (low values ‘0’ dark, and high values 255 light). To clearly distinguish elevation changes across the coastal plain and mountains, let’s change the symbology to a continuous, diverging color ramp (e.g., a below-and-above zero diverging ramp or an elevation palette). Select the DEM layer and open the Styles menu (<img src="images/workshop2/styles_icon.png" class="img-fluid">)</p>
 <p>to use ‘Stretch’, we have to force zero to be the middle value. When we need to do this, we look at the DEM’s actual minimum and maximum values, and take whichever number has the larger absolute value. Use that exact number as both a negative minimum and a positive maximum in the Statistics table. (e.g.: 1218 feet)</p>
 <p><img src="images/workshop2/dem_options.png" class="img-fluid"></p>
@@ -442,10 +442,25 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/workshop2/w2_dem_colored.png" class="img-fluid figure-img" style="width:90.0%" alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and gree for lower elevation"></p>
-<figcaption>Digital Elevation Model with color sclae</figcaption>
+<figcaption>Digital Elevation Model with color scale</figcaption>
 </figure>
 </div>
 </section>
+<section id="binning-a-raster" class="level4">
+<h4 class="anchored" data-anchor-id="binning-a-raster">‘Binning’ a raster</h4>
+<p>It’s sometimes easier to divide a raster into classes. You can do this on the fly in ArcGIS Online by changing the symbology</p>
+<p>….</p>
+</section>
+</section>
+<section id="calculated-raster-data-slope" class="level3">
+<h3 class="anchored" data-anchor-id="calculated-raster-data-slope">Calculated Raster Data: Slope</h3>
+<p>You can also perform calculations to turn a DEM into a slope layer. We already made this slope layer for you as it can be a computing intensive task. This is another continuous dataset. You can call it derivative data.</p>
+<p>We will learn how it was made in workshop 3, but for now we will use it to examine, with our eyes, where the steepest bike routes up into our foothills are. Add this raster layer by searching for <code>SantaBarbara_slope</code> within the UCSB organization:</p>
+<p><img src="images/workshop2/roads_over_slope.png" class="img-fluid"></p>
+<p><strong>POP QUIZ:</strong> Below same slope layer, zoomed in to campus, and symbolized with a divergent color scheme. What does this tell you is incorrect about something we said earlier regarding our DEM? (DTM vs DSM)</p>
+<p><img src="images/workshop2/slope.png" class="img-fluid"></p>
+<p>Resymbolize your slope layer to a color scheme that makes sense to you. Look up into the foothills. Which paths look steepest for our theoretical bike ride?</p>
+<p><img src="images/workshop2/symbolizing_slope.png" class="img-fluid" style="width:60.0%"></p>
 </section>
 <section id="categorical-raster---land-cover" class="level3">
 <h3 class="anchored" data-anchor-id="categorical-raster---land-cover">Categorical Raster - Land Cover</h3>
@@ -463,16 +478,6 @@ Note
 <p>While elevation is a <strong>continuous raster</strong> (values change smoothly along a numerical gradient representing a quantity), other rasters are <strong>categorical rasters</strong> (e.g., land cover classification datasets from the Living Atlas, where integer cell values represent categories such as urban development, forest, or water).</p>
 <p><img src="images/workshop2/landcover_result.png" class="img-fluid"></p>
 <p>Show the legend to see the category names. Open the attribute table to compare it to what appears for vector data:</p>
-</section>
-<section id="calculated-raster-data-slope" class="level3">
-<h3 class="anchored" data-anchor-id="calculated-raster-data-slope">Calculated Raster Data: Slope</h3>
-<p>You can also perform calculations to turn a DEM into a slope layer. We already made this slope layer for you as it can be a computing intensive task. This is another continuous dataset. You can call it derivative data.</p>
-<p>We will learn how it was made in workshop 3, but for now we will use it to examine, with our eyes, where the steepest bike routes up into our foothills are. Add this raster layer by searching for <code>SantaBarbara_slope</code> within the UCSB organization:</p>
-<p><img src="images/workshop2/roads_over_slope.png" class="img-fluid"></p>
-<p><strong>POP QUIZ:</strong> Below same slope layer, zoomed in to campus, and symbolized with a divergent color scheme. What does this tell you is incorrect about something we said earlier regarding our DEM? (DTM vs DSM)</p>
-<p><img src="images/workshop2/slope.png" class="img-fluid"></p>
-<p>Resymbolize your slope layer to a color scheme that makes sense to you. Look up into the foothills. Which paths look steepest for our theoretical bike ride?</p>
-<p><img src="images/workshop2/symbolizing_slope.png" class="img-fluid" style="width:60.0%"></p>
 </section>
 <section id="multi-band-rasters" class="level3">
 <h3 class="anchored" data-anchor-id="multi-band-rasters">Multi-band Rasters</h3>
