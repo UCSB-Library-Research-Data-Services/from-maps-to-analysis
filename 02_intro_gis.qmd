@@ -564,11 +564,11 @@ coordinate system that we are dealing with?
 ## Challenge - Make the trailhead layer look nice
 
 -   Choose the trail `Difficulty` attribute to add a color ramp
--   Reorder the categories so their are matching the difficulty order
-    (and not the alphabetical one)
--   Give a title to the legend
--   Choose a good color ramp
--   Increase the point size
+-   Reorder the categories so their are matching the difficulty order (and
+    not the alphabetical one)
+-   Choose a good color ramp, e.g. green-yellow for easy-moderate and red-purple for difficult
+-   Increase the point size to 12px
+-   Give a title to the legend "Trail difficulty"
 :::
 
 ## Editing Data
@@ -578,6 +578,9 @@ bike path layer.
 
 Highlight the best/favorite trails:
 <https://santabarbaraca.com/itinerary/best-hikes-in-santa-barbara/>
+
+
+
 
 ## Exporting Data
 
@@ -619,6 +622,8 @@ width="50%"}
 
 ![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option available"
 width="100%"}
+
+
 
 ## Completing the Story
 
@@ -678,6 +683,8 @@ variety of hillshade basemaps in the Living Atlas. Also: that was a
 rather lengthy aside.
 
 Now would be an excellent point to save your map.
+
+<hr>
 
 ## Preview for Workshop 3: Looking Ahead to Spatial Analysis
 
