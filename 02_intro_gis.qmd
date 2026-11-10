@@ -137,6 +137,14 @@ Building names, floor counts, area, who edited the file, and when it was
 last updated, among other fields a user may find helpful when analyzing
 their data.
 
+Attributes may be divided into three types:
+
+-   Nominal: information with labels and names - building type
+
+-   Numerical: information that can be counted - shape area
+
+-   Ordinal: information that can be ordered in some way - floor count
+
 ### Raster Data
 
 Raster data represents the landscape as a regular grid of square cells
