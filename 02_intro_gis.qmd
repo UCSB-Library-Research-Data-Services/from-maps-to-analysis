@@ -228,17 +228,15 @@ roads roads)
 infrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths"
 width="90%" fig-align="center"}
 
-## exploring Raster Data
+## Exploring Raster Data
 
 When outside of ArcGIS Online, geospatial raster data comes in many
 different formats. TIFFs, Grids, netCDF, iiif, web map services. Too
 many to list!
 
--   ArcGIS Online variations: while these all start somewhere as TIFFs,
-    they are all (generally?) ingested into AGO as
+-   ArcGIS Online variations: while many of these start somewhere as TIFFs,
+    they are all ingested into AGO as flavors of 
     `Tiled imagery layers`
-
-### Continuous Raster - Digital Elevation Models (DEM)
 
 Let's add a Digital Elevation Model to out map: `ucsb_local_dem`. By
 default, a `single channel` or `one band` raster is displayed as
@@ -272,10 +270,16 @@ hundreds of feet in the foothills, as well as the grid cell resolution.
 
 ## yes. because sea level.
 
-To do: put in screenshot with properties here.
+** screenshot here **
+
+To do: put in screenshot with properties here. The properties table
+shows the maximum and minimum values
 :::
 
 #### Applying a Divergent Color Scheme
+Data that moves around a zero point, such as our batho-topo elevation model,
+is knows as ** divergent **. It is very helpful to your map viewers to visualize
+this typ of data with a divergent color scheme.
 
 By default, continuous raster layers display using a grayscale "Stretch"
 renderer (low values '0' dark, and high values 255 light). To clearly
@@ -299,6 +303,7 @@ and white.
 
 ![Digital Elevation Model with color
 scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higher elevation, blue and green for lower elevation"
+scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and green for lower elevation"
 width="90%" fig-align="center"}
 
 #### 'Binning' a raster
@@ -335,7 +340,7 @@ theoretical bike ride?
 
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
 
-### Categorical Raster - Land Cover
+### Categorical Rasters - Land Cover
 
 **Categorical vs. Continuous Data**
 
@@ -380,7 +385,7 @@ in other bandwidths of radiation, such as near infrared, or microwave,
 and see completely other things.
 
 The DREAM Lab hosts several satellite views of campus created by Planet
-Labs, a private satellite firm. It's fleet of PlanetScope satellites
+Labs, a private satellite firm. Its fleet of PlanetScope satellites
 captures imagery in 8 bandwidth divisions of the electromagnetic
 spectrum. 8-band images. Let's add one of those layers now:
 
@@ -420,7 +425,7 @@ spectrum. 8-band images. Let's add one of those layers now:
     Library's Higher Education Site License.
 :::
 
-It's initial appearance is dark -- work on its visualization. Here are
+Its initial appearance is dark -- work on its visualization. Here are
 some good settings to use:
 
 ![](images/workshop2/wkshp2_map_5_planetscopesettings.png){fig-alt="settings as they appear in the lesson text."}
@@ -433,19 +438,21 @@ this so that it appears most natural on your screen.
 
 ::: callout-tip
 ## Challenge: play with different band combinations. What do you think Band
-
 1 is good for?
 :::
 
-## Layer Management, Raster, and Additional Vectors
+* Needs a better question and explanations *
+
+
+### Layer Management and Rasters
 
 1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
     on top of the raster elevation layers in the layer stack so they are
     not hidden.
 2.  **Imagery Layers vs Basemaps**:
-    -   An **basemap** sits at the bottom of the map canvas, serving
+    -   A **basemap** sits at the bottom of the map canvas, serving
         purely as a static background context. Esri has options that are
-        satellite and aerial views.
+        satellite and aerial views. You cannot perform analysis on basemaps.
     -   An **imagery layer** is a data layer added to your map stack. It
         can be re-ordered above or below other layers, adjusted with
         transparency and blend modes, queried for pixel values, and
