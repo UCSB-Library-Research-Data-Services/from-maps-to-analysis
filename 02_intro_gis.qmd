@@ -157,8 +157,8 @@ Below is a single band raster. The value of each pixel is elevation.
 Below is an 8-band raster with band #7 (near IR) as red, band #3 (green)
 as green, and band #1 (coastal blue) as blue. This type of image
 displays are often called "false-color" because they do not respect the
-RGB channel alignment. This can help to highloght some features, such as
-vegetation that has a strong signalin near infrared (NIR) wavelengths
+RGB channel alignment. This can help to highlight some features, such as
+vegetation that has a strong signal in near infrared (NIR) wavelengths
 
 ![](images/workshop2/false_color.png)
 
@@ -217,7 +217,7 @@ roads roads)
 :::
 
 ![Map with UCSB & local bike
-insfrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths"
+infrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths"
 width="90%" fig-align="center"}
 
 ## exploring Raster Data
@@ -251,7 +251,7 @@ Elevation Program (3DEP)).
 
 A DEM is an example of a **continuous raster** as the values stored in
 each cell correspond to a quantity gradient (elevation in meters)
-changing in space alon. Other examples of continuous raster would be
+changing in space . Other examples of continuous raster would be
 precipitation measurements, air quality index, ocean salinity, or
 distance from a road.
 
@@ -290,7 +290,7 @@ lower elevation display in blue and green and higher elevation in brown
 and white.
 
 ![Digital Elevation Model with color
-scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and gree for lower elevation"
+scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higher elevation, blue and green for lower elevation"
 width="90%" fig-align="center"}
 
 #### 'Binning' a raster
@@ -429,7 +429,7 @@ this so that it appears most natural on your screen.
 1 is good for?
 :::
 
-## Layer Management, Raster, and Additiona Vectors
+## Layer Management, Raster, and Additional Vectors
 
 1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
     on top of the raster elevation layers in the layer stack so they are
@@ -441,7 +441,7 @@ this so that it appears most natural on your screen.
     -   An **imagery layer** is a data layer added to your map stack. It
         can be re-ordered above or below other layers, adjusted with
         transparency and blend modes, queried for pixel values, and
-        analyze for groundcover characteristics.
+        analyze for ground cover characteristics.
 
 At this point your map should look something like this:
 
@@ -539,7 +539,7 @@ width="100%"}
 ## A note on Coordinate Reference Systems
 
 In ArcGIS Online, the default projection and Coordinate Reference System
-(CRS) is WGS 1984 Web Mercator Auxilary Sphere, also used by the Global
+(CRS) is WGS 1984 Web Mercator Auxiliary Sphere, also used by the Global
 Positioning System
 ([GPS](https://en.wikipedia.org/wiki/Global_Positioning_System)).
 
@@ -772,7 +772,7 @@ width="100%"}
     ucsb_bike folder as location. Click on Export. Note that exporting
     data can take some time, so be patient :)
 
-![](images/workshop2/export-geojson.png){fig-alt="Wizzard page to export a geojson file: title, Folder location, Categories, Tags and Summary are the available options"
+![](images/workshop2/export-geojson.png){fig-alt="Wizard page to export a geojson file: title, Folder location, Categories, Tags and Summary are the available options"
 width="50%"}
 
 -   Once the export is completed, you should automatically be redirected
@@ -780,7 +780,7 @@ width="50%"}
     be available in the menu on the right side of the page. Click on it
     and select a location on your local computer and a filename.
 
-![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option available"
+![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Download option available"
 width="100%"}
 
 ## Completing the Story
@@ -820,7 +820,7 @@ and Altitude
     0° (level with the horizon at sunrise/sunset) to 90° (directly
     overhead at solar noon). A lower altitude (e.g., 30°–45°, typical of
     low winter sun) produces longer, more dramatic shadows that
-    accentuate ridgelines, canyons, and valleys.
+    accentuate ridge lines, canyons, and valleys.
 
 ![](images/workshop2/relief_options.png)
 
