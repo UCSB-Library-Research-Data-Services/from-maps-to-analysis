@@ -39,19 +39,12 @@ relationships.
 
 ### Workshop 1 Recap
 
-Let's start a new map for the larger campus area and its bicycle
-infrastructure
+Let's start a new map for the larger campus area and its bicycle infrastructure
 
-1.  Log on to ArcGIS Online
-    [**https://ucsb.maps.arcgis.com**](https://ucsb.maps.arcgis.com){target="_blank"}.
-    **Sign on with your UCSB NetID**, do not use the ArcGIS login!
-2.  Open a new, empty map by clicking `Map` on your top menu bar.
-    ![ArcGIS Online main menu
-    bar](images/main-menu-bar.png){#fig-menubar width="90%"
-    fig-align="center"}
-3.  From the **Layers** panel, click on the **Add** layer button. Search
-    `My organization` for **UCSB Campus Buildings**. Choose the top
-    result.
+1. Log on to ArcGIS Online [**https://ucsb.maps.arcgis.com**](https://ucsb.maps.arcgis.com){target="_blank"}. **Sign on with your UCSB NetID**, do not use the ArcGIS login!
+1. Open a new, empty map by clicking `Map` on your top menu bar.
+   ![ArcGIS Online main menu bar](images/main-menu-bar.png){#fig-menubar width="90%" fig-align="center"}
+1. From the **Layers** panel, click on the **Add** layer button. Search `My organization` for **UCSB Campus Buildings 2026**. Choose the top result.
 
 ::: {.callout-tip collapse="false"}
 ## Challenge: Workshop 1 Recap
@@ -69,6 +62,18 @@ do the following tasks:
 5.  If you weren't able to keep up, [open this
     map](https://ucsb.maps.arcgis.com/home/item.html?id=2b16d246ee4c4321852712b9b4652b74#overview)
     and do a `Save as..`.
+
+:::
+
+
+::: {.callout-note collapse="false"}
+## Save often
+
+Once satisfied, Don't forget to save your map!! 
+
+![Save as dialog in ArcGIS Online](images/workshop1/Step1/save-as.png){#fig-saveas-step1 width="30%" fig-align="center"}
+
+Select "Save As" and add a title **"Goleta Trailhead Map - YourInitials"**, and a short description of your map.
 :::
 
 <hr>
@@ -83,6 +88,7 @@ YES WE KNOW THIS ISN'T HERE YET
 
 \*\* link and screenshot of finished map goes here. [Work in progress
 version: (https://arcg.is/1yz0KP3)](https://arcg.is/1yz0KP3)
+
 
 ## Geographic data
 
@@ -129,8 +135,8 @@ Below is a single band raster. The value of each pixel is elevation.
 
 ![](images/workshop2/wkshp_2_dem_example.png)
 
-Below is an 8-band raster with bands 7 (near IR) as red, band 3 as
-green, and 'coastal blue' as blue.
+Below is an 8-band raster with band #7 (near IR) as red, band #3 (green) as
+green, and band #1 (coastal blue) as blue. This type of image displays are often called "false-color" because they do not respect the RGB channel alignment. This can help to highloght some features, such as vegetation that has a strong signalin near infrared (NIR) wavelengths
 
 ![](images/workshop2/false_color.png)
 
@@ -147,17 +153,15 @@ campus bike paths and incorporate regional road networks; we want to
 look at elevation data to look for steep climbs and long views; and we
 need to find those bus stops.
 
-### Adding Raster Data to Your Map
+## Adding Raster Data to Your Map
 
 Let's set up our workspaces together. The layers for this workshop all
 have a wider extent than those from Workshop 1. For example,
-[SantaBarbara_Merged_roads](https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9)\*\*
+[SantaBarbara_Merged_roads](https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9){target="_blank"}
 is an expanded street and bicycle path network covering the Goleta and
 Santa Barbara area, extracted from OpenStreetMap and an Esri Living
 Atlas layer. We have already excluded major highways from this
-layer--because we know you won't want to bicycle on them.
-
-Add this layer now.
+layer -- because we know you won't want to bicycle on them.
 
 To examine routes beyond campus, we zoom out to the broader regional
 area:
@@ -169,16 +173,18 @@ area:
 3.  Open the attribute table to inspect fields such as highway
     classification, road surface, and speed limits, and symbolize the
     roads to distinguish bike-friendly streets from arterial highways.
+4. Filter out the bike paths
 
 -   GOTCHA: most of the attribute data is blank. We will leave all of
     the roads turned on.
 -   screenshot of map with roads symbolized for bikes. Map 1 currently
     has default blue.
 
-::: callout-tip
-Compare the previous road file to this one
+::: {.callout-tip collapse="false"}
+## Modify bike path symbology
 
-Which vector layers in the map are: --points --lines --polygons
+1. Replace the "<Null>" in the legend with "Bike path"
+1. Increase the line width to 3px
 :::
 
 ::: callout-note
@@ -187,41 +193,40 @@ Keeping a clean workspace
 Let's not forget to remove old layers from the current map (ie: the old
 roads roads)
 :::
+![Map with UCSB & local bike insfrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths" width="90%" fig-align="center"}
 
 ## Adding Raster Data
 
 When outside of ArcGIS Online, geospatial raster data comes in many
-different forms. TIFFs, Grids, netCDF, iiif, web map services. Too many
+different formats. TIFFs, Grids, netCDF, iiif, web map services. Too many
 to list!
 
 -   ArcGIS Online variations: while these all start somewhere as TIFFs,
     they are all (generally?) ingested into AGO as
     `Tiled imagery layers`
 
-### Digital Elevation Models (DEM)
+### Continuous Raster - Digital Elevation Models (DEM)
 
 Let's add a Digital Elevation Model to out map: `ucsb_local_dem`. By
 default, a `single channel` or `one band` raster is displayed as
 grayscale, with low values black and high values white.
 
-The value of each pixel in a DEM represents elevation. What do you think
-are the units of `ucsb_local_dem`?
-
 Your map with DEM should look something like this by default:
 
-![](images/workshop2/wkshp2_map_2_defaultDEM.png){fig-alt="By default, DEMs appear as almost black for low elevations to white for high elevations"}
+![Digital Elevation Model added to the map](images/workshop2/wkshp2_map_2_defaultDEM.png){fig-alt="By default, DEMs appear as almost black for low elevations to white for high elevations"  width="90%" fig-align="center"}
 
 Each pixel, or cell, in our DEM represents bare-earth surface elevation
 relative to a vertical datum (mean sea level). The `ucsb_local_dem`
 dataset was derived from a high-resolution USGS LiDAR survey (3D
 Elevation Program (3DEP)).
 
-\*\* define continuous \*\*
+**POP QUIZ:** What do you think are the units of `ucsb_local_dem`?
+
+A DEM is an example of a **continuous raster** as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space alon. Other examples of continuous raster would be precipitation measurements, air quality index, ocean salinity, or distance from a road.
 
 In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
-(make sure we are feet and not meters)
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: Does our DEM contain negative values? Why?
@@ -229,8 +234,6 @@ hundreds of feet in the foothills, as well as the grid cell resolution.
 ## yes. because sea level.
 
 To do: put in screenshot with properties here.
-:::
-
 :::
 
 #### Applying Color Schemes
@@ -249,9 +252,12 @@ When we need to do this, we look at the DEM's actual minimum and maximum values,
 
 ![](images/workshop2/dem_options.png)
 
--   insert screenshot of results of divergent DEM
+Here is below an example of a widely used color scale for DEM, with lower elevation display in blue and green and higher elevation in brown and white.
 
-### Categorical Rasters
+![Digital Elevation Model with color sclae](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and gree for lower elevation" width="90%" fig-align="center"}
+
+
+### Categorical Raster - Land Cover
 
 **Categorical vs. Continuous Data**
 
@@ -291,7 +297,9 @@ data.
 
 We will learn how it was made in workshop 3, but for now we will use it
 to examine, with our eyes, where the steepest bike routes up into our
-foothills are: ![](images/workshop2/roads_over_slope.png)
+foothills are. Add this raster layer by searching for `SantaBarbara_slope` within the UCSB organization: 
+
+![](images/workshop2/roads_over_slope.png)
 
 **POP QUIZ:** Below same slope layer, zoomed in to campus, and
 symbolized with a divergent color scheme. What does this tell you is
@@ -306,42 +314,7 @@ theoretical bike ride?
 
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
 
-## Layer Management, Rasters, and Additional Vectors
-
-Add in the bus stop layer
-
-1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
-    on top of the raster elevation layers in the layer stack so they are
-    not hidden.
-
-2.  **Imagery Layers vs. Basemaps**:
-
-    -   An **basemap** sits at the bottom of the map canvas, serving
-        purely as a static background context. Esri has options that are
-        satellite and aerial views.
-    -   An **imagery layer** is a data layer added to your map stack. It
-        can be re-ordered above or below other layers, adjusted with
-        transparency and blend modes, queried for pixel values, and
-        analyze for groundcover characteristics.
-    -   Below we will add a Planet satellite view to campus to explore.
-
-::: callout-note
-#### Esri ArcGIS Online Credits
-
--   All ArcGIS Online accounts created under the UCSB site license are
-    allocated **1000 service credits** per license year.
--   **Transactions**: Some analysis operations and storage consume
-    service credits. For more information, visit Esri's [Understand
-    Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
-    page.
--   **Manage your content**: Periodically review and delete unnecessary
-    hosted layers and analysis outputs to conserve credits.
--   **Data Stewardship**: Objects stored in ArcGIS Online should be
-    considered ephemeral. Your content access depends on the UCSB
-    Library's Higher Education Site License.
-:::
-
-## Multi-band Rasters
+### Multi-band Rasters
 
 So far we have worked with single-channel, or 1-band rasters. However,
 perhaps we are more familiar with 3-channel images, because our eyes see
@@ -359,7 +332,44 @@ Labs, a private satellite firm. It's fleet of PlanetScope satellites
 captures imagery in 8 bandwidth divisions of the electromagnetic
 spectrum. 8-band images. Let's add one of those layers now:
 
--   placeholder for Planet image of Goleta
+
+**placeholder for Planet image of Goleta**
+
+
+## Layer Management, Rasters, and Additional Vectors
+
+1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
+    on top of the raster elevation layers in the layer stack so they are
+    not hidden.
+
+2.  **Imagery Layers vs. Basemaps**:
+
+    -   An **basemap** sits at the bottom of the map canvas, serving
+        purely as a static background context. Esri has options that are
+        satellite and aerial views.
+    -   An **imagery layer** is a data layer added to your map stack. It
+        can be re-ordered above or below other layers, adjusted with
+        transparency and blend modes, queried for pixel values, and
+        analyze for groundcover characteristics.
+        
+        
+**Time to save our map!!!**
+
+::: callout-note
+## Esri ArcGIS Online Credits
+
+-   All ArcGIS Online accounts created under the UCSB site license are
+    allocated **1000 service credits** per license year.
+-   **Transactions**: Some analysis operations and storage consume
+    service credits. For more information, visit Esri's [Understand
+    Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
+    page.
+-   **Manage your content**: Periodically review and delete unnecessary
+    hosted layers and analysis outputs to conserve credits.
+-   **Data Stewardship**: Objects stored in ArcGIS Online should be
+    considered ephemeral. Your content access depends on the UCSB
+    Library's Higher Education Site License.
+:::
 
 It's initial appearance is dark -- work on its visualization. Here are
 some good settings to use:
@@ -372,14 +382,51 @@ which changes the mathematics of the values of pixels into ranges that
 match the combination of computer monitors and the human eye. Adjust
 this so that it appears most natural on your screen.
 
-Challenge: play with different band combinations. What do you thing Band
+:::{.callout-tip}
+## Challenge: play with different band combinations. What do you think Band
 1 is good for?
+:::
 
+
+## Layer Management, Raster, and Additiona Vectors
+
+1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
+    on top of the raster elevation layers in the layer stack so they are
+    not hidden.
+2.  **Imagery Layers vs Basemaps**:
+    -   An **basemap** sits at the bottom of the map canvas, serving
+        purely as a static background context. Esri has options that are
+        satellite and aerial views.
+    -   An **imagery layer** is a data layer added to your map stack. It
+        can be re-ordered above or below other layers, adjusted with
+        transparency and blend modes, queried for pixel values, and
+        analyze for groundcover characteristics.
+        
+  
 At this point your map should look something like this:
 
-![](images/workshop2/wkshp2_map_5.png)
+![](images/workshop2/wkshp2_map_5.png)  
+        
+**Time to save our map!!!**
+
 
 ## Importing data into ArcGIS Online
+
+::: callout-note
+## Esri ArcGIS Online Credits
+
+-   All ArcGIS Online accounts created under the UCSB site license are
+    allocated **1000 service credits** per license year.
+-   **Transactions**: Some analysis operations and storage consume
+    service credits. For more information, visit Esri's [Understand
+    Credits](https://doc.arcgis.com/en/arcgis-online/administer/credits.htm)
+    page.
+-   **Manage your content**: Periodically review and delete unnecessary
+    hosted layers and analysis outputs to conserve credits.
+-   **Data Stewardship**: Objects stored in ArcGIS Online should be
+    considered ephemeral. Your content access depends on the UCSB
+    Library's Higher Education Site License.
+:::
 
 Uploading a raster image to ArcGIS Online takes up storage, so we aren't
 going to do that. However we can also add vector and tabular data to our
@@ -392,7 +439,7 @@ a CSV spreadsheet using coordinate columns (latitude and longitude) to
 see how external tabular data can be transformed into a geospatial layer
 and integrate with existing road and elevation layers.
 
-Download and open the `SantaBarbara_County_Trailheads.csv` onto your
+Download and open the [`SantaBarbara_County_Trailheads.csv`](https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv) onto your
 device.
 
 ::: {.callout-tip collapse="true"}
@@ -471,18 +518,18 @@ There are plethora of CRSs that all have different accuracy and other
 advantages depending on your location and extent of your area of
 interest. Here is a good website to look at the different CRSs:
 <https://epsg.io/>
-
-**Examine the csv file: does it tell you anything about the coordinate
-system that we are dealing with?**
 :::
 
-::: {.callout-tip collapse="true"}
+**POP QUIZ:** Examine the csv file - does it tell you anything about the coordinate
+system that we are dealing with?
+
+::: {.callout-tip collapse="false"}
 ## Challenge - Make the trailhead layer look nice
 
 -   Choose the trail `Difficulty` attribute to add a color ramp
--   Give a title to the legend
--   Reorder the fields so their are matching the difficulty order (and
+-   Reorder the categories so their are matching the difficulty order (and
     not the alphabetical one)
+-   Give a title to the legend
 -   Choose a good color ramp
 -   Increase the point size
 :::
@@ -512,8 +559,7 @@ menu at the top-left of your Map view and selecting Content.
     trailhead layer you imported from the CSV file to go to the Overview
     page of that layer.
 
-![](images/workshop2/export-overview.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads. "
-width="100%"}
+![](images/workshop2/export-overview.png){fig-alt="Overview page for the feature layer of Santa Barbara County trailheads." width="100%"}
 
 -   Unfold the menu on the right completely, select Export data, and
     choose the GeoJSON format.
@@ -533,7 +579,7 @@ width="50%"}
     be available in the menu on the right side of the page. Click on it
     and select a location on your local computer and a filename.
 
-![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option avaialble"
+![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Dowload option available"
 width="100%"}
 
 ## Completing the Story
