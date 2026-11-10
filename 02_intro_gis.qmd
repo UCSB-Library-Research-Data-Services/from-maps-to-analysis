@@ -668,7 +668,27 @@ entities.**
 
 ### Adding a New Feature
 
+Looking around UCSB campus location, we realized that there is no point for the campus lagoon trail!! Let's add it to
+the map. We will decide that the trail starts next to the marine lab.
+
+To add a point to our trailhead layer:
+
+1. Click on `New Feature` in the edit panel for this layer
+2. Your cursor should become a cross, click on the map to place your point
+3. Fill out the information for this new point (leave lat/long blank)
+4. Hit "Create" to add your new feature to the layer
+
+![](images/workshop2/w2_edit-add_point.png){fig-alt="Add new feature point next to the UCSB Marine lab" width="90%" fig-align="center"}
+
+Make sure to get out of the `Create features` mode before clicking again on the map!
+
+::: {.callout-note collapse="false"}
+Note that the geospatial information used by ArcGIS online to display the point is **not** store in the attribute table.
+This is why the Latitude and Longitude values could be left blank and the point still being displayed!
+:::
+
 ### Editing the Attribute Table
+
 
 #### Editing values
 
