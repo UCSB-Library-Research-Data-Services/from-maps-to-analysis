@@ -570,6 +570,7 @@ coordinate system that we are dealing with?
 -   Give a title to the legend "Trail difficulty"
 :::
 
+
 In the end, you should have a similar legend: 
 
 ![](images/workshop2/w2_trailhead_legend.png){fig-alt="Legend for trailheads with color ranging from yellow - green for easy moderate to red purple for harder ones" width="30%"}
@@ -635,13 +636,8 @@ You have edited the layer! **Note that if it is a layer used in multiple maps (b
 
 ### Editing the Attribute Table
 
-#### Editing 
-
-
-
-
-
-
+#### Editing values 
+#### Adding attribute 
 
 
 Potential narrative: adding the new ILP bike path to your own personal
