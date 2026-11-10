@@ -740,8 +740,8 @@ column and setting the value to 1. Also notice that the other "Distance"
 values all have a unit, let's add Miles to the 1.5 we entered
 previously.
 
-![Attibute table with the newly entered
-values](images/workshop2/w2_values-table.png){fig-alt="Attibute table with the newly entered values"
+![Attribute table with the newly entered
+values](images/workshop2/w2_values-table.png){fig-alt="Attribute table with the newly entered values"
 width="100%" fig-align="center"}
 
 ## Exporting Data
