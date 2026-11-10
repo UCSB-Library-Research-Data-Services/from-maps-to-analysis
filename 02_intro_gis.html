@@ -169,7 +169,7 @@ window.Quarto = {
   <li><a href="#raster-data" id="toc-raster-data" class="nav-link" data-scroll-target="#raster-data">Raster Data</a></li>
   </ul></li>
   <li><a href="#the-story-so-far" id="toc-the-story-so-far" class="nav-link" data-scroll-target="#the-story-so-far">The Story So Far</a></li>
-  <li><a href="#adding-new-material-to-your-map" id="toc-adding-new-material-to-your-map" class="nav-link" data-scroll-target="#adding-new-material-to-your-map">Adding New Material to Your Map</a></li>
+  <li><a href="#adding-raster-data-to-your-map" id="toc-adding-raster-data-to-your-map" class="nav-link" data-scroll-target="#adding-raster-data-to-your-map">Adding Raster Data to Your Map</a></li>
   <li><a href="#adding-raster-data" id="toc-adding-raster-data" class="nav-link" data-scroll-target="#adding-raster-data">Adding Raster Data</a>
   <ul class="collapse">
   <li><a href="#continuous-raster---digital-elevation-models-dem" id="toc-continuous-raster---digital-elevation-models-dem" class="nav-link" data-scroll-target="#continuous-raster---digital-elevation-models-dem">Continuous Raster - Digital Elevation Models (DEM)</a></li>
@@ -223,8 +223,8 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <p>This lesson focuses on learning more about the different types of geographic data and learning how to import and work with your own data in ArcGIS Online. At the end of this workshop you will:</p>
 <ul>
-<li>Have a better understanding of the vector and raster geospatial data types</li>
-<li>Know how to import external data into ArcGIS Online</li>
+<li>Have a better understanding of various vector and raster geospatial data types</li>
+<li>Know how to import external tabular data into ArcGIS Online</li>
 <li>Know how to edit or add data to a feature layer</li>
 <li>Better understand the difference between continuous and categorical raster layers</li>
 <li>Know how to export data from ArcGIS Online to your local machine</li>
@@ -256,11 +256,12 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Using the <a href="./01_make_map.html#step-1-add-layers-to-your-map">workshop 1 materials</a> as reference, do the following tasks:</p>
 <ol type="1">
-<li>Add symbology to the building layer using the <code>BLDGTYPE</code> column.<br>
+<li>Add symbology to the building layer using the <code>b_use</code> column.<br>
 </li>
 <li>Repeat the above steps to add the feature layer <code>bike_racks_ucsb</code> to your map.</li>
 <li>Experiment with the dot size and color for the bike racks.</li>
-<li>Change the default basemap to <code>Light Gray Canvas</code></li>
+<li>Perform a <code>Save as...</code> before moving to workshop 2 and name give your map a unique name, for example: <strong>Goleta bike map</strong></li>
+<li>If you weren’t able to keep up, <a href="https://ucsb.maps.arcgis.com/home/item.html?id=2b16d246ee4c4321852712b9b4652b74#overview">open this map</a> and do a <code>Save as..</code>.</li>
 </ol>
 </div>
 </div>
@@ -339,10 +340,10 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 <section id="the-story-so-far" class="level2">
 <h2 class="anchored" data-anchor-id="the-story-so-far">The Story So Far</h2>
 <p>In the first workshop, we created a bicycle map of campus and Isla Vista using pre-existing data.</p>
-<p>Our goal for part 2 is to plan a challenging and comfortable bicycle route that leads from the UCSB campus into the surrounding Goleta community and the Santa Ynez foothills. To accomplish this, we need to expand beyond campus bike paths and incorporate regional road networks along with elevation data to analyze terrain and slope.</p>
+<p>Our goal for part 2 is to plan a challenging and comfortable bicycle route that leads from the UCSB campus into the surrounding Goleta community and the Santa Ynez foothills. And we want to put our bike on the bus on the way back. To accomplish this, we need to expand beyond campus bike paths and incorporate regional road networks; we want to look at elevation data to look for steep climbs and long views; and we need to find those bus stops.</p>
 </section>
-<section id="adding-new-material-to-your-map" class="level2">
-<h2 class="anchored" data-anchor-id="adding-new-material-to-your-map">Adding New Material to Your Map</h2>
+<section id="adding-raster-data-to-your-map" class="level2">
+<h2 class="anchored" data-anchor-id="adding-raster-data-to-your-map">Adding Raster Data to Your Map</h2>
 <p>Let’s set up our workspaces together. The layers for this workshop all have a wider extent than those from Workshop 1. For example, <a href="https://ucsb.maps.arcgis.com/home/item.html?id=6729661d7b8043558c2fe6ada62f0df9" target="_blank">SantaBarbara_Merged_roads</a> is an expanded street and bicycle path network covering the Goleta and Santa Barbara area, extracted from OpenStreetMap and an Esri Living Atlas layer. We have already excluded major highways from this layer – because we know you won’t want to bicycle on them.</p>
 <p>To examine routes beyond campus, we zoom out to the broader regional area:</p>
 <ol type="1">
@@ -351,6 +352,10 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 <li>Open the attribute table to inspect fields such as highway classification, road surface, and speed limits, and symbolize the roads to distinguish bike-friendly streets from arterial highways.</li>
 <li>Filter out the bike paths</li>
 </ol>
+<ul>
+<li>GOTCHA: most of the attribute data is blank. We will leave all of the roads turned on.</li>
+<li>screenshot of map with roads symbolized for bikes. Map 1 currently has default blue.</li>
+</ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -368,6 +373,20 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 <li>Increase the line width to 3px</li>
 </ol>
 </div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Keeping a clean workspace</p>
+<p>Let’s not forget to remove old layers from the current map (ie: the old roads roads)</p>
 </div>
 </div>
 <div class="quarto-figure quarto-figure-center">
@@ -398,7 +417,7 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 <p>A DEM is an example of a <strong>continuous raster</strong> as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space alon. Other examples of continuous raster would be precipitation measurements, air quality index, ocean salinity, or distance from a road.</p>
 <p>In the layer properties, explore the raster statistics: note the minimum elevation near sea level (0) along the coast and slough, rising to hundreds of feet in the foothills, as well as the grid cell resolution.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -407,16 +426,17 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <section id="yes.-because-sea-level." class="level2 callout-body-container callout-body">
 <h2 class="anchored" data-anchor-id="yes.-because-sea-level.">yes. because sea level.</h2>
-<p>To do: put in screenshot with attribut table of raster here.</p>
+<p>To do: put in screenshot with properties here.</p>
 </section>
 </div>
 </div>
 <section id="applying-color-schemes" class="level4">
 <h4 class="anchored" data-anchor-id="applying-color-schemes">Applying Color Schemes</h4>
-<p>By default, continuous raster layers display using a grayscale “Stretch” renderer (low values dark, high values light). To clearly distinguish elevation changes across the coastal plain and mountains, let’s change the symbology to a continuous or diverging color ramp (e.g., a below-and-above zero diverging ramp or an elevation palette).</p>
+<p>By default, continuous raster layers display using a grayscale “Stretch” renderer (low values ‘0’ dark, and high values 255 light). To clearly distinguish elevation changes across the coastal plain and mountains, let’s change the symbology to a continuous, diverging color ramp (e.g., a below-and-above zero diverging ramp or an elevation palette). Select the DEM layer and open the Styles menu (<img src="images/workshop2/styles_icon.png" class="img-fluid">)</p>
+<p>to use ‘Stretch’, we have to force zero to be the middle value. When we need to do this, we look at the DEM’s actual minimum and maximum values, and take whichever number has the larger absolute value. Use that exact number as both a negative minimum and a positive maximum in the Statistics table. (e.g.: 1218 feet)</p>
 <p><img src="images/workshop2/dem_options.png" class="img-fluid"></p>
 <p>Here is below an example of a widely used color scale for DEM, with lower elevation display in blue and green and higher elevation in brown and white.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -548,7 +568,7 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 <p>In this section we will import <code>SantaBarbara_County_Trailheads.csv</code> from a CSV spreadsheet using coordinate columns (latitude and longitude) to see how external tabular data can be transformed into a geospatial layer and integrate with existing road and elevation layers.</p>
 <p>Download and open the <a href="https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv"><code>SantaBarbara_County_Trailheads.csv</code></a> onto your device.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -557,7 +577,7 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>What are the attributes stored in this dataset?</li>
@@ -598,7 +618,7 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 </ul>
 <p><img src="images/workshop2/import_csv-map.png" class="img-fluid" style="width:100.0%" alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity"></p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -607,7 +627,7 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse show">
 <section id="a-note-on-coordinate-reference-systems" class="level2 callout-body-container callout-body">
 <h2 class="anchored" data-anchor-id="a-note-on-coordinate-reference-systems">A note on Coordinate Reference Systems</h2>
 <p>In ArcGIS Online, the default projection and Coordinate Reference System (CRS) is WGS 1984 Web Mercator Auxilary Sphere, also used by the Global Positioning System (<a href="https://en.wikipedia.org/wiki/Global_Positioning_System">GPS</a>).</p>
@@ -622,7 +642,7 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 </div>
 <p><strong>POP QUIZ:</strong> Examine the csv file - does it tell you anything about the coordinate system that we are dealing with?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -631,7 +651,7 @@ Figure&nbsp;1: Save as dialog in ArcGIS Online
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse show">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Choose the trail <code>Difficulty</code> attribute to add a color ramp</li>
