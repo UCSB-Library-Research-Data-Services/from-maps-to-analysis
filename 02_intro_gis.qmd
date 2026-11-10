@@ -631,6 +631,7 @@ This should open the Editor panel on the right of your map
 panel](images/workshop2/w2_editor_panel.png){fig-alt="Feature layer Editor panel"
 width="50%"}
 
+
 The top part (in red) of this panel lets you edit the feature layer
 elements. Below, you can add new features to existing layers (for our
 county layer in magenta).
@@ -678,7 +679,7 @@ To add a point to our trailhead layer:
 3. Fill out the information for this new point (leave lat/long blank)
 4. Hit "Create" to add your new feature to the layer
 
-![](images/workshop2/w2_edit-add_point.png){fig-alt="Add new feature point next to the UCSB Marine lab" width="90%" fig-align="center"}
+![](images/workshop2/w2_edit-add_point.png){fig-alt="Add new feature point next to the UCSB Marine lab" width="70%" fig-align="center"}
 
 Make sure to get out of the `Create features` mode before clicking again on the map!
 
@@ -689,16 +690,34 @@ This is why the Latitude and Longitude values could be left blank and the point 
 
 ### Editing the Attribute Table
 
+#### Adding an attribute
 
-#### Editing values
+Now that we have added a new trailhead, we might want to add a new attribute that will let us track if a specific point
+is from the original dataset or something that we have added. You can add an attribute using the `Field` tool on the right
+![](images/workshop2/w2_field_button.png){fig-alt="Field icon that looks like text with a bar at the bottom" width="5%"}.
+This should open a new panel listing all the current fields and at the button you should see an `+ Add field` button.
 
-#### Adding attribute
+1. Click on it
+1. Choose "Numeric" -> "Integer" & click "Next"
+1. Enter the following values & click "Add field"
+![](images/workshop2/w2_field-parameters.png){fig-alt="Parameters used to create the new field" width="90%"}
+Now you should have the "Added" field listed in the field list on the right panel. 
 
-Potential narrative: adding the new ILP bike path to your own personal
-bike path layer.
 
-Highlight the best/favorite trails:
-<https://santabarbaraca.com/itinerary/best-hikes-in-santa-barbara/>
+#### Editing values 
+
+Let's open the table to have a look at the values.
+
+The new field has been added as the last column. The point we created should be at the bottom of the table, as the last row.
+
+There are two ways to edit values in a table. You can double-click on a cell and change the values, or you can use the
+pen logo at the end of the rows that will open back the "Edit Feature" pane we used previously. Let's directly modify the 
+values by double-clicking in the new "Added" column and setting the value to 1. Also notice that the other "Distance" 
+values all have a unit, let's add Miles to the 1.5 we entered previously.
+
+![Attibute table with the newly entered values](images/workshop2/w2_values-table.png){fig-alt="Attibute table with the newly entered values" width="100%" fig-align="center"}
+
+>>>>>>> 851a0e0 (edit values)
 
 ## Exporting Data
 
