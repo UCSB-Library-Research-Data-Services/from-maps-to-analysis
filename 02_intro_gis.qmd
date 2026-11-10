@@ -90,7 +90,7 @@ YES WE KNOW THIS ISN'T HERE YET
 version: (https://arcg.is/1yz0KP3)](https://arcg.is/1yz0KP3)
 
 
-## Geographic data
+## Raster vs Vector Data
 
 Geographic data generally falls into two primary models: **vector** and
 **raster**.
@@ -140,7 +140,7 @@ green, and band #1 (coastal blue) as blue. This type of image displays are often
 
 ![](images/workshop2/false_color.png)
 
-## The Story So Far
+### The Story So Far
 
 In the first workshop, we created a bicycle map of campus and Isla Vista
 using pre-existing data.
@@ -153,7 +153,7 @@ campus bike paths and incorporate regional road networks; we want to
 look at elevation data to look for steep climbs and long views; and we
 need to find those bus stops.
 
-## Adding Raster Data to Your Map
+## Exploring Vector Data
 
 Let's set up our workspaces together. The layers for this workshop all
 have a wider extent than those from Workshop 1. For example,
@@ -181,7 +181,7 @@ area:
     has default blue.
 
 ::: {.callout-tip collapse="false"}
-## Modify bike path symbology
+### Modify vector symbology
 
 1. Replace the "<Null>" in the legend with "Bike path"
 1. Increase the line width to 3px
@@ -195,7 +195,7 @@ roads roads)
 :::
 ![Map with UCSB & local bike insfrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths" width="90%" fig-align="center"}
 
-## Adding Raster Data
+## exploring Raster Data
 
 When outside of ArcGIS Online, geospatial raster data comes in many
 different formats. TIFFs, Grids, netCDF, iiif, web map services. Too many
@@ -236,7 +236,8 @@ hundreds of feet in the foothills, as well as the grid cell resolution.
 To do: put in screenshot with properties here.
 :::
 
-#### Applying Color Schemes
+
+#### Applying a Divergent Color Scheme
 
 By default, continuous raster layers display using a grayscale "Stretch"
 renderer (low values '0' dark, and high values 255 light). To clearly
@@ -254,7 +255,42 @@ When we need to do this, we look at the DEM's actual minimum and maximum values,
 
 Here is below an example of a widely used color scale for DEM, with lower elevation display in blue and green and higher elevation in brown and white.
 
-![Digital Elevation Model with color sclae](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and gree for lower elevation" width="90%" fig-align="center"}
+![Digital Elevation Model with color scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and gree for lower elevation" width="90%" fig-align="center"}
+
+
+#### 'Binning' a raster
+
+It's sometimes easier to divide a raster into classes. You can do this on the fly 
+in ArcGIS Online by changing the symbology 
+
+....
+
+
+### Calculated Raster Data: Slope
+
+You can also perform calculations to turn a DEM into a slope layer. We
+already made this slope layer for you as it can be a computing intensive
+task. This is another continuous dataset. You can call it derivative
+data.
+
+We will learn how it was made in workshop 3, but for now we will use it
+to examine, with our eyes, where the steepest bike routes up into our
+foothills are. Add this raster layer by searching for `SantaBarbara_slope` within the UCSB organization: 
+
+![](images/workshop2/roads_over_slope.png)
+
+**POP QUIZ:** Below same slope layer, zoomed in to campus, and
+symbolized with a divergent color scheme. What does this tell you is
+incorrect about something we said earlier regarding our DEM? (DTM vs
+DSM)
+
+![](images/workshop2/slope.png)
+
+Resymbolize your slope layer to a color scheme that makes sense to you.
+Look up into the foothills. Which paths look steepest for our
+theoretical bike ride?
+
+![](images/workshop2/symbolizing_slope.png){width="60%"}
 
 
 ### Categorical Raster - Land Cover
@@ -288,31 +324,6 @@ urban development, forest, or water).
 Show the legend to see the category names. Open the attribute table to
 compare it to what appears for vector data:
 
-### Calculated Raster Data: Slope
-
-You can also perform calculations to turn a DEM into a slope layer. We
-already made this slope layer for you as it can be a computing intensive
-task. This is another continuous dataset. You can call it derivative
-data.
-
-We will learn how it was made in workshop 3, but for now we will use it
-to examine, with our eyes, where the steepest bike routes up into our
-foothills are. Add this raster layer by searching for `SantaBarbara_slope` within the UCSB organization: 
-
-![](images/workshop2/roads_over_slope.png)
-
-**POP QUIZ:** Below same slope layer, zoomed in to campus, and
-symbolized with a divergent color scheme. What does this tell you is
-incorrect about something we said earlier regarding our DEM? (DTM vs
-DSM)
-
-![](images/workshop2/slope.png)
-
-Resymbolize your slope layer to a color scheme that makes sense to you.
-Look up into the foothills. Which paths look steepest for our
-theoretical bike ride?
-
-![](images/workshop2/symbolizing_slope.png){width="60%"}
 
 ### Multi-band Rasters
 
