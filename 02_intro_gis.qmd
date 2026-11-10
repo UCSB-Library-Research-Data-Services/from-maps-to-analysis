@@ -11,9 +11,9 @@ This lesson focuses on learning more about the different types of
 geographic data and learning how to import and work with your own data
 in ArcGIS Online. At the end of this workshop you will:
 
--   Have a better understanding of the vector and raster geospatial data
-    types
--   Know how to import external data into ArcGIS Online
+-   Have a better understanding of various vector and raster geospatial
+    data types
+-   Know how to import external tabular data into ArcGIS Online
 -   Know how to edit or add data to a feature layer
 -   Better understand the difference between continuous and categorical
     raster layers
@@ -64,8 +64,11 @@ do the following tasks:
 2.  Repeat the above steps to add the feature layer `bike_racks_ucsb` to
     your map.
 3.  Experiment with the dot size and color for the bike racks.
-4.  Perform a **Save As** before moving to workshop 2 and name your map
-    **Goleta bike map**
+4.  Perform a `Save as...` before moving to workshop 2 and name give
+    your map a unique name, for example: **Goleta bike map**
+5.  If you weren't able to keep up, [open this
+    map](https://ucsb.maps.arcgis.com/home/item.html?id=2b16d246ee4c4321852712b9b4652b74#overview)
+    and do a `Save as..`.
 :::
 
 <hr>
@@ -107,7 +110,7 @@ discrete geographic features using coordinate geometry:
 Every shape is tied to a row in an attribute table, where each column
 holds specific properties describing that feature. For example ...
 
-* KRISTI ISSUE #86 *
+-   KRISTI ISSUE #86 \*
 
 ### Raster Data
 
@@ -138,11 +141,13 @@ using pre-existing data.
 
 Our goal for part 2 is to plan a challenging and comfortable bicycle
 route that leads from the UCSB campus into the surrounding Goleta
-community and the Santa Ynez foothills. To accomplish this, we need to
-expand beyond campus bike paths and incorporate regional road networks
-along with elevation data to analyze terrain and slope.
+community and the Santa Ynez foothills. And we want to put our bike on
+the bus on the way back. To accomplish this, we need to expand beyond
+campus bike paths and incorporate regional road networks; we want to
+look at elevation data to look for steep climbs and long views; and we
+need to find those bus stops.
 
-### Adding New Material to Your Map
+### Adding Raster Data to Your Map
 
 Let's set up our workspaces together. The layers for this workshop all
 have a wider extent than those from Workshop 1. For example,
@@ -165,7 +170,8 @@ area:
     classification, road surface, and speed limits, and symbolize the
     roads to distinguish bike-friendly streets from arterial highways.
 
--   TO DO \*
+-   GOTCHA: most of the attribute data is blank. We will leave all of
+    the roads turned on.
 -   screenshot of map with roads symbolized for bikes. Map 1 currently
     has default blue.
 
@@ -178,7 +184,7 @@ Which vector layers in the map are: --points --lines --polygons
 ::: callout-note
 Keeping a clean workspace
 
-let's not forget to remove old layers from the current map (ie: the old
+Let's not forget to remove old layers from the current map (ie: the old
 roads roads)
 :::
 
@@ -217,24 +223,29 @@ elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
 (make sure we are feet and not meters)
 
-
 ::: {.callout-tip collapse="true"}
 ## Challenge: Does our DEM contain negative values? Why?
 
-## yes. because sea level. 
-To do: put in screenshot with attribut table of raster here. 
-:::
+## yes. because sea level.
 
+To do: put in screenshot with properties here.
+:::
 
 :::
 
 #### Applying Color Schemes
 
 By default, continuous raster layers display using a grayscale "Stretch"
-renderer (low values dark, high values light). To clearly distinguish
-elevation changes across the coastal plain and mountains, let's change
-the symbology to a continuous or diverging color ramp (e.g., a
-below-and-above zero diverging ramp or an elevation palette).
+renderer (low values '0' dark, and high values 255 light). To clearly
+distinguish elevation changes across the coastal plain and mountains,
+let's change the symbology to a continuous, diverging color ramp (e.g.,
+a below-and-above zero diverging ramp or an elevation palette). Select
+the DEM layer and open the Styles menu
+(![](images/workshop2/styles_icon.png))
+
+to use 'Stretch', we have to force zero to be the middle value.
+When we need to do this, we look at the DEM's actual minimum and maximum values, and take whichever number has the larger absolute value. Use that exact number as both a negative minimum and a positive maximum in the Statistics table. (e.g.: 1218 feet)
+
 
 ![](images/workshop2/dem_options.png)
 
