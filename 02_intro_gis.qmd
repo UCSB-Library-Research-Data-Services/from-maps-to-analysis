@@ -551,7 +551,7 @@ width="80%"}
 width="100%"}
 
 ::: {.callout-note collapse="false" title="CRS"}
-## A note on Coordinate Reference Systems
+### A note on Coordinate Reference Systems
 
 In ArcGIS Online, the default projection and Coordinate Reference System
 (CRS) is WGS 1984 Web Mercator Auxiliary Sphere, also used by the Global
@@ -594,6 +594,8 @@ In the end, you should have a legend similar to the following:
 
 ![](images/workshop2/w2_trailhead_legend.png){fig-alt="Legend for trailheads with color ranging from yellow - green for easy moderate to red purple for harder ones"
 width="30%"}
+
+<hr>
 
 ## Editing Feature Layers
 
