@@ -491,9 +491,11 @@ map!
 ### Creating Vector Layers from .CSV files
 
 In this section we will import `SantaBarbara_County_Trailheads.csv` from
-a CSV spreadsheet using coordinate columns (latitude and longitude) to
-see how external tabular data can be transformed into a geospatial layer
-and integrate with existing road and elevation layers.
+a CSV (like a spreadsheet) that includes coordinate columns (latitude and longitude) 
+of the sort that would come from a GPS device. This will demonstrate  
+how external tabular data can be transformed into a geospatial layer
+and integrate with existing road and elevation layers. And seeing where trailheads
+are can give us a goal for our bicycle ride!
 
 **Download and open the [`SantaBarbara_County_Trailheads.csv`](https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv){target=_blank} onto your device.**
 
@@ -597,10 +599,10 @@ width="30%"}
 
 <hr>
 
-## Editing Feature Layers
+## Editing Vector Data 
 
-Now that we have imported data into ArcGIS, we might also want to modify
-this data. For vector data, we can modify attributes and values stored
+Now that we have imported data into ArcGIS Online, we might also want to modify
+this data. For vector data, we can modify the AGO Feature Layer attributes and values stored
 in the underlying table or the feature itself by editing locations and
 shapes, or adding and removing specific features. For raster data, those
 transformations are generally done using some form of calculation on the
