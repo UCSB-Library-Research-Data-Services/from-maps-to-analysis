@@ -760,6 +760,11 @@ We do not have time to tackle this topic today, But see
 [here](https://doc.esri.com/en/arcgis-online/latest/manage-data/calculate-fields.html)
 for more information on how to do this.
 
+Here is an example of using the field calculator to select trails that has been added by users:
+
+![](images/workshop2/w2_field_calculator.png){fig-alt="Example of using the field calculator showing the preview of a query"
+width="100%" fig-align="center"}
+
 <hr>
 
 ## Exporting Data
@@ -800,18 +805,22 @@ width="50%"}
     be available in the menu on the right side of the page. Click on it
     and select a location on your local computer and a filename.
 
-![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Download option available"
-width="100%"}
+![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Download option available" width="100%"}
 
 ## Completing the Story
 
-So where shall we ride our bicycles?
+So where shall we ride our bicycles? Keep working on your map to best display the information we have gathered
+at this point to further develop your map to help you decide to which trailheads you could ride your bike to!
 
-<hr>
+Here is an example of what such map could look like and a few tips below on how to get started.
 
-## How to improve your map
+![](images/workshop2/w2_potential_final_map.png){fig-alt="Potential final map shoing the slope in grayscale, 
+trailheads in color coded dots and the bikable roads in blue" width="100%"}
 
-### Creating Shaded Relief (Hillshade) on the Fly
+
+### How to improve your map
+
+#### Creating Shaded Relief (Hillshade) on the Fly
 
 One use for a DEM is to make a shaded relief layer. That is a classic
 view that gives the terrain realistic three-dimensional depth and
