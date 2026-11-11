@@ -191,10 +191,9 @@ window.Quarto = {
   <li><a href="#editing-the-attribute-table" id="toc-editing-the-attribute-table" class="nav-link" data-scroll-target="#editing-the-attribute-table">Editing the Attribute Table</a></li>
   </ul></li>
   <li><a href="#exporting-data" id="toc-exporting-data" class="nav-link" data-scroll-target="#exporting-data">Exporting Data</a></li>
-  <li><a href="#completing-the-story" id="toc-completing-the-story" class="nav-link" data-scroll-target="#completing-the-story">Completing the Story</a></li>
-  <li><a href="#how-to-improve-your-map" id="toc-how-to-improve-your-map" class="nav-link" data-scroll-target="#how-to-improve-your-map">How to improve your map</a>
+  <li><a href="#completing-the-story" id="toc-completing-the-story" class="nav-link" data-scroll-target="#completing-the-story">Completing the Story</a>
   <ul class="collapse">
-  <li><a href="#creating-shaded-relief-hillshade-on-the-fly" id="toc-creating-shaded-relief-hillshade-on-the-fly" class="nav-link" data-scroll-target="#creating-shaded-relief-hillshade-on-the-fly">Creating Shaded Relief (Hillshade) on the Fly</a></li>
+  <li><a href="#how-to-improve-your-map" id="toc-how-to-improve-your-map" class="nav-link" data-scroll-target="#how-to-improve-your-map">How to improve your map</a></li>
   </ul></li>
   <li><a href="#preview-for-workshop-3-looking-ahead-to-spatial-analysis" id="toc-preview-for-workshop-3-looking-ahead-to-spatial-analysis" class="nav-link" data-scroll-target="#preview-for-workshop-3-looking-ahead-to-spatial-analysis">Preview for Workshop 3: Looking Ahead to Spatial Analysis</a>
   <ul class="collapse">
@@ -828,6 +827,12 @@ Note
 </figure>
 </div>
 <p>Of course, there are more advanced ways to edit values than cell by cell. One of them is using the filed calculator that let’s you use expressions (conditions, formulas, …) to calculate values of a field. We do not have time to tackle this topic today, But see <a href="https://doc.esri.com/en/arcgis-online/latest/manage-data/calculate-fields.html">here</a> for more information on how to do this.</p>
+<p>Here is an example of using the field calculator to select trails that has been added by users:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/workshop2/w2_field_calculator.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Example of using the field calculator showing the preview of a query"></p>
+</figure>
+</div>
 <hr>
 </section>
 </section>
@@ -855,13 +860,13 @@ Note
 </section>
 <section id="completing-the-story" class="level2">
 <h2 class="anchored" data-anchor-id="completing-the-story">Completing the Story</h2>
-<p>So where shall we ride our bicycles?</p>
-<hr>
-</section>
-<section id="how-to-improve-your-map" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-improve-your-map">How to improve your map</h2>
-<section id="creating-shaded-relief-hillshade-on-the-fly" class="level3">
-<h3 class="anchored" data-anchor-id="creating-shaded-relief-hillshade-on-the-fly">Creating Shaded Relief (Hillshade) on the Fly</h3>
+<p>So where shall we ride our bicycles? Keep working on your map to best display the information we have gathered at this point to further develop your map to help you decide to which trailheads you could ride your bike to!</p>
+<p>Here is an example of what such map could look like and a few tips below on how to get started.</p>
+<p><img src="images/workshop2/w2_potential_final_map.png" class="img-fluid" style="width:100.0%" alt="Potential final map shoing the slope in grayscale,  trailheads in color coded dots and the bikable roads in blue"></p>
+<section id="how-to-improve-your-map" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-improve-your-map">How to improve your map</h3>
+<section id="creating-shaded-relief-hillshade-on-the-fly" class="level4">
+<h4 class="anchored" data-anchor-id="creating-shaded-relief-hillshade-on-the-fly">Creating Shaded Relief (Hillshade) on the Fly</h4>
 <p>One use for a DEM is to make a shaded relief layer. That is a classic view that gives the terrain realistic three-dimensional depth and surface texture, we can generate a shaded relief visualization dynamically:</p>
 <ol type="1">
 <li>Duplicate the <code>ucsb_local_dem</code> layer.</li>
@@ -886,6 +891,7 @@ Note
 <p>This is a bit of an artificial example, because Esri offers a wide variety of hillshade basemaps in the Living Atlas. Also: that was a rather lengthy aside.</p>
 <p>Now would be an excellent point to save your map.</p>
 <hr>
+</section>
 </section>
 </section>
 <section id="preview-for-workshop-3-looking-ahead-to-spatial-analysis" class="level2">
