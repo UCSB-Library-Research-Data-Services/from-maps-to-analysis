@@ -495,9 +495,7 @@ a CSV spreadsheet using coordinate columns (latitude and longitude) to
 see how external tabular data can be transformed into a geospatial layer
 and integrate with existing road and elevation layers.
 
-Download and open the
-[`SantaBarbara_County_Trailheads.csv`](https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv)
-onto your device.
+**Download and open the [`SantaBarbara_County_Trailheads.csv`](https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv){target=_blank} onto your device.**
 
 ::: {.callout-tip collapse="true"}
 ## Challenge - Inspect the trailhead data
