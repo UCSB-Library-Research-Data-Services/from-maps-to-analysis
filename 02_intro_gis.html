@@ -438,7 +438,7 @@ Note
 <p><strong>POP QUIZ:</strong> What do you think are the units of <code>ucsb_local_dem</code>?</p>
 <p>A DEM is an example of a <strong>continuous raster</strong> as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space . Other examples of continuous raster would be precipitation measurements, air quality index, ocean salinity, or distance from a road.</p>
 <p>In the layer properties, explore the raster statistics: note the minimum elevation near sea level (0) along the coast and slough, rising to hundreds of feet in the foothills, as well as the grid cell resolution.</p>
-<pre><code>* Instructors: We are at Map 2 *</code></pre>
+<p>Can’t keep up? We are at * Bike map 2 *</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -450,25 +450,9 @@ Note
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<section id="yes.-because-sea-level." class="level2 callout-body-container callout-body">
-<h2 class="anchored" data-anchor-id="yes.-because-sea-level.">yes. because sea level.</h2>
-</section>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<p>Yes. Because our data is both elevation and bathymetry. You can see the range of values in the properties window of a raster.</p>
 <p><img src="images/workshop2/negative_dem.png" class="img-fluid"></p>
-<p>The properties window of a raster will show you the maximum and minimum values</p>
 </div>
 </div>
 </div>
@@ -480,14 +464,14 @@ Tip
 <p><img src="images/workshop2/dem_options.png" class="img-fluid"></p>
 <p>Here is below an example of a widely used color scale for DEM, with lower elevation display in blue and green and higher elevation in brown and white. if you hover over the pallette, it shows the name “Brown to Blue Green Diverging, Bright”</p>
 <p><img src="images/workshop2/w2_dem_colored.png" class="img-fluid" alt="Digital Elevation Model with color scale">{fig-alt=“Digital Elevation Model with color scaled for DEM: white a higher elevation, blue and green for lower elevation” scale](images/workshop2/w2_dem_colored.png){fig-alt=“Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and green for lower elevation” width=“90%” fig-align=“center”}</p>
-<pre><code>* Instructors: Map 3 *</code></pre>
+<p>Can’t keep up? We are at * Bike map 3 *</p>
 </section>
 <section id="binning-a-raster" class="level4">
 <h4 class="anchored" data-anchor-id="binning-a-raster">‘Binning’ a raster</h4>
 <p>It’s sometimes easier to divide a raster into classes–especially if you want to highlight certain values. You can do this on the fly in ArcGIS Online by changing the symbology, first to ‘Natural Breaks,’ and then customized to highlight the near-zero areas around the coast. It may be easier to choose <code>Equal interval</code> and edit the values from there.</p>
 <p>Either way, values clustered near zero are going to be hard to read:</p>
 <p><img src="images/workshop2/classed_dem.png" class="img-fluid">….</p>
-<pre><code>* Instructors: Map 4 *</code></pre>
+<p>Can’t keep up? We are at * Bike map 4 *</p>
 </section>
 <section id="calculated-raster-data-slope" class="level3">
 <h3 class="anchored" data-anchor-id="calculated-raster-data-slope">Calculated Raster Data: Slope</h3>
@@ -502,7 +486,7 @@ Tip
 <p>Make a copy of the DEM and have both classed and stretched versions on your map.</p>
 <p>For the stretch, turn on ‘dynamic range adjustment’ so that we can see the campus buildings when we zoom in.</p>
 <p>Rename the layers so that you can keep track of them: * Slope * DEM Stretched * DEM Classed</p>
-<pre><code>* Instructors: Map 5 * includes 3 rasters</code></pre>
+<p>Can’t keep up? We are at * Bike map 5 * which includes 3 rasters</p>
 <p><img src="images/workshop2/symbolizing_slope.png" class="img-fluid" style="width:60.0%"></p>
 </section>
 </section>
@@ -592,11 +576,11 @@ Tip
 </ul></li>
 </ol>
 <p>At this point your map should look something like this:</p>
-<p><img src="images/workshop2/wkshp2_map_5.png" class="img-fluid"></p>
-<p><strong>Time to save our map!!!</strong></p>
 <ul>
-<li>Instructors: map 6 includes 5 rasters.</li>
+<li>This image isn’t correct. WE HAVEN”T ADDED BUSSTOPS YET!!! <img src="images/workshop2/wkshp2_map_5.png" class="img-fluid"></li>
 </ul>
+<p><strong>Time to save our map!!!</strong></p>
+<p>Can’t keep up? We are at * Bike map 6 * which includes 5 rasters.</p>
 <hr>
 </section>
 </section>
@@ -627,7 +611,7 @@ Tip
 how external tabular data can be transformed into a geospatial layer and integrate with existing road and elevation layers. And seeing where trailheads are can give us a goal for our bicycle ride!</p>
 <p><strong>Download and open the <a href="https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv" target="_blank"><code>SantaBarbara_County_Trailheads.csv</code></a> onto your device.</strong></p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -636,7 +620,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>What are the attributes stored in this dataset?</li>
@@ -677,7 +661,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </ul>
 <p><img src="images/workshop2/import_csv-map.png" class="img-fluid" style="width:100.0%" alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity"></p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -686,7 +670,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse show">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse show">
 <section id="a-note-on-coordinate-reference-systems" class="level3 callout-body-container callout-body">
 <h3 class="anchored" data-anchor-id="a-note-on-coordinate-reference-systems">A note on Coordinate Reference Systems</h3>
 <p>In ArcGIS Online, the default projection and Coordinate Reference System (CRS) is WGS 1984 Web Mercator Auxiliary Sphere (also referred as <a href="https://epsg.io/3857">EPSG:3857</a>)</p>
@@ -701,7 +685,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </div>
 <p><strong>POP QUIZ:</strong> Examine the csv file - does it tell you anything about the coordinate system that we are dealing with?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -710,7 +694,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-12" class="callout-12-contents callout-collapse collapse show">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Choose the trail <code>Difficulty</code> attribute to add a color ramp</li>
@@ -732,7 +716,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 <h2 class="anchored" data-anchor-id="editing-vector-data">Editing Vector Data</h2>
 <p>Now that we have imported data into ArcGIS Online, we might also want to modify this data. For vector data, we can modify the AGO Feature Layer attributes and values stored in the underlying table or the feature itself by editing locations and shapes, or adding and removing specific features. For raster data, those transformations are generally done using some form of calculation on the entire raster, or specific values targeted via conditions, rather than by manually editing pixel values. We will talk more about raster calculations in our third workshop. For today, we will focus on editing vector data (or feature layers in ArcGIS jargon) in this workshop.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -741,7 +725,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse show">
+<div id="callout-12" class="callout-12-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>It is important to understand that when we are editing a feature layer, it is independent of the map. You are actually changing the data stored under your content.</p>
 <p>This also means that you might not have the right to edit some of the data you are using in your map because you do not own them! A potential workaround is to create a local copy of the data, but some data provider do not allow this either.</p>
@@ -798,7 +782,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </div>
 <p>You have edited the layer! <strong>Note that if it is a layer used in multiple maps (by you or others you have shared it with), all the maps will be updated as well, because remember maps and layers are two separate entities.</strong></p>
 <div class="callout callout-style-default callout-tip callout-empty-content callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -807,7 +791,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 
 </div>
@@ -831,7 +815,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </div>
 <p>Make sure to get out of the <code>Create features</code> mode before clicking again on the map!</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -840,7 +824,7 @@ Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-15" class="callout-15-contents callout-collapse collapse show">
+<div id="callout-14" class="callout-14-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>Note that the geospatial information used by ArcGIS online to display the point is <strong>not</strong> store in the attribute table. This is why the Latitude and Longitude values could be left blank and the point still being displayed!</p>
 </div>
