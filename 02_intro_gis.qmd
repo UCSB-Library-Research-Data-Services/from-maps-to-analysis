@@ -78,8 +78,8 @@ If you weren't able to make the map from scratch,
 
 Once satisfied, Don't forget to save your map!!
 
-![`Save as` dialog in ArcGIS
-Online](images/workshop1/Step1/save-as.png){#fig-saveas-step1
+![Location of the `Save as` dialog in the ArcGIS Online left-hand sidebar
+](images/workshop1/Step1/save-as.png){#fig-saveas-step1
 width="30%" fig-align="center"}
 
 :::
