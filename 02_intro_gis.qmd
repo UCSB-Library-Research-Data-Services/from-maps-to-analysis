@@ -64,11 +64,13 @@ do the following tasks:
 2.  Repeat the above steps to add the feature layer `bike_racks_ucsb` to
     your map.
 3.  Experiment with the dot size and color for the bike racks.
-4.  Perform a `Save as...` before moving to workshop 2 and name give
+4.  Perform a `Save as` before moving to workshop 2 and name give
     your map a unique name, for example: **Goleta bike map**
-5.  If you weren't able to keep up, [open this
-    map](https://ucsb.maps.arcgis.com/home/item.html?id=2b16d246ee4c4321852712b9b4652b74#overview)
-    and do a `Save as..`.
+    YourInitials"**, and a short description of your map.
+
+#### Catching up:
+If you weren't able to make the map from scratch, 
+[open this link](https://ucsb.maps.arcgis.com/home/item.html?id=2b16d246ee4c4321852712b9b4652b74#overview), click 'Open in the Map Viewer' and do a `Save as`
 :::
 
 ::: {.callout-note collapse="false"}
@@ -76,13 +78,13 @@ do the following tasks:
 
 Once satisfied, Don't forget to save your map!!
 
-![Save as dialog in ArcGIS
+![`Save as` dialog in ArcGIS
 Online](images/workshop1/Step1/save-as.png){#fig-saveas-step1
 width="30%" fig-align="center"}
 
-Select "Save As" and add a title **"Goleta Trailhead Map -
-YourInitials"**, and a short description of your map.
 :::
+
+
 
 <hr>
 
