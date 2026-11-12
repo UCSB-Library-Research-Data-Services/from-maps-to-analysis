@@ -60,10 +60,11 @@ Using the [workshop 1
 materials](01_make_map.qmd#step-1-add-layers-to-your-map) as reference,
 do the following tasks:
 
-1.  Add symbology to the building layer using the `b_use` column.\
-2.  Repeat the above steps to add the feature layer `bike_racks_ucsb` to
+1.  Add buildings to your map. Symbolize the building layer according to 
+    building use, (ie: by using the `b_use` column.)
+2.  Add the feature layer `bike_racks_ucsb` to
     your map.
-3.  Experiment with the dot size and color for the bike racks.
+3.  Experiment with the dot size, color, and clustering for the bike racks.
 4.  Perform a `Save as` before moving to workshop 2 and name give
     your map a unique name, for example: **Goleta bike map**
     YourInitials"**, and a short description of your map.
@@ -140,19 +141,15 @@ Building names, floor counts, area, who edited the file, and when it was
 last updated, among other fields a user may find helpful when analyzing
 their data.
 
-Attributes may be divided into three types:
+Attributes of both pixels and polygons may be divided into three main types:
 
 -   Nominal: free-text information for labels and names
-
 -   Categorical
-
 -   Numeric: both continuous and ordinal information that can be counted
     or has numerical importance - *ie* the number of floors that each
     building has (note: the UCSB Library has a basement and attic.
     Hence 10) or the area of each building's floorspace.
 
--   Continuous Numeric: information that can be ordered or ranked in
-    some way - floor count
 
 ### Raster Data
 
@@ -221,8 +218,8 @@ area:
 
 -   GOTCHA: most of the attribute data is blank. We will leave all of
     the roads turned on.
--   screenshot of map with roads symbolized for bikes. Map 1 currently
-    has default blue.
+-   screenshot of map with roads symbolized for bikes. 
+    * Instructors: Map 1 *
 
 ::: {.callout-tip collapse="false"}
 ### Modify vector symbology
@@ -263,10 +260,11 @@ Your map with DEM should look something like this by default:
 map](images/workshop2/wkshp2_map_2_defaultDEM.png){fig-alt="By default, DEMs appear as almost black for low elevations to white for high elevations"
 width="90%" fig-align="center"}
 
-Each pixel, or cell, in our DEM represents bare-earth surface elevation
-relative to a vertical datum (mean sea level). The `ucsb_local_dem`
+Each pixel, or cell, in our DEM represents bare-earth (ie: with trees
+and buildings removed) surface elevation relative to a vertical datum (mean sea level). The `ucsb_local_dem`
 dataset was derived from a high-resolution USGS LiDAR survey (3D
-Elevation Program (3DEP)).
+Elevation Program (3DEP)). Sometimes this is called a 
+Digital Terrain Model (DTM)
 
 **POP QUIZ:** What do you think are the units of `ucsb_local_dem`?
 
@@ -279,6 +277,8 @@ distance from a road.
 In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
+
+    * Instructors: We are at Map 2 *
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: Does our DEM contain negative values? Why?
@@ -318,7 +318,8 @@ Statistics table. (e.g.: 1218 feet)
 
 Here is below an example of a widely used color scale for DEM, with
 lower elevation display in blue and green and higher elevation in brown
-and white.
+and white. if you hover over the pallette, it shows the name 
+"Brown to Blue Green Diverging, Bright"
 
 ![Digital Elevation Model with color
 scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation
@@ -328,14 +329,25 @@ scale\](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation
 Model with color scaled for DEM: white a higer elevation, blue and green
 for lower elevation" width="90%" fig-align="center"}
 
+    * Instructors: Map 3 *
+
 #### 'Binning' a raster
 
-It's sometimes easier to divide a raster into classes. You can do this
+It's sometimes easier to divide a raster into classes--especially if you want
+to highlight certain values. You can do this
 on the fly in ArcGIS Online by changing the symbology, first to 'Natural
 Breaks,' and then customized to highlight the near-zero areas around the
-coast
+coast. It may be easier to choose `Equal interval` and edit the values
+from there.
+
+Either way, values clustered near zero are going to be hard to read:
+
+
 
 ![](images/workshop2/classed_dem.png)....
+
+    * Instructors: Map 4 *
+
 
 ### Calculated Raster Data: Slope
 
@@ -347,14 +359,21 @@ data.
 We will learn how it was made in workshop 3, but for now we will use it
 to examine, with our eyes, where the steepest bike routes up into our
 foothills are. Add this raster layer by searching for
-`SantaBarbara_slope` within the UCSB organization:
+`SantaBarbara_slope` within the UCSB organization or navigating to our group:
 
 ![](images/workshop2/roads_over_slope.png)
 
-**POP QUIZ:** Below same slope layer, zoomed in to campus, and
-symbolized with a divergent color scheme. What does this tell you is
-incorrect about something we said earlier regarding our DEM? (DTM vs
-DSM)
+Let's use another stretched raster style, with the `Spectrum full light`
+color scheme. 
+
+
+**POP QUIZ:** Using the slope layer, zoom in to campus.
+Adjust the stretch style options so that you can clearly see the
+buildings and cliffs. 
+
+What does this tell you was INCORRECT when we defined our DEM as a 
+DTM versus a DSM? Is our DEM a bare-earth model or a topmost-surface
+model? 
 
 ![](images/workshop2/slope.png)
 
@@ -362,9 +381,22 @@ Resymbolize your slope layer to a color scheme that makes sense to you.
 Look up into the foothills. Which paths look steepest for our
 theoretical bike ride?
 
+Make a copy of the DEM and have both classed and stretched versions on
+your map. 
+
+For the stretch, turn on 'dynamic range adjustment' so that we can see the
+campus buildings when we zoom in.
+
+Rename the layers so that you can keep track of them: 
+* Slope
+* DEM Stretched
+* DEM Classed
+
+    * Instructors: Map 5 * includes 3 rasters
+
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
 
-### Categorical Rasters - Land Cover
+## Categorical Rasters - Land Cover
 
 **Categorical vs. Continuous Data**
 
@@ -384,6 +416,17 @@ arbitrary:
 -   5 = sun brick / mud daub
 -   6 = straw bail
 
+Let's add a Landcover raster dataset from Esri's Living Atlas
+
+** Living Atlas Callout **
+Take a moment to look at the first results in the Living Atlas layers.
+When we were creating this lesson, they included US, Germany, and
+United Kingdom realtime weather layers.
+
+
+The quickest way is to start typing `USA Annual....` into the Living
+Atlas search box.
+
 While elevation is a **continuous raster** (values change smoothly along
 a numerical gradient representing a quantity), other rasters are
 **categorical rasters** (e.g., land cover classification datasets from
@@ -393,7 +436,8 @@ urban development, forest, or water).
 ![](images/workshop2/landcover_result.png)
 
 Show the legend to see the category names. Open the attribute table to
-compare it to what appears for vector data:
+compare it to what appears for other raster data. This is a complex,
+time-enabled dataset: one row for each of 41 time points.
 
 ### Multi-band Rasters
 
@@ -432,6 +476,8 @@ spectrum. 8-band images. Let's add one of those layers now:
         analyze for groundcover characteristics.
 
 **Time to save our map!!!**
+
+
 
 ::: callout-note
 ## Esri ArcGIS Online Credits
@@ -488,6 +534,8 @@ At this point your map should look something like this:
 ![](images/workshop2/wkshp2_map_5.png)
 
 **Time to save our map!!!**
+
+* Instructors: map 6 includes 5 rasters. 
 
 <hr>
 
