@@ -121,15 +121,16 @@ discrete geographic features using coordinate geometry:
     water bodies).
 
 Every shape is tied to a row in an attribute table, where each column
-holds specific properties describing that feature. For example, if we
-pop open the table and look at the attributes for the "Library"
-building,
+holds specific properties describing that feature. For example, in our
+Workshop 1 example, we can pop open the attribute table and look at the
+attributes (the row) for the "Library" building:
 
-First selecting the polygon Library ![Opening the Attribute
+Visually selecting the library building polygon on the map will select
+the row in the attribute table.![Opening the Attribute
 Table](images/workshop2/library-poly.png)
 
-Then opening the Attribute Table under layer options by clicking the
-`...` ![Library polygon
+Then opening the Attribute Table under layer options by clicking Layers
+\> UCSB Campus Buldings 2026, the `...` \> Show table![Library polygon
 attributes](images/workshop2/library-attributes.png)
 
 Each polygon in the table has many fields and values associated with it.
@@ -139,11 +140,17 @@ their data.
 
 Attributes may be divided into three types:
 
--   Nominal: information with labels and names - building type
+-   Nominal: free-text information for labels and names
 
--   Numerical: information that can be counted or has numerical importance - shape area
+-   Categorical
 
--   Ordinal: information that can be ordered or ranked in some way - floor count
+-   Numeric: both continuous and ordinal information that can be counted
+    or has numerical importance - *ie* the number of floors that each
+    building has (note: the UCSB Library has a basement and attic.
+    Hence 10) or the area of each building's floorspace.
+
+-   Continuous Numeric: information that can be ordered or ranked in
+    some way - floor count
 
 ### Raster Data
 
@@ -159,6 +166,7 @@ Raster data represents the landscape as a regular grid of square cells
     near-infrared bands in aerial photography or satellite imagery).
 
 Below is a single band raster. The value of each pixel is elevation.
+**INCORRECT – this is the slope map**
 
 ![](images/workshop2/wkshp_2_dem_example.png)
 
@@ -177,13 +185,17 @@ using pre-existing data.
 
 Our goal for part 2 is to plan a challenging and comfortable bicycle
 route that leads from the UCSB campus into the surrounding Goleta
-community and the Santa Ynez foothills. And we want to put our bike on
-the bus on the way back. To accomplish this, we need to expand beyond
-campus bike paths and incorporate regional road networks; we want to
-look at elevation data to look for steep climbs and long views; and we
-need to find those bus stops.
+community and the Santa Ynez foothills. Ideally, we want to lock up near
+a trailhead, and then put our bike on the bus on the way back to campus.
+
+To accomplish this, we need to expand beyond campus bike paths and
+incorporate regional road networks; we want to look at elevation data to
+look for steep climbs and long views; and we need to find those bus
+stops.
 
 ## Exploring Vector Data
+
+### Map Setup
 
 Let's set up our workspaces together. The layers for this workshop all
 have a wider extent than those from Workshop 1. For example,
@@ -224,8 +236,9 @@ Let's not forget to remove old layers from the current map (ie: the old
 roads roads)
 :::
 
-![Map with UCSB & local bike
-infrastructure](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths"
+![Map with UCSB local bike infrastructure, buildings colored by
+category, and nearby
+roads.](images/workshop2/w2_start_map.png){fig-alt="Starting map with UCSB buildings, Bike racks, and local bike paths"
 width="90%" fig-align="center"}
 
 ## Exploring Raster Data
@@ -234,8 +247,8 @@ When outside of ArcGIS Online, geospatial raster data comes in many
 different formats. TIFFs, Grids, netCDF, iiif, web map services. Too
 many to list!
 
--   ArcGIS Online variations: while many of these start somewhere as TIFFs,
-    they are all ingested into AGO as flavors of 
+-   ArcGIS Online variations: while many of these start somewhere as
+    TIFFs, they are all ingested into AGO as flavors of
     `Tiled imagery layers`
 
 Let's add a Digital Elevation Model to out map: `ucsb_local_dem`. By
@@ -269,17 +282,21 @@ hundreds of feet in the foothills, as well as the grid cell resolution.
 ## Challenge: Does our DEM contain negative values? Why?
 
 ## yes. because sea level.
-
-** screenshot here **
-
-To do: put in screenshot with properties here. The properties table
-shows the maximum and minimum values
 :::
 
-#### Applying a Divergent Color Scheme
-Data that moves around a zero point, such as our batho-topo elevation model,
-is knows as ** divergent **. It is very helpful to your map viewers to visualize
-this typ of data with a divergent color scheme.
+::: {.callout-tip collapse="true"}
+
+![](images/workshop2/negative_dem.png)
+
+The properties window of a raster will show you the maximum and minimum
+values
+:::
+
+#### Applying a Continuous Divergent Color Scheme
+
+Data that moves around a zero point, such as our batho-topo elevation
+model, is knows as \*\* divergent \*\*. It is very helpful to your map
+viewers to visualize this typ of data with a divergent color scheme.
 
 By default, continuous raster layers display using a grayscale "Stretch"
 renderer (low values '0' dark, and high values 255 light). To clearly
@@ -302,16 +319,21 @@ lower elevation display in blue and green and higher elevation in brown
 and white.
 
 ![Digital Elevation Model with color
-scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higher elevation, blue and green for lower elevation"
-scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and green for lower elevation"
-width="90%" fig-align="center"}
+scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation
+Model with color scaled for DEM: white a higher elevation, blue and
+green for lower elevation"
+scale\](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation
+Model with color scaled for DEM: white a higer elevation, blue and green
+for lower elevation" width="90%" fig-align="center"}
 
 #### 'Binning' a raster
 
 It's sometimes easier to divide a raster into classes. You can do this
-on the fly in ArcGIS Online by changing the symbology
+on the fly in ArcGIS Online by changing the symbology, first to 'Natural
+Breaks,' and then customized to highlight the near-zero areas around the
+coast
 
-....
+![](images/workshop2/classed_dem.png)....
 
 ### Calculated Raster Data: Slope
 
@@ -438,11 +460,11 @@ this so that it appears most natural on your screen.
 
 ::: callout-tip
 ## Challenge: play with different band combinations. What do you think Band
+
 1 is good for?
 :::
 
-* Needs a better question and explanations *
-
+-   Needs a better question and explanations \*
 
 ### Layer Management and Rasters
 
@@ -452,7 +474,8 @@ this so that it appears most natural on your screen.
 2.  **Imagery Layers vs Basemaps**:
     -   A **basemap** sits at the bottom of the map canvas, serving
         purely as a static background context. Esri has options that are
-        satellite and aerial views. You cannot perform analysis on basemaps.
+        satellite and aerial views. You cannot perform analysis on
+        basemaps.
     -   An **imagery layer** is a data layer added to your map stack. It
         can be re-ordered above or below other layers, adjusted with
         transparency and blend modes, queried for pixel values, and
@@ -491,13 +514,16 @@ map!
 ### Creating Vector Layers from .CSV files
 
 In this section we will import `SantaBarbara_County_Trailheads.csv` from
-a CSV (like a spreadsheet) that includes coordinate columns (latitude and longitude) 
-of the sort that would come from a GPS device. This will demonstrate  
-how external tabular data can be transformed into a geospatial layer
-and integrate with existing road and elevation layers. And seeing where trailheads
-are can give us a goal for our bicycle ride!
+a CSV (like a spreadsheet) that includes coordinate columns (latitude
+and longitude) of the sort that would come from a GPS device. This will
+demonstrate\
+how external tabular data can be transformed into a geospatial layer and
+integrate with existing road and elevation layers. And seeing where
+trailheads are can give us a goal for our bicycle ride!
 
-**Download and open the [`SantaBarbara_County_Trailheads.csv`](https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv){target=_blank} onto your device.**
+**Download and open the
+[`SantaBarbara_County_Trailheads.csv`](https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv){target="_blank"}
+onto your device.**
 
 ::: {.callout-tip collapse="true"}
 ## Challenge - Inspect the trailhead data
@@ -556,7 +582,8 @@ width="100%"}
 ### A note on Coordinate Reference Systems
 
 In ArcGIS Online, the default projection and Coordinate Reference System
-(CRS) is WGS 1984 Web Mercator Auxiliary Sphere (also referred as [EPSG:3857](https://epsg.io/3857))
+(CRS) is WGS 1984 Web Mercator Auxiliary Sphere (also referred as
+[EPSG:3857](https://epsg.io/3857))
 
 Coordinate systems can be divided into two main categories: Projected
 and Geographic Coordinate Systems.
@@ -597,17 +624,18 @@ width="30%"}
 
 <hr>
 
-## Editing Vector Data 
+## Editing Vector Data
 
-Now that we have imported data into ArcGIS Online, we might also want to modify
-this data. For vector data, we can modify the AGO Feature Layer attributes and values stored
-in the underlying table or the feature itself by editing locations and
-shapes, or adding and removing specific features. For raster data, those
-transformations are generally done using some form of calculation on the
-entire raster, or specific values targeted via conditions, rather than
-by manually editing pixel values. We will talk more about raster
-calculations in our third workshop. For today, we will focus on editing
-vector data (or feature layers in ArcGIS jargon) in this workshop.
+Now that we have imported data into ArcGIS Online, we might also want to
+modify this data. For vector data, we can modify the AGO Feature Layer
+attributes and values stored in the underlying table or the feature
+itself by editing locations and shapes, or adding and removing specific
+features. For raster data, those transformations are generally done
+using some form of calculation on the entire raster, or specific values
+targeted via conditions, rather than by manually editing pixel values.
+We will talk more about raster calculations in our third workshop. For
+today, we will focus on editing vector data (or feature layers in ArcGIS
+jargon) in this workshop.
 
 ::: {.callout-warning collapse="false"}
 ## This goes beyond the map
@@ -760,7 +788,8 @@ We do not have time to tackle this topic today, But see
 [here](https://doc.esri.com/en/arcgis-online/latest/manage-data/calculate-fields.html)
 for more information on how to do this.
 
-Here is an example of using the field calculator to select trails that has been added by users:
+Here is an example of using the field calculator to select trails that
+has been added by users:
 
 ![](images/workshop2/w2_field_calculator.png){fig-alt="Example of using the field calculator showing the preview of a query"
 width="100%" fig-align="center"}
@@ -805,18 +834,21 @@ width="50%"}
     be available in the menu on the right side of the page. Click on it
     and select a location on your local computer and a filename.
 
-![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Download option available" width="100%"}
+![](images/workshop2/export-download.png){fig-alt="Overview page for the newly created geojson layer. The menu on the right has now the Download option available"
+width="100%"}
 
 ## Completing the Story
 
-So where shall we ride our bicycles? Keep working on your map to best display the information we have gathered
-at this point to further develop your map to help you decide to which trailheads you could ride your bike to!
+So where shall we ride our bicycles? Keep working on your map to best
+display the information we have gathered at this point to further
+develop your map to help you decide to which trailheads you could ride
+your bike to!
 
-Here is an example of what such map could look like and a few tips below on how to get started.
+Here is an example of what such map could look like and a few tips below
+on how to get started.
 
-![](images/workshop2/w2_potential_final_map.png){fig-alt="Potential final map shoing the slope in grayscale, 
-trailheads in color coded dots and the bikable roads in blue" width="100%"}
-
+![](images/workshop2/w2_potential_final_map.png){fig-alt="Potential final map shoing the slope in grayscale,  trailheads in color coded dots and the bikable roads in blue"
+width="100%"}
 
 ### How to improve your map
 
@@ -899,10 +931,10 @@ and route difficulty:
 
 3.  **Joining Statistics to Roads**: The zonal statistics tool outputs a
     standalone data table. To visualize these slope measurements on the
-    map, join the table back to the road vector layer using 
-    ** Analysis \> Tools \>
-    Summarize data \> Join Features**, matching on a common identifier
-    such as `OBJECTID` (which is often hidden by default). 
+    map, join the table back to the road vector layer using \*\*
+    Analysis \> Tools \> Summarize data \> Join Features\*\*, matching
+    on a common identifier such as `OBJECTID` (which is often hidden by
+    default).
 
 ![](images/workshop2/roads_over_slope.png)
 
