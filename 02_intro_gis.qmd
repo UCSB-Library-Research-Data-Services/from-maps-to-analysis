@@ -936,6 +936,8 @@ and route difficulty:
     on a common identifier such as `OBJECTID` (which is often hidden by
     default).
 
+**HAS ANYONE SOLVED THIS? BECAUSE THAT WOULD BE SUPER HELPFUL!!!!!**
+
 ![](images/workshop2/roads_over_slope.png)
 
 4.  Once joined, roads can be symbolized by slope steepness, allowing us
