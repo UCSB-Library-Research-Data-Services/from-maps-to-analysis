@@ -556,9 +556,7 @@ width="100%"}
 ### A note on Coordinate Reference Systems
 
 In ArcGIS Online, the default projection and Coordinate Reference System
-(CRS) is WGS 1984 Web Mercator Auxiliary Sphere, also used by the Global
-Positioning System
-([GPS](https://en.wikipedia.org/wiki/Global_Positioning_System)).
+(CRS) is WGS 1984 Web Mercator Auxiliary Sphere (also referred as [EPSG:3857](https://epsg.io/3857))
 
 Coordinate systems can be divided into two main categories: Projected
 and Geographic Coordinate Systems.
