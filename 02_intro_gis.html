@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4c91e038287a4550e99eaaa3ddcee6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-04aca834d9ded1de2be64f9654650613.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f4ddadfd4a959ce5e205fc8bc0959c1a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -176,7 +176,9 @@ window.Quarto = {
   <li><a href="#exploring-raster-data" id="toc-exploring-raster-data" class="nav-link" data-scroll-target="#exploring-raster-data">Exploring Raster Data</a>
   <ul class="collapse">
   <li><a href="#calculated-raster-data-slope" id="toc-calculated-raster-data-slope" class="nav-link" data-scroll-target="#calculated-raster-data-slope">Calculated Raster Data: Slope</a></li>
-  <li><a href="#categorical-rasters---land-cover" id="toc-categorical-rasters---land-cover" class="nav-link" data-scroll-target="#categorical-rasters---land-cover">Categorical Rasters - Land Cover</a></li>
+  </ul></li>
+  <li><a href="#categorical-rasters---land-cover" id="toc-categorical-rasters---land-cover" class="nav-link" data-scroll-target="#categorical-rasters---land-cover">Categorical Rasters - Land Cover</a>
+  <ul class="collapse">
   <li><a href="#multi-band-rasters" id="toc-multi-band-rasters" class="nav-link" data-scroll-target="#multi-band-rasters">Multi-band Rasters</a></li>
   </ul></li>
   <li><a href="#layer-management-rasters-and-additional-vectors" id="toc-layer-management-rasters-and-additional-vectors" class="nav-link" data-scroll-target="#layer-management-rasters-and-additional-vectors">Layer Management, Rasters, and Additional Vectors</a>
@@ -264,10 +266,9 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Using the <a href="./01_make_map.html#step-1-add-layers-to-your-map">workshop 1 materials</a> as reference, do the following tasks:</p>
 <ol type="1">
-<li>Add symbology to the building layer using the <code>b_use</code> column.<br>
-</li>
-<li>Repeat the above steps to add the feature layer <code>bike_racks_ucsb</code> to your map.</li>
-<li>Experiment with the dot size and color for the bike racks.</li>
+<li>Add buildings to your map. Symbolize the building layer according to building use, (ie: by using the <code>b_use</code> column.)</li>
+<li>Add the feature layer <code>bike_racks_ucsb</code> to your map.</li>
+<li>Experiment with the dot size, color, and clustering for the bike racks.</li>
 <li>Perform a <code>Save as</code> before moving to workshop 2 and name give your map a unique name, for example: <strong>Goleta bike map</strong> YourInitials”**, and a short description of your map.</li>
 </ol>
 <section id="catching-up" class="level4">
@@ -333,12 +334,11 @@ Figure&nbsp;1: Location of the <code>Save as</code> dialog in the ArcGIS Online 
 <p>Visually selecting the library building polygon on the map will select the row in the attribute table.<img src="images/workshop2/library-poly.png" class="img-fluid" alt="Opening the Attribute Table"></p>
 <p>Then opening the Attribute Table under layer options by clicking Layers &gt; UCSB Campus Buldings 2026, the <code>...</code> &gt; Show table<img src="images/workshop2/library-attributes.png" class="img-fluid" alt="Library polygon attributes"></p>
 <p>Each polygon in the table has many fields and values associated with it. Building names, floor counts, area, who edited the file, and when it was last updated, among other fields a user may find helpful when analyzing their data.</p>
-<p>Attributes may be divided into three types:</p>
+<p>Attributes of both pixels and polygons may be divided into three main types:</p>
 <ul>
-<li><p>Nominal: free-text information for labels and names</p></li>
-<li><p>Categorical</p></li>
-<li><p>Numeric: both continuous and ordinal information that can be counted or has numerical importance - <em>ie</em> the number of floors that each building has (note: the UCSB Library has a basement and attic. Hence 10) or the area of each building’s floorspace.</p></li>
-<li><p>Continuous Numeric: information that can be ordered or ranked in some way - floor count</p></li>
+<li>Nominal: free-text information for labels and names</li>
+<li>Categorical</li>
+<li>Numeric: both continuous and ordinal information that can be counted or has numerical importance - <em>ie</em> the number of floors that each building has (note: the UCSB Library has a basement and attic. Hence 10) or the area of each building’s floorspace.</li>
 </ul>
 </section>
 <section id="raster-data" class="level3">
@@ -374,7 +374,10 @@ Figure&nbsp;1: Location of the <code>Save as</code> dialog in the ArcGIS Online 
 </ol>
 <ul>
 <li>GOTCHA: most of the attribute data is blank. We will leave all of the roads turned on.</li>
-<li>screenshot of map with roads symbolized for bikes. Map 1 currently has default blue.</li>
+<li>screenshot of map with roads symbolized for bikes.
+<ul>
+<li>Instructors: Map 1 *</li>
+</ul></li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
@@ -431,10 +434,11 @@ Note
 <figcaption>Digital Elevation Model added to the map</figcaption>
 </figure>
 </div>
-<p>Each pixel, or cell, in our DEM represents bare-earth surface elevation relative to a vertical datum (mean sea level). The <code>ucsb_local_dem</code> dataset was derived from a high-resolution USGS LiDAR survey (3D Elevation Program (3DEP)).</p>
+<p>Each pixel, or cell, in our DEM represents bare-earth (ie: with trees and buildings removed) surface elevation relative to a vertical datum (mean sea level). The <code>ucsb_local_dem</code> dataset was derived from a high-resolution USGS LiDAR survey (3D Elevation Program (3DEP)). Sometimes this is called a Digital Terrain Model (DTM)</p>
 <p><strong>POP QUIZ:</strong> What do you think are the units of <code>ucsb_local_dem</code>?</p>
 <p>A DEM is an example of a <strong>continuous raster</strong> as the values stored in each cell correspond to a quantity gradient (elevation in meters) changing in space . Other examples of continuous raster would be precipitation measurements, air quality index, ocean salinity, or distance from a road.</p>
 <p>In the layer properties, explore the raster statistics: note the minimum elevation near sea level (0) along the coast and slough, rising to hundreds of feet in the foothills, as well as the grid cell resolution.</p>
+<pre><code>* Instructors: We are at Map 2 *</code></pre>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -474,26 +478,36 @@ Tip
 <p>By default, continuous raster layers display using a grayscale “Stretch” renderer (low values ‘0’ dark, and high values 255 light). To clearly distinguish elevation changes across the coastal plain and mountains, let’s change the symbology to a continuous, diverging color ramp (e.g., a below-and-above zero diverging ramp or an elevation palette). Select the DEM layer and open the Styles menu (<img src="images/workshop2/styles_icon.png" class="img-fluid">)</p>
 <p>to use ‘Stretch’, we have to force zero to be the middle value. When we need to do this, we look at the DEM’s actual minimum and maximum values, and take whichever number has the larger absolute value. Use that exact number as both a negative minimum and a positive maximum in the Statistics table. (e.g.: 1218 feet)</p>
 <p><img src="images/workshop2/dem_options.png" class="img-fluid"></p>
-<p>Here is below an example of a widely used color scale for DEM, with lower elevation display in blue and green and higher elevation in brown and white.</p>
+<p>Here is below an example of a widely used color scale for DEM, with lower elevation display in blue and green and higher elevation in brown and white. if you hover over the pallette, it shows the name “Brown to Blue Green Diverging, Bright”</p>
 <p><img src="images/workshop2/w2_dem_colored.png" class="img-fluid" alt="Digital Elevation Model with color scale">{fig-alt=“Digital Elevation Model with color scaled for DEM: white a higher elevation, blue and green for lower elevation” scale](images/workshop2/w2_dem_colored.png){fig-alt=“Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and green for lower elevation” width=“90%” fig-align=“center”}</p>
+<pre><code>* Instructors: Map 3 *</code></pre>
 </section>
 <section id="binning-a-raster" class="level4">
 <h4 class="anchored" data-anchor-id="binning-a-raster">‘Binning’ a raster</h4>
-<p>It’s sometimes easier to divide a raster into classes. You can do this on the fly in ArcGIS Online by changing the symbology, first to ‘Natural Breaks,’ and then customized to highlight the near-zero areas around the coast</p>
+<p>It’s sometimes easier to divide a raster into classes–especially if you want to highlight certain values. You can do this on the fly in ArcGIS Online by changing the symbology, first to ‘Natural Breaks,’ and then customized to highlight the near-zero areas around the coast. It may be easier to choose <code>Equal interval</code> and edit the values from there.</p>
+<p>Either way, values clustered near zero are going to be hard to read:</p>
 <p><img src="images/workshop2/classed_dem.png" class="img-fluid">….</p>
+<pre><code>* Instructors: Map 4 *</code></pre>
 </section>
 <section id="calculated-raster-data-slope" class="level3">
 <h3 class="anchored" data-anchor-id="calculated-raster-data-slope">Calculated Raster Data: Slope</h3>
 <p>You can also perform calculations to turn a DEM into a slope layer. We already made this slope layer for you as it can be a computing intensive task. This is another continuous dataset. You can call it derivative data.</p>
-<p>We will learn how it was made in workshop 3, but for now we will use it to examine, with our eyes, where the steepest bike routes up into our foothills are. Add this raster layer by searching for <code>SantaBarbara_slope</code> within the UCSB organization:</p>
+<p>We will learn how it was made in workshop 3, but for now we will use it to examine, with our eyes, where the steepest bike routes up into our foothills are. Add this raster layer by searching for <code>SantaBarbara_slope</code> within the UCSB organization or navigating to our group:</p>
 <p><img src="images/workshop2/roads_over_slope.png" class="img-fluid"></p>
-<p><strong>POP QUIZ:</strong> Below same slope layer, zoomed in to campus, and symbolized with a divergent color scheme. What does this tell you is incorrect about something we said earlier regarding our DEM? (DTM vs DSM)</p>
+<p>Let’s use another stretched raster style, with the <code>Spectrum full light</code> color scheme.</p>
+<p><strong>POP QUIZ:</strong> Using the slope layer, zoom in to campus. Adjust the stretch style options so that you can clearly see the buildings and cliffs.</p>
+<p>What does this tell you was INCORRECT when we defined our DEM as a DTM versus a DSM? Is our DEM a bare-earth model or a topmost-surface model?</p>
 <p><img src="images/workshop2/slope.png" class="img-fluid"></p>
 <p>Resymbolize your slope layer to a color scheme that makes sense to you. Look up into the foothills. Which paths look steepest for our theoretical bike ride?</p>
+<p>Make a copy of the DEM and have both classed and stretched versions on your map.</p>
+<p>For the stretch, turn on ‘dynamic range adjustment’ so that we can see the campus buildings when we zoom in.</p>
+<p>Rename the layers so that you can keep track of them: * Slope * DEM Stretched * DEM Classed</p>
+<pre><code>* Instructors: Map 5 * includes 3 rasters</code></pre>
 <p><img src="images/workshop2/symbolizing_slope.png" class="img-fluid" style="width:60.0%"></p>
 </section>
-<section id="categorical-rasters---land-cover" class="level3">
-<h3 class="anchored" data-anchor-id="categorical-rasters---land-cover">Categorical Rasters - Land Cover</h3>
+</section>
+<section id="categorical-rasters---land-cover" class="level2">
+<h2 class="anchored" data-anchor-id="categorical-rasters---land-cover">Categorical Rasters - Land Cover</h2>
 <p><strong>Categorical vs.&nbsp;Continuous Data</strong></p>
 <p>Continuous data are best represented by numbers, and are logically consistent when you do so. Smaller numbers = less of some measurement.</p>
 <p>On the other hand, categorical data can be text or numeric. The value of any numbers used do not necessarily reflect any mathematical value, but it may. For example, while the values below have a natural order (The 3 Little Piggies Construction Scale), the numbers are <em>ordinal</em> but arbitrary:</p>
@@ -505,10 +519,12 @@ Tip
 <li>5 = sun brick / mud daub</li>
 <li>6 = straw bail</li>
 </ul>
+<p>Let’s add a Landcover raster dataset from Esri’s Living Atlas</p>
+<p>** Living Atlas Callout ** Take a moment to look at the first results in the Living Atlas layers. When we were creating this lesson, they included US, Germany, and United Kingdom realtime weather layers.</p>
+<p>The quickest way is to start typing <code>USA Annual....</code> into the Living Atlas search box.</p>
 <p>While elevation is a <strong>continuous raster</strong> (values change smoothly along a numerical gradient representing a quantity), other rasters are <strong>categorical rasters</strong> (e.g., land cover classification datasets from the Living Atlas, where integer cell values represent categories such as urban development, forest, or water).</p>
 <p><img src="images/workshop2/landcover_result.png" class="img-fluid"></p>
-<p>Show the legend to see the category names. Open the attribute table to compare it to what appears for vector data:</p>
-</section>
+<p>Show the legend to see the category names. Open the attribute table to compare it to what appears for other raster data. This is a complex, time-enabled dataset: one row for each of 41 time points.</p>
 <section id="multi-band-rasters" class="level3">
 <h3 class="anchored" data-anchor-id="multi-band-rasters">Multi-band Rasters</h3>
 <p>So far we have worked with single-channel, or 1-band rasters. However, perhaps we are more familiar with 3-channel images, because our eyes see best in the red-green-blue color space. For geospatial data, think of this as satellite or aerial views.</p>
@@ -578,6 +594,9 @@ Tip
 <p>At this point your map should look something like this:</p>
 <p><img src="images/workshop2/wkshp2_map_5.png" class="img-fluid"></p>
 <p><strong>Time to save our map!!!</strong></p>
+<ul>
+<li>Instructors: map 6 includes 5 rasters.</li>
+</ul>
 <hr>
 </section>
 </section>
