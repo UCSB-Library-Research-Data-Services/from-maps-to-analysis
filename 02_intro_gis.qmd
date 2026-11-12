@@ -278,21 +278,19 @@ In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
 
-    * Instructors: We are at Map 2 *
+Can't keep up? We are at * Bike map 2 *
+
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: Does our DEM contain negative values? Why?
 
-## yes. because sea level.
-:::
-
-::: {.callout-tip collapse="true"}
+Yes. Because our data is both elevation and bathymetry.
+You can see the range of values in the properties window of a raster.
 
 ![](images/workshop2/negative_dem.png)
 
-The properties window of a raster will show you the maximum and minimum
-values
 :::
+
 
 #### Applying a Continuous Divergent Color Scheme
 
@@ -329,7 +327,7 @@ scale\](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation
 Model with color scaled for DEM: white a higer elevation, blue and green
 for lower elevation" width="90%" fig-align="center"}
 
-    * Instructors: Map 3 *
+Can't keep up? We are at * Bike map 3 *
 
 #### 'Binning' a raster
 
@@ -346,7 +344,7 @@ Either way, values clustered near zero are going to be hard to read:
 
 ![](images/workshop2/classed_dem.png)....
 
-    * Instructors: Map 4 *
+Can't keep up? We are at * Bike map 4 *
 
 
 ### Calculated Raster Data: Slope
@@ -392,7 +390,8 @@ Rename the layers so that you can keep track of them:
 * DEM Stretched
 * DEM Classed
 
-    * Instructors: Map 5 * includes 3 rasters
+Can't keep up? We are at * Bike map 5 *
+which includes 3 rasters
 
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
 
@@ -531,11 +530,14 @@ this so that it appears most natural on your screen.
 
 At this point your map should look something like this:
 
+* This image isn't correct. WE HAVEN"T ADDED BUSSTOPS YET!!!
 ![](images/workshop2/wkshp2_map_5.png)
 
 **Time to save our map!!!**
 
-* Instructors: map 6 includes 5 rasters. 
+
+Can't keep up? We are at * Bike map 6 *
+which includes 5 rasters. 
 
 <hr>
 
