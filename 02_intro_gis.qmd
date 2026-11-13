@@ -400,6 +400,9 @@ Rename the layers so that you can keep track of them:
 
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
 
+Can't keep up? We are at [Bike map 5](https://ucsb.maps.arcgis.com/home/item.html?id=5431b37143554f6d910baac000f61869#overview)
+
+
 ## Categorical Rasters - Land Cover
 
 **Categorical vs. Continuous Data**
@@ -422,11 +425,13 @@ arbitrary:
 
 Let's add a Landcover raster dataset from Esri's Living Atlas
 
-** Living Atlas Callout **
+::: {.callout-tip collapse="false"}
+## Living Atlas
+
 Take a moment to look at the first results in the Living Atlas layers.
 When we were creating this lesson, they included US, Germany, and
 United Kingdom realtime weather layers.
-
+:::
 
 The quickest way is to start typing `USA Annual....` into the Living
 Atlas search box.
