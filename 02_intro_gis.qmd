@@ -513,7 +513,6 @@ this so that it appears most natural on your screen.
 ## Challenge: play with different band combinations. What do you think Band 1 is good for?
 :::
 
--   Needs a better question and explanations \*
 
 ### Layer Management and Rasters
 
