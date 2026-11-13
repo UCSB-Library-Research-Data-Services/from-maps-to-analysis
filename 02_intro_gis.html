@@ -46,7 +46,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4c91e038287a4550e99eaaa3ddcee6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f4ddadfd4a959ce5e205fc8bc0959c1a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-04aca834d9ded1de2be64f9654650613.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,6 +77,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="https://js.arcgis.com/5.2/embeddable-components/"></script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -273,7 +277,7 @@ window.Quarto = {
 </ol>
 <section id="catching-up" class="level4">
 <h4 class="anchored" data-anchor-id="catching-up">Catching up:</h4>
-<p>If you weren’t able to make the map from scratch, <a href="https://ucsb.maps.arcgis.com/home/item.html?id=2b16d246ee4c4321852712b9b4652b74#overview">open this link</a>, click ‘Open in the Map Viewer’ and do a <code>Save as</code></p>
+<p>If you weren’t able to make the map from scratch, <a href="https://ucsb.maps.arcgis.com/home/item.html?id=2b16d246ee4c4321852712b9b4652b74#overview" target="_blank">open this link</a>, click ‘Open in the Map Viewer’ and do a <code>Save as</code></p>
 </section>
 </div>
 </div>
@@ -294,7 +298,7 @@ window.Quarto = {
 <div id="fig-saveas-step1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-saveas-step1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/workshop1/Step1/save-as.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%">
+<a href="images/workshop1/Step1/save-as.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Location of the Save as dialog in the ArcGIS Online left-hand sidebar"><img src="images/workshop1/Step1/save-as.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-saveas-step1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Location of the <code>Save as</code> dialog in the ArcGIS Online left-hand sidebar
@@ -309,17 +313,20 @@ Figure&nbsp;1: Location of the <code>Save as</code> dialog in the ArcGIS Online 
 </section>
 <section id="preview-our-end-goal" class="level2">
 <h2 class="anchored" data-anchor-id="preview-our-end-goal">Preview: our end goal</h2>
-<p>Our finished product for this session will be the <code>Workshop Goleta bike map</code>. We will take time to preview this finished map before building it step by step.</p>
-<p>[Right-CLick here to open the map in a new window] (https://arcg.is/nazXe2)</p>
-<p><img src="images/workshop2/finished_map.png" class="img-fluid"></p>
-<p>** link and screenshot of finished map goes here. <a href="https://arcg.is/1yz0KP3">Work in progress version: (https://arcg.is/1yz0KP3)</a></p>
+<p>Our finished product for this session is called <code>Workshop 2 Final Product</code>. Let’s take time to preview this finished map before building it step by step.</p>
+<p><a href="https://arcg.is/nazXe2" target="_blank">Click here to open the map in a new window</a></p>
+<p><a href="images/workshop2/finished_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/workshop2/finished_map.png" class="img-fluid"></a></p>
+<p>Our odd-looking finished map features: * a semi-transparent raster layer showing the steepest areas in red * all of our bikable roads * bus stops * a base layer highlight the coastline</p>
+<p>Let’s try and embed that map here: Our final interactive map is also embedded below:</p>
+<!-- Add custom element to <body> of your page -->
+<p><arcgis-embedded-map style="height:600px;width:700px;" item-id="2fabb20d27604f97b868c5fb2a12927c" theme="light" heading-enabled="" legend-enabled="" information-enabled="" time-bar-enabled="" center="-119.86022353540515,34.44231873485561" scale="72223.819286" portal-url="https://ucsb.maps.arcgis.com"></arcgis-embedded-map></p>
 </section>
 <section id="raster-vs-vector-data" class="level2">
 <h2 class="anchored" data-anchor-id="raster-vs-vector-data">Raster vs Vector Data</h2>
 <p>Geographic data generally falls into two primary models: <strong>vector</strong> and <strong>raster</strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/workshop2/graphicmamacartoon.jpg" class="img-fluid figure-img" alt="A cartoon visually comparing mathematically calculated vectors veersus grids of square pixel rasters"></p>
+<p><a href="images/workshop2/graphicmamacartoon.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="The difference in geospatial work is the same as between Adobe Illustrator (vectors) and Photoshop (rasters) (image credit: Graphic Mama"><img src="images/workshop2/graphicmamacartoon.jpg" class="img-fluid figure-img" alt="A cartoon visually comparing mathematically calculated vectors veersus grids of square pixel rasters"></a></p>
 <figcaption>The difference in geospatial work is the same as between Adobe Illustrator (vectors) and Photoshop (rasters) (image credit: <a href="https://graphicmama.com/blog/vector-and-raster-whats-the-difference/">Graphic Mama</a></figcaption>
 </figure>
 </div>
@@ -350,9 +357,9 @@ Figure&nbsp;1: Location of the <code>Save as</code> dialog in the ArcGIS Online 
 <li><strong>Multi-band rasters</strong>: Each pixel contains multiple values across different spectral channels or bands (such as red, green, blue, and near-infrared bands in aerial photography or satellite imagery).</li>
 </ul>
 <p>Below is a single band raster. The value of each pixel is elevation. <strong>INCORRECT – this is the slope map</strong></p>
-<p><img src="images/workshop2/wkshp_2_dem_example.png" class="img-fluid"></p>
+<p><a href="images/workshop2/wkshp_2_dem_example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/workshop2/wkshp_2_dem_example.png" class="img-fluid"></a></p>
 <p>Below is an 8-band raster with band #7 (near IR) as red, band #3 (green) as green, and band #1 (coastal blue) as blue. This type of image displays are often called “false-color” because they do not respect the RGB channel alignment. This can help to highlight some features, such as vegetation that has a strong signal in near infrared (NIR) wavelengths</p>
-<p><img src="images/workshop2/false_color.png" class="img-fluid"></p>
+<p><a href="images/workshop2/false_color.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/workshop2/false_color.png" class="img-fluid"></a></p>
 </section>
 <section id="the-story-so-far" class="level3">
 <h3 class="anchored" data-anchor-id="the-story-so-far">The Story So Far</h3>
@@ -415,7 +422,11 @@ Note
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/workshop2/w2_start_map.png" class="img-fluid figure-img" style="width:90.0%" alt="Starting map with UCSB buildings, Bike racks, and local bike paths"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/workshop2/w2_start_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Map with UCSB local bike infrastructure, buildings colored by category, and nearby roads."><img src="images/workshop2/w2_start_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="Starting map with UCSB buildings, Bike racks, and local bike paths"></a></p>
+</figure>
+</div>
 <figcaption>Map with UCSB local bike infrastructure, buildings colored by category, and nearby roads.</figcaption>
 </figure>
 </div>
@@ -431,7 +442,11 @@ Note
 <p>Your map with DEM should look something like this by default:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/workshop2/wkshp2_map_2_defaultDEM.png" class="img-fluid figure-img" style="width:90.0%" alt="By default, DEMs appear as almost black for low elevations to white for high elevations"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/workshop2/wkshp2_map_2_defaultDEM.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Digital Elevation Model added to the map"><img src="images/workshop2/wkshp2_map_2_defaultDEM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="By default, DEMs appear as almost black for low elevations to white for high elevations"></a></p>
+</figure>
+</div>
 <figcaption>Digital Elevation Model added to the map</figcaption>
 </figure>
 </div>
@@ -453,7 +468,7 @@ Note
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Yes. Because our data is both elevation and bathymetry. You can see the range of values in the properties window of a raster.</p>
-<p><img src="images/workshop2/negative_dem.png" class="img-fluid"></p>
+<p><a href="images/workshop2/negative_dem.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/workshop2/negative_dem.png" class="img-fluid"></a></p>
 </div>
 </div>
 </div>
@@ -462,7 +477,7 @@ Note
 <p>Data that moves around a zero point, such as our batho-topo elevation model, is knows as ** divergent **. It is very helpful to your map viewers to visualize this typ of data with a divergent color scheme.</p>
 <p>By default, continuous raster layers display using a grayscale “Stretch” renderer (low values ‘0’ dark, and high values 255 light). To clearly distinguish elevation changes across the coastal plain and mountains, let’s change the symbology to a continuous, diverging color ramp (e.g., a below-and-above zero diverging ramp or an elevation palette). Select the DEM layer and open the Styles menu (<img src="images/workshop2/styles_icon.png" class="img-fluid">)</p>
 <p>to use ‘Stretch’, we have to force zero to be the middle value. When we need to do this, we look at the DEM’s actual minimum and maximum values, and take whichever number has the larger absolute value. Use that exact number as both a negative minimum and a positive maximum in the Statistics table. (e.g.: 1218 feet)</p>
-<p><img src="images/workshop2/dem_options.png" class="img-fluid"></p>
+<p><a href="images/workshop2/dem_options.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="images/workshop2/dem_options.png" class="img-fluid"></a></p>
 <p>Here is below an example of a widely used color scale for DEM, with lower elevation display in blue and green and higher elevation in brown and white. if you hover over the pallette, it shows the name “Brown to Blue Green Diverging, Bright”</p>
 <p><img src="images/workshop2/w2_dem_colored.png" class="img-fluid" alt="Digital Elevation Model with color scale">{fig-alt=“Digital Elevation Model with color scaled for DEM: white a higher elevation, blue and green for lower elevation” scale](images/workshop2/w2_dem_colored.png){fig-alt=“Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and green for lower elevation” width=“90%” fig-align=“center”}</p>
 <p>Can’t keep up? We are at * Bike map 3 *</p>
@@ -478,17 +493,17 @@ Note
 <h3 class="anchored" data-anchor-id="calculated-raster-data-slope">Calculated Raster Data: Slope</h3>
 <p>You can also perform calculations to turn a DEM into a slope layer. We already made this slope layer for you as it can be a computing intensive task. This is another continuous dataset. You can call it derivative data.</p>
 <p>We will learn how it was made in workshop 3, but for now we will use it to examine, with our eyes, where the steepest bike routes up into our foothills are. Add this raster layer by searching for <code>SantaBarbara_slope</code> within the UCSB organization or navigating to our group:</p>
-<p><img src="images/workshop2/roads_over_slope.png" class="img-fluid"></p>
+<p><a href="images/workshop2/roads_over_slope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="images/workshop2/roads_over_slope.png" class="img-fluid"></a></p>
 <p>Let’s use another stretched raster style, with the <code>Spectrum full light</code> color scheme.</p>
 <p><strong>POP QUIZ:</strong> Using the slope layer, zoom in to campus. Adjust the stretch style options so that you can clearly see the buildings and cliffs.</p>
 <p>What does this tell you was INCORRECT when we defined our DEM as a DTM versus a DSM? Is our DEM a bare-earth model or a topmost-surface model?</p>
-<p><img src="images/workshop2/slope.png" class="img-fluid"></p>
+<p><a href="images/workshop2/slope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="images/workshop2/slope.png" class="img-fluid"></a></p>
 <p>Resymbolize your slope layer to a color scheme that makes sense to you. Look up into the foothills. Which paths look steepest for our theoretical bike ride?</p>
 <p>Make a copy of the DEM and have both classed and stretched versions on your map.</p>
 <p>For the stretch, turn on ‘dynamic range adjustment’ so that we can see the campus buildings when we zoom in.</p>
 <p>Rename the layers so that you can keep track of them: * Slope * DEM Stretched * DEM Classed</p>
 <p>Can’t keep up? We are at * Bike map 5 * which includes 3 rasters</p>
-<p><img src="images/workshop2/symbolizing_slope.png" class="img-fluid" style="width:60.0%"></p>
+<p><a href="images/workshop2/symbolizing_slope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="images/workshop2/symbolizing_slope.png" class="img-fluid" style="width:60.0%"></a></p>
 </section>
 </section>
 <section id="categorical-rasters---land-cover" class="level2">
@@ -508,7 +523,7 @@ Note
 <p>** Living Atlas Callout ** Take a moment to look at the first results in the Living Atlas layers. When we were creating this lesson, they included US, Germany, and United Kingdom realtime weather layers.</p>
 <p>The quickest way is to start typing <code>USA Annual....</code> into the Living Atlas search box.</p>
 <p>While elevation is a <strong>continuous raster</strong> (values change smoothly along a numerical gradient representing a quantity), other rasters are <strong>categorical rasters</strong> (e.g., land cover classification datasets from the Living Atlas, where integer cell values represent categories such as urban development, forest, or water).</p>
-<p><img src="images/workshop2/landcover_result.png" class="img-fluid"></p>
+<p><a href="images/workshop2/landcover_result.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="images/workshop2/landcover_result.png" class="img-fluid"></a></p>
 <p>Show the legend to see the category names. Open the attribute table to compare it to what appears for other raster data. This is a complex, time-enabled dataset: one row for each of 41 time points.</p>
 <section id="multi-band-rasters" class="level3">
 <h3 class="anchored" data-anchor-id="multi-band-rasters">Multi-band Rasters</h3>
@@ -548,7 +563,7 @@ Note
 </div>
 </div>
 <p>Its initial appearance is dark – work on its visualization. Here are some good settings to use:</p>
-<p><img src="images/workshop2/wkshp2_map_5_planetscopesettings.png" class="img-fluid" alt="settings as they appear in the lesson text."></p>
+<p><a href="images/workshop2/wkshp2_map_5_planetscopesettings.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="images/workshop2/wkshp2_map_5_planetscopesettings.png" class="img-fluid" alt="settings as they appear in the lesson text."></a></p>
 <p>Showing bands 6, 4, and 2 as Red, Green, and Blue respectively will give a good approximation of human vision. <code>Gamma</code> is a degree of adjustment which changes the mathematics of the values of pixels into ranges that match the combination of computer monitors and the human eye. Adjust this so that it appears most natural on your screen.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -636,31 +651,31 @@ how external tabular data can be transformed into a geospatial layer and integra
 <ul>
 <li>Add layer from file</li>
 </ul>
-<p><img src="images/workshop2/import_csv-add.png" class="img-fluid" style="width:40.0%" alt="Unfold the Add menu"></p>
+<p><a href="images/workshop2/import_csv-add.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="images/workshop2/import_csv-add.png" class="img-fluid" style="width:40.0%" alt="Unfold the Add menu"></a></p>
 <ul>
 <li>Select “Your Device” and browse to the csv file you want to import</li>
 </ul>
-<p><img src="images/workshop2/import_csv-file.png" class="img-fluid" style="width:80.0%" alt="Browse or drop file"></p>
+<p><a href="images/workshop2/import_csv-file.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="images/workshop2/import_csv-file.png" class="img-fluid" style="width:80.0%" alt="Browse or drop file"></a></p>
 <ul>
 <li>Leave the default option “Create a hosted feature layer and add it to the map” and click Next</li>
 </ul>
-<p><img src="images/workshop2/import_csv-layer.png" class="img-fluid" style="width:80.0%" alt="Select 'hosted feature'"></p>
+<p><a href="images/workshop2/import_csv-layer.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="images/workshop2/import_csv-layer.png" class="img-fluid" style="width:80.0%" alt="Select 'hosted feature'"></a></p>
 <ul>
 <li>Select the attributes you would like to import as well as rename fields as you see necessary. You can also use this step to rename any of the field. Let’s select all the fields up to “Overview” and Rename “Title” as “Name”. It is also a good practice to check that the field types are aligned with what you were expecting.</li>
 </ul>
-<p><img src="images/workshop2/import_csv-field.png" class="img-fluid" style="width:100.0%" alt="Select the attributes you want to import and rename them as needed"></p>
+<p><a href="images/workshop2/import_csv-field.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="images/workshop2/import_csv-field.png" class="img-fluid" style="width:100.0%" alt="Select the attributes you want to import and rename them as needed"></a></p>
 <ul>
 <li>Match the latitude and longitude information used by ArcGIS to generate the location with your data attributes.</li>
 </ul>
-<p><img src="images/workshop2/import_csv-latlong.png" class="img-fluid" style="width:80.0%" alt="Match the Latitude and longitude attribute from your data with the information that ArcGIS will use to create the spatial locations"></p>
+<p><a href="images/workshop2/import_csv-latlong.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="images/workshop2/import_csv-latlong.png" class="img-fluid" style="width:80.0%" alt="Match the Latitude and longitude attribute from your data with the information that ArcGIS will use to create the spatial locations"></a></p>
 <ul>
 <li>Save your new data layer under your user account creating a <code>ucsb_bike</code> folder if you have not one yet</li>
 </ul>
-<p><img src="images/workshop2/import_csv-save.png" class="img-fluid" style="width:80.0%" alt="Interface to Save your new layer under your account"></p>
+<p><a href="images/workshop2/import_csv-save.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img src="images/workshop2/import_csv-save.png" class="img-fluid" style="width:80.0%" alt="Interface to Save your new layer under your account"></a></p>
 <ul>
 <li>Zoom out to see the trailhead locations! Of course now we need to make it look better :)</li>
 </ul>
-<p><img src="images/workshop2/import_csv-map.png" class="img-fluid" style="width:100.0%" alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity"></p>
+<p><a href="images/workshop2/import_csv-map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img src="images/workshop2/import_csv-map.png" class="img-fluid" style="width:100.0%" alt="Map displaying the new imported layer about trailheads in the Santa Barbara vicinity"></a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -708,7 +723,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </div>
 </div>
 <p>In the end, you should have a legend similar to the following:</p>
-<p><img src="images/workshop2/w2_trailhead_legend.png" class="img-fluid" style="width:30.0%" alt="Legend for trailheads with color ranging from yellow - green for easy moderate to red purple for harder ones"></p>
+<p><a href="images/workshop2/w2_trailhead_legend.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img src="images/workshop2/w2_trailhead_legend.png" class="img-fluid" style="width:30.0%" alt="Legend for trailheads with color ranging from yellow - green for easy moderate to red purple for harder ones"></a></p>
 <hr>
 </section>
 </section>
@@ -738,7 +753,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 <p>We noticed that some locations of trailhead on the Goleta Beach Park, east of campus, are in the ocean. This is probably due to some imprecision of the GPS measurements. We thus want to move those points back to the beach</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/workshop2/w2_trailhead_ocean.png" class="img-fluid figure-img" style="width:90.0%" alt="Trailheads in ocean (red dots) that we would like to move back to the shore (sand dots)"></p>
+<p><a href="images/workshop2/w2_trailhead_ocean.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23" title="Trailheads in ocean (red dots) that we would like to move back to the shore (sand dots)"><img src="images/workshop2/w2_trailhead_ocean.png" class="img-fluid figure-img" style="width:90.0%" alt="Trailheads in ocean (red dots) that we would like to move back to the shore (sand dots)"></a></p>
 <figcaption>Trailheads in ocean (red dots) that we would like to move back to the shore (sand dots)</figcaption>
 </figure>
 </div>
@@ -750,7 +765,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 <p>This should open the Editor panel on the right of your map</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/workshop2/w2_editor_panel.png" class="img-fluid figure-img" style="width:40.0%" alt="Feature layer Editor panel"></p>
+<p><a href="images/workshop2/w2_editor_panel.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24" title="Feature layer Editor panel"><img src="images/workshop2/w2_editor_panel.png" class="img-fluid figure-img" style="width:40.0%" alt="Feature layer Editor panel"></a></p>
 <figcaption>Feature layer Editor panel</figcaption>
 </figure>
 </div>
@@ -761,7 +776,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/workshop2/w2_edit-select_tool.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="Select by Point tool"></p>
+<p><a href="images/workshop2/w2_edit-select_tool.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img src="images/workshop2/w2_edit-select_tool.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="Select by Point tool"></a></p>
 </figure>
 </div>
 <ol start="2" type="1">
@@ -769,7 +784,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/workshop2/w2_edit-selected_point.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="Trailhead in the ocean selected"></p>
+<p><a href="images/workshop2/w2_edit-selected_point.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26"><img src="images/workshop2/w2_edit-selected_point.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="Trailhead in the ocean selected"></a></p>
 </figure>
 </div>
 <ol start="3" type="1">
@@ -778,7 +793,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/workshop2/w2_edit-moved_point.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="Trailhead location moved to the beach"></p>
+<p><a href="images/workshop2/w2_edit-moved_point.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27"><img src="images/workshop2/w2_edit-moved_point.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="Trailhead location moved to the beach"></a></p>
 </figure>
 </div>
 <p>You have edited the layer! <strong>Note that if it is a layer used in multiple maps (by you or others you have shared it with), all the maps will be updated as well, because remember maps and layers are two separate entities.</strong></p>
@@ -811,7 +826,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/workshop2/w2_edit-add_point.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%" alt="Add new feature point next to the UCSB Marine lab"></p>
+<p><a href="images/workshop2/w2_edit-add_point.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28"><img src="images/workshop2/w2_edit-add_point.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%" alt="Add new feature point next to the UCSB Marine lab"></a></p>
 </figure>
 </div>
 <p>Make sure to get out of the <code>Create features</code> mode before clicking again on the map!</p>
@@ -852,7 +867,11 @@ Note
 <p>There are two ways to edit values in a table. You can double-click on a cell and change the values, or you can use the pen logo at the end of the rows that will open back the “Edit Feature” pane we used previously. Let’s directly modify the values by double-clicking in the new “Added” column and setting the value to 1. Also notice that the other “Distance” values all have a unit, let’s add Miles to the 1.5 we entered previously.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/workshop2/w2_values-table.png" class="img-fluid figure-img" style="width:100.0%" alt="Attribute table with the newly entered values"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/workshop2/w2_values-table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29" title="Attribute table with the newly entered values"><img src="images/workshop2/w2_values-table.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Attribute table with the newly entered values"></a></p>
+</figure>
+</div>
 <figcaption>Attribute table with the newly entered values</figcaption>
 </figure>
 </div>
@@ -860,7 +879,7 @@ Note
 <p>Here is an example of using the field calculator to select trails that has been added by users:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/workshop2/w2_field_calculator.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Example of using the field calculator showing the preview of a query"></p>
+<p><a href="images/workshop2/w2_field_calculator.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30"><img src="images/workshop2/w2_field_calculator.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Example of using the field calculator showing the preview of a query"></a></p>
 </figure>
 </div>
 <hr>
@@ -874,25 +893,25 @@ Note
 <ul>
 <li>Once in the My content view, locate and click on the spatial trailhead layer you imported from the CSV file to go to the Overview page of that layer.</li>
 </ul>
-<p><img src="images/workshop2/export-overview.png" class="img-fluid" style="width:100.0%" alt="Overview page for the feature layer of Santa Barbara County trailheads."></p>
+<p><a href="images/workshop2/export-overview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-31"><img src="images/workshop2/export-overview.png" class="img-fluid" style="width:100.0%" alt="Overview page for the feature layer of Santa Barbara County trailheads."></a></p>
 <ul>
 <li>Unfold the menu on the right completely, select Export data, and choose the GeoJSON format.</li>
 </ul>
-<p><img src="images/workshop2/export-overview_uncollapsed.png" class="img-fluid" style="width:100.0%" alt="Overview page for the feature layer of Santa Barbara County trailheads with the option menu on the right uncollapsed and showing the Export Data option"></p>
+<p><a href="images/workshop2/export-overview_uncollapsed.png" class="lightbox" data-gallery="quarto-lightbox-gallery-32"><img src="images/workshop2/export-overview_uncollapsed.png" class="img-fluid" style="width:100.0%" alt="Overview page for the feature layer of Santa Barbara County trailheads with the option menu on the right uncollapsed and showing the Export Data option"></a></p>
 <ul>
 <li>On the next window, leave the default options and choose your ucsb_bike folder as location. Click on Export. Note that exporting data can take some time, so be patient :)</li>
 </ul>
-<p><img src="images/workshop2/export-geojson.png" class="img-fluid" style="width:50.0%" alt="Wizard page to export a geojson file: title, Folder location, Categories, Tags and Summary are the available options"></p>
+<p><a href="images/workshop2/export-geojson.png" class="lightbox" data-gallery="quarto-lightbox-gallery-33"><img src="images/workshop2/export-geojson.png" class="img-fluid" style="width:50.0%" alt="Wizard page to export a geojson file: title, Folder location, Categories, Tags and Summary are the available options"></a></p>
 <ul>
 <li>Once the export is completed, you should automatically be redirected to the Overview page of this new dataset. This time, Download should be available in the menu on the right side of the page. Click on it and select a location on your local computer and a filename.</li>
 </ul>
-<p><img src="images/workshop2/export-download.png" class="img-fluid" style="width:100.0%" alt="Overview page for the newly created geojson layer. The menu on the right has now the Download option available"></p>
+<p><a href="images/workshop2/export-download.png" class="lightbox" data-gallery="quarto-lightbox-gallery-34"><img src="images/workshop2/export-download.png" class="img-fluid" style="width:100.0%" alt="Overview page for the newly created geojson layer. The menu on the right has now the Download option available"></a></p>
 </section>
 <section id="completing-the-story" class="level2">
 <h2 class="anchored" data-anchor-id="completing-the-story">Completing the Story</h2>
 <p>So where shall we ride our bicycles? Keep working on your map to best display the information we have gathered at this point to further develop your map to help you decide to which trailheads you could ride your bike to!</p>
 <p>Here is an example of what such map could look like and a few tips below on how to get started.</p>
-<p><img src="images/workshop2/w2_potential_final_map.png" class="img-fluid" style="width:100.0%" alt="Potential final map shoing the slope in grayscale,  trailheads in color coded dots and the bikable roads in blue"></p>
+<p><a href="images/workshop2/w2_potential_final_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-35"><img src="images/workshop2/w2_potential_final_map.png" class="img-fluid" style="width:100.0%" alt="Potential final map shoing the slope in grayscale,  trailheads in color coded dots and the bikable roads in blue"></a></p>
 <section id="how-to-improve-your-map" class="level3">
 <h3 class="anchored" data-anchor-id="how-to-improve-your-map">How to improve your map</h3>
 <section id="creating-shaded-relief-hillshade-on-the-fly" class="level4">
@@ -908,12 +927,12 @@ Note
 <li><strong>Azimuth</strong>: The compass direction from which the illumination source (the sun) originates, measured in degrees clockwise from north (0° = North, 90° = East, 180° = South, 270° = West). In cartography, the sun is traditionally positioned in the northwest (315°) or west (270°) to match how the human brain interprets light and shadow, preventing an optical illusion known as “relief inversion” where mountains appear as valleys. For our map, we position the light source from the west.</li>
 <li><strong>Altitude</strong>: The angle of the sun above the horizon, measured from 0° (level with the horizon at sunrise/sunset) to 90° (directly overhead at solar noon). A lower altitude (e.g., 30°–45°, typical of low winter sun) produces longer, more dramatic shadows that accentuate ridge lines, canyons, and valleys.</li>
 </ul>
-<p><img src="images/workshop2/relief_options.png" class="img-fluid"></p>
+<p><a href="images/workshop2/relief_options.png" class="lightbox" data-gallery="quarto-lightbox-gallery-36"><img src="images/workshop2/relief_options.png" class="img-fluid"></a></p>
 <p>We can adjust those angles to show the sun in the morning or evening here in Santa Barbara.</p>
 <p>Adjust the transparency of the top colored elevation layer so the shaded relief beneath shows through, creating an illuminated 3D terrain effect under our roads.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/workshop2/western_light.png" class="img-fluid figure-img" alt="A rainbow colored hillshaded map with roads showing the software interface"></p>
+<p><a href="images/workshop2/western_light.png" class="lightbox" data-gallery="quarto-lightbox-gallery-37" title="Current status of our map with colored DEM and shaded relief"><img src="images/workshop2/western_light.png" class="img-fluid figure-img" alt="A rainbow colored hillshaded map with roads showing the software interface"></a></p>
 <figcaption>Current status of our map with colored DEM and shaded relief</figcaption>
 </figure>
 </div>
@@ -936,12 +955,12 @@ Note
 <li><strong>Slope Calculation</strong>: Use raster analysis tools to calculate a slope raster from the DEM, expressing terrain steepness in degrees or percent rise.</li>
 <li><strong>Zonal Statistics as Table</strong>: With the slope raster and the road network loaded, run <strong>Raster Analysis &gt; Zonal Statistics as Table</strong> to compute summary statistics (such as the maximum or mean slope) for each road line.</li>
 </ol>
-<p><img src="images/workshop2/create_max_slope_table.png" class="img-fluid"></p>
+<p><a href="images/workshop2/create_max_slope_table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38"><img src="images/workshop2/create_max_slope_table.png" class="img-fluid"></a></p>
 <ol start="3" type="1">
 <li><strong>Joining Statistics to Roads</strong>: The zonal statistics tool outputs a standalone data table. To visualize these slope measurements on the map, join the table back to the road vector layer using ** Analysis &gt; Tools &gt; Summarize data &gt; Join Features**, matching on a common identifier such as <code>OBJECTID</code> (which is often hidden by default).</li>
 </ol>
 <p><strong>HAS ANYONE SOLVED THIS? BECAUSE THAT WOULD BE SUPER HELPFUL!!!!!</strong></p>
-<p><img src="images/workshop2/roads_over_slope.png" class="img-fluid"></p>
+<p><a href="images/workshop2/roads_over_slope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-39"><img src="images/workshop2/roads_over_slope.png" class="img-fluid"></a></p>
 <ol start="4" type="1">
 <li>Once joined, roads can be symbolized by slope steepness, allowing us to pinpoint the steepest hill climbs for our ride!</li>
 </ol>
@@ -1428,6 +1447,38 @@ Note
   window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
