@@ -116,7 +116,7 @@
     "href": "02_intro_gis.html#completing-the-story",
     "title": "Working with Data",
     "section": "Completing the Story",
-    "text": "Completing the Story\nSo where shall we ride our bicycles? Keep working on your map to best display the information we have gathered at this point to further develop your map to help you decide to which trailheads you could ride your bike to!\nHere is an example of what such map could look like and a few tips below on how to get started."
+    "text": "Completing the Story\nSo where shall we ride our bicycles? Keep working on your map to best display the information we have gathered at this point to further develop your map to help you decide to which trailheads you could ride your bike to!\nHere is an example of what such map could look like and a few tips below on how to get started.\n\n\nPlenty of point symbols are available to add semantic meaning to your visuals\nSetting the raster layers to re-draw their symbology based on the extent of the current map can be confusing\n\nFinal Challenge: Where are the steepest roads on which to to cycle?\nFind an area with especially steep roads and draw a purple annotation box around it."
   },
   {
     "objectID": "02_intro_gis.html#preview-for-workshop-3-looking-ahead-to-spatial-analysis",
