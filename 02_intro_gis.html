@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4c91e038287a4550e99eaaa3ddcee6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f4ddadfd4a959ce5e205fc8bc0959c1a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-04aca834d9ded1de2be64f9654650613.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -907,7 +907,9 @@ Note
 <section id="exporting-data" class="level2">
 <h2 class="anchored" data-anchor-id="exporting-data">Exporting Data</h2>
 <p>At some point in your analysis, you might want to also download the data in addition to your map, for example, to move to a scripted environment such as R and Python to conduct statistical analysis. This is a multi-step process: first, you will have to export the feature layer in a downloadable format; then you will be able to download this layer to your local computer.</p>
-<p>You can not export a layer from the Map Viewer, you will need to first return to the “My Content” view. You can do this by using the “Burger” menu at the top-left of your Map view and selecting Content.</p>
+<p>You can not export a layer from the Map Viewer, you will need to first return to the “My Content” view.</p>
+<p>=&gt; <strong>Time to save our map!!!</strong></p>
+<p>You can do this by using the “Burger” menu at the top-left of your Map view and selecting Content.</p>
 <ul>
 <li>Once in the My content view, locate and click on the spatial trailhead layer you imported from the CSV file to go to the Overview page of that layer.</li>
 </ul>
@@ -946,9 +948,8 @@ Note
 </ol>
 <p><a href="images/workshop2/create_max_slope_table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-39"><img src="images/workshop2/create_max_slope_table.png" class="img-fluid"></a></p>
 <ol start="3" type="1">
-<li><strong>Joining Statistics to Roads</strong>: The zonal statistics tool outputs a standalone data table. To visualize these slope measurements on the map, join the table back to the road vector layer using ** Analysis &gt; Tools &gt; Summarize data &gt; Join Features**, matching on a common identifier such as <code>OBJECTID</code> (which is often hidden by default).</li>
+<li><strong>Joining Statistics to Roads</strong>: The zonal statistics tool outputs a standalone data table. To visualize these slope measurements on the map, join the table back to the road vector layer using <code>Analysis &gt; Tools &gt; Summarize data &gt; Join Features</code> , matching on a common identifier such as <code>OBJECTID</code> (which is often hidden by default).</li>
 </ol>
-<p><strong>HAS ANYONE SOLVED THIS? BECAUSE THAT WOULD BE SUPER HELPFUL!!!!!</strong></p>
 <p><a href="images/workshop2/roads_over_slope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-40"><img src="images/workshop2/roads_over_slope.png" class="img-fluid"></a></p>
 <ol start="4" type="1">
 <li>Once joined, roads can be symbolized by slope steepness, allowing us to pinpoint the steepest hill climbs for our ride!</li>
