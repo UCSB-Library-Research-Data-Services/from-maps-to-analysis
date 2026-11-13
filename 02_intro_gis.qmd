@@ -236,6 +236,7 @@ area:
 3.  Open the attribute table to inspect fields such as highway
     classification, road surface, and speed limits, and symbolize the
     roads to distinguish bike-friendly streets from arterial highways.
+4. Add the `Goleta_Bus_Stops` layer as well
 
 ::: {.callout-tip collapse="false"}
 ### Modify vector symbology
@@ -472,7 +473,6 @@ Labs, a private satellite firm. Its fleet of PlanetScope satellites
 captures imagery in 8 bandwidth divisions of the electromagnetic
 spectrum. 8-band images. Let's add one of those layers now:
 
-**placeholder for Planet image of Goleta**
 
 ## Layer Management, Rasters, and Additional Vectors
 
