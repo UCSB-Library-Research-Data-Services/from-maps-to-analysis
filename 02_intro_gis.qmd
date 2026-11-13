@@ -295,7 +295,8 @@ hundreds of feet in the foothills, as well as the grid cell resolution.
 
 
 ::: {.callout-tip collapse="true"}
-## Challenge: Does our DEM contain negative values? Why?
+## Challenge: Does our DEM contain negative values? Why? What are the 
+highest and lowest points on the map?
 
 Yes. Because our data is both elevation and bathymetry.
 You can see the range of values in the properties window of a raster.
@@ -550,12 +551,19 @@ trailheads are can give us a goal for our bicycle ride!
 [`SantaBarbara_County_Trailheads.csv`](https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv){target="_blank"}
 onto your device.**
 
-::: {.callout-tip collapse="false"}
+::: {.callout-tip collapse="true"}
 ## Challenge - Inspect the trailhead data
-
 -   What are the attributes stored in this dataset?
 -   Which attributes are storing the geospatial information?
 -   What is the quality of this dataset? Anything suspect?
+
+-   What are the attributes stored in this dataset?
+   - There are a whole bunch! 
+-   Which attributes are storing the geospatial information?
+   - latitude and longitude. Expressed as decimal degrees.
+   - and x and y! Is it redundant?
+-   What is the quality of this dataset? Anything suspect?
+   - Do we trust people who use the word 'gonzo' for difficult?
 :::
 
 #### CSV import wizard
@@ -632,8 +640,8 @@ coordinate system that we are dealing with?
 
 Ok, let's improve how we display this new layer.
 
-::: {.callout-tip collapse="false"}
-## Challenge - Make the trailhead layer look nice
+::: {.callout-tip collapse="true"}
+## Challenge - Make the trailhead layer look better
 
 -   Choose the trail `Difficulty` attribute to add a color ramp
 -   Reorder the categories so their are matching the difficulty order
@@ -734,8 +742,7 @@ You have edited the layer!
 ::: {.callout-tip collapse="true"}
 ## Challenge: What happen if this a layer is used in multiple maps (by you or others you have shared it with)?
 
-All the maps will be updated as well!! Because remember maps and layers are two separate
-entities
+All the maps will be updated as well!! Because remember maps and layers are separate entities
 :::
 
 ::: {.callout-tip collapse="true"}
@@ -764,7 +771,7 @@ on the map!
 
 ::: {.callout-note collapse="false"}
 Note that the geospatial information used by ArcGIS online to display
-the point is **not** store in the attribute table. This is why the
+the point is **not** stored in the attribute table. It is invisible to the user. This is why the
 Latitude and Longitude values could be left blank and the point still
 being displayed!
 :::
@@ -883,21 +890,23 @@ display the information we have gathered at this point to further
 develop your map to help you decide to which trailheads you could ride
 your bike to!
 
-Here is an example of what such map could look like and a few tips below
-on how to get started.
-
-![](images/workshop2/w2_potential_final_map.png){fig-alt="Potential final map shoing the slope in grayscale,  trailheads in color coded dots and the bikable roads in blue"
-width="100%"}
+Here are a few tips
+on how to get started:
 
 -  Plenty of point symbols are available to add semantic meaning to your 
    visuals
 -  Setting the raster layers to re-draw their symbology based on the extent
    of the current map can be confusing
 
-Final Challenge: Where are the steepest roads on which to to cycle?
+::: {.callout-tip collapse="true"}
+## Final Challenge: Where are the steepest roads on which to to cycle?
 
 Find an area with especially steep roads and draw a purple annotation box
 around it.
+
+![](images/workshop2/w2_potential_final_map.png){fig-alt="Potential final map shoing the slope in grayscale,  trailheads in color coded dots and the bikable roads in blue"
+width="100%"}
+:::
 
 ## Preview for Workshop 3: Looking Ahead to Spatial Analysis
 
