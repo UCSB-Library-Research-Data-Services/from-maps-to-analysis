@@ -70,9 +70,8 @@ materials](01_make_map.qmd#step-1-add-layers-to-your-map) as reference,
 do the following tasks:
 
 1.  Add buildings to your map. Symbolize the building layer according to 
-    building use, (ie: by using the `b_use` column.)
-2.  Add the feature layer `bike_racks_ucsb` to
-    your map.
+    building use (ie: by using the `BLDGTYPE` column).
+2.  Add the feature layer `bike_racks_ucsb` to your map.
 3.  Experiment with the dot size, color, and clustering for the bike racks.
 4.  Perform a `Save as` before moving to workshop 2 and name give
     your map a unique name, for example: **Goleta bike map YourInitials**, 
@@ -236,7 +235,6 @@ area:
 3.  Open the attribute table to inspect fields such as highway
     classification, road surface, and speed limits, and symbolize the
     roads to distinguish bike-friendly streets from arterial highways.
-4. Add the `Goleta_Bus_Stops` layer as well
 
 ::: {.callout-tip collapse="false"}
 ### Modify vector symbology
@@ -338,13 +336,10 @@ and white. if you hover over the pallette, it shows the name
 
 ![Digital Elevation Model with color
 scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation
-Model with color scaled for DEM: white a higher elevation, blue and
-green for lower elevation"
-scale\](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation
 Model with color scaled for DEM: white a higer elevation, blue and green
 for lower elevation" width="90%" fig-align="center"}
 
-Can't keep up? We are at * Bike map 3 *
+Can't keep up? We are at [Bike map 3](https://ucsb.maps.arcgis.com/home/item.html?id=5e57c611d5924b45900b8c97aad89f19#overview)
 
 #### 'Binning' a raster
 
@@ -357,11 +352,9 @@ from there.
 
 Either way, values clustered near zero are going to be hard to read:
 
+![](images/workshop2/classed_dem.png)
 
-
-![](images/workshop2/classed_dem.png)....
-
-Can't keep up? We are at * Bike map 4 *
+Can't keep up? We are at [Bike map 4](https://ucsb.maps.arcgis.com/home/item.html?id=67f68e410ca944729a85e6bd4619676d#overview)
 
 
 ### Calculated Raster Data: Slope
