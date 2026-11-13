@@ -510,9 +510,7 @@ match the combination of computer monitors and the human eye. Adjust
 this so that it appears most natural on your screen.
 
 ::: callout-tip
-## Challenge: play with different band combinations. What do you think Band
-
-1 is good for?
+## Challenge: play with different band combinations. What do you think Band 1 is good for?
 :::
 
 -   Needs a better question and explanations \*
