@@ -293,8 +293,6 @@ In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
 
-Can't keep up? We are at * Bike map 2 *
-
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: Does our DEM contain negative values? Why?
