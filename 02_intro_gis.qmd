@@ -234,6 +234,7 @@ area:
 3.  Open the attribute table to inspect fields such as highway
     classification, road surface, and speed limits, and symbolize the
     roads to distinguish bike-friendly streets from arterial highways.
+4.  Add the `Goleta_Bus_Stops` layer as well
 
 ::: {.callout-tip collapse="false"}
 ### Modify vector symbology
