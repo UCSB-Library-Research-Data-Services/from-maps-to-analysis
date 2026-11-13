@@ -131,7 +131,7 @@ Mama](https://graphicmama.com/blog/vector-and-raster-whats-the-difference/)](ima
 
 ### Vector Data
 
-I workshop 1, we only brieflylooked at vector data. Vector data represents
+In workshop 1, we only briefly looked at vector data. Vector data represents
 discrete geographic features using coordinate geometry:
 
 -   **Points**: Single $(X, Y)$ coordinate pairs representing discrete
