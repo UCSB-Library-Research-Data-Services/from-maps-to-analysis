@@ -95,7 +95,10 @@ Our finished product for this session will be the
 `Workshop Goleta bike map`. We will take time to preview this finished
 map before building it step by step.
 
-YES WE KNOW THIS ISN'T HERE YET
+[Right-CLick here to open the map in a new window]
+(https://arcg.is/nazXe2)
+
+![](images/workshop2/finished_map.png)
 
 \*\* link and screenshot of finished map goes here. [Work in progress
 version: (https://arcg.is/1yz0KP3)](https://arcg.is/1yz0KP3)
