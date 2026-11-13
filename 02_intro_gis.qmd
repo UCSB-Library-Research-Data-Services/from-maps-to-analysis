@@ -75,8 +75,8 @@ do the following tasks:
     your map.
 3.  Experiment with the dot size, color, and clustering for the bike racks.
 4.  Perform a `Save as` before moving to workshop 2 and name give
-    your map a unique name, for example: **Goleta bike map**
-    YourInitials"**, and a short description of your map.
+    your map a unique name, for example: **Goleta bike map YourInitials**, 
+    and a short description of your map.
 
 #### Catching up:
 If you weren't able to make the map from scratch, 
