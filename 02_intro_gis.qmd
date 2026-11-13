@@ -478,8 +478,12 @@ which changes the mathematics of the values of pixels into ranges that
 match the combination of computer monitors and the human eye. Adjust
 this so that it appears most natural on your screen.
 
-::: callout-tip
-## Challenge: play with different band combinations. What do you think Band 1 is good for?
+::: {.callout-tip collapse="true"}
+## Challenge: play with different band combinations. What do you think Band 1 might be good for? You may want to search the web for "PlanetScope bands"
+
+Band 1 in PlanetScope is known as 'coastal blue' and helps to emphasize
+open deep water versus shallow water with vegetation inside of it. Excellent for our kelp forests.
+
 :::
 
 
