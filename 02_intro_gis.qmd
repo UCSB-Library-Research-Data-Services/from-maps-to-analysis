@@ -807,8 +807,11 @@ previously.
 values](images/workshop2/w2_values-table.png){fig-alt="Attribute table with the newly entered values"
 width="100%" fig-align="center"}
 
+::: {.callout-note}
+## Field Calculator
+
 Of course, there are more advanced ways to edit values than cell by
-cell. One of them is using the filed calculator that let's you use
+cell. One of them is using the filed calculator which let you use
 expressions (conditions, formulas, ...) to calculate values of a field.
 We do not have time to tackle this topic today, But see
 [here](https://doc.esri.com/en/arcgis-online/latest/manage-data/calculate-fields.html)
@@ -819,6 +822,7 @@ has been added by users:
 
 ![](images/workshop2/w2_field_calculator.png){fig-alt="Example of using the field calculator showing the preview of a query"
 width="100%" fig-align="center"}
+:::
 
 <hr>
 
