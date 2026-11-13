@@ -885,7 +885,15 @@ on how to get started.
 ![](images/workshop2/w2_potential_final_map.png){fig-alt="Potential final map shoing the slope in grayscale,  trailheads in color coded dots and the bikable roads in blue"
 width="100%"}
 
+-  Plenty of point symbols are available to add semantic meaning to your 
+   visuals
+-  Setting the raster layers to re-draw their symbology based on the extent
+   of the current map can be confusing
 
+Final Challenge: Where are the steepest roads on which to to cycle?
+
+Find an area with especially steep roads and draw a purple annotation box
+around it.
 
 ## Preview for Workshop 3: Looking Ahead to Spatial Analysis
 
