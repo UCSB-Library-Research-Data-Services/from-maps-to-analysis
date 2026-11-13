@@ -185,10 +185,10 @@ Raster data represents the landscape as a regular grid of square cells
 Below is an image of a single band raster displayed with our local roads overlaid on top. 
 The value of each pixel is elevation.
 
-
 ![](images/workshop2/w2_dem_colored.png)
 
 ### Rasters as Remote Sensing Imagery
+
 Below is an 8-band raster with band #7 (near IR) as red, band #3 (green)
 as green, and band #1 (coastal blue) as blue. This type of image
 displays are often called "false-color" because they do not respect the
@@ -239,7 +239,7 @@ area:
 ::: {.callout-tip collapse="false"}
 ### Modify vector symbology
 
-1.  Replace the "<Null>" in the legend with "Bike path"
+1.  Replace the `<Null>` in the legend with "Bike path"
 2.  Increase the line width to 3px
 :::
 
