@@ -458,12 +458,13 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Challenge: Does our DEM contain negative values? Why?
+<span class="screen-reader-only">Tip</span>Challenge: Does our DEM contain negative values? Why? What are the
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<p>highest and lowest points on the map?</p>
 <p>Yes. Because our data is both elevation and bathymetry. You can see the range of values in the properties window of a raster.</p>
 <p><a href="images/workshop2/negative_dem.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/workshop2/negative_dem.png" class="img-fluid"></a></p>
 </div>
@@ -620,7 +621,7 @@ Note
 how external tabular data can be transformed into a geospatial layer and integrate with existing road and elevation layers. And seeing where trailheads are can give us a goal for our bicycle ride!</p>
 <p><strong>Download and open the <a href="https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv" target="_blank"><code>SantaBarbara_County_Trailheads.csv</code></a> onto your device.</strong></p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -629,12 +630,19 @@ how external tabular data can be transformed into a geospatial layer and integra
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li>What are the attributes stored in this dataset?</li>
-<li>Which attributes are storing the geospatial information?</li>
-<li>What is the quality of this dataset? Anything suspect?</li>
+<li><p>What are the attributes stored in this dataset?</p></li>
+<li><p>Which attributes are storing the geospatial information?</p></li>
+<li><p>What is the quality of this dataset? Anything suspect?</p></li>
+<li><p>What are the attributes stored in this dataset?</p></li>
+<li><p>There are a whole bunch!</p></li>
+<li><p>Which attributes are storing the geospatial information?</p></li>
+<li><p>latitude and longitude. Expressed as decimal degrees.</p></li>
+<li><p>and x and y! Is it redundant?</p></li>
+<li><p>What is the quality of this dataset? Anything suspect?</p></li>
+<li><p>Do we trust people who use the word ‘gonzo’ for difficult?</p></li>
 </ul>
 </div>
 </div>
@@ -695,16 +703,16 @@ how external tabular data can be transformed into a geospatial layer and integra
 <p><strong>POP QUIZ:</strong> Examine the csv file - does it tell you anything about the coordinate system that we are dealing with?</p>
 <p>Ok, let’s improve how we display this new layer.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Challenge - Make the trailhead layer look nice
+<span class="screen-reader-only">Tip</span>Challenge - Make the trailhead layer look better
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse show">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Choose the trail <code>Difficulty</code> attribute to add a color ramp</li>
@@ -803,7 +811,7 @@ how external tabular data can be transformed into a geospatial layer and integra
 </div>
 <div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>All the maps will be updated as well!! Because remember maps and layers are two separate entities</p>
+<p>All the maps will be updated as well!! Because remember maps and layers are separate entities</p>
 </div>
 </div>
 </div>
@@ -852,7 +860,7 @@ Note
 </div>
 <div id="callout-15" class="callout-15-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p>Note that the geospatial information used by ArcGIS online to display the point is <strong>not</strong> store in the attribute table. This is why the Latitude and Longitude values could be left blank and the point still being displayed!</p>
+<p>Note that the geospatial information used by ArcGIS online to display the point is <strong>not</strong> stored in the attribute table. It is invisible to the user. This is why the Latitude and Longitude values could be left blank and the point still being displayed!</p>
 </div>
 </div>
 </div>
@@ -934,14 +942,28 @@ Note
 <section id="completing-the-story" class="level2">
 <h2 class="anchored" data-anchor-id="completing-the-story">Completing the Story</h2>
 <p>So where shall we ride our bicycles? Keep working on your map to best display the information we have gathered at this point to further develop your map to help you decide to which trailheads you could ride your bike to!</p>
-<p>Here is an example of what such map could look like and a few tips below on how to get started.</p>
-<p><a href="images/workshop2/w2_potential_final_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38"><img src="images/workshop2/w2_potential_final_map.png" class="img-fluid" style="width:100.0%" alt="Potential final map shoing the slope in grayscale,  trailheads in color coded dots and the bikable roads in blue"></a></p>
+<p>Here are a few tips on how to get started:</p>
 <ul>
 <li>Plenty of point symbols are available to add semantic meaning to your visuals</li>
 <li>Setting the raster layers to re-draw their symbology based on the extent of the current map can be confusing</li>
 </ul>
-<p>Final Challenge: Where are the steepest roads on which to to cycle?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Final Challenge: Where are the steepest roads on which to to cycle?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>Find an area with especially steep roads and draw a purple annotation box around it.</p>
+<p><a href="images/workshop2/w2_potential_final_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38"><img src="images/workshop2/w2_potential_final_map.png" class="img-fluid" style="width:100.0%" alt="Potential final map shoing the slope in grayscale,  trailheads in color coded dots and the bikable roads in blue"></a></p>
+</div>
+</div>
+</div>
 </section>
 <section id="preview-for-workshop-3-looking-ahead-to-spatial-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="preview-for-workshop-3-looking-ahead-to-spatial-analysis">Preview for Workshop 3: Looking Ahead to Spatial Analysis</h2>
