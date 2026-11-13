@@ -90,7 +90,6 @@ Once satisfied, Don't forget to save your map!!
 ![Location of the `Save as` dialog in the ArcGIS Online left-hand sidebar
 ](images/workshop1/Step1/save-as.png){#fig-saveas-step1
 width="30%" fig-align="center"}
-
 :::
 
 <hr>
@@ -390,7 +389,7 @@ theoretical bike ride?
 Make a copy of the DEM and have both classed and stretched versions on
 your map. 
 
-For the stretch, turn on "dynamic range adjustment" so that we can see the
+For the stretch, turn on 'dynamic range adjustment' so that we can see the
 campus buildings when we zoom in.
 
 Rename the layers so that you can keep track of them: 
@@ -399,11 +398,7 @@ Rename the layers so that you can keep track of them:
 * DEM Stretched
 * DEM Classed
 
-
-
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
-
-Can't keep up? We are at *Bike map 5* which includes 3 rasters
 
 ## Categorical Rasters - Land Cover
 
