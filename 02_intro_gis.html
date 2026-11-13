@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4c91e038287a4550e99eaaa3ddcee6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f4ddadfd4a959ce5e205fc8bc0959c1a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-04aca834d9ded1de2be64f9654650613.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -201,10 +201,7 @@ window.Quarto = {
   <li><a href="#editing-the-attribute-table" id="toc-editing-the-attribute-table" class="nav-link" data-scroll-target="#editing-the-attribute-table">Editing the Attribute Table</a></li>
   </ul></li>
   <li><a href="#exporting-data" id="toc-exporting-data" class="nav-link" data-scroll-target="#exporting-data">Exporting Data</a></li>
-  <li><a href="#completing-the-story" id="toc-completing-the-story" class="nav-link" data-scroll-target="#completing-the-story">Completing the Story</a>
-  <ul class="collapse">
-  <li><a href="#how-to-improve-your-map" id="toc-how-to-improve-your-map" class="nav-link" data-scroll-target="#how-to-improve-your-map">How to improve your map</a></li>
-  </ul></li>
+  <li><a href="#completing-the-story" id="toc-completing-the-story" class="nav-link" data-scroll-target="#completing-the-story">Completing the Story</a></li>
   <li><a href="#preview-for-workshop-3-looking-ahead-to-spatial-analysis" id="toc-preview-for-workshop-3-looking-ahead-to-spatial-analysis" class="nav-link" data-scroll-target="#preview-for-workshop-3-looking-ahead-to-spatial-analysis">Preview for Workshop 3: Looking Ahead to Spatial Analysis</a>
   <ul class="collapse">
   <li><a href="#analysis-workflow-overview" id="toc-analysis-workflow-overview" class="nav-link" data-scroll-target="#analysis-workflow-overview">Analysis Workflow Overview</a></li>
@@ -511,10 +508,15 @@ Note
 <p><a href="images/workshop2/slope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="images/workshop2/slope.png" class="img-fluid"></a></p>
 <p>Resymbolize your slope layer to a color scheme that makes sense to you. Look up into the foothills. Which paths look steepest for our theoretical bike ride?</p>
 <p>Make a copy of the DEM and have both classed and stretched versions on your map.</p>
-<p>For the stretch, turn on ‘dynamic range adjustment’ so that we can see the campus buildings when we zoom in.</p>
-<p>Rename the layers so that you can keep track of them: * Slope * DEM Stretched * DEM Classed</p>
-<p>Can’t keep up? We are at * Bike map 5 * which includes 3 rasters</p>
+<p>For the stretch, turn on “dynamic range adjustment” so that we can see the campus buildings when we zoom in.</p>
+<p>Rename the layers so that you can keep track of them:</p>
+<ul>
+<li>Slope</li>
+<li>DEM Stretched</li>
+<li>DEM Classed</li>
+</ul>
 <p><a href="images/workshop2/symbolizing_slope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="images/workshop2/symbolizing_slope.png" class="img-fluid" style="width:60.0%"></a></p>
+<p>Can’t keep up? We are at <em>Bike map 5</em> which includes 3 rasters</p>
 </section>
 </section>
 <section id="categorical-rasters---land-cover" class="level2">
@@ -922,55 +924,26 @@ Note
 <p>So where shall we ride our bicycles? Keep working on your map to best display the information we have gathered at this point to further develop your map to help you decide to which trailheads you could ride your bike to!</p>
 <p>Here is an example of what such map could look like and a few tips below on how to get started.</p>
 <p><a href="images/workshop2/w2_potential_final_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-37"><img src="images/workshop2/w2_potential_final_map.png" class="img-fluid" style="width:100.0%" alt="Potential final map shoing the slope in grayscale,  trailheads in color coded dots and the bikable roads in blue"></a></p>
-<section id="how-to-improve-your-map" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-improve-your-map">How to improve your map</h3>
-<section id="creating-shaded-relief-hillshade-on-the-fly" class="level4">
-<h4 class="anchored" data-anchor-id="creating-shaded-relief-hillshade-on-the-fly">Creating Shaded Relief (Hillshade) on the Fly</h4>
-<p>One use for a DEM is to make a shaded relief layer. That is a classic view that gives the terrain realistic three-dimensional depth and surface texture, we can generate a shaded relief visualization dynamically:</p>
-<ol type="1">
-<li>Duplicate the <code>ucsb_local_dem</code> layer.</li>
-<li>Rename the two DEM layers for clarity: name the top layer <code>Elevation (Color)</code> and the bottom layer <code>Elevation (Shaded Relief)</code>.</li>
-<li>Change the symbology style to <strong>Shaded Relief</strong>.</li>
-</ol>
-<p>Shaded relief simulates how sunlight illuminates terrain, casting shadows based on the position of the sun measured as two angles: Azimuth and Altitude</p>
-<ul>
-<li><strong>Azimuth</strong>: The compass direction from which the illumination source (the sun) originates, measured in degrees clockwise from north (0° = North, 90° = East, 180° = South, 270° = West). In cartography, the sun is traditionally positioned in the northwest (315°) or west (270°) to match how the human brain interprets light and shadow, preventing an optical illusion known as “relief inversion” where mountains appear as valleys. For our map, we position the light source from the west.</li>
-<li><strong>Altitude</strong>: The angle of the sun above the horizon, measured from 0° (level with the horizon at sunrise/sunset) to 90° (directly overhead at solar noon). A lower altitude (e.g., 30°–45°, typical of low winter sun) produces longer, more dramatic shadows that accentuate ridge lines, canyons, and valleys.</li>
-</ul>
-<p><a href="images/workshop2/relief_options.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38"><img src="images/workshop2/relief_options.png" class="img-fluid"></a></p>
-<p>We can adjust those angles to show the sun in the morning or evening here in Santa Barbara.</p>
-<p>Adjust the transparency of the top colored elevation layer so the shaded relief beneath shows through, creating an illuminated 3D terrain effect under our roads.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/workshop2/western_light.png" class="lightbox" data-gallery="quarto-lightbox-gallery-39" title="Current status of our map with colored DEM and shaded relief"><img src="images/workshop2/western_light.png" class="img-fluid figure-img" alt="A rainbow colored hillshaded map with roads showing the software interface"></a></p>
-<figcaption>Current status of our map with colored DEM and shaded relief</figcaption>
-</figure>
-</div>
-<p>This matches interim map 3 in our group.</p>
-<p>This is a bit of an artificial example, because Esri offers a wide variety of hillshade basemaps in the Living Atlas. Also: that was a rather lengthy aside.</p>
-<p>Now would be an excellent point to save your map.</p>
-<hr>
-</section>
-</section>
 </section>
 <section id="preview-for-workshop-3-looking-ahead-to-spatial-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="preview-for-workshop-3-looking-ahead-to-spatial-analysis">Preview for Workshop 3: Looking Ahead to Spatial Analysis</h2>
-<p>In Workshop 3, we dive deeper into quantitative spatial analysis. The data layers we prepared today form the foundation for analyzing terrain and route difficulty:</p>
-<pre><code>- Calculate slope from the DEM (a single-channel continuous raster measuring steepness)
-- Overlay slope values onto road segments
-- Identify and highlight the steepest climbs (maximum slope)</code></pre>
+<p>In Workshop 3, we will dive into quantitative spatial analysis. The data layers we used today form the foundation for analyzing terrain and route difficulty. Next time we will show:</p>
+<pre><code>- How the slope layer was calculated from the DEM. 
+- How to add min, max, and mean slope values onto road segments, and
+- Creating an analysis and storymap that 
+  highlights the steepest climbs (because everything has to be hard)</code></pre>
 <section id="analysis-workflow-overview" class="level3">
 <h3 class="anchored" data-anchor-id="analysis-workflow-overview">Analysis Workflow Overview</h3>
 <ol type="1">
 <li><strong>Slope Calculation</strong>: Use raster analysis tools to calculate a slope raster from the DEM, expressing terrain steepness in degrees or percent rise.</li>
 <li><strong>Zonal Statistics as Table</strong>: With the slope raster and the road network loaded, run <strong>Raster Analysis &gt; Zonal Statistics as Table</strong> to compute summary statistics (such as the maximum or mean slope) for each road line.</li>
 </ol>
-<p><a href="images/workshop2/create_max_slope_table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-40"><img src="images/workshop2/create_max_slope_table.png" class="img-fluid"></a></p>
+<p><a href="images/workshop2/create_max_slope_table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38"><img src="images/workshop2/create_max_slope_table.png" class="img-fluid"></a></p>
 <ol start="3" type="1">
 <li><strong>Joining Statistics to Roads</strong>: The zonal statistics tool outputs a standalone data table. To visualize these slope measurements on the map, join the table back to the road vector layer using ** Analysis &gt; Tools &gt; Summarize data &gt; Join Features**, matching on a common identifier such as <code>OBJECTID</code> (which is often hidden by default).</li>
 </ol>
 <p><strong>HAS ANYONE SOLVED THIS? BECAUSE THAT WOULD BE SUPER HELPFUL!!!!!</strong></p>
-<p><a href="images/workshop2/roads_over_slope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-41"><img src="images/workshop2/roads_over_slope.png" class="img-fluid"></a></p>
+<p><a href="images/workshop2/roads_over_slope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-39"><img src="images/workshop2/roads_over_slope.png" class="img-fluid"></a></p>
 <ol start="4" type="1">
 <li>Once joined, roads can be symbolized by slope steepness, allowing us to pinpoint the steepest hill climbs for our ride!</li>
 </ol>

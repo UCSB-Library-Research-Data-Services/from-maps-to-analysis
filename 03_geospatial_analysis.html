@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4c91e038287a4550e99eaaa3ddcee6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f4ddadfd4a959ce5e205fc8bc0959c1a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-04aca834d9ded1de2be64f9654650613.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -135,6 +135,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#buffering" id="toc-buffering" class="nav-link" data-scroll-target="#buffering">Buffering</a></li>
   <li><a href="#another" id="toc-another" class="nav-link" data-scroll-target="#another">another</a></li>
   </ul></li>
+  <li><a href="#on-the-fly" id="toc-on-the-fly" class="nav-link" data-scroll-target="#on-the-fly">On the fly</a>
+  <ul class="collapse">
+  <li><a href="#improving-symbology" id="toc-improving-symbology" class="nav-link" data-scroll-target="#improving-symbology">Improving symbology</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -197,8 +201,41 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="another">another</h3>
 <p>Which parts of campus are least served by the bike path network?</p>
 <p>Potential simple analysis as end product (this section should be moved to 3) - Zonal statistics - Count number of points within a polygon - Heatmap from points - Buffering</p>
+</section>
+</section>
+<section id="on-the-fly" class="level2">
+<h2 class="anchored" data-anchor-id="on-the-fly">On the fly</h2>
+<section id="improving-symbology" class="level3">
+<h3 class="anchored" data-anchor-id="improving-symbology">Improving symbology</h3>
+<section id="creating-shaded-relief-hillshade-on-the-fly" class="level4">
+<h4 class="anchored" data-anchor-id="creating-shaded-relief-hillshade-on-the-fly">Creating Shaded Relief (Hillshade) on the Fly</h4>
+<p>One use for a DEM is to make a shaded relief layer. That is a classic view that gives the terrain realistic three-dimensional depth and surface texture, we can generate a shaded relief visualization dynamically:</p>
+<ol type="1">
+<li>Duplicate the <code>ucsb_local_dem</code> layer.</li>
+<li>Rename the two DEM layers for clarity: name the top layer <code>Elevation (Color)</code> and the bottom layer <code>Elevation (Shaded Relief)</code>.</li>
+<li>Change the symbology style to <strong>Shaded Relief</strong>.</li>
+</ol>
+<p>Shaded relief simulates how sunlight illuminates terrain, casting shadows based on the position of the sun measured as two angles: Azimuth and Altitude</p>
+<ul>
+<li><strong>Azimuth</strong>: The compass direction from which the illumination source (the sun) originates, measured in degrees clockwise from north (0° = North, 90° = East, 180° = South, 270° = West). In cartography, the sun is traditionally positioned in the northwest (315°) or west (270°) to match how the human brain interprets light and shadow, preventing an optical illusion known as “relief inversion” where mountains appear as valleys. For our map, we position the light source from the west.</li>
+<li><strong>Altitude</strong>: The angle of the sun above the horizon, measured from 0° (level with the horizon at sunrise/sunset) to 90° (directly overhead at solar noon). A lower altitude (e.g., 30°–45°, typical of low winter sun) produces longer, more dramatic shadows that accentuate ridge lines, canyons, and valleys.</li>
+</ul>
+<p><img src="images/workshop2/relief_options.png" class="img-fluid"></p>
+<p>We can adjust those angles to show the sun in the morning or evening here in Santa Barbara.</p>
+<p>Adjust the transparency of the top colored elevation layer so the shaded relief beneath shows through, creating an illuminated 3D terrain effect under our roads.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/workshop2/western_light.png" class="img-fluid figure-img" alt="A rainbow colored hillshaded map with roads showing the software interface"></p>
+<figcaption>Current status of our map with colored DEM and shaded relief</figcaption>
+</figure>
+</div>
+<p>This matches interim map 3 in our group.</p>
+<p>This is a bit of an artificial example, because Esri offers a wide variety of hillshade basemaps in the Living Atlas. Also: that was a rather lengthy aside.</p>
+<p>Now would be an excellent point to save your map.</p>
+<hr>
 
 
+</section>
 </section>
 </section>
 
