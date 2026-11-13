@@ -148,7 +148,7 @@ Workshop 1 example, we can pop open the attribute table and look at the
 attributes (the row) for the "Library" building:
 
 Visually selecting the library building polygon on the map will select
-the row in the attribute table.![Opening the Attribute
+its row in the attribute table.![Opening the Attribute
 Table](images/workshop2/library-poly.png)
 
 Then opening the Attribute Table under layer options by clicking Layers
@@ -183,10 +183,11 @@ Raster data represents the landscape as a regular grid of square cells
     different spectral channels or bands (such as red, green, blue, and
     near-infrared bands in aerial photography or satellite imagery).
 
-Below is a single band raster. The value of each pixel is elevation.
+Below is a single band raster with our local roads overlaid on top. 
+The value of each pixel is elevation.
 **INCORRECT – this is the slope map**
 
-![](images/workshop2/wkshp_2_dem_example.png)
+![](images/workshop2/w2_dem_colored.png)
 
 Below is an 8-band raster with band #7 (near IR) as red, band #3 (green)
 as green, and band #1 (coastal blue) as blue. This type of image
