@@ -466,25 +466,6 @@ Labs, a private satellite firm. Its fleet of PlanetScope satellites
 captures imagery in 8 bandwidth divisions of the electromagnetic
 spectrum. 8-band images. Let's add one of those layers now:
 
-
-## Layer Management, Rasters, and Additional Vectors
-
-1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
-    on top of the raster elevation layers in the layer stack so they are
-    not hidden.
-
-2.  **Imagery Layers vs. Basemaps**:
-
-    -   An **basemap** sits at the bottom of the map canvas, serving
-        purely as a static background context. Esri has options that are
-        satellite and aerial views.
-    -   An **imagery layer** is a data layer added to your map stack. It
-        can be re-ordered above or below other layers, adjusted with
-        transparency and blend modes, queried for pixel values, and
-        analyze for groundcover characteristics.
-
-**Time to save our map!!!**
-
 Its initial appearance is dark -- work on its visualization. Here are
 some good settings to use:
 
@@ -501,7 +482,7 @@ this so that it appears most natural on your screen.
 :::
 
 
-### Layer Management and Rasters
+## Layer Management and Rasters
 
 1.  **Re-order layers**: Ensure vector layers (roads and paths) remain
     on top of the raster elevation layers in the layer stack so they are
@@ -518,18 +499,14 @@ this so that it appears most natural on your screen.
 
 At this point your map should look something like this:
 
-* This image isn't correct. WE HAVEN"T ADDED BUSSTOPS YET!!!
 ![](images/workshop2/wkshp2_map_5.png)
 
 **Time to save our map!!!**
 
 
-Can't keep up? We are at * Bike map 6 *
+Can't keep up? We are at [Bike map 6](https://ucsb.maps.arcgis.com/home/item.html?id=f2ea18346c514e77bf85ecd2984b6f2e#overview)
 which includes 5 rasters. 
 
-<hr>
-
-## Importing data into ArcGIS Online
 
 ::: callout-note
 ## Esri ArcGIS Online Credits
@@ -546,6 +523,11 @@ which includes 5 rasters.
     considered ephemeral. Your content access depends on the UCSB
     Library's Higher Education Site License.
 :::
+
+
+<hr>
+
+## Importing data into ArcGIS Online
 
 Uploading a raster image to ArcGIS Online takes up storage, so we aren't
 going to do that. However we can also add vector and tabular data to our
