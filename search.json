@@ -207,7 +207,7 @@
     "href": "02_intro_gis.html#preview-our-end-goal",
     "title": "Working with Data",
     "section": "Preview: our end goal",
-    "text": "Preview: our end goal\nOur finished product for this session is called Workshop 2 Final Product. Let’s take time to preview this finished map before building it step by step.\nClick here to open the map in a new window\n\nOur odd-looking finished map features: * a semi-transparent raster layer showing the steepest areas in red * all of our bikable roads * bus stops * a base layer highlight the coastline\nLet’s try and embed that map here: Our final interactive map is also embedded below:"
+    "text": "Preview: our end goal\nOur finished product for this session is called Workshop 2 Final Product, and will look somethign like this:\n Let’s take time to preview this finished map before building it step by step.\nClick here to open the map in a new window\nOur odd-looking finished map features:\n\na semi-transparent raster layer showing the steepest areas in red\nall of our bikable roads\nbus stops\na base layer highlight the coastline\n\nYou should also be able to interact with the final map below:"
   },
   {
     "objectID": "02_intro_gis.html#raster-vs-vector-data",
