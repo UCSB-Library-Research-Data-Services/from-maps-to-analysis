@@ -3,6 +3,15 @@ title: "Working with Data"
 editor: 
   markdown: 
     wrap: 72
+lightbox: true
+format:
+    html:
+        include-in-header:
+            - text: |
+                <script type="module" src="https://js.arcgis.com/5.2/embeddable-components/"></script>
+
+
+    
 ---
 
 ## Learning Objectives
@@ -71,7 +80,7 @@ do the following tasks:
 
 #### Catching up:
 If you weren't able to make the map from scratch, 
-[open this link](https://ucsb.maps.arcgis.com/home/item.html?id=2b16d246ee4c4321852712b9b4652b74#overview), click 'Open in the Map Viewer' and do a `Save as`
+[open this link](https://ucsb.maps.arcgis.com/home/item.html?id=2b16d246ee4c4321852712b9b4652b74#overview){target="_blank"}, click 'Open in the Map Viewer' and do a `Save as`
 :::
 
 ::: {.callout-note collapse="false"}
@@ -85,23 +94,30 @@ width="30%" fig-align="center"}
 
 :::
 
-
-
 <hr>
 
 ## Preview: our end goal
 
-Our finished product for this session will be the
-`Workshop Goleta bike map`. We will take time to preview this finished
+Our finished product for this session is called
+`Workshop 2 Final Product`. Let's take time to preview this finished
 map before building it step by step.
 
-[Right-CLick here to open the map in a new window]
-(https://arcg.is/nazXe2)
+[Click here to open the map in a new window](https://arcg.is/nazXe2){target="_blank"}
 
 ![](images/workshop2/finished_map.png)
 
-\*\* link and screenshot of finished map goes here. [Work in progress
-version: (https://arcg.is/1yz0KP3)](https://arcg.is/1yz0KP3)
+Our odd-looking finished map features:
+* a semi-transparent raster layer showing the steepest areas in red
+* all of our bikable roads
+* bus stops
+* a base layer highlight the coastline
+
+Let's try and embed that map here:
+Our final interactive map is also embedded below:
+
+
+<!-- Add custom element to <body> of your page -->
+ <arcgis-embedded-map style="height:600px;width:700px;" item-id="2fabb20d27604f97b868c5fb2a12927c" theme="light" heading-enabled legend-enabled information-enabled time-bar-enabled center="-119.86022353540515,34.44231873485561"scale="72223.819286" portal-url="https://ucsb.maps.arcgis.com"></arcgis-embedded-map>
 
 ## Raster vs Vector Data
 

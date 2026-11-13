@@ -5,7 +5,7 @@ format:
     html:
         include-in-header:
             - text: |
-                <script type="module" src="https://js.arcgis.com/5.1/embeddable-components/"></script>
+                <script type="module" src="https://js.arcgis.com/5.2/embeddable-components/"></script>
 ---
 
 The goal of this lesson is to demonstrate how to make a simple map, suitable for inclusion in a publication, using ArcGIS Online. As an exercise, you will be creating a map of the UCSB campus bicycle infrastructure and proposing a campus access improvement. We will follow a typical workflow of:
