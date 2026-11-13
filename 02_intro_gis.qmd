@@ -464,9 +464,9 @@ and see completely other things.
 The DREAM Lab hosts several satellite views of campus created by Planet
 Labs, a private satellite firm. Its fleet of PlanetScope satellites
 captures imagery in 8 bandwidth divisions of the electromagnetic
-spectrum. 8-band images. Let's add one of those layers now:
+spectrum. 8-band images. Let's add one of those layers now.
 
-Its initial appearance is dark -- work on its visualization. Here are
+Its initial appearance is dark! Let us work on its visualization. Here are
 some good settings to use:
 
 ![](images/workshop2/wkshp2_map_5_planetscopesettings.png){fig-alt="settings as they appear in the lesson text."}
@@ -503,10 +503,8 @@ At this point your map should look something like this:
 
 **Time to save our map!!!**
 
-
 Can't keep up? We are at [Bike map 6](https://ucsb.maps.arcgis.com/home/item.html?id=f2ea18346c514e77bf85ecd2984b6f2e#overview)
 which includes 5 rasters. 
-
 
 ::: callout-note
 ## Esri ArcGIS Online Credits
@@ -547,7 +545,7 @@ trailheads are can give us a goal for our bicycle ride!
 [`SantaBarbara_County_Trailheads.csv`](https://github.com/UCSB-Library-Research-Data-Services/from-maps-to-analysis/blob/main/source_data/SB_County_Trails.csv){target="_blank"}
 onto your device.**
 
-::: {.callout-tip collapse="true"}
+::: {.callout-tip collapse="false"}
 ## Challenge - Inspect the trailhead data
 
 -   What are the attributes stored in this dataset?
@@ -626,6 +624,8 @@ interest. Here is a good website to look at the different CRSs:
 
 **POP QUIZ:** Examine the csv file - does it tell you anything about the
 coordinate system that we are dealing with?
+
+Ok, let's improve how we display this new layer.
 
 ::: {.callout-tip collapse="false"}
 ## Challenge - Make the trailhead layer look nice
@@ -724,10 +724,14 @@ width="90%" fig-align="center"}
 ![](images/workshop2/w2_edit-moved_point.png){fig-alt="Trailhead location moved to the beach"
 width="90%" fig-align="center"}
 
-You have edited the layer! **Note that if it is a layer used in multiple
-maps (by you or others you have shared it with), all the maps will be
-updated as well, because remember maps and layers are two separate
-entities.**
+You have edited the layer! 
+
+::: {.callout-tip collapse="true"}
+## Challenge: What happen if this a layer is used in multiple maps (by you or others you have shared it with)?
+
+All the maps will be updated as well!! Because remember maps and layers are two separate
+entities
+:::
 
 ::: {.callout-tip collapse="true"}
 ## Challenge - Move the other point to the beach!
