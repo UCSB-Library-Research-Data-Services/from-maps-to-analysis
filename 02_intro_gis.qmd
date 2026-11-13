@@ -99,24 +99,24 @@ width="30%" fig-align="center"}
 ## Preview: our end goal
 
 Our finished product for this session is called
-`Workshop 2 Final Product`. Let's take time to preview this finished
+`Workshop 2 Final Product`, and will look somethign like this:
+
+![](images/workshop2/finished_map.png)
+Let's take time to preview this finished
 map before building it step by step.
 
 [Click here to open the map in a new window](https://arcg.is/nazXe2){target="_blank"}
 
-![](images/workshop2/finished_map.png)
-
 Our odd-looking finished map features:
-* a semi-transparent raster layer showing the steepest areas in red
-* all of our bikable roads
-* bus stops
-* a base layer highlight the coastline
 
-Let's try and embed that map here:
-Our final interactive map is also embedded below:
+-  a semi-transparent raster layer showing the steepest areas in red
+-  all of our bikable roads
+-  bus stops
+-  a base layer highlight the coastline
 
+You should also be able to interact with the final map below:
 
-<!-- Add custom element to <body> of your page -->
+<!-- custom element from arcgis online  -->
  <arcgis-embedded-map style="height:600px;width:700px;" item-id="2fabb20d27604f97b868c5fb2a12927c" theme="light" heading-enabled legend-enabled information-enabled time-bar-enabled center="-119.86022353540515,34.44231873485561"scale="72223.819286" portal-url="https://ucsb.maps.arcgis.com"></arcgis-embedded-map>
 
 ## Raster vs Vector Data
