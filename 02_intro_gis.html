@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4c91e038287a4550e99eaaa3ddcee6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-04aca834d9ded1de2be64f9654650613.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f4ddadfd4a959ce5e205fc8bc0959c1a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -345,7 +345,7 @@ Figure&nbsp;1: Location of the <code>Save as</code> dialog in the ArcGIS Online 
 <li><strong>Polygons</strong>: Closed shapes enclosing an area defined by connected coordinate vertices (e.g., campus buildings, land parcels, parks, water bodies).</li>
 </ul>
 <p>Every shape is tied to a row in an attribute table, where each column holds specific properties describing that feature. For example, in our Workshop 1 example, we can pop open the attribute table and look at the attributes (the row) for the “Library” building:</p>
-<p>Visually selecting the library building polygon on the map will select the row in the attribute table.<img src="images/workshop2/library-poly.png" class="img-fluid" alt="Opening the Attribute Table"></p>
+<p>Visually selecting the library building polygon on the map will select its row in the attribute table.<img src="images/workshop2/library-poly.png" class="img-fluid" alt="Opening the Attribute Table"></p>
 <p>Then opening the Attribute Table under layer options by clicking Layers &gt; UCSB Campus Buldings 2026, the <code>...</code> &gt; Show table<img src="images/workshop2/library-attributes.png" class="img-fluid" alt="Library polygon attributes"></p>
 <p>Each polygon in the table has many fields and values associated with it. Building names, floor counts, area, who edited the file, and when it was last updated, among other fields a user may find helpful when analyzing their data.</p>
 <p>Attributes of both pixels and polygons may be divided into three main types:</p>
@@ -362,8 +362,8 @@ Figure&nbsp;1: Location of the <code>Save as</code> dialog in the ArcGIS Online 
 <li><strong>Single-band rasters</strong>: Each pixel contains a single numerical value representing a continuous measurement (such as elevation in a Digital Elevation Model [DEM], slope, or temperature) or an integer code representing a category (such as land cover types).</li>
 <li><strong>Multi-band rasters</strong>: Each pixel contains multiple values across different spectral channels or bands (such as red, green, blue, and near-infrared bands in aerial photography or satellite imagery).</li>
 </ul>
-<p>Below is a single band raster. The value of each pixel is elevation. <strong>INCORRECT – this is the slope map</strong></p>
-<p><a href="images/workshop2/wkshp_2_dem_example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/workshop2/wkshp_2_dem_example.png" class="img-fluid"></a></p>
+<p>Below is a single band raster with our local roads overlaid on top. The value of each pixel is elevation. <strong>INCORRECT – this is the slope map</strong></p>
+<p><a href="images/workshop2/w2_dem_colored.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/workshop2/w2_dem_colored.png" class="img-fluid"></a></p>
 <p>Below is an 8-band raster with band #7 (near IR) as red, band #3 (green) as green, and band #1 (coastal blue) as blue. This type of image displays are often called “false-color” because they do not respect the RGB channel alignment. This can help to highlight some features, such as vegetation that has a strong signal in near infrared (NIR) wavelengths</p>
 <p><a href="images/workshop2/false_color.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/workshop2/false_color.png" class="img-fluid"></a></p>
 </section>
