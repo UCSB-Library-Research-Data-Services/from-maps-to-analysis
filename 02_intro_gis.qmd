@@ -836,7 +836,11 @@ a downloadable format; then you will be able to download this layer to
 your local computer.
 
 You can not export a layer from the Map Viewer, you will need to first
-return to the “My Content” view. You can do this by using the “Burger”
+return to the “My Content” view. 
+
+=> **Time to save our map!!!**
+
+You can do this by using the “Burger”
 menu at the top-left of your Map view and selecting Content.
 
 -   Once in the My content view, locate and click on the spatial
@@ -909,12 +913,10 @@ and route difficulty. Next time we will show:
 
 3.  **Joining Statistics to Roads**: The zonal statistics tool outputs a
     standalone data table. To visualize these slope measurements on the
-    map, join the table back to the road vector layer using \*\*
-    Analysis \> Tools \> Summarize data \> Join Features\*\*, matching
+    map, join the table back to the road vector layer using 
+    `Analysis > Tools > Summarize data > Join Features` , matching
     on a common identifier such as `OBJECTID` (which is often hidden by
     default).
-
-**HAS ANYONE SOLVED THIS? BECAUSE THAT WOULD BE SUPER HELPFUL!!!!!**
 
 ![](images/workshop2/roads_over_slope.png)
 
