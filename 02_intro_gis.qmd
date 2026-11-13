@@ -390,18 +390,20 @@ theoretical bike ride?
 Make a copy of the DEM and have both classed and stretched versions on
 your map. 
 
-For the stretch, turn on 'dynamic range adjustment' so that we can see the
+For the stretch, turn on "dynamic range adjustment" so that we can see the
 campus buildings when we zoom in.
 
 Rename the layers so that you can keep track of them: 
+
 * Slope
 * DEM Stretched
 * DEM Classed
 
-Can't keep up? We are at * Bike map 5 *
-which includes 3 rasters
+
 
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
+
+Can't keep up? We are at *Bike map 5* which includes 3 rasters
 
 ## Categorical Rasters - Land Cover
 
