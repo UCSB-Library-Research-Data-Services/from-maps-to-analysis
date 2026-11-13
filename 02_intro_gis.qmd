@@ -99,11 +99,12 @@ width="30%" fig-align="center"}
 ## Preview: our end goal
 
 Our finished product for this session is called
-`Workshop 2 Final Product`, and will look somethign like this:
+`Workshop 2 Final Product`, and will look something like this:
 
 ![](images/workshop2/finished_map.png)
+
 Let's take time to preview this finished
-map before building it step by step.
+map before building it step-by-step.
 
 [Click here to open the map in a new window](https://arcg.is/nazXe2){target="_blank"}
 
@@ -130,12 +131,12 @@ Mama](https://graphicmama.com/blog/vector-and-raster-whats-the-difference/)](ima
 
 ### Vector Data
 
-So far we have only looked at vector data. Vector data represents
+I workshop 1, we only brieflylooked at vector data. Vector data represents
 discrete geographic features using coordinate geometry:
 
 -   **Points**: Single $(X, Y)$ coordinate pairs representing discrete
     locations (e.g., bike racks, bus stops, accident locations).
--   **Lines (Polylines)**: Ordered sequences of vertices connecting
+-   **Lines (and Polylines)**: Ordered sequences of vertices connecting
     locations to represent linear features or networks (e.g., bike
     paths, roads, transit routes, streams).
 -   **Polygons**: Closed shapes enclosing an area defined by connected
@@ -163,9 +164,9 @@ their data.
 Attributes of both pixels and polygons may be divided into three main types:
 
 -   Nominal: free-text information for labels and names
--   Categorical
+-   Categorical; data that conforms to a controlled vocabulary
 -   Numeric: both continuous and ordinal information that can be counted
-    or has numerical importance - *ie* the number of floors that each
+    *ie* the number of floors that each
     building has (note: the UCSB Library has a basement and attic.
     Hence 10) or the area of each building's floorspace.
 
@@ -183,12 +184,13 @@ Raster data represents the landscape as a regular grid of square cells
     different spectral channels or bands (such as red, green, blue, and
     near-infrared bands in aerial photography or satellite imagery).
 
-Below is a single band raster with our local roads overlaid on top. 
+Below is an image of a single band raster displayed with our local roads overlaid on top. 
 The value of each pixel is elevation.
-**INCORRECT – this is the slope map**
+
 
 ![](images/workshop2/w2_dem_colored.png)
 
+### Rasters as Remote Sensing Imagery
 Below is an 8-band raster with band #7 (near IR) as red, band #3 (green)
 as green, and band #1 (coastal blue) as blue. This type of image
 displays are often called "false-color" because they do not respect the
