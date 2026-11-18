@@ -44,8 +44,8 @@ The workshop ends with exporting a map suitable for inclusion in a publication.
 
 -   more about vector data
 -   raster data
--   Living Atlas data
 -   data import & export
+-   editing data
 
 
 ## Workshop 3 - Geospatial analysis
