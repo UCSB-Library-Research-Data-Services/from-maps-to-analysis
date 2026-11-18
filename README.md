@@ -1,45 +1,39 @@
-## From Map to Analysis
-### Edit the readme
+# From Map to Analysis
 
-The Goal of this workshop series is to provide a gentle introduction to creating maps and conducting geosptial analysis
+The Goal of this workshop series is to provide a gentle introduction to creating maps and conducting geospatial analysis
 without the need to have programming skills.
 
-We have organized this curriculum in three workshops:
+We have organized this curriculum into three workshops:
 
 
-## I want to make a map
+## Workshop 1 - I want to make a map
 
-2-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and
-leverage ArcGIS online to learn how to:
+3-hour workshop using ArcGIS Online to create a map. This workshop will introduce the basic elements of a map and
+leverage ArcGIS Online to learn how to:
 
-- add basemap
-- draw line an polygons on a map
-- add an existing layer to a map
-- change symbology 
+-   Adjust the background basemap
+-   Add an existing data layer to a map
+-   Change the symbology of vector data
+-   Draw lines and polygons on a map
 
-Ends with data vs. maps and Sketch Layer vs. Feature Layer (in ArcGIS)
-
-
-## Exploring data
-
-2-3 hours workshop using ArcGIS Online to conduct basic GIS data 
-exploration and visualization.
-
-- Raster versus vector data
-- Living Atlas data 
-- Import & export
-
-Ends with an analysis, maybe zonal statistics?
+The workshop ends with exporting a map suitable for inclusion in a publication.
 
 
-## Geospatial Analysis
+## Workshop 2 - Working with data
 
-4-hour workshop. Carpentry-like in ArcGIS Pro or potentially QGIS
+3-hour workshop using ArcGIS Online to conduct basic GIS data exploration and visualization.
 
-Data analysis centric: 
+-   More about vector data
+-   Raster data
+-   Data import & export
+-   Editing data
 
-- buffering
-- interpolation
-- zonal statistics
+## Workshop 3 - Geospatial Analysis
+
+3-hour workshop to conduct geospatial analysis using ArcGIS Online
+
+- Buffering
+- Intersecting layers
+- Zonal statistics
 - raster calculation
 
