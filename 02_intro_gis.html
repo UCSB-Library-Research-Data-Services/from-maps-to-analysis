@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4c91e038287a4550e99eaaa3ddcee6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dd631bd34fcfc74cda836b8c8a095c3a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-074ed923d46ec98054523ea528aca15d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -531,7 +531,7 @@ Note
 <li>5 = sun brick / mud daub</li>
 <li>6 = straw bail</li>
 </ul>
-<p>Let’s add a Landcover raster dataset from Esri’s Living Atlas</p>
+<p>Let’s view a Landcover raster dataset from Esri’s Living Atlas</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -544,14 +544,15 @@ Note
 </div>
 <div id="callout-6" class="callout-6-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p>Take a moment to look at the first results in the Living Atlas layers. When we were creating this lesson, they included US, Germany, and United Kingdom realtime weather layers.</p>
+<p>Living Atlas is a collection of global authoritative layers. You can find US Census data, Real-time weather layers, Demographics, and etc.</p>
 </div>
 </div>
 </div>
-<p>The quickest way is to start typing <code>USA Annual....</code> into the Living Atlas search box.</p>
+<p>You can view the layer at: <a href="https://www.arcgis.com/home/item.html?id=32e2ccc6416746a9a72b4d216813f84f#overview">USA NLCD - Landcover</a></p>
 <p>While elevation is a <strong>continuous raster</strong> (values change smoothly along a numerical gradient representing a quantity), other rasters are <strong>categorical rasters</strong> (e.g., land cover classification datasets from the Living Atlas, where integer cell values represent categories such as urban development, forest, or water).</p>
-<p><a href="images/workshop2/landcover_result.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="images/workshop2/landcover_result.png" class="img-fluid"></a></p>
-<p>Show the legend to see the category names. Open the attribute table to compare it to what appears for other raster data. This is a complex, time-enabled dataset: one row for each of 41 time points.</p>
+<p><a href="images/workshop2/landcover_result.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="images/workshop2/landcover_result.png" class="img-fluid" style="width:70.0%"></a></p>
+<p>Show the legend to see the category names. This is a complex, time-enabled dataset: one row for each of 41 time points.</p>
+<p><em>Instructor Note</em>: Remove from map after demonstration or turn off the layer. If you leave the layer in the map, the time slider will keep appearing.</p>
 <section id="multi-band-rasters" class="level3">
 <h3 class="anchored" data-anchor-id="multi-band-rasters">Multi-band Rasters</h3>
 <p>So far we have worked with single-channel, or 1-band rasters. However, perhaps we are more familiar with 3-channel images, because our eyes see best in the red-green-blue color space. For geospatial data, think of this as satellite or aerial views.</p>
