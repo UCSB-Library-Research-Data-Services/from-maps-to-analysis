@@ -9,9 +9,6 @@ format:
         include-in-header:
             - text: |
                 <script type="module" src="https://js.arcgis.com/5.2/embeddable-components/"></script>
-
-
-    
 ---
 
 ## Learning Objectives
@@ -69,17 +66,20 @@ Using the [workshop 1
 materials](01_make_map.qmd#step-1-add-layers-to-your-map) as reference,
 do the following tasks:
 
-1.  Add buildings to your map. Symbolize the building layer according to 
+1.  Add buildings to your map. Symbolize the building layer according to
     building use (ie: by using the `BLDGTYPE` column).
 2.  Add the feature layer `bike_racks_ucsb` to your map.
-3.  Experiment with the dot size, color, and clustering for the bike racks.
-4.  Perform a `Save as` before moving to workshop 2 and name give
-    your map a unique name, for example: **Goleta bike map YourInitials**, 
+3.  Experiment with the dot size, color, and clustering for the bike
+    racks.
+4.  Perform a `Save as` before moving to workshop 2 and name give your
+    map a unique name, for example: **Goleta bike map YourInitials**,
     and a short description of your map.
 
 #### Catching up:
-If you weren't able to make the map from scratch, 
-[open this link](https://ucsb.maps.arcgis.com/home/item.html?id=2b16d246ee4c4321852712b9b4652b74#overview){target="_blank"}, click 'Open in the Map Viewer' and do a `Save as`
+
+If you weren't able to make the map from scratch, [open this
+link](https://ucsb.maps.arcgis.com/home/item.html?id=2b16d246ee4c4321852712b9b4652b74#overview){target="_blank"},
+click 'Open in the Map Viewer' and do a `Save as`
 :::
 
 ::: {.callout-note collapse="false"}
@@ -87,8 +87,8 @@ If you weren't able to make the map from scratch,
 
 Once satisfied, Don't forget to save your map!!
 
-![Location of the `Save as` dialog in the ArcGIS Online left-hand sidebar
-](images/workshop1/Step1/save-as.png){#fig-saveas-step1
+![Location of the `Save as` dialog in the ArcGIS Online left-hand
+sidebar](images/workshop1/Step1/save-as.png){#fig-saveas-step1
 width="30%" fig-align="center"}
 :::
 
@@ -101,22 +101,24 @@ Our finished product for this session is called
 
 ![](images/workshop2/finished_map.png)
 
-Let's take time to preview this finished
-map before building it step-by-step.
+Let's take time to preview this finished map before building it
+step-by-step.
 
-[Click here to open the map in a new window](https://arcg.is/nazXe2){target="_blank"}
+[Click here to open the map in a new
+window](https://arcg.is/nazXe2){target="_blank"}
 
 Our odd-looking finished map features:
 
--  a semi-transparent raster layer showing the steepest areas in red
--  all of our bikable roads
--  bus stops
--  a base layer highlight the coastline
+-   a semi-transparent raster layer showing the steepest areas in red
+-   all of our bikable roads
+-   bus stops
+-   a base layer highlight the coastline
 
 You should also be able to interact with the final map below:
 
 <!-- custom element from arcgis online  -->
- <arcgis-embedded-map style="height:600px;width:700px;" item-id="2fabb20d27604f97b868c5fb2a12927c" theme="light" heading-enabled legend-enabled information-enabled time-bar-enabled center="-119.86022353540515,34.44231873485561"scale="72223.819286" portal-url="https://ucsb.maps.arcgis.com"></arcgis-embedded-map>
+
+<arcgis-embedded-map style="height:600px;width:700px;" item-id="2fabb20d27604f97b868c5fb2a12927c" theme="light" heading-enabled legend-enabled information-enabled time-bar-enabled center="-119.86022353540515,34.44231873485561"scale="72223.819286" portal-url="https://ucsb.maps.arcgis.com"></arcgis-embedded-map>
 
 ## Raster vs Vector Data
 
@@ -129,8 +131,8 @@ Mama](https://graphicmama.com/blog/vector-and-raster-whats-the-difference/)](ima
 
 ### Vector Data
 
-In workshop 1, we only briefly looked at vector data. Vector data represents
-discrete geographic features using coordinate geometry:
+In workshop 1, we only briefly looked at vector data. Vector data
+represents discrete geographic features using coordinate geometry:
 
 -   **Points**: Single $(X, Y)$ coordinate pairs representing discrete
     locations (e.g., bike racks, bus stops, accident locations).
@@ -159,15 +161,15 @@ Building names, floor counts, area, who edited the file, and when it was
 last updated, among other fields a user may find helpful when analyzing
 their data.
 
-Attributes of both pixels and polygons may be divided into three main types:
+Attributes of both pixels and polygons may be divided into three main
+types:
 
 -   Nominal: free-text information for labels and names
 -   Categorical; data that conforms to a controlled vocabulary
 -   Numeric: both continuous and ordinal information that can be counted
-    *ie* the number of floors that each
-    building has (note: the UCSB Library has a basement and attic.
-    Hence 10) or the area of each building's floorspace.
-
+    *ie* the number of floors that each building has (note: the UCSB
+    Library has a basement and attic. Hence 10) or the area of each
+    building's floorspace.
 
 ### Raster Data
 
@@ -182,8 +184,8 @@ Raster data represents the landscape as a regular grid of square cells
     different spectral channels or bands (such as red, green, blue, and
     near-infrared bands in aerial photography or satellite imagery).
 
-Below is an image of a single band raster displayed with our local roads overlaid on top. 
-The value of each pixel is elevation.
+Below is an image of a single band raster displayed with our local roads
+overlaid on top. The value of each pixel is elevation.
 
 ![](images/workshop2/w2_dem_colored.png)
 
@@ -276,10 +278,10 @@ map](images/workshop2/wkshp2_map_2_defaultDEM.png){fig-alt="By default, DEMs app
 width="90%" fig-align="center"}
 
 Each pixel, or cell, in our DEM represents bare-earth (ie: with trees
-and buildings removed) surface elevation relative to a vertical datum (mean sea level). The `ucsb_local_dem`
-dataset was derived from a high-resolution USGS LiDAR survey (3D
-Elevation Program (3DEP)). Sometimes this is called a 
-Digital Terrain Model (DTM)
+and buildings removed) surface elevation relative to a vertical datum
+(mean sea level). The `ucsb_local_dem` dataset was derived from a
+high-resolution USGS LiDAR survey (3D Elevation Program (3DEP)).
+Sometimes this is called a Digital Terrain Model (DTM)
 
 **POP QUIZ:** What do you think are the units of `ucsb_local_dem`?
 
@@ -293,18 +295,16 @@ In the layer properties, explore the raster statistics: note the minimum
 elevation near sea level (0) along the coast and slough, rising to
 hundreds of feet in the foothills, as well as the grid cell resolution.
 
-
 ::: {.callout-tip collapse="true"}
-## Challenge: Does our DEM contain negative values? Why? What are the 
+## Challenge: Does our DEM contain negative values? Why? What are the
+
 highest and lowest points on the map?
 
-Yes. Because our data is both elevation and bathymetry.
-You can see the range of values in the properties window of a raster.
+Yes. Because our data is both elevation and bathymetry. You can see the
+range of values in the properties window of a raster.
 
 ![](images/workshop2/negative_dem.png)
-
 :::
-
 
 #### Applying a Continuous Divergent Color Scheme
 
@@ -330,31 +330,30 @@ Statistics table. (e.g.: 1218 feet)
 
 Here is below an example of a widely used color scale for DEM, with
 lower elevation display in blue and green and higher elevation in brown
-and white. if you hover over the pallette, it shows the name 
-"Brown to Blue Green Diverging, Bright"
+and white. if you hover over the pallette, it shows the name "Brown to
+Blue Green Diverging, Bright"
 
 ![Digital Elevation Model with color
-scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation
-Model with color scaled for DEM: white a higer elevation, blue and green
-for lower elevation" width="90%" fig-align="center"}
+scale](images/workshop2/w2_dem_colored.png){fig-alt="Digital Elevation Model with color scaled for DEM: white a higer elevation, blue and green for lower elevation"
+width="90%" fig-align="center"}
 
-Can't keep up? We are at [Bike map 3](https://ucsb.maps.arcgis.com/home/item.html?id=5e57c611d5924b45900b8c97aad89f19#overview)
+Can't keep up? We are at [Bike map
+3](https://ucsb.maps.arcgis.com/home/item.html?id=5e57c611d5924b45900b8c97aad89f19#overview)
 
 #### 'Binning' a raster
 
-It's sometimes easier to divide a raster into classes--especially if you want
-to highlight certain values. You can do this
-on the fly in ArcGIS Online by changing the symbology, first to 'Natural
-Breaks,' and then customized to highlight the near-zero areas around the
-coast. It may be easier to choose `Equal interval` and edit the values
-from there.
+It's sometimes easier to divide a raster into classes--especially if you
+want to highlight certain values. You can do this on the fly in ArcGIS
+Online by changing the symbology, first to 'Natural Breaks,' and then
+customized to highlight the near-zero areas around the coast. It may be
+easier to choose `Equal interval` and edit the values from there.
 
 Either way, values clustered near zero are going to be hard to read:
 
 ![](images/workshop2/classed_dem.png)
 
-Can't keep up? We are at [Bike map 4](https://ucsb.maps.arcgis.com/home/item.html?id=67f68e410ca944729a85e6bd4619676d#overview)
-
+Can't keep up? We are at [Bike map
+4](https://ucsb.maps.arcgis.com/home/item.html?id=67f68e410ca944729a85e6bd4619676d#overview)
 
 ### Calculated Raster Data: Slope
 
@@ -366,21 +365,20 @@ data.
 We will learn how it was made in workshop 3, but for now we will use it
 to examine, with our eyes, where the steepest bike routes up into our
 foothills are. Add this raster layer by searching for
-`SantaBarbara_slope` within the UCSB organization or navigating to our group:
+`SantaBarbara_slope` within the UCSB organization or navigating to our
+group:
 
 ![](images/workshop2/roads_over_slope.png)
 
 Let's use another stretched raster style, with the `Spectrum full light`
-color scheme. 
+color scheme.
 
+**POP QUIZ:** Using the slope layer, zoom in to campus. Adjust the
+stretch style options so that you can clearly see the buildings and
+cliffs.
 
-**POP QUIZ:** Using the slope layer, zoom in to campus.
-Adjust the stretch style options so that you can clearly see the
-buildings and cliffs. 
-
-What does this tell you was INCORRECT when we defined our DEM as a 
-DTM versus a DSM? Is our DEM a bare-earth model or a topmost-surface
-model? 
+What does this tell you was INCORRECT when we defined our DEM as a DTM
+versus a DSM? Is our DEM a bare-earth model or a topmost-surface model?
 
 ![](images/workshop2/slope.png)
 
@@ -389,21 +387,21 @@ Look up into the foothills. Which paths look steepest for our
 theoretical bike ride?
 
 Make a copy of the DEM and have both classed and stretched versions on
-your map. 
+your map.
 
-For the stretch, turn on 'dynamic range adjustment' so that we can see the
-campus buildings when we zoom in.
+For the stretch, turn on 'dynamic range adjustment' so that we can see
+the campus buildings when we zoom in.
 
-Rename the layers so that you can keep track of them: 
+Rename the layers so that you can keep track of them:
 
-* Slope
-* DEM Stretched
-* DEM Classed
+-   Slope
+-   DEM Stretched
+-   DEM Classed
 
 ![](images/workshop2/symbolizing_slope.png){width="60%"}
 
-Can't keep up? We are at [Bike map 5](https://ucsb.maps.arcgis.com/home/item.html?id=5431b37143554f6d910baac000f61869#overview)
-
+Can't keep up? We are at [Bike map
+5](https://ucsb.maps.arcgis.com/home/item.html?id=5431b37143554f6d910baac000f61869#overview)
 
 ## Categorical Rasters - Land Cover
 
@@ -425,18 +423,17 @@ arbitrary:
 -   5 = sun brick / mud daub
 -   6 = straw bail
 
-Let's add a Landcover raster dataset from Esri's Living Atlas
+Let's view a Landcover raster dataset from Esri's Living Atlas
 
 ::: {.callout-tip collapse="false"}
 ## Living Atlas
 
-Take a moment to look at the first results in the Living Atlas layers.
-When we were creating this lesson, they included US, Germany, and
-United Kingdom realtime weather layers.
+Living Atlas is a collection of global authoritative layers. 
+You can find US Census data, Real-time weather layers, Demographics, and etc.
 :::
 
-The quickest way is to start typing `USA Annual....` into the Living
-Atlas search box.
+You can view the layer at: [USA NLCD -
+Landcover](https://www.arcgis.com/home/item.html?id=32e2ccc6416746a9a72b4d216813f84f#overview)
 
 While elevation is a **continuous raster** (values change smoothly along
 a numerical gradient representing a quantity), other rasters are
@@ -444,11 +441,14 @@ a numerical gradient representing a quantity), other rasters are
 the Living Atlas, where integer cell values represent categories such as
 urban development, forest, or water).
 
-![](images/workshop2/landcover_result.png)
+![](images/workshop2/landcover_result.png){width="70%"}
 
-Show the legend to see the category names. Open the attribute table to
-compare it to what appears for other raster data. This is a complex,
+Show the legend to see the category names. This is a complex,
 time-enabled dataset: one row for each of 41 time points.
+
+*Instructor Note*: Remove from map after demonstration or turn off the
+layer. If you leave the layer in the map, the time slider will keep
+appearing.
 
 ### Multi-band Rasters
 
@@ -468,8 +468,8 @@ Labs, a private satellite firm. Its fleet of PlanetScope satellites
 captures imagery in 8 bandwidth divisions of the electromagnetic
 spectrum. 8-band images. Let's add one of those layers now.
 
-Its initial appearance is dark! Let us work on its visualization. Here are
-some good settings to use:
+Its initial appearance is dark! Let us work on its visualization. Here
+are some good settings to use:
 
 ![](images/workshop2/wkshp2_map_5_planetscopesettings.png){fig-alt="settings as they appear in the lesson text."}
 
@@ -483,10 +483,9 @@ this so that it appears most natural on your screen.
 ## Challenge: play with different band combinations. What do you think Band 1 might be good for? You may want to search the web for "PlanetScope bands"
 
 Band 1 in PlanetScope is known as 'coastal blue' and helps to emphasize
-open deep water versus shallow water with vegetation inside of it. Excellent for our kelp forests.
-
+open deep water versus shallow water with vegetation inside of it.
+Excellent for our kelp forests.
 :::
-
 
 ## Layer Management and Rasters
 
@@ -509,8 +508,9 @@ At this point your map should look something like this:
 
 **Time to save our map!!!**
 
-Can't keep up? We are at [Bike map 6](https://ucsb.maps.arcgis.com/home/item.html?id=f2ea18346c514e77bf85ecd2984b6f2e#overview)
-which includes 5 rasters. 
+Can't keep up? We are at [Bike map
+6](https://ucsb.maps.arcgis.com/home/item.html?id=f2ea18346c514e77bf85ecd2984b6f2e#overview)
+which includes 5 rasters.
 
 ::: callout-note
 ## Esri ArcGIS Online Credits
@@ -527,7 +527,6 @@ which includes 5 rasters.
     considered ephemeral. Your content access depends on the UCSB
     Library's Higher Education Site License.
 :::
-
 
 <hr>
 
@@ -553,17 +552,26 @@ onto your device.**
 
 ::: {.callout-tip collapse="true"}
 ## Challenge - Inspect the trailhead data
+
 -   What are the attributes stored in this dataset?
+
 -   Which attributes are storing the geospatial information?
+
 -   What is the quality of this dataset? Anything suspect?
 
 -   What are the attributes stored in this dataset?
-   - There are a whole bunch! 
+
+-   There are a whole bunch!
+
 -   Which attributes are storing the geospatial information?
-   - latitude and longitude. Expressed as decimal degrees.
-   - and x and y! Is it redundant?
+
+-   latitude and longitude. Expressed as decimal degrees.
+
+-   and x and y! Is it redundant?
+
 -   What is the quality of this dataset? Anything suspect?
-   - Do we trust people who use the word 'gonzo' for difficult?
+
+-   Do we trust people who use the word 'gonzo' for difficult?
 :::
 
 #### CSV import wizard
@@ -737,12 +745,13 @@ width="90%" fig-align="center"}
 ![](images/workshop2/w2_edit-moved_point.png){fig-alt="Trailhead location moved to the beach"
 width="90%" fig-align="center"}
 
-You have edited the layer! 
+You have edited the layer!
 
 ::: {.callout-tip collapse="true"}
 ## Challenge: What happen if this a layer is used in multiple maps (by you or others you have shared it with)?
 
-All the maps will be updated as well!! Because remember maps and layers are separate entities
+All the maps will be updated as well!! Because remember maps and layers
+are separate entities
 :::
 
 ::: {.callout-tip collapse="true"}
@@ -771,9 +780,9 @@ on the map!
 
 ::: {.callout-note collapse="false"}
 Note that the geospatial information used by ArcGIS online to display
-the point is **not** stored in the attribute table. It is invisible to the user. This is why the
-Latitude and Longitude values could be left blank and the point still
-being displayed!
+the point is **not** stored in the attribute table. It is invisible to
+the user. This is why the Latitude and Longitude values could be left
+blank and the point still being displayed!
 :::
 
 ### Editing the Attribute Table
@@ -819,7 +828,7 @@ previously.
 values](images/workshop2/w2_values-table.png){fig-alt="Attribute table with the newly entered values"
 width="100%" fig-align="center"}
 
-::: {.callout-note}
+::: callout-note
 ## Field Calculator
 
 Of course, there are more advanced ways to edit values than cell by
@@ -848,12 +857,12 @@ a downloadable format; then you will be able to download this layer to
 your local computer.
 
 You can not export a layer from the Map Viewer, you will need to first
-return to the “My Content” view. 
+return to the “My Content” view.
 
-=> **Time to save our map!!!**
+=\> **Time to save our map!!!**
 
-You can do this by using the “Burger”
-menu at the top-left of your Map view and selecting Content.
+You can do this by using the “Burger” menu at the top-left of your Map
+view and selecting Content.
 
 -   Once in the My content view, locate and click on the spatial
     trailhead layer you imported from the CSV file to go to the Overview
@@ -890,19 +899,18 @@ display the information we have gathered at this point to further
 develop your map to help you decide to which trailheads you could ride
 your bike to!
 
-Here are a few tips
-on how to get started:
+Here are a few tips on how to get started:
 
--  Plenty of point symbols are available to add semantic meaning to your 
-   visuals
--  Setting the raster layers to re-draw their symbology based on the extent
-   of the current map can be confusing
+-   Plenty of point symbols are available to add semantic meaning to
+    your visuals
+-   Setting the raster layers to re-draw their symbology based on the
+    extent of the current map can be confusing
 
 ::: {.callout-tip collapse="true"}
 ## Final Challenge: Where are the steepest roads on which to to cycle?
 
-Find an area with especially steep roads and draw a purple annotation box
-around it.
+Find an area with especially steep roads and draw a purple annotation
+box around it.
 
 ![](images/workshop2/w2_potential_final_map.png){fig-alt="Potential final map shoing the slope in grayscale,  trailheads in color coded dots and the bikable roads in blue"
 width="100%"}
@@ -910,9 +918,9 @@ width="100%"}
 
 ## Preview for Workshop 3: Looking Ahead to Spatial Analysis
 
-In Workshop 3, we will dive into quantitative spatial analysis. The
-data layers we used today form the foundation for analyzing terrain
-and route difficulty. Next time we will show:
+In Workshop 3, we will dive into quantitative spatial analysis. The data
+layers we used today form the foundation for analyzing terrain and route
+difficulty. Next time we will show:
 
 ```         
 - How the slope layer was calculated from the DEM. 
@@ -935,9 +943,9 @@ and route difficulty. Next time we will show:
 
 3.  **Joining Statistics to Roads**: The zonal statistics tool outputs a
     standalone data table. To visualize these slope measurements on the
-    map, join the table back to the road vector layer using 
-    `Analysis > Tools > Summarize data > Join Features` , matching
-    on a common identifier such as `OBJECTID` (which is often hidden by
+    map, join the table back to the road vector layer using
+    `Analysis > Tools > Summarize data > Join Features` , matching on a
+    common identifier such as `OBJECTID` (which is often hidden by
     default).
 
 ![](images/workshop2/roads_over_slope.png)
